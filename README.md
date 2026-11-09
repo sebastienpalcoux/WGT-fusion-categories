@@ -11,6 +11,12 @@ A shorter paper gives a standalone proof that every weakly integral braided fusi
 | [Verification manifest](certificates/manifest.json) | Hypotheses, commands, expected outputs, and locations in the full article for 27 calculations and checks. |
 | [Explicit certificates](certificates/certificates.json) | The terminal trace residues for seven dyadic cases and the two disjoint fibers for each of five rank-100 profiles. |
 
+The [dimension checker](code/README.md#dimension-comparison) reproduces all 16 entries in the proof of Theorem 17.1 and prints the four dimension bounds. Run it from the repository root with
+
+```sh
+python3 code/check_dimension_bounds.py
+```
+
 A short check of the explicit certificates is available from the repository root.
 
 ```sh

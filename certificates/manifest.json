@@ -12,7 +12,7 @@
         "check_dimension_bounds.py"
       ],
       "expected_stdout": "29160000 6087156075\n5400 121275",
-      "interpretation": "Optional arithmetic comparison for the four thresholds.",
+      "interpretation": "Checks all 16 support-by-support entries in the proof of Theorem 17.1, then prints the four column minima. The bounds concern the exponent families used in that proof.",
       "derivation_labels": [
         "sec:numerical"
       ],
