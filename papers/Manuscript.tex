@@ -102,18 +102,14 @@ None & $D$ odd and $D<121275$ & Solvable\\\bottomrule
 \end{tabular}
 \end{table}
 
-The proof reduces a divisor-minimal braided obstruction to a perfect, fusion-simple integral modular category, or to the positive character table obtained by identifying the transparent fermion with the unit. On a full principal block, ordinary columns with different primary twists are orthogonal; in the positive table at two, the same assertion uses the squares of those twists. With three repeated primes this gives two principal simple objects whose shared character value has prescribed residues. With four or more primes, norms and inner products of local Weyl columns constrain the degrees. For example, in an odd ordinary minimal table of square dimension, an isolated prime $t$ of exponent two requires $t-1$ to have an odd divisor of at least five (Corollary~\ref{r6:two-fermat}). Section~\ref{sec:numerical} obtains the four thresholds by comparing exponents. Its four-prime argument on even support uses the finite calculation in Theorem~\ref{fam:M:8.15}. Appendix~\ref{app:bounds-code} gives an optional check of the exponent comparison. The proofs identify the finite calculations needed for other family exclusions and for the rank bounds, including ranks $95$ through $100$ at the first open core.
+An independent \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/papers/Below_5400_squared.pdf}{29-page proof} of the braided bound $D<5400^2$ gives all its arithmetic in a form that can be checked by hand.
 
-\medskip\noindent\textbf{Code, data and certificates.} The GitHub repository is\par
-\noindent\url{https://github.com/sebastienpalcoux/WGT-fusion-categories}.\par
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/code}{\texttt{code/}} directory contains the verification programs, and \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} contains the published rank-$15$ input. For each finite calculation, \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/manifest.json}{\texttt{certificates/manifest.json}} gives the command and expected output. The file \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/certificates.json}{\texttt{certificates/certificates.json}} records explicit witnesses for the dyadic and rank calculations. An independent \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/papers/Below_5400_squared.pdf}{29-page proof} of the braided bound $D<5400^2$ gives all its arithmetic in a form that can be checked by hand.
-
-The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Sections~\ref{found:group:uniform}--\ref{found:group:odd} treat dimensions $p^6q^6r^4$ for arbitrary distinct primes, and Sections~\ref{found:group:degrees}--\ref{sec:unbraided-5400} treat the two boundary dimensions. The slightly degenerate branch is excluded throughout that family. At its least member a modular obstruction has rank between $101$ and $46774$. At dimension $5400$ a non-WGT fusion category which is itself simple and perfect has rank between $11$ and $462$ when its fusion ring is commutative, and between $13$ and $490$ otherwise. In arbitrary dimension a nontrivial simple perfect integral modular category has rank at least $16$, or $27$ in odd dimension. A non-WGT perfect integral fusion category has rank at least $7$, and every nontrivial odd-dimensional perfect integral fusion category has rank at least $15$ (Corollary~\ref{cor:all-dim-rank}).
+The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Using the cyclotomic estimates of Section~\ref{found:group:support}, Sections~\ref{found:group:uniform}--\ref{found:group:odd} treat dimensions $p^6q^6r^4$ for arbitrary distinct primes, and Sections~\ref{found:group:degrees}--\ref{sec:unbraided-5400} treat the two boundary dimensions. The slightly degenerate branch is excluded throughout that family. At its least member a modular obstruction has rank between $101$ and $46774$. At dimension $5400$ a non-WGT fusion category which is itself simple and perfect has rank between $11$ and $462$ when its fusion ring is commutative, and between $13$ and $490$ otherwise. In arbitrary dimension a nontrivial simple perfect integral modular category has rank at least $16$, or $27$ in odd dimension. A non-WGT perfect integral fusion category has rank at least $7$, and every nontrivial odd-dimensional perfect integral fusion category has rank at least $15$ (Corollary~\ref{cor:all-dim-rank}).
 
 A different application concerns braided decomposition. For composite square-free $L$, Section~\ref{sec:coprime-core} characterizes the existence of a prime integral WGT modular category of dimension $L^2$ by a signed divisibility graph. For example, at $L=5\cdot7\cdot29$ the two possible edges require opposite signs at $29$, since $5\mid29+1$ and $7\mid29-1$. Every integral modular category of this dimension therefore splits.
 
-\medskip\noindent\textbf{Guide to the proofs.}
-Sections~\ref{sec:wgt-preliminaries}--\ref{subsec:sqvac} develop the character-table estimates. They are applied to three primes in Sections~\ref{sec:three-ordered}--\ref{fam:Q:sec:1}, four in Sections~\ref{sec:two-squared}--\ref{sub:residue-lift}, five in Section~\ref{fam:W:sec:1}, and arbitrary support in Section~\ref{ext:section}. Sections~\ref{sec:numerical} and~\ref{sec:dimension-free-rank} derive the dimension and rank bounds.
+\medskip\noindent\textbf{Proof strategy.}
+Sections~\ref{sec:wgt-preliminaries}--\ref{subsec:sqvac} reduce a divisor-minimal braided obstruction to one of two character tables. In the modular case the category is integral, perfect and fusion-simple. In the slightly degenerate case we use the positive table obtained by identifying the transparent fermion with the unit. On a full principal block, columns with different primary twists are orthogonal in the modular case. At $2$ in the positive table, the corresponding assertion uses the squares of the twists. For three repeated primes, orthogonality gives two principal simples whose shared character value has prescribed residues (Sections~\ref{sec:three-ordered}--\ref{fam:Q:sec:1}). For four and five repeated primes, norms and inner products of local Weyl columns constrain the degrees (Sections~\ref{sec:two-squared}--\ref{fam:W:sec:1}). Section~\ref{ext:section} treats additional prime powers. Section~\ref{sec:numerical} compares the resulting exponent bounds to obtain Table~\ref{tab:intro-bounds}. The even four-prime case uses the finite enumeration in Theorem~\ref{fam:M:8.15}. Appendix~\ref{app:bounds-code} gives an optional check of the exponent comparison. The programs and witnesses for the finite calculations are listed under \hyperref[sec:code-data-certificates]{Code, data and certificates}.
 
 \papercontents
 
@@ -2972,7 +2968,7 @@ $r<6q$. More generally, for fixed $M\ge2$ the entire strip
 $M<p<q<r<Mq$ is covered when $q$ is sufficiently large in terms of $M$.
 \end{corollary}
 \begin{proof}
-Here is the finite calculation at the smaller endpoints. In each row
+For the smaller endpoints, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/exposed_support.py}{support enumeration} gives the following table. The commands for all listed primes are recorded under \hyperref[sec:code-data-certificates]{Code, data and certificates}. In each row
 $k$ is the number of positions and the second column lists the primes
 above the indicated cutoff where the scalar inequality alone still
 permits a word. The other primes above the cutoff are excluded by
@@ -2995,9 +2991,7 @@ if $T$ has fewer than $g(L)$ opposite nonzero pairs or if $T-T$ has
 fewer than $L$. Otherwise add the dilation class of $T-T$ whenever
 exposed and new. Continue until rejection or exhaustion of the finite
 list. Use $\ell=3$ for $k\le5$ and $\ell=2$ for $k=6$.
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/exposed_support.py}{support enumeration} implements these operations;
-discarding further comparisons after its optional work limit counts a
-seed as surviving.
+If the program reaches its work limit before rejecting a seed, it counts that seed as surviving.
 
 In Proposition~\ref{fam:Q:3.1} the first alternative has
 $k=1+\lfloor r/q\rfloor$ positions, while $k<p$ excludes the second
@@ -4489,8 +4483,7 @@ In an odd minimal root a twist involving both $p$ and $q$ forces
 its two heights to lie in the
 rectangle $\mathcal H(h,k)=\{(i,j)\in\ZZ^2:0<i<h,\;0<j<k\}$.
 For $h,k\ge2$ the inequality $h+k\ge6$ says that this rectangle
-has at least three lattice points. Local columns give the bounds for
-even roots here. Section~\ref{sec:two-isolated} excludes an odd
+has at least three lattice points. For even roots, the local columns lead to the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{finite trace calculation} in Theorem~\ref{fourm:even-total}. Section~\ref{sec:two-isolated} excludes an odd
 least prime of height two with any companion height. The only
 remaining root needed for the theorem is the odd root $p^3q^2uv$,
 treated in Section~\ref{subsec:four-sextic}. Section~\ref{sec:numerical}
@@ -4953,7 +4946,7 @@ discarding total costs above $K$. For instance, in the first row only two
 copies of $14$ or one of $56$ fit. In table order the required residues
 $\epsilon j_t\bmod q$ are $10,2,2,2,1,38,3$; each is absent. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{enumeration} produces these seven terminal rows. Their \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/certificates/certificates.json}{trace residues} can also be checked \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/verify_witnesses.py}{independently}.
 \end{proof}
-For other heights, the same additions can impose all of
+For other heights, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/check_four.py}{general trace and Gram calculation} uses the same additions to impose all of
 \eqref{fourm:budgettest}. At each axis retain the cheapest nonempty
 choice in the required trace class and subtract its cost. For each common
 degree add $m_x(A_u(x)^2,A_v(x)^2,A_u(x)A_v(x))$ to the two
@@ -5508,7 +5501,7 @@ higher valuations even. A root height below two is covered by
 Proposition~\ref{seq:one-unrestricted}.
 Lemma~\ref{lem:isolated-dyadic-square} excludes a dyadic singleton,
 so an even root has $p=2$ and $i+j\ge6$ by
-Theorem~\ref{fourm:even-total}. In an odd root the least prime
+the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fourm:even-total}. In an odd root the least prime
 cannot be a singleton by \eqref{eq:finite}; Theorem~\ref{fourm:leastquart-smallboth}
 excludes height two there, at every companion height. Now $i\ge3$
 and $j\ge2$ leave only $(3,2)$ below total height six.
@@ -5958,7 +5951,7 @@ $j_t(\delta+3)\le t+1$ in the unramified budget, a contradiction.
 
 \begin{proof}[Proof of Theorem~\ref{thm:higher-two-squares}]
 The root heights $i,j$ in Corollary~\ref{cor:four-before-sextic} satisfy
-$i\le h$, $j\le k$. The corollary gives each asserted bound except
+$i\le h$, $j\le k$. Its even case uses the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{dyadic enumeration} of Theorem~\ref{fourm:even-total}. The corollary gives each asserted bound except
 possibly $h+k\ge6$ at an odd root $p^3q^2uv$. Such a root is excluded
 by Corollary~\ref{r6:sextic-three} at $p=3$ and by
 Lemma~\ref{fourm:common-fields} at $p\ge5$.
@@ -6079,8 +6072,7 @@ This proves Theorem~\ref{fam:W:n:thm:unbounded} in its stated generality.
 \paragraph{The two dyadic exponent boxes.}\label{fam:W:dyadic-boxes}
 By the four-prime descent used above, the dyadic boxes
 $2^9q^5(uv)^2 e$ and $2^5q^9(uv)^2 e$ reduce to ordinary roots
-of higher heights at most $(4,2)$ or $(2,4)$; all were excluded in
-Theorem~\ref{fam:M:8.15}. A dyadic singleton is excluded by
+of higher heights at most $(4,2)$ or $(2,4)$. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{trace calculation} in Theorem~\ref{fam:M:8.15} excludes every such root. A dyadic singleton is excluded by
 Corollary~\ref{fam:M:9.18}. Thus for $(8,4,2,2)$ the remaining
 roots are odd, of form $P^4Q^2uv$ with $P$ least and $P,Q$ mixed
 (Theorems~\ref{fam:M:9.14}, \ref{fam:M:9.16} and
@@ -6289,7 +6281,7 @@ The primes $(P,Q,u,v)=(227,3,113,127)$ realize this assignment,
 with $Q$ least and $127/113<3/2$.
 
 The two-endpoint test can be sharper. If $u=449$, $v=463$ and
-$P,Q$ have the residues of $23,13$ modulo $uv$, it gives
+$P,Q$ have the residues of $23,13$ modulo $uv$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/code/four_primes/residue_classes.py}{calculation in the finite quotient} gives
 $d=168$ and $R=\{42,46,126,130\}$, proving $(A,83,3,2)$ for
 arbitrary $A$. If $Q$ instead has the residues of $67$, then $R$ is
 empty. Already at $449$ the only allowed $H$ is $7$ and
@@ -7807,7 +7799,7 @@ of the four products is $(3^25^27^2\cdot11)^2=121275^2$.
 For even support the only profile with minimum below
 $(2^23^25^2\cdot7)^2=6300^2$ is $(8,4,2,2)$. When two is in a higher
 position the dyadic $(9,5)$ box at the two higher primes and the lift of one
-square to a cube cover all $a\le9,b\le5$. Both placements are proved in Section~\ref{fam:W:dyadic-boxes}.
+square to a cube cover all $a\le9,b\le5$. The two placements follow from the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fam:M:8.15} and the lift in the paragraph \hyperref[fam:W:dyadic-boxes]{The two dyadic exponent boxes}.
 The next possible exponents have $a\ge10$ or $b\ge6$. When two is
 in a lower position the product is already at least $(2\cdot3^45^2
 \cdot7)^2$. Taking square roots after rounding odd valuations upwards
@@ -7823,7 +7815,7 @@ the covered families include every divisor. A prime then occurs to height
 at least three in $N$, or two primes occur to height at least two, so
 $N\ge p^2P$. Six primes give the last row immediately.
 
-Taking column minima gives $29160000$, $6087156075$, $5400$ and $121275$.
+Taking column minima gives $29160000$, $6087156075$, $5400$ and $121275$. Appendix~\ref{app:bounds-code} gives an optional \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/check_dimension_bounds.py}{arithmetic check} of this comparison.
 WGT descends from the center, and $4\nmid D$ when $Q(D)$ is odd, so the
 solvability argument of Corollary~\ref{thm:sq30030} applies to both odd
 columns. For a strictly weakly integral category the canonical dimension
@@ -7957,7 +7949,7 @@ In ranks nine and eleven the codegrees consist of a distinguished $D$
 and equal pairs \cite[Proposition~8.5]{ABDPIntegral}. With minimum
 seven, their largest possible $D$ is respectively $105$ and $22155$,
 below the odd threshold in Theorem~\ref{thm:uniform-new-bounds}.
-Here are the details of the short reciprocal computations in this proof.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/code/verify_small_ranks.py}{reciprocal enumeration} for ranks six, nine and eleven proceeds as follows.
 If the outstanding sum is $a/b$ and the remaining total weight is $h$,
 the next nonfinal denominator $x$ of weight $w$ satisfies
 $wb/a<x\le hb/a$ and leaves $(ax-wb)/(bx)$. Take denominators in
@@ -8684,8 +8676,8 @@ $\sqrt Q$ for every remaining term. Summing at $23$ kills the zero
 position and yields a common Gauss sum of modulus $\sqrt{23}$ times
 $\sum_{j=1}^3 m_j\overline{\chi(a_j)}$, where $m_j$ counts the
 letters with $7$-part $\eta$ at $a_j$. Thus $\sum_jm_j\ge19$.
-For the four choices $c=0,1,3,14$ of origin in the affine
-representative, use the character sending the primitive root $5$
+For each origin $c=0,1,3,14$ in the affine representative found by the
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/word_closure.py}{four-position enumeration}, use the character sending the primitive root $5$
 to $\exp(2\pi i k/22)$ with $k=18,7,11,9$, respectively. At the
 three other points shifted by $-c$, its exponents modulo $22$
 are respectively
@@ -9958,7 +9950,7 @@ small scalar bounds suffice (at $j=2$, $r>2q$). At $j=3$ and
 $r\le33$ we have $r>3q$, so the only possible $q$ is $7$ and thus
 $p=5$, incompatible with $q^3\ge p^4$.
 
-For $p=5,q=7$ and $r=29,31$, Corollary~\ref{fam:A:strips} gives $W(r,4)$, so both companion exponents are unrestricted.
+For $p=5,q=7$ and $r=29,31$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/exposed_support.py}{four-position calculation} in Corollary~\ref{fam:A:strips} gives $W(r,4)$, so both companion exponents are unrestricted.
 For $p=5,q=7,r=23$ the word bound $W(23,4)$ remains undecided.
 Nevertheless $e_7=2$ and $e_{23}=11$, so
 Proposition~\ref{found:C:key:prop:sexticrect} excludes isolation at five for
@@ -9982,8 +9974,7 @@ At $p=5$ the sole assignment left by these tests is $(q,r)=(7,23)$.
 \begin{proof}
 In the three lines $r>p^2$, and $1+\lfloor p^2/q\rfloor$ is at
 most $2,4,5$, respectively. At two positions use Theorem~\ref{found:S:4.1}.
-At four positions use Corollary~\ref{fam:A:strips}. At five positions use the calculation in Corollary~\ref{fam:A:strips} at
-$53,59,61$ and the scalar bound from $67$ onward.
+For four and five positions use the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/exposed_support.py}{exposed-support calculations} of Corollary~\ref{fam:A:strips}. At five positions these give the cases $53,59,61$; the scalar bound applies from $67$ onward.
 For the quartic the only smaller triple at $p=3$ is $(3,5,7)$,
 where $r<2q$. At $p=5$, $r<29$ gives $r<3q$ except for $(q,r)=(7,23)$.
 Both ratio tests follow from Theorem~\ref{fam:Q:1.2}.
@@ -10480,10 +10471,10 @@ For arbitrary nonnegative $A,B$, all divisors of $p^Aq^Br^4d$ are
 WGT dimensions whenever $11\le p<q<r<7q$ are primes and $q\ge29$.
 \end{corollary}
 \begin{proof}
-The range $r<6q$ is covered by Corollary~\ref{fam:A:strips}. In the remainder,
+For $r<6q$, use the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/exposed_support.py}{exposed-support calculation} of Corollary~\ref{fam:A:strips}. In the remainder,
 $r>6q\ge174$ gives $r\ge179$, and $1+\lfloor r/q\rfloor=7<p$.
-Proposition~\ref{found:S:key:prop:sevenword} excludes the first alternative
-of Proposition~\ref{fam:Q:3.1}; the second is excluded by $7<p$, as in the proof
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/short_words.py}{four-pair calculation} in Proposition~\ref{found:S:key:prop:sevenword}, together with its scalar bound, excludes the first alternative
+of Proposition~\ref{fam:Q:3.1}. The second is excluded by $7<p$, as in the proof
 of Theorem~\ref{fam:Q:1.2}.
 \end{proof}
 \subsubsection{Extension to smaller middle primes}
@@ -12608,8 +12599,7 @@ we obtain
                           n_Xn_Y\le3.
 \]
 Indeed the three nonzero positions all have weight seven. At each of
-the four possible origins in the affine support, Section~\ref{found:C:3}
-provides a nontrivial character at $23$ sending those positions, after
+the four origins in the affine support classified by the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/word_closure.py}{enumeration in Proposition~\ref*{found:C:3.3}}, Section~\ref{found:C:3} provides a nontrivial character at $23$ sending those positions, after
 rotation, into an arc spanning at most four steps modulo $22$, of length $4\pi/11$. A multiplicative
 Gauss sum of modulus $\sqrt{23}$ consequently gives a Fourier coefficient
 of modulus at least $21\sqrt{23}\cos(2\pi/11)$. On the other hand
@@ -14330,7 +14320,7 @@ In each row at most two entries of $L$ could be five-active. Hence the pure five
 \begin{proof}[Proof of Theorem~\ref{por:ranktheorem}]
 The \hyperref[por:rank-upper]{three row-norm estimates} on p.~\pageref{por:rank-upper} give the upper bound. The character-field assertions follow from Theorem~\ref{por:th:no-twelve}, Proposition~\ref{por:field600} and its \hyperref[por:field600-sep]{separated-case refinement}; Proposition~\ref{por:prop:cap675} bounds $m_{675}$.
 
-For the lower bounds, the \hyperref[por:two-ternary-fibers]{two disjoint ternary fibers} each contain \hyperref[por:24-joint]{at least $24$ labels}. If $10$ is missing, the \hyperref[por:five-inactive-orbits]{five inactive orbits} give $40$ five-active labels. The degree budget and congruences in the second row's proof give $R\ge95$ and $R\ge127$ if $m_{900}=0$. Section~\ref{por:certificate} tests the degree multisets and the two disjoint fiber norms \eqref{por:eq:two-fiber-norms}; only five rank-$100$ profiles remain. Their \hyperref[por:five-survivors]{incompatible tame phases} exclude all five. At $R=101$ the same budget gives $m_{900}\ge21$; Theorem~\ref{por:th:no-twelve} bounds each orbit by six, Corollary~\ref{por:cor:thirteen} bounds the multiplicity at one twist, and Corollary~\ref{por:th:joint-at-ninehundred} allows at most three rows missing the joint sector.
+For the lower bounds, the \hyperref[por:two-ternary-fibers]{two disjoint ternary fibers} each contain \hyperref[por:24-joint]{at least $24$ labels}. If $10$ is missing, the \hyperref[por:five-inactive-orbits]{five inactive orbits} give $40$ five-active labels. The degree budget and congruences in the second row's proof give $R\ge95$ and $R\ge127$ if $m_{900}=0$. In Section~\ref{por:certificate}, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/check_frontier_rank.py}{rank enumeration} tests the degree multisets and the two disjoint fiber norms \eqref{por:eq:two-fiber-norms}. It leaves five profiles, all of rank~$100$. Their \hyperref[por:five-survivors]{incompatible tame phases} exclude all five. At $R=101$ the same budget gives $m_{900}\ge21$; Theorem~\ref{por:th:no-twelve} bounds each orbit by six, Corollary~\ref{por:cor:thirteen} bounds the multiplicity at one twist, and Corollary~\ref{por:th:joint-at-ninehundred} allows at most three rows missing the joint sector.
 \end{proof}
 
 \section{The unbraided boundary in dimension \texorpdfstring{$5400$}{5400}}
@@ -14980,6 +14970,20 @@ the isolated vertices of $\Gamma(140)$ through two. In dimension
 $4qr$ with $q,r$ distinct odd primes, integral modular categories
 are pointed \cite[Theorem~3.1]{BGNPW}. Every fusion category of
 this dimension is WGT by applying Theorem~\ref{thm:three} to its center.
+
+\section*{Code, data and certificates}
+\addcontentsline{toc}{section}{Code, data and certificates}
+\label{sec:code-data-certificates}
+The verification programs, their inputs and the certificates are available at\\
+\url{https://github.com/sebastienpalcoux/WGT-fusion-categories}.
+
+To reproduce a calculation, look up its theorem or subsection in the
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/manifest.json}{verification manifest}.
+Each entry gives the hypotheses, the command to run from the
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/code}{\texttt{code/}} directory, and the expected output.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} directory contains the published rank-$15$ input.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/certificates.json}{witness file}
+records the seven terminal trace obstructions of Theorem~\ref{fam:M:8.15} and the five pairs of disjoint fibers at rank $100$ in Section~\ref{por:certificate}.
 
 \section*{Acknowledgments}
 Sebastian Burciu was supported by a grant of the Ministry of Research,

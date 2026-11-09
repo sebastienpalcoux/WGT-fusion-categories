@@ -8,7 +8,7 @@ A shorter paper gives a standalone proof that every weakly integral braided fusi
 | --- | --- |
 | [Verification code](code/README.md) | Commands for the finite arithmetic used in the paper. |
 | [Input data](data/README.md) | The pinned list of 2341 perfect rank-15 dimension types, with provenance and checksum. |
-| [Verification manifest](certificates/manifest.json) | Hypotheses, commands, expected outputs, and locations in the full article for 24 calculations and checks. |
+| [Verification manifest](certificates/manifest.json) | Hypotheses, commands, expected outputs, and locations in the full article for 27 calculations and checks. |
 | [Explicit certificates](certificates/certificates.json) | The terminal trace residues for seven dyadic cases and the two disjoint fibers for each of five rank-100 profiles. |
 
 A short check of the explicit certificates is available from the repository root.
