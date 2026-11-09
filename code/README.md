@@ -7,8 +7,8 @@ Run the commands below from this directory. The [manifest](../certificates/manif
 | Command | What it checks |
 | --- | --- |
 | `python3 check_dimension_bounds.py` | The 16 entries in the proof of Theorem 17.1 and their four column minima. See [the dimension comparison](#dimension-comparison) below. |
-| `python3 check_frontier_rank.py` | The two rank recursions at dimension 29160000 for ranks 95 through 100. They leave five profiles at rank 100 for the tame-phase argument. |
-| `python3 verify_rank_5400.py` | The commutative and noncommutative character profiles at the two lower rank endpoints for simple perfect categories of dimension 5400. |
+| `python3 check_frontier_rank.py` | The recursions in Section 24.4 for ranks 95 through 100 in the one-neutral case at dimension 29160000 with two and five separated. They leave five rank-100 profiles, excluded by the tame-phase argument on page 218. |
+| `python3 verify_rank_5400.py` | The character-block exclusions at rank 10 in the commutative case and rank 12 in the noncommutative case for simple perfect categories under the dimension-5400 hypotheses of Theorem 25.1. |
 | `python3 verify_rank15_published.py` | The smallest formal codegree for each of the 2341 [rank-15 dimension types](../data/published-rank15-perfect.txt) from the [pinned classification](../data/README.md). |
 | `python3 verify_small_ranks.py` | The eight rank-six dimensions at or above 5400 and the reciprocal tuples at odd ranks nine and eleven in Corollary 18.2. |
 | `python3 verify_odd13.py` | The 520 odd reciprocal tuples at rank 13, the 17 passing the cutoff and codegree test, and the two requiring a character calculation modulo seven. |

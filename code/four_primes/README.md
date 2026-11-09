@@ -9,7 +9,7 @@ python dyadic_total_height.py
 for P in 3 5 7 11 13 17 19; do python new_odd.py "$P"; done
 ```
 
-The first command reproduces the seven rows in the proof of “Total height at two higher primes.” In root-height order (2,2), (2,3), (3,2), (2,4), (4,2), the signed vacuum counts are 12, 14, 92, 18 and 365. It prints each surviving negative common term, the residual budget for the dyadic axis, all attainable nonempty trace residues and the excluded residue. Two common exponent pairs share one printed row. The command exits unsuccessfully if a common term survives at both endpoints.
+The first command reproduces the seven rows in the proof of Theorem 9.15, “Total height at two higher primes.” In root-height order (2,2), (2,3), (3,2), (2,4), (4,2), the signed vacuum counts are 12, 14, 92, 18 and 365. It prints each surviving negative common term, the residual budget for the dyadic axis, all attainable nonempty trace residues and the excluded residue. Two common exponent pairs share one printed row. The command exits unsuccessfully if a common term survives at both endpoints.
 
 The second command reproduces the seven odd least-prime columns of the octic window using one test. It charges a dual pair on each of the two mandatory axes and asks whether one admissible common degree can give the required negative sign within both remaining norm budgets. No summation over complete Gram solutions is needed.
 

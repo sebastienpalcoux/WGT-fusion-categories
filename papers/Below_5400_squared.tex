@@ -1366,17 +1366,27 @@ at each phase. If all dyadic twists of the table are $1,i$, the
 category has a nontrivial invertible.
 \end{lemma}
 \begin{proof}
-Let $E$ project onto a full two-block and $Q=sEs^{-1}$, for the
-normalized modular matrix $s$. Both commute with the dyadic group.
-For odd $t$ put $a=1+4t$. In
-$U(2)L(2t)=L(2t/a)H_a U(2/a)$ the torus $H_a$ negates the
-vacuum, since $a\equiv5\pmod8$ and $v_2(D)$ is odd. Taking vacuum
-entries after $Q$, and using $U(1)=\lambda T_2$ with $\lambda^8=1$,
-therefore negates
-$\sum_{j\in E}|s_{0j}|^2\theta_{j,2}^{-2t}$ under
-$t\mapsto t/a$ (the scalar exponents agree modulo eight).
-Averaging over the odd residues equates the squared mass of
-phases $1,-1$ together with that of phases of order four.
+Let $E$ project onto a full two-block $B$ and $Q=sEs^{-1}$.
+Both commute with the dyadic group. Work modulo the dyadic part $2^a$
+of $\ord(T/\gamma)$. This is divisible by eight since the level field
+contains $1/s_{00}=\sqrt D$ and its quadratic discriminant has
+two-part eight. Put $U(1)=\lambda T_2$, with $\lambda=\gamma^{-1}$,
+$\lambda^8=1$ by integrality \cite[Proposition~6.7(ii)]{DLNCongruence}.
+For odd $t$ set $u=1+4t$ and $M(t)=\sum_{j\in B}|s_{0j}|^2
+\theta_{j,2}^{-2t}$. The dyadic torus $H_u$ negates the vacuum:
+$u\equiv5\pmod8$ negates $\sqrt D$ and the complementary Galois
+action is trivial. Since $L(b)=sU(-b)s^{-1}$ we have
+$(QL(2t))_{00}=\lambda^{-2t}M(t)$. The vacuum entry after $Q$ in
+$U(2)L(2t)=L(2t/u)H_uU(2/u)$ therefore reads
+\[
+       \lambda^{2-2t}M(t)=-\lambda^{(2-2t)/u}M(t/u).
+\]
+The exponents differ by $8t(1-t)/u\equiv0\pmod8$.
+The map $t\mapsto t/(1+4t)$ permutes odd residues modulo $2^a$
+with inverse $h\mapsto h/(1-4h)$. Thus the mean of $M(t)$ is
+zero. In this mean phases of order one or two contribute their
+squared mass, phases of order four its negative, and higher
+orders zero.
 
 Every block contains a phase-one label: $W_{2'}^{-1}$ preserves
 dyadic twists, and $s^{-1}\CC^E=W_{2'}^{-1}\CC^E$ has
@@ -1411,8 +1421,8 @@ norm two and dimension two. The remaining coefficient is therefore
 a positive invertible.
 \end{proof}
 
-\begin{proposition}
-There is no ordinary minimal table of dimension $32n^2$.
+\begin{proposition}\label{short:ordinary-dyadic-quintic}
+For $n=3^3 5^2=675$ there is no ordinary minimal table of dimension $32n^2$.
 \end{proposition}
 \begin{proof}
 All complementary witnesses have dyadic defect one. Opposite witnesses
@@ -1601,9 +1611,8 @@ $\chi_H(Y)=\chi_H(Z)=0$ by Lemma~\ref{lem:integral-minimal-extension},
 contrary to $\chi_H(v)^2=4$.
 \end{proof}
 
-\begin{proposition}
-There is no slightly degenerate minimal obstruction of dimension
-$32n^2$.
+\begin{proposition}\label{short:fermionic-dyadic-quintic}
+For $n=3^3 5^2=675$ there is no slightly degenerate minimal obstruction of dimension $32n^2$.
 \end{proposition}
 \begin{proof}
 We first prove that all even dyadic twists are signs. The
@@ -2031,6 +2040,11 @@ Generative AI assisted with the development and drafting of the arguments and wi
 \bibitem{BH}
 M.~Beck and S.~Ho\c{s}ten, \href{https://doi.org/10.4310/mrl.2006.v13.n4.a10}{\emph{Cyclotomic polytopes and growth series of cyclotomic lattices}}, Math. Res. Lett. \textbf{13} (2006), 607--622.
 
+\bibitem{BGNPWSuper}
+P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell and Z.~Wang,
+\href{https://doi.org/10.1007/s10468-019-09873-9}{\emph{Classification of super-modular categories by rank}},
+Algebr. Represent. Theory \textbf{23} (2020), 795--809.
+
 \bibitem{BNRWFinite}
 P.~Bruillard, S.-H.~Ng, E.~C.~Rowell, and Z.~Wang,
 \href{https://doi.org/10.1090/jams/842}{\emph{Rank-finiteness for modular categories}},
@@ -2084,6 +2098,15 @@ S. Gelaki and D. Nikshych, \href{https://doi.org/10.1016/j.aim.2007.08.001}{\emp
 \bibitem{JFR}
 T. Johnson-Freyd and D. Reutter, \href{https://doi.org/10.1090/jams/1023}{\emph{Minimal nondegenerate extensions}}, J. Amer. Math. Soc. \textbf{37} (2024), 81--150.
 
+\bibitem{Malikiosis}
+R.~D. Malikiosis, \href{https://doi.org/10.1017/fms.2022.14}{\emph{On the structure of spectral and tiling subsets of cyclic groups}}, Forum Math. Sigma \textbf{10} (2022), e23.
+
+\bibitem{NSTV}
+S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
+\href{https://doi.org/10.1016/j.jpaa.2018.06.006}{\emph{Applications and homological properties of local rings with
+decomposable maximal ideals}}, J. Pure Appl. Algebra \textbf{223}
+(2019), 1272--1287.
+
 \bibitem{NataleWGT}
 S.~Natale,
 \href{https://doi.org/10.4171/jncg/177}{\emph{On weakly group-theoretical non-degenerate braided fusion categories}},
@@ -2094,30 +2117,16 @@ S.~Natale,
 \href{https://doi.org/10.1142/S0129167X1850012X}{\emph{The core of a weakly group-theoretical braided fusion category}},
 Internat. J. Math. \textbf{29} (2018), no.~2, 1850012.
 
-\bibitem{NSTV}
-S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
-\href{https://doi.org/10.1016/j.jpaa.2018.06.006}{\emph{Applications and homological properties of local rings with
-decomposable maximal ideals}}, J. Pure Appl. Algebra \textbf{223}
-(2019), 1272--1287.
+\bibitem{NSfs}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
 
 \bibitem{NSind}
 S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1007/s00220-010-1096-6}{\emph{Congruence subgroups and generalized Frobenius--Schur indicators}}, Comm. Math. Phys. 300 (2010), 1--46.
-
-\bibitem{NSfs}
-S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
 
 \bibitem{YuSlightlyDegenerate}
 Z.~Yu,
 \href{https://doi.org/10.1016/j.jalgebra.2020.04.022}{\emph{On slightly degenerate fusion categories}},
 J. Algebra \textbf{559} (2020), 408--431.
-
-\bibitem{BGNPWSuper}
-P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell and Z.~Wang,
-\href{https://doi.org/10.1007/s10468-019-09873-9}{\emph{Classification of super-modular categories by rank}},
-Algebr. Represent. Theory \textbf{23} (2020), 795--809.
-
-\bibitem{Malikiosis}
-R.~D. Malikiosis, \href{https://doi.org/10.1017/fms.2022.14}{\emph{On the structure of spectral and tiling subsets of cyclic groups}}, Forum Math. Sigma \textbf{10} (2022), e23.
 
 \end{thebibliography}
 

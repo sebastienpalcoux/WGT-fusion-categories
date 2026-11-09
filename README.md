@@ -1,8 +1,8 @@
 # WGT for fusion categories
 
-*Prime factors of fusion-category dimensions: weak group-theoreticity and decomposition*, by Sebastian Burciu, Jingcheng Dong and Sébastien Palcoux. [Full article (PDF)](papers/Manuscript.pdf) · [TeX source](papers/Manuscript.tex)
+*Prime factors of fusion-category dimensions: weak group-theoreticity and decomposition*, by Sebastian Burciu, Jingcheng Dong and Sébastien Palcoux. [Full article (PDF, 229 pages)](papers/Manuscript.pdf) · [TeX source](papers/Manuscript.tex)
 
-A shorter paper gives a standalone proof that every weakly integral braided fusion category of dimension below 5400² is weakly group-theoretical. Its finite arithmetic can be checked by hand. [Short paper (PDF, 29 pages)](papers/Below_5400_squared.pdf) · [TeX source](papers/Below_5400_squared.tex)
+A shorter paper proves that every weakly integral braided fusion category of dimension below 5400² is weakly group-theoretical. Applying this result to the Drinfeld center gives the bound 5400 without a braiding assumption. The proof develops the shared principal-block and local Weyl arguments and gives all finite arithmetic in a form that can be checked by hand. [Short paper (PDF, 29 pages)](papers/Below_5400_squared.pdf) · [TeX source](papers/Below_5400_squared.tex)
 
 | Material | Contents |
 | --- | --- |
@@ -23,4 +23,4 @@ A short check of the explicit certificates is available from the repository root
 python3 code/verify_witnesses.py
 ```
 
-It tests the recorded residue and norm conditions. The completeness of both lists is checked separately by the enumeration programs in the manifest. The final rank-100 obstruction uses the mathematical argument on tame twists.
+It tests the recorded residue and norm conditions. The enumeration programs in the manifest recover the complete lists under the hypotheses of the corresponding proofs. Section 24.4 of the full article excludes the five remaining rank-100 profiles by showing that two quartets of different degrees would have to have equal degree.

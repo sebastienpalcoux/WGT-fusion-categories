@@ -15,9 +15,13 @@
 \newtheorem{question}[theorem]{Question}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{jointideallemma}{Lemma}
+\renewcommand{\thejointideallemma}{\thetheorem\alph{jointideallemma}}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{conjecture}[theorem]{Conjecture}
 \newtheorem{example}[theorem]{Example}
+\newtheorem{ratioprop}{Proposition}
+\renewcommand{\theratioprop}{\thetheorem\alph{ratioprop}}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\C}{\mathcal C}
@@ -102,9 +106,9 @@ None & $D$ odd and $D<121275$ & Solvable\\\bottomrule
 \end{tabular}
 \end{table}
 
-An independent \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.pdf}{29-page proof} of the braided bound $D<5400^2$ gives all its arithmetic in a form that can be checked by hand.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.pdf}{companion paper} proves the braided bound $D<5400^2$ directly, using the same principal-block and local Weyl arguments. Its treatment of the remaining dimensions uses short residue and norm calculations that can be checked by hand.
 
-The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Using the cyclotomic estimates of Section~\ref{found:group:support}, Sections~\ref{found:group:uniform}--\ref{found:group:odd} treat dimensions $p^6q^6r^4$ for arbitrary distinct primes, and Sections~\ref{found:group:degrees}--\ref{sec:unbraided-5400} treat the two boundary dimensions. The slightly degenerate branch is excluded throughout that family. At its least member a modular obstruction has rank between $101$ and $46774$. At dimension $5400$ a non-WGT fusion category which is itself simple and perfect has rank between $11$ and $462$ when its fusion ring is commutative, and between $13$ and $490$ otherwise. In arbitrary dimension a nontrivial simple perfect integral modular category has rank at least $16$, or $27$ in odd dimension. A non-WGT perfect integral fusion category has rank at least $7$, and every nontrivial odd-dimensional perfect integral fusion category has rank at least $15$ (Corollary~\ref{cor:all-dim-rank}).
+The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Using the cyclotomic estimates of Section~\ref{found:group:support}, Sections~\ref{found:group:uniform}--\ref{found:group:odd} treat dimensions $p^6q^6r^4$ for arbitrary distinct primes, and Sections~\ref{found:group:degrees}--\ref{sec:unbraided-5400} treat the two boundary dimensions. The slightly degenerate branch is excluded throughout that family. At its least member a modular obstruction has rank between $101$ and $46774$. At dimension $5400$ a non-WGT fusion category which is itself simple and perfect has rank between $11$ and $462$ when its fusion ring is commutative, and between $13$ and $490$ otherwise. In arbitrary dimension we exclude rank $15$ for a nontrivial simple perfect integral modular category, giving rank at least $16$. In odd dimension the bound $27$ is due to Dong and Palcoux \cite[Corollary~1.3]{DPLCM}. A non-WGT perfect integral fusion category has rank at least $7$, and every nontrivial odd-dimensional perfect integral fusion category has rank at least $15$ (Corollary~\ref{cor:all-dim-rank}).
 
 A different application concerns braided decomposition. For composite square-free $L$, Section~\ref{sec:coprime-core} characterizes the existence of a prime integral WGT modular category of dimension $L^2$ by a signed divisibility graph. For example, at $L=5\cdot7\cdot29$ the two possible edges require opposite signs at $29$, since $5\mid29+1$ and $7\mid29-1$. Every integral modular category of this dimension therefore splits.
 
@@ -150,6 +154,28 @@ The characters take algebraic-integer values. The unit-coefficient trace is
 \begin{equation}\label{eq:fusion-coefficient-trace}
  \tau(B)=\sum_X\chi_X(B)/f_X .
 \end{equation}
+
+\begin{table}[ht]
+\centering\small
+\caption{Hypotheses used in passing from character data to dimension and rank bounds.}
+\label{tab:proof-inputs}
+\begin{tabular}{@{}p{.27\linewidth}p{.66\linewidth}@{}}\toprule
+Input & Consequence and use\\\midrule
+Fusion ring with cyclotomic character values
+& A rational codegree $f$ bounds the different and gives conductor dividing $2f$
+(Theorem~\ref{lem:codifferent}, Corollary~\ref{cor:field-conductor}).\\
+Such a ring with symmetric integral character data
+& Unsigned Galois covariance in both indices and character orthogonality sharpen the conductor bound to $f$
+(Theorem~\ref{por:th:exact-conductor}).\\
+Integral braided category
+& The LCM energy estimate of Proposition~\ref{prop:braided-lcm} includes the contribution of the symmetric center; the modular case uses the estimate of Dong and Palcoux \cite{DPLCM}.\\
+Modular category or category with transparent fermion
+& Rotations and congruence give principal-block orthogonality (Theorem~\ref{thm:block}); at two the positive reduced table uses squared twists.\\
+Integral modular category
+& The congruence action connects character fields to joint twist components (Theorem~\ref{found:C:7.1}). At the first open dimension, its orbit and phase restrictions enter the rank bound (Theorem~\ref{por:ranktheorem}).\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{proposition}[LCM energy and prime companions]\label{fam:M:2.2}\label{prop:braided-lcm}
 Let $\C$ be integral braided, with its positive ribbon structure, and let $S$
@@ -1353,6 +1379,33 @@ since $Z\mapsto Z^*$ permutes the basis and preserves dimensions.
 A $q$-free member of $E$ is $p$-inactive, so its twist is one.
 \end{proof}
 
+\begin{lemma}[Lifting a positive singleton at two]\label{lem:fermion-singleton-lift}
+Let $g$ be a fermion in an integral modular category $\M$ with its positive spherical
+structure and even
+sector $\mathcal B=\langle g\rangle'$. Suppose the pair $[X]=\{X,gX\}$
+is alone in its block of $R_+=\K(\mathcal B)/(g-1)$ at two. The full
+two-block over this residue consists of $X,gX,Y,gY$ with $Y$ odd,
+$gY\ne Y$ and $d_Y=d_X$. If $S_{XV}\ne0$ and $V$ is odd, then
+$\theta_{V,2}=\theta_{Y,2}$.
+\end{lemma}
+\begin{proof}
+In characteristic two the residue on $\K(\mathcal B)$ determines the
+residue on each odd $V$, since $V^2$ is even and squaring in the residue
+field is injective. Thus there is a single full block over this residue.
+The identical special fibers of $R_+$ and $R_-$ have corresponding lifted
+block summands of equal rank (Lemma~\ref{lem:fermion-quotients}). The
+signed block therefore has one character, or equivalently one odd
+fermion orbit. Apply Theorem~\ref{thm:block} on the full block to the
+columns $1,g$, whose dyadic twists are opposite. Since
+$S_{gZ}=\pm d_Z$ according to the sector, the odd squared mass equals
+the even mass $2d_X^2$. A fixed label would have $d_Y^2=2d_X^2$,
+impossible for integer degrees. The odd orbit is consequently free of
+degree $d_X$. In $s^{-1}=W_{2'}^{-1}W_2^{-1}$ the dyadic Weyl preserves
+the block and the complementary Weyl preserves sector and actual dyadic
+twist. The two odd mates have equal actual twists by balancing, which
+proves the support assertion.
+\end{proof}
+
 \section{Ramification and higher defects}\label{fam:M:sec:5}\label{sec:higher-defect}
 The defect of $X$ at $p$ is $v_p(f_X)$. At a quartic prime the
 complementary labels of Lemma~\ref{three:complementary} have defect
@@ -2158,8 +2211,8 @@ each nonzero entry $w_{iz}$ of $W_q^{\pm1}$ satisfies
   -\lfloor(a-1)/2\rfloor,&a\ge1 .
  \end{cases}
 \]
-Consequently $W_qe_0$ is $p$-integral if $v_p(f_z)\le2$ for all
-$q$-active $z$.
+If $v_p(f_z)\le2$ for every $q$-active label $z$, all entries of
+$W_q^{\pm1}$ are integral at every prime above $p$.
 \end{theorem}
 
 \begin{proof}
@@ -2210,11 +2263,148 @@ gives $a+2v(w_{iz})\ge0$, strictly if $a>0$. The valuation
 $v(w_{iz})$ is integral by unramifiedness, proving the bound also
 for $W_q=Hw$.
 
-Finally $W_qT_qW_q^{-1}e_0$ equals $e_0$ plus the sum over active
-$z$ of $(\theta_{z,q}-1) W_q e_z\,\overline{(W_q)_{0z}}$.
-Under the stated hypothesis each term is $p$-integral at every
-prime above $p$. The same local unipotent identity, applied to
-$e_0$, gives $p$-integrality of $W_q^{-1}e_0=W_qe_0$.
+Work in a cyclotomic splitting field $K$ and put
+$R=\bigcap_{\mathfrak p\mid p}\OO_{K,\mathfrak p}$.
+The column bound puts $w_z=W_q e_z$ in $R^{\Irr(\mathcal C)}$
+for every $q$-active $z$ when $v_p(f_z)\le2$. Complex conjugation
+permutes the primes above $p$, so the entries of $w_z^*$ also lie in $R$.
+By unitarity,
+\[
+ W_q T_q W_q^{-1}=I+\sum_{z\text{ active at }q}
+              (\theta_{z,q}-1)w_z w_z^* .
+\]
+Thus $W_q U_q W_q^{-1}$ has entries in $R$, since $U_q$ differs from
+$T_q$ by a root of unity. The unipotent identity above gives the
+assertion for $W_q^{-1}$, and taking the adjoint gives it for $W_q$.
+\end{proof}
+
+\begin{lemma}[The tetrahedral Weyl matrix]\label{lem:tetrahedral-weyl}
+Let $u$ be a $3$-cycle and $w$ a nonidentity element of the normal Klein four-group $K$ in $A_4$.
+A unitary representation of $A_4$ of dimension at most four is a sum of characters of $A_4/K$, or consists of one tetrahedral summand $T$ and at most one such character.
+In the latter case $T$ has one line at each $u$-eigenvalue. In a suitable orthonormal basis of these lines the matrix of $w$ on $T$ is $2J/3-I$, where $J$ has all entries one. On any character summand $w$ acts by one.
+If $T$ occurs and the $u$-fixed space is two-dimensional with orthonormal basis $v,v'$, and $x=\|P_Tv\|^2$, then
+\[
+ |\langle v',wv\rangle|^2=\tfrac{16}{9}x(1-x).
+\]
+\end{lemma}
+\begin{proof}
+The three nontrivial characters of $K$ are cycled by $u$. Choose a unit vector $b$ of the unique nontrivial $K$-character taking the value $+1$ on $w$, if this character occurs. Then $b,ub,u^2b$ lie in mutually orthogonal character spaces and span an invariant copy of $T$. Its orthogonal complement has dimension at most one. If no such character occurs, $K$ acts trivially throughout. On the displayed basis $w$ has signs $(1,-1,-1)$. For $\omega=\exp(2\pi i/3)$, the vectors $3^{-1/2}\sum_{j=0}^2\omega^{-kj}u^jb$ diagonalize $u$. The projector onto $\CC b$ has matrix $J/3$ in that basis, giving the formula for $w$. On the two-dimensional fixed space the compression of $w$ is $I-4P_T/3$, where $P_T$ restricts there to a rank-one projection. Its off-diagonal entry gives the asserted square.
+\end{proof}
+
+\subsection{Conductor, local Weyl coefficients and twist masses}
+\label{por:tools}
+For an integral modular category put $d_Z=\FPdim Z$, $f_Z=D/d_Z^2$, $s=S/\sqrt D$ and $\chi_Z(Y)=S_{ZY}/d_Z$. We use the positive spherical structure, and the lift of Lemma~\ref{lem:local-vacuum-column} with normalization scalar $\gamma$ of dyadic order and $\gamma^3=\xi$, the multiplicative central charge. All uses of Frobenius--Schur indicators below concern actual categories.
+Let $\mathcal C$ be an integral modular category of dimension $D=n^2$. For any integer $m\ge1$ put
+\[
+             M_m(Z)=\sum_Y d_Y\chi_Z(Y)\theta_Y^m.
+\]
+For a set $J$ of primes in the level write $W_J$ for the product of its local Weyl operators in the normalized congruence representation, and $\theta_{Y,J}$ for the $J$-part of $\theta_Y$.
+\begin{theorem}\label{por:th:weyl-div}
+For all $m,Z$, the number $|M_m(Z)|^2/D$ is an algebraic integer. For every $J,Z$,
+\[
+             k_{J,Z}:=\frac n{d_Z}(W_J e_0)_Z\in\mathbb Z .
+\]
+More precisely, if $m$ is one on the local levels in $J$ and zero on the complementary levels, then $M_m(Z)=n\gamma_J^3\theta_{Z,J}^{-1}k_{J,Z}$, with $\gamma_J$ the $J$-part of the normalization scalar. Every prime $q$ outside $J$ dividing $f_Z$ also divides $k_{J,Z}$.
+\end{theorem}
+\begin{proof}
+Extend $\nu_m$ linearly to virtual objects with cyclotomic integer coefficients; its values are integral because each simple indicator is a finite-order trace. For every $B$, inserting Verlinde into the Ng--Schauenburg formula \cite[Theorem~7.5 and Remark~7.6]{NSfs} gives $\nu_m(B)=\sum_Y\chi_Y(B^*)|(sT^ms e_0)_Y|^2$, where $*$ extends duality linearly. The two factors are conjugate since $X,X^*$ have the same twist. For $B=\sum_X\chi_Z(X)[X]$ the coefficient at $Y$ is
+\[
+              \sum_X\chi_Z(X)\chi_Y(X^*)=f_Z\mathbf1_{Y=Z}.
+\]
+Thus $\nu_m(B)=f_Z|(sT^ms e_0)_Z|^2=|M_m(Z)|^2/D$.
+
+For the indicated $m$, $sT^m s e_0=sT^m s^{-1}e_0$ since charge conjugation fixes the vacuum. Only the $J$-local upper unipotent occurs in the middle of the latter word, apart from the scalar $\gamma_J$. The matrix identity $W U W^{-1}=U^{-1}W^{-1}U^{-1}$ in each selected factor shows that its $Z$-coordinate is $\gamma_J^3\theta_{Z,J}^{-1}(W_J^{-1}e_0)_Z$. The vectors $W_J^{-1}e_0=W_J e_0$ are rational in square dimension (Lemma~\ref{lem:local-vacuum-column}). Since the same coordinate equals $d_Z M_m(Z)/D$, the claimed expression for $M_m(Z)$ follows with rational $k_{J,Z}$. Its square is an algebraic integer by the first assertion, proving integrality.
+
+For a prime $q$ the rotation identity \cite[(5.4) and proof of Theorem~5.1, pp.~75--76]{NSpivot} gives
+$\nu_{qv}(X)^q\equiv\nu_v(X^{\otimes q})$ at a prime above $q$: trace to the $q$th power agrees in the residue field with trace of the $q$th power, and rotation by $q$ places is rotation by one block of length $q$. This extends to every cyclotomic-integral virtual $B$ by additivity and the Frobenius homomorphism in the commutative fusion ring modulo $q$. If $q\notin J$, choose the CRT parameter in the form $m=qv$. The above $B$ equals $f_Z$ times a primitive idempotent (at $Z^*$), hence $B^q=f_Z^{q-1}B$. For $q\mid f_Z$ the congruence now gives $k_{J,Z}^{2q}\equiv0$ at that prime, proving $q\mid k_{J,Z}$.
+\end{proof}
+
+\begin{proposition}\label{por:prop:separated-high-row}
+Let $p,q$ be separated twist primes in a perfect fusion-simple integral modular category of square dimension. At a nonunit $Z$ suppose $a=p^{v_p(n/d_Z)}>1$, $b=q^{v_q(n/d_Z)}>1$, and all other primes of $n$ occur to full height in $d_Z$. Let $L_p,L_q$ bound the degrees of $p$-active and $q$-active labels, respectively. Put $f=f_Z$. Then
+\[
+             2L_p(f-1)\ge nb^2,\qquad 2L_q(f-1)\ge na^2.
+\]
+\end{proposition}
+\begin{proof}
+Separation forces full $q$-height on $p$-active degrees and full $p$-height on $q$-active degrees. The deficiencies at both primes, together with full height elsewhere, therefore give $\theta_Z=1$. Each other active prime misses the row $Z$ by defect-zero vanishing. Write $b_Y=\chi_Z(Y)$ and put
+\[
+   H_t=\sum_Y d_Y b_Y(\theta_{Y,t}-1)\quad(t=p,q).
+\]
+By $\sum d_Yb_Y=0$, Theorem~\ref{por:th:weyl-div} gives $H_t=n\gamma_t^3k_{t,Z}$. Every nonzero hit with nontrivial twist has only one of the two components, hence $H_p+H_q=n\xi$ by the vacuum modular relation, where $|\xi|=1$ and $\xi$ is a root of unity. At $p$-active labels, $q^{v_q(n)}\mid d_Y$ and $b\mid b_Y$ by lcm integrality. Thus $b\mid k_{p,Z}$; similarly $a\mid k_{q,Z}$. Neither integer vanishes: the other would then have absolute value one, violating its divisibility. On the $p$-active labels, a union of Galois orbits, the integral entries $b_Y/b$ satisfy $\sum |b_Y/b|\le\sum |b_Y/b|^2$. Indeed every nonzero orbit has mean square at least one by the absolute norm, followed by Cauchy--Schwarz. Consequently
+\[
+      nb\le |H_p|\le2L_p\sum_{Y\ p\text{-active}}|b_Y|
+                  \le 2L_p(f-1)/b ,
+\]
+with one unit of squared norm reserved for the vacuum. Interchanging $p,q$ proves the other inequality.
+\end{proof}
+
+\paragraph{A two-variable integer test.}
+The magnitude bounds can be combined with the phase equation. Under the hypotheses of Proposition~\ref{por:prop:separated-high-row}, there are nonzero integers $u\in b\ZZ$ and $v\in a\ZZ$ such that
+\[
+           u+v=1,\qquad
+           \frac n2\left(\frac{b|u|}{L_p}+\frac{a|v|}{L_q}\right)
+                   \le f-1 .
+\]
+In particular $\xi=\pm1$ in this situation. Indeed if both primes are odd, $\gamma_p=\gamma_q=1$ so the phase equation is $k_{p,Z}+k_{q,Z}=\xi$, an integer of modulus one. If $p=2$, it is $\xi k_{p,Z}+k_{q,Z}=\xi$; as $k_{q,Z}\ne0$ both sides force $\xi$ real. The other case follows on interchanging the primes. Absorb these signs into $u,v$ to obtain $u+v=1$. The estimate for $H_p$ in the proof gives a squared row norm of at least $nb|u|/(2L_p)$ on the $p$-active sector, and likewise for $q$. The two sectors are disjoint and omit the vacuum. This proves the test. For fixed $a,b$ the minimum on the left is elementary: solve $u\equiv0\pmod b$, $u\equiv1\pmod a$, and take the solution on each side of $[0,1]$ nearest to it. Thus the test applies to prime decomposition forms without choosing individual simple labels.
+The same argument bounds the total number of deficient rows. Fix the primes and $n$ in Proposition~\ref{por:prop:separated-high-row}, but let $Z$ range over all nonunit labels with the two indicated deficiencies and full height elsewhere. Since $k_{p,Z}$ is a nonzero multiple of $q^{v_q(n/d_Z)}$, the unit norm of $W_pe_0$ gives
+\[
+           \sum_Z p^{2v_p(d_Z)}<p^{2v_p(n)},\qquad
+           \sum_Z q^{2v_q(d_Z)}<q^{2v_q(n)} .
+\]
+For strictness, equality would put $W_pe_0$ entirely on those twist-one labels. This vector and $e_0$ then have the same eigenvalue for the local upper unipotent $U_p$. Since $W_p^2e_0=e_0$ and $W_p^{-1}e_0=W_pe_0$, the local identity $W_p U_p W_p^{-1}=U_p^{-1}W_p^{-1}U_p^{-1}$ applied to $e_0$ forces $W_pe_0$ proportional to $e_0$, contradicting its nonunit support. The strict bound for $q$ follows in the same way.
+
+\paragraph{The last dyadic conductor level.}
+Write $f_Z$ for the formal codegree and $K_Z$ for the character field at a label $Z$.
+
+\begin{theorem}[Conductor at an individual label]\label{por:th:exact-conductor}
+Let a commutative fusion ring have symmetric integral character data satisfying \eqref{eq:wgt-modular-data} and \eqref{eq:galois-permutations}, with cyclotomic algebraic-integer character values. Then the conductor of $K_Z$ divides $f_Z$. In particular the conductor of the lcm-normalized $XY$ crossing divides $\gcd(f_X,f_Y)$. In ordinary data, if the dyadic part of a twist has order $2^v$ with $v\ge4$, then $2^{v-1}\mid f_X$ for its label $X$.
+\end{theorem}
+\begin{proof}
+The different bound (Corollary~\ref{cor:field-conductor}) already puts $K_Z$ in a cyclotomic field of conductor dividing $2f_Z$. It remains to remove its last possible dyadic level. Put $m=2^{v_2(f_Z)}$. There is nothing to check for $m=1$. Take $L=F(\zeta)$ with $F$ an odd cyclotomic field large enough and $\zeta$ primitive of order $2m$. Suppose the dyadic conductor is $2m$. In $G=(\mathbb Z/2m)^\times$ the stabilizer $H$ of the row does not contain $e=1+m$, since the fixed field of $e$ is $F(\zeta^2)$.
+
+Write $b_Y=\chi_Z(Y)=\sum_{k=0}^{m-1}z_{kY}\zeta^k$. The coefficients belong to $\mathcal O_F$ by coprimality of conductors. The orthogonality of the $m$ odd powers of $\zeta$ gives
+\[
+ z_{1Y}=m^{-1}\sum_{g\in G}\zeta^{-g}\chi_{gZ}(Y).
+\]
+Different rows in this sum are orthogonal; the squared norm of each is $f_Z$. Thus
+\[
+ \sum_Y|z_{1Y}|^2=\frac{f_Z}{m^2}\sum_{h\in H}\sum_{g\in G}\zeta^{g(h-1)}
+                 =\frac{f_Z}{m}.
+\]
+Indeed the inner geometric sum vanishes unless $h=1$ or $h=e$, and only $1$ belongs to $H$. Lift $e$ to the common splitting field, trivially on $F$. Its permutation of the argument labels sends $z_{1Y}$ to $-z_{1Y}$. Every cycle on the nonzero coefficients therefore has even length and contributes to $2\mathcal O$ in the squared norm. This contradicts oddness of $f_Z/m$. Symmetry gives the crossing assertion. For the twist assertion, Theorem~\ref{thm:twistdiv} puts $\mathbb Q(\zeta_{2^{v-1}})^+$ in $K_X$ by the square action whenever $v\ge4$. Its conductor is $2^{v-1}$; the normalization scalar has order at most eight, hence does not affect this conclusion.
+\end{proof}
+\paragraph{Squared mass at a prescribed twist.}
+Write $D=n^2$, $R=\operatorname{rank}\mathcal C$, $\tau_j=\sum_X d_X^2\theta_X^j$, and $M_t=\sum_{\theta_X=t}d_X^2$. The following argument uses the genuine second indicator of the category. It applies to an integral modular category with its positive spherical structure.
+
+\begin{proposition}\label{por:pr:fejer}
+Put $B=\sum_X d_X\nu_2(X)$. Then $B$ is a nonnegative integer,
+$B\le\sum_{X=X^*}d_X\le n\sqrt R$, and for every unit complex number $t$,
+\[
+  9 M_t\le 3D+4\operatorname{Re}(\bar t\tau_1)
+                    +2\operatorname{Re}(\bar t^2\tau_2)
+         \le 3D+4n+2n\sqrt B.
+\]
+More generally, if the twist exponent is prime to all integers $1,\ldots,k-1$, then $M_t\le (D+(k-1)n)/k$.
+\end{proposition}
+\begin{proof}
+Multiply the Ng--Schauenburg formula for $\nu_2(X)$ by $d_X$, sum on $X$, and use $\sum_X N_{UV}^X d_X=d_Ud_V$. This gives $DB=|\tau_2|^2$. The indicator bounds follow from its values $0$ off the self-duals and $\pm1$ on them. Sum $d_X^2|1+w+w^2|^2$ with $w=\bar t\theta_X$. Its value at $w=1$ is nine and every summand is nonnegative. Expanding proves the assertion since $|\tau_1|=n$. In the last assertion use $|1+w+\cdots+w^{k-1}|^2$ in the same way. For each indicated $j$ an automorphism takes $\tau_1$ to $\tau_j$, and $\tau_1$ is $n$ times a root of unity.
+\end{proof}
+
+\paragraph{Degree sums for a prime-power codegree.}
+Let a row $Z$ have formal codegree a power of $p$ and $p\mid d_Z$. All its nonzero entries lie in $P_p$ (Theorem~\ref{thm:principal-support}). For every degree $d$ with $v_p(d)\ge v_p(d_Z)$,
+\[
+                 \sum_{d_Y=d}\chi_Z(Y)\in p\ZZ.
+\]
+Indeed in $P_p$ the algebraic integer $\chi_Y(Z)$ is zero modulo the prime above $p$; by symmetry the same holds for $\chi_Z(Y)=(d/d_Z)\chi_Y(Z)$. The sum over a degree is rational by Galois covariance. Applying any rational linear functional of value one at one to all the entries leaves this degree sum unchanged.
+
+\begin{lemma}\label{por:orbitbound}
+In ordinary integral modular data of dimension $n^2$, fix a nonunit degree $z$, set $f=(n/z)^2$, and suppose $p\nmid f$. All rows of degree $z$ are unramified at $p$. For any nonunit $Y$, let $e$ be its $p$-inertia orbit size and $c=d_Y/\gcd(z,d_Y)$. Then
+\[
+       \#\{Z:d_Z=z,\ S_{ZY}\ne0\}<\frac{f}{ec^2}.
+\]
+\end{lemma}
+\begin{proof}
+Indeed after applying $s=S/n$ to the normalized indicator of that orbit its $Z$th coordinate is $\sqrt{e/f}\,\chi_Z(Y)$ at every $Z$ of degree $z$. The positive vacuum coordinate gives strictness. Take Galois means and use lcm integrality and the norm inequality on $\chi_Z(Y)/c$. The set of hitting $Z$ is a union of full Galois orbits. Thus the bound also applies to the field degree of each hit.
 \end{proof}
 
 \section{Three ordered prime powers}\label{fam:M:sec:7}\label{sec:three-ordered}
@@ -2323,11 +2513,36 @@ By Proposition~\ref{lem:one-defect-block} the full two-block $B$ has at
 most two inertia orbits, and if $X$ ramifies its orbit is the entire
 block.
 
-Let $E$ project onto $B$, $Q=sEs^{-1}$. Both commute with the dyadic group by block invariance. Since $s^{-1}\mathbb C^B=W_o^{-1}\mathbb C^B$ has a nonzero vacuum coordinate and $W_o$ preserves dyadic twists, $B$ contains a trivial phase. It also contains an order-four phase. For odd $k$ set $l=1+4k$. The torus $H_l$ negates the vacuum, as its inertia negates $\sqrt D$. Taking the vacuum entry after applying $Q$ to
-\[
- U(2)L(2k)=L(2k/l)H_lU(2/l)
-\]
-negates the moment $\sum_{j\in B}|s_{0j}|^2\theta_{j,2}^{-2k}$ under $k\mapsto k/l$. Here $U(1)=\lambda T_2$ with $\lambda^8=1$, and the omitted scalars agree modulo eight. Averaging over the odd residues, permuted by this substitution, equates the squared masses at orders $1,2$ together and at order four.
+Let $E$ project onto $B$, and put $Q=sEs^{-1}$. Both commute
+with the dyadic group by block invariance. Since
+$s^{-1}\mathbb C^B=W_o^{-1}\mathbb C^B$ has a nonzero vacuum
+coordinate and $W_o$ preserves dyadic twists, $B$ contains a
+trivial phase. To detect order four, work modulo the dyadic part
+$2^a$ of $\ord(T/\gamma)$. This level is divisible by eight:
+$s_{00}=1/\sqrt D$ belongs to the level field, and the square-free
+part of $D$ is even, so the quadratic discriminant has two-part
+eight. Write $U(1)=\lambda T_2$, with $\lambda=\gamma^{-1}$ and
+$\lambda^8=1$ by integrality \cite[Proposition~6.7(ii)]{DLNCongruence}.
+For odd $k$ put $l=1+4k$ and
+$M(k)=\sum_{j\in B}|s_{0j}|^2\theta_{j,2}^{-2k}$.
+The unit $l\equiv5\pmod8$, extended by one on the odd part of the
+level, fixes the vacuum label and negates $\sqrt D$. Thus
+$H_l v_0=-v_0$. As $L(b)=sU(-b)s^{-1}$,
+$(QL(2k))_{00}=\lambda^{-2k}M(k)$. Taking the vacuum entry
+after $Q$ in the matrix identity
+$U(2)L(2k)=L(2k/l)H_lU(2/l)$ now gives
+\begin{equation}\label{eq:dyadic-bruhat-mass}
+       \lambda^{2-2k}M(k)
+        =-\lambda^{(2-2k)/l}M(k/l).
+\end{equation}
+All divisions here are by units modulo $2^a$. The exponents agree
+modulo eight since their difference is $8k(1-k)/l$.
+The map $k\mapsto k/(1+4k)$ permutes the odd residues, with inverse
+$h\mapsto h/(1-4h)$, so the mean of $M(k)$ is zero.
+The mean of $\theta^{-2k}$ over odd $k$ is $1$ at orders one and two,
+$-1$ at order four, and zero at higher dyadic orders.
+Thus the squared masses at orders one and two together and at order
+four are equal.
 
 Inertia preserves the dyadic order and fixes each fourth root under the square action. Thus there are exactly two orbits, with phases $1,\eta_X$, and $X$ is unramified by Proposition~\ref{lem:one-defect-block}. On $B$ both $U(4),L(4)$ are scalar; $U(1)L(4)=L(4/5)H_5U(1/5)$ makes $H_5$ scalar as well. The units $1\bmod4$ consequently fix $B$ pointwise. One orbit is a singleton and the other has at most two members. Equal squared masses and integral degrees force both to be singletons of degree $d_X$. The support assertion follows from $s^{-1}\mathbb C^B=W_o^{-1}\mathbb C^B$.
 \end{proof}
@@ -2419,7 +2634,10 @@ Let $2<q<r$, $k\ge2$ and $2^{k-1}<q$. A slightly degenerate divisor-minimal coun
 \begin{proof}
 Call a companion of odd valuation $q$, interchanging $q,r$ if needed. In the reduced table all complementary principal labels have height $k$ by Lemma~\ref{three:complementary} and square divisibility. Their two-codegree is a unit and their two-block is a singleton. Their rows vanish on nontrivial squared dyadic twists by reduced block orthogonality. Every $q$-active column hits one by orthogonality on $P_q$ modulo $r$. Every squared dyadic twist fiber contains a $q$-active label by Lemma~\ref{lem:odd-valuation-joint-twist}. Hence all even dyadic twists in the extension are signs.
 
-Choose full principal representatives of the complementary labels as above. The full two-block of one such $X$ consists of $X,gX,W,gW$ with $W$ odd and $d_W=d_X$. Indeed the positive singleton block has one signed character by the isomorphism of characteristic-two fibers in Lemma~\ref{lem:fermion-quotients}. Agreement on the even ring suffices, since odd squares are even and Frobenius is injective on the residue field. Orthogonality of $1,g$ equates even and odd squared masses. A fixed mate would have $d_W^2=2d_X^2$; hence the pair is free and $d_W=d_X$. Any odd hit of $X$ has the common dyadic phase of $W,gW$, since in $s^{-1}e_X=W_o^{-1}W_2^{-1}e_X$ the first local operation preserves the block and the second preserves sector and dyadic phase.
+Choose full principal representatives of the complementary labels as above.
+By Lemma~\ref{lem:fermion-singleton-lift}, the odd orbit over each
+witness is free of the same degree, and the witness sees only its mate's
+actual dyadic phase on odd columns.
 
 The odd mate of an opposite $r$-witness has $q$-unit degree; every complementary $q$-witness must hit it, so all their odd hits share one phase. Evaluating at $g$ makes every full $q$-principal label even, and $g\notin P_q$ by evaluating on that odd mate. Thus each odd $q$-active column hits a complementary $q$-witness by orthogonality modulo $r$. Every nonempty odd-sector dyadic fiber contains such a column by the same lemma. A common odd phase contradicts Lemma~\ref{seq:fermion-one-spin}.
 \end{proof}
@@ -2497,6 +2715,172 @@ For arbitrary companion exponents in $p^Aq^Br^4d$, a Tannakian
 $\Rep(G)$ with $r\mid |G|$ suffices for WGT by descent: the neutral
 de-equivariantization has $r$-valuation at most three, so
 Theorem~\ref{thm:three} applies.
+
+\subsection{Dyadic blocks of a fermion centralizer}\label{sec:fermion-block-transfer}
+Let $\M$ be an integral modular category of dimension $D=4\Delta$
+with its positive spherical structure, a fermion $g$ and even sector $\mathcal B=\langle g\rangle'$.
+Write $R_+=\K(\mathcal B)/(g-1)$. An even pair $[Y]=\{Y,gY\}$
+has opposite actual dyadic twists and hence a well-defined squared twist
+$\epsilon_Y=\theta_{Y,2}^2$. Odd mates have the same actual dyadic twist.
+The positive space $A$ has orthonormal basis
+$(v_Y+v_{gY})/\sqrt2$ on even pairs. Let $B$ be the antisymmetric even
+space and $C$ the symmetric odd space. In the integral congruence lift,
+$U=\lambda T_2$, $\lambda^8=1$, exchanges $A,B$ and preserves $C$.
+The dyadic Weyl $W$ interchanges $B,C$ and preserves $A$, because it
+interchanges fermion permutation and monodromy sign. Put $K=W|_A$ and
+write $W_o=W_{2'}$ for the complementary Weyl.
+
+\begin{lemma}[Positive defect one and the dyadic level]\label{lem:positive-defect-one-phases}
+Suppose $v_2(D)$ is odd, and let $E$ be a positive two-block
+containing a character of dyadic defect one.
+Its squared twists are $+1,-1$, with equal sums of squared degrees
+at the two signs. Its rows vanish on pairs of every other squared twist.
+If the actual dyadic twists of \emph{all} even labels have order dividing
+four, the full dyadic level divides eight, and $E$ consists of two
+labels of equal degree, both unramified at two. Under this twist bound, each full
+character whose field is contained in a dyadic cyclotomic field takes
+values in $\ZZ[i]$ on even objects.
+\end{lemma}
+\begin{proof}
+The residue on the even ring determines the full residue by squaring.
+The projector onto the lifted block commutes with the dyadic group by
+Lemma~\ref{lem:local-block-invariance}. Its restriction to $A$ projects
+onto $E$ and commutes with $K$. Thus $\widehat s^{-1}\CC^E=W_o^{-1}\CC^E$
+has nonzero vacuum projection, and $E$ contains squared phase $+1$.
+Apply the Bruhat mass identity \eqref{eq:dyadic-bruhat-mass} from
+Lemma~\ref{seq:dyadic-pair} on $A$.
+the operators $U(2),L(2j),H_{1+4j}$ ($j$ odd), the projector and
+its $\widehat s$-conjugate all preserve $A$. Here
+$L(t)=WU(-t)W^{-1}$. The torus negates the symmetrized vacuum
+($v_2(D)$ is odd and both vacuum labels have rational characters).
+Its weights on $E$ are $d_Y^2/\Delta$.
+Averaging $\theta_{Y,2}^{-2j}$ over odd $j$ gives $+1,-1,0$
+at squared twist $+1,-1$, or higher order, respectively.
+Thus the two signed masses are equal and nonzero.
+By Proposition~\ref{lem:one-defect-block}, $E$ has at most two inertia
+orbits. The two signs already occupy distinct orbits, so no higher
+order occurs. Since $W_o$ preserves squared dyadic twist, the equality
+of subspaces above gives the support assertion.
+
+Now assume the global bound on the even twists. Balancing puts
+even-even $S$-entries in $\QQ(i,\zeta_m)$ for some odd $m$.
+A dyadic Galois unit $l\equiv1\pmod4$, trivial on the odd factor,
+fixes the restricted character of every even label. Each even fermion
+pair is consequently fixed as a set by Lemma~\ref{lem:fermion-quotients}.
+The square action on actual twists fixes each representative's twist,
+and opposite twists distinguish the representatives. Symmetry of $S$
+and rationality of degrees now fix the values of every character on even
+objects. In particular an odd fermion orbit is fixed as a set. Its
+members have equal twists, so the unit $l=5$ gives
+$\theta_{Y,2}^{24}=1$ also on odd labels. The normalization scalar cancels
+in the square action since the vacuum is fixed. All actual dyadic
+twists have order dividing eight, as does $U$ since
+$\lambda^8=1$. For a purely dyadic character the fixed field of
+the units $1\bmod4$ lies in $\QQ(i)$, giving the asserted integrality.
+All positive characters have dyadic ramification index at most two.
+The two-branch defect-one block has an unramified branch by
+Proposition~\ref{lem:one-defect-block}. The other has length one or two,
+and length two would equate an integer square to twice another
+integer square by the mass equality. Thus each sign has one label,
+of the same degree.
+\end{proof}
+
+\begin{lemma}[Signed blocks at dyadic level dividing eight]\label{lem:signed-dyadic-pair}
+Suppose $v_2(D)$ is odd and all even actual dyadic twists have order
+dividing four. Then $U^4$ is scalar on $C$. If a positive two-block
+contains a defect-one character of degree $d$, the full block over it
+contains two odd fermion orbits, both free. Their actual dyadic twists have ratio
+$\pm i$ and their degrees $u,v$ satisfy
+\[
+ u^2+v^2=2d^2,\qquad v_2(u)=v_2(v)=v_2(d).
+\]
+If the entire odd sector has just two dyadic twists with ratio $\pm i$,
+then $R_+$ has a nontrivial invertible basis element.
+\end{lemma}
+\begin{proof}
+The level bound just proved uses only the bound on even actual twists.
+Put $Z=T_2^2|_A$, $F=KZK^{-1}$. These are involutions. The torus
+$H_5$ fixes the even labels as a permutation and negates $\sqrt D$,
+hence $H_5=-I$ on $A$. Modulo eight the identity
+$U(2)L(2)=L(2/5)H_5U(2/5)$ gives $ZF=-FZ$.
+Since $H_3=H_5H_{-1}=-K^2$ on $A$, it commutes with both.
+The factorization
+\[
+ (WU)^{-1}U^2(WU)=U(-1)L(-2)U(1)
+ =L(-2/3)H_3U(2/3)=L(2)H_3U(6)
+\]
+gives the exact restriction
+\begin{equation}\label{eq:fermion-dyadic-transfer}
+             (WU)^{-1}U^2(WU)|_A=\lambda^4 F H_3 Z .
+\end{equation}
+Its square is scalar since $H_3^2=I$, and $WU$ maps $A$ onto $C$.
+
+Over a positive defect-one block, Lemma~\ref{lem:positive-defect-one-phases}
+gives two labels of degree $d$, both unramified at two. Their full
+block contains four even labels, and $H_3$ acts scalarly on the
+two-dimensional positive space. Since $WU$ preserves the full block,
+its odd symmetric space also has dimension two. The invertible
+operator $FZ$ anticommutes with $Z$, so its two eigenvalues are
+opposites. By \eqref{eq:fermion-dyadic-transfer} the squares of the
+two odd twists differ by a sign.
+
+The two corresponding signed characters have equal dyadic defect if
+inertia interchanges them. If inertia fixes both, their local order
+over the completed maximal unramified base $\mathcal O$ is a suborder
+of $\mathcal O^2$ containing the diagonal. The ideal of coordinate
+differences is $2^h\mathcal O$ for some $h\ge1$. Thus the order
+consists of pairs congruent modulo $2^h$, with conductor $2^h$
+on each branch. By self-duality the conductor on each unramified
+branch is its codegree ideal (Lemma~\ref{lem:conductor-node}).
+Equal codegree valuations in \eqref{eq:fermion-restriction-codegree}
+give the same fixed/free type by parity, then $v_2(u)=v_2(v)$.
+Column orthogonality of $1,g$ on the full block equates its odd mass
+to $4d^2$. If both labels were fixed, $u^2+v^2=4d^2$ would have odd
+two-valuation on the left and even on the right. Thus both orbits
+are free and $u^2+v^2=2d^2$, which also gives $v_2(u)=v_2(d)$.
+
+If the only odd spins are $\delta_1,\delta_2$ with ratio $\pm i$, on $C$ one has $U=aI+bU^2$, where, writing
+$x=\lambda\delta_1$, $y=\lambda\delta_2$, one has
+$a=xy/(x+y)$, $b=1/(x+y)$ and $|a|=|b|=1/\sqrt2$.
+Restrict $WUW=U^{-1}WU^{-1}$ to $U A$, and multiply by $U^{-1}$
+on the left. Since $WU A=C$ and $W^2$ is central, on $A$ this gives
+\[
+ U^{-2}K
+   =aK^2+b\,U^{-1}L(-2)U K^2.
+\]
+Here $U^{-2}=\lambda^{-2}Z$, and \eqref{eq:fermion-dyadic-transfer} gives $U^{-1}L(-2)U=cF H_3 Z$ with $|c|=1$.
+Since $H_3=H_5 H_{-1}=-K^2$ and $K^4=I$, it follows that
+$K=a'ZK^2+b'F$ with $|a'|=|b'|=1/\sqrt2$.
+For the projection $P=(1+Z)/2$ this yields $PKP=a'P K^2 P$.
+
+Put $w=W_o e_{[1]}$ in $A$. We have $Pw=w$, while $K^2w$ is
+a unit scalar multiple of $w$ by the torus action on the vacuum
+and commutation of local factors. Since $\widehat s e_{[1]}=Kw$,
+$|w_{[j]}|^2=2d_j^2/\Delta$ on $\epsilon_j=1$ and vanishes
+otherwise. Lift back to the full vacuum $w^{\rm full}=W_o e_1$.
+This is supported on the even labels with actual dyadic twist one:
+$W_o$ preserves monodromy sector and commutes with $T_2$.
+On every even pair the reduced coefficient is
+$w^{\rm full}_j+w^{\rm full}_{gj}$ because $W_o$ commutes with the
+fermion permutation. Exactly one representative of each positive-sign
+pair can contribute, so its squared weight is again $2d_j^2/\Delta$.
+
+Take $m$ zero on the dyadic level and one on the odd complementary
+level. The indicator formula at the beginning of
+Subsection~\ref{fam:M:sec:7.2} gives, for even $Y$,
+\[
+ \nu_m(Y)=\sum_{j\in\Irr(\mathcal M)}
+ |w^{\rm full}_j|^2\chi_j(Y)
+ =\frac1\Delta\sum_{[j]}(1+\epsilon_j)d_j^2
+ \chi_{[j]}([Y]).
+\]
+This is the coefficient at $[Y]^*$ of the reduced element $1+J$, where $J=\sum_{[j]}\epsilon_j e_{[j]}$.
+It is an algebraic integer by the cyclotomic integrality of indicators \cite[Theorem~5.1]{NSpivot} and rational
+by Galois covariance of the sign. Thus $J$ has integral coefficients.
+It is self-dual with $J^2=1$, so has squared based-ring norm one,
+and its dimension is $\epsilon_1=1$. This gives a positive invertible
+basis element in $R_+$. Both signs occur by anticommutation, so it differs from the unit.
+\end{proof}
 
 \section{Three repeated primes with a quartic or quintic exponent}\label{fam:Q:sec:1}
 \begin{theorem}[Three bounded exponents]\label{fam:Q:1.1}\label{fam:F:3.2}\label{fam:F:n:754}\label{fam:Q:n:q13:654}
@@ -3722,8 +4106,8 @@ excludes defect two in the positive principal two-block. Since
 $v_2(\Delta)=4$, the principal valuation bound now makes every
 degree of that block odd.
 
-As in the proof of Proposition~\ref{fam:M:7.10}, a complementary
-singleton has an odd mate of the same degree, and its row sees only the
+By Lemma~\ref{lem:fermion-singleton-lift}, a complementary singleton
+has an odd mate of the same degree, and its row sees only the
 mate's dyadic phase on odd columns. Opposite principal witnesses hit
 these mates, giving a common phase $\delta$. Orthogonality modulo the
 omitted prime supplies a complementary witness on every $q$- or
@@ -4068,50 +4452,14 @@ their dyadic gcd is at least $q$ by Lemma~\ref{fam:M:4.10}.
 Since $2^{k-2}<q$ and $d_X^2\mid\Delta$, every witness has dyadic
 height $k-1$, hence positive dyadic defect one.
 
-We spell out the reduced version of the dyadic defect-one phase argument.
-Lift the projector of a positive two-block $B$ to the full extension by its
-residue on the even subring. It is a sum of full block projectors, each
-commuting with the full dyadic group by block orthogonality. The dyadic
-Weyl $W_2$ preserves the positive fermion space (it interchanges the
-fermion permutation and monodromy sign) and hence preserves its subspace
-$B$. The other Weyl $W_o$ preserves squared dyadic twists. Consequently
-$\widehat s^{-1}B=W_o^{-1}B$, and its nonzero vacuum projection forces
-a label in $B$ with trivial squared dyadic twist.
-
-For the other phase use the Bruhat mass identity in Lemma~\ref{fam:M:7.5}. This part of its proof uses only the even unipotents
-$U(2),L(2j)$ and the torus $H_{1+4j}$ for odd $j$, all of which
-preserve the positive fermion space. The block projector and its
-$\widehat s$-conjugate commute with these operators by the same full
-lift. The local torus negates the vacuum because the dyadic valuation
-of $4\Delta$ is odd. The vacuum weights on this space are
-$d_Y^2/\Delta$. Thus the same averaging identity equates the total
-weight in $B$ at squared twist $+1$ to the weight at $-1$.
-For a defect-one block there are at most two dyadic inertia orbits by
-the local symmetric-order theorem. The order of the squared phase is
-constant on each; now both phases occur, so only $+1,-1$ occur in
-$B$ and in every row supported on $\widehat s^{-1}B$.
-
+Lemma~\ref{lem:positive-defect-one-phases} confines all witness rows
+to the two squared phases $+1,-1$, since $v_2(4\Delta)$ is odd.
 Every nonempty squared dyadic twist fiber contains a $q$-active label
 by oddness of $b$. It has a nonzero entry on a complementary witness
-in $P_q$ by principal-block orthogonality modulo $r$. This proves
-the asserted bound on all even twists. Balancing now puts even-even
-unnormalized $S$-entries in $\mathbb Q(i,\zeta_m)$ for $m$ odd. A dyadic
-unit $l\equiv1\pmod4$ fixes the restricted characters of all even labels.
-It fixes the even labels individually: the restriction determines a
-fermion pair, its two actual twists are opposite, and Galois acts on
-actual twists by the square of $l$. By symmetry each odd character on
-the even fusion ring is also fixed, so $l$ preserves each odd fermion
-orbit. Its members have the same twist. For $l=5$ locally at two and
-trivial on the odd part this gives $\theta_{Y,2}^{24}=1$ even on odd
-labels. The vacuum fixes the scalar normalization in the twist Galois
-law.
-
-Positive character fields therefore have dyadic ramification index at
-most two. A defect-one block with two branches has an unramified branch
-at two by Proposition~\ref{fam:M:2.10}. Its two orbit lengths are
-then $1,e$ with $e\le2$. Equality of the squared masses and integrality
-of the degrees exclude $e=2$. Thus $B=\{X,X'\}$ has equal degrees and
-opposite squared spins. \end{proof}
+in $P_q$ by principal-block orthogonality modulo $r$. Thus all actual
+even dyadic twists have order dividing four. The second assertion of
+the lemma now bounds the full level and gives the equal-degree mate.
+\end{proof}
 
 \begin{theorem}[Odd middle valuation in a reduced table]\label{fam:Q:7.2}
 Under the hypotheses of the preceding proposition there is no
@@ -4119,47 +4467,12 @@ slightly degenerate minimal counterexample. In particular this excludes
 every reduced obstruction with source dimension $2^6 3^b r^c$, $b$ odd.
 \end{theorem}
 \begin{proof}
-Use $U=U_2(1)=\lambda T_2$ and $W=W_2$, with $\lambda^8=1$.
-The preceding proposition makes the full two-level a divisor of eight.
-Let $A$ be the positive fermion space, $B$ its even antisymmetric
-counterpart, and $C$ the odd symmetric space. Thus $U$ interchanges
-$A,B$ and $W$ interchanges $B,C$, preserving $A$.
-On $A$ put $K=W|_A$, $Z=T_2^2$, $F=KZK^{-1}$. Integral dimensions
-give a common Galois sign for each torus. In particular $H_5=-I$ on
-$A$: this unit fixes the even labels and negates $\sqrt{4\Delta}$.
-The exact factorization $U(2)L(2)=L(2/5)H_5U(2/5)$, where
-$L(t)=WU(-t)W^{-1}$, therefore gives $ZF=-FZ$.
-
-Fix a full dyadic block over a complementary witness of degree $d$.
-Its $A$-basis is the pair of labels in the preceding proposition
-(the even residue determines the full residue by squaring). Their
-field is unramified at two, so $H_3$ is scalar on this two-dimensional
-space. The two odd fermion orbits in its $C$-space have distinct
-dyadic twists whose ratio is $i$ or $-i$. Indeed $WU:A\to C$ on the
-block. The conjugate of $U^2$ is
-\[
- (WU)^{-1}U^2(WU)
-  =U(-1)L(-2)U(1)=L(-2/3)H_3U(2/3)=L(2)H_3U(6),
-\]
-which on that $A$-block is a unit scalar times $FZ$. This has
-opposite eigenvalues, since $Z$ anticommutes with it and it is invertible.
-
-The two signed characters from the odd orbits have equal dyadic
-defect. If conjugate under inertia this is immediate. Otherwise the
-signed local order, after passing to the unramified base, lies in
-$\mathcal O^2$ and is
-$\{(x,y):x\equiv y\pmod {2^h}\}$ for some $h\ge1$ (use the
-diagonal and the ideal of coordinate differences). Its conductor in
-both components has exponent $h$, which equals the valuation of
-each codegree by self-duality of the order. In either case the
-two odd orbits have the same fixed/free type and the same dyadic
-valuation of their dimensions $u,v$, by the signed codegree formula
-$f_-=4\Delta/(m d_Y^2)$, where $m=4$ for a free orbit and $2$
-for a fixed one. Block orthogonality of $1,g$ equates the even
-and odd squared masses; the former is $4d^2$. If both odd labels
-were fixed, $u^2+v^2$ would have odd two-valuation, a contradiction.
-Thus both orbits are free and $u^2+v^2=2d^2$, giving
-$v_2(u)=v_2(v)=v_2(d)=k-1$.
+All complementary witnesses have positive defect one and the even
+twists satisfy the order bound of Lemma~\ref{lem:signed-dyadic-pair},
+by Proposition~\ref{fam:Q:7.1}. Over each witness of degree $d$ there
+are two free odd orbits whose actual dyadic twists have ratio
+$\pm i$ and whose degrees $u,v$ satisfy
+$u^2+v^2=2d^2$ and $v_2(u)=v_2(v)=k-1$.
 
 Choose a complementary witness of $P_r$, so $d=2^{k-1}r^j$.
 The odd parts of $u,v$ involve only $q,r$ by square divisibility.
@@ -4189,48 +4502,8 @@ modulo $r$ supplies a nonunit $r$-free hit, necessarily a complementary
 witness lifting $P_q$. Thus $\delta_1,\delta_2$ are the only dyadic
 phases in the entire odd sector.
 
-On $C$ one consequently has $U=aI+bU^2$, where, writing
-$x=\lambda\delta_1$, $y=\lambda\delta_2$, one has
-$a=xy/(x+y)$, $b=1/(x+y)$ and $|a|=|b|=1/\sqrt2$.
-Restrict $WUW=U^{-1}WU^{-1}$ to $U A$, and multiply by $U^{-1}$
-on the left. Since $WU A=C$ and $W^2$ is central, on $A$ this gives
-\[
- U^{-2}K
-   =aK^2+b\,U^{-1}L(-2)U K^2.
-\]
-Here $U^{-2}=\lambda^{-2}Z$, and the previous Gauss factorization,
-now on all of $A$, gives $U^{-1}L(-2)U=cF H_3 Z$ with $|c|=1$.
-Since $H_3=H_5 H_{-1}=-K^2$ and $K^4=I$, it follows that
-$K=a'ZK^2+b'F$ with $|a'|=|b'|=1/\sqrt2$.
-For the projection $P=(1+Z)/2$ this yields $PKP=a'P K^2 P$.
-
-Put $w=W_o e_{[1]}$ in $A$. We have $Pw=w$, while $K^2w$ is
-a unit scalar multiple of $w$ by the torus action on the vacuum
-and commutation of local factors. Since $\widehat s e_{[1]}=Kw$,
-$|w_{[j]}|^2=2d_j^2/\Delta$ on $\epsilon_j=1$ and vanishes
-otherwise. Lift back to the full vacuum $w^{\rm full}=W_o e_1$.
-This is supported on the even labels with actual dyadic twist one:
-$W_o$ preserves monodromy sector and commutes with $T_2$.
-On every even pair the reduced coefficient is
-$w^{\rm full}_j+w^{\rm full}_{gj}$ because $W_o$ commutes with the
-fermion permutation. Exactly one representative of each positive-sign
-pair can contribute, so its squared weight is again $2d_j^2/\Delta$.
-
-Take $m$ zero on the dyadic level and one on the odd complementary
-level. The indicator formula from Section~\ref{fam:M:sec:7} gives, for even $Y$,
-\[
- \nu_m(Y)=\sum_{j\in\Irr(\mathcal M)}
- |w^{\rm full}_j|^2\chi_j(Y)
- =\frac1\Delta\sum_{[j]}(1+\epsilon_j)d_j^2
- \chi_{[j]}([Y]).
-\]
-This is the coefficient at $[Y]^*$ of the reduced element $1+J$, where $J=\sum_{[j]}\epsilon_j e_{[j]}$.
-It is an algebraic integer by the cyclotomic integrality of indicators \cite[Theorem~5.1]{NSpivot} and rational
-by Galois covariance of the sign. Thus $J$ has integral coefficients.
-It is self-dual with $J^2=1$, so has squared based-ring norm one,
-and its dimension is $\epsilon_1=1$. This gives a positive invertible
-basis element in $R$. It is nontrivial since both signs occur,
-contradicting perfectness of the positive quotient.
+Lemma~\ref{lem:signed-dyadic-pair} now gives a nontrivial invertible
+in the perfect positive quotient, a contradiction.
 \end{proof}
 
 \begin{proposition}[Forcing the top dyadic height]\label{fam:Q:7.3}
@@ -4256,10 +4529,16 @@ opposite pair. Here $r\ge7$ holds whenever $g\ge q$ is possible,
 since $g\ge4$ and $r>g+1$.
 
 All complementary witnesses therefore have height $k$ and singleton
-positive two-blocks. In Proposition~\ref{fam:M:7.10} the prime-gap
-assumption is used only to obtain this property. Its proof from
-the singleton property gives even valuation for both companions,
-contrary to odd $b$.
+positive two-blocks. The singleton rows vanish on all nontrivial squared phases.
+Every squared phase contains a $q$-active pair, which hits a witness
+by principal-block orthogonality modulo $r$. Thus the even twists
+are signs. By Lemma~\ref{lem:fermion-singleton-lift}, opposite
+principal witnesses see the same odd phase, and an odd $q$-active
+column hits such a witness by the same orthogonality on the full
+block (the opposite $q$-unit odd mate excludes $g$). Every odd
+dyadic fiber has a $q$-active label by
+Lemma~\ref{lem:odd-valuation-joint-twist}, contrary to
+Lemma~\ref{seq:fermion-one-spin}.
 \end{proof}
 
 \subsection{A quintic valuation at three in the fermion extension}\label{fam:F:sec:3}
@@ -6759,10 +7038,8 @@ $p$-active positive pair hits an $s$-free witness in $P_p$;
 such a witness vanishes on every nontrivial squared dyadic twist.
 By odd $p$-valuation each occupied squared dyadic fiber contains
 a $p$-active pair, so all actual even dyadic twists are signs.
-In the full integral extension the singleton has a single odd
-fermion orbit in its full two-block, free and of the same degree:
-the positive and signed ranks coincide and even and odd squared
-masses agree, as in Proposition~\ref{fam:M:7.10}. A full
+For each such witness the full block has one free odd orbit of the
+same degree by Lemma~\ref{lem:fermion-singleton-lift}. A full
 $p$-principal representative hits the odd mates of each opposite
 witness because they are $p$-free. A witness sees only the phase
 of its own odd mate on the odd sector, by local Weyl invariance,
@@ -7871,7 +8148,7 @@ have order at least $60$ divisible by four, so $e|G|^2$ would itself
 be square-full and divide $Q(D)$. Likewise $16e\nmid D$ suffices
 once WGT is known. The center of $\Vec_{A_5}$ and its product with
 $\sVec$ attain the respective thresholds and contain $\Rep(A_5)$.
-Together with \cite{XuDongPerfect}, the dimension bound also gives
+Together with the classification of Xu and Dong \cite[p.~292, abstract]{XuDongPerfect}, the dimension bound also gives
 the following small-range classification: every nontrivial perfect
 weakly integral modular category of dimension $<14400$ is a twisted
 center $\mathcal Z(\mathrm{Vec}_{A_5}^{\omega})$, of dimension $3600$.
@@ -7905,14 +8182,15 @@ a non-WGT perfect integral fusion category has rank at least $7$. A nontrivial o
 \begin{proof}
 Alekseyev, Bruns, Palcoux and Petrov excluded nontrivial perfect integral modular categories through rank $13$, and through rank $24$ in odd dimension \cite[Theorems~1.5 and~12.2]{ABPPModular}. The modular lower bounds $15$ and $27$ are established in
 \cite[Corollaries~1.2 and~1.3]{DPLCM}. For the additional step at rank
-$15$, use the 2341 perfect dimension types in the supplementary list
-to \cite[Section~4.3]{DPLCM}. For a type $(d_i)$, its smallest codegree is
+$15$, we use as input the exhaustive list of 2341 remaining perfect dimension
+types from \cite[Section~4.3]{DPLCM} (arXiv:2510.10311v1). For a type $(d_i)$, its smallest codegree is
 $\sum_i d_i^2/(\max_i d_i)^2$. For the values $2,3,4,5$ the respective
 counts are $459,24,1857,1$.\footnote{The file
 \href{https://github.com/sebastienpalcoux/Fusion-Categories/blob/06f3a37b086c0591e086a3aed9a9458f4270165f/NewCritPaper/Rank15/RemainingPerfect.txt}{\texttt{RemainingPerfect.txt}}
-contains one type per line. Our \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/verify_rank15_published.py}{codegree count} uses a \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/data/published-rank15-perfect.txt}{copy of that list} and verifies its checksum.}
+contains one type per line. Our \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/verify_rank15_published.py}{codegree count} uses a \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/data/published-rank15-perfect.txt}{copy of that list}. It checks its SHA-256 digest against the value recorded in the
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/data/README.md}{data record}, verifies that the 2341 types are distinct, and computes their smallest codegrees. Exhaustiveness of the input is the cited classification result.}
 Lemma~\ref{lem:small-ordinary-codegrees} excludes the first three groups.
-The last type has dimension $720$ and contains a simple of degree two.
+The last type has dimension $720$ and contains a simple of degree two, contrary to Lemma~\ref{lem:tables}.
 
 In the unbraided case, integral Grothendieck rings of rank at most six
 are commutative apart from $\mathbb Z S_3$, and odd-dimensional ones
@@ -8744,6 +9022,72 @@ the leading residue of $\pi$ is multiplied by each fourth root of
 unity in the residue field.
 
 \subsection{The conductor of a cyclic character subfield}\label{found:C:7}
+\begin{jointideallemma}[Local ideals on a joint twist fiber]\label{lem:joint-twist-ideals}
+Let $V$ have a basis $(e_i)$ and commuting actions of
+$G_p=\mathrm{SL}_2(\ZZ/p^{b_p}\ZZ)$ for a set $S$ of odd primes.
+Write $U_p(x),L_p(x)$ for the upper and lower unipotents, and
+$H_{p,a}=\operatorname{diag}(a,a^{-1})$ for the diagonal torus element
+or its action. Suppose $U_p(1)e_i=\theta_{i,p}e_i$.
+For $0\le k_p<b_p$ and units $a_p\equiv1\pmod{p^{k_p}}$ put
+\[
+ E=\operatorname{span}\{e_i:\theta_{i,p}^{p^{k_p}}\ne1
+                 \text{ for every }p\in S\},\qquad
+ A=\prod_{p\in S}(H_{p,a_p}-I).
+\]
+Then $A V\subseteq\sum_{g\in\prod_{p\in S}G_p}g E$.
+For $S=\varnothing$ take $E=V$ and $A=I$.
+
+Suppose also that $G_2=\mathrm{SL}_2(\ZZ/2^{b_2}\ZZ)$ commutes with the odd factors and satisfies
+$U_2(1)e_i=\delta\theta_{i,2}e_i$ for a common scalar $\delta$.
+For $0\le k<b_2$, let $a\equiv1\pmod{2^k}$ be a unit and let $P_a$ be a scalar multiple
+of $H_{2,a}$ that permutes the basis vectors. If
+$\theta_{i,2}^{2^k}=1$ on all basis vectors of $E$, then $(P_a-I)A=0$.
+\end{jointideallemma}
+\begin{proof}
+Work first in one factor $G=\mathrm{SL}_2(\ZZ/p^b\ZZ)$, including $p=2$.
+Modulo the normal subgroup generated by $U(p^k)$ all $U(x)$ and
+$L(x)$ with $x\in p^k\ZZ/p^b\ZZ$ are trivial, by taking powers and
+conjugating by the Weyl element. For a unit $t=1+x$ the identity
+\[
+ U(x)L(1)=L(1/t)H_t U(x/t)
+\]
+then gives $H_t=1$ in the quotient because $1-1/t=x/t$.
+Consequently $H_t-I$ belongs to the two-sided ideal of $\CC[G]$
+generated by $U(p^k)-I$. Indeed the latter ideal contains $h-I$ for
+each conjugate $h$ of $U(p^k)^{\pm1}$, and hence for every product of
+such conjugates.
+
+Set $B_p=U_p(p^{k_p})-I$. Expand each $H_{p,a_p}-I$ as a sum of
+terms $c\,g_p B_p h_p$, with $g_p,h_p\in G_p$ and $c\in\CC$.
+Commuting distinct factors puts every term of $A$ in the form
+$c'(\prod g_p)(\prod B_p)(\prod h_p)$.
+The diagonal operator $\prod B_p$ has image exactly $E$. This proves
+the inclusion and also shows that $G_2$ preserves $E$ whenever present.
+
+If $E\ne0$ and all its dyadic phases have order dividing $2^k$, then
+$U_2(2^k)|_E=\delta^{2^k}I$. Its image in $\mathrm{PGL}(E)$ is the
+identity. Applying the normal-subgroup calculation there shows that
+$H_{2,a}|_E$, and hence $P_a|_E$, is scalar. A scalar that permutes a
+nonempty set of basis vectors is one. Commutation now gives $P_a=I$
+on every odd translate $gE$. If $E=0$ the first inclusion gives $A=0$.
+\end{proof}
+
+For example, take dyadic level eight and a character of dyadic conductor
+eight. It is nontrivial at $a=5$, the generator of the kernel of
+reduction of units modulo four. Here $k=2$ and $5^{-1}=5\pmod8$, so
+the displayed factorization is $U(4)L(1)=L(5)H_5U(4)$.
+If every dyadic phase on a nonzero $E$ has order at most four, then
+$U(4)=\delta^4 I$ there and both $U(4)$ and its Weyl conjugate
+$L(-4)=L(4)$ act trivially in $\mathrm{PGL}(E)$. Since $L(5)=L(1)L(4)$,
+$H_5$ is projectively trivial, and its unsigned permutation fixes
+$E$ pointwise. For a concrete joint realization, label the simples of
+$\mathcal Z(\Vec_{C_{24}})$ by $(x,y)\in(\ZZ/24)^2$, where $y$
+indexes the character sending $1$ to $\zeta_{24}^y$.
+The label $(1,0)$ has trivial twist and its row contains
+$\zeta_{24}$. Take $F=\QQ(\sqrt6)$, of conductor $24$.
+Here $E$ is the space of labels with nontrivial ternary twist,
+and $(1,1)$ has twist $\zeta_{24}$, of order $8$ at two and $3$ at three.
+
 \begin{theorem}\label{found:C:7.1}\label{found:C:key:new:single-twist}
 Let $X$ be simple in an integral modular category with its positive
 spherical structure. Let $F$ be a cyclic subfield of its character
@@ -8754,78 +9098,52 @@ $v_p(f)\le v_p(\operatorname{ord}\theta_X)$ one may simultaneously
 prescribe $\theta_{V,p}=\theta_{X,p}$.
 \end{theorem}
 \begin{proof}
-Use the linear congruence representation at a common level $L$ of Dong--Lin--Ng \cite[Theorem~II]{DLNCongruence}, with the local normalization of Section~\ref{subsec:sqvac}. At odd $p$ the local upper unipotent
-$U_p(1)$ acts diagonally by the actual $p$-primary twists. At two
-it differs by a scalar. The local factors commute. The diagonal
-tori $H_a$ represent the Galois permutations on simple labels,
-up to inverses according to the torus convention. These permutations
-have a common sign $\epsilon_D(a)=\sigma_a(\sqrt D)/\sqrt D$,
-as is seen in the vacuum entries $d_i/\sqrt D$ for positive integral
-degrees. The torus action on the Galois orbit of $X$ thus affords
-the regular permutation representation of $\operatorname{Gal}(K_X/\QQ)$
-twisted by $\epsilon_D$. The permutation stabilizer of $X$ in
-$\operatorname{Gal}(\QQ(\mu_L)/\QQ)$ is the subgroup fixing all
-$\chi_X(Y)$.
+Use the lift $U(1)\mapsto T/\gamma$ of Section~\ref{sec:blocks} at its
+congruence level $L$ \cite[Theorem~II]{DLNCongruence}. The scalar
+$\gamma$ has two-power order, so the eigenvalues of $U_p(1)$ are the
+actual $p$-primary twists for odd $p$, and those of $U_2(1)$ are
+$\gamma^{-1}\theta_{i,2}$. The tori act by Galois permutations with
+common sign $\epsilon_D(a)=\sigma_a(\sqrt D)/\sqrt D$, as follows by
+applying Galois symmetry to $s_{i0}=d_i/\sqrt D$. Take the torus
+convention in which the unsigned permutation corresponds to $\sigma_a$
+(replacing all characters by their inverses gives the other convention).
 
-Choose a faithful character of $\operatorname{Gal}(F/\QQ)$ and
-inflate it to a Dirichlet character $\psi$ at level $L$. Its conductor
-is the conductor of $F$: its kernel cuts out exactly $F$.
-Let $J$ consist of the primes where $c_p=v_p(f)$ exceeds the
-valuation of the twist order of $X$; put $k_p=c_p-1$ for $p\in J$.
-Restrict throughout to the common actual twist fiber of $X$ at all
-primes outside $J$. The local groups in $J$ preserve it by
-commutation. On the orbit of $X$ under the local tori in $J$ the
-restriction of $\psi$ occurs in the unsigned permutation module, since
-its permutation stabilizer fixes $F$. For each $p\in J$
-choose a local unit $a_p\equiv1\pmod {p^{k_p}}$
-such that $\psi(a_p)\ne1$, extending it trivially at the other local
-factors. This is possible precisely by the definition of $c_p$.
-Set aside the odd primes $p$ for which $c_p=1$ and $v_p(D)$ is odd.
-At every other odd prime in $J$, $\epsilon_D(a_p)=1$:
-the local quadratic character is unramified if $v_p(D)$ is even
-and trivial on principal units in all cases. At two write
-$P_{a_2}=\epsilon_D(a_2)H_{a_2}$. The product of the remaining
-odd $H_{a_p}-I$, with the factor $P_{a_2}-I$ if two occurs,
-acts nontrivially on the $\epsilon_D\psi$-line of the orbit representation.
+Inflate a faithful character of $\Gal(F/\QQ)$ to a character $\psi$
+of $(\ZZ/L\ZZ)^\times$. Its conductor is $f$ because its kernel
+cuts out $F$. Let $J$ consist of the primes for which
+$c_p=v_p(f)>v_p(\ord\theta_X)$, and put $k_p=c_p-1$.
+Take $V$ spanned by the labels with the same actual twist components as
+$X$ outside $J$. Each local group at $p\in J$ preserves $V$ because it
+commutes with the complementary upper unipotents. On the orbit of $X$
+under the product of the local tori in $J$, the unsigned action is the
+permutation action on a quotient of this abelian product. Its
+stabilizer fixes every $\chi_X(Y)$ and hence $F$. Thus $\psi$
+restricted to the product occurs on the orbit, and the represented
+tori have a common eigenline of character $\epsilon_D\psi$ in $V$.
 
-We show that a zero joint twist fiber would make this product zero.
-In $\mathrm{SL}_2(\mathbb Z/p^a)$, the normal closure of $U_p(p^k)$
-contains $H_t$ for every unit $t\equiv1\pmod{p^k}$. Indeed,
-in the quotient both upper and lower transvections with parameter
-a multiple of $p^k$ become trivial. For $t=1+x$ use the factorization
-\[
- U(x)L(1)=L(1/t)H_tU(x/t).
-\]
-The two lower parameters differ by $x/t$, a multiple of $p^k$.
-This proof also handles $k=0$.
-Thus in the complex group algebra $H_t-I$ belongs to the two-sided
-ideal generated by $U_p(p^k)-I$. For example the identity
-$gh-I=(g-I)h+(h-I)$ shows this directly from normal generation.
+For each $p\in J$ choose a local unit $a_p\equiv1\pmod{p^{k_p}}$
+with $\psi(a_p)\ne1$, extending it by one in the other factors.
+Such a unit exists by the local conductor of $\psi$. Among the odd
+primes in $J$ set aside those for which $c_p=1$ and $v_p(D)$ is odd.
+Call this set $R$, and write $S$ for the other odd primes in $J$.
+For $p\in S$ the local quadratic sign is trivial at $a_p$.
+Indeed it is trivial on the entire local factor when $v_p(D)$ is even
+and on the principal units at every odd prime. Hence the eigenvalue of
+$A=\prod_{p\in S}(H_{p,a_p}-I)$ on the chosen line is
+$\prod_{p\in S}(\psi(a_p)-1)\ne0$.
 
-For the indicated odd primes take the product of these ideals.
-By commutation of the local groups the image of the product of their
-$H_{a_p}-I$ is contained in the span of odd local translates of the
-image of $\prod_p(U_p(p^{k_p})-I)$. The latter image is exactly
-the coordinate space $E$ of simples with twist order divisible by
-$p^{c_p}$ at every indicated odd prime. Thus if two is absent,
-nonvanishing forces $E\ne0$. An empty product of odd conditions
-means the full coordinate space.
+The space $E$ of Lemma~\ref{lem:joint-twist-ideals} is therefore nonzero.
+Its labels satisfy $p^{c_p}\mid\ord\theta_i$ for every $p\in S$.
+If $2\in J$, the unsigned permutation $P_{a_2}=\epsilon_D(a_2)H_{2,a_2}$
+has eigenvalue $\psi(a_2)$ on the same line. Thus $(P_{a_2}-I)A\ne0$.
+The dyadic assertion of the lemma supplies a label of $E$ whose
+dyadic twist order is at least $2^{c_2}$.
 
-If two is present and every label of $E$ has dyadic order dividing
-$2^{k_2}$, then $U_2(2^{k_2})$ acts by a scalar on $E$.
-The whole dyadic group preserves $E$, since it commutes with the
-odd factors. Apply the same normal-closure argument to its projective
-action on $E$. Then $P_{a_2}$ acts there by a scalar, necessarily
-one since it is an unsigned permutation of the coordinate basis.
-It also fixes all odd local translates of $E$ by commutation.
-The product with $P_{a_2}-I$ therefore vanishes, a contradiction.
-Some label in $E$ has dyadic twist order at least $2^{c_2}$.
-
-Finally fix the actual twist components of a label just obtained
-outside the set of omitted odd primes. By Proposition~\ref{prop:blockwise-odd-slice},
-within this nonempty fiber the proportion of squared-dimension
-mass simultaneously active at every omitted prime is at least
-$\prod_p(1-1/p)>0$. A label there has all the required twist orders.
+Fix the actual twist components of the resulting label outside $R$.
+Proposition~\ref{prop:blockwise-odd-slice} gives a proportion at least
+$\prod_{p\in R}(1-1/p)>0$ of squared-dimension mass active at every
+$p\in R$ in this fiber. Since $c_p=1$ for these primes, any such label
+has all required orders and retains the prescribed twists outside $J$.
 \end{proof}
 
 \begin{corollary}\label{found:C:7.2}
@@ -8977,8 +9295,7 @@ field. The ideal here is generated by $p$, including any ramification.
 \end{proposition}
 \begin{proof}
 
-All indicated local groups preserve the fiber. By the group-algebra
-argument in Theorem~\ref{found:C:7.1} at $k_t=0$, the image of
+All indicated local groups preserve the fiber. By Lemma~\ref{lem:joint-twist-ideals} at $k_t=0$, the image of
 $P=\prod_{t\in T}(I-H_t)$ lies in the span of $T$-local translates
 of its simultaneous $T$-active coordinate space: the ideals generated
 by $I-U_t(1)$ contain the respective torus differences and the
@@ -10157,70 +10474,130 @@ so equality forces $s=ph+1$. The two distinct primes cannot both
 have this value; hence $e_q^++e_r^+\ge2h+1=p+2$, as required.
 \end{proof}
 
-\paragraph{An arbitrary ratio.}
-For the following generalization the primes are called $q<s$.
-Let $m=\lfloor g/s\rfloor\ge1$, $t=g-ms$, $q\ge5(m+2)$, $q\nmid g$,
-and suppose that all phase primes are at least five. An entry of
-positive weight $g$ with residues $g$ over both $q,s$ has a unique
-positive expression at that weight. Its only primary factors are
-$q,s$. In its integral multiplicities the $q$-parts comprise $t$
-copies of $1$ and $s$ copies of each member of a multiset of $m$
-$q$-power roots. Nonidentity $s$-positions have multiplicities divisible
-by $q$. Thus the two projection sizes are at most
-$1+\lfloor g/s\rfloor,1+\lfloor g/q\rfloor$, respectively.
-
-Here is the signed integral calculation in the two-prime configuration;
-contraction and uniqueness then follow as in Lemma~\ref{found:J:key:lem:near-updated}.
-Give negative letters cost two. Write $P,N$ for the counts of positive
-and negative terms of any signed word of cost $P+2N\le g$. After
-erasing $q$-parts let $a_C$ be the common residue of the signed
-coefficients minus $g\delta_{x,1}$ on an $s$-coset $C$, choosing
-an integer representative of minimal cost
-$w(a)=a$ for $a\ge0$, $w(a)=-2a$ otherwise. All but possibly one
-position on $C$ cost at least $w(a_C)$. Therefore
+\begin{ratioprop}[Two positive residues at arbitrary ratio]\label{prop:arbitrary-ratio-rigidity}
+Let $q<s$ be primes, $g$ a positive integer with $q\nmid g$, and set
+$m=\lfloor g/s\rfloor$, $t=g-ms$. Assume $m\ge1$ and $q\ge5(m+2)$.
+Let $z$ be a cyclotomic integer admitting an expression
 \[
- \sum_C w(a_C)\le g/(s-1)<m+2.
+        z=\sum_{\omega\in\mu_n}c_\omega\omega,\qquad
+        c_\omega\in\QQ_{\ge0},\qquad \sum_\omega c_\omega=g,
 \]
-On erasing $s$-parts, write the result $v=t+s\alpha$. The integral
-$q$-primary $\alpha$ has signed rational length at most
-$(g+t)/s<m+2$, hence a signed integral word of length at most $m+1$
-by the median argument. Let $L$ be the sum of its signs.
-The augmentation modulo $q$ gives
-$\sum_Ca_C\equiv L-m\pmod q$. This is an integer equality since
-$|\sum_C a_C|\le m+1$, $|L-m|\le 2m+1$, and $q>3m+2$.
+where every prime divisor of $n$ is at least five. We call $g$ the weight
+of this expression. Assume $z\equiv g$ at every prime ideal over $q$ and
+over $s$ in $\ZZ[\zeta_n]$. Then the multiplicities $c_\omega$ are
+integers and are the same for every expression satisfying these weight
+and phase-order conditions, allowing the level $n$ to vary.
 
-Mark $1$ and the at most $m+1$ roots of the word of $\alpha$.
-The usual coset functional is one there and everywhere at least
-$-1/4$ since $q\ge5(m+2)$. Applying it to $v$ gives
-$t+sL\le P+N/4\le g-7N/4$. Thus $L\le m$ and
-$N\le 4s(m-L)/7$.
-Suppose $d=m-L>0$. Among the negative residues $a_C=-b_C$
-put $B=\sum b_C\ge d$ and $b=\max b_C\le(m+1)/2$.
-At each of at least $s-1$ positions in each such coset there
-are either at least $b_C$ negative letters or at least $q-b_C$
-positive ones. At most $g/(q-b)$ positions can be of the latter
-kind without qualifying for the first. It follows that
+Every occurring phase is a product of a $q$-power root and an $s$-power
+root. Counting repetitions, its $q$-parts form $t$ copies of $1$ and
+$s$ copies of each member of a multiset of $m$ $q$-power roots.
+The multiplicity at each $s$-position $x$ is $g\delta_{x,1}\pmod q$.
+In particular the two projections have at most $m+1$ and
+$1+\lfloor g/q\rfloor$ positions, respectively.
+\end{ratioprop}
+\begin{proof}
+We may enlarge the level to a common multiple of $qs$ and any two levels
+being compared. First consider an integral signed word on the
+$q$- and $s$-primary roots whose value has the stated residues. Give a
+positive letter cost one and a negative letter cost two. Write $P,N$
+for their numbers and suppose $P+2N\le g$.
+
+Erase the $q$-parts and let $h_x$ be the resulting signed coefficients
+on the $s$-positions. Modulo every prime above $q$ erasure fixes the
+value. Since $q$ is unramified in the $s$-power field, the erased
+value is $g$ modulo $q$ in its ring of integers. In that ring the
+relations among the roots are generated by the sums over the
+$\mu_s$-cosets (omit one position per coset to get an integral basis).
+Thus $h_x-g\delta_{x,1}$ is constant modulo $q$ on each such coset $C$.
+Choose the representative $a_C$ of the constant minimizing
+$w(a)=\max(a,-2a)$. At all positions except possibly $1$ the cost is at
+least $w(a_C)$, giving $\sum_C w(a_C)\le g/(s-1)<m+2$.
+
+Erase the $s$-parts instead. The resulting $q$-primary value is
+$v=t+s\alpha$ with $\alpha$ integral, since $v\equiv g\equiv t$
+at every prime over $s$ and $s$ is unramified here. Subtracting $t$
+and dividing by $s$ gives a rational signed expression for $\alpha$
+of absolute length at most $(g+t)/s<m+2$. Among the coefficient
+vectors of this integral value, choose an integral vector and subtract
+a median on each $\mu_q$-coset. All rational representations differ
+from this vector by a constant on each coset, so an integral vector
+achieves the minimum absolute length. We thus have a signed integral
+word of length at most $m+1$ for $\alpha$. Write $L$ for the sum of its
+signs. Counting the $h_x$ modulo $q$, and reducing $v$ above $q$, gives
 \[
- N\ge B(s-1)-b\,g/(q-b)
-   \ge Bs\big(1-1/s-(m+1)/(q-b)\big)>4Bs/7,
+       P-N\equiv g+s\sum_C a_C\equiv t+sL\pmod q .
 \]
-since $1/s<1/15$ and $(m+1)/(q-b)<2/9$. This contradicts the
-upper bound. Hence $L=m$ and $N=0$; the signed word of $\alpha$
-is necessarily $m$ positive roots, by parity of its length. The
-original integral word has precisely $g$ positive terms by the equality
-in the coset functional, so independence identifies its $q$-marginal.
-A negative $a_C$ is impossible by the same lower bound on $N$
-(with $B>0$). Their integer sum is zero, so all $a_C$ vanish.
-As in the previous lemma, two optimal words together have fewer
-than $s$ distinct $s$-positions and fewer than $q$ distinct $q$-positions:
-use $1+2\lfloor g/q\rfloor<s$ and $1+2(m+1)<q$. The independence
-of each projection fixes the joint multiplicities.
+Hence $\sum_Ca_C=L-m$ as integers: their absolute values are at most
+$m+1$ and $2m+1$, and $q>3m+2$.
 
-Apply the product obstruction \eqref{found:J:eq:exposure} at the two
-projection sizes just proved. The same isolation and trace argument
-as in Theorem~\ref{found:J:key:thm:below-square} then works at every
-$r<p^2$ for which $q\ge5(\lfloor p^2/r\rfloor+2)$, the two
-projection tests and the isolated-orbit inequality hold.
+Mark $1$ and every $q$-root in the chosen word for $\alpha$. On a
+$\mu_q$-coset containing $k$ marks prescribe a functional equal to
+$1$ there and $-k/(q-k)$ on the unmarked positions. Its coset sums
+are zero, so these prescriptions give a rational-linear functional.
+Its values lie in $[-1/4,1]$ because $k\le m+2\le q/5$.
+Applied to the two expressions for $v$ it gives
+\[
+               t+sL\le P+N/4\le g-7N/4 .
+\]
+Put $d=m-L\ge0$. If some $a_C$ is negative, write $a_C=-b_C$
+on these cosets, put $B=\sum b_C$ and $b=\max b_C$.
+Then $B\ge d$ and $2b\le m+1$. At each of at least $s-1$
+positions of such a coset there are at least $b_C$ negative letters,
+or there are at least $q-b_C$ positive letters. The number of positions
+where the first bound fails is at most $g/(q-b)$. Consequently
+\[
+ N\ge B(s-1)-\frac{bg}{q-b}
+   > Bs\left(1-\frac{1}{s}-\frac{m+1}{q-b}\right)>\frac47 Bs ,
+\]
+using $g<(m+1)s$, $b\le B$, $1/s<1/15$ and $(m+1)/(q-b)<2/9$.
+This contradicts $N\le 4sd/7$. Hence every $a_C\ge0$. Their sum is
+$-d\le0$, so all vanish, $d=0$ and $N=0$. The word for $\alpha$
+has signed sum $m$ and length at most $m+1$; by parity it consists of
+$m$ positive letters. The functional now takes value $g$ on $v$,
+so $P=g$ and every $q$-part is marked. The marks are linearly
+independent, since they miss a position in each $\mu_q$-coset. This
+gives the stated $q$-multiplicities, and $a_C=0$ gives the congruence
+on the $s$-multiplicities.
+
+To pass to the original rational expression, split off all primary
+factors other than $q,s$ as in Proposition~\ref{found:C:3.1}.
+In each such $u$-power factor use the integral functional which fixes
+$1$, takes value $-1$ on one uniformly chosen nonidentity $u$th root,
+and vanishes on the remaining roots. Tensor these independent
+functionals with the identity on the retained factors. The values on
+each $\mu_u$-coset sum to zero. The contraction fixes $g$ and preserves
+the two radical congruences: the radical at either retained prime is
+generated by its primary cyclotomic uniformizer. A term with a
+nontrivial complementary $u$-part has expected signed cost at most
+$2/(u-1)\le1/2$. Its presence would give some integral contraction
+target with a rational signed expression of cost less than $g$.
+The two-prime cyclotomic configuration is unimodular
+\cite[Theorems~3 and~13]{BH}. In an integral basis of its column lattice,
+every nonsingular maximal minor has determinant $\pm1$; this property
+persists on adjoining the negative columns. A basic optimum for an
+integral target therefore has integral coefficients, contrary to the
+preceding calculation.
+
+Only the $q,s$-factors remain. The cost-$g$ face of the polyhedron of
+signed representations of $z$ is a bounded optimal face. By the same
+unimodularity its vertices are integral, so the rational expression
+is a convex combination of integral optima. In each optimum the
+nonidentity $s$-positions have multiplicity at least $q$ and the
+identity occurs since $q\nmid g$. Two optima together use at most
+$1+2\lfloor g/q\rfloor<s$ such positions in total, since
+$g<(m+1)s$ and $q\ge5(m+2)$. Their union is independent over the
+$q$-power field by the coset basis and coprimality of the conductors.
+The sums of $q$-roots therefore agree at each $s$-position. The union
+of the $q$-positions contains at most $1+2m<q$ roots and is likewise
+independent. Thus every joint multiplicity agrees, proving uniqueness.
+\end{proof}
+
+For $g=p^2$ and $s=r<p^2$, Proposition~\ref{prop:arbitrary-ratio-rigidity}
+gives the two projection sizes in the product obstruction
+\eqref{found:J:eq:exposure}. The isolation and trace argument of
+Theorem~\ref{found:J:key:thm:below-square} applies whenever
+$q\ge5(\lfloor p^2/r\rfloor+2)$, both projection tests hold and the
+isolated-orbit inequality is satisfied.
 
 \paragraph{The small least prime.}
 For $p=3$ the conclusion of Corollary~\ref{found:J:key:cor:halfsquare} follows
@@ -10758,13 +11135,12 @@ twists and odd mates equal twists. Write $K=W|_A$, $W_o$ for the
 product of odd Weyls and $\widehat s=s|_A=K W_o|_A$. The genuine
 congruence representation of Section~\ref{sec:blocks} has $\lambda^8=1$ and trivial
 odd normalizing scalars. The dyadic group preserves full two-blocks
-and $K$ preserves positive two-blocks by lifting their projectors (Lemma~\ref{lem:local-block-invariance} and Proposition~\ref{fam:Q:7.1}).
+and $K$ preserves positive two-blocks by lifting their projectors (Lemmas~\ref{lem:local-block-invariance} and~\ref{lem:positive-defect-one-phases}).
 
 \smallskip\noindent\emph{Positive twists.}
-The defect-one block and Bruhat mass argument in Proposition~\ref{fam:Q:7.1} gives precisely the two squared dyadic phases
-$+1,-1$ in every complementary block; its rows hit only these phases.
-This part uses defect one for the witnesses and odd dyadic valuation
-of $4\Delta$. A pair of any other squared phase cannot be active at
+The first assertion of Lemma~\ref{lem:positive-defect-one-phases}
+applies to each complementary witness, since $v_2(4\Delta)=7$.
+Thus its row sees only the two squared dyadic phases $+1,-1$. A pair of any other squared phase cannot be active at
 three or five, as Proposition~\ref{prop:principal-support} modulo the opposite prime
 would force a complementary hit. On each such extra phase fiber the
 odd local groups act trivially: they preserve the fiber, their upper
@@ -10813,49 +11189,26 @@ quadratic dyadic field and is $a+b'\sqrt2$ with $a$ odd; the sum
 is $4a$, again impossible. Hence all even dyadic twists have order
 dividing four.
 
-The rest of Proposition~\ref{fam:Q:7.1}, starting with balancing after the
-even-twist bound, applies without a parity hypothesis: the full dyadic
-level divides eight and each complementary positive block is an
-equal-degree pair with opposite squared twists. In detail, dyadic
-units congruent to one modulo four fix even characters on the even
-ring; the two full labels have opposite twists so are individually
-fixed. By symmetry the restriction of each odd character is fixed as
-well. This gives the full twist bound and shows that the values of
-any purely dyadic odd character on even objects lie in $\ZZ[i]$.
-For complementary blocks an unramified branch and equality of their
-two squared masses force both inertia orbits to be singletons.
+Lemma~\ref{lem:positive-defect-one-phases} now gives full dyadic level
+dividing eight and two equal-degree positive labels of opposite squared
+twists in each complementary block. It also gives Gaussian integer
+values on even objects for every purely dyadic odd character.
 
-\smallskip\noindent\emph{Odd spins.} Put $Z=T_2^2|_A$,
-$F=KZK^{-1}$ and denote the local diagonal torus by $H_a$.
-The factorization and torus identities of Theorem~\ref{fam:Q:7.2} give on $A$
-\[
- Z^2=F^2=1,\qquad ZF=-FZ,\qquad H_3=-K^2,\qquad
- (WU)^{-1}U^2(WU)=c_0 F H_3 Z,\quad |c_0|=1.
-\]
-These identities use the preceding twist bound and the odd dyadic
-valuation: $H_5=-1$ on $A$, $H_3=H_5 H_{-1}=-K^2$, and the last identity follows from
-$U(-1)L(-2)U(1)=L(2)H_3U(6)$ modulo eight. Since $H_3^2=1$ and
-$H_3$ commutes with $Z,F$, the square of the last operator is scalar.
-Consequently $U^4$ is scalar on $C=WUA$, which contains a symmetric
-vector for every odd orbit.
-
-Over any complementary positive block of common degree $d$, the
-signed rank-two argument of Theorem~\ref{fam:Q:7.2} gives two free odd
-orbits whose twist ratio is $i$ or $-i$, with degrees $u,v$ such
-that $u^2+v^2=2d^2$. Indeed $WU$ maps the positive block onto its
-odd symmetric part. Its two signed branches have equal dyadic defect,
-by inertia or by equality of the two conductor valuations of the
-split rank-two order. Formula~\eqref{eq:fermion-restriction-codegree} gives equal orbit type
-and equal dyadic degree valuation. Equating the even and odd masses
-rules out two fixed labels by the two-valuation of $4d^2$; the free
-case gives the stated equality and $v_2(u)=v_2(v)=2$.
+\smallskip\noindent\emph{Odd spins.}
+Put $Z=T_2^2|_A$, $F=KZK^{-1}$. These involutions anticommute, and
+$U^4$ is scalar on $C$, by Lemma~\ref{lem:signed-dyadic-pair}.
+Over each complementary block the two odd orbits are free, and their
+actual dyadic twists have ratio $\pm i$. Their degrees satisfy $u^2+v^2=2d^2$ and
+$v_2(u)=v_2(v)=2$.
 For $d=4\cdot3^i$, descent modulo three gives $u=v=d$; for
 $d=4\cdot5^j$, reduction modulo three gives $3\nmid uv$.
 
-Each complementary witness admits a full lift principal at its odd
-prime by Theorem~\ref{fam:Q:7.2}: multiplication by an odd label of
-unit degree shows that the residues on odd labels agree with their
-degrees up to one common sign. This lift hits both odd mates of every
+At its odd prime $p$ each complementary witness has a full principal
+lift. Indeed, if $Y$ is an odd label of $p$-unit degree, its square
+is even, so its character value is congruent to $\pm d_Y$. Tensoring
+the witness by $g$ chooses the positive sign. For every odd $V$,
+evaluating the even product $YV$ then gives the dimension residue on
+$V$. Such a $Y$ is supplied by the opposite odd mates just found. This lift hits both odd mates of every
 opposite block by principality. As $W$ preserves its full two-block
 and $W_o$ preserves odd dyadic spin fibers, its row sees only the
 two odd spins of its own block. Thus the same pair $\delta,i\delta$
@@ -10866,16 +11219,9 @@ label active at three or five hits a complementary witness by
 Proposition~\ref{prop:principal-support} modulo the other prime. All such labels have
 one of these two spins.
 
-Some other odd spin occurs. This is the final implication of
-Theorem~\ref{fam:Q:7.2}, which uses only the two-spin hypothesis at this
-stage: if these were the only spins on $C$, then $U|_C$ would be
-an affine polynomial in $U^2$. The Weyl relation gives $PKP=aPK^2P$
-on $A$ with $P=(1+Z)/2$ and $|a|^2=1/2$. The modular indicator at
-an integer zero on the dyadic level and one on the odd level then
-makes the virtual element with character coordinates $Z_{YY}$
-integral in the positive basis. It is self-adjoint, squares to one
-and has dimension one, hence is invertible; both signs occur,
-contradicting perfectness.
+Some other odd spin occurs, since the two-spin conclusion of
+Lemma~\ref{lem:signed-dyadic-pair} would contradict perfectness of
+$R_+$.
 
 By scalar $U^4$ all other odd orbits have spin $-\delta$ or
 $-i\delta$. Call their set $E$. The odd local groups fix their
@@ -11382,18 +11728,10 @@ exactly three and five, regardless of their dyadic twist.
 
 The outside divisor can be increased if every label active at a prime
 of $T$ has $v_u(f_Y)\le2$, for a given $u\notin T$. In that case
-replace the factor $u$ in the divisor by $u^{v_u(n)}$. For $t\in T$
-all active columns of $W_t$ are $u$-integral at every prime above $u$
-by Theorem~\ref{fam:W:2.1}. If $T_t$ denotes the actual primary twists,
-\[
- W_tT_t W_t^*-I=\sum_{Y\ {\rm active\ at}\ t}
- (\theta_{Y,t}-1)(W_te_Y)(W_te_Y)^*
-\]
-is $u$-integral. Restoring the normalization scalar gives the same
-integrality for the lower unipotent; the upper is diagonal and
-integral. Their Bruhat word gives $u$-integrality of $W_t$ itself,
-hence of every product $W_J$, $J\subseteq T$. Thus $n(W_J)_{00}$ is
-divisible by the full $u$-part of $n$ in the inclusion--exclusion sum.
+replace the factor $u$ in the divisor by $u^{v_u(n)}$. By Theorem~\ref{fam:W:n:thm:foreign-column} each $W_t$, $t\in T$,
+has entries integral at every prime above $u$. The same holds for
+their product $W_J$, $J\subseteq T$. Hence the rational integer
+$n(W_J)_{00}$ is divisible by $u^{v_u(n)}$ in the inclusion--exclusion sum.
 
 For example, if two and five mix at $2^6 3^{2e}5^4$, every
 three-active label has degree $2^i3^j5^l$ with $l\ge1$ by the
@@ -13115,7 +13453,7 @@ Consider the branch of Section~\ref{found:T:10} at $D=5^67^623^4$, with five and
 \[
                          v_{23}(d_H)=1 .
 \]
-Thus the $23$-free possibility is excluded even for a pure seven-twist. At each such $H$ the double-principality lemma also supplies a twist-one $23$-free hit in $P_7\cap P_{23}$, and the enhanced Weyl estimate in Section~\ref{found:C:6} makes $W_7$ integral at $23$.
+Thus the $23$-free possibility is excluded even for a pure seven-twist. At each such $H$, Lemma~\ref{found:T:key:lem:separated-double-principal} supplies a twist-one $23$-free hit in $P_7\cap P_{23}$. Moreover $W_7$ has integral entries at every prime above $23$.
 
 \begin{proof}
 Full $23$-height was excluded in Section~\ref{found:T:10}. Suppose $r\nmid d_H$. Separation and the absence of prime-power degrees give $d_H=125\cdot7^j$, $j=1,2$. Take a five-free nonunit $Y\in P_7$ in the pure seven fiber meeting $H$; its twist is one, since seven-activity would require full five-height. Write $d_Y=49r^a$, $a=1,2$, by the orientation result (Section~\ref{found:D:6}). The lcm-normalized crossing $z$ is unramified at seven in $K_Y$, and $\chi_Y(H)=125z\equiv0$ at every prime over seven, so $z\in7\mathcal O$. At $j=1$ its house is strictly below seven, impossible. At $a=2$ the entry $S_{YH}=n(z/7)$ already costs at least $n^2$ in the Galois-averaged row norm. Thus $j=2,a=1$. Write $S_{YH}=(n/r)b$. Then $b$ is a nonzero integer of an $r$-power cyclotomic field since $K_H$ is unramified at five and $K_Y$ at seven. Any such pure $Y$ of degree $49r$ has $K_Y\supseteq\mathbb Q(\zeta_r)$ by its crossing with the seven-free degree-$25r$ row of $P_r$ (Sections~\ref{found:J:8} and~\ref{found:T:10}). Its field ramifies at five by the orientation in Section~\ref{found:D:6}. Thus $m_Y=[K_Y:\mathbb Q]$ is a multiple of $22$ and at least $44$. Also $6\mid m_H$ by the seven-twist square action and odd duality.
@@ -13127,11 +13465,31 @@ We claim $b\in\ZZ$. Otherwise let $r^c$ be its conductor at $r$, and express $b=
 \]
 This is the primitive Gauss-sum formula applied to the orbit matrix as in Proposition~\ref{found:J:6.1}. Both inputs are $r$-inactive, by Section~\ref{found:T:10} for the $r$-free $H$ (all jointly seven--$r$-active degrees there are $125\cdot7r$). Proposition~\ref{por:prop:wild} bounds the coefficient by $r^{-c/2}$. Thus $m_Ym_H|\sum d_j\overline{\psi(j)}|^2\le (r-1)^2=484$, also for every conjugate character. The nonzero sum is an algebraic integer. But $m_H$ is divisible by eleven if $c=1$, and by $23$ if $c>1$, in addition to six, a contradiction. If $b=(x+y\sqrt{-23})/2$ instead, the quadratic orbit coefficient has absolute value $\sqrt{m_Ym_H}\,|y|/(2\sqrt{23})$. The tame inactive compression (Section~\ref{found:P:2}) applies also to the quadratic character, giving $m_Ym_H y^2\le4$. Thus $b$ is rational.
 
-Averaging the $Y$-orbit on all $m_H$ positions of $H$ now gives $m_Ym_H b^2<529$. Therefore $b=\pm1$, $m_H=6$ and $m_Y=44$: the other possible $Y$-orbit size $66$ is excluded because no factor three occurs in the Galois degree of a $5,23$-power cyclotomic field. The seven-twist of $H$ has order exactly seven. The two required subfields determine $K_Y=\mathbb Q(\zeta_{23},\sqrt5)$. Such a $Y$ crosses each seven-free nonunit $U\in P_5$ in the same $9+7(\eta+\eta^{-1})$, up to Galois conjugation, as in Section~\ref{found:T:10}: the proof uses the $5$-primary word on three letters and the displayed quadratic five-part of $K_Y$. In particular for the fixed $U$-orbit of size at least $44$ the mean normalized crossing is $11/2$. Here $d_U=25r$ and $n/\operatorname{lcm}(d_U,d_Y)=805$. The averaged $U$-row bounds the number $B$ of these $Y$-orbits by $44^2 B(11/2)^2<805^2$, so $B\le11$.
+Let $v_Y$ be the unit vector constant on the orbit of $Y$ and zero off it.
+The squared mass of $s v_Y$ on the $H$-orbit is $m_Ym_H b^2/529<1$, since
+the vacuum also contributes. Thus $b=\pm1$. We have $22\mid m_Y$,
+$m_Y\ge44$ and $6\mid m_H$; moreover $3\nmid m_Y$, since $K_Y$ has
+conductor supported at five and $23$. The possible pairs $(m_Y,m_H)$
+are $(44,6),(44,12),(88,6)$.
+
+To exclude the two pairs with product $528$, retain also the disjoint orbit
+of the twist-one $U\in P_5$ from Corollary~\ref{found:T:key:cor:odd-one-degree}
+and Proposition~\ref{found:D:key:prop:odd-oriented-path}, of degree $25r$
+and size $m_U\ge44$. By Lemma~\ref{found:D:key:lem:unramified-orientation}
+the lcm-normalized entry at $U,Y$ has the unique weight-$23$ expression
+$z=2+7\sum_{j=1}^3\eta_j$, with $\eta_j$ of five-power order.
+Wild five-inertia fixes $K_Y$ since $5\nmid m_Y$. It permutes the three
+letters by uniqueness, so fixes each: its orbits on roots of order $5^a>5$
+have size $5^{a-1}$. If $t$ letters are trivial, the normalized Galois
+trace of $z$ is $(35t-13)/4$, of absolute value at least $13/4$.
+Since $n/\lcm(d_Y,d_U)=805$, averaging the $Y$-orbit on the $U$-orbit
+gives squared mass at least $(44\cdot13/(4\cdot805))^2>1/529$
+(use $44\cdot13/4=143>805/23$). This and $528/529$ exceed one.
+Consequently $m_H=6$ and $m_Y=44$. The seven-twist of $H$ has order exactly seven. The two required subfields determine $K_Y=\mathbb Q(\zeta_{23},\sqrt5)$. Such a $Y$ crosses each seven-free nonunit $U\in P_5$ in the same $9+7(\eta+\eta^{-1})$, up to Galois conjugation, as in Section~\ref{found:T:10}: the proof uses the $5$-primary word on three letters and the displayed quadratic five-part of $K_Y$. In particular for the fixed $U$-orbit of size at least $44$ the mean normalized crossing is $11/2$. Here $d_U=25r$ and $n/\operatorname{lcm}(d_U,d_Y)=805$. The averaged $U$-row bounds the number $B$ of these $Y$-orbits by $44^2 B(11/2)^2<805^2$, so $B\le11$.
 
 For each $H$-orbit at most two of these $Y$-orbits meet it, since three would cost $3\cdot44\cdot6>529$ in the averaged $H$-row. The double-principal residue at five in Section~\ref{found:T:10} counts only those lying in $P_5$. Each contributes $\pm44\cdot(49r)\cdot(7r)\equiv\pm3\pmod5$, since $\chi_H(Y)=\pm7r$. One orbit cannot give $-1$ modulo five. Thus precisely two meet $H$, both double-principal. Conversely, a fixed $Y$-orbit can meet at most two such $H$-orbits by the same norm bound. Hence there are at most eleven $H$-orbits.
 
-Finally the singleton Gauss sum $L_7=\sum_Z d_Z^2c_7(Z)$ of Section~\ref{found:C:6} is divisible by $23$. The terms at $23$-bearing labels are zero modulo $23$ (the denominator of $c_7$ divides six). Each orbit of $23$-free seven-active labels would contribute exactly $7(125\cdot49)^2$ because its size is six and its seven-twist has order seven. Their number is therefore a multiple of $23$, hence zero. The final two assertions follow respectively from the double-principality lemma and from $v_{23}(f_H)=2$ on the seven-active sector.
+Finally the singleton Gauss sum $L_7=\sum_Z d_Z^2c_7(Z)$ of Section~\ref{found:C:6} is divisible by $23$. The terms at $23$-bearing labels are zero modulo $23$ (the denominator of $c_7$ divides six). Each orbit of $23$-free seven-active labels would contribute exactly $7(125\cdot49)^2$ because its size is six and its seven-twist has order seven. Their number is therefore a multiple of $23$, hence zero. We have proved $v_{23}(d_H)=1$ for every seven-active $H$. This gives the divisibility hypothesis of Lemma~\ref{found:T:key:lem:separated-double-principal} with $(p,q)=(7,23)$. It also gives $v_{23}(f_H)=v_{23}(D)-2v_{23}(d_H)=4-2=2$. Apply the all-primes conclusion of Theorem~\ref{fam:W:n:thm:foreign-column} with $(q,p)=(7,23)$.
 \end{proof}
 
 \begin{theorem}\label{por:th:odd-seven-elim}
@@ -13142,7 +13500,7 @@ We first exclude seven-free seven-active labels. They have degree $125r$ by the 
 
 For an orbit of exact seven-primary order $7^u$ write its size as $6\cdot7^{u-1}A$, $A\ge1$, using the independent square action and duality. The orbit sum of $c_7$ is $7A k(u)$ where $k(1)=1$ and $k(u)=6\cdot7^{u-2}$ for $u>1$. In the singleton congruence $7^3\mid L_7$ all seven-bearing orbits disappear modulo $7^3$. The remaining degrees equal $125r$, so $49$ divides $\sum A k(u)$ over the seven-free orbits. If nonempty this gives $N_0\ge6\cdot49=294$, a contradiction.
 
-Now every seven-active degree is $125\cdot7^hr$, $h=1,2$. At each pure seven-active $H$ repeat the five-free pure principal-hit analysis above. A hit $Y$ of $r$-height two would again give $S_{YH}/n$ nonzero integral at full lcm scale: the common crossing is divisible by seven because $Y\in P_7$ and $\chi_Y(H)=125z$. Thus $d_Y=49r$, and $b=S_{YH}/(n/r)$ is nonzero integral in the $r$-primary field. The inactive compression proof again forces $b=\pm1$, $m_H=6$, $m_Y=44$, $K_Y=\QQ(\zeta_r,\sqrt5)$, and exact seven-twist. This argument needs only that both twists are $r$-inactive and $7\mid d_H$, after the lcm and divisibility just checked. In the double-principal residue modulo five each contributing $Y$-orbit now gives
+Now every seven-active degree is $125\cdot7^hr$, $h=1,2$. At each pure seven-active $H$ repeat the five-free pure principal-hit analysis above. A hit $Y$ of $r$-height two would again give $S_{YH}/n$ nonzero integral at full lcm scale: the common crossing is divisible by seven because $Y\in P_7$ and $\chi_Y(H)=125z$. Thus $d_Y=49r$, and $b=S_{YH}/(n/r)$ is nonzero integral in the $r$-primary field. The same inactive compression makes $b$ rational, and the two disjoint orbit estimates above again give $b=\pm1$, $m_H=6$ and $m_Y=44$. Indeed $6\mid m_H$ by seven-activity and duality, and the $Y$-orbit and the fixed $U$-orbit have the same degree and field constraints used there. Thus $K_Y=\QQ(\zeta_r,\sqrt5)$ and the seven-twist has exact order seven. In the double-principal residue modulo five each contributing $Y$-orbit now gives
 \[
               \pm44\cdot49r\cdot7^{3-h}
                     \equiv\begin{cases}\pm2,&h=1,\\ \pm1,&h=2.\end{cases}
@@ -13154,7 +13512,12 @@ Let $A_1,A_2$ count the pure seven-active orbits at the respective heights and $
                         2 A_1+A_2+B/2\le22.
 \]
 
-All seven-active twists have seven-component of exact order seven. Each of the two quadratic classes of primitive seventh phases occurs, by the quadratic Gauss balance of Section~\ref{found:C:6}. At a fixed primitive phase $\alpha$ let $P_\alpha$ be its projector. The mass of its degree squares is $D\|P_\alpha W_7e_0\|^2$, since the complementary Weyl is unitary and commutes with $P_\alpha$. The $r$-integrality of $W_7$ proved above makes this mass divisible by $r^4$. Write $A_{h,\pm},B_\pm$ for the orbit counts in the corresponding square class at seven. A pure orbit gives two labels over each of its three seventh phases, and a joint gives twenty-two over each of its three phases. Dividing the squared degree sum by $2(125\cdot7r)^2$ gives
+All seven-active twists have seven-component of exact order seven. Each of the two quadratic classes of primitive seventh phases occurs, by the quadratic Gauss balance of Section~\ref{found:C:6}. At a fixed primitive phase $\alpha$ let $P_\alpha$ be its projector. Its squared-degree mass $M_\alpha=\sum_{\theta_{Y,7}=\alpha}d_Y^2$ is a rational integer. Since $se_0=(d_Y/n)_Y$ and the complementary Weyl is unitary and commutes with $P_\alpha$, we have
+\[
+ \frac{M_\alpha}{D}=\|P_\alpha W_7 e_0\|^2
+   =\sum_{\theta_{Y,7}=\alpha}(W_7)_{Y0}\,\overline{(W_7)_{Y0}} .
+\]
+Every summand is integral at all primes above $r=23$ by the preceding all-primes bound and conjugation. The rational number $M_\alpha/D$ therefore belongs to $\ZZ_{(23)}$. Since $v_{23}(D)=4$, we obtain $23^4\mid M_\alpha$. Write $A_{h,\pm},B_\pm$ for the orbit counts in the corresponding square class at seven. A pure orbit gives two labels over each of its three seventh phases, and a joint gives twenty-two over each of its three phases. Dividing the squared degree sum by $2(125\cdot7r)^2$ gives
 \[
         529\mid A_{1,\pm}+49 A_{2,\pm}+11 B_\pm .
 \]
@@ -13838,122 +14201,6 @@ Some divisible by $30$ & $112$ & $56$ & $\ge142$ & \pageref{por:count-triangle}\
 If $R=101$, at least $21$ labels have degree $900$, in at least four distinct Galois orbits and at least two twists. At least $18$ of their rows meet a label active at two and three. At every rank the field degree at a simple of degree $900$ is at most six. At degree $675$ the field is rational or quadratic and $m_{675}\le7$. At degree $600$ the field is contained in $\QQ(\zeta_9)$, and its degree is at most three if no twist order is divisible by six.
 \end{theorem}
 
-\subsection{Conductor, local Weyl coefficients and twist masses}
-\label{por:tools}
-For an integral modular category put $d_Z=\FPdim Z$, $f_Z=D/d_Z^2$, $s=S/\sqrt D$ and $\chi_Z(Y)=S_{ZY}/d_Z$. We use the positive spherical structure, and the lift of Lemma~\ref{lem:local-vacuum-column} with normalization scalar $\gamma$ of dyadic order and $\gamma^3=\xi$, the multiplicative central charge. All uses of Frobenius--Schur indicators below concern actual categories.
-Let $\mathcal C$ be an integral modular category of dimension $D=n^2$. For any integer $m\ge1$ put
-\[
-             M_m(Z)=\sum_Y d_Y\chi_Z(Y)\theta_Y^m.
-\]
-For a set $J$ of primes in the level write $W_J$ for the product of its local Weyl operators in the normalized congruence representation, and $\theta_{Y,J}$ for the $J$-part of $\theta_Y$.
-\begin{theorem}\label{por:th:weyl-div}
-For all $m,Z$, the number $|M_m(Z)|^2/D$ is an algebraic integer. For every $J,Z$,
-\[
-             k_{J,Z}:=\frac n{d_Z}(W_J e_0)_Z\in\mathbb Z .
-\]
-More precisely, if $m$ is one on the local levels in $J$ and zero on the complementary levels, then $M_m(Z)=n\gamma_J^3\theta_{Z,J}^{-1}k_{J,Z}$, with $\gamma_J$ the $J$-part of the normalization scalar. Every prime $q$ outside $J$ dividing $f_Z$ also divides $k_{J,Z}$.
-\end{theorem}
-\begin{proof}
-Extend $\nu_m$ linearly to virtual objects with cyclotomic integer coefficients; its values are integral because each simple indicator is a finite-order trace. For every $B$, inserting Verlinde into the Ng--Schauenburg formula \cite[Theorem~7.5 and Remark~7.6]{NSfs} gives $\nu_m(B)=\sum_Y\chi_Y(B^*)|(sT^ms e_0)_Y|^2$, where $*$ extends duality linearly. The two factors are conjugate since $X,X^*$ have the same twist. For $B=\sum_X\chi_Z(X)[X]$ the coefficient at $Y$ is
-\[
-              \sum_X\chi_Z(X)\chi_Y(X^*)=f_Z\mathbf1_{Y=Z}.
-\]
-Thus $\nu_m(B)=f_Z|(sT^ms e_0)_Z|^2=|M_m(Z)|^2/D$.
-
-For the indicated $m$, $sT^m s e_0=sT^m s^{-1}e_0$ since charge conjugation fixes the vacuum. Only the $J$-local upper unipotent occurs in the middle of the latter word, apart from the scalar $\gamma_J$. The matrix identity $W U W^{-1}=U^{-1}W^{-1}U^{-1}$ in each selected factor shows that its $Z$-coordinate is $\gamma_J^3\theta_{Z,J}^{-1}(W_J^{-1}e_0)_Z$. The vectors $W_J^{-1}e_0=W_J e_0$ are rational in square dimension (Lemma~\ref{lem:local-vacuum-column}). Since the same coordinate equals $d_Z M_m(Z)/D$, the claimed expression for $M_m(Z)$ follows with rational $k_{J,Z}$. Its square is an algebraic integer by the first assertion, proving integrality.
-
-For a prime $q$ the rotation identity \cite[(5.4) and proof of Theorem~5.1, pp.~75--76]{NSpivot} gives
-$\nu_{qv}(X)^q\equiv\nu_v(X^{\otimes q})$ at a prime above $q$: trace to the $q$th power agrees in the residue field with trace of the $q$th power, and rotation by $q$ places is rotation by one block of length $q$. This extends to every cyclotomic-integral virtual $B$ by additivity and the Frobenius homomorphism in the commutative fusion ring modulo $q$. If $q\notin J$, choose the CRT parameter in the form $m=qv$. The above $B$ equals $f_Z$ times a primitive idempotent (at $Z^*$), hence $B^q=f_Z^{q-1}B$. For $q\mid f_Z$ the congruence now gives $k_{J,Z}^{2q}\equiv0$ at that prime, proving $q\mid k_{J,Z}$.
-\end{proof}
-
-\begin{proposition}\label{por:prop:separated-high-row}
-Let $p,q$ be separated twist primes in a perfect fusion-simple integral modular category of square dimension. At a nonunit $Z$ suppose $a=p^{v_p(n/d_Z)}>1$, $b=q^{v_q(n/d_Z)}>1$, and all other primes of $n$ occur to full height in $d_Z$. Let $L_p,L_q$ bound the degrees of $p$-active and $q$-active labels, respectively. Put $f=f_Z$. Then
-\[
-             2L_p(f-1)\ge nb^2,\qquad 2L_q(f-1)\ge na^2.
-\]
-\end{proposition}
-\begin{proof}
-Separation forces full $q$-height on $p$-active degrees and full $p$-height on $q$-active degrees. The deficiencies at both primes, together with full height elsewhere, therefore give $\theta_Z=1$. Each other active prime misses the row $Z$ by defect-zero vanishing. Write $b_Y=\chi_Z(Y)$ and put
-\[
-   H_t=\sum_Y d_Y b_Y(\theta_{Y,t}-1)\quad(t=p,q).
-\]
-By $\sum d_Yb_Y=0$, Theorem~\ref{por:th:weyl-div} gives $H_t=n\gamma_t^3k_{t,Z}$. Every nonzero hit with nontrivial twist has only one of the two components, hence $H_p+H_q=n\xi$ by the vacuum modular relation, where $|\xi|=1$ and $\xi$ is a root of unity. At $p$-active labels, $q^{v_q(n)}\mid d_Y$ and $b\mid b_Y$ by lcm integrality. Thus $b\mid k_{p,Z}$; similarly $a\mid k_{q,Z}$. Neither integer vanishes: the other would then have absolute value one, violating its divisibility. On the $p$-active labels, a union of Galois orbits, the integral entries $b_Y/b$ satisfy $\sum |b_Y/b|\le\sum |b_Y/b|^2$. Indeed every nonzero orbit has mean square at least one by the absolute norm, followed by Cauchy--Schwarz. Consequently
-\[
-      nb\le |H_p|\le2L_p\sum_{Y\ p\text{-active}}|b_Y|
-                  \le 2L_p(f-1)/b ,
-\]
-with one unit of squared norm reserved for the vacuum. Interchanging $p,q$ proves the other inequality.
-\end{proof}
-
-\paragraph{A two-variable integer test.}
-The magnitude bounds can be combined with the phase equation. Under the hypotheses of Proposition~\ref{por:prop:separated-high-row}, there are nonzero integers $u\in b\ZZ$ and $v\in a\ZZ$ such that
-\[
-           u+v=1,\qquad
-           \frac n2\left(\frac{b|u|}{L_p}+\frac{a|v|}{L_q}\right)
-                   \le f-1 .
-\]
-In particular $\xi=\pm1$ in this situation. Indeed if both primes are odd, $\gamma_p=\gamma_q=1$ so the phase equation is $k_{p,Z}+k_{q,Z}=\xi$, an integer of modulus one. If $p=2$, it is $\xi k_{p,Z}+k_{q,Z}=\xi$; as $k_{q,Z}\ne0$ both sides force $\xi$ real. The other case follows on interchanging the primes. Absorb these signs into $u,v$ to obtain $u+v=1$. The estimate for $H_p$ in the proof gives a squared row norm of at least $nb|u|/(2L_p)$ on the $p$-active sector, and likewise for $q$. The two sectors are disjoint and omit the vacuum. This proves the test. For fixed $a,b$ the minimum on the left is elementary: solve $u\equiv0\pmod b$, $u\equiv1\pmod a$, and take the solution on each side of $[0,1]$ nearest to it. Thus the test applies to prime decomposition forms without choosing individual simple labels.
-The same argument bounds the total number of deficient rows. Fix the primes and $n$ in Proposition~\ref{por:prop:separated-high-row}, but let $Z$ range over all nonunit labels with the two indicated deficiencies and full height elsewhere. Since $k_{p,Z}$ is a nonzero multiple of $q^{v_q(n/d_Z)}$, the unit norm of $W_pe_0$ gives
-\[
-           \sum_Z p^{2v_p(d_Z)}<p^{2v_p(n)},\qquad
-           \sum_Z q^{2v_q(d_Z)}<q^{2v_q(n)} .
-\]
-For strictness, equality would put $W_pe_0$ entirely on those twist-one labels. This vector and $e_0$ then have the same eigenvalue for the local upper unipotent $U_p$. Since $W_p^2e_0=e_0$ and $W_p^{-1}e_0=W_pe_0$, the local identity $W_p U_p W_p^{-1}=U_p^{-1}W_p^{-1}U_p^{-1}$ applied to $e_0$ forces $W_pe_0$ proportional to $e_0$, contradicting its nonunit support. The strict bound for $q$ follows in the same way.
-
-\paragraph{The last dyadic conductor level.}
-The following conductor statement also applies to a positive reduced integral table with unsigned Galois covariance in both indices and character orthogonality. Write $f_Z$ for the formal codegree of a character and $K_Z$ for its character field.
-
-\begin{theorem}\label{por:th:exact-conductor}
-The conductor of $K_Z$ divides $f_Z$. In particular the conductor of the lcm-normalized $XY$ crossing divides $\gcd(f_X,f_Y)$. In ordinary data, if the dyadic part of a twist has order $2^v$ with $v\ge4$, then $2^{v-1}\mid f_X$ for its label $X$.
-\end{theorem}
-\begin{proof}
-The different bound (Corollary~\ref{cor:field-conductor}) already puts $K_Z$ in a cyclotomic field of conductor dividing $2f_Z$. It remains to remove its last possible dyadic level. Put $m=2^{v_2(f_Z)}$. There is nothing to check for $m=1$. Take $L=F(\zeta)$ with $F$ an odd cyclotomic field large enough and $\zeta$ primitive of order $2m$. Suppose the dyadic conductor is $2m$. In $G=(\mathbb Z/2m)^\times$ the stabilizer $H$ of the row does not contain $e=1+m$, since the fixed field of $e$ is $F(\zeta^2)$.
-
-Write $b_Y=\chi_Z(Y)=\sum_{k=0}^{m-1}z_{kY}\zeta^k$. The coefficients belong to $\mathcal O_F$ by coprimality of conductors. The orthogonality of the $m$ odd powers of $\zeta$ gives
-\[
- z_{1Y}=m^{-1}\sum_{g\in G}\zeta^{-g}\chi_{gZ}(Y).
-\]
-Different rows in this sum are orthogonal; the squared norm of each is $f_Z$. Thus
-\[
- \sum_Y|z_{1Y}|^2=\frac{f_Z}{m^2}\sum_{h\in H}\sum_{g\in G}\zeta^{g(h-1)}
-                 =\frac{f_Z}{m}.
-\]
-Indeed the inner geometric sum vanishes unless $h=1$ or $h=e$, and only $1$ belongs to $H$. Lift $e$ to the common splitting field, trivially on $F$. Its permutation of the argument labels sends $z_{1Y}$ to $-z_{1Y}$. Every cycle on the nonzero coefficients therefore has even length and contributes to $2\mathcal O$ in the squared norm. This contradicts oddness of $f_Z/m$. Symmetry gives the crossing assertion. For the twist assertion, Theorem~\ref{thm:twistdiv} puts $\mathbb Q(\zeta_{2^{v-1}})^+$ in $K_X$ by the square action whenever $v\ge4$. Its conductor is $2^{v-1}$; the normalization scalar has order at most eight, hence does not affect this conclusion.
-\end{proof}
-\paragraph{Squared mass at a prescribed twist.}
-Write $D=n^2$, $R=\operatorname{rank}\mathcal C$, $\tau_j=\sum_X d_X^2\theta_X^j$, and $M_t=\sum_{\theta_X=t}d_X^2$. The following argument uses the genuine second indicator of the category. It applies to an integral modular category with its positive spherical structure.
-
-\begin{proposition}\label{por:pr:fejer}
-Put $B=\sum_X d_X\nu_2(X)$. Then $B$ is a nonnegative integer,
-$B\le\sum_{X=X^*}d_X\le n\sqrt R$, and for every unit complex number $t$,
-\[
-  9 M_t\le 3D+4\operatorname{Re}(\bar t\tau_1)
-                    +2\operatorname{Re}(\bar t^2\tau_2)
-         \le 3D+4n+2n\sqrt B.
-\]
-More generally, if the twist exponent is prime to all integers $1,\ldots,k-1$, then $M_t\le (D+(k-1)n)/k$.
-\end{proposition}
-\begin{proof}
-Multiply the Ng--Schauenburg formula for $\nu_2(X)$ by $d_X$, sum on $X$, and use $\sum_X N_{UV}^X d_X=d_Ud_V$. This gives $DB=|\tau_2|^2$. The indicator bounds follow from its values $0$ off the self-duals and $\pm1$ on them. Sum $d_X^2|1+w+w^2|^2$ with $w=\bar t\theta_X$. Its value at $w=1$ is nine and every summand is nonnegative. Expanding proves the assertion since $|\tau_1|=n$. In the last assertion use $|1+w+\cdots+w^{k-1}|^2$ in the same way. For each indicated $j$ an automorphism takes $\tau_1$ to $\tau_j$, and $\tau_1$ is $n$ times a root of unity.
-\end{proof}
-
-\paragraph{Degree sums for a prime-power codegree.}
-Let a row $Z$ have formal codegree a power of $p$ and $p\mid d_Z$. All its nonzero entries lie in $P_p$ (Theorem~\ref{thm:principal-support}). For every degree $d$ with $v_p(d)\ge v_p(d_Z)$,
-\[
-                 \sum_{d_Y=d}\chi_Z(Y)\in p\ZZ.
-\]
-Indeed in $P_p$ the algebraic integer $\chi_Y(Z)$ is zero modulo the prime above $p$; by symmetry the same holds for $\chi_Z(Y)=(d/d_Z)\chi_Y(Z)$. The sum over a degree is rational by Galois covariance. Applying any rational linear functional of value one at one to all the entries leaves this degree sum unchanged.
-
-\begin{lemma}\label{por:orbitbound}
-In ordinary integral modular data of dimension $n^2$, fix a nonunit degree $z$, set $f=(n/z)^2$, and suppose $p\nmid f$. All rows of degree $z$ are unramified at $p$. For any nonunit $Y$, let $e$ be its $p$-inertia orbit size and $c=d_Y/\gcd(z,d_Y)$. Then
-\[
-       \#\{Z:d_Z=z,\ S_{ZY}\ne0\}<\frac{f}{ec^2}.
-\]
-\end{lemma}
-\begin{proof}
-Indeed after applying $s=S/n$ to the normalized indicator of that orbit its $Z$th coordinate is $\sqrt{e/f}\,\chi_Z(Y)$ at every $Z$ of degree $z$. The positive vacuum coordinate gives strictness. Take Galois means and use lcm integrality and the norm inequality on $\chi_Z(Y)/c$. The set of hitting $Z$ is a union of full Galois orbits. Thus the bound also applies to the field degree of each hit.
-\end{proof}
-
 \subsection{The three largest possible degrees}\label{found:T:2}\label{found:T:key:sec:large}
 For the remainder of this section let $\mathcal C$ be a perfect fusion-simple integral modular category with $D=5400^2$. By Section~\ref{found:R:1} every simple degree divides $5400$ and every nonunit degree is at most $900$.
 \begin{corollary}\label{por:prop:small-ninehundred}
@@ -14157,26 +14404,48 @@ In the absence of a triple the other three inactive quartets $X,U,V$ have twist 
 \paragraph{Five inactive orbits on the path separating two and five.}\label{por:five-inactive-orbits}
 In an ordinary minimal table of dimension $2^63^{2e}5^4$, $e\ge3$, suppose the ternary prime occurs jointly with each of two and five, which are separated. There are at least five distinct five-inactive local five-inertia orbits of size divisible by four. Consequently there are at least forty five-active labels in equal-degree quartets. At $e=3$ one can choose all five inactive orbits with ternary defect.
 
-Let $H_5$ be local five-inertia. Fix a tame character $\psi$ of order four at five. The unit orbit vectors $v_Y$ for this character are an orthonormal basis of its five-inactive eigenspace $L_\psi$; use $v_Y^-$ for the inverse character on the output side. Its dimension counts the indicated orbits. Every such orbit is dyadically inactive, since two-activity forces full five-height. The dyadic group acts scalarly: its diagonal upper generator is scalar on this invariant space and its conjugates generate the group. The ternary group acts on $L_\psi$. Section~\ref{found:P:2} gives three compulsory orbits $U,X,V$ with $d_U=40$, $d_X=4\cdot3^j$, $d_V=5\cdot3^k$, $1\le j,k\le e-2$. Their fields contain $\QQ(\zeta_5)$; $U$ is neutral and tame at three. For $Y=X,V$ put $m_Y=|H_5Y|/4$ and $m_U=|H_5U|/4$, all powers of five. The full-weight normalized crossings $1+3\zeta$ and $\eta(2+3\zeta')$, respectively, have quartic Fourier coefficient of squared modulus $45$, for primitive fifth roots $\zeta,\zeta'$ and a ternary scalar $\eta$. Each coefficient repeats on the wild fibers. With $n=200\cdot3^e$ and $\lcm(d_U,d_Y)=40\cdot3^{v_3(d_Y)}$ this gives
+Let $H_5$ be local five-inertia. Fix a tame character $\psi$ of order four at five. For each five-inactive orbit $O_Y=H_5Y$ whose size is divisible by four, put $\ell_Y=|O_Y|=4m_Y$. Its stabilizer lies in $\ker\psi$ since the group of units at a power of five is cyclic. The input and output unit vectors are
+\[
+ v_Y=\frac1{\sqrt{\ell_Y}}\sum_{g\in H_5/\mathrm{Stab}(Y)}
+       \overline{\psi(g)}\,e_{gY},\qquad
+ v_Y^-=\frac1{\sqrt{\ell_Y}}\sum_{g\in H_5/\mathrm{Stab}(Y)}
+        \psi(g)\,e_{gY}.
+\]
+We use the Hermitian inner product linear in its second variable. They form orthonormal bases of the five-inactive spaces $L_\psi$ and $L_{\psi^{-1}}$ of the indicated torus types. Each space has one line per orbit. Every such orbit is dyadically inactive, since two-activity forces full five-height. The dyadic group acts scalarly: its diagonal upper generator is scalar on this invariant space and its conjugates generate the group. The ternary group acts on $L_\psi$. Section~\ref{found:P:2} gives three compulsory orbits $U,X,V$ with $d_U=40$, $d_X=4\cdot3^j$, $d_V=5\cdot3^k$, $1\le j,k\le e-2$. Their fields contain $\QQ(\zeta_5)$; $U$ is neutral and tame at three. For $Y=X,V$ the full-weight normalized entries are $1+3\zeta$ and $\eta(2+3\zeta')$, respectively, with primitive fifth roots $\zeta,\zeta'$ and a ternary scalar $\eta$. The local five-orbit fixes $\eta$. In the double sum for $\langle v_Y^-,sv_U\rangle$, the entry at $(gY,tU)$ depends on the tame product $gt\bmod 5$. Each of its four values occurs $4m_Ym_U$ times with the same character weight. Division by $\sqrt{\ell_Y\ell_U}$ leaves the factor $\sqrt{m_Ym_U}$. The constant term has zero quartic Fourier coefficient and the remaining Gauss sum has squared modulus $3^2\cdot5$. Since $n=200\cdot3^e$ and $\lcm(d_U,d_Y)=40\cdot3^{v_3(d_Y)}$, this gives
 \[
   5|\langle v_Y^-,s v_U\rangle|^2
     =5^a/9^h,\qquad 5^a=m_Um_Y,\quad h=e-v_3(d_Y)-1\ge1.
 \]
+
 The local five-block at each of two distinct nontrivial ternary phases contains an inactive quartic orbit. For $e=3$ this was proved above. For varying $e$, the avoided-two trace selection of Section~\ref{found:C:6} in the full principal three-block of a joint label gives an odd hit of degree $5\cdot3^l$ with five-height one by defect-zero vanishing. Its crossing with $U$ puts $\QQ(\zeta_5)$ in its field. The selected value has odd relative field index and odd absolute trace, so a faithful quartic Fourier coefficient is nonzero (Section~\ref{found:F:2}). Applying the complementary Weyls gives the required inactive orbit at the specified phase.
 
-For $e=3$ discard first the coordinate orbits of full ternary height. Their coordinate span is a trivial ternary representation: each lies in a singleton full ternary block, and both the upper unipotent and its lower conjugate act trivially there. They therefore contribute to no nonneutral transition. In either case suppose the remaining dimension is at most four. The ternary phases then belong to $\mu_3$: order at least nine would supply three local five-orbits at that degree, besides the other two prescribed degrees. The ternary representation factors through $\mathrm{SL}_2(\mathbb F_3)$, because the conjugates of the upper at depth $j\ge1$ span each trace-zero congruence quotient, and induction kills the kernel of reduction modulo three. It also kills the central involution. Indeed at each compulsory degree with a unique orbit, the involution preserves that orbit, acts trivially on its fifth roots and so induces a translation of odd order, necessarily the identity. There can be at most two remaining lines after two such compulsory degrees. If these are two orbits at the same compulsory degree, a swap gives at most one negative eigenline; if their degrees differ, one is the third compulsory degree and fixed. Thus the negative eigenspace has dimension at most one. Its dimension is even since the central involution is a commutator in the quaternion subgroup. We obtain a representation of $A_4$.
+At $e=3$ first set aside the coordinate orbits of full ternary height in each mode space. Each label then has ternary-unit codegree, hence a singleton three-block and trivial ternary twist. Its coordinate line affords the trivial ternary representation since the upper unipotent acts trivially and its conjugates generate the local group. These lines contribute no transitions between different ternary phases. For $e>3$ retain all orbits.
 
-Let $B$ be the five-inactive compression of the five-Weyl and $Q$ the projector onto levels at most five. Both intertwine the ternary action, and $B^*B=Q/5$ on $L_\psi$ by Section~\ref{found:P:2} and polarization. The five-inactive compression of $s$ is $BW_3$ up to a scalar. Some $Y=X,V$ is nonneutral, since both primitive cubic phases must occur. The nonzero transition to $Y$ from the neutral $U$ forces an irreducible tetrahedral constituent, unique by the dimension bound, and $Q$ acts as the identity there. In fact the other irreducibles of $A_4$ are characters of its cyclic quotient. The tetrahedral constituent realizes the three nontrivial characters of the normal Klein four-group on three lines cyclically permuted by the upper generator. The involution $W_3$ acts with signs $+,-,-$ on these lines. In an upper eigenbasis its diagonal entries are $-1/3$ and its off-diagonal entries have modulus $2/3$. On this constituent $\sqrt5 B$ is a unitary intertwiner. Any discarded trivial summands have no effect on the transitions between different phases.
+Suppose the retained space has dimension at most four. It contains the three compulsory orbits at distinct degrees $d_U,d_X,d_V$. A ternary phase of order at least nine has at least three square conjugates at the same degree, on different five-orbits, forcing at least five orbits in total. Thus the local upper unipotent has cube one. Its representation factors through $\mathrm{SL}_2(\mathbb F_3)$. Indeed, in each congruence quotient of depths $j,j+1$ with $j\ge1$, the image of the representation kernel contains the conjugates of $E_{12}$, from the upper unipotent at depth $j$. These span $\mathfrak{sl}_2(\mathbb F_3)$: interchanging the coordinate axes gives $-E_{21}$, and conjugation by a lower unipotent gives a nonzero diagonal component. Descending induction kills the entire first congruence subgroup.
 
-A transition between distinct simple phase lines has squared modulus $4/9$ after multiplication of the operator by $\sqrt5$. This cannot equal $5^a/9^h$, which is one modulo four. If the neutral phase were simple, $X,V$ would therefore both have to occupy the doubled nonneutral phase: a compulsory orbit at the neutral phase besides $U$ would already double it. Their two transitions would sum to $4/9$, impossible modulo four. Thus the neutral phase has dimension two, with basis $v_U,v_{U'}$. The remaining one-dimensional constituent is trivial, since its upper eigenvalue is one. For a nonneutral $Y=X,V$ the transition formula now gives
+Write $z=-I$ in this quotient. As an unsigned torus permutation it preserves degree and permutes the five-orbit lines. If a compulsory orbit is fixed setwise, the action on its labels commutes with $H_5$ and therefore is translation by an element of $H_5/\mathrm{Stab}(Y)$. Because $K_Y$ contains $\QQ(\zeta_5)$ and $z$ fixes the fifth roots, this translation is wild, hence of odd order. The involution fixes that orbit pointwise. At most one additional orbit is available. If $z$ exchanges it with a compulsory orbit the exchanged pair has a single negative eigenline, and otherwise only the extra line can be negative. On the negative eigenspace $z$ has determinant one. Indeed the Weyl matrix and $\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$ anticommute over $\mathbb F_3$, so their commutator is $z$; the eigenspace is stable under both. Its negative multiplicity is therefore even, hence zero. This works for either quartic mode. Both retained representations descend to $A_4$, with upper generator $u$ a $3$-cycle and Weyl element $w$ a nonidentity element of the Klein four-group.
+
+Let $E_0$ project onto the five-inactive coordinates, let $B=E_0W_5|_{L_\psi}:L_\psi\to L_{\psi^{-1}}$, and let $Q$ project onto local level at most five. Both operators here are defined on the full mode spaces, including any trivial lines set aside at $e=3$. The five-phase estimate of Section~\ref{found:P:2}, polarized, gives $5B^*B=Q$ on $L_\psi$. Both $B$ and $Q$ intertwine the ternary action. The compression of $s$ between the two mode spaces equals $BW_3$ up to the dyadic unit scalar. At least one of $X,V$ is nonneutral since both primitive cubic phases occur and at most four orbit lines are available. There is thus a nonzero transition from $U$ to a different $u$-phase. Character summands cannot give this transition: $w$ acts trivially on them and $B$ intertwines $u$. Lemma~\ref{lem:tetrahedral-weyl} therefore gives a unique tetrahedral summand $T$ on each side. The projection $Q$ acts identically on the input $T$, since it commutes with the group and $B$ is nonzero on $T$. Thus $\sqrt5 B$ identifies the two tetrahedral summands unitarily. Any coordinate lines set aside at $e=3$ were trivial constituents and do not affect this identification.
+
+A transition from a simple $u$-phase to a different simple phase has squared modulus $4/9$ for $\sqrt5 BW_3$, by the lemma. On either compulsory transition the actual value $5^a/9^h$ is one modulo four, where all denominators are odd. If the neutral phase were simple, $X,V$ would therefore have to be the two orbit lines at one doubled nonneutral phase. The sum of their two squared transitions would be $4/9$, the squared norm of the projection onto that phase from the neutral tetrahedral line. The sum is two modulo four. This forces the neutral phase to be doubled, with basis $v_U,v_{U'}$ in the input; the two nonneutral phases are simple and the fourth constituent is trivial. For a nonneutral $Y\in\{X,V\}$ we now have
 \[
- x=\|P_{\rm tet}v_U\|^2=\frac{5^a}{4\cdot9^{h-1}}.
+   \tfrac49 x=5|\langle v_Y^-,s v_U\rangle|^2=5^a/9^h,
+   \qquad x=\|P_Tv_U\|^2 .
 \]
-The neutral compression of $W_3$ is $P_{\rm triv}-P_{\rm tet}/3$, hence its off-diagonal coefficient has squared modulus
+Applying the last assertion of Lemma~\ref{lem:tetrahedral-weyl} in the input space gives
 \[
-      (4/3)^2x(1-x)=5^a(4\cdot9^{h-1}-5^a)/9^{2h-1}.
+ |\langle v_{U'},W_3v_U\rangle|^2
+   =\tfrac{16}{9}x(1-x)
+   =\frac{5^a(4\cdot9^{h-1}-5^a)}{9^{2h-1}}.
 \]
-The ternary torus fixes each label in the local five-orbit of $U$: its wild part is trivial by tameness, and its involution preserves the orbit and could only translate by a five-group element since it fixes $\QQ(\zeta_5)$. The Galois conjugation formula in the proof of Lemma~\ref{lem:local-vacuum-column} thus makes the columns of $W_3$ at this orbit rational. The unnormalized quartic orbit vectors have coordinates in $\QQ(i)$. The square of their normalizing denominator is sixteen times a power of five, a Gaussian norm. The displayed squared modulus must therefore have even valuation at every prime three modulo four. The positive factor $4\cdot9^{h-1}-5^a$ is three modulo four, while $5^a$ and the denominator have even valuation at every such prime. This contradiction gives five inactive orbits, and the local count above gives forty five-active labels.
+
+The ternary torus fixes every label of $O_U$. Its wild part fixes $U$ by tameness and commutes with $H_5$. Its involution preserves $O_U$ because it acts identically on the retained mode space, and the translation argument above applies. The Galois formula of Lemma~\ref{lem:local-vacuum-column} sends $W_3$ to $W_3$ times a ternary torus element on the right. The columns of $W_3$ indexed by $O_U$ are consequently rational. In particular, writing $G_Z=H_5/\mathrm{Stab}(Z)$, the two normalized input modes give
+\[
+ \sqrt{\ell_{U'}\ell_U}\,\langle v_{U'},W_3v_U\rangle
+ =\sum_{g\in G_{U'},\ t\in G_U}\psi(g)\overline{\psi(t)}(W_3)_{gU',tU}\ \in\QQ(i).
+\]
+Its squared modulus is a Gaussian norm. So is $\ell_{U'}\ell_U=16m_{U'}m_U$, since $5=|2+i|^2$. Hence the squared transition has even valuation at every prime congruent to three modulo four. But $4\cdot9^{h-1}-5^a$ is positive (it is nonnegative since $x\le1$, and odd) and is three modulo four, so it has such a prime to odd valuation. Neither $5^a$ nor the square denominator changes this parity. This contradiction proves the five-orbit assertion. Proposition~\ref{found:T:key:prop:torus-active-count} gives the forty five-active labels.
+
 \subsection{Rank from compulsory simple degrees}
 \label{por:sec:rank-two-branches}
 For rank $R$, let $m_d$ count simples of degree $d$. Suppose distinct positions have upper degree bounds $t_1,\dots,t_j$. For any cutoff $b$,
@@ -14500,6 +14769,15 @@ coefficients at $3,4,5,6,9$ gives
   +\frac{n_3-10n_5-12n_6-18n_9}{11}
  \le\frac{5399}{16}+\frac{61\cdot359}{176}<462 .
 \]
+
+The two upper rank bounds are attained by degree multisets satisfying these numerical inequalities. In the general and commutative cases, respectively, they are
+\[
+\begin{aligned}
+ 5400 &= 1+401\cdot3^2+48\cdot4^2+38\cdot5^2+2\cdot6^2,\\
+ 5400 &= 1+328\cdot3^2+100\cdot4^2+31\cdot5^2+2\cdot6^2.
+\end{aligned}
+\]
+Their ranks are $490$ and $462$, and the second has $328+31=359$ odd-degree nonunits. These are arithmetic profiles. Any improvement of the upper bounds must use information beyond the inequalities they satisfy.
 
 \paragraph{The two endpoint ranks.}
 For rank ten, or for noncommutative rank twelve, the lower bound
@@ -14997,7 +15275,7 @@ To reproduce a calculation, look up its theorem or subsection in the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/manifest.json}{verification manifest}.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/48d2813db714e314684fd79f5ba565b81c16a2be/code/README.md#dimension-comparison}{dimension-check instructions}
 give the command and expected output for the four bounds in Theorem~\ref{thm:uniform-new-bounds}.
-Each manifest entry gives the hypotheses, the command to run from the
+The printed locations in the manifest refer to the repository edition. The source labels identify the corresponding results in the present text. Each entry gives the hypotheses, the command to run from the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/code}{\texttt{code/}} directory, and the expected output.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} directory contains the rank-$15$ data of Dong and Palcoux.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/certificates.json}{witness file}
@@ -15013,6 +15291,16 @@ Foundation of China (NSFC), Grant no.~12471031.
 GPT-6 Astra served as a research assistant in developing and drafting the arguments, identifying references, and checking finite calculations. The authors are continuing their review and have yet to reach a complete understanding of all the proofs.
 
 \begin{thebibliography}{99}\small\phantomsection\addcontentsline{toc}{section}{References}
+\bibitem{ABDPIntegral}
+M.~A. Alekseyev, W.~Bruns, J.~Dong and S.~Palcoux,
+\href{https://doi.org/10.1007/s11005-026-02164-7}{\emph{Classifying integral Grothendieck rings up to rank 5 and beyond}},
+Lett. Math. Phys. \textbf{116} (2026), article 141.
+
+\bibitem{ABPPModular}
+M.~A. Alekseyev, W.~Bruns, S.~Palcoux and F.~V. Petrov,
+\href{https://doi.org/10.1063/5.0334158}{\emph{Classification of integral modular data up to rank 13}},
+J. Math. Phys. \textbf{67} (2026), 081701.
+
 \bibitem{ACRW}
 E.~Ardonne, M.~Cheng, E.~C.~Rowell, and Z.~Wang,
 \href{https://doi.org/10.1016/j.jalgebra.2016.08.001}{\emph{Classification of metaplectic modular categories}},
@@ -15021,11 +15309,20 @@ J. Algebra \textbf{466} (2016), 141--146.
 \bibitem{BH}
 M.~Beck and S.~Ho\c{s}ten, \href{https://doi.org/10.4310/mrl.2006.v13.n4.a10}{\emph{Cyclotomic polytopes and growth series of cyclotomic lattices}}, Math. Res. Lett. \textbf{13} (2006), 607--622.
 
+\bibitem{AnyonAtlas}
+J.~Berean-Dutcher, C.~C\'ordova, J.~Parra-Martinez and R.~Tuddenham,
+\emph{The Anyon Atlas}, \href{https://arxiv.org/abs/2610.25439}{arXiv:2610.25439} (2026).
+
 \bibitem{BGNPW}
 P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell,
 and Z.~Wang,
 \href{https://doi.org/10.1016/j.jpaa.2015.11.010}{\emph{On the classification of weakly integral modular categories}},
 J. Pure Appl. Algebra \textbf{220} (2016), 2364--2388.
+
+\bibitem{BGNPWSuper}
+P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell and Z.~Wang,
+\href{https://doi.org/10.1007/s10468-019-09873-9}{\emph{Classification of super-modular categories by rank}},
+Algebr. Represent. Theory \textbf{23} (2020), 795--809.
 
 \bibitem{BNRWClass}
 P.~Bruillard, S.-H.~Ng, E.~C.~Rowell, and Z.~Wang,
@@ -15043,6 +15340,9 @@ S.~Burciu,
 Ito--Michler-type result in modular fusion categories}},
 J. Inst. Math. Jussieu \textbf{24} (2025), 2523--2542.
 
+\bibitem{BurciuClassGraph}
+S.~Burciu, \emph{An It\^o--Michler type theorem and the prime class graph of weakly integral braided fusion categories}, \href{https://arxiv.org/abs/2611.04942}{arXiv:2611.04942} (2026).
+
 \bibitem{BurciuIsaacs}
 S.~Burciu,
 \href{https://doi.org/10.1112/jlms.70649}{\emph{On some integral properties of dimensions in Isaacs fusion categories}},
@@ -15058,11 +15358,24 @@ S.~Burciu and S.~Palcoux,
 \href{https://doi.org/10.1142/S0219199726500070}{\emph{Burnside-type results for fusion categories}},
 Commun. Contemp. Math. (2026), article 2650007.
 
+\bibitem{Cassels}
+J.~W.~S. Cassels,
+\href{https://doi.org/10.1515/crll.1969.238.112}{\emph{On a conjecture of R.~M. Robinson about sums of roots of unity}},
+J. Reine Angew. Math. \textbf{238} (1969), 112--131.
+
 \bibitem{ChlSchur}
 M.~Chlouveraki, \href{https://doi.org/10.2140/ant.2008.2.689}{\emph{Rouquier blocks of the cyclotomic Ariki--Koike algebras}}, Algebra Number Theory \textbf{2} (2008), no.~6, 689--720.
 
+\bibitem{FamCohn}
+J.~H.~E.~Cohn,
+\href{https://doi.org/10.4064/aa106-1-5}{\emph{The Diophantine
+equation $x^n=Dy^2+1$}}, Acta Arith. \textbf{106} (2003), 73--83.
+
 \bibitem{CPSexponent}
 A. Czenky, J. Plavnik and A. Schopieray, \emph{On Frobenius--Schur exponent bounds}, \href{https://arxiv.org/abs/2404.06643}{arXiv:2404.06643}.
+
+\bibitem{DMNOWitt}
+A. Davydov, M. M\"uger, D. Nikshych and V. Ostrik, \href{https://doi.org/10.1515/crelle.2012.014}{\emph{The Witt group of non-degenerate braided fusion categories}}, J. Reine Angew. Math. \textbf{677} (2013), 135--177.
 
 \bibitem{DNPicard}
 A.~Davydov and D.~Nikshych, \href{https://doi.org/10.2140/ant.2013.7.1365}{\emph{The Picard crossed module of a braided
@@ -15078,6 +15391,9 @@ J.~Dong,
 \href{https://doi.org/10.1007/s11401-026-0019-6}{\emph{Classification of certain weakly integral fusion categories}},
 Chinese Ann. Math. Ser. B \textbf{47} (2026), no.~3,
 555--572.
+
+\bibitem{DNVFrobenius}
+J. Dong, S. Natale and L. Vendramin, \href{https://doi.org/10.1142/s0219498815500115}{\emph{Frobenius property for fusion categories of small integral dimension}}, J. Algebra Appl. \textbf{14} (2015), 1550011.
 
 \bibitem{DPLCM}
 J.~Dong and S.~Palcoux, \emph{A new criterion for integral modular
@@ -15108,15 +15424,15 @@ P.~Etingof, S.~Gelaki, D.~Nikshych, and V.~Ostrik,
 Mathematical Surveys and Monographs, vol.~205,
 American Mathematical Society, 2015.
 
-\bibitem{ENOH}
-P.~Etingof, D.~Nikshych, and V.~Ostrik, with an appendix by E.~Meir,
-\href{https://doi.org/10.4171/QT/6}{\emph{Fusion categories and homotopy theory}}, Quantum Topol.
-\textbf{1} (2010), no.~3, 209--273.
-
 \bibitem{ENOannals}
 P.~Etingof, D.~Nikshych, and V.~Ostrik,
 \href{https://doi.org/10.4007/annals.2005.162.581}{\emph{On fusion categories}},
 Ann. of Math. \textbf{162} (2005), no.~2, 581--642.
+
+\bibitem{ENOH}
+P.~Etingof, D.~Nikshych, and V.~Ostrik, with an appendix by E.~Meir,
+\href{https://doi.org/10.4171/QT/6}{\emph{Fusion categories and homotopy theory}}, Quantum Topol.
+\textbf{1} (2010), no.~3, 209--273.
 
 \bibitem{ENOsolvable}
 P.~Etingof, D.~Nikshych, and V.~Ostrik,
@@ -15145,11 +15461,20 @@ S. Gelaki and D. Nikshych, \href{https://doi.org/10.1016/j.aim.2007.08.001}{\emp
 \bibitem{JFR}
 T. Johnson-Freyd and D. Reutter, \href{https://doi.org/10.1090/jams/1023}{\emph{Minimal nondegenerate extensions}}, J. Amer. Math. Soc. \textbf{37} (2024), 81--150.
 
+\bibitem{Malikiosis}
+R.~D. Malikiosis, \href{https://doi.org/10.1017/fms.2022.14}{\emph{On the structure of spectral and tiling subsets of cyclic groups}}, Forum Math. Sigma \textbf{10} (2022), e23.
+
 \bibitem{NNW}
 D.~Naidu, D.~Nikshych, and S.~Witherspoon,
 \href{https://doi.org/10.1093/imrn/rnp084}{\emph{Fusion subcategories of representation categories of twisted
 quantum doubles of finite groups}}, Int. Math. Res. Not. IMRN
 2009, no.~22, 4183--4219.
+
+\bibitem{NSTV}
+S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
+\href{https://doi.org/10.1016/j.jpaa.2018.06.006}{\emph{Applications and homological properties of local rings with
+decomposable maximal ideals}}, J. Pure Appl. Algebra \textbf{223}
+(2019), 1272--1287.
 
 \bibitem{NataleWGT}
 S.~Natale,
@@ -15166,22 +15491,22 @@ S.~Natale and E.~Pacheco Rodr\'iguez,
 \href{https://doi.org/10.1007/s00605-015-0734-7}{\emph{Graphs attached to simple Frobenius--Perron dimensions of
 an integral fusion category}}, Monatsh. Math. \textbf{179} (2016), 615--649.
 
-\bibitem{NSTV}
-S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
-\href{https://doi.org/10.1016/j.jpaa.2018.06.006}{\emph{Applications and homological properties of local rings with
-decomposable maximal ideals}}, J. Pure Appl. Algebra \textbf{223}
-(2019), 1272--1287.
+\bibitem{NSfs}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
+
+\bibitem{NSpivot}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1090/conm/441/08500}{\emph{Higher Frobenius--Schur indicators for pivotal categories}}, Contemp. Math. \textbf{441} (2007), 63--90.
 
 \bibitem{NSind}
 S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1007/s00220-010-1096-6}{\emph{Congruence subgroups and generalized Frobenius--Schur indicators}}, Comm. Math. Phys. 300 (2010), 1--46.
-
-\bibitem{NSfs}
-S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
 
 \bibitem{OstrikFormalCodegrees}
 V.~Ostrik,
 \href{https://doi.org/10.4310/MRL.2009.v16.n5.a11}{\emph{On formal codegrees of fusion categories}},
 Math. Res. Lett. \textbf{16} (2009), no.~5, 895--901.
+
+\bibitem{OstrikPivotalRankThree}
+V. Ostrik, \href{https://doi.org/10.17323/1609-4514-2015-15-2-373-396}{\emph{Pivotal fusion categories of rank 3}}, Mosc. Math. J. \textbf{15} (2015), 373--396.
 
 \bibitem{Robinson}
 D.~J.~S. Robinson, \href{https://doi.org/10.1007/978-1-4419-8594-1}{\emph{A Course in the Theory of Groups}}, second edition, Graduate Texts in Mathematics~80, Springer, 1996.
@@ -15199,53 +15524,6 @@ Canad. Math. Bull. \textbf{69} (2026), no.~1, 292--298.
 Z.~Yu,
 \href{https://doi.org/10.1016/j.jalgebra.2020.04.022}{\emph{On slightly degenerate fusion categories}},
 J. Algebra \textbf{559} (2020), 408--431.
-
-\bibitem{FamCohn}
-J.~H.~E.~Cohn,
-\href{https://doi.org/10.4064/aa106-1-5}{\emph{The Diophantine
-equation $x^n=Dy^2+1$}}, Acta Arith. \textbf{106} (2003), 73--83.
-
-\bibitem{OstrikPivotalRankThree}
-V. Ostrik, \href{https://doi.org/10.17323/1609-4514-2015-15-2-373-396}{\emph{Pivotal fusion categories of rank 3}}, Mosc. Math. J. \textbf{15} (2015), 373--396.
-
-\bibitem{DMNOWitt}
-A. Davydov, M. M\"uger, D. Nikshych and V. Ostrik, \href{https://doi.org/10.1515/crelle.2012.014}{\emph{The Witt group of non-degenerate braided fusion categories}}, J. Reine Angew. Math. \textbf{677} (2013), 135--177.
-
-\bibitem{DNVFrobenius}
-J. Dong, S. Natale and L. Vendramin, \href{https://doi.org/10.1142/s0219498815500115}{\emph{Frobenius property for fusion categories of small integral dimension}}, J. Algebra Appl. \textbf{14} (2015), 1550011.
-
-\bibitem{ABDPIntegral}
-M.~A. Alekseyev, W.~Bruns, J.~Dong and S.~Palcoux,
-\href{https://doi.org/10.1007/s11005-026-02164-7}{\emph{Classifying integral Grothendieck rings up to rank 5 and beyond}},
-Lett. Math. Phys. \textbf{116} (2026), article 141.
-
-\bibitem{NSpivot}
-S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1090/conm/441/08500}{\emph{Higher Frobenius--Schur indicators for pivotal categories}}, Contemp. Math. \textbf{441} (2007), 63--90.
-
-\bibitem{ABPPModular}
-M.~A. Alekseyev, W.~Bruns, S.~Palcoux and F.~V. Petrov,
-\href{https://doi.org/10.1063/5.0334158}{\emph{Classification of integral modular data up to rank 13}},
-J. Math. Phys. \textbf{67} (2026), 081701.
-
-\bibitem{AnyonAtlas}
-J.~Berean-Dutcher, C.~C\'ordova, J.~Parra-Martinez and R.~Tuddenham,
-\emph{The Anyon Atlas}, \href{https://arxiv.org/abs/2610.25439}{arXiv:2610.25439} (2026).
-
-\bibitem{Cassels}
-J.~W.~S. Cassels,
-\href{https://doi.org/10.1515/crll.1969.238.112}{\emph{On a conjecture of R.~M. Robinson about sums of roots of unity}},
-J. Reine Angew. Math. \textbf{238} (1969), 112--131.
-
-\bibitem{BGNPWSuper}
-P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell and Z.~Wang,
-\href{https://doi.org/10.1007/s10468-019-09873-9}{\emph{Classification of super-modular categories by rank}},
-Algebr. Represent. Theory \textbf{23} (2020), 795--809.
-
-\bibitem{BurciuClassGraph}
-S.~Burciu, \emph{An It\^o--Michler type theorem and the prime class graph of weakly integral braided fusion categories}, \href{https://arxiv.org/abs/2611.04942}{arXiv:2611.04942} (2026).
-
-\bibitem{Malikiosis}
-R.~D. Malikiosis, \href{https://doi.org/10.1017/fms.2022.14}{\emph{On the structure of spectral and tiling subsets of cyclic groups}}, Forum Math. Sigma \textbf{10} (2022), e23.
 
 \end{thebibliography}
 

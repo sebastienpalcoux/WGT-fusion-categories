@@ -18,11 +18,11 @@
       "locations": {
         "thm:uniform-new-bounds": {
           "printed_number": "17.1",
-          "page": 105
+          "page": 110
         },
         "sec:numerical": {
           "printed_number": "17",
-          "page": 105
+          "page": 110
         }
       }
     },
@@ -31,34 +31,49 @@
         "por:ranktheorem",
         "por:certificate"
       ],
-      "hypotheses": "Integral perfect simple modular table at dimension 29160000, with the forced six packets and residual labels.",
+      "hypotheses": "A perfect fusion-simple integral modular category of dimension 29160000 and rank 95 through 100. No twist order is divisible by 10, and exactly one of the five compulsory five-inactive quartets has trivial ternary phase.",
       "command": [
         "python3",
         "check_frontier_rank.py"
       ],
       "expected_stdout": "95 0 None 0\n96 1 0 0\n97 43 1 0\n98 384 2 0\n99 3659 3 0\n100 30100 5 5\n(15, 18, 135, 50, 12, 2034, (360, 72, 12, 12), 360, 360, 72, 360)\n(15, 36, 135, 50, 12, 2034, (360, 36, 12, 12), 360, 360, 72, 360)\n(18, 180, 135, 50, 12, 2034, (72, 30, 12, 12), 360, 360, 72, 360)\n(24, 360, 15, 50, 36, 1882, (600, 600, 270, 24, 12), 360, 360, 24, 216)\n(36, 180, 135, 50, 12, 2034, (36, 30, 12, 12), 360, 360, 72, 360)",
-      "interpretation": "Two necessary-condition recursions. The five survivors at rank 100 are eliminated by the subsequent mathematical argument.",
+      "interpretation": "The two integer recursions leave five profiles at rank 100. The paragraph “Eliminating the five remaining profiles” uses the tame-phase argument to rule them out.",
       "derivation_labels": [
         "found:group:degrees",
         "sec:portrait-proofs",
-        "por:certificate"
+        "por:certificate",
+        "lem:tetrahedral-weyl",
+        "por:five-inactive-orbits",
+        "por:five-survivors"
       ],
       "locations": {
         "por:ranktheorem": {
           "printed_number": "24.1",
-          "page": 196
+          "page": 202
         },
         "por:certificate": {
-          "printed_number": "24.5",
-          "page": 213
+          "printed_number": "24.4",
+          "page": 216
         },
         "found:group:degrees": {
           "printed_number": "23",
-          "page": 181
+          "page": 187
         },
         "sec:portrait-proofs": {
           "printed_number": "24",
-          "page": 195
+          "page": 201
+        },
+        "lem:tetrahedral-weyl": {
+          "printed_number": "6.10",
+          "page": 33
+        },
+        "por:five-inactive-orbits": {
+          "paragraph": "Five inactive orbits on the path separating two and five",
+          "page": 210
+        },
+        "por:five-survivors": {
+          "paragraph": "Eliminating the five remaining profiles",
+          "page": 218
         }
       }
     },
@@ -66,7 +81,7 @@
       "source_labels": [
         "th:unbraided-5400"
       ],
-      "hypotheses": "Simple perfect integral fusion category at dimension 5400, at the two endpoint ranks.",
+      "hypotheses": "A simple perfect fusion category of dimension 5400 that is not weakly group-theoretical. Its Grothendieck ring is commutative at the rank-10 endpoint and noncommutative at the rank-12 endpoint.",
       "command": [
         "python3",
         "verify_rank_5400.py"
@@ -79,7 +94,7 @@
       "locations": {
         "th:unbraided-5400": {
           "printed_number": "25.1",
-          "page": 215
+          "page": 218
         }
       }
     },
@@ -87,20 +102,30 @@
       "source_labels": [
         "cor:all-dim-rank"
       ],
-      "hypotheses": "The public rank-15 perfect list of Dong and Palcoux, pinned by SHA-256 in README.",
+      "hypotheses": "The rank-15 list of 2341 remaining perfect types from Dong and Palcoux, arXiv:2510.10311v1, Section 4.3. The upstream file and SHA-256 are pinned in data/README.md.",
       "command": [
         "python3",
         "verify_rank15_published.py"
       ],
       "expected_stdout": "Counter({4: 1857, 2: 459, 3: 24, 5: 1}) [(720, [1, 2, 2, 2, 3, 3, 3, 4, 4, 6, 6, 12, 12, 12, 12])]",
-      "interpretation": "Distribution of the smallest formal codegree and identification of the unique type with smallest codegree five.",
+      "interpretation": "Verifies the checksum and distinctness of the 2341 input types, counts their smallest formal codegrees, and identifies the unique type with smallest codegree five. Exhaustiveness of the input comes from the cited classification.",
       "derivation_labels": [
-        "cor:all-dim-rank"
+        "cor:all-dim-rank",
+        "lem:small-ordinary-codegrees",
+        "lem:tables"
       ],
       "locations": {
         "cor:all-dim-rank": {
           "printed_number": "18.2",
-          "page": 107
+          "page": 112
+        },
+        "lem:small-ordinary-codegrees": {
+          "printed_number": "2.6",
+          "page": 7
+        },
+        "lem:tables": {
+          "printed_number": "2.5",
+          "page": 6
         }
       }
     },
@@ -121,7 +146,7 @@
       "locations": {
         "cor:all-dim-rank": {
           "printed_number": "18.2",
-          "page": 107
+          "page": 112
         }
       }
     },
@@ -142,7 +167,7 @@
       "locations": {
         "cor:all-dim-rank": {
           "printed_number": "18.2",
-          "page": 107
+          "page": 112
         }
       }
     },
@@ -166,23 +191,23 @@
       "locations": {
         "fam:M:8.15": {
           "printed_number": "9.15",
-          "page": 67
+          "page": 72
         },
         "fam:W:dyadic-boxes": {
           "paragraph": "The two dyadic exponent boxes",
-          "page": 81
+          "page": 86
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 63
+          "page": 68
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         }
       }
     },
@@ -204,15 +229,15 @@
       "locations": {
         "fam:W:1.2": {
           "printed_number": "13.1",
-          "page": 80
+          "page": 85
         },
         "fam:M:8.15": {
           "printed_number": "9.15",
-          "page": 67
+          "page": 72
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 63
+          "page": 68
         }
       }
     },
@@ -233,7 +258,7 @@
       "locations": {
         "merge:residue-group": {
           "printed_number": "14.1",
-          "page": 82
+          "page": 87
         }
       }
     },
@@ -258,23 +283,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -299,23 +324,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -340,23 +365,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -381,23 +406,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -422,23 +447,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -463,23 +488,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -504,23 +529,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 74
+          "page": 79
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         }
       }
     },
@@ -545,19 +570,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 63
+          "page": 68
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         }
       }
     },
@@ -582,19 +607,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 63
+          "page": 68
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         }
       }
     },
@@ -621,19 +646,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 73
+          "page": 78
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         }
       }
     },
@@ -659,19 +684,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 85
+          "page": 90
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 63
+          "page": 68
         },
         "fam:M:8.7": {
           "printed_number": "9.7",
-          "page": 64
+          "page": 70
         },
         "fam:M:8.14": {
           "printed_number": "9.14",
-          "page": 67
+          "page": 72
         }
       }
     },
@@ -694,15 +719,15 @@
       "locations": {
         "fam:A:exposed": {
           "printed_number": "8.8",
-          "page": 43
+          "page": 49
         },
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 43
+          "page": 50
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -730,15 +755,15 @@
       "locations": {
         "fam:A:exposed": {
           "printed_number": "8.8",
-          "page": 43
+          "page": 49
         },
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 43
+          "page": 50
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -765,11 +790,11 @@
       "locations": {
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 43
+          "page": 50
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -801,11 +826,11 @@
       "locations": {
         "found:C:3.3": {
           "printed_number": "19.10",
-          "page": 115
+          "page": 120
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -831,11 +856,11 @@
       "locations": {
         "found:S:8.1": {
           "printed_number": "20.17",
-          "page": 140
+          "page": 146
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -860,11 +885,11 @@
       "locations": {
         "found:S:8.3": {
           "printed_number": "20.19",
-          "page": 141
+          "page": 147
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 17
+          "page": 18
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
@@ -891,14 +916,14 @@
       "locations": {
         "fam:M:8.15": {
           "printed_number": "9.15",
-          "page": 67
+          "page": 72
         },
         "por:certificate": {
-          "printed_number": "24.5",
-          "page": 213
+          "printed_number": "24.4",
+          "page": 216
         }
       }
     }
   ],
-  "printed_locations_edition": "Prime factors of fusion-category dimensions, 225-page edition, 9 November 2026. Source labels are independent of pagination."
+  "printed_locations_edition": "Prime factors of fusion-category dimensions, 229-page edition, 10 November 2026. Source labels are independent of pagination."
 }
