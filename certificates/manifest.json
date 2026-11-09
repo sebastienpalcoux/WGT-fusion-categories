@@ -23,7 +23,7 @@
         },
         "app:bounds-code": {
           "printed_number": "A",
-          "page": 222
+          "page": 223
         },
         "sec:numerical": {
           "printed_number": "17",
@@ -51,15 +51,15 @@
       "locations": {
         "por:ranktheorem": {
           "printed_number": "24.1",
-          "page": 195
+          "page": 196
         },
         "por:certificate": {
           "printed_number": "24.5",
-          "page": 212
+          "page": 213
         },
         "found:group:degrees": {
           "printed_number": "23",
-          "page": 180
+          "page": 181
         },
         "sec:portrait-proofs": {
           "printed_number": "24",
@@ -84,7 +84,7 @@
       "locations": {
         "th:unbraided-5400": {
           "printed_number": "25.1",
-          "page": 214
+          "page": 215
         }
       }
     },
@@ -92,7 +92,7 @@
       "source_labels": [
         "cor:all-dim-rank"
       ],
-      "hypotheses": "The cited published rank-15 perfect list, pinned by SHA-256 in README.",
+      "hypotheses": "The public rank-15 perfect list of Dong and Palcoux, pinned by SHA-256 in README.",
       "command": [
         "python3",
         "verify_rank15_published.py"
@@ -900,10 +900,10 @@
         },
         "por:certificate": {
           "printed_number": "24.5",
-          "page": 212
+          "page": 213
         }
       }
     }
   ],
-  "printed_locations_edition": "Prime factors of fusion-category dimensions, 225-page edition with proof-level computation references, 9 November 2026. Source labels are independent of pagination."
+  "printed_locations_edition": "Prime factors of fusion-category dimensions, 226-page reference revision, 9 November 2026. Source labels are independent of pagination."
 }

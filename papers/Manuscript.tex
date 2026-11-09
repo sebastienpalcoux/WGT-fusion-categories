@@ -79,7 +79,7 @@ A braided category of dimension $D$ is weakly group-theoretical if $Q(D)<2916000
 \section{Introduction}\label{fam:M:sec:1}
 Let $D$ be the Frobenius--Perron dimension of a fusion category over $\CC$. The category is \emph{weakly integral} if $D$ is an integer, and \emph{weakly group-theoretical} (WGT) if it is Morita equivalent to a nilpotent fusion category. Etingof, Nikshych and Ostrik asked whether every weakly integral fusion category is WGT \cite[Section~11, Question~2]{ENOsolvable}. The question is equivalent to its braided version: the Drinfeld center has dimension $D^2$, and weak group-theoreticity passes from the center to the original category \cite[Proposition~4.1]{ENOsolvable}.
 
-A prime is \emph{repeated} if its exponent in $D$ is at least two. Dong proved that at most two repeated primes suffice for weak group-theoreticity in the braided case \cite[Theorem~3.2]{DongWeakIntegral}. A useful way to go beyond this theorem is to bound selected exponents while allowing the others to vary independently. In what follows, displayed primes are distinct and $d$ denotes an arbitrary coprime square-free integer. We call $N$ \emph{covered} when every weakly integral braided fusion category of dimension dividing $N$ is WGT.
+A prime is \emph{repeated} if its exponent in $D$ is at least two. Natale proved that at most two repeated primes suffice for weak group-theoreticity in the nondegenerate braided case, and obtained weak group-theoreticity for $D<1800$ and solvability for odd $D<33075$ \cite[Theorems~7.4, 8.1 and~8.2]{NataleWGT}. Dong extended these results to arbitrary braided categories and obtained weak group-theoreticity for $D<120$ without braiding \cite[Theorems~1.1--1.2, p.~556, and Corollaries~3.2--3.3]{DongWeakIntegral}. A useful way to go beyond this theorem is to bound selected exponents while allowing the others to vary independently. In what follows, displayed primes are distinct and $d$ denotes an arbitrary coprime square-free integer. We call $N$ \emph{covered} when every weakly integral braided fusion category of dimension dividing $N$ is WGT.
 
 \begin{theorem}[Two unrestricted prime powers]\label{thm:intro-two-free}\label{fam:M:1.1}
 For primes $p<q<r<s$, and arbitrary nonnegative integers $a,b$, the following hold.
@@ -102,7 +102,7 @@ None & $D$ odd and $D<121275$ & Solvable\\\bottomrule
 \end{tabular}
 \end{table}
 
-An independent \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/papers/Below_5400_squared.pdf}{29-page proof} of the braided bound $D<5400^2$ gives all its arithmetic in a form that can be checked by hand.
+An independent \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.pdf}{29-page proof} of the braided bound $D<5400^2$ gives all its arithmetic in a form that can be checked by hand.
 
 The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Using the cyclotomic estimates of Section~\ref{found:group:support}, Sections~\ref{found:group:uniform}--\ref{found:group:odd} treat dimensions $p^6q^6r^4$ for arbitrary distinct primes, and Sections~\ref{found:group:degrees}--\ref{sec:unbraided-5400} treat the two boundary dimensions. The slightly degenerate branch is excluded throughout that family. At its least member a modular obstruction has rank between $101$ and $46774$. At dimension $5400$ a non-WGT fusion category which is itself simple and perfect has rank between $11$ and $462$ when its fusion ring is commutative, and between $13$ and $490$ otherwise. In arbitrary dimension a nontrivial simple perfect integral modular category has rank at least $16$, or $27$ in odd dimension. A non-WGT perfect integral fusion category has rank at least $7$, and every nontrivial odd-dimensional perfect integral fusion category has rank at least $15$ (Corollary~\ref{cor:all-dim-rank}).
 
@@ -114,7 +114,7 @@ Sections~\ref{sec:wgt-preliminaries}--\ref{subsec:sqvac} reduce a divisor-minima
 \papercontents
 
 \section{Reduction to a simple character table}\label{fam:M:sec:2}\label{sec:wgt-preliminaries}
-Use the positive spherical structure of a weakly integral category over $\CC$, so $D=\FPdim(\C)$ and $d_X=\FPdim(X)$ are its categorical dimensions. Write $\C_{\pt},\C_{\ad},\C',U(\C)$ for its pointed subcategory, adjoint subcategory, M\"uger center and universal grading group. We call a category \emph{perfect} if its only invertible simple is the unit, and \emph{fusion-simple} if its only fusion subcategories are trivial or the whole category. The corresponding ring conditions concern invertible basis elements and based subrings.
+Use the positive spherical structure of a weakly integral category over $\CC$, so $D=\FPdim(\C)$ and $d_X=\FPdim(X)$ are its categorical dimensions \cite[Propositions~8.23 and~8.24]{ENOannals}. Write $\C_{\pt},\C_{\ad},\C',U(\C)$ for its pointed subcategory, adjoint subcategory, M\"uger center and universal grading group. We call a category \emph{perfect} if its only invertible simple is the unit, and \emph{fusion-simple} if its only fusion subcategories are trivial or the whole category. The corresponding ring conditions concern invertible basis elements and based subrings.
 
 \begin{lemma}[Minimal counterexample]\label{fam:M:2.1}\label{lem:minimal}\label{lem:proper-divisor-reduction}\label{lem:minimal-counterexample-simple}
 Suppose every braided category of dimension a proper divisor of $D$ is WGT. A counterexample $\C$ at $D$ is integral, equals $\C_{\ad}$, and has one of two forms:
@@ -124,7 +124,7 @@ Suppose every braided category of dimension a proper divisor of $D$ is WGT. A co
 \end{enumerate}
 \end{lemma}
 \begin{proof}
-A nontrivial universal grading reduces the question to its neutral component. A proper nontrivial nondegenerate subcategory splits off with its centralizer. A nontrivial Tannakian $\Rep(G)$ reduces to the neutral de-equivariantization, of dimension $D/(|G||H|)$ for grading support $H\le G$. In each case the smaller dimensions divide $D$ and WGT passes back by extension, equivariantization or tensor product \cite[Propositions~8.15, 8.20--8.24]{ENOannals}, \cite[Proposition~4.1]{ENOsolvable}, \cite[Sections~3--4]{DGNO}, \cite[Proposition~4.1]{NataleWGT}. Thus $\C=\C_{\ad}$ is integral by the dimension grading \cite[Theorem~3.10]{GNnil}, and its symmetric center is $\Vec$ or $\sVec$. Every proper subcategory is integral and WGT, hence pointed in the absence of Tannakian subcategories \cite[Theorem~3.1]{NataleCore}. It thus lies in $\C_{\pt}$, which is trivial in the modular case by $(\C_{\ad})'=\C_{\pt}$, and is $\sVec$ in the slightly degenerate case by \cite[Lemma~7.1]{NataleWGT}. In the latter case pull back based subrings from the fermion quotient.
+A nontrivial universal grading reduces the question to its neutral component. A proper nontrivial nondegenerate subcategory splits off with its centralizer. A nontrivial Tannakian $\Rep(G)$ reduces to the neutral de-equivariantization, of dimension $D/(|G||H|)$ for grading support $H\le G$. In each case the smaller dimensions divide $D$ and WGT passes back by extension, equivariantization or tensor product \cite[Propositions~8.15 and~8.20]{ENOannals}, \cite[Proposition~4.1]{ENOsolvable}, \cite[Theorems~3.13(i) and~4.44, Proposition~4.26]{DGNO}, \cite[Proposition~4.1]{NataleWGT}. Thus $\C=\C_{\ad}$ is integral by the dimension grading \cite[Theorem~3.10]{GNnil}, and its symmetric center is $\Vec$ or $\sVec$. Every proper subcategory is integral and WGT, hence pointed in the absence of Tannakian subcategories \cite[Theorem~3.1]{NataleCore}. It thus lies in $\C_{\pt}$, which is trivial in the modular case by $(\C_{\ad})'=\C_{\pt}$, and is $\sVec$ in the slightly degenerate case by \cite[Lemma~7.1]{NataleWGT}. In the latter case pull back based subrings from the fermion quotient.
 \end{proof}
 
 We use \emph{ordinary modular table} for the character table of an integral
@@ -137,12 +137,12 @@ come from the category. Statements formulated for based rings or symmetric
 integral character data alone use the algebraic hypotheses specified in
 those statements.
 
-Put $\Delta=D$ in case (i) and $\Delta=D/2$ in case (ii). In (ii) use the fusion ring $R=K_0(\C)/(f-\one)$ for the transparent fermion $f$. The twist gives $fX\not\simeq X,X^*$. Duality-compatible orbit representatives containing $\one$ give structure constants $N_{XY}^Z+N_{XY}^{fZ}$ and unit coefficient $\delta_{Y,X^*}$. Both rings have the same \emph{symmetric integral character data} \cite[Proposition~3.3 and Corollary~3.4]{YuSlightlyDegenerate}, \cite[Sections~8.13--8.14]{EGNO}:
+Put $\Delta=D$ in case (i) and $\Delta=D/2$ in case (ii). In (ii) use the fusion ring $R=K_0(\C)/(f-\one)$ for the transparent fermion $f$. The twist gives $fX\not\simeq X,X^*$. Duality-compatible orbit representatives containing $\one$ give structure constants $N_{XY}^Z+N_{XY}^{fZ}$ and unit coefficient $\delta_{Y,X^*}$. Both rings have the following \emph{symmetric integral character data}:
 \begin{equation}\label{eq:wgt-modular-data}
  \begin{gathered}S_{\one X}=d_X,\quad S^\dagger S=\Delta I,\quad S_{X,Y^*}=\overline{S_{XY}},\\
  \chi_Y(X)=S_{XY}/d_Y,\quad f_Y=\|\chi_Y\|^2=\Delta/d_Y^2\in\ZZ.\end{gathered}
 \end{equation}
-Here $S$ is symmetric and its columns give all characters. Write $I_s=\{X:d_X=s\}$, $n_s=|I_s|$ and $\sigma\chi_X=\chi_{\pi_\sigma X}$. Complex conjugation acts by duality and commutes with cyclotomic Galois action. Thus $f_{\pi_\sigma X}=\sigma f_X=f_X$, the permutation preserves degrees, and symmetry gives
+For the modular table these identities are standard \cite[Sections~8.13--8.14]{EGNO}. For the reduced table, the normalized columns give all characters by \cite[Proposition~3.3]{YuSlightlyDegenerate} (see \cite[Proposition~2.7]{BGNPWSuper} for the unitary case). The ratio $\Delta/d_Y^2$ is an algebraic integer by \cite[Corollary~3.4]{YuSlightlyDegenerate}, hence an integer here. Write $I_s=\{X:d_X=s\}$, $n_s=|I_s|$ and $\sigma\chi_X=\chi_{\pi_\sigma X}$. Complex conjugation acts by duality and commutes with cyclotomic Galois action. Thus $f_{\pi_\sigma X}=\sigma f_X=f_X$, the permutation preserves degrees, and symmetry gives
 \begin{equation}\label{eq:galois-permutations}
  \sigma S_{XW}=S_{\pi_\sigma X,W}=S_{X,\pi_\sigma W}.
 \end{equation}
@@ -165,13 +165,13 @@ $\FPdim(\C_{\pt})d_X^2+\lcm(d_X,d_Y)^2\le Dh_X$.
 \end{proposition}
 \begin{proof}
 The Hopf-link characters $a_Y(X)=S_{XY}/d_Y$ are ring characters
-\cite[Section~8.13]{EGNO}. B\'ezout applied to $a_Y(X)$ and $a_X(Y)$ shows
+\cite[Proposition~8.13.11]{EGNO}. B\'ezout applied to $a_Y(X)$ and $a_X(Y)$ shows
 $S_{XY}/\lcm(d_X,d_Y)$ is integral, as in the modular criterion of
-Dong--Palcoux \cite[Theorem~1.1]{DPLCM}. The regular element
+Dong--Palcoux \cite[Lemma~2.7 and the proof of Theorem~1.1]{DPLCM}. The regular element
 $R=\sum_Y d_Y[Y]$ satisfies $[T]R=d_T R$. Accordingly $a_T(R)$ is $D$
 when $a_T=d$ and zero otherwise. In the positive structure $a_T=d$
 means precisely $T\in\C'$ by the double-braiding criterion
-\cite[Section~8.13]{EGNO}. Symmetry and $a_Y(X^*)=\overline{a_Y(X)}$ give
+\cite[Proposition~8.20.5(i)]{EGNO}. Symmetry and $a_Y(X^*)=\overline{a_Y(X)}$ give
 \[
  \sum_Y |S_{XY}|^2
   =\sum_Y d_Y^2a_Y(XX^*)=\sum_T N_{XX^*}^{T}d_Ta_T(R)=Dh_X.
@@ -192,7 +192,7 @@ and the number of invertible columns.
 In an integral ribbon fusion category with positive spherical structure, the greatest common divisor of the dimensions of the simple constituents of $U^{\otimes k}$ divides $d_U$, for every simple $U$ and every $k\ge1$.
 \end{lemma}
 \begin{proof}
-Close the braid $\delta=\sigma_1\cdots\sigma_{k-1}$ on $k$ strands labelled by $U$. Successive partial traces give $d_U\theta_U^{\,k-1}$. On $\Hom(Y,U^{\otimes k})$, $\delta^k$ is the full twist and acts by $\theta_Y/\theta_U^k$. Ribbon twists have finite order (Vafa\textquotesingle s theorem; see \cite[Section~8.18]{EGNO}), so the eigenvalues of $\delta$ are roots of unity. In the other evaluation of the trace each multiplicity-space trace is therefore an algebraic integer, weighted by $d_Y$. Dividing by the proposed gcd and by the root of unity $\theta_U^{\,k-1}$ makes a rational algebraic integer.
+Close the braid $\delta=\sigma_1\cdots\sigma_{k-1}$ on $k$ strands labelled by $U$. Successive partial traces give $d_U\theta_U^{\,k-1}$. On $\Hom(Y,U^{\otimes k})$, $\delta^k$ is the full twist and acts by $\theta_Y/\theta_U^k$. Ribbon twists have finite order (Vafa\textquotesingle s theorem; see \cite[Corollary~8.18.2(i)]{EGNO}), so the eigenvalues of $\delta$ are roots of unity. In the other evaluation of the trace each multiplicity-space trace is therefore an algebraic integer, weighted by $d_Y$. Dividing by the proposed gcd and by the root of unity $\theta_U^{\,k-1}$ makes a rational algebraic integer.
 \end{proof}
 
 For $k=2$ one gets more than divisibility. If $a_j$ are the eigenvalues of $c_{U,U}/\theta_U$ on the multiplicity spaces, and $s_j$ the dimensions of their constituents (with repetitions), then
@@ -232,7 +232,12 @@ Apply the B\'ezout and Galois-mean bounds of Proposition~\ref{prop:braided-lcm} 
  \Delta/s^2\ \ge\ \sum_Y (d_Y/\gcd(s,d_Y))^2
  \ >\ \sum_Y d_Y^2/s^2=\Delta/s^2;
 \]
-the strict inequality holds already at $\one$. For the Burnside property compare \cite[Theorem~1.2]{BP}. Now $P=\prod_X XX^*$ vanishes on every non-Perron character and hence, by \eqref{eq:fusion-coefficient-trace}, $\tau(P)=\prod_X d_X^2/\Delta$ is an integer. Since $d_X^2\mid\Delta$, no prime can occur only once in $\Delta$.
+the strict inequality holds already at $\one$. For ordinary modular categories the row-vanishing theorem is due to
+Gelaki, Naidu and Nikshych \cite[Theorem~6.1]{GNNcenters}.
+Square-fullness in the perfect integral modular case is
+\cite[Corollary~10.10]{BP}, and the coprime-degree and prime-power
+obstructions in the integral modular case follow from
+Etingof, Nikshych and Ostrik \cite[Lemma~7.1 and Corollary~7.2]{ENOsolvable}. For the fusion-ring vanishing theorem see \cite[Theorem~1.2]{BP}. Now $P=\prod_X XX^*$ vanishes on every non-Perron character and hence, by \eqref{eq:fusion-coefficient-trace}, $\tau(P)=\prod_X d_X^2/\Delta$ is an integer. Since $d_X^2\mid\Delta$, no prime can occur only once in $\Delta$.
 
 For a non-Perron character, the labels at which $|\chi(X)|=d_X$ form a based subring: equality in the triangle inequality for a product propagates to each constituent, and the set is closed under duality. Simplicity therefore makes the inequality strict off the unit, since equality everywhere would force codegree $\Delta$. For coprime $s,t>1$, all conjugates of $S_{XY}/(st)$ have modulus strictly below one; its norm forces it to be zero. On the other hand a nonunit row satisfies
 \begin{equation}\label{eq:reduced-unit-orthogonality}
@@ -462,9 +467,9 @@ Write $s=S/\sqrt D$, $T=\operatorname{diag}(\theta_i)$ and $N=\ord(T)$ for ordin
 For a weakly integral modular category use the lift
 $W=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)\mapsto s$,
 $U=\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)\mapsto t=T/\gamma$,
-where $\gamma^3=p^+/\sqrt D$. We may take $\gamma$ of two-power order, equal to one for a center. The representation factors through $\mathrm{SL}_2(\mathbb Z/M)$, $M=\ord(t)$ \cite[Proposition~6.7, Theorems~6.10 and~II]{DLNCongruence}. A subscript on $W,U$ denotes its local factor under the Chinese remainder isomorphism.
+where $\gamma^3=p^+/\sqrt D$. We may take $\gamma$ of two-power order, equal to one for a center. The representation factors through $\mathrm{SL}_2(\mathbb Z/M)$, $M=\ord(t)$ \cite[(1-10), Theorem~II(i), Proposition~6.7(ii) and Theorem~6.10]{DLNCongruence}. A subscript on $W,U$ denotes its local factor under the Chinese remainder isomorphism.
 
-For integral slightly degenerate $\mathcal B$ put $\Delta=\FPdim(\mathcal B)/2$ and let $g$ be its transparent fermion. Choose a minimal modular extension of dimension $4\Delta$ \cite[Corollary~1.3]{JFR}, with matrices $s,T$. The Weyl matrix interchanges $v_i\mapsto v_{gi}$ and $v_i\mapsto\epsilon_i v_i$, with $\epsilon_i$ the fermion-monodromy sign. On their common $+1$ space, the vectors $(v_i+v_{gi})/\sqrt2$ give the normalized reduced matrix $\widehat s$. Even twist powers and odd local factors preserve this space. Their Bruhat and Galois identities therefore restrict, with the same local Galois sign since the two dimension normalizations differ by a rational factor.
+For integral slightly degenerate $\mathcal B$ put $\Delta=\FPdim(\mathcal B)/2$ and let $g$ be its transparent fermion. With the positive spherical structure, $\mathcal B$ is pseudo-unitary, so the extension theorem of Johnson-Freyd and Reutter \cite[Corollary~1.3]{JFR} gives a minimal modular extension of dimension $4\Delta$, with matrices $s,T$. The Weyl matrix interchanges $v_i\mapsto v_{gi}$ and $v_i\mapsto\epsilon_i v_i$, with $\epsilon_i$ the fermion-monodromy sign. On their common $+1$ space, the vectors $(v_i+v_{gi})/\sqrt2$ give the normalized reduced matrix $\widehat s$. Even twist powers and odd local factors preserve this space. Their Bruhat and Galois identities therefore restrict, with the same local Galois sign since the two dimension normalizations differ by a rational factor.
 
 \begin{theorem}[Block orthogonality]\label{fam:M:3.1}\label{thm:block}\label{thm:zero}\label{lem:reduced-block}\label{lem:reduced-two-block}
 For a full $p$-block $B$ of ordinary modular data,
@@ -506,7 +511,7 @@ $p^n,p^{n-b}$ of the same rotation on $mp^n$ strands
 \cite[Lemmas~2.5, 2.7 and Proposition~2.8(ii)]{NSind}. Its
 eigenvalues are $mp^n$th roots, since the insertion has twist one,
 and all power traces lie in $\QQ(\zeta_N)$
-\cite[Proposition~5.7]{NSind}. Thus Galois orbits over that field
+by \cite[Proposition~5.7]{NSind}, since $N=\ord(T)=\operatorname{FSexp}(\C)$ by \cite[Theorem~7.7]{NSfs}. Thus Galois orbits over that field
 have constant multiplicity. The two powers agree on the
 prime-to-$p$ part and on roots of $p$-power order at most $p^{n-b}$.
 For order $p^t>p^{n-b}$, either power is constant on the subgroup
@@ -648,7 +653,7 @@ Lemma~\ref{lem:complement}. This gives the two objectwise bounds.
 
 For a ratio with two-part $2^k$, $k\ge4$, one of $t_{xx},t_{yy}$ has two-part at least $2^k$, so $2^{k-2}\mid\lcm(f_x,f_y)$. For $1\le k\le3$ at least one actual twist has even order. Combined with the odd-part result this proves the ratio bound; taking $y=0$ gives $N\mid4D$ since the codegrees divide $D$. In a minimal modular extension each original label has codegree four times its reduced codegree, giving the last assertion.
 \end{proof}
-For modular categories of prime-power exponent, Czenky, Plavnik and Schopieray bound the exponent by the norm of the global dimension, up to a factor four at two \cite{CPSexponent}. Here integrality of $D$ allows arbitrary exponent and gives an individual bound. Ising ($D=4$, $d_z^2=2$, $m_z=16$) attains the weakly integral factor eight and the global factor four. By passage to the center and \cite[Theorem~5.5]{NSfs}, the Frobenius--Schur exponent of any weakly integral category of dimension $n$ divides $4n^2$, and its odd part divides $n^2$.
+For modular categories of prime-power exponent, Czenky, Plavnik and Schopieray bound the exponent by the norm of the global dimension, up to a factor four at two \cite[main theorem, p.~2]{CPSexponent}. Here integrality of $D$ allows arbitrary exponent and gives an individual bound. Ising ($D=4$, $d_z^2=2$, $m_z=16$) attains the weakly integral factor eight and the global factor four. By passage to the center and \cite[Theorem~5.5]{NSfs}, the Frobenius--Schur exponent of any weakly integral category of dimension $n$ divides $4n^2$, and its odd part divides $n^2$.
 
 \subsection{Mass of a primary twist sector}\label{fam:M:sec:3.3}\label{sec:twist-mass}
 In an integral modular category write $\mu(A)=D^{-1}\sum_{X\in A}d_X^2$ for a set of labels $A$.
@@ -849,7 +854,7 @@ In such an extension, noninvertible simples of coprime dimensions
 have zero $S$-entry.
 \end{lemma}
 \begin{proof}
-By \cite[Corollary~1.3]{JFR} there is a minimal modular extension
+By the extension theorem of Johnson-Freyd and Reutter \cite[Corollary~1.3]{JFR} there is a minimal modular extension
 $\M_0$, of dimension $2D$, with neutral component $\mathcal B$
 for fermion monodromy. An odd invertible $h$ would give a pointed
 subcategory of order four whose bicharacter has trivial radical:
@@ -859,8 +864,9 @@ $\dim\mathcal N=D/2>1$, impossible. Hence
 $(\M_0)_{\pt}=\sVec$ and $(\M_0)_{\ad}=\mathcal B$.
 A proper subcategory crossing the grading has twice the dimension
 of its intersection with $\mathcal B$, hence dimension two or four.
-It is pointed or Ising; the former has an odd invertible and the latter
-splits off with fermion $g$, giving the same contradiction.
+It is pointed or Ising. The pointed case has an odd invertible. In the Ising
+case the subcategory is nondegenerate by \cite[Corollary~B.12]{DGNO}
+and splits off with fermion $g$, giving the same contradiction.
 
 Normalize $t_X=\theta_X/\zeta$ by choosing a two-power root
 $\zeta$ with $\zeta^3=p^+/\sqrt{2D}$ \cite[Theorem~6.10]{DLNCongruence}.
@@ -876,7 +882,7 @@ $\mathcal B$. Let $\mathcal I$ be Ising with fermion $\psi$ and
 noninvertible $\sigma$. Condense the diagonal boson
 $g\boxtimes\psi$ in $\M_0\boxtimes\mathcal I$: the local modules
 have dimension $(2D)4/2^2=2D$ and are nondegenerate
-\cite[Section~4.4]{DGNO}. Free modules on $X\boxtimes\one$,
+\cite[Propositions~4.26, 4.55(i) and~4.56(i)--(ii)]{DGNO}. Free modules on $X\boxtimes\one$,
 $X\in\mathcal B$, embed $\mathcal B$ braided fully faithfully since
 the nontrivial algebra summand contributes no morphisms by adjunction.
 These give all even pairs after identifying boson translates.
@@ -889,7 +895,7 @@ For noninvertible $X$ in an integral extension,
 $\langle XX^*\rangle=\mathcal B$: containment in $\sVec$ gives
 $d_X^2\le2$ since $1,g$ each occur at most once.
 A nonzero entry on coprime-dimensional noninvertibles would imply
-projective centrality \cite[Lemma~9.15.1]{EGNO}, hence membership of
+projective centrality \cite[Proposition~8.22.5 and Lemma~9.15.1]{EGNO}, hence membership of
 one in $\mathcal B'=\sVec$, impossible.
 \end{proof}
 
@@ -1063,7 +1069,7 @@ where the $q$-power roots $\eta_t$ consist of one copy of $1$ and $(g-1)/q$ comp
 \end{theorem}
 
 \begin{proof}
-At level $s^e$ the integral relations among powers of $\zeta_{s^e}$ are constant on each coset of $\mu_s$, by $\Phi_{s^e}$. We use this also modulo another prime. In particular an unsigned $s$-word of length $<s$ is unique, since in each coset its least coefficient is zero.
+At level $s^e$ the integral relations among powers of $\zeta_{s^e}$ are constant on each coset of $\mu_s$, by $\Phi_{s^e}$. This is the prime-power case of the R\'edei--de Bruijn--Schoenberg theorem \cite[Theorem~5.1]{Malikiosis}. We use this also modulo another prime. In particular an unsigned $s$-word of length $<s$ is unique, since in each coset its least coefficient is zero.
 
 First suppose $z$ is a signed word of length at most $g$ in roots of order supported on the specified primes. At $r>2g$ alone the signed augmentation is $g$ modulo $r$ and lies in $[-g,g]$, forcing $g$ positive signs. For two primes erase the $r$-parts, obtaining $w$. Its field is unramified at $r$, so $(w-g)/r$ is integral. All conjugates of $1+(w-g)/r$ lie in the unit disk, meeting its boundary only at $1$; the norm therefore gives $w=g$ or $g-r$.
 
@@ -1199,7 +1205,7 @@ $4\cdot3$ (standard and rotation representations), and flux $Y$ of
 an involution in the second factor with centralizer character $-1$
 on that involution. Then $d_Y=15$, $\theta_Y=-1$ and
 $S_{ZY}=4\cdot15\cdot(-1)=-60$ by the charge--flux formula
-\cite[Section~3]{NNW}, since a half-turn has rotation trace $-1$.
+\cite[Section~3.1, p.~4189]{NNW}, since a half-turn has rotation trace $-1$.
 
 \subsection{Common divisors and the primes of a minimal table}\label{fam:M:sec:4.5}
 Balancing expresses $\chi_Y(X)$ as a positive rational sum of
@@ -2173,7 +2179,7 @@ field, unramified at $p$ (Lemma~\ref{fam:M:6.1} and its proof).
 
 For labels $i,j$ let $L_m^{ij}=\nu_{m,1}^{(i,j^*)}$ under
 $\mathcal Z(\mathcal C)\simeq\mathcal C\boxtimes\mathcal C^{\rm rev}$.
-The modular formula \cite[Proposition 6.1]{NSind} reads
+The modular formula \cite[Proposition~6.1]{NSind} reads
 $L_m^{ij}(c)=\sum_{a,b}s_{ia}s_{jb}
 (\theta_a/\theta_b)^m N_{ab}^c$. Contracting with the coefficients of
 $y=f_z E_z=\sum_c\overline{\chi_z(c)}[c]$ replaces $N_{ab}^c$
@@ -2188,8 +2194,8 @@ $\theta_X^{-1}$. For each fusion basis element $c$, the $p$th power
 of its trace is congruent at every prime above $p$ to the trace
 of its $p$th power. Composition of rotations and grouping $p$
 strands identify the latter with $L_{m/p}(c^p)$
-\cite[Lemma 2.5 and Proposition 2.8(ii),(iii)]{NSind}. The functionals
-are additive \cite[Corollary 5.5]{NSind}. Thus for all integral
+\cite[Lemmas~2.5, 2.7 and Proposition~2.8(ii),(iii)]{NSind}. The functionals
+are additive by \cite[Corollary~5.5]{NSind}. Thus for all integral
 cyclotomic coefficients $a_c$, with $y'=\sum_c a_c[c]$, the
 commutative fusion-ring congruence gives
 \[
@@ -3194,7 +3200,7 @@ by a quadratic Gauss sum of squared modulus $p$. Thus for
 $T=\sum_Xd_X^2\theta_{X,p}$ we have $|T|^2=p n^4(A-M)^2$.
 The regular-object indicator at an exponent selecting the
 $p$-primary twist is $|T|^2/D$, a rational algebraic integer
-\cite{NSfs}. It follows that $p^k\mid A-M$, as asserted.
+by \cite[Theorem~7.5]{NSfs} summed over the simples with their dimension multiplicities. It follows that $p^k\mid A-M$, as asserted.
 \end{proof}
 
 \begin{corollary}[Exceptional labels and principal inertia]\label{fam:Q:6.6}\label{fam:Q:n:quart:gauss}\label{fam:Q:6.7}\label{fam:Q:n:quart:orbitcount}
@@ -3741,7 +3747,7 @@ so it is a power of $q$, impossible in the perfect simple quotient.
 
 \paragraph{Conclusion of Theorem~\ref{fam:Q:n:q12:unified}.}
 For odd $p$ use Corollary~\ref{fam:Q:n:q12:quintic}. For $p=2$ Propositions~\ref{fam:Q:n:q12:ordinary-five} and~\ref{fam:Q:n:q12:redfive} exclude the ordinary and reduced tables. Smaller least-prime valuations already give WGT by
-Theorem~\ref{fam:M:7.3}, and the two-prime theorem of Dong~\cite[Theorem~3.2]{DongWeakIntegral}.
+Theorem~\ref{fam:M:7.3}, and the two-prime theorem of Dong~\cite[Theorem~3.1]{DongWeakIntegral}.
 
 \subsection{A quintic at three in even dimension}\label{fam:Q:sec:6}
 
@@ -4219,7 +4225,7 @@ level. The indicator formula from Section~\ref{fam:M:sec:7} gives, for even $Y$,
  \chi_{[j]}([Y]).
 \]
 This is the coefficient at $[Y]^*$ of the reduced element $1+J$, where $J=\sum_{[j]}\epsilon_j e_{[j]}$.
-It is an algebraic integer by the indicator theorem \cite{NSfs} and rational
+It is an algebraic integer by the cyclotomic integrality of indicators \cite[Theorem~5.1]{NSpivot} and rational
 by Galois covariance of the sign. Thus $J$ has integral coefficients.
 It is self-dual with $J^2=1$, so has squared based-ring norm one,
 and its dimension is $\epsilon_1=1$. This gives a positive invertible
@@ -4320,7 +4326,7 @@ by $r$ if and only if the other does.
 \begin{proof}
 The equivariant braiding on a homogeneous object of grade $g$ acts on
 a pure charge $\pi$ by its equivariant structure at $g$
-\cite[Section~4.4.4]{DGNO}. Thus evaluation of a charge at that flux
+\cite[Section~4.4.4 and proof of Proposition~4.56(i)]{DGNO}. Thus evaluation of a charge at that flux
 gives its ordinary character at $g$, up to inversion. Since the character table of the $r'$-group
 $G$ is invertible at $r$, a principal simple has neutral flux.
 For a neutral simple $Z$ over $U$ and neutral equivariant object $W$
@@ -6588,7 +6594,7 @@ a nilpotent category built by extensions; the group orders multiply
 to its dimension. If $4$ does not divide the dimension, each group
 has odd order or order twice odd. In the latter case the sign of the
 regular permutation representation gives an odd-order kernel of index
-two. Feit--Thompson and \cite[Proposition~4.5]{ENOsolvable} now give
+two. The odd-order theorem \cite[p.~775]{FT} and \cite[Proposition~4.5(i)]{ENOsolvable} now give
 solvability. In integral square-free dimension use also
 \cite[Proposition~9.1]{ENOsolvable}.
 \end{proof}
@@ -7769,7 +7775,7 @@ those allowed by the family theorems. With a braiding, the square-full part
 of its dimension divides $Q(D)$. Without a braiding, the Drinfeld center
 has dimension $N^2$, so a valuation $e$ in a minimal obstruction requires
 valuation at least $\lceil e/2\rceil$ in $N$. At most two repeated primes
-are covered by Dong's theorem \cite[Theorem~3.2]{DongWeakIntegral}.
+are covered by Dong's theorem \cite[Theorem~3.1]{DongWeakIntegral}.
 The following lower bounds use only the families needed for this comparison.
 \[
 \begin{array}{c|rrrr}
@@ -7870,9 +7876,9 @@ center $\mathcal Z(\mathrm{Vec}_{A_5}^{\omega})$, of dimension $3600$.
 For an odd-dimensional modular category put
 $\E=\C_{\ad}\cap\C_{\pt}=\Rep(H)$, $g=\FPdim(\C_{\pt})$ and
 $e_0=\FPdim(\E)$. The symmetric center of $\C_{\ad}$ is $\E$, so
-the modular quotient $(\C_{\ad})_H$ has dimension $D/(ge_0)$.
-Solvability passes in both directions \cite[Sections~3--4]{DGNO},
-\cite[Proposition~4.5]{ENOsolvable}. Iteration ends at a perfect
+the modular quotient $(\C_{\ad})_H$ has dimension $D/(ge_0)$
+\cite[Proposition~4.26 and Corollary~4.31(i)]{DGNO}. Solvability passes in both directions
+\cite[Proposition~4.5(i), (iv)]{ENOsolvable}. Iteration ends at a perfect
 category, which is trivial precisely in the solvable case since every
 nontrivial solvable category has a nontrivial invertible object.
 
@@ -7884,20 +7890,20 @@ Here and below a simple perfect category is understood to be nontrivial.
 Every nontrivial simple perfect integral modular category has dimension at least $29160000$, and at least $6087156075$ in odd dimension. Without a braiding assumption every non-WGT weakly integral fusion category has dimension at least $5400$, and at least $121275$ in odd dimension. The odd lower bound also holds for every nontrivial perfect weakly integral fusion category.
 \end{corollary}
 \begin{proof}
-A nontrivial simple modular category has no nontrivial Tannakian subcategory: simplicity would force that subcategory to be the whole category, whereas a nontrivial symmetric category is degenerate. An integral WGT braided category with no nontrivial Tannakian subcategory is pointed by \cite[Theorem~3.1]{NataleCore}. Perfection rules out a nontrivial pointed category. The first two assertions now follow from Theorem~\ref{thm:uniform-new-bounds} and $Q(D)\le D$. The same theorem gives the unbraided bounds, since solvability implies weak group-theoreticity and a nontrivial solvable category has a nontrivial invertible object \cite[Proposition~4.5]{ENOsolvable}. In the unbraided statement the non-WGT assumption matters even for simple perfect categories: $\Rep(A_5)$ is such a category of dimension $60$ and rank five.
+A nontrivial simple modular category has no nontrivial Tannakian subcategory: simplicity would force that subcategory to be the whole category, whereas a nontrivial symmetric category is degenerate. An integral WGT braided category with no nontrivial Tannakian subcategory is pointed by \cite[Theorem~3.1]{NataleCore}. Perfection rules out a nontrivial pointed category. The first two assertions now follow from Theorem~\ref{thm:uniform-new-bounds} and $Q(D)\le D$. The same theorem gives the unbraided bounds, since solvability implies weak group-theoreticity and a nontrivial solvable category has a nontrivial invertible object \cite[Proposition~4.5(iv)]{ENOsolvable}. In the unbraided statement the non-WGT assumption matters even for simple perfect categories: $\Rep(A_5)$ is such a category of dimension $60$ and rank five.
 \end{proof}
 
 
 \begin{corollary}\label{cor:all-dim-rank}
-A simple perfect integral modular category has rank at least $16$,
+A nontrivial simple perfect integral modular category has rank at least $16$,
 and at least $27$ in odd dimension. Without a braiding assumption,
 a non-WGT perfect integral fusion category has rank at least $7$. A nontrivial odd-dimensional perfect integral fusion category has rank at least $15$.
 \end{corollary}
 \begin{proof}
-The modular lower bounds $15$ and $27$ are established in
+Alekseyev, Bruns, Palcoux and Petrov excluded nontrivial perfect integral modular categories through rank $13$, and through rank $24$ in odd dimension \cite[Theorems~1.5 and~12.2]{ABPPModular}. The modular lower bounds $15$ and $27$ are established in
 \cite[Corollaries~1.2 and~1.3]{DPLCM}. For the additional step at rank
 $15$, use the 2341 perfect dimension types in the supplementary list
-to \cite[Section~4]{DPLCM}. For a type $(d_i)$, its smallest codegree is
+to \cite[Section~4.3]{DPLCM}. For a type $(d_i)$, its smallest codegree is
 $\sum_i d_i^2/(\max_i d_i)^2$. For the values $2,3,4,5$ the respective
 counts are $459,24,1857,1$.\footnote{The file
 \href{https://github.com/sebastienpalcoux/Fusion-Categories/blob/06f3a37b086c0591e086a3aed9a9458f4270165f/NewCritPaper/Rank15/RemainingPerfect.txt}{\texttt{RemainingPerfect.txt}}
@@ -7914,9 +7920,9 @@ for a character other than the dimension, orthogonality to the latter
 requires at least two nonzero entries away from the unit. Indeed, a
 unique such entry would be $-1/d_Y$, which is not integral.
 Each nonzero entry has conjugate mean square at least one.
-For rank at most five the possible dimensions are at most $1806$,
-and for odd dimension and rank at most seven they are at most $903$
-\cite[Sections~7.1 and~8.2]{ABDPIntegral}.
+The reciprocal-sum enumeration gives candidate dimensions at most $1806$ for rank at most five,
+and at most $903$ for odd dimension and rank at most seven
+\cite[Sections~7.1 and~8.2.2]{ABDPIntegral}.
 
 Here $D/f$ is an integer by Ostrik's induction formula: it is the dimension of a simple in the center, whose image under the forgetful functor has integral dimension \cite[Theorem~2.13]{OstrikPivotalRankThree}. At rank six, the only $D\ge5400$ from this reciprocal sum are
 \[
@@ -8018,6 +8024,8 @@ of distinct characters over the residue field, even if one is the
 dimension character. Hence rank thirteen is impossible.
 \par In the nonpointed odd-dimensional case with noncommutative fusion ring the lower bound is $23$ by \cite[Theorem~1.8]{ABDPIntegral}. 
 \end{proof}
+
+For comparison, the Anyon Atlas \cite[Section~3]{AnyonAtlas} uses a numerical search to construct modular data through rank $22$. The proof above uses the exact rank-$15$ list.
 
 \section{Cyclotomic support and local ramification}\label{found:group:support}
 Throughout these sections a minimal table is one of the two tables in Lemma~\ref{lem:minimal}.
@@ -8481,9 +8489,7 @@ as $s$ is unramified in the $q$-power field. Each conjugate of
 $\alpha$ has absolute value at most $1+2t/s$. A nonzero cyclotomic
 integer in a $q$-power field of mean square less than $2(q-2)/(q-1)$
 is a signed $q$-power root. Indeed, write it as an integer sum of
-$q$-power roots. Different $\mu_q$-cosets are orthogonal for
-normalized trace, and a coset with coefficient vector $(b_i)$
-contributes $\sum_{i<j}(b_i-b_j)^2/(q-1)$. A nonconstant coset
+$q$-power roots. Cassels's trace identities \cite[(3.4) and (3.16), pp.~114--115]{Cassels} make different $\mu_q$-cosets orthogonal for normalized trace and give the contribution $\sum_{i<j}(b_i-b_j)^2/(q-1)$ for a coset with coefficient vector $(b_i)$. A nonconstant coset
 contributes at least one. In a single coset, two coefficient levels
 at distance one give numerator $k(q-k)$; below $2(q-2)$ one of
 their multiplicities must be one. If a pair differs by at least two,
@@ -13845,7 +13851,7 @@ For all $m,Z$, the number $|M_m(Z)|^2/D$ is an algebraic integer. For every $J,Z
 More precisely, if $m$ is one on the local levels in $J$ and zero on the complementary levels, then $M_m(Z)=n\gamma_J^3\theta_{Z,J}^{-1}k_{J,Z}$, with $\gamma_J$ the $J$-part of the normalization scalar. Every prime $q$ outside $J$ dividing $f_Z$ also divides $k_{J,Z}$.
 \end{theorem}
 \begin{proof}
-Extend $\nu_m$ linearly to virtual objects with cyclotomic integer coefficients; its values are integral because each simple indicator is a finite-order trace. For every $B$, inserting Verlinde into the Ng--Schauenburg formula \cite[Theorem~7.5]{NSfs} gives $\nu_m(B)=\sum_Y\chi_Y(B^*)|(sT^ms e_0)_Y|^2$, where $*$ extends duality linearly. The two factors are conjugate since $X,X^*$ have the same twist. For $B=\sum_X\chi_Z(X)[X]$ the coefficient at $Y$ is
+Extend $\nu_m$ linearly to virtual objects with cyclotomic integer coefficients; its values are integral because each simple indicator is a finite-order trace. For every $B$, inserting Verlinde into the Ng--Schauenburg formula \cite[Theorem~7.5 and Remark~7.6]{NSfs} gives $\nu_m(B)=\sum_Y\chi_Y(B^*)|(sT^ms e_0)_Y|^2$, where $*$ extends duality linearly. The two factors are conjugate since $X,X^*$ have the same twist. For $B=\sum_X\chi_Z(X)[X]$ the coefficient at $Y$ is
 \[
               \sum_X\chi_Z(X)\chi_Y(X^*)=f_Z\mathbf1_{Y=Z}.
 \]
@@ -13853,7 +13859,7 @@ Thus $\nu_m(B)=f_Z|(sT^ms e_0)_Z|^2=|M_m(Z)|^2/D$.
 
 For the indicated $m$, $sT^m s e_0=sT^m s^{-1}e_0$ since charge conjugation fixes the vacuum. Only the $J$-local upper unipotent occurs in the middle of the latter word, apart from the scalar $\gamma_J$. The matrix identity $W U W^{-1}=U^{-1}W^{-1}U^{-1}$ in each selected factor shows that its $Z$-coordinate is $\gamma_J^3\theta_{Z,J}^{-1}(W_J^{-1}e_0)_Z$. The vectors $W_J^{-1}e_0=W_J e_0$ are rational in square dimension (Lemma~\ref{lem:local-vacuum-column}). Since the same coordinate equals $d_Z M_m(Z)/D$, the claimed expression for $M_m(Z)$ follows with rational $k_{J,Z}$. Its square is an algebraic integer by the first assertion, proving integrality.
 
-For a prime $q$ the rotation identity \cite[(5.4)]{NSpivot} gives
+For a prime $q$ the rotation identity \cite[(5.4) and proof of Theorem~5.1, pp.~75--76]{NSpivot} gives
 $\nu_{qv}(X)^q\equiv\nu_v(X^{\otimes q})$ at a prime above $q$: trace to the $q$th power agrees in the residue field with trace of the $q$th power, and rotation by $q$ places is rotation by one block of length $q$. This extends to every cyclotomic-integral virtual $B$ by additivity and the Frobenius homomorphism in the commutative fusion ring modulo $q$. If $q\notin J$, choose the CRT parameter in the form $m=qv$. The above $B$ equals $f_Z$ times a primitive idempotent (at $Z^*$), hence $B^q=f_Z^{q-1}B$. For $q\mid f_Z$ the congruence now gives $k_{J,Z}^{2q}\equiv0$ at that prime, proving $q\mid k_{J,Z}$.
 \end{proof}
 
@@ -14555,7 +14561,7 @@ all tensor decompositions. Write $\pi(D)$ for the prime divisors of $D$.
 For an integral WGT modular category, a maximal Tannakian subcategory
 $\Rep(G)$ gives a faithful braided $G$-crossed extension of a pointed
 metric core $\C(A,\eta)$ whose equivariantization is the category
-\cite[Proposition~4.56 and Corollary~5.19]{DGNO}
+\cite[Proposition~4.56(i)--(ii), Definition~5.8 and Corollary~5.19]{DGNO},
 \cite[Theorem~1.1]{NataleCore}. Conversely a pointed core implies WGT
 by closure under extensions and equivariantizations. Thus
 \[
@@ -14563,14 +14569,15 @@ by closure under extensions and equivariantizations. Thus
  \qquad \rho_\ell:G\longrightarrow O(A_\ell,\eta_\ell).
 \]
 There is no nonzero $G$-invariant isotropic subgroup in $A$: its
-equivariantization would enlarge $\Rep(G)$ inside its centralizer.
+equivariantization would enlarge $\Rep(G)$ inside its centralizer \cite[Proposition~5.18]{DGNO}.
 The action may have kernel; a twisted double can have trivial core.
 
-The component degree in the next formula follows from the Picard action of
-Davydov--Nikshych \cite[Corollary~5.6 and Remark~5.7]{DNPicard}.
-Etingof--Galindo \cite[Lemma~4.2]{EGReflection} give the degree in the
-odd elementary abelian setting. We record the codegrees and the integrality
-criterion for arbitrary finite metric groups.
+For a braided $G$-crossed extension of a pointed category with metric
+group $(A,\eta)$, Etingof and Galindo \cite[Lemma~4.2]{EGReflection}
+show that each simple object in the $g$-component has Frobenius--Perron
+dimension $\sqrt{|(1-\rho(g))A|}$. Their proof uses the stabilizer
+description of Davydov and Nikshych \cite[Corollary~5.6 and Remark~5.7]{DNPicard}.
+Equivariantization then gives the degrees and codegrees below.
 
 \begin{proposition}[Degrees and codegrees of a gauging]\label{fam:M:13.1}\label{prop:gauged-degrees}
 Let $Y$ be simple in the $g$-component of a braided $G$-crossed
@@ -14642,7 +14649,7 @@ Erd\H{o}s and P\'alfy \cite{ErdosPalfy}. Partition $\pi(|G|)$ into
 two parts. If across the cut $s\nmid\ell^j-1$ for
 $1\le j\le v_\ell(|G|)$ in either direction, $G$ is the product of
 its two Hall factors. Indeed, for even order every odd prime joins two.
-For odd order use solvability \cite{FT} and induct on $|G|$.
+For odd order use solvability \cite[p.~775]{FT} and induct on $|G|$.
 Choose a minimal normal subgroup $M\cong\mathbb F_\ell^e$. In
 $G/M$ the opposite Hall factor is normal; its preimage is
 $M\rtimes H$ by Schur--Zassenhaus. The cut makes $|H|$ coprime to
@@ -14717,11 +14724,12 @@ joins each other repeated prime through $\ell^2-1$.
 
 \paragraph{Primes seen by simple dimensions.}
 For integral modular $\C$, let $S_0=\{p:p\mid d_X\text{ for some }X\}$.
-The categorical It\^o--Michler theorem gives
-$S_0=\pi(\FPdim(\C_{\ad}))$ and splits off every prime outside
-$S_0$ as a pointed modular factor of its full primary dimension
-\cite[Proposition~1.3, arXiv version]{BurciuIM}
-\cite[Corollary~1.7]{BurciuIsaacs}. For WGT categories the graph of
+If $p\mid D$ and $p\notin S_0$, Burciu's categorical It\^o--Michler theorem
+gives $p^{v_p(D)}\mid |U(\C)|$ and splits off a pointed modular factor of
+dimension $p^{v_p(D)}$ \cite[Proposition~1.3]{BurciuIM}. The divisibility
+also implies $p\notin S_0$ \cite[Corollary~1.7]{BurciuIsaacs}. Since
+$D=|U(\C)|\FPdim(\C_{\ad})$, it follows that
+$S_0=\pi(\FPdim(\C_{\ad}))$. Burciu extends this splitting to weakly integral braided categories using conjugacy-class dimensions \cite[Theorem~1.1]{BurciuClassGraph}. For WGT categories the graph of
 the remaining centralizer is $\Gamma(D)[S_0]$; removing only the
 exponent-one factors gives $\Gamma(Q(D))$. An exponent-one vertex may
 have joined two repeated primes. In particular, if all $d_X$ are odd
@@ -14730,17 +14738,15 @@ centralizer has dimension $M$. WGT for it gives solvability of
 $\C$, for instance when $M=p^a q^b c$ with $c$ square-free and
 coprime to $pq$ \cite[Theorem~7.4]{NataleWGT}.
 
-In the simple-dimension graph \cite{NP} one joins $p,q$ if
+In the Frobenius--Perron prime graph \cite[Definitions~2.1 and~4.1]{NP}, which we call the simple-dimension graph, one joins distinct primes $p,q$ if
 $pq\mid d_X$ for some $X$. In a product over arithmetic components
 $\Pi$, it is the join of the induced graphs on the nonempty
 $S_0\cap\Pi$: witnesses from different factors can be tensored.
 Thus each connected component of its complement lies in one
 arithmetic factor, and with two nonempty factor supports the
-simple-dimension graph has diameter at most two. A nonpointed
+simple-dimension graph has diameter at most two. In the integral modular case, the class dimensions are the $d_X^2$, so the simple-dimension graph is also Burciu's class graph; if it is disconnected then the category is solvable \cite[Theorem~1.2 and Lemma~6.2(1)]{BurciuClassGraph}. A nonpointed
 prime integral modular category has $S_0=\pi(D)$.
-For example $\mathcal Z(\Vec_{C_{341}\rtimes C_5})$, with faithful
-actions on $C_{11},C_{31}$, has simple dimensions $1,5,341$
-\cite[Example~8.6]{NP}. The simple-dimension graph has edge
+Natale and Pacheco Rodr\'iguez treat Frobenius groups with abelian kernel and complement in \cite[Example~8.6]{NP}, illustrating the calculation with $C_{341}\rtimes C_{10}$. Here take $G=C_{341}\rtimes C_5$, with faithful actions on $C_{11}$ and $C_{31}$. The nonidentity fluxes have abelian centralizers of index $5$ or $341$, and the pure charges have degrees $1$ or $5$. Thus the simple dimensions of $\mathcal Z(\Vec_G)$ are $1,5,341$. The simple-dimension graph has edge
 $11$--$31$; the arithmetic graph has edges $5$--$11$ and $5$--$31$.
 
 \subsection{Multiplicities and prime-power codegrees}\label{fam:M:sec:13.2}
@@ -14752,13 +14758,18 @@ $K=\QQ(S)$ for the unnormalized matrix. Then
  \ \biggm|\ \frac{\varphi(N)}{|(\ZZ/N\ZZ)^\times[2]|}
  \ \biggm|\ [K:\QQ]\ \biggm|\ \prod_\lambda n_\lambda! .
 \]
-Here \cite[Theorem~2.3 and Lemmas~2.6 and 3.9]{BNRWClass} gives the elementary
-$2$-kernel in $\operatorname{Gal}(\QQ(\zeta_N)/K)$ and faithful
-permutations preserving simple dimensions, and
+By \cite[Theorems~2.3 and~2.5(a), Lemma~2.6]{BNRWClass},
+$K\subseteq\QQ(\zeta_N)\subseteq\QQ(\zeta_n)$, where $n$ is the order
+of a normalized twist matrix, and $\operatorname{Gal}(\QQ(\zeta_n)/K)$
+has exponent at most two. The same holds for its quotient
+$\operatorname{Gal}(\QQ(\zeta_N)/K)$. Galois permutes the characters
+$S_{ij}/d_j$ faithfully, since their values generate $K$ (the unit
+column contains the $d_i$), and preserves the positive simple dimensions
+\cite[Lemma~3.9]{BNRWClass}. The categorical Cauchy theorem
 \cite[Theorem~3.9]{BNRWFinite} identifies the primes of $N$ and $D$.
-For instance $7\mid D$ forces a repeated dimension of multiplicity
-at least three. If $K$ is multiquadratic, $N\mid240$
-\cite[Corollary~3.14]{BNRWClass}. Pointed core alone does not imply
+For instance $7\mid D$ forces a repeated dimension of multiplicity at
+least three. If $K$ is multiquadratic, then $N\mid240$
+by \cite[Corollary~3.14]{BNRWClass}. Pointed core alone does not imply
 this: a nondegenerate cyclic metric group of order seven has
 $K=\QQ(\zeta_7)$.
 
@@ -14768,7 +14779,7 @@ An integral modular category of dimension $p^n$, $n\ge4$, has no
 simple of formal codegree $p^2$.
 \end{proposition}
 \begin{proof}
-Such a category is WGT \cite[Theorem~3.2]{DongWeakIntegral}, so use
+Such a category is nilpotent by successive cyclic gradings \cite[Theorem~8.28]{ENOannals}, hence WGT, so use
 the pointed-core description above. For a simple above
 $Y\in\mathcal F_g$ with projective stabilizer representation $\pi$,
 the dimension formula gives
@@ -14796,10 +14807,7 @@ noncentral $g$ it contains $Z(G)\langle g\rangle\supsetneq Z(G)$,
 and for central $g$ it is $G$.
 Equality $f=p^2$ would force the twisted group algebra of $C_G(g)$
 to be a single matrix algebra. For $g=1$ its cocycle is trivial.
-For $g\ne1$ its basis element at $g$ is central: the centralizer
-cocycle for normalized $\omega$ satisfies
-$\alpha_g(g,x)=\alpha_g(x,g)=\omega(g,x,g)$
-\cite[Section~8, (8.1)]{NP}. Either way the center has dimension greater
+For $g\ne1$ its basis element at $g$ is central: the centralizer cocycle is $\alpha_g(x,y)=\omega(g,x,y)\omega(x,y,g)/\omega(x,g,y)$ for $x,y\in C_G(g)$ \cite[(8.1)]{NP}, so $\alpha_g(g,x)=\alpha_g(x,g)=\omega(g,x,g)$. Either way the center has dimension greater
 than one.
 \end{proof}
 
@@ -14821,7 +14829,9 @@ $p$ odd, is integral modular of dimension $4p^4$. Its degree-$p$
 simples $Z_{\rho,\Delta}$ have codegree $4p^2$ and lie outside
 the principal $p$-block: their character values on $Y_{a,b}$,
 $a\ne b$, are zero rather than two modulo $p$
-\cite[Sections~4B--4C]{GNNcenters}.
+\cite[Proposition~4.1 and the $S$-matrix on p.~977]{GNNcenters}.
+Gelaki, Naidu and Nikshych credit Izumi with an earlier computation of
+these modular data \cite[Remark~4.3]{GNNcenters}.
 
 \begin{lemma}[Factors of a cyclic gauging]\label{fam:M:13.6}\label{lem:cyclic-gauging}
 Let a cyclic group $G$ act faithfully on a finite metric group $A$
@@ -14834,7 +14844,7 @@ factors of every gauging.
 \begin{proof}
 Coprimality gives $H^3(G,A)=0$ and cyclicity gives
 $H^4(G,\CC^\times)=0$, so the two obstructions to a braided crossed
-extension vanish \cite[Theorem~7.12]{ENOH}. Its gauging is modular
+extension vanish \cite[Proposition~7.3 and Theorem~7.12]{ENOH}. Its gauging is modular
 \cite[Proposition~4.56(ii)]{DGNO}, and Lemma~\ref{lem:uc-descent}
 splits it over the components. Conversely, its entire pointed subcategory is $\Rep(G)$:
 Proposition~\ref{prop:gauged-degrees} excludes invertibles over
@@ -14873,7 +14883,7 @@ has connected allowed graph.
 \emph{Groups of square-free order.}
 Every group $H$ of square-free order has the form $F\rtimes E$,
 where $F=[H,H]$ and $E$ are cyclic of coprime orders
-\cite[\S10.1.10]{Robinson}. Draw the actual nontrivial actions
+\cite[Theorem~10.1.10]{Robinson}. Draw the actual nontrivial actions
 from the prime factors of $E$ to those of $F$. Every edge
 $s\to t$ has $s\mid t-1$. Subgroups belonging to distinct
 components commute and have coprime orders, so $H$ is their
@@ -14895,7 +14905,7 @@ center is trivial: a nontrivial center is a central Hall subgroup
 and splits off by Schur--Zassenhaus, while a cyclic group of
 composite square-free order is decomposable. Its twisted double,
 the center of every presentation above, is prime by
-\cite[Proposition~6.7(ii)]{NNW}: a decomposition would give commuting
+\cite[Proposition~6.7(ii), p.~4215]{NNW}: a decomposition would give commuting
 normal subgroups with product $H$ and intersection in $Z(H)=1$.
 The center of a tensor product is a braided product. This proves
 (i), using $\Vec_H$ for existence.
@@ -14904,8 +14914,10 @@ The center of a tensor product is a braided product. This proves
 For even $L$ the all-positive star with source two is connected,
 and (i) supplies a prime center. Now let $L$ be odd, and write
 $L^2=|G|^2|A|$ as above. The order of $G$ is square-free and
-coprime to $|A|$. Each $A_t$ is a metric plane over $\mathbb F_t$
-by \cite[Theorem~A.24(iv)]{DGNO}. The odd image of $G$ acts on it
+coprime to $|A|$. Each primary summand $A_t$ is weakly anisotropic, since an isotropic
+subgroup invariant under all its isometries would be $G$-invariant.
+As $t$ is odd and $|A_t|=t^2$, $A_t$ is a metric plane over
+$\mathbb F_t$ by \cite[Theorem~A.24(i),(iv)]{DGNO}. The odd image of $G$ acts on it
 through the cyclic rotation group. The plane is anisotropic, since
 rotations of a split plane preserve its isotropic lines, contrary
 to maximality of $\Rep(G)$. Thus for $G=F\rtimes E$ as above,
@@ -14961,10 +14973,11 @@ the trace pairing. The cyclic norm-one torus has order $n-1$ or
 $n+1$ and acts freely off zero. Either divisibility $s\mid n\pm1$
 therefore realizes the displayed type at $|A|=n^2$. For
 $(s,\ell,h)=(5,7,2)$ the first edge occurs at $\ell^4-1$; compare
-\cite{GPR} for the plane case.
+the anisotropic plane construction and its simple degrees in
+\cite[Definition~3.1 and Proposition~4.2]{GPR}.
 
 For $s=2$, inversion on a cyclic odd metric group of order $M>1$
-gives the metaplectic categories \cite{BGNPW,ACRW}. At $M=35$
+gives the metaplectic categories \cite[Theorem~3.2]{ACRW}. At $M=35$
 the two extra edges of Theorem~\ref{thm:uc-components} connect
 the isolated vertices of $\Gamma(140)$ through two. In dimension
 $4qr$ with $q,r$ distinct odd primes, integral modular categories
@@ -14981,7 +14994,7 @@ To reproduce a calculation, look up its theorem or subsection in the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/manifest.json}{verification manifest}.
 Each entry gives the hypotheses, the command to run from the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/code}{\texttt{code/}} directory, and the expected output.
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} directory contains the published rank-$15$ input.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} directory contains the rank-$15$ data of Dong and Palcoux.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/certificates.json}{witness file}
 records the seven terminal trace obstructions of Theorem~\ref{fam:M:8.15} and the five pairs of disjoint fibers at rank $100$ in Section~\ref{por:certificate}.
 
@@ -15061,74 +15074,65 @@ E.~Ardonne, M.~Cheng, E.~C.~Rowell, and Z.~Wang,
 J. Algebra \textbf{466} (2016), 141--146.
 
 \bibitem{BH}
-M.~Beck and S.~Ho\c{s}ten, \emph{Cyclotomic polytopes and growth series of cyclotomic lattices}, Math. Res. Lett. \textbf{13} (2006), 607--622. \href{https://arxiv.org/abs/math/0508136}{arXiv:math/0508136}.
+M.~Beck and S.~Ho\c{s}ten, \href{https://doi.org/10.4310/mrl.2006.v13.n4.a10}{\emph{Cyclotomic polytopes and growth series of cyclotomic lattices}}, Math. Res. Lett. \textbf{13} (2006), 607--622.
 
 \bibitem{BGNPW}
 P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell,
 and Z.~Wang,
-\emph{On the classification of weakly integral modular categories},
+\href{https://doi.org/10.1016/j.jpaa.2015.11.010}{\emph{On the classification of weakly integral modular categories}},
 J. Pure Appl. Algebra \textbf{220} (2016), 2364--2388.
-\href{https://arxiv.org/abs/1411.2313v5}{arXiv:1411.2313v5} (cited version).
 
 \bibitem{BNRWClass}
 P.~Bruillard, S.-H.~Ng, E.~C.~Rowell, and Z.~Wang,
 \href{https://doi.org/10.1093/imrn/rnw020}{\emph{On classification of modular categories by rank}},
-Int. Math. Res. Not. IMRN 2016, no.~24, 7546--7588;
-\href{https://arxiv.org/abs/1507.05139v2}{arXiv:1507.05139v2}.
+Int. Math. Res. Not. IMRN 2016, no.~24, 7546--7588.
 
 \bibitem{BNRWFinite}
 P.~Bruillard, S.-H.~Ng, E.~C.~Rowell, and Z.~Wang,
 \href{https://doi.org/10.1090/jams/842}{\emph{Rank-finiteness for modular categories}},
-J. Amer. Math. Soc. \textbf{29} (2016), no.~3, 857--881;
-\href{https://arxiv.org/abs/1310.7050v3}{arXiv:1310.7050v3}.
+J. Amer. Math. Soc. \textbf{29} (2016), no.~3, 857--881.
 
 \bibitem{BurciuIM}
 S.~Burciu,
 \href{https://doi.org/10.1017/S1474748025101126}{\emph{Frobenius--Perron dimensions of conjugacy classes and an
 Ito--Michler-type result in modular fusion categories}},
 J. Inst. Math. Jussieu \textbf{24} (2025), 2523--2542.
-\href{https://arxiv.org/abs/2410.05709v2}{arXiv:2410.05709v2}.
 
 \bibitem{BurciuIsaacs}
 S.~Burciu,
 \href{https://doi.org/10.1112/jlms.70649}{\emph{On some integral properties of dimensions in Isaacs fusion categories}},
-J. London Math. Soc. \textbf{114} (2026), no.~1, e70649;
-\href{https://arxiv.org/abs/2507.07329}{arXiv:2507.07329}.
+J. London Math. Soc. \textbf{114} (2026), no.~1, e70649.
 
 \bibitem{BNEquiv}
 S.~Burciu and S.~Natale,
 \href{https://doi.org/10.1063/1.4774293}{\emph{Fusion rules of equivariantizations of fusion categories}},
-J. Math. Phys. \textbf{54} (2013), no.~1, 013511;
-\href{https://arxiv.org/abs/1206.6625v2}{arXiv:1206.6625v2} (cited version).
+J. Math. Phys. \textbf{54} (2013), no.~1, 013511.
 
 \bibitem{BP}
 S.~Burciu and S.~Palcoux,
-\href{https://doi.org/10.1142/S0219199726500070}{\emph{Burnside type results for fusion categories}},
-Commun. Contemp. Math., article 2650007;
-\href{https://arxiv.org/abs/2302.07604v11}{arXiv:2302.07604v11} (cited version).
+\href{https://doi.org/10.1142/S0219199726500070}{\emph{Burnside-type results for fusion categories}},
+Commun. Contemp. Math. (2026), article 2650007.
 
 \bibitem{ChlSchur}
 M.~Chlouveraki, \href{https://doi.org/10.2140/ant.2008.2.689}{\emph{Rouquier blocks of the cyclotomic Ariki--Koike algebras}}, Algebra Number Theory \textbf{2} (2008), no.~6, 689--720.
 
-\bibitem{CPSexponent} A. Czenky, J. Plavnik and A. Schopieray, \emph{On Frobenius--Schur exponent bounds}, \href{https://arxiv.org/abs/2404.06643}{arXiv:2404.06643}.
+\bibitem{CPSexponent}
+A. Czenky, J. Plavnik and A. Schopieray, \emph{On Frobenius--Schur exponent bounds}, \href{https://arxiv.org/abs/2404.06643}{arXiv:2404.06643}.
 
 \bibitem{DNPicard}
-A.~Davydov and D.~Nikshych, \emph{The Picard crossed module of a braided
-tensor category}, Algebra Number Theory \textbf{7} (2013), 1365--1403.
-\href{https://arxiv.org/abs/1202.0061}{arXiv:1202.0061}.
+A.~Davydov and D.~Nikshych, \href{https://doi.org/10.2140/ant.2013.7.1365}{\emph{The Picard crossed module of a braided
+tensor category}}, Algebra Number Theory \textbf{7} (2013), 1365--1403.
 
 \bibitem{DLNCongruence}
 C.~Dong, X.~Lin, and S.-H.~Ng,
 \href{https://doi.org/10.2140/ant.2015.9.2121}{\emph{Congruence property in conformal field theory}},
-Algebra \& Number Theory \textbf{9} (2015), no.~9, 2121--2166;
-\href{https://arxiv.org/abs/1201.6644}{arXiv:1201.6644}.
+Algebra \& Number Theory \textbf{9} (2015), no.~9, 2121--2166.
 
 \bibitem{DongWeakIntegral}
 J.~Dong,
 \href{https://doi.org/10.1007/s11401-026-0019-6}{\emph{Classification of certain weakly integral fusion categories}},
 Chinese Ann. Math. Ser. B \textbf{47} (2026), no.~3,
-555--572;
-\href{https://arxiv.org/abs/2103.04553v3}{arXiv:2103.04553v3} (numbering used here).
+555--572.
 
 \bibitem{DPLCM}
 J.~Dong and S.~Palcoux, \emph{A new criterion for integral modular
@@ -15141,9 +15145,8 @@ V. Drinfeld, S. Gelaki, D. Nikshych and V. Ostrik,
 
 \bibitem{DGNO}
 V.~Drinfeld, S.~Gelaki, D.~Nikshych, and V.~Ostrik,
-\emph{On braided fusion categories I},
-Selecta Math. (N.S.) \textbf{16} (2010), 1--119;
-\href{https://arxiv.org/abs/0906.0620}{arXiv:0906.0620}.
+\href{https://doi.org/10.1007/s00029-010-0017-z}{\emph{On braided fusion categories I}},
+Selecta Math. (N.S.) \textbf{16} (2010), 1--119.
 
 \bibitem{ErdosPalfy}
 P.~Erd\H{o}s and P.~P.~P\'alfy, \href{https://doi.org/10.1016/S0012-365X(98)00325-2}{\emph{On the orders of directly
@@ -15152,8 +15155,7 @@ indecomposable groups}}, Discrete Math. \textbf{200} (1999), 165--179.
 \bibitem{EGReflection}
 P.~Etingof and C.~Galindo,
 \href{https://doi.org/10.1016/j.jalgebra.2018.09.006}{\emph{Reflection fusion categories}},
-J. Algebra \textbf{516} (2018), 172--196;
-\href{https://arxiv.org/abs/1803.05568v2}{arXiv:1803.05568v2}.
+J. Algebra \textbf{516} (2018), 172--196.
 
 \bibitem{EGNO}
 P.~Etingof, S.~Gelaki, D.~Nikshych, and V.~Ostrik,
@@ -15164,66 +15166,60 @@ American Mathematical Society, 2015.
 \bibitem{ENOH}
 P.~Etingof, D.~Nikshych, and V.~Ostrik, with an appendix by E.~Meir,
 \href{https://doi.org/10.4171/QT/6}{\emph{Fusion categories and homotopy theory}}, Quantum Topol.
-\textbf{1} (2010), no.~3, 209--273;
-\href{https://arxiv.org/abs/0909.3140}{arXiv:0909.3140}.
+\textbf{1} (2010), no.~3, 209--273.
 
 \bibitem{ENOannals}
 P.~Etingof, D.~Nikshych, and V.~Ostrik,
 \href{https://doi.org/10.4007/annals.2005.162.581}{\emph{On fusion categories}},
-Ann. of Math. \textbf{162} (2005), no.~2, 581--642;
-\href{https://arxiv.org/abs/math/0203060}{arXiv:math/0203060}.
+Ann. of Math. \textbf{162} (2005), no.~2, 581--642.
 
 \bibitem{ENOsolvable}
 P.~Etingof, D.~Nikshych, and V.~Ostrik,
 \href{https://doi.org/10.1016/j.aim.2010.06.009}{\emph{Weakly group-theoretical and solvable fusion categories}},
-Adv. Math. \textbf{226} (2011), no.~1, 176--205;
-\href{https://arxiv.org/abs/0809.3031v2}{arXiv:0809.3031v2}.
+Adv. Math. \textbf{226} (2011), no.~1, 176--205.
 
 \bibitem{FT}
 W.~Feit and J.~G.~Thompson,
-\emph{Solvability of groups of odd order}, Pacific J. Math.
+\href{https://msp.org/pjm/1963/13-3/pjm-v13-n3-s.pdf}{\emph{Solvability of groups of odd order}}, Pacific J. Math.
 \textbf{13} (1963), 775--1029.
 
 \bibitem{GPR}
 C.~Galindo, J.~Plavnik, and E.~C.~Rowell,
 \href{https://doi.org/10.36045/j.bbms.240415}{\emph{Integral non-group-theoretical modular categories of dimension
 $p^2q^2$}}, Bull. Belg. Math. Soc. Simon Stevin \textbf{31} (2024),
-516--526;
-\href{https://arxiv.org/abs/2404.03826}{arXiv:2404.03826}.
+516--526.
 
 \bibitem{GNNcenters}
 S. Gelaki, D. Naidu and D. Nikshych,
 \href{https://msp.org/ant/2009/3-8/ant-v3-n8-p05-s.pdf}{\emph{Centers of graded fusion categories}},
 Algebra Number Theory \textbf{3} (2009), 959--990.
 
-\bibitem{GNnil} S. Gelaki and D. Nikshych, \emph{Nilpotent fusion categories}, Adv. Math. 217 (2008), 1053--1071.
+\bibitem{GNnil}
+S. Gelaki and D. Nikshych, \href{https://doi.org/10.1016/j.aim.2007.08.001}{\emph{Nilpotent fusion categories}}, Adv. Math. 217 (2008), 1053--1071.
 
-\bibitem{JFR} T. Johnson-Freyd and D. Reutter, \emph{Minimal nondegenerate extensions}, J. Amer. Math. Soc. \textbf{37} (2024), 81--150. \href{https://arxiv.org/abs/2105.15167}{arXiv:2105.15167}.
+\bibitem{JFR}
+T. Johnson-Freyd and D. Reutter, \href{https://doi.org/10.1090/jams/1023}{\emph{Minimal nondegenerate extensions}}, J. Amer. Math. Soc. \textbf{37} (2024), 81--150.
 
 \bibitem{NNW}
 D.~Naidu, D.~Nikshych, and S.~Witherspoon,
-\emph{Fusion subcategories of representation categories of twisted
-quantum doubles of finite groups}, Int. Math. Res. Not. IMRN
+\href{https://doi.org/10.1093/imrn/rnp084}{\emph{Fusion subcategories of representation categories of twisted
+quantum doubles of finite groups}}, Int. Math. Res. Not. IMRN
 2009, no.~22, 4183--4219.
-\href{https://arxiv.org/abs/0810.0032}{arXiv:0810.0032}.
 
 \bibitem{NataleWGT}
 S.~Natale,
-\emph{On weakly group-theoretical non-degenerate braided fusion categories},
-J. Noncommut. Geom. \textbf{8} (2014), 1043--1060;
-\href{https://arxiv.org/abs/1301.6078}{arXiv:1301.6078}.
+\href{https://doi.org/10.4171/jncg/177}{\emph{On weakly group-theoretical non-degenerate braided fusion categories}},
+J. Noncommut. Geom. \textbf{8} (2014), 1043--1060.
 
 \bibitem{NataleCore}
 S.~Natale,
 \href{https://doi.org/10.1142/S0129167X1850012X}{\emph{The core of a weakly group-theoretical braided fusion category}},
-Internat. J. Math. \textbf{29} (2018), no.~2, 1850012;
-\href{https://arxiv.org/abs/1704.03523}{arXiv:1704.03523}.
+Internat. J. Math. \textbf{29} (2018), no.~2, 1850012.
 
 \bibitem{NP}
 S.~Natale and E.~Pacheco Rodr\'iguez,
-\emph{Graphs attached to simple Frobenius--Perron dimensions of
-an integral fusion category}, Monatsh. Math. \textbf{179} (2016), 615--649.
-\href{https://arxiv.org/abs/1403.1247v2}{arXiv:1403.1247v2}.
+\href{https://doi.org/10.1007/s00605-015-0734-7}{\emph{Graphs attached to simple Frobenius--Perron dimensions of
+an integral fusion category}}, Monatsh. Math. \textbf{179} (2016), 615--649.
 
 \bibitem{NSTV}
 S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
@@ -15231,19 +15227,19 @@ S.~Nasseh, S.~Sather-Wagstaff, R.~Takahashi and K.~VandeBogert,
 decomposable maximal ideals}}, J. Pure Appl. Algebra \textbf{223}
 (2019), 1272--1287.
 
-\bibitem{NSind} S.-H. Ng and P. Schauenburg, \emph{Congruence subgroups and generalized Frobenius--Schur indicators}, Comm. Math. Phys. 300 (2010), 1--46. \href{https://arxiv.org/abs/0806.2493}{arXiv:0806.2493}.
+\bibitem{NSind}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1007/s00220-010-1096-6}{\emph{Congruence subgroups and generalized Frobenius--Schur indicators}}, Comm. Math. Phys. 300 (2010), 1--46.
 
-\bibitem{NSfs} S.-H. Ng and P. Schauenburg, \emph{Frobenius--Schur indicators and exponents of spherical categories}, Adv. Math. \textbf{211} (2007), 34--71.
+\bibitem{NSfs}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
 
 \bibitem{OstrikFormalCodegrees}
 V.~Ostrik,
 \href{https://doi.org/10.4310/MRL.2009.v16.n5.a11}{\emph{On formal codegrees of fusion categories}},
-Math. Res. Lett. \textbf{16} (2009), no.~5, 895--901;
-\href{https://arxiv.org/abs/0810.3242}{arXiv:0810.3242}.
+Math. Res. Lett. \textbf{16} (2009), no.~5, 895--901.
 
 \bibitem{Robinson}
-D.~J.~S.~Robinson, \emph{A Course in the Theory of Groups},
-second edition, Graduate Texts in Mathematics~80, Springer, 1996.
+D.~J.~S. Robinson, \href{https://doi.org/10.1007/978-1-4419-8594-1}{\emph{A Course in the Theory of Groups}}, second edition, Graduate Texts in Mathematics~80, Springer, 1996.
 
 \bibitem{Sharifi}
 R.~Sharifi,
@@ -15257,23 +15253,54 @@ Canad. Math. Bull. \textbf{69} (2026), no.~1, 292--298.
 \bibitem{YuSlightlyDegenerate}
 Z.~Yu,
 \href{https://doi.org/10.1016/j.jalgebra.2020.04.022}{\emph{On slightly degenerate fusion categories}},
-J. Algebra \textbf{559} (2020), 408--431;
-\href{https://arxiv.org/abs/1903.06345v3}{arXiv:1903.06345v3}.
+J. Algebra \textbf{559} (2020), 408--431.
 
-\bibitem{FamCohn} J.~H.~E.~Cohn,
+\bibitem{FamCohn}
+J.~H.~E.~Cohn,
 \href{https://doi.org/10.4064/aa106-1-5}{\emph{The Diophantine
 equation $x^n=Dy^2+1$}}, Acta Arith. \textbf{106} (2003), 73--83.
 
-\bibitem{OstrikPivotalRankThree} V. Ostrik, \emph{Pivotal fusion categories of rank 3}, Mosc. Math. J. \textbf{15} (2015), 373--396. \href{https://arxiv.org/abs/1309.4822}{arXiv:1309.4822}.
-\bibitem{DMNOWitt} A. Davydov, M. M\"uger, D. Nikshych and V. Ostrik, \emph{The Witt group of non-degenerate braided fusion categories}, J. Reine Angew. Math. \textbf{677} (2013), 135--177. \href{https://arxiv.org/abs/1009.2117}{arXiv:1009.2117}.
-\bibitem{DNVFrobenius} J. Dong, S. Natale and L. Vendramin, \emph{Frobenius property for fusion categories of small integral dimension}, J. Algebra Appl. \textbf{14} (2015), 1550011. \href{https://arxiv.org/abs/1209.1726}{arXiv:1209.1726}.
+\bibitem{OstrikPivotalRankThree}
+V. Ostrik, \href{https://doi.org/10.17323/1609-4514-2015-15-2-373-396}{\emph{Pivotal fusion categories of rank 3}}, Mosc. Math. J. \textbf{15} (2015), 373--396.
+
+\bibitem{DMNOWitt}
+A. Davydov, M. M\"uger, D. Nikshych and V. Ostrik, \href{https://doi.org/10.1515/crelle.2012.014}{\emph{The Witt group of non-degenerate braided fusion categories}}, J. Reine Angew. Math. \textbf{677} (2013), 135--177.
+
+\bibitem{DNVFrobenius}
+J. Dong, S. Natale and L. Vendramin, \href{https://doi.org/10.1142/s0219498815500115}{\emph{Frobenius property for fusion categories of small integral dimension}}, J. Algebra Appl. \textbf{14} (2015), 1550011.
 
 \bibitem{ABDPIntegral}
 M.~A. Alekseyev, W.~Bruns, J.~Dong and S.~Palcoux,
 \href{https://doi.org/10.1007/s11005-026-02164-7}{\emph{Classifying integral Grothendieck rings up to rank 5 and beyond}},
-Lett. Math. Phys. (2026), \href{https://arxiv.org/abs/2507.07023}{arXiv:2507.07023}.
+Lett. Math. Phys. \textbf{116} (2026), article 141.
 
-\bibitem{NSpivot} S.-H. Ng and P. Schauenburg, \emph{Higher Frobenius--Schur indicators for pivotal categories}, Contemp. Math. \textbf{441} (2007), 63--90. \href{https://arxiv.org/abs/math/0503167}{arXiv:math/0503167}.
+\bibitem{NSpivot}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1090/conm/441/08500}{\emph{Higher Frobenius--Schur indicators for pivotal categories}}, Contemp. Math. \textbf{441} (2007), 63--90.
+
+\bibitem{ABPPModular}
+M.~A. Alekseyev, W.~Bruns, S.~Palcoux and F.~V. Petrov,
+\href{https://doi.org/10.1063/5.0334158}{\emph{Classification of integral modular data up to rank 13}},
+J. Math. Phys. \textbf{67} (2026), 081701.
+
+\bibitem{AnyonAtlas}
+J.~Berean-Dutcher, C.~C\'ordova, J.~Parra-Martinez and R.~Tuddenham,
+\emph{The Anyon Atlas}, \href{https://arxiv.org/abs/2610.25439}{arXiv:2610.25439} (2026).
+
+\bibitem{Cassels}
+J.~W.~S. Cassels,
+\href{https://doi.org/10.1515/crll.1969.238.112}{\emph{On a conjecture of R.~M. Robinson about sums of roots of unity}},
+J. Reine Angew. Math. \textbf{238} (1969), 112--131.
+
+\bibitem{BGNPWSuper}
+P.~Bruillard, C.~Galindo, S.-H.~Ng, J.~Y.~Plavnik, E.~C.~Rowell and Z.~Wang,
+\href{https://doi.org/10.1007/s10468-019-09873-9}{\emph{Classification of super-modular categories by rank}},
+Algebr. Represent. Theory \textbf{23} (2020), 795--809.
+
+\bibitem{BurciuClassGraph}
+S.~Burciu, \emph{An It\^o--Michler type theorem and the prime class graph of weakly integral braided fusion categories}, \href{https://arxiv.org/abs/2611.04942}{arXiv:2611.04942} (2026).
+
+\bibitem{Malikiosis}
+R.~D. Malikiosis, \href{https://doi.org/10.1017/fms.2022.14}{\emph{On the structure of spectral and tiling subsets of cyclic groups}}, Forum Math. Sigma \textbf{10} (2022), e23.
 
 \end{thebibliography}
 
