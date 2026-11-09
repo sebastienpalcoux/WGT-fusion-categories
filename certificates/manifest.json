@@ -1,0 +1,828 @@
+{
+  "description": "Finite computations underlying the article and independent reproducibility checks. Source and derivation labels refer to the LaTeX article. Run commands from code/. Elapsed times in seconds depend on the machine.",
+  "calculations": [
+    {
+      "source_labels": [
+        "thm:uniform-new-bounds",
+        "app:bounds-code"
+      ],
+      "hypotheses": "Ordered exponent minima after the family exclusions.",
+      "command": [
+        "python3",
+        "check_dimension_bounds.py"
+      ],
+      "expected_stdout": "29160000 6087156075\n5400 121275",
+      "interpretation": "Optional arithmetic comparison for the four thresholds.",
+      "derivation_labels": [
+        "sec:numerical"
+      ],
+      "locations": {
+        "thm:uniform-new-bounds": {
+          "printed_number": "12.1",
+          "page": 55
+        },
+        "app:bounds-code": {
+          "printed_number": "A",
+          "page": 68
+        },
+        "sec:numerical": {
+          "printed_number": "12",
+          "page": 55
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "por:ranktheorem",
+        "por:certificate"
+      ],
+      "hypotheses": "Integral perfect simple modular table at dimension 29160000, with the forced six packets and residual labels.",
+      "command": [
+        "python3",
+        "check_frontier_rank.py"
+      ],
+      "expected_stdout": "95 0 None 0\n96 1 0 0\n97 43 1 0\n98 384 2 0\n99 3659 3 0\n100 30100 5 5\n(15, 18, 135, 50, 12, 2034, (360, 72, 12, 12), 360, 360, 72, 360)\n(15, 36, 135, 50, 12, 2034, (360, 36, 12, 12), 360, 360, 72, 360)\n(18, 180, 135, 50, 12, 2034, (72, 30, 12, 12), 360, 360, 72, 360)\n(24, 360, 15, 50, 36, 1882, (600, 600, 270, 24, 12), 360, 360, 24, 216)\n(36, 180, 135, 50, 12, 2034, (36, 30, 12, 12), 360, 360, 72, 360)",
+      "interpretation": "Two necessary-condition recursions. The five survivors at rank 100 are eliminated by the subsequent mathematical argument.",
+      "derivation_labels": [
+        "found:group:degrees",
+        "sec:portrait-proofs",
+        "por:certificate"
+      ],
+      "locations": {
+        "por:ranktheorem": {
+          "printed_number": "13.1",
+          "page": 57
+        },
+        "por:certificate": {
+          "printed_number": "S11.5",
+          "page": 217
+        },
+        "found:group:degrees": {
+          "printed_number": "S10",
+          "page": 187
+        },
+        "sec:portrait-proofs": {
+          "printed_number": "S11",
+          "page": 199
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "th:unbraided-5400"
+      ],
+      "hypotheses": "Simple perfect integral fusion category at dimension 5400, at the two endpoint ranks.",
+      "command": [
+        "python3",
+        "verify_rank_5400.py"
+      ],
+      "expected_stdout": "Profiles 26, noncommutative placements 36, survivors 0",
+      "interpretation": "Tests the character profiles and noncommutative placements.",
+      "derivation_labels": [
+        "th:unbraided-5400"
+      ],
+      "locations": {
+        "th:unbraided-5400": {
+          "printed_number": "13.2",
+          "page": 57
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "cor:all-dim-rank"
+      ],
+      "hypotheses": "The cited published rank-15 perfect list, pinned by SHA-256 in README.",
+      "command": [
+        "python3",
+        "verify_rank15_published.py"
+      ],
+      "expected_stdout": "Counter({4: 1857, 2: 459, 3: 24, 5: 1}) [(720, [1, 2, 2, 2, 3, 3, 3, 4, 4, 6, 6, 12, 12, 12, 12])]",
+      "interpretation": "Projection onto number of distinct dimension primes and the exceptional types.",
+      "derivation_labels": [
+        "cor:all-dim-rank"
+      ],
+      "locations": {
+        "cor:all-dim-rank": {
+          "printed_number": "13.5",
+          "page": 58
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "cor:all-dim-rank"
+      ],
+      "hypotheses": "Odd integral dimension, rank thirteen, reciprocal equation and paired codegrees.",
+      "command": [
+        "python3",
+        "verify_odd13.py"
+      ],
+      "expected_stdout": "520 17 [((7, 7, 9, 11, 95, 575), 7571025), ((7, 7, 11, 11, 31, 4785), 1038345)]",
+      "interpretation": "Returns tuples left for the proof modulo seven.",
+      "derivation_labels": [
+        "cor:all-dim-rank"
+      ],
+      "locations": {
+        "cor:all-dim-rank": {
+          "printed_number": "13.5",
+          "page": 58
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:M:8.15",
+        "fam:W:dyadic-boxes"
+      ],
+      "hypotheses": "Two higher valuations, one dyadic, with heights (2,2), (2,3), (3,2), (2,4), (4,2), and two isolated square primes.",
+      "command": [
+        "python3",
+        "four_primes/dyadic_total_height.py"
+      ],
+      "expected_stdout": "Vacuum counts: 12 14 92 18 365\nh k signed-q u v j_u j_v powers t K residues required\n3 2 -13 7 11 2 3 [(3, 2)] 11 10 (9, 12) 10\n4 2 3 5 11 1 2 [(4, 2)] 11 8 (1,) 2\n4 2 11 5 7 2 1 [(2, 1), (2, 2)] 5 2 (4, 10) 2\n4 2 11 7 13 2 2 [(4, 2)] 13 12 (4, 5, 10) 2\n4 2 13 11 17 1 3 [(4, 2)] 11 6 (2, 4, 5, 7, 10, 12) 1\n4 2 -41 13 17 3 2 [(4, 2)] 13 16 (15,) 38\n4 2 23 13 17 3 2 [(4, 2)] 13 15 (11, 20, 21) 3",
+      "interpretation": "Vacuum counts and seven last trace obstructions (501 vacuum cases in total).",
+      "derivation_labels": [
+        "fam:M:8.3",
+        "fam:M:8.7",
+        "fam:M:8.14"
+      ],
+      "locations": {
+        "fam:M:8.15": {
+          "printed_number": "8.15",
+          "page": 41
+        },
+        "fam:W:dyadic-boxes": {
+          "printed_number": "S2.1",
+          "page": 94
+        },
+        "fam:M:8.3": {
+          "printed_number": "8.3",
+          "page": 36
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:W:1.2"
+      ],
+      "hypotheses": "Root 2^2 q^k u v, k positive and unrestricted, q,u,v distinct odd primes; u and v isolated.",
+      "command": [
+        "python3",
+        "four_primes/unbounded_four.py"
+      ],
+      "expected_stdout": "Vacuum residue cases 279, axes 53, paired Gram 2, after residual trace modulo 81: 0.",
+      "interpretation": "Vacuum, axis, joint Gram and last trace tests.",
+      "derivation_labels": [
+        "fam:M:8.15",
+        "fam:M:8.3"
+      ],
+      "locations": {
+        "fam:W:1.2": {
+          "printed_number": "S2.1",
+          "page": 93
+        },
+        "fam:M:8.15": {
+          "printed_number": "8.15",
+          "page": 41
+        },
+        "fam:M:8.3": {
+          "printed_number": "8.3",
+          "page": 36
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "3"
+      ],
+      "expected_stdout": "P=3 h=4: 14 vacuum classes, 0 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "5"
+      ],
+      "expected_stdout": "P=5 h=4: 59 vacuum classes, 3 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "7"
+      ],
+      "expected_stdout": "P=7 h=4: 181 vacuum classes, 0 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "11"
+      ],
+      "expected_stdout": "P=11 h=4: 1338 vacuum classes, 1 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "13"
+      ],
+      "expected_stdout": "P=13 h=4: 2706 vacuum classes, 0 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "17"
+      ],
+      "expected_stdout": "P=17 h=4: 8065 vacuum classes, 1 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Odd least prime P at root height four, opposite higher prime at height two, isolated primes u,v in the proved finite window.",
+      "command": [
+        "python3",
+        "four_primes/new_odd.py",
+        "19"
+      ],
+      "expected_stdout": "P=19 h=4: 12977 vacuum classes, 1 with positive residual axis budgets, 0 allowing a negative common term",
+      "interpretation": "Counts at each necessary-condition stage.",
+      "derivation_labels": [
+        "fam:M:8.7",
+        "fam:M:9.17",
+        "fam:M:8.14",
+        "main:gap-all-heights"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:9.17": {
+          "printed_number": "9.16",
+          "page": 47
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        },
+        "main:gap-all-heights": {
+          "printed_number": "9.12",
+          "page": 46
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Fixed heights and the prime window derived in the text.",
+      "command": [
+        "python3",
+        "four_primes/prime_projection.py",
+        "3",
+        "4"
+      ],
+      "expected_stdout": "h=3: [3967, 582, 98]; heavy-prime projection [3, 5, 7, 11, 13, 17, 19, 31, 37]\nh=4: [87793, 5704, 1638]; heavy-prime projection [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 109, 113, 127, 131, 151, 163, 181, 191, 193, 197, 211, 251, 283]",
+      "interpretation": "Projection or trace tests. A surviving projection alone proves no existence result.",
+      "derivation_labels": [
+        "fam:M:8.3",
+        "fam:M:8.7",
+        "fam:M:8.14"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.3": {
+          "printed_number": "8.3",
+          "page": 36
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Fixed heights and the prime window derived in the text.",
+      "command": [
+        "python3",
+        "four_primes/independent_projection.py",
+        "3",
+        "4"
+      ],
+      "expected_stdout": "h=3: [3967, 582, 98]; heavy-prime projection [3, 5, 7, 11, 13, 17, 19, 31, 37]\nh=4: [87793, 5704, 1638]; heavy-prime projection [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 109, 113, 127, 131, 151, 163, 181, 191, 193, 197, 211, 251, 283]",
+      "interpretation": "Projection or trace tests. A surviving projection alone proves no existence result.",
+      "derivation_labels": [
+        "fam:M:8.3",
+        "fam:M:8.7",
+        "fam:M:8.14"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.3": {
+          "printed_number": "8.3",
+          "page": 36
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "sec:finite-four-windows"
+      ],
+      "hypotheses": "Fixed heights and the prime window derived in the text.",
+      "command": [
+        "python3",
+        "four_primes/odd_trace.py",
+        "3",
+        "3",
+        "4"
+      ],
+      "expected_stdout": "P=3 h=3 projection rows [(11, 23, 31, 2, 2, -1), (11, 23, 31, 2, 2, 1)]\n  Q^2 trace survivors []\n  Q^3 trace survivors []\n  Q^4 trace survivors []\nP=3 h=4 projection rows [(7, 23, 29, 2, 4, 1), (11, 23, 31, 2, 6, -1), (11, 23, 31, 2, 6, 1), (5, 43, 59, 2, 2, -1), (5, 103, 149, 2, 4, -1), (7, 103, 149, 2, 4, -1), (11, 103, 149, 2, 4, -1), (19, 103, 149, 2, 4, -1), (29, 103, 149, 2, 4, -1), (5, 103, 149, 6, 4, -1), (11, 103, 149, 6, 4, 1)]\n  Q^2 trace survivors [(5, 103, 149, 2, 4, -1), (7, 103, 149, 2, 4, -1), (11, 103, 149, 2, 4, -1), (5, 103, 149, 6, 4, -1), (11, 103, 149, 6, 4, 1)]\n  Q^3 trace survivors [(7, 103, 149, 2, 4, -1)]\n  Q^4 trace survivors []",
+      "interpretation": "Projection or trace tests. A surviving projection alone proves no existence result.",
+      "derivation_labels": [
+        "fam:M:8.3",
+        "fam:M:8.7",
+        "fam:M:8.14"
+      ],
+      "locations": {
+        "sec:finite-four-windows": {
+          "printed_number": "S3.2",
+          "page": 97
+        },
+        "fam:M:8.3": {
+          "printed_number": "8.3",
+          "page": 36
+        },
+        "fam:M:8.7": {
+          "printed_number": "8.7",
+          "page": 38
+        },
+        "fam:M:8.14": {
+          "printed_number": "8.14",
+          "page": 40
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:A:exposed",
+        "fam:A:strips"
+      ],
+      "hypotheses": "Exposed small difference supports of the stated prime and weight.",
+      "command": [
+        "python3",
+        "exposed_support.py"
+      ],
+      "expected_stdout": "23 4 ('12 undecided', 210, (0, 1, 3, 14))\n31 4 ('excluded', 406, None)\n47 5 ('excluded', 14190, None)\n53 5 ('excluded', 20825, None)\n59 5 ('excluded', 29260, None)\n61 5 ('excluded', 32509, None)",
+      "interpretation": "The unresolved classes at 23 pass to the four-position calculation.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "fam:A:exposed": {
+          "printed_number": "S1.7",
+          "page": 73
+        },
+        "fam:A:strips": {
+          "printed_number": "S1.8",
+          "page": 73
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:A:exposed",
+        "fam:A:strips"
+      ],
+      "hypotheses": "Four positions at prime 29, with minimum multiplicity three.",
+      "command": [
+        "python3",
+        "-c",
+        "from exposed_support import words; print(words(29,4,3))"
+      ],
+      "expected_stdout": "('excluded', 351, None)",
+      "interpretation": "All normalized supports tested.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "fam:A:exposed": {
+          "printed_number": "S1.7",
+          "page": 73
+        },
+        "fam:A:strips": {
+          "printed_number": "S1.8",
+          "page": 73
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:A:strips"
+      ],
+      "hypotheses": "Six positions with minimum multiplicity two at the six indicated primes.",
+      "command": [
+        "python3",
+        "-c",
+        "from exposed_support import words; print([(s,words(s,6,2)) for s in (83,89,97,101,103,107)])"
+      ],
+      "expected_stdout": "[(83, ('excluded', 1663740, None)), (89, ('excluded', 2225895, None)), (97, ('excluded', 3183545, None)), (101, ('excluded', 3764376, None)), (103, ('excluded', 4082925, None)), (107, ('excluded', 4780230, None))]",
+      "interpretation": "All normalized supports tested.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "fam:A:strips": {
+          "printed_number": "S1.8",
+          "page": 73
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "found:C:3.3"
+      ],
+      "hypotheses": "The exceptional prime 23 with four occupied positions.",
+      "command": [
+        "python3",
+        "word_closure.py",
+        "check",
+        "23",
+        "4",
+        "--ell",
+        "3",
+        "--classes"
+      ],
+      "expected_stdout": "{\"ell\": 3, \"initial_mask_classes\": 18, \"normalized_supports\": 210, \"open_affine_classes\": [[0, 1, 3, 14]], \"positions\": 4, \"prime\": 23, \"reduction\": {\"minimum_differences\": 5, \"scaled_overlap_lower\": 506, \"scaled_overlap_upper\": 216, \"status\": \"one coset\"}, \"unresolved_supports\": 12}",
+      "interpretation": "Produces surviving mask classes; the remaining obstruction is proved in the text.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "found:C:3.3": {
+          "printed_number": "S6.10",
+          "page": 123
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "found:S:8.1"
+      ],
+      "hypotheses": "Pure-support residual configurations from the seven-position argument.",
+      "command": [
+        "python3",
+        "short_words.py"
+      ],
+      "expected_stdout": "173 19 98770 52012 0\n179 20 109736 50376 0\n181 20 113564 52658 0\n191 20 134044 65108 0\n193 20 138415 67813 0",
+      "interpretation": "Normalized support and closure counts.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "found:S:8.1": {
+          "printed_number": "S7.17",
+          "page": 152
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "found:S:8.3"
+      ],
+      "hypotheses": "Four pairs at 127 and seven-position supports over the nine tabulated primes.",
+      "command": [
+        "./strip_extra"
+      ],
+      "expected_stdout": "four-pair 127 17 37820 1024 0\n127 19 7648354 181274 0\n131 17 14348304 541163 0\n137 17 17850526 284626 0\n139 17 19150174 237257 0\n149 18 23066734 6567 0\n151 18 24674574 3705 0\n157 19 24343632 5 0\n163 19 29683165 0 0\n167 19 33726047 0 0",
+      "interpretation": "Build first using the C++20 command in README.",
+      "derivation_labels": [
+        "three:word",
+        "fam:Q:2.3"
+      ],
+      "locations": {
+        "found:S:8.3": {
+          "printed_number": "S7.19",
+          "page": 153
+        },
+        "three:word": {
+          "printed_number": "4.9",
+          "page": 17
+        },
+        "fam:Q:2.3": {
+          "printed_number": "4.16",
+          "page": 20
+        }
+      }
+    },
+    {
+      "source_labels": [
+        "fam:M:8.15",
+        "por:certificate"
+      ],
+      "hypotheses": "The seven terminal trace rows and the five rank-100 survivors have already been enumerated.",
+      "command": [
+        "python3",
+        "verify_witnesses.py"
+      ],
+      "expected_stdout": "7 trace obstructions and 5 pairs of disjoint fiber witnesses verified",
+      "interpretation": "Checks the individual witnesses in certificates.json; completeness of enumeration is checked separately.",
+      "derivation_labels": [
+        "fam:M:8.15",
+        "por:certificate"
+      ],
+      "locations": {
+        "fam:M:8.15": {
+          "printed_number": "8.15",
+          "page": 41
+        },
+        "por:certificate": {
+          "printed_number": "S11.5",
+          "page": 217
+        }
+      }
+    }
+  ],
+  "printed_locations_edition": "Prime factors of fusion-category dimensions, audit-revised 226-page edition of 8 November 2026. Source labels are independent of pagination."
+}
