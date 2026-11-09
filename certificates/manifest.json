@@ -3,8 +3,7 @@
   "calculations": [
     {
       "source_labels": [
-        "thm:uniform-new-bounds",
-        "app:bounds-code"
+        "thm:uniform-new-bounds"
       ],
       "hypotheses": "Ordered exponent minima after the family exclusions.",
       "command": [
@@ -20,10 +19,6 @@
         "thm:uniform-new-bounds": {
           "printed_number": "17.1",
           "page": 105
-        },
-        "app:bounds-code": {
-          "printed_number": "A",
-          "page": 223
         },
         "sec:numerical": {
           "printed_number": "17",
@@ -905,5 +900,5 @@
       }
     }
   ],
-  "printed_locations_edition": "Prime factors of fusion-category dimensions, 226-page reference revision, 9 November 2026. Source labels are independent of pagination."
+  "printed_locations_edition": "Prime factors of fusion-category dimensions, 225-page edition, 9 November 2026. Source labels are independent of pagination."
 }

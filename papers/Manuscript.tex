@@ -109,7 +109,7 @@ The first open braided core is $29160000=2^6 3^6 5^4=5400^2$. Using the cyclotom
 A different application concerns braided decomposition. For composite square-free $L$, Section~\ref{sec:coprime-core} characterizes the existence of a prime integral WGT modular category of dimension $L^2$ by a signed divisibility graph. For example, at $L=5\cdot7\cdot29$ the two possible edges require opposite signs at $29$, since $5\mid29+1$ and $7\mid29-1$. Every integral modular category of this dimension therefore splits.
 
 \medskip\noindent\textbf{Proof strategy.}
-Sections~\ref{sec:wgt-preliminaries}--\ref{subsec:sqvac} reduce a divisor-minimal braided obstruction to one of two character tables. In the modular case the category is integral, perfect and fusion-simple. In the slightly degenerate case we use the positive table obtained by identifying the transparent fermion with the unit. On a full principal block, columns with different primary twists are orthogonal in the modular case. At $2$ in the positive table, the corresponding assertion uses the squares of the twists. For three repeated primes, orthogonality gives two principal simples whose shared character value has prescribed residues (Sections~\ref{sec:three-ordered}--\ref{fam:Q:sec:1}). For four and five repeated primes, norms and inner products of local Weyl columns constrain the degrees (Sections~\ref{sec:two-squared}--\ref{fam:W:sec:1}). Section~\ref{ext:section} treats additional prime powers. Section~\ref{sec:numerical} compares the resulting exponent bounds to obtain Table~\ref{tab:intro-bounds}. The even four-prime case uses the finite enumeration in Theorem~\ref{fam:M:8.15}. Appendix~\ref{app:bounds-code} gives an optional check of the exponent comparison. The programs and witnesses for the finite calculations are listed under \hyperref[sec:code-data-certificates]{Code, data and certificates}.
+Sections~\ref{sec:wgt-preliminaries}--\ref{subsec:sqvac} reduce a divisor-minimal braided obstruction to one of two character tables. In the modular case the category is integral, perfect and fusion-simple. In the slightly degenerate case we use the positive table obtained by identifying the transparent fermion with the unit. On a full principal block, columns with different primary twists are orthogonal in the modular case. At $2$ in the positive table, the corresponding assertion uses the squares of the twists. For three repeated primes, orthogonality gives two principal simples whose shared character value has prescribed residues (Sections~\ref{sec:three-ordered}--\ref{fam:Q:sec:1}). For four and five repeated primes, norms and inner products of local Weyl columns constrain the degrees (Sections~\ref{sec:two-squared}--\ref{fam:W:sec:1}). Section~\ref{ext:section} treats additional prime powers. Section~\ref{sec:numerical} compares the resulting exponent bounds to obtain Table~\ref{tab:intro-bounds}. The even four-prime case uses the finite enumeration in Theorem~\ref{fam:M:8.15}. The programs and witnesses for the finite calculations are listed under \hyperref[sec:code-data-certificates]{Code, data and certificates}.
 
 \papercontents
 
@@ -7821,7 +7821,10 @@ the covered families include every divisor. A prime then occurs to height
 at least three in $N$, or two primes occur to height at least two, so
 $N\ge p^2P$. Six primes give the last row immediately.
 
-Taking column minima gives $29160000$, $6087156075$, $5400$ and $121275$. Appendix~\ref{app:bounds-code} gives an optional \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/check_dimension_bounds.py}{arithmetic check} of this comparison.
+Taking column minima gives $29160000$, $6087156075$, $5400$ and $121275$. A
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/48d2813db714e314684fd79f5ba565b81c16a2be/code/check_dimension_bounds.py}{Python check}
+reproduces each entry of the table by enumerating exponent vectors in order of
+increasing product and, for the two center columns, testing the doubled exponents.
 WGT descends from the center, and $4\nmid D$ when $Q(D)$ is odd, so the
 solvability argument of Corollary~\ref{thm:sq30030} applies to both odd
 columns. For a strictly weakly integral category the canonical dimension
@@ -14992,7 +14995,9 @@ The verification programs, their inputs and the certificates are available at\\
 
 To reproduce a calculation, look up its theorem or subsection in the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/manifest.json}{verification manifest}.
-Each entry gives the hypotheses, the command to run from the
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/48d2813db714e314684fd79f5ba565b81c16a2be/code/README.md#dimension-comparison}{dimension-check instructions}
+give the command and expected output for the four bounds in Theorem~\ref{thm:uniform-new-bounds}.
+Each manifest entry gives the hypotheses, the command to run from the
 \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/code}{\texttt{code/}} directory, and the expected output.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/main/data}{\texttt{data/}} directory contains the rank-$15$ data of Dong and Palcoux.
 The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/certificates/certificates.json}{witness file}
@@ -15006,66 +15011,6 @@ S\'ebastien Palcoux is supported by the National Natural Science
 Foundation of China (NSFC), Grant no.~12471031.
 
 GPT-6 Astra served as a research assistant in developing and drafting the arguments, identifying references, and checking finite calculations. The authors are continuing their review and have yet to reach a complete understanding of all the proofs.
-
-\appendix
-\section{Checking the four thresholds}\label{app:bounds-code}
-The dimension comparison in Theorem~\ref{thm:uniform-new-bounds} is
-elementary. For ease of checking the numbers, the following optional
-\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f7f9f9a02f3116e61eb9dca4eebfed77001494e8/code/check_dimension_bounds.py}{Python listing} encodes exactly the sufficient exponent conditions used
-in its proof. More restrictive conclusions at individual prime positions
-are unnecessary here. Dong's theorem covers supports of size at most
-two, including an arbitrary coprime square-free factor. The predicate
-for larger supports depends only on the exponents in prime order and on
-whether two carries one of the two higher exponents. Replacing the primes, in order, by the
-first primes of the same parity of support preserves the predicate and
-can only decrease the product. Six repeated primes already suffice for
-the lower bound at every larger support.
-
-For each support the queue visits exponent vectors in order of increasing
-product. In the center calculation the queue records the exponents
-in the original dimension and the predicate tests their doubles. The output
-is $29160000\quad6087156075$ and $5400\quad121275$, respectively.
-{\footnotesize
-\begin{verbatim}
-from heapq import heappop, heappush
-from math import prod
-
-def covered(primes, exponents):
-    e = sorted(exponents)
-    if len(e) == 3:
-        a, b, c = exponents
-        return (a <= 5 or b <= 4 or c <= 3 or
-                all(x <= y for x, y in zip(e, (4, 5, 7))))
-    if len(e) == 4:
-        d, c, b, a = e
-        dyadic = primes[0] == 2 and exponents[0] >= 4
-        return b <= 3 or (d == 2 and c <= 3 and
-               (a//2 + b//2 <= 5 or (dyadic and a <= 9 and b <= 5)))
-    if len(e) == 5:
-        return e[-1] <= 3 or (e[-1] == 4 and e[-2] <= 3 and e[0] == 2)
-    return False
-
-def first(primes, center):
-    initial = (1 if center else 2,) * len(primes)
-    queue = [(prod(primes)**initial[0], initial)]
-    seen = {initial}
-    while queue:
-        n, e = heappop(queue)
-        if not covered(primes, tuple(2*x for x in e) if center else e):
-            return n
-        for j, p in enumerate(primes):
-            f = e[:j] + (e[j] + 1,) + e[j+1:]
-            if f not in seen:
-                seen.add(f)
-                heappush(queue, (n*p, f))
-
-primes = (2, 3, 5, 7, 11, 13, 17)
-for center in (False, True):
-    minima = [min(first(primes[i:i+s], center) for s in range(3, 7))
-              for i in (0, 1)]
-    print(min(minima), minima[1])
-\end{verbatim}
-}
 
 \begin{thebibliography}{99}\small\phantomsection\addcontentsline{toc}{section}{References}
 \bibitem{ACRW}
