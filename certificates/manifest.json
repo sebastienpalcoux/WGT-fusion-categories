@@ -1,5 +1,5 @@
 {
-  "description": "Finite computations underlying the article and independent reproducibility checks. Source and derivation labels refer to the LaTeX article. Run commands from code/. Elapsed times in seconds depend on the machine.",
+  "description": "Finite calculations and comparison checks for the article. Commands in calculations run from code/ and rank_calculations from rank/. Each current entry identifies its location in the merged article. The two historical checks identify the coauthor edition used for comparison. Variable elapsed-time suffixes are omitted from expected output.",
   "calculations": [
     {
       "source_labels": [
@@ -18,11 +18,11 @@
       "locations": {
         "thm:uniform-new-bounds": {
           "printed_number": "17.1",
-          "page": 110
+          "page": 114
         },
         "sec:numerical": {
           "printed_number": "17",
-          "page": 110
+          "page": 114
         }
       }
     },
@@ -48,32 +48,32 @@
       ],
       "locations": {
         "por:ranktheorem": {
-          "printed_number": "24.1",
-          "page": 202
+          "printed_number": "26.1",
+          "page": 218
         },
         "por:certificate": {
-          "printed_number": "24.4",
-          "page": 216
+          "printed_number": "26.4",
+          "page": 232
         },
         "found:group:degrees": {
-          "printed_number": "23",
-          "page": 187
+          "printed_number": "25",
+          "page": 203
         },
         "sec:portrait-proofs": {
-          "printed_number": "24",
-          "page": 201
+          "printed_number": "26",
+          "page": 217
         },
         "lem:tetrahedral-weyl": {
           "printed_number": "6.10",
-          "page": 33
+          "page": 36
         },
         "por:five-inactive-orbits": {
           "paragraph": "Five inactive orbits on the path separating two and five",
-          "page": 210
+          "page": 226
         },
         "por:five-survivors": {
           "paragraph": "Eliminating the five remaining profiles",
-          "page": 218
+          "page": 234
         }
       }
     },
@@ -93,8 +93,8 @@
       ],
       "locations": {
         "th:unbraided-5400": {
-          "printed_number": "25.1",
-          "page": 218
+          "printed_number": "27.1",
+          "page": 234
         }
       }
     },
@@ -127,7 +127,9 @@
           "printed_number": "2.5",
           "page": 6
         }
-      }
+      },
+      "edition": "Historical comparison: 229-page coauthor edition, Corollary 18.2",
+      "source_pdf": "https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/papers/Manuscript.pdf#page=112"
     },
     {
       "source_labels": [
@@ -148,7 +150,9 @@
           "printed_number": "18.2",
           "page": 112
         }
-      }
+      },
+      "edition": "Historical comparison: 229-page coauthor edition, Corollary 18.2",
+      "source_pdf": "https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/papers/Manuscript.pdf#page=112"
     },
     {
       "source_labels": [
@@ -166,8 +170,8 @@
       ],
       "locations": {
         "cor:all-dim-rank": {
-          "printed_number": "18.2",
-          "page": 112
+          "printed_number": "20.4",
+          "page": 126
         }
       }
     },
@@ -190,24 +194,24 @@
       ],
       "locations": {
         "fam:M:8.15": {
-          "printed_number": "9.15",
-          "page": 72
+          "printed_number": "9.16",
+          "page": 76
         },
         "fam:W:dyadic-boxes": {
           "paragraph": "The two dyadic exponent boxes",
-          "page": 86
+          "page": 90
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 68
+          "page": 71
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         }
       }
     },
@@ -229,15 +233,15 @@
       "locations": {
         "fam:W:1.2": {
           "printed_number": "13.1",
-          "page": 85
+          "page": 89
         },
         "fam:M:8.15": {
-          "printed_number": "9.15",
-          "page": 72
+          "printed_number": "9.16",
+          "page": 76
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 68
+          "page": 71
         }
       }
     },
@@ -258,7 +262,7 @@
       "locations": {
         "merge:residue-group": {
           "printed_number": "14.1",
-          "page": 87
+          "page": 91
         }
       }
     },
@@ -283,23 +287,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -324,23 +328,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -365,23 +369,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -406,23 +410,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -447,23 +451,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -488,23 +492,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -529,23 +533,23 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:9.17": {
           "printed_number": "10.16",
-          "page": 79
+          "page": 83
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         }
       }
     },
@@ -570,19 +574,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 68
+          "page": 71
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         }
       }
     },
@@ -607,19 +611,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 68
+          "page": 71
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         }
       }
     },
@@ -646,19 +650,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "main:gap-all-heights": {
           "printed_number": "10.12",
-          "page": 78
+          "page": 82
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         }
       }
     },
@@ -684,19 +688,19 @@
       "locations": {
         "sec:finite-four-windows": {
           "printed_number": "14.2",
-          "page": 90
+          "page": 94
         },
         "fam:M:8.3": {
           "printed_number": "9.3",
-          "page": 68
+          "page": 71
         },
         "fam:M:8.7": {
-          "printed_number": "9.7",
-          "page": 70
+          "printed_number": "9.8",
+          "page": 73
         },
         "fam:M:8.14": {
-          "printed_number": "9.14",
-          "page": 72
+          "printed_number": "9.15",
+          "page": 76
         }
       }
     },
@@ -719,19 +723,19 @@
       "locations": {
         "fam:A:exposed": {
           "printed_number": "8.8",
-          "page": 49
+          "page": 52
         },
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 50
+          "page": 53
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -755,19 +759,19 @@
       "locations": {
         "fam:A:exposed": {
           "printed_number": "8.8",
-          "page": 49
+          "page": 52
         },
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 50
+          "page": 53
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -790,15 +794,15 @@
       "locations": {
         "fam:A:strips": {
           "printed_number": "8.9",
-          "page": 50
+          "page": 53
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -825,16 +829,16 @@
       ],
       "locations": {
         "found:C:3.3": {
-          "printed_number": "19.10",
-          "page": 120
+          "printed_number": "21.10",
+          "page": 136
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -855,16 +859,16 @@
       ],
       "locations": {
         "found:S:8.1": {
-          "printed_number": "20.17",
-          "page": 146
+          "printed_number": "22.17",
+          "page": 162
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -884,16 +888,16 @@
       ],
       "locations": {
         "found:S:8.3": {
-          "printed_number": "20.19",
-          "page": 147
+          "printed_number": "22.19",
+          "page": 163
         },
         "three:word": {
           "printed_number": "4.9",
-          "page": 18
+          "page": 21
         },
         "fam:Q:2.3": {
           "printed_number": "4.16",
-          "page": 21
+          "page": 24
         }
       }
     },
@@ -915,15 +919,155 @@
       ],
       "locations": {
         "fam:M:8.15": {
-          "printed_number": "9.15",
-          "page": 72
+          "printed_number": "9.16",
+          "page": 76
         },
         "por:certificate": {
-          "printed_number": "24.4",
-          "page": 216
+          "printed_number": "26.4",
+          "page": 232
         }
       }
     }
   ],
-  "printed_locations_edition": "Prime factors of fusion-category dimensions, 229-page edition, 10 November 2026. Source labels are independent of pagination."
+  "printed_locations_edition": "Prime factors of fusion-category dimensions, 270-page rank and dimension edition",
+  "rank_calculations": [
+    {
+      "check": "Ordinary degree searches, odd dimensions and the fermion quotient",
+      "command": [
+        "python3",
+        "verify.py"
+      ],
+      "conclusion": "All archived exclusions and current rank certificates verified.",
+      "files": [
+        "data/SHA256SUMS",
+        "verify_revision.py",
+        "data/four16.jsonl"
+      ],
+      "locations": {
+        "mrk:ordinary": {
+          "printed_number": "19.2",
+          "page": 119
+        },
+        "mrk:reduced": {
+          "printed_number": "19.1",
+          "page": 118
+        }
+      }
+    },
+    {
+      "check": "Rank 30, unrestricted",
+      "command": [
+        "python3",
+        "verify_rank30.py"
+      ],
+      "conclusion": "524 shards. All 96,119 distinct profiles excluded.",
+      "files": [
+        "data/revision/rank30_completed.zip"
+      ],
+      "locations": {
+        "mrk:thm:modular-ranks": {
+          "printed_number": "19.2",
+          "page": 119
+        }
+      }
+    },
+    {
+      "check": "Rank 32, nonsquare",
+      "command": [
+        "python3",
+        "verify_nonsquare32.py"
+      ],
+      "conclusion": "14 roots. All 3,081 distinct profiles excluded.",
+      "files": [
+        "data/revision/nonsquare/rank32.json",
+        "data/revision/nonsquare/rank32.jsonl"
+      ],
+      "locations": {
+        "mrk:ordinary": {
+          "printed_number": "19.2",
+          "page": 119
+        }
+      }
+    },
+    {
+      "check": "Restricted square dimensions",
+      "command": [
+        "python3",
+        "square_slices.py",
+        "--stored"
+      ],
+      "conclusion": "All profiles excluded through ranks 35 for minimum denominator at least 5, 38 for square root not divisible by 4, and 45 for minimum denominator at least 6.",
+      "files": [
+        "data/rank31/square_slices.json",
+        "data/rank31/square_slice_rows.zip"
+      ],
+      "locations": {
+        "mrk:thm:modular-ranks": {
+          "printed_number": "19.2",
+          "page": 119
+        }
+      }
+    },
+    {
+      "check": "Rank 31 with fourteen denominators equal to four",
+      "command": [
+        "python3",
+        "rank31_fourteen.py"
+      ],
+      "conclusion": "251 profiles. Generator activity excludes 133 at three and 118 at five.",
+      "files": [
+        "data/rank31/fourteen_31.json"
+      ],
+      "locations": {
+        "thm:no-fourteen": {
+          "printed_number": "30.6",
+          "page": 257
+        },
+        "mrk:ordinary": {
+          "printed_number": "19.2",
+          "page": 119
+        }
+      }
+    },
+    {
+      "check": "Non-WGT rank six without braiding",
+      "command": [
+        "python3",
+        "code/unbraided_small.py"
+      ],
+      "conclusion": "1,568 formal-codegree tuples. The center excludes 1,310, the degree test 232 and the stabilizer test 26.",
+      "files": [
+        "data/unbraided_small.txt"
+      ],
+      "locations": {
+        "mrk:g:formal": {
+          "printed_number": "20.2",
+          "page": 122
+        }
+      }
+    },
+    {
+      "check": "Odd rank eleven without braiding",
+      "command": [
+        "python3",
+        "code/odd_unbraided.py",
+        "--verify",
+        "data/odd_unbraided.json"
+      ],
+      "conclusion": "2,799 tuples. The final dimension is 5,028,658,635 and its proof uses two central descents.",
+      "files": [
+        "data/odd_unbraided.json"
+      ],
+      "locations": {
+        "mrk:g:odd-unbraided": {
+          "printed_number": "20.3",
+          "page": 124
+        },
+        "lem:double-central-odd": {
+          "printed_number": "20.3",
+          "page": 125
+        }
+      }
+    }
+  ]
 }

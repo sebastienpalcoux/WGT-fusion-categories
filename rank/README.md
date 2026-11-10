@@ -6,10 +6,14 @@ These programs and data accompany *Prime factors of fusion-category dimensions: 
 | --- | ---: | --- |
 | Non-pointed simple integral modular | 31 | [Ranks through 29](verify.py), [complete rank 30](verify_rank30.py) |
 | Same, nonsquare dimension | 33 | [Ranks through 31](verify_nonsquare.py), [rank 32](verify_nonsquare32.py) |
-| Same, odd dimension / odd nonsquare dimension | 57 / 75 | [Odd-dimensional searches](verify_revision.py) |
+| Same, odd dimension / odd nonsquare dimension | 57 / 75 | [Odd-dimensional enumeration](code/odd_frontier.py) and [certificates](verify_revision.py) |
 | Divisor-minimal slightly degenerate obstruction, full rank | 34 | [Fermionic quotient](verify.py) |
-| Weakly integral braided non-WGT, any / odd dimension | 9 / 41 | [Low-rank and odd checks](verify.py) |
+| Weakly integral braided non-WGT, any / odd dimension | 9 / 41 | [Small-rank check](code/formal_check.py), [proof by counting odd twists](../papers/Manuscript.pdf#page=127) |
 | Weakly integral non-WGT, any / odd dimension | 7 / 13 | [Small ranks](code/unbraided_small.py), [odd rank eleven](code/odd_unbraided.py) |
+
+For strictly weakly integral non-WGT categories the bounds are 8 without braiding and 11 with braiding. The proof uses the integral neutral component of the dimension grading. [Theorem 20.1](../papers/Manuscript.pdf#page=122)
+
+At dimension 29,160,000 the modular obstruction has rank between 101 and 46,774. At dimension 5⁶·7⁶·23⁴ every braided non-WGT category has rank at least 553. All proper divisors are covered, and the forced twist orders give the bound at this dimension. [Theorem 26.1](../papers/Manuscript.pdf#page=218) · [Corollary 24.11](../papers/Manuscript.pdf#page=202)
 
 ## Checking completed ranks
 
@@ -47,4 +51,4 @@ The [bundled seed](data/rank31/rank31_seed.zip) covers 1,090 jobs. The [fourteen
 
 ## Mathematical inputs
 
-The [prime-family catalogue](code/catalogue.py), [complementary twist fibers](code/fiber_packets.py), [generator activity](code/generator_activity.py), [indicator divisibility](code/regular_indicator.py), and [combined exclusion test](code/current_screen.py) implement necessary conditions. The [statement index](supplement/BDP-statement-index.tsv) refers to the coauthor edition preceding the rank merger. The source labels remain available in the merged article. Historical receipts and their generator versions are retained for replay.
+The [prime-family catalogue](code/catalogue.py), [complementary twist fibers](code/fiber_packets.py), [generator activity](code/generator_activity.py), [indicator divisibility](code/regular_indicator.py), and [combined exclusion test](code/current_screen.py) implement necessary conditions. The [historical statement index](supplement/BDP-statement-index.tsv) records labels, theorem numbers and pages of the [229-page coauthor edition](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/papers/Manuscript.pdf). Its finite word and four-prime tests are available in the [main verification directory](../code/README.md#prime-factor-families). Earlier generator versions are retained where archived receipts use them.

@@ -1,4 +1,4 @@
-"""Reciprocal-tuple counts for ranks 6, 9 and 11 in Corollary 18.2."""
+"""Reciprocal-tuple counts for ranks 6, 9 and 11 in Corollary 18.2 of the 229-page coauthor edition."""
 from fractions import Fraction
 from math import lcm
 
