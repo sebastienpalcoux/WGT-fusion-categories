@@ -1,6 +1,6 @@
 # Verification of the rank bounds
 
-These programs and data accompany *Prime factors of fusion-category dimensions: weak group-theoreticity and decomposition*. The enumeration constructs the degrees from the rank and the dimension equation. The published rank-15 list in the parent repository is an independent comparison.
+These programs and data accompany *Prime factors of fusion-category dimensions: weak group-theoreticity, rank and decomposition*. The enumeration constructs the degrees from the rank and the dimension equation. The published rank-15 list in the parent repository is an independent comparison.
 
 | Category | Rank at least | Verification |
 | --- | ---: | --- |
