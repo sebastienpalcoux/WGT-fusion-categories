@@ -1,0 +1,17 @@
+q=1 cumulative nodes 19338478 types 118
+q=2 cumulative nodes 19350636 types 118
+q=3 cumulative nodes 66011870 types 809
+q=5 cumulative nodes 66011905 types 809
+q=6 cumulative nodes 66011926 types 809
+q=7 cumulative nodes 66011926 types 809
+q=10 cumulative nodes 70004332 types 2178
+q=11 cumulative nodes 70004332 types 2178
+q=13 cumulative nodes 70004332 types 2178
+q=14 cumulative nodes 70005812 types 2178
+q=15 cumulative nodes 70006027 types 2178
+q=17 cumulative nodes 70006027 types 2178
+q=19 cumulative nodes 70006027 types 2178
+q=21 cumulative nodes 70006048 types 2178
+q=22 cumulative nodes 70006069 types 2178
+q=23 cumulative nodes 70006069 types 2178
+Complete rank 25, nodes 70006069, types 2178, seconds 46.6062

@@ -1,0 +1,243 @@
+{
+  "rows": 66,
+  "excluded": 57,
+  "verdicts": [
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "single-label lift"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      6,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "disconnected support"
+    ],
+    [
+      10,
+      "disconnected support"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "single-label lift"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      10,
+      "degree-class sum"
+    ],
+    [
+      12,
+      "degree-class sum"
+    ],
+    [
+      12,
+      "adjoint sum"
+    ],
+    [
+      15,
+      "disconnected support"
+    ],
+    null,
+    null,
+    [
+      15,
+      "all integer branches fail"
+    ],
+    [
+      15,
+      "disconnected support"
+    ],
+    [
+      15,
+      "degree-class sum"
+    ],
+    [
+      15,
+      "all integer branches fail"
+    ],
+    [
+      15,
+      "all integer branches fail"
+    ],
+    null,
+    [
+      18,
+      "disconnected support"
+    ],
+    null,
+    null,
+    null,
+    [
+      18,
+      "degree-class sum"
+    ],
+    null,
+    null,
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    [
+      20,
+      "degree-class sum"
+    ],
+    null
+  ]
+}

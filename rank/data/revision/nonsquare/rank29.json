@@ -1,0 +1,131 @@
+{
+  "rank": 29,
+  "scope": "q > 1",
+  "complete": true,
+  "sources": {
+    "complementary_packets.cpp": "1f6994f2a8894024357762023edc66ba2a3c7d4b7762f21d85a5a87294b93d2b"
+  },
+  "roots": [
+    {
+      "q": 2,
+      "b": 2,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 2972723,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 2,
+      "b": 3,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 97468,
+      "types": 10,
+      "sha256": "03c886df58dba512c71f590c93cb50aeb85a710749cbf5c63b13ed8bf67275cf"
+    },
+    {
+      "q": 3,
+      "b": 2,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 585137,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 3,
+      "b": 3,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 25,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 5,
+      "b": 2,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 141,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 6,
+      "b": 2,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 30,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 7,
+      "b": 2,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 25,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 10,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 31802,
+      "types": 1,
+      "sha256": "101ebcb4c36f27eec954de4ea4bd3acd4457ccbfd2c4c32d84f0ed47404b45df"
+    },
+    {
+      "q": 14,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 26,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 15,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 51,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 21,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 18,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 22,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 17,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 26,
+      "b": 1,
+      "complete": true,
+      "source": "complementary_packets.cpp",
+      "nodes": 20,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "data": "rank29.jsonl",
+  "types": 11,
+  "sha256": "d7c747c1a15defe53779e7e862d9733b54f92417b4ec49905b02c95cbcee985d",
+  "survivors": 0
+}

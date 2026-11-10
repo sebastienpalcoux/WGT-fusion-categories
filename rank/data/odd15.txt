@@ -1,0 +1,2 @@
+Rank 15, minimum 3, next at least 17: 1598 above cutoff, 0 uncovered.
+Rank 15, minimum 5, next after 5,5 at least 13: 8695 above cutoff, 0 uncovered.

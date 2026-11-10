@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "cutoff_profiles": 3967,
+    "native_nodes": 1827124673,
+    "profiles": 96119,
+    "shards": 524,
+    "whole_shard_gmp_nodes": 0,
+    "whole_shard_native_nodes": 861232203,
+    "whole_shard_profiles": 3940,
+    "whole_shards": 34
+  },
+  "full_shards_by_prefix_sevens": {
+    "1": 26,
+    "2": 7,
+    "3": 1
+  },
+  "profiles_by_exact_sevens": {
+    "1": 32,
+    "2": 58,
+    "3": 70,
+    "4": 70,
+    "5": 2,
+    "6": 3735
+  }
+}

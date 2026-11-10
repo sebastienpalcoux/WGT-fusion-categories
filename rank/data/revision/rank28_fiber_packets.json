@@ -1,0 +1,1058 @@
+[
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 1399680000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 243000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 2187000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 4,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 4,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 38880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 243000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 622080000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 622080000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 622080000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 4,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 2187000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 2187000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 34992000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 8748000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 1399680000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 34992000000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 2,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 2,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 2,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 1399680000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 155520000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 155520000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 87480000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 7085880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 7085880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 349920000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 7085880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 787320000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 12597120000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 3149280000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 7085880000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 3,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  },
+  {
+    "dimension": 12597120000,
+    "square_class": 3,
+    "primes": {
+      "3": {
+        "available": 27,
+        "required": 1,
+        "rank_floor": 2
+      },
+      "5": {
+        "available": 2,
+        "required": 6,
+        "rank_floor": 15
+      }
+    }
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "rank": 32,
+  "scope": "nonsquare",
+  "roots": [
+    {
+      "q": 2,
+      "b": 2,
+      "nodes": 525128947,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 2,
+      "b": 3,
+      "nodes": 9743752,
+      "types": 82,
+      "sha256": "ee8705f396d8bbafa85f6f789b80ce7687f4b9767c3195f1d3dbf1e10af270b0"
+    },
+    {
+      "q": 3,
+      "b": 2,
+      "nodes": 97209522,
+      "types": 2655,
+      "sha256": "926bc94483aec895f8972e1947ce11882f60ee5784400b0004504368dc534de4"
+    },
+    {
+      "q": 3,
+      "b": 3,
+      "nodes": 45,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 5,
+      "b": 2,
+      "nodes": 12587,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 6,
+      "b": 2,
+      "nodes": 83,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 7,
+      "b": 2,
+      "nodes": 25,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 10,
+      "b": 1,
+      "nodes": 1611023,
+      "types": 344,
+      "sha256": "e4413d11922f79f6cfe6e2a08427f14eea3a430e7588c27f4e19dcc0f1b2333c"
+    },
+    {
+      "q": 14,
+      "b": 1,
+      "nodes": 48,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 15,
+      "b": 1,
+      "nodes": 159,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 21,
+      "b": 1,
+      "nodes": 18,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 22,
+      "b": 1,
+      "nodes": 17,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 26,
+      "b": 1,
+      "nodes": 20,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "q": 30,
+      "b": 1,
+      "nodes": 28,
+      "types": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "types": 3081,
+  "sha256": "dd24c767e310a4321531665a97e449bd401a0c83ab9ea4352434d7fabc4941b3",
+  "sources": {
+    "nonsquare_joint.cpp": "80c92ece82ff3f1504e93451e5130b76b0759b4f01ec236312a0430766b1b7c3",
+    "joint_capacity.hpp": "2125379e75d5317bfe4aa514e29137bf03b348cb2d26410749c0841ea0591bec"
+  },
+  "screen": {
+    "rank": 32,
+    "profiles": 3081,
+    "first_exclusions": {
+      "balanced prime phases at 5: mass": 3,
+      "defect-one tiles at 3": 234,
+      "defect-one tiles at 5": 80,
+      "divisor family: ordered three-prime family": 45,
+      "divisor family: three-prime box (7,5,4)": 118,
+      "generator activity at 3": 258,
+      "generator activity at 5": 1646,
+      "odd-slice mass at 3": 679,
+      "principal pair": 18
+    },
+    "survivors": []
+  }
+}

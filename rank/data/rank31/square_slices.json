@@ -1,0 +1,317 @@
+{
+  "least_5": [
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 177,
+      "profiles": 0,
+      "rank": 30,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 589,
+      "profiles": 0,
+      "rank": 31,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 2174,
+      "profiles": 0,
+      "rank": 32,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 2,
+        "divisor family: ordered three-prime family": 1
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 11063,
+      "profiles": 3,
+      "rank": 33,
+      "rows_sha256": "72646907b5c659e5b41c6ece9fa4c5174cc8febb55cf270ea7ba8fd83e6c8205",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 7,
+        "divisor family: four-prime height sum": 4,
+        "divisor family: ordered three-prime family": 14,
+        "generator activity at 2": 1,
+        "generator activity at 3": 6,
+        "generator activity at 7": 2,
+        "principal pair": 3
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 79219,
+      "profiles": 37,
+      "rank": 34,
+      "rows_sha256": "856e17a10ca8f99b3f2841ad49f56a1012354ab8735b035c56db4777d5e28514",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 24,
+        "divisor family: four-prime height sum": 51,
+        "divisor family: ordered three-prime family": 164,
+        "generator activity at 2": 14,
+        "generator activity at 3": 72,
+        "orbit at 25": 3,
+        "principal pair": 46,
+        "trace at degree 1": 2,
+        "trace at degree 2": 1,
+        "trace at degree 3": 20
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 752353,
+      "profiles": 397,
+      "rank": 35,
+      "rows_sha256": "840843054e4c14888b88c3ca820335e7e86a12282e8ede5f3a6382b55d2f73d7",
+      "survivors": []
+    }
+  ],
+  "least_6": [
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 33,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 0,
+      "rank": 37,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 34,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 0,
+      "rank": 38,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 43,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 0,
+      "rank": 39,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 90,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 0,
+      "rank": 40,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 249,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 0,
+      "rank": 41,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: ordered three-prime family": 1
+      },
+      "gmp_nodes": 811,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 1,
+      "rank": 42,
+      "rows_sha256": "4bec20a9ab08af2ae8c3d8f0b0299436c1a94859eb787475d22cf0a0ecacabe7",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: ordered three-prime family": 6
+      },
+      "gmp_nodes": 3742,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 6,
+      "rank": 43,
+      "rows_sha256": "4e6748f3082fdf9340239d97c39e770093023acf337a82a3b4ba9b0bf1bfa909",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: ordered three-prime family": 10
+      },
+      "gmp_nodes": 25607,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 10,
+      "rank": 44,
+      "rows_sha256": "921d2825685934682d76b573d36e41dc307a733e04a1059083fb251cde7ba439",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: 21.2": 5,
+        "divisor family: four-prime cubic family": 3,
+        "divisor family: ordered three-prime family": 51,
+        "generator activity at 5": 4
+      },
+      "gmp_nodes": 246635,
+      "handoffs": 0,
+      "native_nodes": 0,
+      "profiles": 63,
+      "rank": 45,
+      "rows_sha256": "72e8f9b9d9f2b8085f8fcccea8f10f4cd9a5ad95fd5ebbdb7a64dfdca123dbf3",
+      "survivors": []
+    }
+  ],
+  "root_2_mod_4": [
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 120,
+      "profiles": 0,
+      "rank": 30,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 289,
+      "profiles": 0,
+      "rank": 31,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {},
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 642,
+      "profiles": 0,
+      "rank": 32,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 2
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 1544,
+      "profiles": 2,
+      "rank": 33,
+      "rows_sha256": "8ff5a05c3b1280b621854e6e60d4c4443dd659db83c5eafff24b01dfe9d048af",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 5,
+        "generator activity at 7": 2
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 4882,
+      "profiles": 7,
+      "rank": 34,
+      "rows_sha256": "b78c83e62449692f2181b3d4c6f62ab19362d58f537d35377fe9df736430dece",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 10,
+        "divisor family: four-prime height sum": 1
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 20105,
+      "profiles": 11,
+      "rank": 35,
+      "rows_sha256": "03e0d7d8e20d986a9f6f6096186375627e7636d0c2aded93786ed83055a65b24",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 1,
+        "divisor family: four-prime cubic family": 66,
+        "divisor family: four-prime height sum": 39,
+        "generator activity at 2": 62,
+        "generator activity at 3": 14,
+        "generator activity at 7": 7,
+        "principal pair": 2,
+        "regular indicator at 3": 4
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 112584,
+      "profiles": 195,
+      "rank": 36,
+      "rows_sha256": "82e8609d6d77c3980f6d8e13a76b09163796f20f1a138adf6e714855db8bdbc3",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 25,
+        "divisor family: four-prime cubic family": 273,
+        "divisor family: four-prime height sum": 141,
+        "generator activity at 2": 19,
+        "generator activity at 3": 20,
+        "generator activity at 7": 25,
+        "principal pair": 16,
+        "regular indicator at 7": 3
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 845313,
+      "profiles": 522,
+      "rank": 37,
+      "rows_sha256": "f31db741870ce990145a65d5548f2c2555c0727dcbd1cac0d2c858e62838a819",
+      "survivors": []
+    },
+    {
+      "first_exclusions": {
+        "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 479,
+        "divisor family: four-prime cubic family": 813,
+        "divisor family: four-prime height sum": 921,
+        "generator activity at 2": 2507,
+        "generator activity at 3": 265,
+        "generator activity at 7": 190,
+        "orbit at 25": 2,
+        "principal pair": 501,
+        "regular indicator at 7": 41
+      },
+      "gmp_nodes": 0,
+      "handoffs": 0,
+      "native_nodes": 8312285,
+      "profiles": 5719,
+      "rank": 38,
+      "rows_sha256": "d3b25eefea137ee850156164bee20be2e7f058940ba83036f7194f03df910217",
+      "survivors": []
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "11": {
+    "last_cases": [
+      {
+        "row": [
+          3,
+          7,
+          55,
+          179,
+          24323,
+          5028658635
+        ],
+        "rule": "two-central-descents"
+      },
+      {
+        "row": [
+          3,
+          7,
+          65,
+          119,
+          46417,
+          153872355
+        ],
+        "rule": "dimension-21"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          111,
+          12213,
+          24853455
+        ],
+        "rule": "dimension-55"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          111,
+          12215,
+          14914515
+        ],
+        "rule": "dimension-55"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          111,
+          12243,
+          2264955
+        ],
+        "rule": "dimension-55"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          119,
+          1455,
+          1904595
+        ],
+        "rule": "dimension-55"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          135,
+          595,
+          176715
+        ],
+        "rule": "dimension-55"
+      },
+      {
+        "row": [
+          5,
+          5,
+          11,
+          159,
+          357,
+          1040655
+        ],
+        "rule": "dimension-55"
+      }
+    ],
+    "rules": {
+      "center": 2134,
+      "central-C3": 88,
+      "cubic-induction-norm": 17,
+      "dimension-21": 1,
+      "dimension-55": 6,
+      "real-determinant": 19,
+      "stabilizer-3": 533,
+      "two-central-descents": 1
+    },
+    "total": 2799
+  },
+  "3": {
+    "last_cases": [],
+    "rules": {
+      "center": 1
+    },
+    "total": 1
+  },
+  "5": {
+    "last_cases": [],
+    "rules": {
+      "center": 3
+    },
+    "total": 3
+  },
+  "7": {
+    "last_cases": [],
+    "rules": {
+      "center": 13
+    },
+    "total": 13
+  },
+  "9": {
+    "last_cases": [],
+    "rules": {
+      "center": 115
+    },
+    "total": 115
+  }
+}

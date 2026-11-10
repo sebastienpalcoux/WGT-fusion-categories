@@ -1,0 +1,59 @@
+{
+  "fourteen_fours_whole_leaves": {
+    "gmp_handoffs": 12,
+    "gmp_nodes": 311,
+    "leaves": 620,
+    "native_nodes": 1496549550,
+    "rows": 11290
+  },
+  "nonempty_leaves_whose_rows_all_fail_union": {
+    "gmp_handoffs": 12,
+    "gmp_nodes": 311,
+    "leaves": 133,
+    "native_nodes": 1452925873,
+    "rows": 10200
+  },
+  "physical_leaf_totals": {
+    "gmp_handoffs": 15,
+    "gmp_nodes": 392,
+    "leaves": 2156,
+    "native_nodes": 1827124673,
+    "rows": 96119
+  },
+  "prefix_certified_leaves": {
+    "both": {
+      "gmp_handoffs": 0,
+      "gmp_nodes": 0,
+      "leaves": 228,
+      "native_nodes": 963049193,
+      "rows": 3958
+    },
+    "dyadic_mass": {
+      "gmp_handoffs": 12,
+      "gmp_nodes": 311,
+      "leaves": 541,
+      "native_nodes": 1475395644,
+      "rows": 10146
+    },
+    "septic": {
+      "gmp_handoffs": 0,
+      "gmp_nodes": 0,
+      "leaves": 256,
+      "native_nodes": 965215529,
+      "rows": 3967
+    },
+    "union": {
+      "gmp_handoffs": 12,
+      "gmp_nodes": 311,
+      "leaves": 569,
+      "native_nodes": 1477561980,
+      "rows": 10155
+    }
+  },
+  "row_exclusions": {
+    "both": 3967,
+    "dyadic_mass": 11189,
+    "septic": 3967,
+    "union": 11189
+  }
+}

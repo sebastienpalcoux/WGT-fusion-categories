@@ -1,0 +1,81 @@
+{
+  "additional_first_exclusions": {
+    "divisor family: 21.2": 30,
+    "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 39,
+    "divisor family: four-prime cubic family": 36,
+    "divisor family: four-prime dyadic box": 78,
+    "divisor family: four-prime height sum": 158,
+    "divisor family: ordered three-prime family": 12909,
+    "dyadic row at 16": 18936,
+    "generator activity at 3": 25635,
+    "generator activity at 5": 3489,
+    "generator activity at 7": 139,
+    "principal pair": 23836,
+    "regular indicator at 7": 2,
+    "trace at degree 3": 2
+  },
+  "additional_profiles": 85289,
+  "by_largest_degree_codegree": {
+    "10": 61,
+    "12": 8,
+    "16": 95970,
+    "18": 79,
+    "8": 1
+  },
+  "by_square_class": {
+    "1": 95970,
+    "10": 61,
+    "2": 80,
+    "3": 8
+  },
+  "checkpoint_parents": 509,
+  "checkpoint_profiles": 10830,
+  "checkpoint_sha256": "23c68724e3de3087a26104820cc3f2a0ea140b103b82e490a6d6a2d74e5f3a99",
+  "completed_parents": 524,
+  "first_exclusions": {
+    "balanced prime phases at 5: empty": 6,
+    "complementary fiber count at 3": 61,
+    "divisor family: 21.2": 37,
+    "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 52,
+    "divisor family: four-prime cubic family": 119,
+    "divisor family: four-prime dyadic box": 92,
+    "divisor family: four-prime height sum": 473,
+    "divisor family: ordered three-prime family": 14616,
+    "dyadic row at 16": 19458,
+    "generator activity at 3": 30272,
+    "generator activity at 5": 5459,
+    "generator activity at 7": 186,
+    "odd-slice mass at 3": 1,
+    "orbit at 16": 1,
+    "orbit at 25": 6,
+    "principal pair": 25269,
+    "regular indicator at 5": 7,
+    "regular indicator at 7": 2,
+    "trace at degree 3": 2
+  },
+  "formerly_pending_parents": 15,
+  "gmp_handoffs": 15,
+  "gmp_nodes": 392,
+  "leaves": 2156,
+  "member_sha256": {
+    "receipts.jsonl": "3b33993966c5afdf768a087d93831d76cdd876cc0e38be1f9888f6126d1c3261",
+    "screen.json": "176fdfecdabe09ea6aedc10312c5b6f8cf15776f59395af17ff2115fd0a9ac05",
+    "spec.json": "6d7321a3b92bfc0c81f5d3ad561a5f24f3c08714f1fc29044f9870f1639d026d"
+  },
+  "native_nodes": 1827124673,
+  "new_child_jobs": 1647,
+  "nonempty_leaves": 371,
+  "nonsquare_independent_matches": 149,
+  "profiles": 96119,
+  "rank": 30,
+  "searched_leaves": 1938,
+  "submitted_zip_sha256": "69726a2fcb8f05cf26da3aee9422814cb0ef7806ceecd2e816b6af850d3bb4ba",
+  "survivors": 0,
+  "theorem_leaves": {
+    "quintic Gauss row 11,6": 1,
+    "quintic Gauss row 13,4": 1,
+    "quintic support mass, multiplicity 2": 118,
+    "quintic support mass, multiplicity 3": 8,
+    "unique quintic denominator rank bound": 90
+  }
+}

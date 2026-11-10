@@ -1,0 +1,128 @@
+{
+  "24": {
+    "rank": 24,
+    "nodes": 4238216,
+    "types": 114,
+    "wall_seconds": 2.01138,
+    "candidate_sha256": "89968ff6a3ffcda0c1d35b873244f505a942c4ac9c099827eec29b7f28ecc00c",
+    "per_top_codegree": {
+      "12": 33,
+      "10": 65,
+      "9": 16
+    },
+    "native_source": "code/ordinary_rank24_25.cpp",
+    "gmp_replay": {
+      "source": "continuation/rank24_search.cpp",
+      "nodes": 4371450,
+      "types": 114,
+      "user_cpu_seconds": 11.373
+    }
+  },
+  "25": {
+    "rank": 25,
+    "nodes": 70006069,
+    "types": 2178,
+    "wall_seconds": 46.6062,
+    "candidate_sha256": "42dc40b29d57e7c511df5b4d17fd9625fb64ae563f65e598109552dd09a777d2",
+    "per_top_codegree": {
+      "10": 1369,
+      "9": 116,
+      "12": 691,
+      "16": 2
+    },
+    "native_source": "code/ordinary_rank24_25.cpp"
+  },
+  "26": {
+    "rank": 26,
+    "nodes": 124403399,
+    "types": 514,
+    "wall_seconds": 37.1308,
+    "candidate_sha256": "ae82fd7f44a384579337a96ac5b323249c0e85f09812ee68799150831ce831de",
+    "per_top_codegree": {
+      "12": 274,
+      "9": 219,
+      "16": 21
+    },
+    "native_source": "code/ordinary_rank26.cpp",
+    "root_shards": [
+      {
+        "q": 1,
+        "b": 3,
+        "types": 219,
+        "nodes": 92044667
+      },
+      {
+        "q": 1,
+        "b": 4,
+        "types": 21,
+        "nodes": 416711
+      },
+      {
+        "q": 1,
+        "b": 5,
+        "types": 0,
+        "nodes": 22
+      },
+      {
+        "q": 2,
+        "b": 2,
+        "types": 0,
+        "nodes": 158229
+      },
+      {
+        "q": 2,
+        "b": 3,
+        "types": 0,
+        "nodes": 2814
+      },
+      {
+        "q": 3,
+        "b": 2,
+        "types": 274,
+        "nodes": 31780603
+      },
+      {
+        "q": 5,
+        "b": 2,
+        "types": 0,
+        "nodes": 29
+      },
+      {
+        "q": 6,
+        "b": 2,
+        "types": 0,
+        "nodes": 22
+      },
+      {
+        "q": 10,
+        "b": 1,
+        "types": 0,
+        "nodes": 233
+      },
+      {
+        "q": 14,
+        "b": 1,
+        "types": 0,
+        "nodes": 11
+      },
+      {
+        "q": 15,
+        "b": 1,
+        "types": 0,
+        "nodes": 23
+      },
+      {
+        "q": 21,
+        "b": 1,
+        "types": 0,
+        "nodes": 18
+      },
+      {
+        "q": 22,
+        "b": 1,
+        "types": 0,
+        "nodes": 17
+      }
+    ]
+  }
+}

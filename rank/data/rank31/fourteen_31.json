@@ -1,0 +1,33 @@
+{
+  "activity_exclusions": {
+    "3": 133,
+    "5": 118
+  },
+  "gmp_nodes": 5913552,
+  "prefix": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "profiles": 251,
+  "rank": 31,
+  "raw_sha256": "1340347837acd74746b1f8e19632bd42b4a222c168ea8e382e392f31af76f1a1",
+  "sources": {
+    "exact": "d60d7ac3e51590081183e1984c5983de4f16c06459f0f69cf3b9b2d5745be5d5",
+    "fast": "93f510a343dd15e4b49ddcf19454a609269a7437e406b07af7503cde9f325097",
+    "rule_integration": "990e5827a0faa97ec98b24b5a438751feba2609254dd6ada2b10b82eebe52ab6",
+    "rules_header": "c22e74ba58dfb876087a8937d053e2e853c3398be9efc0d1ed28f567e193b404"
+  },
+  "square_class": 1
+}

@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "69726a2fcb8f05cf26da3aee9422814cb0ef7806ceecd2e816b6af850d3bb4ba",
+  "counts": {
+    "even_capacity_past_original_activity": 538,
+    "new_union_past_original_activity": 1404,
+    "odd_codegree16_cap": 2945,
+    "odd_prime_even_capacity": 35950,
+    "odd_row_norm": 139,
+    "original_activity": 35412,
+    "raw_profiles": 96119,
+    "union_new_tests": 36816
+  }
+}

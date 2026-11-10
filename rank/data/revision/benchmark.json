@@ -1,0 +1,97 @@
+{
+  "old_result_sha256": "e6579c60e0933beb8775be90563736cac1b4332a360bb3ba41bfc191d98c8a76",
+  "old_gmp_q1_b3_and_b4": {
+    "shards": 103,
+    "candidate_count": 9044,
+    "nodes_summed_over_shards": 1364235056
+  },
+  "old_largest_shards": [
+    {
+      "q": 1,
+      "prefix": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "nodes": 1179754721,
+      "types": 1149
+    },
+    {
+      "q": 1,
+      "prefix": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "nodes": 102871258,
+      "types": 7204
+    },
+    {
+      "q": 1,
+      "prefix": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "nodes": 78858763,
+      "types": 164
+    }
+  ],
+  "new_full_search": {
+    "shards": 347,
+    "types": 1940,
+    "native_nodes": 11134203,
+    "gmp_nodes": 0,
+    "candidate_sha256": "d926f47a2d6f75d9d1fcd51790b19e95aa657df4f2ff3a318c367aaade7e2689"
+  },
+  "same_shard_comparison": {
+    "rank": 28,
+    "q": 1,
+    "prefix": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5
+    ],
+    "nodes": 137218,
+    "types": 27,
+    "native_wall_s": 0.268184,
+    "gmp_wall_s": 1.192,
+    "raw_sha256": "df95c454b184e16b526486a6dd17e2f54e34f0b0c6ec1571941890aac98226d0"
+  },
+  "sources": {
+    "fast.cpp": "01e6d75b267484bd768bd619976846fbcb135e1a2ddca03ab181f66203d9bee0",
+    "exact.cpp": "c660624ba17a67838fbd99cee12cc0955ce6e41fd40720df34f90cc914109131"
+  }
+}

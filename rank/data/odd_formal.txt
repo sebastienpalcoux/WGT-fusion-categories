@@ -1,0 +1,13 @@
+rank minimum tuples maximum_dimension uncovered
+3 3 1 3 0
+5 3 3 21 0
+7 3 13 903 0
+9 3 115 1631721 0
+11 3 2799 5325028475403 0
+13 5 12992 11114854902356205 0
+Rank 13, paired prefix 3,7,43, square equation: []
+15 7 28933 1927509854183994255 0
+Rank 15, group 21 dimensions [4431, 152607]
+Rank 15, group 39 dimensions [12207]
+Rank 15, group 55 dimensions [24255]
+Rank 15, modular first quotient of dimension 11 times a square: []

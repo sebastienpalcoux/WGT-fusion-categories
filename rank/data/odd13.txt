@@ -1,0 +1,1 @@
+Rank 13, paired minimum 3, outside 3,7,43: 5708 above cutoff, 0 uncovered.

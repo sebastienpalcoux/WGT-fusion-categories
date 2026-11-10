@@ -1,0 +1,40 @@
+{
+  "rank": 24,
+  "profiles": 114,
+  "proof_first_exclusion": {
+    "legacy dimension families": 85,
+    "defect-one f=10": 14,
+    "defect-one f=12": 14,
+    "trace at degree 1": 1
+  },
+  "survivors": [],
+  "family_strategy_first_exclusion": {
+    "legacy dimension families": 85,
+    "defect-one multiplicity": 28,
+    "principal pair": 1
+  },
+  "overlapping_individual_tests": {
+    "principal pair": 102,
+    "defect-one multiplicity": 98,
+    "joint mass": 98,
+    "odd block or slice": 98,
+    "catalogue including legacy": 85,
+    "legacy dimension families": 85
+  },
+  "dimensions_after_legacy": {
+    "2^6 3^7 5^4": 7,
+    "2^7 3^6 5^5": 7,
+    "2^7 3^8 5^5": 5,
+    "2^6 3^5 5^6": 4,
+    "2^8 3^5 5^4": 2,
+    "2^10 3^4 5^2 7^2": 1,
+    "2^7 3^10 5^5": 1,
+    "2^8 3^5 5^6": 1,
+    "2^9 3^8 5^5": 1
+  },
+  "roots_after_legacy": {
+    "q=10, f=10, m=9": 14,
+    "q=3, f=12, m=11": 14,
+    "q=1, f=9, m=4": 1
+  }
+}

@@ -6,6 +6,7 @@ A shorter paper proves that every weakly integral braided fusion category of dim
 
 | Material | Contents |
 | --- | --- |
+| [Rank bounds](rank/README.md) | Degree enumeration, mathematical exclusion tests, certificates and a resumable rank-31 search. |
 | [Verification code](code/README.md) | Commands for the finite arithmetic used in the paper. |
 | [Input data](data/README.md) | The pinned list of 2341 perfect rank-15 dimension types, with provenance and checksum. |
 | [Verification manifest](certificates/manifest.json) | Hypotheses, commands, expected outputs, and locations in the full article for 27 calculations and checks. |

@@ -1,0 +1,288 @@
+number	BDP page	title (source TeX)	labels
+1.1	1	Two unrestricted prime powers	thm:intro-two-free, fam:M:1.1
+2.1	4	Minimal counterexample	fam:M:2.1, lem:minimal, lem:proper-divisor-reduction, lem:minimal-counterexample-simple
+2.2	5	LCM energy and prime companions	fam:M:2.2, prop:braided-lcm
+2.3	5	Divisibility in a tensor power	fam:M:4.15, lem:crossing-gcd
+2.4	6	Averaging over a character orbit	fam:M:2.3, deep:field-energy, r8:trace-norm, fam:Q:2.1, fam:Q:n:q12:orbit
+2.5	6	Zeros and square-fullness	fam:M:2.4, lem:tables, lem:galois-row-bound, lem:perfect-data-squarefull, lem:strict-eigenvalues, lem:odd-codegrees-duality
+2.6	7	Small ordinary codegrees	lem:small-ordinary-codegrees
+2.7	8	The different divides a rational formal codegree	fam:M:2.5, lem:codifferent
+2.8	8	Conductor of a character field	fam:M:2.6, cor:field-conductor
+2.9	8	Support in the principal residue class	fam:M:2.7, thm:principal-support, lem:prime-power-support
+2.10	9	Multiplicity at codegree a prime power times three	fam:M:2.8, new:principal-gram
+2.11	9	A block with a conductor of length one	fam:M:2.9, lem:conductor-node
+2.12	9	The block of a defect-one character	fam:M:2.10, seq:odd-defect-one, lem:class, prop:principal-defect-one-general, lem:one-defect-block, lem:two-adic-defect-one-rank, lem:even-rank-defect-one
+3.1	10	Block orthogonality	fam:M:3.1, thm:block, thm:zero, lem:reduced-block, lem:reduced-two-block
+3.2	11	Local modular action on residue blocks	fam:M:3.2, lem:local-block-invariance
+3.3	11	Twist primes seen by a row	fam:M:3.3, lem:complement
+3.4	12	Cauchy and vanishing at odd primes	fam:M:3.4, lem:reduced-cauchy
+3.5	12	Twist orders and formal codegrees	fam:M:3.5, thm:twistdiv
+3.6	13	Mass and overlap of two label sets	fam:M:3.6, mass
+3.7	13	Mass from a generating simple	fam:M:3.7, th:fs
+3.8	13	Odd-valuation slices	fam:M:3.8, prop:blockwise-odd-slice, prop:odd-slice
+3.9	14	The two masses in a defect-one block	fam:M:3.9, cor:defect-one-orbit-masses
+3.10	14	The visible class at defect one	lem:quintic-common-class
+4.1	14	Principal valuation bound	fam:M:4.1, cor:principal-valuation-bound, cor:principal-cubic
+4.2	15	Prime avoidance on a principal block	fam:M:4.2, prop:principal-support, prop:principal-common-divisor
+4.3	15	A mixed-defect block bound	fam:M:4.3, prop:mixed-discriminant-budget
+4.4	15	An integral minimal modular extension	fam:M:4.4, lem:integral-minimal-extension
+4.5	16	The two fermion quotients	fam:M:4.5, lem:fermion-quotients
+4.6	17	Unramified signed characters from sign-only twists	fam:M:4.6, lem:signed-unramified-sign-twists
+4.7	17	Odd supports in the principal two-block	fam:M:4.7, three:odd-reduced, lem:fermion-no-pair-degree, lem:principal-fermion-two, prop:cubic-two-exclusion
+4.8	17	Inertia forced by several positive residues	fam:M:4.8, deep:positive-inertia
+4.9	18	Short cyclotomic sums with one or two positive residues	fam:M:4.9, first:balance, seq:two-positive, three:word
+4.10	19	Complementary principal degrees at three primes	fam:M:4.10, three:complementary, prop:quartic-complementary-principal
+4.11	19	The two-adic height in a reduced table	fam:M:4.11, prop:reduced-quartic-two-exclusion
+4.12	19	Three primes with a small exponent	fam:M:4.12, thm:three, thm:three-odd-cube-general
+4.13	20	The gcd of the prime-free degrees	fam:M:4.13, prop:prime-free-gcd, new:leak
+4.14	20	Separation criterion	fam:M:4.14, prop:three-separation
+4.15	20	Common constituents and difference sets	fam:Q:2.2, fam:Q:n:lim:diff
+4.16	21	Descent on the number of differences	fam:Q:2.3, fam:Q:n:lem:j11-descent
+4.17	21	A prime bound from a common divisor	lem:principal-crossing-prime-bound
+4.18	22	Degrees six and ten	fam:M:4.16, lem:sixseven
+4.19	22		found:T:5.1, found:T:key:lem:separated-double-principal
+4.20	22	Lifting a positive singleton at two	lem:fermion-singleton-lift
+5.1	23		fam:M:5.1, def:uniform-split-order
+5.2	23	Incompatible unramified lifts	fam:M:5.2, lem:unramified-three-two-obstruction
+5.3	24	Energy at a prescribed prime residue	fam:M:5.3, thm:cyclotomic-residue-energy, prop:odd-defect-filtration, lem:singleton-residue-energy, lem:codegree-four-residue-energy
+5.4	25	First tame shell and trace	fam:M:5.4, lem:fifth-residue-first-shell
+5.5	25	Conductor and row budget	fam:M:5.5, cor:table-defect-filtration, prop:defect-filtration-energy, cor:mixed-block-general-energy
+5.6	25	Small budgets and forced hits	fam:M:5.6, cor:defect-two-energy-stratum, cor:three-prime-mixed-energy
+5.7	26	Degrees supporting a nonzero trace	fam:M:5.7, prop:quartic-two-codegree4, prop:quartic-prime-top-codegree, prop:quartic-five-codegree25
+5.8	26	Ramification of a principal defect-two row at two	fam:M:5.8, prop:principal-two-defect-two-ramification
+5.9	26	Wild coefficient vectors	fam:M:5.9, lem:wild-coefficient-vectors
+5.10	27	Trace lattices and the defect-two cotangent space	fam:M:5.10, prop:principal-trace-lattice, prop:principal-fixed-defect-two, cor:defect-two-socle
+5.11	28	Principal defect two in a categorified ring	fam:M:5.11, ex:principal-defect-two-ring
+5.12	28		fam:M:5.12, q:principal-defect-two
+6.1	28	Local Weyl vacuum column	fam:M:6.1, lem:local-vacuum-column
+6.2	29	Weyl columns on separated prime sets	fam:M:6.2, deep:cluster, deep:separated-inertia
+6.3	29	Simultaneous singleton identities	fam:M:6.3, second:two-columns
+6.4	30	An isolated prime with unit vacuum deficit	fam:M:6.4, lem:singleton
+6.5	31	Column norm on isolated row sets	fam:M:6.5, lem:singleton-energy, lem:local-integer-column, new:rank-budget
+6.6	31	Prime supports at an isolated prime	fam:M:6.6, lem:isolated-dyadic-square, new:trace
+6.7	31	Small-degree cutoff	fam:M:6.7, lem:twist-cut
+6.8	32	An isolated quartic prime	fam:M:6.8, fourm:heightone
+6.9	32		fam:W:2.1, fam:W:n:thm:foreign-column
+6.10	33	The tetrahedral Weyl matrix	lem:tetrahedral-weyl
+6.11	34		por:th:weyl-div
+6.12	34		por:prop:separated-high-row
+6.13	35	Conductor at an individual label	por:th:exact-conductor
+6.14	36		por:pr:fejer
+6.15	36		por:orbitbound
+7.1	37	Separation at a quartic prime	fam:M:7.1, first:separate
+7.2	37	An isolated quartic in a three-prime table	fam:M:7.2, first:isolate
+7.3	37	A quartic below a larger prime	fam:M:7.3, seq:smaller-quartic, next:quartic2, thm:first, seq:quartic-any
+7.4	38	An odd-order phase cannot be missing	fam:M:7.4, seq:missing-odd
+7.5	38	Dyadic twists seen by a defect-one row	fam:M:7.5, seq:dyadic-pair
+7.6	39	Two dyadic twists force an invertible	fam:M:7.6, seq:two-phase
+7.7	39	A uniform odd-sector spin	fam:M:7.7, seq:fermion-one-spin
+7.8	39	Twist activity in an invariant fiber	fam:M:7.8, lem:odd-valuation-joint-twist
+7.9	40	A prime-power codegree at maximal least-prime height	fam:M:7.9, three:height, seq:odd-five-five, range, seq:ordinary-five
+7.10	40	A fermion core with an odd companion valuation	fam:M:7.10, seq:reduceddyadic5
+7.11	41	Lifting the companion exponents	fam:M:7.11, three:least-height, three:unrestricted-middle, three:excess, seq:quintic-any
+7.12	41	Complementary fields at a quintic middle prime	fam:M:7.12, three:sextic-gate
+7.13	42	Positive defect one and the dyadic level	lem:positive-defect-one-phases
+7.14	43	Signed blocks at dyadic level dividing eight	lem:signed-dyadic-pair
+8.1	44	Three bounded exponents	fam:Q:1.1, fam:F:3.2, fam:F:n:754, fam:Q:n:q13:654
+8.2	44		fam:Q:1.2, fam:Q:n:quart:main
+8.3	44	A quintic and two unrestricted exponents	fam:Q:1.3, fam:Q:n:q12:unified
+8.4	45	An odd word of prime weight	fam:Q:2.4, fam:Q:n:lem:oddword
+8.5	46	A single residue in odd order	fam:Q:2.5, fam:Q:n:q12:positive
+8.6	46		found:C:5.1, found:C:key:new:zero
+8.7	47	The unrestricted odd case	fam:Q:3.1, fam:Q:n:quart:alternative
+8.8	49	A finite test at one row	fam:A:exposed
+8.9	50		fam:A:strips
+8.10	50	A bounded exponent and a large companion prime	fam:Q:4.1, fam:Q:n:quart:five
+8.11	51		fam:Q:4.2, fam:Q:n:quart:parity
+8.12	51	A middle-prime test independent of the largest prime	fam:Q:4.3, fam:Q:n:q13:midtest
+8.13	52	Transport of deep quartic twists	fam:Q:4.4
+8.14	52	Gauss sums at a quadratic class	fam:Q:5.1, fam:Q:n:q12:stratified
+8.15	53	Exceptional labels and principal inertia	fam:Q:6.6, fam:Q:n:quart:gauss, fam:Q:6.7, fam:Q:n:quart:orbitcount
+8.16	53	A trace on the trivial twist fiber	fam:Q:5.2, fam:Q:n:q13:filtered
+8.17	54	An odd quintic with two complementary witnesses	fam:Q:5.3, fam:Q:n:q13:common
+8.18	55	A least quintic in odd dimension	fam:Q:5.4, fam:Q:n:q12:quintic
+8.19	55	Short words at the middle prime	fam:Q:5.5, fam:Q:n:q13:middle-small
+8.20	55	A least-prime exponent bound for a middle quintic	fam:Q:5.6, fam:Q:n:q13:middle-wide
+8.21	56	The mass outside two dyadic phases	fam:Q:5.7, fam:Q:n:q12:dyadic-mass
+8.22	56	An ordinary quintic at two	fam:Q:5.8, fam:Q:n:q12:ordinary-five
+8.23	57	Sign twists and the principal two-block	fam:Q:5.9, fam:Q:n:q12:fs-square
+8.24	58	The reduced quintic at two	fam:Q:5.10, fam:Q:n:q12:redfive
+8.25	59	Weight three at two and three	fam:Q:6.1
+8.26	59	Transfer at two and three	fam:Q:6.2
+8.27	60	Three-primary phases at odd valuation	fam:Q:6.3
+8.28	60	A pure ternary codegree	fam:Q:6.4, fam:Q:n:quart:pure
+8.29	61	The trace restriction at codegree $27$	fam:Q:6.5, fam:Q:n:quart:twentyseven
+8.30	61	The odd witness at the ternary quintic	fam:Q:6.8
+8.31	62	A sextic dyadic and a quintic companion	fam:Q:6.9, fam:Q:n:quart:sextic
+8.32	62		fam:Q:7.1
+8.33	63	Odd middle valuation in a reduced table	fam:Q:7.2
+8.34	63	Forcing the top dyadic height	fam:Q:7.3, fam:Q:n:q12:septic
+8.35	64		fam:F:3.1, fam:F:n:lifted
+8.36	65	Principal blocks under gauging of order prime to $r$	prop:gauging-principal-descent
+8.37	66	Recognition on the original principal block	fam:Q:8.1, fam:Q:n:quart:recognition
+8.38	66		por:pr:designrigid
+9.1	67	Heights at the two higher primes	fam:M:8.1, thm:higher-two-squares, main:four, seq:four-five
+9.2	68	Three pair degrees	fam:M:8.2, lem:pair-witness
+9.3	68	Isolation at two squared primes	fam:M:8.3, prop:isolation, prop:four-isolation
+9.4	68	Two squared primes in the reduced table	fam:M:8.4, seq:two-odd-squares, lem:fermion-pair
+9.5	69	Inertia from principal residues	fam:M:8.5, fourm:one-residue
+9.6	69	A congruence obstruction on the two repeated prime powers	fam:M:8.6
+9.7	70	Bounds for the other three primes	fam:M:8.7, note:finite
+9.8	70	Multiplicity at an isolated odd singleton	fam:M:8.8, seq:no-odd-singleton-five
+9.9	70	A unique complementary degree	fam:M:8.9, seq:five-larger, new:only-common-pair
+9.10	71	Three omitted primes	fam:M:8.10, lem:singleton-triple
+9.11	71	Full valuations under isolation	fam:M:8.11, seq:sextic-fully-separated
+9.12	71	One unrestricted prime and three squares	fam:M:8.12, seq:one-unrestricted, thm:four
+9.13	71	Trace and Gram constraints on degrees	fam:M:8.13, fourm:dyadicbudget, seq:end-criterion
+9.14	72	Two trace divisors	fam:M:8.14, fourm:trace-divisors
+9.15	72	Total height at two higher primes	fam:M:8.15, fourm:even-total, new:evenfull, seq:dyadic-six, seq:dyadic-quartic-sextic
+10.1	74		fam:M:9.1, nov:local-level
+10.2	74	The trace interval for a singleton column	main:singleton-trace-interval
+10.3	74	The two ramified orbits at an isolated singleton	fam:M:9.2, nov:bruhat, nov:three-deficit, fourm:twoorbits, main:full-multiplicity
+10.4	76	Two residues at an isolated prime	fam:M:9.3, prop:singleton-two-residues
+10.5	76	A simultaneous two-part constraint	fam:M:9.4, r6:twopart
+10.6	76	Parity of the signed coordinates	fam:M:9.5, deep:ram-parity
+10.7	76	Odd parts of singleton orders	fam:M:9.6, r6:two-fermat, nov:seven, thirteen
+10.8	76	Degrees supporting mixed twists	fam:M:9.7, fourm:mixed-degrees
+10.9	77	A single common degree	fam:M:9.8, fourm:sole
+10.10	77	A forbidden square residue	fam:M:9.9, new:forbidden-square
+10.11	77	Transport from an inactive singleton orbit	fam:M:9.10, new:transport
+10.12	78	The two squared primes at arbitrary heights	main:gap-all-heights, fam:M:9.13, r6:both-unrestricted, both-singleton
+10.13	78	Full isolation at four odd primes	fam:M:9.14, fourm:isoheight, fourm:isoquart
+10.14	78	The full common degree is absent	fam:M:9.15, new:no-full-common
+10.15	79	A quartic exponent at the smaller higher prime	fam:M:9.16, seq:four-high-common, leastquart, fourm:leastquart-smallboth
+10.16	79	An unrestricted power at the least odd prime	fam:M:9.17, r6:least-unrestricted
+10.17	79	Reduction to an odd sextic root	fam:M:9.18, cor:four-before-sextic
+11.1	80	A degree at an odd cubic prime	fam:M:10.1, lem:cubic-support
+11.2	80	Small exponents at four repeated primes	fam:M:10.2, prop:four-cube-square, cor:four-cubic-support
+11.3	80	Lifting squared primes to cubes	fam:M:10.3, thm:cubic-lift, thm:four-cubics, cor:four-at-most-three
+12.1	81	Axis heights forced by a ramified common degree	fam:M:12.2, fourm:ram-B-axes
+12.2	82	The least prime three	fam:M:12.3, r6:sextic-three
+12.3	82		fam:M:12.4, nov:lessbp2
+12.4	83	The degree $p^2q$ cannot occur alone	fam:M:12.5, new:sole-A-global
+12.5	83	Consequences of a common degree $p^2q$	fam:M:12.6, new:common-A
+12.6	84	The degree $p^2q^2$ cannot occur alone	fam:M:12.7, new:sole-B-global
+12.7	84	Mixed witnesses when $A$ is absent	fam:M:12.8, nov:no-L-ram
+12.8	84	The odd sextic root	fam:M:12.9, fourm:common-fields
+13.1	85		fam:W:1.2, fam:W:n:thm:unbounded
+14.1	88		ext:lem:quadratic-pair
+15.1	92		fam:W:1.1, fam:W:n:thm:main
+15.2	92		fam:M:10.4, seq:five-squares
+15.3	93	Solvability without a braiding assumption	fam:M:10.5, thm:sq30030
+15.4	93		ext:support:local
+15.5	94	Two squares beside a cube	fam:F:2.1, fam:F:n:f14:five
+15.6	95	Five-prime lifting	fam:F:5.12, fam:F:n:liftfour
+15.7	96	A quartic two and four odd squares	fam:F:4.1
+15.8	97		fam:F:5.2, fam:F:n:cost
+15.9	97	The unique possible mixed pair	fam:F:5.3, fam:F:5.4, fam:F:5.5
+15.10	98	Separation among four odd squares	fam:F:5.7, fam:F:n:f14:oddsep
+15.11	99		fam:F:5.8
+15.12	99	No intermediate height at an isolated odd quartic	fam:F:5.9, fam:F:n:lem:isolated-quartic-odd-height
+15.13	100	Centered Weyl column for a separated set of odd primes	fam:C:2.1, fam:C:n:centered
+15.14	101	Three isolated prime positions with full complementary degrees	fam:C:2.2, fam:C:n:f15:three-corners
+15.15	101	Odd roots with five repeated primes	fam:C:2.3, fam:C:n:f15:odd-mixed
+15.16	101	Two axes at an isolated quartic	fam:C:3.1
+15.17	102	Crossings of two quartic axes	fam:C:3.2, fam:C:n:matching
+15.18	102	No remaining quartic axes in odd dimension	fam:C:3.3
+15.19	103	The three isolated primes beside a mixed quartic	fam:C:4.1
+16.1	106		ext:lem:two-free-crossing
+16.2	106		ext:prop:crossing-certificates
+16.3	107		ext:cor:five-two-free
+16.4	107		ext:gap:adjoin
+16.5	108		found:D:2.1, found:D:key:th:exponent
+16.6	109	Fixed complementary factor	found:D:cofactor-unified, found:D:3.1, found:D:key:cor:prime, found:P:3.2, found:P:key:cor:promotion
+17.1	110	Uniform dimension bounds	thm:uniform-new-bounds, seq:end-bounds, thm:unbraided-range
+17.2	111	Solvability from the square divisors	fam:M:11.2, prop:solv-square-divisor
+18.1	111	Dimension in arbitrary rank	cor:global-dimensions
+18.2	112		cor:all-dim-rank
+19.1	114		mass:thm:mass
+19.2	114		mass:thm:expose
+19.3	115		mass:prop:transfer
+19.4	115		mass:cor:two
+19.5	116		found:S:4.1, found:S:key:thm:two-phases
+19.6	117		found:S:5.1, found:S:key:prop:four-profile
+19.7	118	A single coset of wild phases	found:S:5.2, found:S:key:prop:exceptional-tame
+19.8	119		found:C:3.1, found:C:key:prop:above-prime
+19.9	120		found:C:3.2, found:C:key:cor:orbit22
+19.10	120		found:C:3.3, found:C:key:prop:fourmarks
+19.11	121		found:C:3.4, found:C:key:lem:jointfourier
+19.12	123		found:C:7.1, found:C:key:new:single-twist
+19.13	124		found:C:7.2
+19.14	124		found:C:7.3, found:C:key:new:klein
+19.15	125		found:J:4.1, found:J:key:pr:route
+19.16	125		found:J:4.2, found:J:key:pr:fiberdef
+19.17	126		found:J:5.1, found:J:key:pr:missing
+19.18	126		found:J:5.2, found:J:key:pr:unsignedall
+19.19	127		found:J:6.1, found:J:key:new:fourierblock
+19.20	127		found:J:6.2, found:J:key:pr:carry
+19.21	128		found:J:7.1, found:J:key:pr:qmult
+19.22	129		found:F:3.1, found:F:key:pr:low-conductor, found:J:4.3, found:J:key:prop:inactive-multiplicity
+19.23	132		por:prop:wild
+19.24	132		found:T:3.1, found:T:key:local:twice
+19.25	133		found:T:3.2, found:T:key:local:ten
+19.26	134		found:T:3.3
+20.1	134		found:S:2.1, found:S:key:thm:topheight
+20.2	135		found:S:2.2, found:S:key:cor:topheight
+20.3	135		found:S:2.3, found:S:key:prop:twoisolated
+20.4	136	Trace and mass at an isolated prime	found:S:3.1, found:S:key:lem:unramisol
+20.5	136	Trace budget for two companion primes	lem:isolated-trace-budget
+20.6	137		found:S:3.2, found:S:key:thm:twoarbitrary
+20.7	137		found:S:3.3, found:S:key:cor:allthree
+20.8	138		found:S:3.4, found:S:key:prop:sexticorb
+20.9	138		found:C:2.1, found:C:key:prop:sexticrect
+20.10	138		found:C:2.2, found:C:key:thm:uniformsix
+20.11	139		found:C:2.3, found:C:key:cor:concrete
+20.12	139		found:J:2.1, found:J:key:lem:near-updated
+20.13	141		found:J:2.2, found:J:key:thm:below-square
+20.14	141		found:J:2.3, found:J:key:cor:halfsquare
+20.15	144		found:J:3.1, found:J:key:thm:middle
+20.16	145		found:T:9.1, found:T:key:prop:quotient-word
+20.17	146		found:S:8.1, found:S:key:prop:sevenword
+20.18	147		found:S:8.2, found:S:key:cor:sevenstrip
+20.19	147		found:S:8.3, found:S:key:prop:extended-seven
+21.1	149		aux:mixed-two
+21.2	150		aux:dyadic-six
+21.3	150		found:S:7.1, found:S:key:thm:ferm-six
+21.4	155	Separated twists and inertia orbits	u2:separation
+21.5	157	A common hit in a principal block	u2:block-transfer
+21.6	158	Minors on deficient rows and columns	u2:deficient-minors
+21.7	160		found:J:6.3, found:J:key:thm:twistone
+21.8	162		found:F:2.1, found:F:key:thm:fields
+21.9	166		found:F:5.1, found:F:key:thm:upperseparated
+21.10	167		found:P:1.1, found:P:key:thm:main
+21.11	171		found:P:4.1
+21.12	172		found:D:4.1, found:D:key:pr:dyadic
+21.13	172		found:D:5.1
+22.1	173		found:C:4.2, found:C:key:prop:remaining-edges
+22.2	174		found:J:8.1, found:J:key:thm:twenty-three, found:C:4.1, found:C:key:prop:septmix
+22.3	178		found:D:6.1, found:D:key:lem:positive-double-residue
+22.4	179		found:D:6.2, found:D:key:lem:unramified-orientation
+22.5	179		found:D:6.3, found:D:key:prop:odd-oriented-path
+22.6	181		found:T:10.1, found:T:key:pr:joint-positive
+22.7	181		found:T:10.2, found:T:key:pr:joint-exact
+22.8	182		found:T:10.3, found:T:key:pr:odd-pinned
+22.9	183		found:T:10.4, found:T:key:cor:odd-one-degree
+22.10	185		por:th:odd-seven-elim
+23.1	188		found:D:1.1, found:D:key:thm:spectral-six
+23.2	190		found:T:4.1, found:T:key:prop:missing-six-upper
+23.3	191		found:T:4.2, found:T:key:cor:missing-six-purity
+23.4	192		found:T:6.1
+23.5	196		found:T:1.1, found:T:key:prop:torus-active-count
+23.6	199		por:pr:ten-rows
+24.1	202		por:ranktheorem
+24.2	202		por:prop:small-ninehundred
+24.3	202		por:th:joint-at-ninehundred
+24.4	203		por:lem:cubic-indicator
+24.5	203		found:T:2.1, found:T:key:thm:largest-degrees, por:th:no-twelve
+24.6	205		por:cor:six-needs-nine
+24.7	206		por:cor:thirteen
+24.8	206		por:prop:cap675
+24.9	207		por:field600
+25.1	218		th:unbraided-5400
+26.1	221	Degrees and codegrees of a gauging	fam:M:13.1, prop:gauged-degrees
+26.2	222	Coprime descent	fam:M:13.2, lem:uc-descent
+26.3	222	Arithmetic and action components	fam:M:13.3, thm:uc-components
+26.4	224	The smallest codegrees at prime-power dimension	fam:M:13.4, prop:prime-power-no-defect-two
+26.5	224	Nilpotent modular categories and prime-power doubles	fam:M:13.5, cor:nilpotent-no-defect-two
+26.6	225	Factors of a cyclic gauging	fam:M:13.6, lem:cyclic-gauging
+26.7	225		fam:M:13.7, thm:uc-bipartite

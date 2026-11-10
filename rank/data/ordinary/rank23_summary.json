@@ -1,0 +1,15 @@
+{
+  "rank": 23,
+  "candidates": 519,
+  "primary": {
+    "open": 68,
+    "prime family": 276,
+    "trace at degree 1": 165,
+    "trace at degree 2": 5,
+    "trace at degree 3": 5
+  },
+  "final_codegrees": {
+    "8": 68
+  },
+  "survivors": []
+}
