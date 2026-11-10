@@ -1,0 +1,254 @@
+{
+  "scope": "Ordinary non-pointed fusion-simple integral modular categories. Ranks less than six are already impossible by the minimum formal codegree and f_min < rank. Every codegree-nine root is excluded before any recursive extension.",
+  "source_sha256": {
+    "fast": "01e6d75b267484bd768bd619976846fbcb135e1a2ddca03ab181f66203d9bee0",
+    "exact": "c660624ba17a67838fbd99cee12cc0955ce6e41fd40720df34f90cc914109131"
+  },
+  "canonical_encoding": "lexicographically sorted positive degree vectors, each as compact ASCII JSON and one LF",
+  "ranks": {
+    "6": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 6,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "7": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 7,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "8": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 8,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 9,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "10": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 10,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "11": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 11,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "12": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 12,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "13": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 13,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "14": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 14,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "15": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 15,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "16": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 16,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "17": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 17,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "18": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 18,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "19": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 19,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "20": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 20,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "21": {
+      "first_exclusions": {},
+      "profiles": 0,
+      "rank": 21,
+      "survivors": [],
+      "degree_lists_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "22": {
+      "first_exclusions": {
+        "divisor family: ordered three-prime family": 6,
+        "generator activity at 5": 14
+      },
+      "profiles": 20,
+      "rank": 22,
+      "survivors": [],
+      "degree_lists_sha256": "d818238539c505c6cb3232596868044f22007d8830473c79c0bf32bf6c5428eb"
+    },
+    "23": {
+      "first_exclusions": {
+        "codegree 8": 5,
+        "complementary fiber count at 3": 1,
+        "divisor family: ordered three-prime family": 3,
+        "generator activity at 5": 34,
+        "principal pair": 5,
+        "trace at degree 1": 1
+      },
+      "profiles": 49,
+      "rank": 23,
+      "survivors": [],
+      "degree_lists_sha256": "ec5eb0be713ad3b8a5fd3e46eee192bf25bc49e43953d38bb410ca0287f1abf7"
+    },
+    "24": {
+      "first_exclusions": {
+        "complementary fiber count at 3": 61
+      },
+      "profiles": 61,
+      "rank": 24,
+      "survivors": [],
+      "degree_lists_sha256": "245fe41275a9c25ee890fa1e70e5baa5cebbcd3ac96c18f8697e37ef0618ffa3"
+    },
+    "25": {
+      "first_exclusions": {
+        "complementary fiber count at 3": 1335,
+        "divisor family: ordered three-prime family": 2,
+        "generator activity at 3": 3
+      },
+      "profiles": 1340,
+      "rank": 25,
+      "survivors": [],
+      "degree_lists_sha256": "47b372ebc466997cff5d1e357cc476a2b7e7382eee8a6c1ba10415623731c03f"
+    },
+    "26": {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 1,
+        "divisor family: ordered three-prime family": 1,
+        "generator activity at 3": 5,
+        "generator activity at 7": 1
+      },
+      "profiles": 8,
+      "rank": 26,
+      "survivors": [],
+      "degree_lists_sha256": "630b0e87e4275e5991dcb7d110559453be286a96ed9b55e27d813538043d4557"
+    },
+    "27": {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 2,
+        "divisor family: ordered three-prime family": 29,
+        "generator activity at 3": 88,
+        "generator activity at 7": 3,
+        "principal pair": 3
+      },
+      "profiles": 125,
+      "rank": 27,
+      "survivors": [],
+      "degree_lists_sha256": "d3a4a65c0b0466f9b44d5939d40891d0ff0c8afcddcf25490f34a19616c549d2"
+    },
+    "28": {
+      "first_exclusions": {
+        "divisor family: four-prime cubic family": 11,
+        "divisor family: four-prime height sum": 10,
+        "divisor family: ordered three-prime family": 349,
+        "dyadic row at 16": 64,
+        "generator activity at 3": 1317,
+        "generator activity at 5": 48,
+        "generator activity at 7": 13,
+        "principal pair": 128
+      },
+      "profiles": 1940,
+      "rank": 28,
+      "survivors": [],
+      "degree_lists_sha256": "d926f47a2d6f75d9d1fcd51790b19e95aa657df4f2ff3a318c367aaade7e2689"
+    },
+    "29": {
+      "first_exclusions": {
+        "complementary fiber count at 3": 1,
+        "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 4,
+        "divisor family: four-prime cubic family": 31,
+        "divisor family: four-prime dyadic box": 9,
+        "divisor family: four-prime height sum": 71,
+        "divisor family: ordered three-prime family": 3111,
+        "dyadic row at 16": 1775,
+        "generator activity at 3": 4888,
+        "generator activity at 5": 755,
+        "generator activity at 7": 47,
+        "principal pair": 2595,
+        "regular indicator at 5": 5
+      },
+      "profiles": 13292,
+      "rank": 29,
+      "survivors": [],
+      "degree_lists_sha256": "4c83482a58e5997de46777a9081b8296b561c8bd730ff3af0336f6e1b16e2722"
+    },
+    "30": {
+      "first_exclusions": {
+        "balanced prime phases at 5: empty": 6,
+        "complementary fiber count at 3": 61,
+        "divisor family: 21.2": 37,
+        "divisor family: Two-square divisor descent and BDP 11.3 cube lift": 52,
+        "divisor family: four-prime cubic family": 119,
+        "divisor family: four-prime dyadic box": 92,
+        "divisor family: four-prime height sum": 473,
+        "divisor family: ordered three-prime family": 14616,
+        "dyadic row at 16": 19458,
+        "generator activity at 3": 30272,
+        "generator activity at 5": 5459,
+        "generator activity at 7": 186,
+        "odd-slice mass at 3": 1,
+        "orbit at 16": 1,
+        "orbit at 25": 6,
+        "principal pair": 25269,
+        "regular indicator at 5": 7,
+        "regular indicator at 7": 2,
+        "trace at degree 3": 2
+      },
+      "profiles": 96119,
+      "rank": 30,
+      "survivors": [],
+      "degree_lists_sha256": "4cd0e005b4605a5b4ae04de96e46bc19e756e419a3114b5e4e622c2242ba3159"
+    }
+  }
+}

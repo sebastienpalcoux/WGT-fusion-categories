@@ -1,54 +1,49 @@
-# Verification of the rank bounds
+# Rank bounds and proof calculations
 
-These programs and data accompany *Prime factors of fusion-category dimensions: weak group-theoreticity, rank and decomposition*. The enumeration constructs the degrees from the rank and the dimension equation. The published rank-15 list in the parent repository is an independent comparison.
+The [calculation manifest](../certificates/manifest.json) gives hypotheses, inputs, digests, regeneration commands and terminal counts for each rank calculation R01–R12. The [current statement index](../certificates/statement-index.tsv) maps the permanent labels to the revised manuscript. See the [release guide](../certificates/README.md) for resources and the distinction between testing candidates and regenerating them. Run these commands from this directory.
 
-| Category | Rank at least | Verification |
-| --- | ---: | --- |
-| Non-pointed simple integral modular | 31 | [Ranks through 29](verify.py), [complete rank 30](verify_rank30.py) |
-| Same, nonsquare dimension | 33 | [Ranks through 31](verify_nonsquare.py), [rank 32](verify_nonsquare32.py) |
-| Same, odd dimension / odd nonsquare dimension | 57 / 75 | [Odd-dimensional enumeration](code/odd_frontier.py) and [certificates](verify_revision.py) |
-| Divisor-minimal slightly degenerate obstruction, full rank | 34 | [Fermionic quotient](verify.py) |
-| Weakly integral braided non-WGT, any / odd dimension | 9 / 41 | [Small-rank check](code/formal_check.py), [proof by counting odd twists](../papers/Manuscript.pdf#page=127) |
-| Weakly integral non-WGT, any / odd dimension | 7 / 13 | [Small ranks](code/unbraided_small.py), [odd rank eleven](code/odd_unbraided.py) |
+| Category | Lower bound | Calculation |
+|---|---:|---|
+| Non-pointed, fusion-simple integral modular | 31 | [Uniform ordinary ledger](data/ordinary_release.json), R01 |
+| Same, nonsquare dimension | 33 | [Rank 31](verify_nonsquare.py), [rank 32](verify_nonsquare32.py), R02–R03 |
+| Same, odd dimension / odd nonsquare dimension | 57 / 75 | [Paired recursion](code/odd_frontier.py), R06 |
+| Divisor-minimal slightly degenerate obstruction | 34 (full rank) | [Reduced-table check](verify_scoped.py), R05 |
+| Weakly integral braided non-WGT, any / odd dimension | 9 / 41 | [Formal row test](code/formal_check.py), R08, and the odd twist-counting argument |
+| Weakly integral non-WGT, any / odd dimension | 7 / 13 | [Small ranks](code/unbraided_small.py), [odd rank eleven](code/odd_unbraided.py), R09–R10 |
 
-For strictly weakly integral non-WGT categories the bounds are 8 without braiding and 11 with braiding. The proof uses the integral neutral component of the dimension grading. [Theorem 20.1](../papers/Manuscript.pdf#page=122)
+Strict weak integrality gives bounds 8 without braiding and 11 with braiding. Further fixed-dimension conclusions include 101 at the modular boundary 29,160,000 and 553 at the odd braided boundary 5⁶·7⁶·23⁴.
 
-At dimension 29,160,000 the modular obstruction has rank between 101 and 46,774. At dimension 5⁶·7⁶·23⁴ every braided non-WGT category has rank at least 553. All proper divisors are covered, and the forced twist orders give the bound at this dimension. [Theorem 26.1](../papers/Manuscript.pdf#page=218) · [Corollary 24.11](../papers/Manuscript.pdf#page=202)
-
-## Checking completed ranks
-
-Use Python 3.10 or later, a C++17 compiler with unsigned 128-bit integers and GNU MP development headers and libraries. Run from this directory.
+## Ordinary rank ledger
 
 ```sh
-python3 verify.py
-python3 verify_after30.py
+python3 ordinary_release.py
+python3 ordinary_release.py --replay --ranks 22 23 24 25 26 27 --jobs 4
+python3 ordinary_release.py --gmp --ranks 22 23 24 25 26 27
+python3 ordinary_release.py --replay --ranks 28 29 30 --jobs 4
+```
+
+The same native and GMP kernels generate every rank from 6 to 30. Smaller ranks cannot satisfy the minimum-codegree inequality. At ranks 6–27 the manifest divides the search by its first denominator. Higher ranks use finer partitions. Rank 30 also uses the certified independent nonsquare partition and the explicit theorem leaves. The ordinary no-nine theorem discards the square-class-one root with first denominator 3 before recursion. Each surviving list is checked against the same [terminal screen](code/current_screen.py). The [ledger](data/ordinary_release.json) gives complete first-exclusion counts and the SHA-256 digest of the sorted lists at each rank. The separate GMP option compares a second, unpartitioned traversal with every row of the published small-rank return.
+
+For reduced tables, paired odd ordinary tables, and non-simple categories use the applicable suite:
+
+```sh
+python3 verify_scoped.py reduced --replay
+python3 verify_scoped.py paired-odd
+python3 verify_scoped.py formal --replay
+python3 verify_nonsquare.py --ranks 31 --replay
+python3 verify_nonsquare32.py --replay
+python3 square_slices.py
+python3 code/q10_crosscheck.py
 python3 code/unbraided_small.py
 python3 code/odd_unbraided.py --verify data/odd_unbraided.json
 ```
 
-The first two commands check the rank partitions and stored lists, repeat the exclusion tests and regenerate short component calculations. The [rank-30 return](data/revision/rank30_completed.zip) contains 96,119 different degree lists. The [rank-32 nonsquare manifest](data/revision/nonsquare/rank32.json) describes 14 complete roots and 3,081 lists. The [conditional square-dimension data](data/rank31/square_slices.json) give the bounds 36, 39 and 46 for the three hypotheses in the article.
+## Corroboration and continuation
 
-To regenerate searches from their arithmetic inputs, run the following commands separately. They have different computational costs.
+An earlier rank-28 generator returned 9,458 lists. Filtering these by the stronger prefix conditions gives exactly the 1,940 lists of the present enumeration, compared row for row in [verify_revision.py](verify_revision.py). The earlier rank-specific caps at codegree nine and the signed-Egyptian-sum check are retained for byte-for-byte regression of historical receipts. The uniform ordinary proof uses the no-nine theorem at the initial root.
 
-```sh
-python3 verify.py --full
-python3 verify_revision.py --replay --jobs 12
-python3 verify_rank30.py --replay --jobs 12
-python3 verify_nonsquare32.py --replay
-python3 rank31_fourteen.py --replay
-python3 square_slices.py
-```
+The structural proof excluding fourteen denominator fours through rank 31 has a separate arithmetic check. Its 251 degree lists are excluded by generator activity (133 at three, 118 at five). The code, expected outputs and GMP replay are in [rank31_fourteen.py](rank31_fourteen.py). These corroborations do not enter the final lower bounds.
 
-The [completed rank-28 archive](data/ordinary/rank28_completed.zip) and [its projection onto the optimized conditions](code/compare28.py) supply a separate comparison. The native and arbitrary-precision kernels can be compared on the same problems with [the kernel regression test](optimized/test_engine.py).
+The [full continuation](frontier31.py) has 1,234 jobs. The seed contains 1,090, the fourteen-fours theorem closes 46, and 98 are unresolved. Each remaining job has square dimension, largest simple degree one quarter of the square root, and at most thirteen objects of this degree. Check these counts in a fresh directory with `python3 frontier31.py --prepare-only --work rank-work/seed-audit`. Start or resume with `python3 frontier31.py --jobs 4`. A completed run writes `rank-work/31/rank31_completed.zip`. The command `python3 frontier31.py --verify rank-work/31/rank31_completed.zip` checks this return.
 
-## Continuing at rank 31
-
-```sh
-python3 frontier31.py --jobs 12
-```
-
-The [bundled seed](data/rank31/rank31_seed.zip) covers 1,090 jobs. The [fourteen-fours certificate](rank31_fourteen.py) closes another 46. The remaining 98 have square dimension and largest degree one quarter of its square root. The same command resumes an interrupted run. A complete run writes `rank-work/31/rank31_completed.zip`. Check it with `python3 frontier31.py --verify rank-work/31/rank31_completed.zip`.
-
-## Mathematical inputs
-
-The [prime-family catalogue](code/catalogue.py), [complementary twist fibers](code/fiber_packets.py), [generator activity](code/generator_activity.py), [indicator divisibility](code/regular_indicator.py), and [combined exclusion test](code/current_screen.py) implement necessary conditions. The [historical statement index](supplement/BDP-statement-index.tsv) records labels, theorem numbers and pages of the [229-page coauthor edition](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/papers/Manuscript.pdf). Its finite word and four-prime tests are available in the [main verification directory](../code/README.md#prime-factor-families). Earlier generator versions are retained where archived receipts use them.
+The [229-page comparison index](supplement/BDP-statement-index-229p.tsv) is historical. The [statement index for this release](../certificates/statement-index.tsv) is generated directly from the final cross-references.

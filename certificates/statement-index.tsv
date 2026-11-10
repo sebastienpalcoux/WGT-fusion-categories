@@ -1,0 +1,927 @@
+source_label	pdf_destination	printed_number	page	title_TeX
+fam:M:sec:1	section.1	1	1	Introduction
+thm:intro-two-free	theorem.1.1	1.1	1	Two unrestricted prime powers
+fam:M:1.1	theorem.1.1	1.1	1	Two unrestricted prime powers
+tab:intro-bounds	table.1	1	2	Dimension bounds for weakly integral fusion categories (Theorem~\ref {thm:uniform-new-bounds})
+tab:intro-ranks	table.2	2	2	Lower bounds on rank. Each column specifies the parity of the Frobenius--Perron dimension
+sec:intro-dimension-families	section*.6		3	Index of the families
+tab:intro-family-index	table.3	3	3	Index of infinite families and their conclusions
+fam:M:sec:2	section.2	2	5	Reduction to a simple character table
+sec:wgt-preliminaries	section.2	2	5	Reduction to a simple character table
+fam:M:2.1	theorem.2.1	2.1	5	Minimal counterexample
+lem:minimal	theorem.2.1	2.1	5	Minimal counterexample
+lem:proper-divisor-reduction	theorem.2.1	2.1	5	Minimal counterexample
+lem:minimal-counterexample-simple	theorem.2.1	2.1	5	Minimal counterexample
+def:symmetric-integral-data	theorem.2.2	2.2	5	Symmetric integral character data
+eq:wgt-modular-data	equation.2.1	2.1	5	Symmetric integral character data
+eq:fusion-coefficient-trace	equation.2.2	2.2	5	Symmetric integral character data
+eq:galois-permutations	equation.2.3	2.3	6	Symmetric integral character data
+tab:proof-inputs	table.4	4	6	Hypotheses used in passing from character data to dimension and rank bounds
+fam:M:2.2	theorem.2.3	2.3	6	LCM energy and prime companions
+prop:braided-lcm	theorem.2.3	2.3	6	LCM energy and prime companions
+fam:M:2.3	theorem.2.4	2.4	7	Averaging over a character orbit
+deep:field-energy	theorem.2.4	2.4	7	Averaging over a character orbit
+r8:trace-norm	theorem.2.4	2.4	7	Averaging over a character orbit
+fam:Q:2.1	theorem.2.4	2.4	7	Averaging over a character orbit
+fam:Q:n:q12:orbit	theorem.2.4	2.4	7	Averaging over a character orbit
+eq:r8-tracenorm	equation.2.4	2.4	7	Averaging over a character orbit
+eq:r8-tracedim	equation.2.5	2.5	7	Averaging over a character orbit
+eq:disjoint-energy	equation.2.6	2.6	7	Reduction to a simple character table
+fam:M:2.4	theorem.2.5	2.5	7	Zeros and square-fullness
+lem:tables	theorem.2.5	2.5	7	Zeros and square-fullness
+lem:galois-row-bound	theorem.2.5	2.5	7	Zeros and square-fullness
+lem:perfect-data-squarefull	theorem.2.5	2.5	7	Zeros and square-fullness
+lem:strict-eigenvalues	theorem.2.5	2.5	7	Zeros and square-fullness
+lem:odd-codegrees-duality	theorem.2.5	2.5	7	Zeros and square-fullness
+eq:reduced-unit-orthogonality	equation.2.7	2.7	8	Reduction to a simple character table
+lem:small-ordinary-codegrees	theorem.2.6	2.6	8	Small ordinary codegrees
+fam:M:sec:2.1	subsection.2.1	2.1	8	Fields and residue classes of characters
+eq:character-formal-codegree-general	equation.2.8	2.8	8	Fields and residue classes of characters
+fam:M:2.5	theorem.2.7	2.7	9	The different divides a rational formal codegree
+lem:codifferent	theorem.2.7	2.7	9	The different divides a rational formal codegree
+eq:character-different-divisibility	equation.2.9	2.9	9	The different divides a rational formal codegree
+fam:M:2.6	theorem.2.8	2.8	9	Conductor of a character field
+cor:field-conductor	theorem.2.8	2.8	9	Conductor of a character field
+eq:odd-normalized-different	equation.2.10	2.10	9	Fields and residue classes of characters
+por:th:exact-conductor	theorem.2.9	2.9	9	Conductor at an individual label
+eq:local	equation.2.11	2.11	10	Local projectors
+lem:principal-all-places	theorem.2.10	2.10	10	Principal residues at every prime
+fam:M:2.7	theorem.2.11	2.11	10	Support in the principal residue class
+thm:principal-support	theorem.2.11	2.11	10	Support in the principal residue class
+lem:prime-power-support	theorem.2.11	2.11	10	Support in the principal residue class
+fam:M:2.9	theorem.2.12	2.12	11	A block with a conductor of length one
+lem:conductor-node	theorem.2.12	2.12	11	A block with a conductor of length one
+fam:M:2.10	theorem.2.13	2.13	11	The block of a defect-one character
+seq:odd-defect-one	theorem.2.13	2.13	11	The block of a defect-one character
+lem:class	theorem.2.13	2.13	11	The block of a defect-one character
+prop:principal-defect-one-general	theorem.2.13	2.13	11	The block of a defect-one character
+lem:one-defect-block	theorem.2.13	2.13	11	The block of a defect-one character
+lem:two-adic-defect-one-rank	theorem.2.13	2.13	11	The block of a defect-one character
+lem:even-rank-defect-one	theorem.2.13	2.13	11	The block of a defect-one character
+fam:M:sec:3	section.3	3	11	Prime blocks and primary twists
+sec:blocks	section.3	3	11	Prime blocks and primary twists
+lem:rotation-congruences	theorem.3.1	3.1	12	Rotation with a central insertion
+eq:large-power	equation.3.1	3.1	12	Rotation with a central insertion
+eq:mixed-rotation	equation.3.2	3.2	12	Rotation with a central insertion
+eq:indicator-entry	equation.3.3	3.3	12	Rotation with a central insertion
+fam:M:3.1	theorem.3.2	3.2	12	Block orthogonality
+thm:block	theorem.3.2	3.2	12	Block orthogonality
+thm:zero	theorem.3.2	3.2	12	Block orthogonality
+lem:reduced-block	theorem.3.2	3.2	12	Block orthogonality
+lem:reduced-two-block	theorem.3.2	3.2	12	Block orthogonality
+eq:zero	equation.3.4	3.4	12	Block orthogonality
+eq:block-projector-mass	equation.3.5	3.5	13	Prime blocks and primary twists
+fam:M:3.2	theorem.3.3	3.3	13	Local modular action on residue blocks
+lem:local-block-invariance	theorem.3.3	3.3	13	Local modular action on residue blocks
+fam:M:sec:3.1	subsection.3.1	3.1	13	When two primes never occur in the same twist
+fam:M:3.3	theorem.3.4	3.4	13	Twist primes seen by a row
+lem:complement	theorem.3.4	3.4	13	Twist primes seen by a row
+fam:M:3.4	theorem.3.5	3.5	14	Cauchy and vanishing at odd primes
+lem:reduced-cauchy	theorem.3.5	3.5	14	Cauchy and vanishing at odd primes
+fam:M:sec:3.2	subsection.3.2	3.2	14	Twist orders and individual codegrees
+fam:M:3.5	theorem.3.6	3.6	14	Twist orders and formal codegrees
+thm:twistdiv	theorem.3.6	3.6	14	Twist orders and formal codegrees
+fam:M:sec:3.3	subsection.3.3	3.3	15	Mass of a primary twist sector
+sec:twist-mass	subsection.3.3	3.3	15	Mass of a primary twist sector
+fam:M:3.6	theorem.3.7	3.7	15	Mass and overlap of two label sets
+mass	theorem.3.7	3.7	15	Mass and overlap of two label sets
+fam:M:3.7	theorem.3.8	3.8	15	Mass from a generating simple
+th:fs	theorem.3.8	3.8	15	Mass from a generating simple
+fam:M:3.8	theorem.3.9	3.9	15	Odd-valuation slices
+prop:blockwise-odd-slice	theorem.3.9	3.9	15	Odd-valuation slices
+prop:odd-slice	theorem.3.9	3.9	15	Odd-valuation slices
+fam:M:3.9	theorem.3.10	3.10	16	The two masses in a defect-one block
+cor:defect-one-orbit-masses	theorem.3.10	3.10	16	The two masses in a defect-one block
+lem:quintic-common-class	theorem.3.11	3.11	16	The visible class at defect one
+fam:M:sec:4	section.4	4	16	Principal defects and fermion quotients
+sec:three	section.4	4	16	Principal defects and fermion quotients
+fam:M:sec:4.1	subsection.4.1	4.1	16	The first possible principal defect
+fam:M:4.1	theorem.4.1	4.1	16	Principal valuation bound
+cor:principal-valuation-bound	theorem.4.1	4.1	16	Principal valuation bound
+cor:principal-cubic	theorem.4.1	4.1	16	Principal valuation bound
+fam:M:4.2	theorem.4.2	4.2	17	Prime avoidance on a principal block
+prop:principal-support	theorem.4.2	4.2	17	Prime avoidance on a principal block
+prop:principal-common-divisor	theorem.4.2	4.2	17	Prime avoidance on a principal block
+fam:M:4.3	theorem.4.3	4.3	17	A mixed-defect block bound
+prop:mixed-discriminant-budget	theorem.4.3	4.3	17	A mixed-defect block bound
+fam:M:sec:4.2	subsection.4.2	4.2	17	The cubic exponent at two
+subsec:cubic-two-signed	subsection.4.2	4.2	17	The cubic exponent at two
+fam:M:4.4	theorem.4.4	4.4	17	An integral minimal modular extension
+lem:integral-minimal-extension	theorem.4.4	4.4	17	An integral minimal modular extension
+fam:M:4.5	theorem.4.5	4.5	18	The two fermion quotients
+lem:fermion-quotients	theorem.4.5	4.5	18	The two fermion quotients
+eq:fermion-restriction-codegree	equation.4.1	4.1	18	The two fermion quotients
+eq:principal-fermion-masses	equation.4.2	4.2	18	The two fermion quotients
+eq:graded-orthogonality	equation.4.3	4.3	18	The cubic exponent at two
+tab:fermion-dictionary	table.5	5	19	Dimension, codegree and matrix conventions. In the lower panel $s=S^{\mathcal M}/(2\sqrt \Delta )$
+lem:odd-principal-lift	theorem.4.6	4.6	19	Principal lifts at odd primes
+fam:M:4.6	theorem.4.7	4.7	19	Unramified signed characters from sign-only twists
+lem:signed-unramified-sign-twists	theorem.4.7	4.7	19	Unramified signed characters from sign-only twists
+fam:M:4.7	theorem.4.8	4.8	20	Odd supports in the principal two-block
+three:odd-reduced	theorem.4.8	4.8	20	Odd supports in the principal two-block
+lem:fermion-no-pair-degree	theorem.4.8	4.8	20	Odd supports in the principal two-block
+lem:principal-fermion-two	theorem.4.8	4.8	20	Odd supports in the principal two-block
+prop:cubic-two-exclusion	theorem.4.8	4.8	20	Odd supports in the principal two-block
+mass:section	subsection.4.3	4.3	20	Minimum positive mass and exposed faces
+mass:thm:mass	theorem.4.9	4.9	20	
+mass:thm:expose	theorem.4.10	4.10	21	
+lem:cyclotomic-optimum	theorem.4.11	4.11	21	Contraction and equality for a positive cyclotomic expression
+fam:M:sec:4.3	subsection.4.4	4.4	22	Short cyclotomic sums and complementary principal labels
+fam:M:4.8	theorem.4.12	4.12	22	Inertia forced by several positive residues
+deep:positive-inertia	theorem.4.12	4.12	22	Inertia forced by several positive residues
+fam:M:4.9	theorem.4.13	4.13	22	Short cyclotomic sums with one or two positive residues
+first:balance	theorem.4.13	4.13	22	Short cyclotomic sums with one or two positive residues
+seq:two-positive	theorem.4.13	4.13	22	Short cyclotomic sums with one or two positive residues
+three:word	theorem.4.13	4.13	22	Short cyclotomic sums with one or two positive residues
+fam:M:4.10	theorem.4.14	4.14	23	Complementary principal degrees at three primes
+three:complementary	theorem.4.14	4.14	23	Complementary principal degrees at three primes
+prop:quartic-complementary-principal	theorem.4.14	4.14	23	Complementary principal degrees at three primes
+fam:M:4.11	theorem.4.15	4.15	24	The two-adic height in a reduced table
+prop:reduced-quartic-two-exclusion	theorem.4.15	4.15	24	The two-adic height in a reduced table
+fam:M:sec:4.4	subsection.4.5	4.5	24	The uniform theorem and separation criteria
+fam:M:4.12	theorem.4.16	4.16	24	Three primes with a small exponent
+thm:three	theorem.4.16	4.16	24	Three primes with a small exponent
+thm:three-odd-cube-general	theorem.4.16	4.16	24	Three primes with a small exponent
+lem:support-escape	theorem.4.17	4.17	24	Escape from a proper set of labels
+fam:M:4.13	theorem.4.18	4.18	24	The gcd of the prime-free degrees
+prop:prime-free-gcd	theorem.4.18	4.18	24	The gcd of the prime-free degrees
+new:leak	theorem.4.18	4.18	24	The gcd of the prime-free degrees
+fam:M:4.14	theorem.4.19	4.19	24	Separation criterion
+prop:three-separation	theorem.4.19	4.19	24	Separation criterion
+eq:three-separation	equation.4.4	4.4	24	Separation criterion
+fam:M:sec:4.5	subsection.4.6	4.6	25	Common divisors and the primes of a minimal table
+fam:Q:2.2	theorem.4.20	4.20	25	Common constituents and difference sets
+fam:Q:n:lim:diff	theorem.4.20	4.20	25	Common constituents and difference sets
+mass:witness	equation.4.5	4.5	26	The complementary phase at a failed exposure
+mass:prop:transfer	theorem.4.21	4.21	26	
+fam:Q:2.3	theorem.4.22	4.22	26	Descent on the number of differences
+fam:Q:n:lem:j11-descent	theorem.4.22	4.22	26	Descent on the number of differences
+lem:principal-crossing-prime-bound	theorem.4.23	4.23	26	A prime bound from a common divisor
+fam:M:4.16	theorem.4.24	4.24	27	Degrees six and ten
+lem:sixseven	theorem.4.24	4.24	27	Degrees six and ten
+found:T:5	subsection.4.7	4.7	27	Two principal blocks at the same witness
+found:T:5.1	theorem.4.25	4.25	27	
+found:T:key:lem:separated-double-principal	theorem.4.25	4.25	27	
+lem:fermion-singleton-lift	theorem.4.26	4.26	27	Lifting a positive singleton at two
+fam:M:sec:5	section.5	5	28	Ramification and higher defects
+sec:higher-defect	section.5	5	28	Ramification and higher defects
+fam:M:sec:5.2	subsection.5.1	5.1	28	Ramification and residue energy
+fam:M:5.3	theorem.5.1	5.1	28	Energy at a prescribed prime residue
+thm:cyclotomic-residue-energy	theorem.5.1	5.1	28	Energy at a prescribed prime residue
+prop:odd-defect-filtration	theorem.5.1	5.1	28	Energy at a prescribed prime residue
+lem:singleton-residue-energy	theorem.5.1	5.1	28	Energy at a prescribed prime residue
+lem:codegree-four-residue-energy	theorem.5.1	5.1	28	Energy at a prescribed prime residue
+fam:M:5.5	theorem.5.2	5.2	29	Conductor and row budget
+cor:table-defect-filtration	theorem.5.2	5.2	29	Conductor and row budget
+prop:defect-filtration-energy	theorem.5.2	5.2	29	Conductor and row budget
+cor:mixed-block-general-energy	theorem.5.2	5.2	29	Conductor and row budget
+eq:merged-row-budget	equation.5.1	5.1	29	Conductor and row budget
+fam:M:5.6	theorem.5.3	5.3	29	Small budgets and forced hits
+cor:defect-two-energy-stratum	theorem.5.3	5.3	29	Small budgets and forced hits
+cor:three-prime-mixed-energy	theorem.5.3	5.3	29	Small budgets and forced hits
+fam:M:sec:5.3	subsection.5.2	5.2	30	Degrees at a prime-square codegree
+fam:M:5.7	theorem.5.4	5.4	30	Degrees supporting a nonzero trace
+prop:quartic-two-codegree4	theorem.5.4	5.4	30	Degrees supporting a nonzero trace
+prop:quartic-prime-top-codegree	theorem.5.4	5.4	30	Degrees supporting a nonzero trace
+prop:quartic-five-codegree25	theorem.5.4	5.4	30	Degrees supporting a nonzero trace
+fam:M:sec:6	section.6	6	30	Local Weyl columns at separated primes
+subsec:sqvac	section.6	6	30	Local Weyl columns at separated primes
+por:th:weyl-div	theorem.6.1	6.1	30	The degree-normalized vacuum column
+fam:M:6.1	theorem.6.2	6.2	31	Vacuum entry and local support
+lem:local-vacuum-column	theorem.6.2	6.2	31	Vacuum entry and local support
+fam:M:6.2	theorem.6.3	6.3	31	Weyl columns on separated prime sets
+deep:cluster	theorem.6.3	6.3	31	Weyl columns on separated prime sets
+deep:separated-inertia	theorem.6.3	6.3	31	Weyl columns on separated prime sets
+eq:weylsplit	equation.6.1	6.1	31	Weyl columns on separated prime sets
+fam:M:6.3	theorem.6.4	6.4	32	Simultaneous singleton identities
+second:two-columns	theorem.6.4	6.4	32	Simultaneous singleton identities
+eq:isolated-deficit	equation.6.2	6.2	32	Simultaneous singleton identities
+eq:budget	equation.6.3	6.3	32	Simultaneous singleton identities
+fam:M:6.4	theorem.6.5	6.5	32	An isolated prime with unit vacuum deficit
+lem:singleton	theorem.6.5	6.5	32	An isolated prime with unit vacuum deficit
+eq:singleton	equation.6.4	6.4	32	An isolated prime with unit vacuum deficit
+fam:M:6.5	theorem.6.6	6.6	33	Column norm on isolated row sets
+lem:singleton-energy	theorem.6.6	6.6	33	Column norm on isolated row sets
+lem:local-integer-column	theorem.6.6	6.6	33	Column norm on isolated row sets
+new:rank-budget	theorem.6.6	6.6	33	Column norm on isolated row sets
+fam:M:6.6	theorem.6.7	6.7	33	Prime supports at an isolated prime
+lem:isolated-dyadic-square	theorem.6.7	6.7	33	Prime supports at an isolated prime
+new:trace	theorem.6.7	6.7	33	Prime supports at an isolated prime
+fam:M:6.8	theorem.6.8	6.8	34	An isolated quartic prime
+fourm:heightone	theorem.6.8	6.8	34	An isolated quartic prime
+fam:W:sec:2	subsection.6.1	6.1	34	A denominator bound for local Weyl columns
+fam:W:2.1	theorem.6.9	6.9	34	Denominators of a complementary Weyl product
+fam:W:n:thm:foreign-column	theorem.6.9	6.9	34	Denominators of a complementary Weyl product
+lem:tetrahedral-weyl	theorem.6.10	6.10	35	The tetrahedral Weyl matrix
+por:tools	subsection.6.2	6.2	35	Local Weyl coefficients and twist masses
+por:prop:separated-high-row	theorem.6.11	6.11	35	
+por:pr:fejer	theorem.6.12	6.12	36	
+por:orbitbound	theorem.6.13	6.13	37	
+fam:M:sec:7	section.7	7	37	Three ordered prime powers
+sec:three-ordered	section.7	7	37	Three ordered prime powers
+fam:M:sec:7.1	subsection.7.1	7.1	37	Quartic primes below the largest prime
+fam:M:7.1	theorem.7.1	7.1	37	Separation at a quartic prime
+first:separate	theorem.7.1	7.1	37	Separation at a quartic prime
+fam:M:7.2	theorem.7.2	7.2	37	An isolated quartic in a three-prime table
+first:isolate	theorem.7.2	7.2	37	An isolated quartic in a three-prime table
+fam:M:7.3	theorem.7.3	7.3	37	A quartic below a larger prime
+seq:smaller-quartic	theorem.7.3	7.3	37	A quartic below a larger prime
+next:quartic2	theorem.7.3	7.3	37	A quartic below a larger prime
+thm:first	theorem.7.3	7.3	37	A quartic below a larger prime
+seq:quartic-any	theorem.7.3	7.3	37	A quartic below a larger prime
+fam:M:sec:7.2	subsection.7.2	7.2	38	Twist phases at maximal height
+fam:M:7.4	theorem.7.4	7.4	38	An odd-order phase cannot be missing
+seq:missing-odd	theorem.7.4	7.4	38	An odd-order phase cannot be missing
+fam:M:7.5	theorem.7.5	7.5	39	Dyadic twists seen by a defect-one row
+seq:dyadic-pair	theorem.7.5	7.5	39	Dyadic twists seen by a defect-one row
+eq:dyadic-bruhat-mass	equation.7.1	7.1	39	Twist phases at maximal height
+fam:M:7.6	theorem.7.6	7.6	39	Two dyadic twists force an invertible
+seq:two-phase	theorem.7.6	7.6	39	Two dyadic twists force an invertible
+fam:M:7.7	theorem.7.7	7.7	39	A uniform odd-sector spin
+seq:fermion-one-spin	theorem.7.7	7.7	39	A uniform odd-sector spin
+fam:M:7.8	theorem.7.8	7.8	40	Twist activity in an invariant fiber
+lem:odd-valuation-joint-twist	theorem.7.8	7.8	40	Twist activity in an invariant fiber
+lem:visible-phase-transfer	theorem.7.9	7.9	40	Propagation from visible phases
+lem:short-tame-orbit	theorem.7.10	7.10	40	Tame orbits of a short positive word
+fam:M:sec:7.3	subsection.7.3	7.3	41	The two companion exponents
+fam:M:7.9	theorem.7.11	7.11	41	A prime-power codegree at maximal least-prime height
+three:height	theorem.7.11	7.11	41	A prime-power codegree at maximal least-prime height
+seq:odd-five-five	theorem.7.11	7.11	41	A prime-power codegree at maximal least-prime height
+range	theorem.7.11	7.11	41	A prime-power codegree at maximal least-prime height
+seq:ordinary-five	theorem.7.11	7.11	41	A prime-power codegree at maximal least-prime height
+lem:odd-visible-phases	theorem.7.12	7.12	41	Propagation to odd fermion orbits
+cor:complementary-singleton-spins	theorem.7.13	7.13	41	Complementary singleton witnesses
+fam:M:7.10	theorem.7.14	7.14	42	A fermion core with an odd companion valuation
+seq:reduceddyadic5	theorem.7.14	7.14	42	A fermion core with an odd companion valuation
+fam:M:7.11	theorem.7.15	7.15	42	Lifting the companion exponents
+three:least-height	theorem.7.15	7.15	42	Lifting the companion exponents
+three:unrestricted-middle	theorem.7.15	7.15	42	Lifting the companion exponents
+three:excess	theorem.7.15	7.15	42	Lifting the companion exponents
+seq:quintic-any	theorem.7.15	7.15	42	Lifting the companion exponents
+fam:M:sec:7.4	subsection.7.4	7.4	42	The largest quartic prime
+three:trace	equation.7.2	7.2	42	The largest quartic prime
+fam:M:7.12	theorem.7.16	7.16	43	Complementary fields at a quintic middle prime
+three:sextic-gate	theorem.7.16	7.16	43	Complementary fields at a quintic middle prime
+sec:fermion-block-transfer	subsection.7.5	7.5	43	Dyadic blocks of a fermion centralizer
+lem:positive-defect-one-phases	theorem.7.17	7.17	43	Positive defect one and the dyadic level
+lem:signed-dyadic-pair	theorem.7.18	7.18	44	Signed blocks at dyadic level dividing eight
+eq:fermion-dyadic-transfer	equation.7.3	7.3	44	Dyadic blocks of a fermion centralizer
+fam:Q:sec:1	section.8	8	45	Three repeated primes with a quartic or quintic exponent
+fam:Q:1.1	theorem.8.1	8.1	45	Three bounded exponents
+fam:F:3.2	theorem.8.1	8.1	45	Three bounded exponents
+fam:F:n:754	theorem.8.1	8.1	45	Three bounded exponents
+fam:Q:n:q13:654	theorem.8.1	8.1	45	Three bounded exponents
+fam:Q:n:test	equation.8.1	8.1	45	Three repeated primes with a quartic or quintic exponent
+fam:Q:1.2	theorem.8.2	8.2	45	
+fam:Q:n:quart:main	theorem.8.2	8.2	45	
+fam:Q:1.3	theorem.8.3	8.3	46	A quintic and two unrestricted exponents
+fam:Q:n:q12:unified	theorem.8.3	8.3	46	A quintic and two unrestricted exponents
+fam:Q:sec:2	subsection.8.1	8.1	46	Character values and tensor products
+fam:Q:2.4	theorem.8.4	8.4	46	An odd word of prime weight
+fam:Q:n:lem:oddword	theorem.8.4	8.4	46	An odd word of prime weight
+fam:Q:2.5	theorem.8.5	8.5	47	A single residue in odd order
+fam:Q:n:q12:positive	theorem.8.5	8.5	47	A single residue in odd order
+found:C:5	subsection.8.2	8.2	47	A prime-weight crossing with one zero residue
+found:C:5.1	theorem.8.6	8.6	47	
+found:C:key:new:zero	theorem.8.6	8.6	47	
+fam:Q:sec:3	subsection.8.3	8.3	48	Proof for arbitrary exponents
+fam:Q:3.1	theorem.8.7	8.7	48	The unrestricted odd case
+fam:Q:n:quart:alternative	theorem.8.7	8.7	48	The unrestricted odd case
+fam:Q:n:eq:inertia-product	equation.8.2	8.2	49	Proof for arbitrary exponents
+fam:A:exposed	theorem.8.8	8.8	50	A finite test at one row
+fam:A:strips	theorem.8.9	8.9	51	
+fam:Q:sec:4	subsection.8.4	8.4	51	Small exponents and even dimensions
+fam:Q:n:sec:small	subsection.8.4	8.4	51	Small exponents and even dimensions
+fam:Q:4.1	theorem.8.10	8.10	51	A bounded exponent and a large companion prime
+fam:Q:n:quart:five	theorem.8.10	8.10	51	A bounded exponent and a large companion prime
+fam:Q:4.2	theorem.8.11	8.11	52	
+fam:Q:n:quart:parity	theorem.8.11	8.11	52	
+fam:Q:4.3	theorem.8.12	8.12	52	A middle-prime test independent of the largest prime
+fam:Q:n:q13:midtest	theorem.8.12	8.12	52	A middle-prime test independent of the largest prime
+fam:Q:4.4	theorem.8.13	8.13	53	Transport of deep quartic twists
+fam:Q:sec:5	subsection.8.5	8.5	53	A quintic valuation
+fam:Q:n:q12:quintic-section	subsection.8.5	8.5	53	A quintic valuation
+fam:Q:5.1	theorem.8.14	8.14	53	Gauss sums at a quadratic class
+fam:Q:n:q12:stratified	theorem.8.14	8.14	53	Gauss sums at a quadratic class
+fam:Q:6.6	theorem.8.15	8.15	53	Exceptional labels and principal inertia
+fam:Q:n:quart:gauss	theorem.8.15	8.15	53	Exceptional labels and principal inertia
+fam:Q:6.7	theorem.8.15	8.15	53	Exceptional labels and principal inertia
+fam:Q:n:quart:orbitcount	theorem.8.15	8.15	53	Exceptional labels and principal inertia
+fam:Q:5.2	theorem.8.16	8.16	54	A trace on the trivial twist fiber
+fam:Q:n:q13:filtered	theorem.8.16	8.16	54	A trace on the trivial twist fiber
+fam:Q:5.3	theorem.8.17	8.17	55	An odd quintic with two complementary witnesses
+fam:Q:n:q13:common	theorem.8.17	8.17	55	An odd quintic with two complementary witnesses
+fam:Q:5.4	theorem.8.18	8.18	56	A least quintic in odd dimension
+fam:Q:n:q12:quintic	theorem.8.18	8.18	56	A least quintic in odd dimension
+fam:Q:sec:5.1	subsubsection.8.5.1	8.5.1	56	A quintic at the middle prime in odd dimension
+fam:Q:n:q13:middle	subsubsection.8.5.1	8.5.1	56	A quintic at the middle prime in odd dimension
+fam:Q:5.5	theorem.8.19	8.19	56	Short words at the middle prime
+fam:Q:n:q13:middle-small	theorem.8.19	8.19	56	Short words at the middle prime
+fam:Q:5.6	theorem.8.20	8.20	56	A least-prime exponent bound for a middle quintic
+fam:Q:n:q13:middle-wide	theorem.8.20	8.20	56	A least-prime exponent bound for a middle quintic
+fam:Q:sec:5.2	subsubsection.8.5.2	8.5.2	57	The ordinary table at dyadic valuation five
+fam:Q:5.7	theorem.8.21	8.21	57	The mass outside two dyadic phases
+fam:Q:n:q12:dyadic-mass	theorem.8.21	8.21	57	The mass outside two dyadic phases
+lem:dyadic-two-letter-budget	theorem.8.22	8.22	57	The weight-two crossing
+fam:Q:5.8	theorem.8.23	8.23	57	An ordinary quintic at two
+fam:Q:n:q12:ordinary-five	theorem.8.23	8.23	57	An ordinary quintic at two
+fam:Q:sec:5.3	subsubsection.8.5.3	8.5.3	58	The fermion quotient at dyadic valuation five
+fam:Q:n:q12:fermion	subsubsection.8.5.3	8.5.3	58	The fermion quotient at dyadic valuation five
+fam:Q:5.9	theorem.8.24	8.24	58	Sign twists and the principal two-block
+fam:Q:n:q12:fs-square	theorem.8.24	8.24	58	Sign twists and the principal two-block
+lem:dyadic-fiber-projector	theorem.8.25	8.25	59	A squared dyadic twist fiber
+fam:Q:5.10	theorem.8.26	8.26	59	The reduced quintic at two
+fam:Q:n:q12:redfive	theorem.8.26	8.26	59	The reduced quintic at two
+fam:Q:sec:6	subsection.8.6	8.6	60	A quintic at three in even dimension
+fam:Q:6.1	theorem.8.27	8.27	60	Weight three at two and three
+fam:Q:6.2	theorem.8.28	8.28	60	Transfer at two and three
+fam:Q:6.3	theorem.8.29	8.29	61	Three-primary phases at odd valuation
+fam:Q:6.4	theorem.8.30	8.30	61	A pure ternary codegree
+fam:Q:n:quart:pure	theorem.8.30	8.30	61	A pure ternary codegree
+fam:Q:6.5	theorem.8.31	8.31	62	The trace restriction at codegree $27$
+fam:Q:n:quart:twentyseven	theorem.8.31	8.31	62	The trace restriction at codegree $27$
+fam:Q:6.8	theorem.8.32	8.32	62	The odd witness at the ternary quintic
+fam:Q:6.9	theorem.8.33	8.33	62	A sextic dyadic and a quintic companion
+fam:Q:n:quart:sextic	theorem.8.33	8.33	62	A sextic dyadic and a quintic companion
+fam:Q:sec:7	subsection.8.7	8.7	63	An even-dimensional reduction by the fermion
+fam:Q:n:sec:reduced	subsection.8.7	8.7	63	An even-dimensional reduction by the fermion
+fam:Q:7.1	theorem.8.34	8.34	63	
+fam:Q:7.2	theorem.8.35	8.35	63	Odd middle valuation in a reduced table
+fam:Q:7.3	theorem.8.36	8.36	64	Forcing the top dyadic height
+fam:Q:n:q12:septic	theorem.8.36	8.36	64	Forcing the top dyadic height
+fam:F:sec:3	subsection.8.8	8.8	64	A quintic valuation at three in the fermion extension
+fam:F:3.1	theorem.8.37	8.37	64	
+fam:F:n:lifted	theorem.8.37	8.37	64	
+fam:Q:sec:8	subsection.8.9	8.9	65	A principal-block criterion for individual categories
+prop:gauging-principal-descent	theorem.8.38	8.38	65	Principal blocks under gauging of order prime to $r$
+fam:Q:8.1	theorem.8.39	8.39	66	Recognition on the original principal block
+fam:Q:n:quart:recognition	theorem.8.39	8.39	66	Recognition on the original principal block
+por:sec:design	subsection.8.10	8.10	67	Equality in the multiplier criterion
+por:pr:designrigid	theorem.8.40	8.40	67	
+fam:M:sec:8	section.9	9	67	Two squared primes and their local columns
+sec:four	section.9	9	67	Two squared primes and their local columns
+sec:two-squared	section.9	9	67	Two squared primes and their local columns
+fam:M:8.1	theorem.9.1	9.1	67	Heights at the two higher primes
+thm:higher-two-squares	theorem.9.1	9.1	67	Heights at the two higher primes
+main:four	theorem.9.1	9.1	67	Heights at the two higher primes
+seq:four-five	theorem.9.1	9.1	67	Heights at the two higher primes
+fam:M:8.2	theorem.9.2	9.2	68	Three pair degrees
+lem:pair-witness	theorem.9.2	9.2	68	Three pair degrees
+fam:M:8.3	theorem.9.3	9.3	68	Isolation at two squared primes
+prop:isolation	theorem.9.3	9.3	68	Isolation at two squared primes
+prop:four-isolation	theorem.9.3	9.3	68	Isolation at two squared primes
+fam:rank:two-isolated	theorem.9.4	9.4	69	Rank from two isolated primes
+mrk:eq:two-singletons	equation.9.1	9.1	69	Rank from two isolated primes
+fam:M:8.4	theorem.9.5	9.5	69	Two squared primes in the reduced table
+seq:two-odd-squares	theorem.9.5	9.5	69	Two squared primes in the reduced table
+lem:fermion-pair	theorem.9.5	9.5	69	Two squared primes in the reduced table
+fam:M:sec:8.1	subsection.9.1	9.1	69	The two singleton columns
+fam:M:8.5	theorem.9.6	9.6	69	Inertia from principal residues
+fourm:one-residue	theorem.9.6	9.6	69	Inertia from principal residues
+eq:firstestimate	equation.9.2	9.2	70	The two singleton columns
+fam:M:8.6	theorem.9.7	9.7	70	A congruence obstruction on the two repeated prime powers
+fam:M:8.7	theorem.9.8	9.8	70	Bounds for the other three primes
+note:finite	theorem.9.8	9.8	70	Bounds for the other three primes
+eq:finite	equation.9.3	9.3	70	Bounds for the other three primes
+fam:M:8.8	theorem.9.9	9.9	71	Multiplicity at an isolated odd singleton
+seq:no-odd-singleton-five	theorem.9.9	9.9	71	Multiplicity at an isolated odd singleton
+fam:M:8.9	theorem.9.10	9.10	71	A unique complementary degree
+seq:five-larger	theorem.9.10	9.10	71	A unique complementary degree
+new:only-common-pair	theorem.9.10	9.10	71	A unique complementary degree
+fam:M:8.10	theorem.9.11	9.11	71	Three omitted primes
+lem:singleton-triple	theorem.9.11	9.11	71	Three omitted primes
+fam:M:8.11	theorem.9.12	9.12	72	Full valuations under isolation
+seq:sextic-fully-separated	theorem.9.12	9.12	72	Full valuations under isolation
+fam:M:8.12	theorem.9.13	9.13	72	One unrestricted prime and three squares
+seq:one-unrestricted	theorem.9.13	9.13	72	One unrestricted prime and three squares
+thm:four	theorem.9.13	9.13	72	One unrestricted prime and three squares
+fam:M:sec:8.2	subsection.9.2	9.2	72	Trace and norm tests for two higher powers
+fam:M:8.13	theorem.9.14	9.14	72	Trace and Gram constraints on degrees
+fourm:dyadicbudget	theorem.9.14	9.14	72	Trace and Gram constraints on degrees
+seq:end-criterion	theorem.9.14	9.14	72	Trace and Gram constraints on degrees
+fourm:budgettest	equation.9.4	9.4	72	Trace and Gram constraints on degrees
+par:family-feasibility	section*.20		73	The finite feasibility problem
+fam:M:8.14	theorem.9.15	9.15	73	Two trace divisors
+fourm:trace-divisors	theorem.9.15	9.15	73	Two trace divisors
+fourm:divtest	equation.9.5	9.5	73	Two trace divisors
+fam:M:8.15	theorem.9.16	9.16	73	Total height at two higher primes
+fourm:even-total	theorem.9.16	9.16	73	Total height at two higher primes
+new:evenfull	theorem.9.16	9.16	73	Total height at two higher primes
+seq:dyadic-six	theorem.9.16	9.16	73	Total height at two higher primes
+seq:dyadic-quartic-sextic	theorem.9.16	9.16	73	Total height at two higher primes
+fam:M:sec:9	section.10	10	74	Mixed twists and intermediate heights at four primes
+sec:two-isolated	section.10	10	74	Mixed twists and intermediate heights at four primes
+fam:M:sec:9.1	subsection.10.1	10.1	74	The local level and its two moving orbits
+fam:M:9.1	theorem.10.1	10.1	75	
+nov:local-level	theorem.10.1	10.1	75	
+main:singleton-trace-interval	theorem.10.2	10.2	75	The trace interval for a singleton column
+fam:M:9.2	theorem.10.3	10.3	75	The two ramified orbits at an isolated singleton
+nov:bruhat	theorem.10.3	10.3	75	The two ramified orbits at an isolated singleton
+nov:three-deficit	theorem.10.3	10.3	75	The two ramified orbits at an isolated singleton
+fourm:twoorbits	theorem.10.3	10.3	75	The two ramified orbits at an isolated singleton
+main:full-multiplicity	theorem.10.3	10.3	75	The two ramified orbits at an isolated singleton
+fam:M:9.3	theorem.10.4	10.4	77	Two residues at an isolated prime
+prop:singleton-two-residues	theorem.10.4	10.4	77	Two residues at an isolated prime
+fam:M:9.4	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+r6:twopart	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+fam:M:9.5	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+deep:ram-parity	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+fam:M:9.6	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+r6:two-fermat	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+nov:seven	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+thirteen	theorem.10.5	10.5	77	Parity, ramified degrees and singleton orders
+fam:M:9.7	theorem.10.6	10.6	77	Degrees supporting mixed twists
+fourm:mixed-degrees	theorem.10.6	10.6	77	Degrees supporting mixed twists
+fam:M:9.8	theorem.10.7	10.7	78	A single common degree
+fourm:sole	theorem.10.7	10.7	78	A single common degree
+fam:M:sec:9.2	subsection.10.2	10.2	78	Fusion transport and bounds at arbitrary heights
+eq:four-product	equation.10.1	10.1	78	Fusion transport and bounds at arbitrary heights
+fam:M:9.9	theorem.10.8	10.8	78	A forbidden square residue
+new:forbidden-square	theorem.10.8	10.8	78	A forbidden square residue
+fam:M:9.10	theorem.10.9	10.9	78	Transport from an inactive singleton orbit
+new:transport	theorem.10.9	10.9	78	Transport from an inactive singleton orbit
+main:gap-all-heights	theorem.10.10	10.10	79	The two squared primes at arbitrary heights
+fam:M:9.13	theorem.10.10	10.10	79	The two squared primes at arbitrary heights
+r6:both-unrestricted	theorem.10.10	10.10	79	The two squared primes at arbitrary heights
+both-singleton	theorem.10.10	10.10	79	The two squared primes at arbitrary heights
+fam:M:sec:9.3	subsection.10.3	10.3	79	Isolation of a quartic prime
+fam:M:9.14	theorem.10.11	10.11	79	Full isolation at four odd primes
+fourm:isoheight	theorem.10.11	10.11	79	Full isolation at four odd primes
+fourm:isoquart	theorem.10.11	10.11	79	Full isolation at four odd primes
+fam:M:sec:9.4	subsection.10.4	10.4	79	The two higher prime powers in increasing order
+fam:M:9.15	theorem.10.12	10.12	79	The full common degree is absent
+new:no-full-common	theorem.10.12	10.12	79	The full common degree is absent
+fam:M:9.16	theorem.10.13	10.13	80	A quartic exponent at the smaller higher prime
+seq:four-high-common	theorem.10.13	10.13	80	A quartic exponent at the smaller higher prime
+leastquart	theorem.10.13	10.13	80	A quartic exponent at the smaller higher prime
+fourm:leastquart-smallboth	theorem.10.13	10.13	80	A quartic exponent at the smaller higher prime
+fam:M:9.17	theorem.10.14	10.14	80	An unrestricted power at the least odd prime
+r6:least-unrestricted	theorem.10.14	10.14	80	An unrestricted power at the least odd prime
+fam:M:9.18	theorem.10.15	10.15	80	Reduction to an odd sextic root
+cor:four-before-sextic	theorem.10.15	10.15	80	Reduction to an odd sextic root
+fam:M:sec:10	section.11	11	81	Lifting the smaller prime exponents to cubes
+sec:incidence	section.11	11	81	Lifting the smaller prime exponents to cubes
+fam:M:sec:10.1	subsection.11.1	11.1	81	Odd cubic primes and complementary supports
+fam:M:10.1	theorem.11.1	11.1	81	A degree at an odd cubic prime
+lem:cubic-support	theorem.11.1	11.1	81	A degree at an odd cubic prime
+fam:M:10.2	theorem.11.2	11.2	81	Small exponents at four repeated primes
+prop:four-cube-square	theorem.11.2	11.2	81	Small exponents at four repeated primes
+cor:four-cubic-support	theorem.11.2	11.2	81	Small exponents at four repeated primes
+lem:designated-square-descent	theorem.11.3	11.3	81	Divisor descent for designated squares
+fam:M:10.3	theorem.11.4	11.4	82	Lifting squared primes to cubes
+thm:cubic-lift	theorem.11.4	11.4	82	Lifting squared primes to cubes
+thm:four-cubics	theorem.11.4	11.4	82	Lifting squared primes to cubes
+cor:four-at-most-three	theorem.11.4	11.4	82	Lifting squared primes to cubes
+fam:M:sec:12	section.12	12	82	Four odd primes at root heights three and two
+subsec:four-sextic	section.12	12	82	Four odd primes at root heights three and two
+fam:M:12.2	theorem.12.1	12.1	83	Axis heights forced by a ramified common degree
+fourm:ram-B-axes	theorem.12.1	12.1	83	Axis heights forced by a ramified common degree
+fam:M:12.3	theorem.12.2	12.2	83	The least prime three
+r6:sextic-three	theorem.12.2	12.2	83	The least prime three
+fam:M:sec:12.1	subsection.12.1	12.1	83	Common degrees when the least prime is at least five
+fam:M:12.4	theorem.12.3	12.3	83	
+nov:lessbp2	theorem.12.3	12.3	83	
+fam:M:12.9	theorem.12.4	12.4	84	The odd sextic root
+fourm:common-fields	theorem.12.4	12.4	84	The odd sextic root
+fourm:residue-distance	equation.12.1	12.1	84	Common degrees when the least prime is at least five
+fam:W:sec:5	section.13	13	86	Four repeated primes with an unrestricted exponent
+fam:W:n:sec:four-next	section.13	13	86	Four repeated primes with an unrestricted exponent
+fam:W:1.2	theorem.13.1	13.1	86	
+fam:W:n:thm:unbounded	theorem.13.1	13.1	86	
+fam:W:sec:5.1	subsection.13.1	13.1	86	An arbitrary exponent at the larger of two higher primes
+fam:W:dyadic-boxes	section*.21		87	The two dyadic exponent boxes
+fam:rank:dyadic-legendre	theorem.13.2	13.2	87	A dyadic family with two unrestricted exponents
+sub:residue-lift	section.14	14	87	Residue conditions at two isolated primes
+merge:residue-group	subsection.14.1	14.1	88	A residue criterion for the two higher exponents
+ext:lem:quadratic-pair	theorem.14.1	14.1	89	
+sec:finite-four-windows	subsection.14.2	14.2	90	Finite windows with one unbounded height
+fam:W:sec:1	section.15	15	93	Five repeated primes and local Weyl columns
+fam:W:1.1	theorem.15.1	15.1	93	
+fam:W:n:thm:main	theorem.15.1	15.1	93	
+lem:intersecting-degree-edges	theorem.15.2	15.2	93	Intersecting degree supports
+fam:M:sec:10.2	subsection.15.1	15.1	93	The square of a product of five primes
+seq:five-section	subsection.15.1	15.1	93	The square of a product of five primes
+fam:M:10.4	theorem.15.3	15.3	93	
+seq:five-squares	theorem.15.3	15.3	93	
+fam:M:10.5	theorem.15.4	15.4	93	Solvability without a braiding assumption
+thm:sq30030	theorem.15.4	15.4	93	Solvability without a braiding assumption
+ext:support:local	theorem.15.5	15.5	94	
+fam:F:sec:2	subsection.15.3	15.3	95	A cube and two squares among five primes
+fam:F:2.1	theorem.15.6	15.6	95	Two squares beside a cube
+fam:F:n:f14:five	theorem.15.6	15.6	95	Two squares beside a cube
+fam:F:sec:5.8	subsubsection.15.3.1	15.3.1	96	Four squares beside an unrestricted power
+fam:F:5.12	theorem.15.7	15.7	96	Five-prime lifting
+fam:F:n:liftfour	theorem.15.7	15.7	96	Five-prime lifting
+fam:F:sec:4	subsection.15.4	15.4	96	The slightly degenerate case of one quartic and four squares
+fam:F:n:red	subsection.15.4	15.4	96	The slightly degenerate case of one quartic and four squares
+fam:F:4.1	theorem.15.8	15.8	96	A quartic two and four odd squares
+fam:F:sec:5	subsection.15.5	15.5	97	One quartic and four squares in the ordinary case
+fam:F:n:ordinary	subsection.15.5	15.5	97	One quartic and four squares in the ordinary case
+fam:F:5.2	theorem.15.9	15.9	97	
+fam:F:n:cost	theorem.15.9	15.9	97	
+fam:F:sec:5.1	subsubsection.15.5.1	15.5.1	98	Which primes can mix
+fam:F:5.3	theorem.15.10	15.10	98	The unique possible mixed pair
+fam:F:5.4	theorem.15.10	15.10	98	The unique possible mixed pair
+fam:F:5.5	theorem.15.10	15.10	98	The unique possible mixed pair
+fam:F:sec:5.2	subsubsection.15.5.2	15.5.2	99	A quartic at two
+fam:F:5.7	theorem.15.11	15.11	99	Separation among four odd squares
+fam:F:n:f14:oddsep	theorem.15.11	15.11	99	Separation among four odd squares
+fam:F:5.8	theorem.15.12	15.12	99	
+fam:F:sec:5.4	subsubsection.15.5.3	15.5.3	99	All five primes isolated
+fam:F:5.9	theorem.15.13	15.13	99	No intermediate height at an isolated odd quartic
+fam:F:n:lem:isolated-quartic-odd-height	theorem.15.13	15.13	99	No intermediate height at an isolated odd quartic
+fam:C:sec:2	subsection.15.6	15.6	100	Three isolated primes in odd dimension
+fam:C:2.1	theorem.15.14	15.14	100	Centered Weyl column for a separated set of odd primes
+fam:C:n:centered	theorem.15.14	15.14	100	Centered Weyl column for a separated set of odd primes
+fam:C:2.2	theorem.15.15	15.15	101	Three isolated prime positions with full complementary degrees
+fam:C:n:f15:three-corners	theorem.15.15	15.15	101	Three isolated prime positions with full complementary degrees
+fam:C:2.3	theorem.15.16	15.16	101	Odd roots with five repeated primes
+fam:C:n:f15:odd-mixed	theorem.15.16	15.16	101	Odd roots with five repeated primes
+fam:C:sec:3	subsection.15.7	15.7	102	Full isolation in odd dimension
+fam:C:3.1	theorem.15.17	15.17	102	Two axes at an isolated quartic
+fam:C:3.2	theorem.15.18	15.18	102	Crossings of two quartic axes
+fam:C:n:matching	theorem.15.18	15.18	102	Crossings of two quartic axes
+fam:C:3.3	theorem.15.19	15.19	102	No remaining quartic axes in odd dimension
+fam:C:sec:4	subsection.15.8	15.8	103	The remaining odd configuration
+fam:C:4.1	theorem.15.20	15.20	103	The three isolated primes beside a mixed quartic
+fam:W:sec:3	subsection.15.9	15.9	103	The odd five-prime root
+fam:W:sec:3.1	subsubsection.15.9.1	15.9.1	104	The three-prime cycle
+fam:W:n:sec:orbits	subsubsection.15.9.1	15.9.1	104	The three-prime cycle
+fam:W:sec:3.2	subsubsection.15.9.1	15.9.1	104	The three-prime cycle
+fam:W:sec:4	subsection.15.10	15.10	105	A squared prime two
+ext:section	section.16	16	106	Extending the support by new prime powers
+ext:sec:two-free-crossing	subsection.16.1	16.1	106	Two unrestricted exponents
+ext:lem:two-free-crossing	theorem.16.1	16.1	106	
+ext:prop:crossing-certificates	theorem.16.2	16.2	107	
+ext:cor:five-two-free	theorem.16.3	16.3	107	
+ext:gap:adjoin	theorem.16.4	16.4	108	
+found:D:2	subsection.16.3	16.3	108	Bounding a prime exponent
+lem:factorial-spectral	theorem.16.5	16.5	108	Factorial spectral projector
+found:D:2.1	theorem.16.6	16.6	108	
+found:D:key:th:exponent	theorem.16.6	16.6	108	
+found:D:3	subsection.16.4	16.4	109	A finite reduction for a fixed complementary factor
+found:P:3	subsection.16.4	16.4	109	A finite reduction for a fixed complementary factor
+found:P:3.1	subsection.16.4	16.4	109	A finite reduction for a fixed complementary factor
+found:P:key:thm:cofactor	subsection.16.4	16.4	109	A finite reduction for a fixed complementary factor
+found:D:cofactor-unified	theorem.16.7	16.7	110	Fixed complementary factor
+found:D:3.1	theorem.16.7	16.7	110	Fixed complementary factor
+found:D:key:cor:prime	theorem.16.7	16.7	110	Fixed complementary factor
+found:P:3.2	theorem.16.7	16.7	110	Fixed complementary factor
+found:P:key:cor:promotion	theorem.16.7	16.7	110	Fixed complementary factor
+sec:family-catalogue	subsection.16.5	16.5	110	Catalogue with hypotheses
+tab:family-cones	table.6	6	110	Dimension families, grouped by the hypotheses on their prime divisors
+sec:numerical	section.17	17	112	The four dimension bounds
+thm:uniform-new-bounds	theorem.17.1	17.1	112	Uniform dimension bounds
+seq:end-bounds	theorem.17.1	17.1	112	Uniform dimension bounds
+thm:unbraided-range	theorem.17.1	17.1	112	Uniform dimension bounds
+fam:M:sec:11.1	subsection.17.1	17.1	113	Solvability
+fam:M:11.2	theorem.17.2	17.2	113	Solvability from the square divisors
+prop:solv-square-divisor	theorem.17.2	17.2	113	Solvability from the square divisors
+sec:dimension-free-rank	subsection.17.2	17.2	114	Dimension of a simple perfect category
+cor:global-dimensions	theorem.17.3	17.3	114	Dimension in arbitrary rank
+mrk:e:section	section.18	18	114	Enumerating degree multisets from formal codegrees
+mrk:e:search	subsection.18.1	18.1	115	Common degree constraints
+mrk:e:orth	equation.18.1	18.1	115	Common degree constraints
+mrk:e:energy	equation.18.2	18.2	115	Common degree constraints
+mrk:e:witness	theorem.18.1	18.1	115	Two prime-free duality orbits
+mrk:e:fraction	equation.18.3	18.3	115	Common degree constraints
+mrk:e:interval	equation.18.4	18.4	115	Common degree constraints
+mrk:e:closure	theorem.18.2	18.2	115	Terminal equations
+mrk:e:lasttwo	equation.18.5	18.5	115	Terminal equations
+rank:search-completeness	theorem.18.3	18.3	116	Completeness of the degree search
+mrk:packets	section.19	19	117	Counting labels by prime components of the twist
+sec:crossed-fiber-count	subsection.19.1	19.1	117	Local fibers and simultaneous prime bounds
+prop:two-packets	theorem.19.1	19.1	117	Even valuation
+lem:crossed-fiber-count	theorem.19.2	19.2	117	
+prop:crossed-packet-count	theorem.19.3	19.3	118	
+lem:dyadic-torus-fiber	theorem.19.4	19.4	118	Dyadic torus on a complementary fiber
+lem:two-label-local	theorem.19.5	19.5	119	Two labels in a local invariant subspace
+rank:ordinary-dyadic-test	theorem.19.6	19.6	120	Dyadic tests in an even square class
+prop:minimum-odd-fiber	theorem.19.7	19.7	120	Degrees at the minimum fiber size
+sec:joint-prime-capacity	subsection.19.2	19.2	121	Simultaneous bounds on the missing denominators
+prop:joint-prime-capacity	theorem.19.8	19.8	121	
+sec:defect	subsection.19.3	19.3	122	Multiplicity at primes of defect one
+prop:multiple-defect-one	theorem.19.9	19.9	122	Simultaneous defect-one primes
+prop:defect-one-cap	theorem.19.9	19.9	122	Simultaneous defect-one primes
+cor:squareclass-additive	theorem.19.10	19.10	122	A rank bound for a square class
+sec:defect-one-tiles	section*.38		123	Partition of the defect-one degrees
+prop:defect-one-tiles	theorem.19.11	19.11	123	
+rank:defect-feasible	theorem.19.12	19.12	124	Integer feasibility for defect-one degrees
+sec:activity-cones	section*.41		125	The mass forced by a generating simple
+prop:activity-capacity	theorem.19.13	19.13	125	
+eq:activity-rank	equation.19.1	19.1	126	The mass forced by a generating simple
+cor:saturated-twelve-prime	theorem.19.14	19.14	126	
+rank:regular-indicator-divisor	section*.42		126	A divisor from the regular indicator
+sec:rows	section.20	20	127	Character rows of small codegree
+mrk:s:rows	section.20	20	127	Character rows of small codegree
+st	equation.20.1	20.1	127	Character rows of small codegree
+small	theorem.20.1	20.1	127	Prime codegrees
+mrk:l:trace-vector	theorem.20.2	20.2	127	Integral trace vectors with a prescribed orbit
+prop:no-six-codegree	theorem.20.3	20.3	128	
+prop:rational-prime-square	theorem.20.4	20.4	129	A rational row of prime-square codegree
+prop:saturation	theorem.20.5	20.5	129	
+rank:common-projection	theorem.20.6	20.6	130	Common projection of orthogonal rows
+prop:eight	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+lem:even-eight	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+cor:eight-triple	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+cor:halfdegree	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+cor:extra-primes	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+cor:odd-eight	theorem.20.7	20.7	130	Ordinary rows of codegree eight
+thm:no-nine	theorem.20.8	20.8	132	Exclusion of codegree nine
+prop:nine	theorem.20.8	20.8	132	Exclusion of codegree nine
+prop:nine-single	theorem.20.8	20.8	132	Exclusion of codegree nine
+prop:nine-double	theorem.20.8	20.8	132	Exclusion of codegree nine
+cor:nine-two	theorem.20.8	20.8	132	Exclusion of codegree nine
+mrk:pcover	subsection.20.5	20.5	133	Integral traces in the principal dyadic block
+mrk:dyadic	section.21	21	133	Square dimensions and rows of codegree sixteen
+prop:dyadic-concentrated	theorem.21.1	21.1	134	
+thm:odd-top-sixteen	theorem.21.2	21.2	134	
+sec:dyadic-zeros	subsection.21.2	21.2	135	Fourteen labels of formal codegree sixteen
+prop:fourteen-principal	theorem.21.3	21.3	136	Fourteen dyadic rows and their principal block
+cor:fourteen-nine-hits	theorem.21.4	21.4	136	The exceptional dyadic row in rank at most 31
+thm:no-fourteen	theorem.21.5	21.5	137	
+mrk:s:neighbouring-primes	subsection.21.3	21.3	138	Square dimension with denominators four, five and seven
+rank:gauss-nearfull	section*.45		138	Two prime-power degree classes in square dimension
+rank:prime-denominator-trace	section*.46		138	Trace and isolation at a prime denominator
+eq:septic-trace	equation.21.1	21.1	139	Trace and isolation at a prime denominator
+rank:gauss-thirteen-four	section*.47		139	Thirteen fours and four fives
+sec:unique-prime-denominator	section*.48		140	One denominator $p\ge 5$
+rank:gauss-eleven-six	section*.49		140	Eleven denominators four preclude six denominators five
+rank:gauss-quintic-mass	section*.50		141	Mass at exact quintic multiplicities
+prop:fourteen-seven	theorem.21.6	21.6	141	
+mrk:certificates	section.22	22	142	Rank bounds for modular categories and fermion quotients
+mrk:reduced	subsection.22.1	22.1	142	The positive fermion quotient
+mrk:thm:reduced-rank	theorem.22.1	22.1	142	
+mrk:ordinary	subsection.22.2	22.2	143	The modular bounds
+mrk:thm:modular-ranks	theorem.22.2	22.2	143	
+mrk:rank-families	subsection.22.3	22.3	144	Rank bounds at specified prime supports
+mrk:prop:rank-envelope	theorem.22.3	22.3	144	
+mrk:prop:ten-family	theorem.22.4	22.4	145	
+mrk:g:section	section.23	23	145	Rank bounds for general weakly integral categories
+mrk:g:general	theorem.23.1	23.1	145	
+mrk:g:bounds	theorem.23.1	23.1	145	
+mrk:g:grading	subsection.23.1	23.1	146	Descent by the dimension grading
+mrk:g:formal	subsection.23.2	23.2	146	Small ranks from formal codegrees
+mrk:g:odd-unbraided	subsection.23.3	23.3	147	The odd unbraided boundary
+lem:rank-eleven-cubic	theorem.23.2	23.2	148	
+rank:cyclic-trace	theorem.23.3	23.3	149	Schur elements of cyclic invariants
+lem:double-central-odd	theorem.23.4	23.4	149	
+cor:all-dim-rank	theorem.23.5	23.5	150	
+mrk:g:odd-braided	subsection.23.4	23.4	151	Counting twists in odd braided dimension
+found:group:support	section.24	24	153	Cyclotomic support and local ramification
+found:S:4	subsection.24.1	24.1	153	Two phases of arbitrary relative order
+found:S:4.1	theorem.24.1	24.1	154	
+found:S:key:thm:two-phases	theorem.24.1	24.1	154	
+mass:cor:two	theorem.24.1	24.1	154	
+found:S:5	subsection.24.2	24.2	155	Fusion support of the exceptional cyclotomic word
+found:S:5.1	theorem.24.2	24.2	155	
+found:S:key:prop:four-profile	theorem.24.2	24.2	155	
+found:S:5.2	theorem.24.3	24.3	155	A single coset of wild phases
+found:S:key:prop:exceptional-tame	theorem.24.3	24.3	155	A single coset of wild phases
+found:C:3	subsection.24.3	24.3	157	Two positive residues just above the larger prime
+found:C:3.1	theorem.24.4	24.4	157	
+found:C:key:prop:above-prime	theorem.24.4	24.4	157	
+found:C:3.2	theorem.24.5	24.5	158	
+found:C:key:cor:orbit22	theorem.24.5	24.5	158	
+found:C:3.3	theorem.24.6	24.6	158	
+found:C:key:prop:fourmarks	theorem.24.6	24.6	158	
+found:C:3.4	theorem.24.7	24.7	159	
+found:C:key:lem:jointfourier	theorem.24.7	24.7	159	
+sec:weight-five-crossing	subsection.24.4	24.4	160	Crossings of weight five at the primes three and five
+found:C:7	subsection.24.5	24.5	160	The conductor of a cyclic character subfield
+lem:joint-twist-ideals	jointideallemma.1	24.7a	160	Local ideals on a joint twist fiber
+found:C:7.1	theorem.24.8	24.8	161	
+found:C:key:new:single-twist	theorem.24.8	24.8	161	
+found:C:7.2	theorem.24.9	24.9	162	
+found:C:7.3	theorem.24.10	24.10	162	
+found:C:key:new:klein	theorem.24.10	24.10	162	
+found:J:4	subsection.24.6	24.6	162	Changing the primary components of a twist
+found:J:4.1	theorem.24.11	24.11	163	
+found:J:key:pr:route	theorem.24.11	24.11	163	
+found:J:4.2	theorem.24.12	24.12	163	
+found:J:key:pr:fiberdef	theorem.24.12	24.12	163	
+found:J:5	subsection.24.7	24.7	163	A congruence for primes missing from joint twists
+found:J:5.1	theorem.24.13	24.13	163	
+found:J:key:pr:missing	theorem.24.13	24.13	163	
+found:J:5.2	theorem.24.14	24.14	164	
+found:J:key:pr:unsignedall	theorem.24.14	24.14	164	
+found:J:6	subsection.24.8	24.8	165	Character fields at twist one
+found:J:6.1	theorem.24.15	24.15	165	
+found:J:key:new:fourierblock	theorem.24.15	24.15	165	
+found:J:6.2	theorem.24.16	24.16	165	
+found:J:key:pr:carry	theorem.24.16	24.16	165	
+found:J:7	subsection.24.9	24.9	165	Multiplicities of quadratic inertia characters
+found:J:7.1	theorem.24.17	24.17	166	
+found:J:key:pr:qmult	theorem.24.17	24.17	166	
+found:F:3	subsection.24.10	24.10	166	The conductor filtration inside a twist fiber
+found:F:3.1	theorem.24.18	24.18	166	
+found:F:key:pr:low-conductor	theorem.24.18	24.18	166	
+found:J:4.3	theorem.24.18	24.18	166	
+found:J:key:prop:inactive-multiplicity	theorem.24.18	24.18	166	
+lem:conductor-profile-transform	theorem.24.19	24.19	168	Joint conductor-profile transform
+por:prop:wild	theorem.24.20	24.20	170	
+found:T:3	subsection.24.11	24.11	170	Ramification at half a self-dual degree
+lem:weighted-block-moments	theorem.24.21	24.21	170	Weighted moments in a residue block
+found:T:3.1	theorem.24.22	24.22	170	
+found:T:key:local:twice	theorem.24.22	24.22	170	
+found:T:3.2	theorem.24.23	24.23	171	
+found:T:key:local:ten	theorem.24.23	24.23	171	
+found:T:3.3	theorem.24.24	24.24	172	
+found:group:uniform	section.25	25	172	Two unrestricted prime powers and a sextic prime
+found:S:2	subsection.25.1	25.1	172	Forcing a mixed column at the largest quartic prime
+found:S:key:sec:topheight	subsection.25.1	25.1	172	Forcing a mixed column at the largest quartic prime
+found:S:2.1	theorem.25.1	25.1	172	
+found:S:key:thm:topheight	theorem.25.1	25.1	172	
+found:S:2.2	theorem.25.2	25.2	173	
+found:S:key:cor:topheight	theorem.25.2	25.2	173	
+found:S:2.3	theorem.25.3	25.3	173	
+found:S:key:prop:twoisolated	theorem.25.3	25.3	173	
+found:S:3	subsection.25.2	25.2	173	An isolated prime with unramified principal witnesses
+found:S:key:sec:oddunram	subsection.25.2	25.2	173	An isolated prime with unramified principal witnesses
+found:S:3.1	theorem.25.4	25.4	174	Trace and mass at an isolated prime
+found:S:key:lem:unramisol	theorem.25.4	25.4	174	Trace and mass at an isolated prime
+lem:isolated-trace-budget	theorem.25.5	25.5	174	Trace budget for two companion primes
+found:S:3.2	theorem.25.6	25.6	175	
+found:S:key:thm:twoarbitrary	theorem.25.6	25.6	175	
+found:S:3.3	theorem.25.7	25.7	175	
+found:S:key:cor:allthree	theorem.25.7	25.7	175	
+found:C:2	subsection.25.3	25.3	176	The trace budget at height three
+found:C:key:sec:oddrectangle	subsection.25.3	25.3	176	The trace budget at height three
+found:C:2.1	theorem.25.8	25.8	176	Height-three substitutions
+found:C:key:prop:sexticrect	theorem.25.8	25.8	176	Height-three substitutions
+found:S:3.4	theorem.25.8	25.8	176	Height-three substitutions
+found:S:key:prop:sexticorb	theorem.25.8	25.8	176	Height-three substitutions
+found:C:2.2	theorem.25.9	25.9	176	
+found:C:key:thm:uniformsix	theorem.25.9	25.9	176	
+found:J:3.1	theorem.25.9	25.9	176	
+found:J:key:thm:middle	theorem.25.9	25.9	176	
+found:C:2.3	theorem.25.10	25.10	176	
+found:C:key:cor:concrete	theorem.25.10	25.10	176	
+found:J:2	subsection.25.4	25.4	177	Two unbounded exponents below the least-prime square
+prop:arbitrary-ratio-rigidity	theorem.25.11	25.11	177	Two positive residues at arbitrary ratio
+found:J:2.1	theorem.25.11	25.11	177	Two positive residues at arbitrary ratio
+found:J:key:lem:near-updated	theorem.25.11	25.11	177	Two positive residues at arbitrary ratio
+found:J:eq:exposure	equation.25.1	25.1	179	Two unbounded exponents below the least-prime square
+found:J:2.2	theorem.25.12	25.12	179	
+found:J:key:thm:below-square	theorem.25.12	25.12	179	
+found:J:2.3	theorem.25.13	25.13	180	
+found:J:key:cor:halfsquare	theorem.25.13	25.13	180	
+found:J:3	subsection.25.5	25.5	181	The sextic exponent at either smaller prime
+found:T:9	subsection.25.6	25.6	181	A quotient of the tame multiplier group
+found:T:key:sec:multiplier-quotient	subsection.25.6	25.6	181	A quotient of the tame multiplier group
+found:T:9.1	theorem.25.14	25.14	182	
+found:T:key:prop:quotient-word	theorem.25.14	25.14	182	
+found:S:8	subsection.25.7	25.7	182	A small intersection at the largest quartic prime
+found:S:key:sec:minword	subsection.25.7	25.7	182	A small intersection at the largest quartic prime
+found:S:8.1	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:key:prop:sevenword	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:8.2	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:key:cor:sevenstrip	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:8.3	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:key:prop:extended-seven	theorem.25.15	25.15	182	Seven positions and the quartic strip
+found:S:key:sec:extended-seven	theorem.25.15	25.15	182	Seven positions and the quartic strip
+sec:boundary	subsection.25.8	25.8	184	The remaining family with exponents six, six and four
+found:group:dyadic	section.26	26	185	The dyadic sextic obstruction
+aux:mixed-two	theorem.26.1	26.1	185	
+aux:dyadic-six	theorem.26.2	26.2	186	
+found:S:7	subsection.26.2	26.2	187	Eliminating the slightly degenerate dyadic sextic
+found:S:key:sec:ferm-six	subsection.26.2	26.2	187	Eliminating the slightly degenerate dyadic sextic
+found:S:7.1	theorem.26.3	26.3	187	
+found:S:key:thm:ferm-six	theorem.26.3	26.3	187	
+found:S:key:eq:ferm-eight	equation.26.1	26.1	189	Eliminating the slightly degenerate dyadic sextic
+found:S:6	subsection.26.3	26.3	190	Restrictions on an ordinary dyadic obstruction
+rev:trace-transfer	theorem.26.4	26.4	190	Trace transfer across principal blocks
+rev:pure-product	theorem.26.5	26.5	191	Pure dyadic phase of a fusion product
+u2:separation	theorem.26.6	26.6	191	Separated twists and inertia orbits
+found:C:6	subsection.26.4	26.4	192	Principal witnesses and the first even core
+rev:prime-avoidance-field	theorem.26.7	26.7	193	Prime avoidance with a field condition
+u2:block-transfer	theorem.26.8	26.8	193	A common hit in a principal block
+rev:simul-gauss	theorem.26.9	26.9	194	Simultaneous partial Gauss congruence
+rev:simul-sign	theorem.26.10	26.10	194	Simultaneous quadratic-character balance
+rev:outside-gauss	theorem.26.11	26.11	195	Sharpened outside divisor
+u2:deficient-minors	theorem.26.12	26.12	195	Minors on deficient rows and columns
+sec:dyadic-fields	subsection.26.5	26.5	196	Congruences and quartic fields at the dyadic sextic
+found:F:2	subsection.26.6	26.6	197	Quartic fields on complementary twist-one witnesses
+rev:weight4-transfer	theorem.26.13	26.13	197	Complementary witnesses of weight four
+found:J:6.3	theorem.26.14	26.14	197	
+found:J:key:thm:twistone	theorem.26.14	26.14	197	
+found:F:2.1	theorem.26.15	26.15	197	
+found:F:key:thm:fields	theorem.26.15	26.15	197	
+found:F:4	subsection.26.7	26.7	200	Residue ranks on a separated path
+found:F:5	subsection.26.8	26.8	202	The upper ternary height when two and five are separated
+found:F:5.1	theorem.26.16	26.16	202	
+found:F:key:thm:upperseparated	theorem.26.16	26.16	202	
+found:P:1	subsection.26.9	26.9	202	The principal three-block
+found:P:1.1	theorem.26.17	26.17	202	
+found:P:key:thm:main	theorem.26.17	26.17	202	
+found:P:2	subsection.26.10	26.10	205	The local Weyl bound for a nontrivial tame character
+found:P:key:sect:weyl	subsection.26.10	26.10	205	The local Weyl bound for a nontrivial tame character
+rev:tame-compression	theorem.26.18	26.18	205	Weyl compression in a tame torus character
+found:P:4	subsection.26.11	26.11	207	Which principal rows meet a joint three--five column?
+found:P:4.1	theorem.26.19	26.19	207	
+found:D:4	subsection.26.12	26.12	207	The exponent at the even frontier
+found:D:4.1	theorem.26.20	26.20	208	
+found:D:key:pr:dyadic	theorem.26.20	26.20	208	
+found:D:5	subsection.26.13	26.13	208	Odd ramification on the path separating two and three
+found:D:5.1	theorem.26.21	26.21	208	
+found:group:odd	section.27	27	209	The surviving odd twist path
+found:J:8.1	theorem.27.1	27.1	209	
+found:J:key:thm:twenty-three	theorem.27.1	27.1	209	
+found:C:4.1	theorem.27.1	27.1	209	
+found:C:key:prop:septmix	theorem.27.1	27.1	209	
+found:D:6.3	theorem.27.2	27.2	209	
+found:D:key:prop:odd-oriented-path	theorem.27.2	27.2	209	
+found:C:4	subsection.27.2	27.2	209	The remaining ordered triple at least prime five
+found:C:4.2	theorem.27.3	27.3	209	
+found:C:key:prop:remaining-edges	theorem.27.3	27.3	209	
+found:J:8	subsection.27.3	27.3	210	The last odd assignment at least prime five
+sec:odd-mixed-residues	subsection.27.4	27.4	214	Residues of mixed words at five, seven and twenty-three
+found:D:6	subsection.27.5	27.5	215	An orientation for two separated odd primes
+found:D:key:sec:odd-orientation	subsection.27.5	27.5	215	An orientation for two separated odd primes
+found:D:6.1	theorem.27.4	27.4	215	
+found:D:key:lem:positive-double-residue	theorem.27.4	27.4	215	
+found:D:6.2	theorem.27.5	27.5	215	
+found:D:key:lem:unramified-orientation	theorem.27.5	27.5	215	
+found:T:10	subsection.27.6	27.6	217	The two active twists on the separated odd path
+found:T:key:sec:odd-joint	subsection.27.6	27.6	217	The two active twists on the separated odd path
+found:T:10.1	theorem.27.6	27.6	217	
+found:T:key:pr:joint-positive	theorem.27.6	27.6	217	
+found:T:eq:squared	equation.27.1	27.1	217	The two active twists on the separated odd path
+found:T:10.2	theorem.27.7	27.7	217	
+found:T:key:pr:joint-exact	theorem.27.7	27.7	217	
+found:T:10.3	theorem.27.8	27.8	218	
+found:T:key:pr:odd-pinned	theorem.27.8	27.8	218	
+found:T:eq:planes	equation.27.2	27.2	219	The two active twists on the separated odd path
+found:T:10.4	theorem.27.9	27.9	219	
+found:T:key:cor:odd-one-degree	theorem.27.9	27.9	219	
+por:sect:odd-seven	subsection.27.7	27.7	220	The unramified endpoint at seven in dimension \texorpdfstring {$5^6 7^6 23^4$}{5\string ^6 7\string ^6 23\string ^4}
+rev:seven-inactive-fourier	section*.89		220	Fourier estimate on inactive orbits
+rev:pure-seven-hit	theorem.27.10	27.10	220	Pure principal hits at seven
+rev:seven-active-height	theorem.27.11	27.11	221	Height of a seven-active label
+por:th:odd-seven-elim	theorem.27.12	27.12	221	
+fam:rank:five-seven-twenty-three	theorem.27.13	27.13	222	
+found:group:degrees	section.28	28	223	Degree and support restrictions at the first open dimension
+found:R:2	subsection.28.1	28.1	223	Four disjoint orbits of witnesses
+found:R:key:sec:quartets	subsection.28.1	28.1	223	Four disjoint orbits of witnesses
+found:R:1	subsection.28.2	28.2	223	Formal codegrees and the largest simple degree
+found:D:1	subsection.28.3	28.3	224	Excluding a simple object of degree six
+found:D:1.1	theorem.28.1	28.1	224	
+found:D:key:thm:spectral-six	theorem.28.1	28.1	224	
+por:rank-upper	section*.91		225	Rank at the even core
+rev:boundary-fourier	theorem.28.2	28.2	226	Fourier test for the pure fifth phases
+found:T:1	subsection.28.5	28.5	227	Counting active twists by a local torus character
+found:T:key:sec:geometry	subsection.28.5	28.5	227	Counting active twists by a local torus character
+found:T:1.1	theorem.28.3	28.3	227	
+found:T:key:prop:torus-active-count	theorem.28.3	28.3	227	
+found:T:key:cor:core-lower-rank	section*.92		227	Compulsory active orbits
+por:double-missing-ten	section*.93		228	Intersections of principal blocks on the path missing ten
+por:four-neutral	section*.94		229	Four further principal labels when six is missing
+sec:portrait-proofs	section.29	29	229	Twist fibers and rank at the first open core
+por:frontier	section.29	29	229	Twist fibers and rank at the first open core
+por:ranktheorem	theorem.29.1	29.1	229	
+found:T:2	subsection.29.1	29.1	230	Degree caps used in the rank proof
+found:T:key:sec:large	subsection.29.1	29.1	230	Degree caps used in the rank proof
+por:prop:small-ninehundred	theorem.29.2	29.2	230	
+por:th:joint-at-ninehundred	theorem.29.3	29.3	230	
+por:prop:cap675	theorem.29.4	29.4	230	
+por:sec:jointfibers	subsection.29.2	29.2	230	Local Weyl transitions in joint twist fibers
+por:two-ternary-fibers	section*.95		231	Two distinct ternary phases
+por:tame-fiber-masses	section*.96		231	Equal mass at tame fifth phases
+por:24-joint	section*.97		231	At least twenty-four labels in each joint fiber
+por:triangle-fibers	section*.98		232	When all three pairs occur
+por:five-inactive-orbits	section*.99		232	Five inactive orbits on the path separating two and five
+por:sec:rank-two-branches	subsection.29.3	29.3	234	Rank from compulsory simple degrees
+por:eq:budget600	equation.29.1	29.1	234	Rank from compulsory simple degrees
+por:count-no-six	section*.100		235	The path separating two and three
+por:count-triangle	section*.101		236	All three pairs occur
+por:count-no-ten	section*.102		237	The path separating two and five
+por:certificate	subsection.29.4	29.4	238	The exact rank calculation
+por:eq:two-fiber-norms	equation.29.2	29.2	239	The exact rank calculation
+por:five-survivors	section*.103		240	Eliminating the five remaining profiles
+sec:unbraided-5400	section.30	30	240	The unbraided boundary in dimension \texorpdfstring {$5400$}{5400}
+th:unbraided-5400	theorem.30.1	30.1	240	
+sec:5400-proof	subsection.30.1	30.1	240	The canonical induction algebra and character moments
+eq:5400-induction	equation.30.1	30.1	241	The canonical induction algebra and character moments
+eq:5400-three	equation.30.2	30.2	241	How many degree-three simples can occur
+eq:5400-charrows	equation.30.3	30.3	243	The two endpoint ranks
+eq:5400-charmoments	equation.30.4	30.4	243	The two endpoint ranks
+fam:M:sec:13	section.31	31	243	Decomposition over prime divisors
+sec:coprime-core	section.31	31	243	Decomposition over prime divisors
+fam:M:sec:13.1	subsection.31.1	31.1	243	Splitting the group and its action
+fam:M:13.1	theorem.31.1	31.1	244	Degrees and codegrees of a gauging
+prop:gauged-degrees	theorem.31.1	31.1	244	Degrees and codegrees of a gauging
+fam:M:13.2	theorem.31.2	31.2	244	Coprime descent
+lem:uc-descent	theorem.31.2	31.2	244	Coprime descent
+fam:M:13.3	theorem.31.3	31.3	245	Arithmetic and action components
+thm:uc-components	theorem.31.3	31.3	245	Arithmetic and action components
+fam:M:13.6	theorem.31.4	31.4	245	Factors of a cyclic gauging
+lem:cyclic-gauging	theorem.31.4	31.4	245	Factors of a cyclic gauging
+fam:M:sec:13.3	subsection.31.2	31.2	246	Two exact criteria on a square-free set of primes
+fam:M:13.7	theorem.31.5	31.5	246	
+thm:uc-bipartite	theorem.31.5	31.5	246	
+fam:M:sec:13.2	subsection.31.3	31.3	247	Prime divisors of degrees and codegrees
+fam:M:13.4	theorem.31.6	31.6	248	The smallest codegrees at prime-power dimension
+prop:prime-power-no-defect-two	theorem.31.6	31.6	248	The smallest codegrees at prime-power dimension
+fam:M:13.5	theorem.31.7	31.7	249	Nilpotent modular categories and prime-power doubles
+cor:nilpotent-no-defect-two	theorem.31.7	31.7	249	Nilpotent modular categories and prime-power doubles
+sec:code-data-certificates	section*.112		249	Code, data and certificates
