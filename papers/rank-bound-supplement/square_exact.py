@@ -5,11 +5,11 @@ from functools import lru_cache
 from itertools import product
 from math import gcd, isqrt, lcm
 
-PRIMES = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31)
+from primes import primes_up_to
 
 
-def support(value):
-    return {p for p in PRIMES if value % p == 0}
+def support(value, primes):
+    return {p for p in primes if value % p == 0}
 
 
 def smooth_over(value, primes):
@@ -107,10 +107,10 @@ def witness_bound(prefix, primes, L, E, slots, high):
 
 
 @lru_cache(maxsize=32)
-def nonunit_divisors(value):
+def nonunit_divisors(value, primes):
     # Track the number of distinct prime factors while generating each divisor.
     divisors = [(1, 0)]
-    for p in PRIMES:
+    for p in primes:
         if value % p:
             continue
         old = tuple(divisors)
@@ -127,7 +127,7 @@ def nonunit_divisors(value):
 def tail(prefix, L, E, primes, low, high):
     """Solve E k²=1+d²+e² for d≤e dividing L and M=kL."""
     allowed = primes | {3}
-    divisors = nonunit_divisors(L)
+    divisors = nonunit_divisors(L, tuple(sorted(primes)))
     if not divisors or low > high:
         return
 
@@ -138,11 +138,11 @@ def tail(prefix, L, E, primes, low, high):
         if M//e < prefix[-1]:
             return
         bs = prefix + (M//e, M//d)
-        ps = primes | support(k)
+        ps = primes | support(k, allowed)
         if not packet_room(Counter(bs), bs[-1], ps, 0):
             return
         row = [1] + [M//b for b in reversed(bs)]
-        if any(len(support(x)) < 2 for x in row[1:]):
+        if any(len(support(x, ps)) < 2 for x in row[1:]):
             return
         if any(sum(x % p != 0 for x in row[1:]) < 2 for p in ps):
             return
@@ -154,13 +154,13 @@ def tail(prefix, L, E, primes, low, high):
                 continue
             g = gcd(b, L)
             k, e = b//g, L//g
-            if gcd(k, 10) != 1 or len(support(e)) < 2:
+            if gcd(k, 10) != 1 or len(support(e, primes)) < 2:
                 continue
             d2 = E*k*k - e*e - 1
             if d2 <= 0:
                 continue
             d = isqrt(d2)
-            if d*d == d2 and d <= e and L % d == 0 and len(support(d)) >= 2:
+            if d*d == d2 and d <= e and L % d == 0 and len(support(d, primes)) >= 2:
                 yield from candidate(k, d, e)
         return
 
@@ -177,29 +177,38 @@ def tail(prefix, L, E, primes, low, high):
                 yield from candidate(k, d, e)
 
 
-def complete(prefix, rank=31):
+def complete(prefix, rank):
     """Yield all rows under this prefix, in exactly the rank-search degree convention."""
     forced = tuple(prefix)
-    if (not isinstance(rank, int) or not 17 <= rank <= 31 or not forced or
+    if (not isinstance(rank, int) or rank < 9 or not forced or
         len(forced) > rank - 3 or any(type(b) is not int or b < 1 for b in forced) or
-        forced != tuple(sorted(forced)) or forced[0] not in (4, 5)):
+        forced != tuple(sorted(forced)) or forced[0] < 4):
         raise ValueError("expected a sorted positive square-search prefix of length 1 to rank-3")
     first = forced[0]
     if first*first >= rank:
         return
 
+    primes = primes_up_to(rank - 1)
+    max_fours = 13 if rank <= 31 else 14
+    # visit and its smooth-number iterator can both be active down the
+    # search tree. Allow their joint depth even for ranks above native widths.
+    import sys
+    required_depth = 3*rank + 128
+    if required_depth > sys.getrecursionlimit():
+        sys.setrecursionlimit(required_depth)
+
     def visit(bs, L, E):
         h = rank - 1 - len(bs)
         counts = Counter(bs)
         forbidden_fives = {13: 4, 12: 6, 10: 9}
-        if counts[4] > 13 or (counts[4] in forbidden_fives and
+        if counts[4] > max_fours or (counts[4] in forbidden_fives and
                              counts[5] >= forbidden_fives[counts[4]]):
             return
         if counts[4] == 13 and counts[5] == 3 and 6 in counts:
             return
         if 36*E > (36*h + 1)*L*L:
             return
-        ps = support(L)
+        ps = support(L, primes)
         deficit = 0
         for p in ps - {2}:
             step = (p-1)//2
@@ -209,7 +218,7 @@ def complete(prefix, rank=31):
             deficit += max(0, 2*step - capacity)
         if deficit > h:
             return
-        future = ps | {2} | {p for p in PRIMES if p <= h + 1 - deficit}
+        future = ps | {2} | {p for p in primes if p <= h + 1 - deficit}
         if len(future) < 3 or not packet_room(counts, bs[-1], ps, h):
             return
         upper = isqrt((36*h + 1)*L*L // (36*E))
@@ -242,7 +251,7 @@ if __name__ == "__main__":
     import json
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("prefix", help="comma-separated denominators, sorted")
-    parser.add_argument("--rank", type=int, default=31)
+    parser.add_argument("--rank", type=int, required=True)
     args = parser.parse_args()
     for row in complete([int(b) for b in args.prefix.split(",")], args.rank):
         print(json.dumps(row, separators=(",", ":")))

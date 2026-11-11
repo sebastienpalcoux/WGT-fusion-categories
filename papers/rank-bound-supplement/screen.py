@@ -315,6 +315,6 @@ def exclusion_reason(degrees, dimension=None):
         return 'orbit'
     if dyadic_fail(degrees, D, mult):
         return 'dyadic'
-    if len(degrees) == 31 and multiplication_obstruction(degrees):
+    if multiplication_obstruction(degrees):
         return 'multiplication'
     return None

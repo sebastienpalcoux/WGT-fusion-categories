@@ -6,7 +6,7 @@ from itertools import combinations, groupby
 from math import gcd, isqrt, prod
 
 
-PRIMES = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31)
+from primes import primes_up_to
 
 
 def smooth(lo, hi, primes, index=0, value=1):
@@ -135,7 +135,7 @@ def ternary_tiles(denominators, slots):
     return sum(owed.values()) - min(owed[last], counts[last]) <= slots if slots else not owed
 
 
-def complete(q, b, m, rank=31):
+def complete(q, b, m, rank):
     """Enumerate a complete nonsquare task with arbitrary-precision integers."""
     yield from _complete(q, b, m, rank, None, [b])
 
@@ -146,7 +146,7 @@ class InvalidPrefix(ValueError):
 
 def complete_prefix(q, b, m, rank, primes, prefix):
     """Continue one native node on precisely its fixed support and prefix."""
-    if (not primes or list(primes) != sorted(set(primes)) or any(p not in PRIMES for p in primes)
+    if (not primes or list(primes) != sorted(set(primes)) or any(p not in primes_up_to(rank) for p in primes)
             or not 1 <= len(prefix) <= rank-3 or prefix[0] != b
             or any(type(z) is not int or z < 1 for z in prefix) or list(prefix) != sorted(prefix)
             or any(exponents(z, primes) is None for z in prefix)):
@@ -155,11 +155,12 @@ def complete_prefix(q, b, m, rank, primes, prefix):
 
 
 def _complete(q, b, m, rank, fixed_primes, prefix):
-    if (any(type(x) is not int for x in (q, b, m, rank)) or not 6 <= rank <= 31
-            or not 2 <= q < rank or not 1 <= b <= 5 or not 0 <= m < rank):
-        raise ValueError('expected 6 <= rank <= 31, 2 <= q < rank, 1 <= b <= 5 and 0 <= m < rank')
+    if (any(type(x) is not int for x in (q, b, m, rank)) or rank < 2
+            or not 2 <= q < rank or b < 1 or not 0 <= m < rank):
+        raise ValueError('expected rank >= 2, 2 <= q < rank, b >= 1 and 0 <= m < rank')
     f = q*b*b
-    ramified = [p for p in PRIMES if q % p == 0]
+    all_primes = primes_up_to(rank)
+    ramified = [p for p in all_primes if q % p == 0]
     if (f < 8 or f >= rank or any(q % (p*p) == 0 for p in ramified)
             or (b == 1 and len(ramified) == 1)):
         return
@@ -167,8 +168,8 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
     product = prod(sizes)
     fiber = max([(2 if q % 2 == 0 else 1)*product]
                 + [(a+1)*(product//a) for a in sizes])
-    must = sum(1 << i for i,p in enumerate(PRIMES) if q*b % p == 0)
-    limits = [f-1-(p-1)//2 for p in PRIMES if p % 2 and f % p == 0 and f % (p*p)]
+    must = tuple(p for p in all_primes if q*b % p == 0)
+    limits = [f-1-(p-1)//2 for p in all_primes if p % 2 and f % p == 0 and f % (p*p)]
     top_limit = min(limits, default=rank)
     L, E = b, f-1
     for z in prefix[1:]:
@@ -178,8 +179,7 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
         if E <= 0:
             raise ValueError('nonpositive prefix residual')
     fixed_run = prefix.count(b)
-    if (fixed_run > top_limit or m and (fixed_run > m or prefix[-1] > b and fixed_run != m)
-            or f == 8 and (m > 4 or fixed_run > 4)):
+    if fixed_run > top_limit or m and (fixed_run > m or prefix[-1] > b and fixed_run != m):
         return
 
     def visit(L, E, slots, primes):
@@ -190,7 +190,7 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
         if q == 3 and not ternary_tiles(prefix, slots):
             return
         first_run = prefix[-1] == b
-        if first_run and (len(prefix) > top_limit or f == 8 and len(prefix) > 4):
+        if first_run and (len(prefix) > top_limit or f == 8 and len(primes) <= 4 and len(prefix) > 4):
             return
         lo = max(prefix[-1], isqrt(L*L//E) + 1)
         hi = isqrt((36*slots+1)*L*L//(36*E))
@@ -216,7 +216,7 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
                 if any(sum(y % p != 0 for y in row[1:]) < 2 for p in primes):
                     continue
                 denominators = prefix + [z, M//d]
-                if f == 8 and denominators.count(b) > 2 and (M % 4 == 0 or denominators.count(b) > 4):
+                if f == 8 and denominators.count(b) > 2 and (M % 4 == 0 or len(primes) <= 4 and denominators.count(b) > 4):
                     continue
                 if q == 3 and not ternary_tiles(denominators, 0):
                     continue
@@ -230,12 +230,22 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
             yield from visit(k*L, E*k*k-e*e, slots-1, primes)
             prefix.pop()
 
-    masks = (range(must, 1 << len(PRIMES)) if fixed_primes is None else
-             [sum(1 << PRIMES.index(p) for p in fixed_primes)])
-    for mask in masks:
-        if mask & must != must or bin(mask).count('1') < (4 if f == 8 else 3):
-            continue
-        primes = [p for i,p in enumerate(PRIMES) if mask & (1 << i)]
-        phases = 1 + sum(p-1 for p in primes if p != 2 and q % p)
-        if fiber * phases <= rank:
-            yield from visit(L, E, rank-1-len(prefix), primes)
+    def supports(start, chosen, budget):
+        if len(chosen) >= (4 if f == 8 else 3):
+            yield tuple(sorted(chosen))
+        for i in range(start, len(optional)):
+            p = optional[i]
+            cost = 0 if p == 2 else p-1
+            if cost > budget:
+                break
+            yield from supports(i+1, chosen+(p,), budget-cost)
+
+    required = must if fixed_primes is None else fixed_primes
+    if not set(must).issubset(required):
+        return
+    budget = rank//fiber - 1 - sum(p-1 for p in required if p != 2 and q % p)
+    if budget < 0:
+        return
+    optional = [p for p in all_primes if p not in required] if fixed_primes is None else []
+    for primes in supports(0, required, budget):
+        yield from visit(L, E, rank-1-len(prefix), primes)
