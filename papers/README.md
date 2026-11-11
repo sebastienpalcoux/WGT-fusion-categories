@@ -2,9 +2,9 @@
 
 ## Short, self-contained proofs
 
-These two papers present specific conclusions of the larger project with the hypotheses, arguments and arithmetic needed to read each proof on its own. They make the results easier to study and check without working through the full article.
+Each manuscript gives a complete proof of one theorem from the larger project. Readers can study either result on its own.
 
-- **A rank bound for simple integral modular categories** (21 pages). Every non-pointed simple integral modular category has rank at least 32. [PDF](Rank32.pdf) · [TeX](Rank32.tex) · [Unified verification supplement](rank-bound-supplement/README.md)
-- **Weakly integral braided fusion categories below dimension $5400^2$** (29 pages). Such categories are weakly group-theoretical, and the Drinfeld-center argument gives a bound of 5400 without braiding. [PDF](Below_5400_squared.pdf) · [TeX](Below_5400_squared.tex)
+- **A rank bound for simple integral modular categories** (17 pages). Every non-pointed simple integral modular category has rank at least 32. The supplement gives the program and certificate for the final finite check. [PDF](Rank32.pdf) · [TeX](Rank32.tex) · [Verification supplement](rank-bound-supplement/README.md)
+- **Weakly integral braided fusion categories below dimension $5400^2$** (29 pages). Such categories are weakly group-theoretical. Applying the theorem to the Drinfeld center gives the bound 5400 without a braiding assumption. The proof is computer-free. [PDF](Below_5400_squared.pdf) · [TeX](Below_5400_squared.tex)
 
-For the rank paper, run `python3 papers/rank-bound-supplement/verify.py --jobs 4` from the repository root. The [rank calculations](../rank/README.md) and [full article](Manuscript.pdf) address the broader results. The [earlier 17-page version](Rank31.pdf) proved rank at least 31.
+The [full article](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/independent-referee-2026-11-10/papers/Manuscript.pdf) contains the broader dimension and rank results. Its [release guide](../certificates/README.md) documents the associated computations.
