@@ -2,13 +2,13 @@
 
 ## Short, self-contained proofs
 
-Two focused manuscripts let readers check central results without working through the full article. The [17-page rank paper](../papers/Rank31.pdf) proves rank at least 31 for a non-pointed simple integral modular category from rank-dependent character and dimension constraints ([TeX](../papers/Rank31.tex), [verification files](../papers/rank31-supplement/verify.py)). The [29-page dimension paper](../papers/Below_5400_squared.pdf) proves weak group-theoreticity below $5400^2$ for weakly integral braided categories ([TeX](../papers/Below_5400_squared.tex)).
+Two focused manuscripts let readers check central results without working through the full article. The [21-page rank paper](../papers/Rank32.pdf) proves rank at least 32 for a non-pointed simple integral modular category from rank-dependent character and dimension constraints ([TeX](../papers/Rank32.tex), [unified verification supplement](../papers/rank-bound-supplement/README.md)). The [29-page dimension paper](../papers/Below_5400_squared.pdf) proves weak group-theoreticity below $5400^2$ for weakly integral braided categories ([TeX](../papers/Below_5400_squared.tex)).
 
 The [calculation manifest](../certificates/manifest.json) gives hypotheses, inputs, digests, regeneration commands and terminal counts for each rank calculation R01–R12. The [current statement index](../certificates/statement-index.tsv) maps the permanent labels to the revised manuscript. See the [release guide](../certificates/README.md) for resources and the distinction between testing candidates and regenerating them. Run these commands from this directory.
 
 | Category | Lower bound | Calculation |
 |---|---:|---|
-| Non-pointed, fusion-simple integral modular | 31 | [Uniform ordinary ledger](data/ordinary_release.json), R01 |
+| Non-pointed, fusion-simple integral modular | 32 | [Unified ranks 2–31 verification](../papers/rank-bound-supplement/README.md), extending [R01](data/ordinary_release.json) |
 | Same, nonsquare dimension | 33 | [Rank 31](verify_nonsquare.py), [rank 32](verify_nonsquare32.py), R02–R03 |
 | Same, odd dimension / odd nonsquare dimension | 57 / 75 | [Paired recursion](code/odd_frontier.py), R06 |
 | Divisor-minimal slightly degenerate obstruction | 34 (full rank) | [Reduced-table check](verify_scoped.py), R05 |

@@ -2,7 +2,7 @@
 
 *Prime factors of fusion-category dimensions: weak group-theoreticity, rank and decomposition*, by Sebastian Burciu, Jingcheng Dong and Sébastien Palcoux. [Full article (PDF, 252 pages)](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/independent-referee-2026-11-10/papers/Manuscript.pdf) · [TeX source](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/independent-referee-2026-11-10/papers/Manuscript.tex)
 
-The [rank bounds](rank/README.md) give rank at least 31 for a non-pointed simple integral modular category, 33 in nonsquare dimension, 57 in odd dimension and 75 in odd nonsquare dimension. The revised paper distinguishes the ordinary, reduced and arbitrary-center cases.
+The [rank bounds](rank/README.md) in the full article give rank at least 31 for a non-pointed simple integral modular category, 33 in nonsquare dimension, 57 in odd dimension and 75 in odd nonsquare dimension. The short rank paper below extends the general bound to 32.
 
 The introduction gives the rank bounds by hypothesis and a catalogue of the prime families. The [release guide](certificates/README.md) links each proof computation to its exact hypotheses and the [statement index](certificates/statement-index.tsv).
 
@@ -10,13 +10,13 @@ The introduction gives the rank bounds by hypothesis and a catalogue of the prim
 
 These two manuscripts extract individual results from the larger project. They give readers a shorter route to the statements and their proofs, with the required arithmetic and verification material available separately.
 
-- **Rank at least 31** for a non-pointed simple integral modular category (17 pages). [PDF](papers/Rank31.pdf) · [TeX](papers/Rank31.tex) · [Verification supplement](papers/rank31-supplement/verify.py)
+- **Rank at least 32** for a non-pointed simple integral modular category (21 pages). [PDF](papers/Rank32.pdf) · [TeX](papers/Rank32.tex) · [Unified verification supplement](papers/rank-bound-supplement/README.md)
 - **Weak group-theoreticity below dimension $5400^2$** for weakly integral braided fusion categories (29 pages). The Drinfeld-center argument also gives the bound 5400 without a braiding assumption. [PDF](papers/Below_5400_squared.pdf) · [TeX](papers/Below_5400_squared.tex)
 
 | Material | Contents |
 | --- | --- |
 | [Short manuscripts](papers/README.md) | Both focused proofs and their source files. |
-| [Rank bounds](rank/README.md) | Degree enumeration, mathematical exclusion tests, certificates and a resumable rank-31 search. |
+| [Rank bounds](rank/README.md) | Degree enumeration, mathematical exclusion tests and the unified verification of ranks 2–31. |
 | [Verification code](code/README.md) | Commands for the finite arithmetic used in the paper. |
 | [Input data](data/README.md) | The pinned list of 2341 perfect rank-15 dimension types, with provenance and checksum. |
 | [Verification manifest](certificates/manifest.json) | Hypotheses, commands, expected outputs, and locations in the full article for the dimension, character-table and rank calculations. |

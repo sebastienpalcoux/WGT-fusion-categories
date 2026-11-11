@@ -1,0 +1,1321 @@
+\documentclass[11pt]{amsart}
+\usepackage[expansion=false]{microtype}
+\usepackage[a4paper,textwidth=154mm,textheight=250mm,centering]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,enumitem}
+\usepackage[colorlinks,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{xcolor}
+\setlength{\emergencystretch}{1.4em}
+\setcounter{tocdepth}{1}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem*{mainthm}{Theorem}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\FPdim}{FPdim}
+\DeclareMathOperator{\Irr}{Irr}
+\DeclareMathOperator{\Gal}{Gal}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\C}{\mathcal C}
+\newcommand{\one}{\mathbf1}
+\newcommand{\supfile}[2]{\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/rank-bound-supplement/#1}{#2}}
+\allowdisplaybreaks[2]
+\title[A rank bound for simple integral modular categories]{A rank bound for simple integral modular categories}
+\author{Sebastian Burciu}
+\author{Jingcheng Dong}
+\author{S\'ebastien Palcoux}
+\date{}
+\hypersetup{pdftitle={A rank bound for simple integral modular categories},pdfauthor={Sebastian Burciu, Jingcheng Dong and Sebastien Palcoux}}
+\begin{document}
+\begin{abstract}
+Every non-pointed simple integral modular category has at least $32$
+isomorphism classes of simple objects. We prove this by reconstructing
+the possible dimensions of its simple objects from a sum of reciprocal
+squares. At rank at most $31$, character orthogonality and the local
+action of the modular group give a finite list of possibilities.
+Integer tests for tensor products and character rows eliminate the list.
+The accompanying programs regenerate the lists from the rank alone.
+\end{abstract}
+\maketitle
+\section{The dimension equation}
+A fusion category over $\mathbb C$ is \emph{simple} if its only fusion
+subcategories are itself and $\mathrm{Vec}$. It is \emph{pointed}
+if each simple object is invertible, and \emph{integral} if each
+simple has integer Frobenius--Perron dimension. The rank is the number
+of isomorphism classes of simple objects.
+\begin{mainthm}
+Every non-pointed simple integral modular category has rank at least $32$.
+\end{mainthm}
+
+Write $d_i$ for the dimensions and $D=\sum_i d_i^2$.
+What makes a rank bound possible, although $D$ is initially unknown,
+is the divisibility $d_i^2\mid D$. Writing $D=qM^2$ with $q$ square-free
+turns each nonunit dimension $d_i$ into an integer $b_i=M/d_i$.
+The largest dimension gives the least denominator $B$. The identity
+\[
+            1/M^2+\sum_{i\ne0}1/b_i^2=q,\qquad qB^2<r,
+\]
+bounds the first denominator from the rank, and the same argument
+bounds every next denominator from its predecessors. The difficult
+case is a long run of small equal denominators. Each such run is an
+entire class of simple objects of the same dimension. Their character
+rows and their twists put restrictions on how much of the remaining
+sum can lie in other classes. In square dimension we will rule out
+denominator three entirely and show that denominator four occurs
+at most thirteen times at rank at most thirty-one.
+This isolates the rank bound from our work on prime factors of fusion-category
+dimensions \cite{BDP}. The proof uses the congruence and indicator theorems for modular
+categories. All rank-specific exclusions are proved here, and the executable
+enumeration is linked to the\supfile{README.md}{supplement guide}.
+
+\subsection{Character identities}
+Throughout, the unit has index $0$. We can use the positive
+spherical structure, since integral fusion categories are
+pseudo-unitary \cite[Proposition~8.24]{ENOannals} and
+nondegeneracy is a property of the braiding. The pointed subcategory
+is proper, so simplicity makes the unit the only invertible simple.
+Normalize the modular matrix by $S_{0i}=d_i$. Then
+$S=S^t$, $S\overline S^t=DI$ and $\chi_i(j)=S_{ij}/d_i$ are the
+characters of the fusion ring. Their values are algebraic integers because they are eigenvalues of
+integral fusion matrices, and the modular data are cyclotomic. The squared row norm
+$f_i=D/d_i^2=\sum_j|\chi_i(j)|^2$ is a rational algebraic integer,
+hence an integer. It is called the \emph{formal codegree}. The Galois
+group permutes the characters preserving $f_i$ and $d_i$. Symmetry gives the same permutation on argument labels, so
+$\sigma\chi_i(j)=\chi_{\sigma i}(j)=\chi_i(\sigma j)$.
+We write $s=S/\sqrt D$ for the unitary normalization and $T$ for
+the diagonal matrix of twists $\theta_i$. Galois acts on $s$ with
+the additional common sign $\sqrt D/\sigma(\sqrt D)$. In particular $\theta_{i^*}=\theta_i$.
+
+\begin{lemma}\label{lem:basic-table}
+Every nonunit row of $S$ has a zero. Two nonunit labels of coprime dimensions have zero $S$-entry. Every nonunit dimension has at least two prime factors, and every prime factor of $D$ occurs to exponent at least two.
+\end{lemma}
+\begin{proof}
+Write $s=d_i$, $t=d_j$. Both $S_{ij}/s$ and $S_{ij}/t$ are algebraic integers, so B\'ezout's identity gives $z_{ij}=S_{ij}/\operatorname{lcm}(s,t)$ integral. A nonzero algebraic integer in a cyclotomic field has mean squared absolute value at least one over the Galois group, by the arithmetic--geometric mean inequality and its integral norm. If a row $i\ne0$ had no zero, averaging its squared norm would therefore give
+\[
+ D\ge\sum_j\operatorname{lcm}(s,d_j)^2>\sum_j d_j^2=D.
+\]
+The inequality is strict at the unit. Here complex conjugation commutes with every cyclotomic automorphism, so every conjugate of the squared norm equals $D$.
+
+Every conjugate of the character $\chi_i$ is a fusion character of the same squared norm $D/s^2<D$. For such a character $\chi$, the spectral-radius bound gives $|\chi(j)|\le d_j$. Equality for a nonunit would imply equality on every simple, because equality propagates to duals and, by the triangle inequality, to every constituent of a product of two objects attaining equality. Such a nonunit generates the whole category, by simplicity. This would give squared norm $D$. Consequently every conjugate of $S_{ij}/(st)$ has absolute value less than one for $i,j\ne0$. When $(s,t)=1$ this number equals $z_{ij}$, so its norm forces it to vanish. If $s$ were a power of $p$, every nonzero nonunit term in $\sum_{j\ne0}d_j\chi_i(j)=-1$ would then be divisible by $p$, an impossibility.
+
+Finally, form $P=\prod_i[X_i][X_i^*]$ in the fusion ring. All its character values except the dimension vanish, by the row-zero assertion. The coefficient of the unit is therefore $\prod_i d_i^2/D$, by the character formula for the unit coefficient (or by diagonalizing the multiplication matrix with $S$). This positive number is an integer. If a prime divided $D$ to exponent one, it would divide none of the $d_i$, since $d_i^2\mid D$. This contradicts the divisibility just proved.
+\end{proof}
+
+
+At least three primes divide $M$. Indeed all dimension primes divide $M$ by square-fullness. With just two primes, every nonunit degree would contain both, contradicting row orthogonality.
+
+\subsection{Enumerating the denominators}
+\begin{lemma}\label{lem:deletion}
+For each prime $p$, at least two distinct nonunit labels have degree prime to $p$.
+\end{lemma}
+\begin{proof}
+For every nonunit $i$, orthogonality with the vacuum gives $\sum_{j\ne0}d_j\chi_i(j)=-1$. Reducing in the ring of cyclotomic integers modulo a prime above $p$ gives a $j\ne0$ with $p\nmid d_j$ and $S_{ij}\ne0$. If there were only one such label $j$ of degree prime to $p$, its column would meet every nonunit row and the vacuum. This contradicts Lemma~\ref{lem:basic-table}.
+\end{proof}
+
+Write $D=qM^2$ with $q$ square-free. Each $d_i$ divides $M$. Order the denominators $b_i=M/d_i$ of the nonunit labels as $b_1\le\cdots\le b_{r-1}$. Then
+\begin{equation}\label{eq:recip}
+ q=M^{-2}+\sum_{i=1}^{r-1}b_i^{-2},\qquad q b_1^2<r .
+\end{equation}
+The inequality is strict because $M>b_1$. It gives finitely many initial pairs $(q,b_1)$. At any nonempty prefix put $L=\operatorname{lcm}(b_1,\ldots,b_j)$, $h=r-1-j$, and $E=L^2(q-\sum_{i\le j}b_i^{-2})$. For $h>0$ the next denominator $b$ must satisfy
+\begin{equation}\label{eq:interval}
+ b\ge b_j,\qquad L^2<Eb^2\le(h+1/36)L^2.
+\end{equation}
+Indeed the remainder exceeds $b^{-2}$ by the vacuum contribution and is at most $h/b^2+1/(6b)^2$, since the remaining denominators are at least $b$ and $M/b\ge6$. If $g=\gcd(L,b)$ and $k=b/g$, the next pair $(L,E)$ is $(kL,k^2E-(L/g)^2)$. These integer formulas enumerate a finite tree of bounded depth without any preliminary size bound on $D$.
+
+The final two positions admit a cheaper exact test. Write their degrees $d\le e$ and put $M=kL$. Every earlier nonunit degree is a multiple of $k$. For each $p\mid k$, Lemma~\ref{lem:deletion} forces $p\nmid de$, so $d,e\mid L$. The entire remainder now gives
+\[
+ Ek^2=1+d^2+e^2,\qquad \gcd(k,de)=1,\qquad M/e\ge b_j.
+\]
+One may enumerate the divisor pairs of $L$ by their squared residues modulo $E$. Alternatively one enumerates $b=M/e$ in \eqref{eq:interval}. Its gcd $g$ with $L$ equals $L/e$, giving $e=L/g$, $k=b/g$, and $d^2=Ek^2-1-e^2$. Both methods list every completion after imposing the displayed conditions and the original degree restrictions. Also $\gcd(k,10)=1$, since odd squares are $1$ modulo $4$ and nonzero squares are $1,4$ modulo $5$. Thus $E\bmod 8$ cannot be $0,4,7$. These last restrictions save work but add no hypotheses. With a single remaining position, $k=1$ by the same lemma and $E=1+d^2$.
+
+\subsection{The field of a row}
+\begin{lemma}\label{conduct}
+The field $K_i=\mathbb Q(\chi_i(j):j)$ has conductor dividing $f_i$.
+\end{lemma}
+\begin{proof}
+Write $f=f_i$. For $a$ in the inverse different of $K_i$, the
+element $\sum_j\operatorname{Tr}(a\chi_i(j^*))[j]$ lies in the
+integral fusion ring. Its eigenvalue at $i$ is $fa$, by character
+orthogonality. Thus the different divides $f\mathcal O_{K_i}$.
+
+Here are the conductor details. At $p$ extend the unramified base
+$F$ to remove the unramified part, and put the remaining extension
+$E$ inside $L=F(\zeta_{p^v})$ of least such level. The normalized
+different exponent of $E/F$ is at most $v_p(f)$. For odd $p$, write
+$[E:F]=e_0p^s$ with $e_0\mid p-1$. If $E/F$ is ramified,
+$v=s+1$ by cyclicity of the wild part. The extension $L/E$ is tame.
+The derivative of $\Phi_{p^v}$ and transitivity of the different
+give the normalized exponent
+\[
+ s+1-\frac{1-p^{-s}}{p-1}-\frac1{e_0p^s}.
+\]
+It is positive in the tame case, and strictly greater than $s$ in
+the wild case. Hence $p^v\mid f$. At two, conductor four has
+normalized exponent one. For $v\ge3$, the stabilizer of $E$ in
+$\operatorname{Gal}(L/F)$ misses $1+2^{v-1}$, so it has trivial
+intersection with $\langle5\rangle$ and order at most two.
+In the quadratic case its generator sends $\zeta$ to $\zeta^{-1}$
+or to $-\zeta^{-1}$. The valuation of the difference from $\zeta$
+is two in either case, giving relative different exponent two.
+The normalized different of $E/F$ is therefore at least
+$v-1-2/2^{v-1}>v-2$. This proves that the conductor divides $2f$.
+
+To remove the extra factor of two put $m=2^{v_2(f)}$. For $m=1$
+adjoining a factor two to an odd conductor changes no field.
+Otherwise take $F$ now to be an odd cyclotomic field containing the
+odd part and $\zeta$ of order $2m$. Suppose $e=1+m$ moves the row.
+The coefficients in
+$\chi_i(Y)=\sum_{k=0}^{m-1}z_{kY}\zeta^k$ are integers of $F$,
+by the coprime conductors. For $G=(\mathbb Z/2m)^\times$ and
+the row stabilizer $H\le G$, Fourier inversion yields
+$z_{1Y}=m^{-1}\sum_{g\in G}\zeta^{-g}\chi_{gi}(Y)$.
+Orthogonality of distinct rows gives
+\[
+ \sum_Y|z_{1Y}|^2
+ =\frac f{m^2}\sum_{h\in H}\sum_{g\in G}\zeta^{g(h-1)}
+ =\frac f m .
+\]
+The inner sum vanishes unless $h=1$ or $h=e$, and $e\notin H$.
+The action of $e$ on argument labels negates $z_{1Y}$, so all its
+nonzero coefficients occur in even cycles and the left side is
+divisible by two in the algebraic integers. The right side is odd.
+\end{proof}
+
+\subsection{The principal block}
+\label{blk:principal}
+Write $R=K_0(\mathcal C)$, $\chi_i(j)=S_{ij}/d_i$, and let $e_i$ be the primitive idempotent for $\chi_i$ in the split character algebra. The coefficient $\tau$ of the tensor unit satisfies
+\[
+ \tau(a)=\sum_i\frac{\chi_i(a)}{f_i},\qquad
+ \tau([i][j]^*)=\delta_{ij}.
+\]
+In particular $R$ is its own trace dual, also after localization at a prime.
+
+Fix a prime $p\mid D$ and a place of a common cyclotomic splitting field above $p$. The \emph{principal block} $P$ consists of those $i$ for which $\chi_i(j)\equiv d_j$ at this place for every $j$. This condition holds at every place above $p$ once it holds at one. Indeed, Galois conjugation of $\chi_i(j)$ permutes the argument $j$ within its degree class. It also permutes the characters, so $P$ is Galois stable.
+
+The sum $e_P=\sum_{i\in P}e_i$ belongs to $R\otimes\mathbb Z_p$. To see this, reduce the finite commutative algebra $R\otimes\mathbb Z_p$ modulo $p$ and take the idempotent of the local factor belonging to the dimension character. Idempotents lift over a complete local base. A lifted idempotent takes only the values zero and one on the characteristic-zero characters, and its residues select precisely $P$. Here the residue dimension character takes values in $\mathbb F_p$, so its kernel distinguishes that character from every other residue character.
+
+\begin{lemma}\label{blk:support}
+For every label $i$, $\sum_{j\in P}|\chi_i(j)|^2$ is an integer divisible by $p^{v_p(f_i)}$. If $f_i$ is a power of $p$, its row is supported on $P$. If also $p\nmid d_i$, its support is exactly $P$.
+\end{lemma}
+\begin{proof}
+The sum is a Galois-invariant algebraic integer by the argument permutation. Dividing it by $f_i$ gives $\tau(e_P[i][i]^*)$ by symmetry, hence a $p$-adic integer. The sum contains the vacuum contribution one and is bounded by the full row norm $f_i$. This proves the support assertion. For $j\in P$ the congruence $\chi_j(i)\equiv d_i$ guarantees a nonzero entry if $p\nmid d_i$.
+\end{proof}
+
+\begin{lemma}\label{blk:height}
+If $p^2\mid D$, then $p^2\mid f_i$ for every $i\in P$.
+\end{lemma}
+\begin{proof}
+The assertion holds for the unit. For another $i\in P$ write $O$ for its Galois orbit, $h=|O|$ and $e_O=\sum_{j\in O}e_j$. For $a\in R$ the integer $t(a)=\sum_{j\in O}\chi_j(a)$ satisfies $t(a)\equiv h\chi_0(a)\pmod p$. Indeed all the summands have the dimension residue. The trace duality therefore puts
+\[
+ b=\frac{hD}{p}e_0-\frac{f_i}{p}e_O\quad\text{in }R,
+ \qquad
+ \tau(ba)=\frac{h\chi_0(a)-t(a)}{p}\in\mathbb Z .
+\]
+The integer $\chi_i(b)=-f_i/p$ is congruent to $\chi_0(b)=hD/p\equiv0\pmod p$. This gives the claim.
+\end{proof}
+
+\begin{lemma}\label{blk:witness}
+Put
+\[
+ A_p=\{d_j>1:p^2\mid f_j,\space
+             \gcd(d_j,d_i)>1\text{ for every }d_i>1\text{ prime to }p\}.
+\]
+If $p^2\mid D$, then $\gcd(A_p)=1$.
+\end{lemma}
+\begin{proof}
+Every nonunit $j\in P$ contributes a degree to $A_p$ by Lemma~\ref{blk:height}. Indeed $\chi_j(i)\equiv d_i$ is nonzero at every $p$-free $i$, and coprime nonunit degrees have zero crossing. Categorical Cauchy supplies a label $x$ whose twist has nontrivial $p$-part. Block orthogonality (Lemma~\ref{blk:local}) for the columns $x,0$ gives
+\[
+ 0=\sum_{j\in P} d_j\chi_x(j)
+   =1+\sum_{j\in P\setminus\{0\}}d_j\chi_x(j).
+\]
+As all character values are algebraic integers, no prime can divide every degree in the last sum.
+\end{proof}
+
+\section{What a prime in the dimension forces}\label{blk:section}
+Write $s=S/\sqrt D$, $T=\operatorname{diag}(\theta_i)$, and $N=\operatorname{ord}(T)$. The primary part of a twist is denoted by $\theta_{i,p}$. The congruence theorem gives a unitary representation of $\mathrm{SL}_2(\mathbb Z/L)$ taking the Weyl matrix $W=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$ to $s$ and the upper unipotent $U=\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$ to $T/\gamma$, with $\gamma$ of two-power order and $L=\operatorname{ord}(T/\gamma)$ \cite[Theorems II and 6.10]{DLNCongruence}. The Chinese remainder theorem gives commuting local factors. In the $p$-factor write $w=W_p$, $u=U_p$, and $h_a=\operatorname{diag}(a,a^{-1})_p$. Thus $u$ is diagonal with entries proportional to $\theta_{i,p}$, with scalar one for odd $p$. The same congruence theorem identifies $h_a$ with a signed Galois permutation. The underlying permutation preserves degrees and raises the local normalized twists to their $a^2$th powers (replacing $a$ by its inverse gives the same orbits). Its sign on a fixed label is the Galois sign of $d_i/\sqrt D$. Categorical Cauchy says that the prime divisors of $N$ are precisely those of $D$ \cite[Theorem~3.9]{BNRWFinite}.
+
+\begin{lemma}\label{blk:local}
+The coordinate space of a full $p$-block is invariant under the $p$-local group. Equivalently, if $B$ is a block and $\theta_{x,p}\ne\theta_{y,p}$, then $\sum_{z\in B}s_{xz}\overline{s_{yz}}=0$.
+\end{lemma}
+\begin{proof}
+Here blocks are the fibers of reduction of the fusion characters at a fixed prime over $p$. For a label $i$, let $L_j^i$ be the $j$th generalized rotation trace with central insertion $(i,i^*)$ in $\mathcal C\boxtimes\mathcal C^{\rm rev}$. The insertion has twist one. We recall the two ingredients from the indicator formula and strand grouping \cite[Lemmas~2.5, 2.7, Proposition~2.8, Corollary~5.5 and Proposition~6.1]{NSind}. With $e_z$ the primitive character idempotent and $A_j=sT^js^{-1}$, one has
+\[
+ L_j^i(e_z)=|(A_j)_{iz}|^2,\qquad L_j^i(y)^p\equiv L_{j/p}^i(y^p)\pmod{\mathfrak p}\quad(p\mid j).
+\]
+Indeed the indicator formula on $[c]$ sums $s_{ia}s_{ib}(\theta_a/\theta_b)^jN_{ab}^c$ over $a,b$. Contracting with $f_z e_z=\sum_c\overline{\chi_z(c)}[c]$ splits the sum into conjugate factors. For the congruence, taking a $p$th power of the trace modulo $\mathfrak p$ gives the trace of the $p$th power of the rotation. Grouping $p$ strands gives the second expression. Additivity and the Frobenius homomorphism extend this from objects to $y$ with integral coefficients in a cyclotomic ring. In both statements $L_j^i$ is extended linearly.
+
+Set $m=N_{p'}$, the largest prime-to-$p$ divisor of $N$. Choose $b\ge\max(1,v_p(N))$ so that $p^b\equiv1\pmod m$. For a genuine object $A$ and $n\ge2b$,
+\[
+ L_m^i(A^{p^n})-L_{mp^b}^i(A^{p^{n-b}})\in p^{n-2b+1}\overline{\mathbb Z}_p.
+\]
+The traces are those of the powers $p^n,p^{n-b}$ of the same rotation on $mp^n$ strands. Its eigenvalues have orders dividing $mp^n$. Their multiplicities are constant on Galois orbits over $\mathbb Q(\zeta_N)$, since all power traces belong to that field \cite[Proposition~5.7]{NSind}, \cite[Theorem~7.7]{NSfs}. The powers agree on the prime-to-$p$ parts and on roots of $p$-order at most $p^{n-b}$. At order $p^j>p^{n-b}$ the units congruent to one modulo $p^b$, acting trivially away from $p$, give orbits of size $p^{j-b}$. Each of the two powers is constant on such an orbit, which gives the divisibility.
+
+For clarity, separate the individual blocks even when their residues are nonrational. For one maximal ideal of the fusion ring modulo $p$ let its residue field have size $p^h$. The embeddings of that field give Frobenius-conjugate blocks $B_0,\ldots,B_{h-1}$. For each nonzero residue $a$, lift the element equal to $a$ at this maximal ideal and zero at the others to a genuine object $A$ by choosing nonnegative basis coefficients modulo $p$. Take $b,n$ as above and divisible by $h$. In character coordinates both powers of $A$ converge as $n\to\infty$ to $\sum_j [a]^{p^j}e_{B_j}$, where $[a]$ is the Teichm\"uller lift and $e_B=\sum_{z\in B}e_z$. Thus $L_m^i=L_{mp^b}^i$ on these sums. The distinct characters $a\mapsto[a]^{p^j}$ are linearly independent, giving equality on each $e_B$. Since $N\mid mp^b$, the matrix formula gives $\sum_{z\in B}|(A_m)_{iz}|^2=\mathbf1_{i\in B}$. Unitarity shows that $A_m$ preserves $B$. As $T^m$ distinguishes the $p$-primary phases, the block projector commutes with $s u s^{-1}$ and with the diagonal $u$. These upper and lower unipotents generate the local factor. Conjugating the projector by $s$ gives the displayed orthogonality. (One may use $s^{-1}$ in place of $s$, since $s^2$ is charge conjugation and commutes with each twist.)
+\end{proof}
+
+\begin{lemma}\label{blk:admissible}
+If $w$ preserves the coordinate line of $z$, then $p\nmid f_z$. The row of $z$ meets a column with nontrivial $p$-twist precisely when $p\mid f_z$. A nontrivial $p$-twist at $z$ requires $p\mid f_z$. At an odd prime its entire order divides $f_z$.
+\end{lemma}
+\begin{proof}
+It suffices to consider $p\mid D$. Choose $k$ divisible by $p$ and the $p$-part of $L$, with $k\equiv1\pmod{L_{p'}}$. On complementary factors the matrix identity $U(WUW^{-1})U=W^{-1}$ identifies $sT^ks^{-1}$, up to diagonal phases, with the inverse complementary Weyl. If $wv_z$ is proportional to $v_z$, the absolute value of the $(0,z)$ entry of that inverse Weyl is $|s_{0z}|$. Here $s^{-1}v_z$ is the product of the inverse local and complementary Weyls, and $|(s^{-1})_{0z}|=|s_{0z}|$. Hence $L_k^0(f_ze_z)=1$. The congruence in the preceding proof for $y=f_ze_z$ gives $1\equiv f_z^{p-1}L_{k/p}^0(y)\pmod{\mathfrak p}$, so $p\nmid f_z$.
+
+Conversely, $p\nmid f_z$ makes $e_z$ locally integral by its displayed character expansion, so it separates $z$ into a singleton block. Lemma~\ref{blk:local} with $x=0$ shows that the row misses all active columns. If the row misses them, $s\operatorname{diag}(\theta_{i,p})s^{-1}$ fixes $v_z$. Both generating unipotents then preserve its line. Global Weyl conjugation of $u$ equals conjugation by $w$, so on that line both unipotents consequently act by the same scalar. Comparing their eigenvalues gives $\theta_{z,p}=1$.
+
+For the last assertion let $p^j$ be the order of the odd local twist. Every automorphism fixing the row has multiplier $\pm1\pmod{p^j}$ there, by square Galois covariance. Thus its character field contains $\mathbb Q(\zeta_{p^j}+\zeta_{p^j}^{-1})$, of conductor $p^j$ unless $p^j=3$. The conductor bound of Lemma~\ref{conduct} gives $p^j\mid f_z$, and the exception was just proved.
+\end{proof}
+
+\begin{lemma}\label{blk:moments}
+Fix an odd prime $p\mid D$. Intersect any full $p$-block (or the whole label set) with a fiber obtained by fixing any collection of complementary primary twists. Give each label $i$ weight $d_i^2$. If $v_p(D)$ is even, the weights at the $p-1$ primitive $p$th roots are equal. If $v_p(D)$ is odd, the total weight at order $p$ is $p-1$ times the weight at the trivial phase.
+\end{lemma}
+\begin{proof}
+Let $E$ be the coordinate projector of this intersection. The local $p$-factor commutes with $E$, by Lemma~\ref{blk:local} and commutation of distinct local groups. It also commutes with $Q=sEs^{-1}$, since $s$ normalizes the factor. For a unit $a$ modulo the local level, the Bruhat identity gives the weighted moment
+\[
+ D^{-1}\sum_{i\in E}d_i^2\theta_{i,p}^a
+ =(Qwu^aw^{-1})_{00}
+ =(Qu^{-1/a}wh_{-a}u^{-1/a})_{00}
+ =\varepsilon(-a)(Qw)_{00}.
+\]
+Here $u^b v_0=v_0$ at an odd prime and $h_{-a}v_0=\varepsilon(-a)v_0$. On $\sqrt D$, pure $p$-inertia acts trivially for even $v_p(D)$ and by the quadratic character for odd $v_p(D)$, as seen from the quadratic Gauss sum of conductor $p$. In the first case the moment is rational. Its normalized trace to $\mathbb Q(\zeta_p)$ removes all terms of order greater than $p$. Since the only rational relation among the $p$th roots is their sum, all nontrivial coefficients are equal. In the second case the average over units vanishes. A root of order $1,p,$ or $p^j$ with $j\ge2$ has mean $1,-1/(p-1),$ or $0$, respectively, giving the asserted ratio.
+\end{proof}
+
+Write $D=qM^2$ with $q$ square-free, and $h_p=(p-1)/2$ for odd $p$. At each degree the phases of exact $p$-order $p^j$ occur in square-unit orbits, with constant multiplicity across their $p^{j-1}h_p$ values, even after fixing complementary twists. We call $h_p$ labels of the same degree a packet when counting these orbits.
+
+\begin{proposition}\label{blk:packets}
+Let $A$ consist of the odd prime factors of $q$. Put $P=\prod_{t\in A}(h_t+1)$ and
+\[
+ B(q)=\max\left(\{2^{\mathbf1_{2\mid q}}P\}\cup
+ \left\{(h_t+2)P/(h_t+1):t\in A\right\}\right).
+\]
+Every nonempty fiber obtained by fixing odd-primary components outside $A$ has at least $B(q)$ labels. If $J$ is any set of odd primes dividing $D$ to even valuation, at least $B(q)\sum_{p\in J}(p-1)$ labels are active at one or more of them.
+\end{proposition}
+\begin{proof}
+Fix $t\in A$ and any nonempty complementary fiber $F$. A higher-order $t$-phase supplies at least $th_t\ge h_t+2$ distinct phases. Otherwise Lemma~\ref{blk:moments} forces an inactive label and $h_t$ primitive phases. In either case there are at least $h_t+1$ phases and $h_t+2$ labels. Indeed equality at $h_t+1$ labels would leave one inactive degree $b$ and one common degree $a$ on the primitive orbit, with $h_ta^2=(t-1)b^2$, impossible for integers. We shall also use
+\begin{equation}\label{blk:fibergcd}
+ t\mid \sum_{i\in F}(d_i/g)^2,\qquad g=\gcd_{i\in F}d_i.
+\end{equation}
+After division by $g^2$ the inactive and exact-order-$t$ masses sum to a multiple of $t$, and each higher-order multiplicity at one degree is a multiple of $t$.
+
+Refining a fiber successively at the primes of $A$ gives at least $h_t+1$ children at each $t$. Leaving $t$ to the last step gives the factor $h_t+2$ instead. Also, when $2\mid q$ every $f_i=q(M/d_i)^2$ is even. The dyadic Weyl preserves every odd-primary fiber, so none can be a singleton by Lemma~\ref{blk:admissible}. This gives the option $2P$.
+
+For the joint assertion project twists to their $J$-components, and partition the projected tuples by their vector of exact orders. In a nonempty stratum let $J'$ index the nontrivial components. Even after fixing the other coordinates, each $p\in J'$ supplies at least $p-1$ phases of the indicated order, by Lemma~\ref{blk:moments} at order $p$ and the square action at higher orders. Successive projection gives at least $\prod_{p\in J'}(p-1)$ tuples. For nonempty $J'$ this is at least $\sum_{p\in J'}(p-1)$, since every factor is at least two. Every $p$ occurs by Cauchy. The strata are disjoint and each tuple has at least $B(q)$ labels.
+\end{proof}
+
+A further consequence at even valuation is useful for partial degree lists. A degree $d$ is eligible at $p$ only if $p\mid D/d^2$. If exactly two packets of $h_p$ labels fit in the eligible runs, a higher-order phase is impossible. Each of the two square classes then uses one packet. Equality of their squared masses forces the two packets to have the same degree.
+
+\begin{lemma}\label{blk:activity}
+Let $x$ be the smallest nonunit degree, $p\mid D$, and $V_p=\sum_{\theta_{i,p}\ne1}d_i^2$. Then $2px V_p\ge(p-1)D$.
+\end{lemma}
+\begin{proof}
+Put $k=N_{p'}$, $a_i=\theta_i^k$. For a simple $X$ of degree $x$, the ordinary indicator formula \cite[Theorem~7.5]{NSfs} gives
+\[
+ \nu_k(X)=D^{-1}\sum_{i,j}N_{ij}^X d_i d_j a_i/a_j\in\mathbb Z.
+\]
+Indeed it is an algebraic integer both in the $p$-power cyclotomic field of the phases and in the prime-to-$p$ field of the rotation. The weights before division by $D$ sum to $Dx$. If the indicator equalled $x$, all phases would agree along every edge of multiplication by $X$, by $N_{ij}^X=N_{i^*X}^{j}$. That graph is connected after forgetting orientations because $X$ and $X^*$ generate, and duality reverses edges. Twists agree on duals. All phases would then equal the vacuum phase, contrary to Cauchy. Thus $x-\nu_k(X)\ge1$. Averaging the sum over $p$-power Galois automorphisms, unequal phases contribute at most $p/(p-1)$ times their normalized weight to this deficit. At least one index in each such pair is active, and each of the two choices has total weight $xV_p$ by reciprocity. This proves the bound.
+
+\end{proof}
+
+To apply the activity bound at an odd prime of even valuation put $h=(p-1)/2$. For each eligible degree $d>1$, let $n_d=\lfloor m_d/h\rfloor$ and let $k_d$ be the signed difference of its exact-order-$p$ packet counts in the two square classes. Lemma~\ref{blk:moments} gives $\sum_d k_dd^2=0$. After reserving $|k_d|$ packets, an opposite pair uses two more slots. A higher-order packet uses a multiple of $p$ slots and requires $p^2\mid D/d^2$. Thus for $|k_d|\le n_d$ the active mass is bounded above by $h\sum_d (n_d-\epsilon_d)d^2$, where $\epsilon_d=1$ when $n_d-|k_d|$ is odd and either $n_d-|k_d|<p$ or $p^2\nmid D/d^2$, and $\epsilon_d=0$ otherwise. Maximizing under the one integer equation gives the upper bound used in Lemma~\ref{blk:activity}.
+
+\begin{lemma}\label{blk:two}
+If a plane spanned by coordinate vectors $v_X,v_Y$ is invariant under a local factor while its Weyl fails to preserve $\mathbb C v_X$, then $p=2$, $d_X=d_Y$, and their primary twist ratio has order four.
+\end{lemma}
+\begin{proof}
+The local upper unipotent has distinct eigenvalues on the two lines, for otherwise its conjugate lower unipotent would also be scalar. The plane is irreducible because an invariant line would have to be one of the two eigenlines and its orthogonal complement would also be invariant. Hence the central $w^2$ acts as a scalar. Up to phase $w$ is a Hermitian involution $\left(\begin{smallmatrix}a&b\\\overline b&-a\end{smallmatrix}\right)$, $a\in\mathbb R$, $0<|b|^2=1-a^2$. The relation $(wu)^3=w^2$ makes $wu$ of projective order three, since it is not diagonal. The absolute value of its trace is one. If $\omega$ is the eigenvalue ratio of $u$, it follows that $a^2|1-\omega|^2=1$.
+
+The complementary Weyl commutes with $u$. Since $s=w_{p'}w$ has nonzero vacuum entries in both columns, the vacuum eigenvalue of $u$ agrees with one of the two in the plane. Consequently $d_X/d_Y$ equals $|a/b|$ or its inverse, since projecting either column to the vacuum uses just the common eigenline after application of $w$. Thus $a^2$ is rational, as is the algebraic integer $\omega+\omega^{-1}$. Among nontrivial prime-power roots this leaves orders two, three and four. The corresponding $a^2$ are $1/4,1/3,1/2$. Only the last gives a rational degree ratio.
+\end{proof}
+
+When $2\mid q$ and $p\mid M$ is an odd prime of even valuation, put $h=(p-1)/2$. Among eligible nonunit degrees one then has $\sum_d(\lfloor m_d/h\rfloor+\lfloor m_d/(2h)\rfloor)\ge6$. Indeed each nontrivial phase fiber has at least two labels by Lemma~\ref{blk:admissible}. In a two-label fiber Lemma~\ref{blk:two} makes their degrees equal. A higher order contributes at least $2ph$ labels. Otherwise the two primitive square classes each supply three $h$-packets or two equal-degree $h$-packets. The latter pair contributes once more to the second sum.
+
+\section{Starting the search}\label{sec:small}
+Put $u_Y=\chi_X(Y)$ for a nonunit $X$ of degree $n$ and codegree
+$f$. Write $c_Y$ for the Galois mean of $|u_Y|^2$ and $H$ for its
+nonunit support. The vacuum column of $STS=p^+T^{-1}ST^{-1}$ gives
+$|\sum_Y d_Y\theta_Yu_Y|=\sqrt D$. Applying this identity at all
+embeddings and using Cauchy--Schwarz gives
+\begin{equation}\label{st}
+ \sqrt f\le n^{-1}\sum_Y d_Y\sqrt{c_Y},\qquad
+ \sum_Y c_Y=f,\qquad
+ c_Y\ge (d_Y/\gcd(d_Y,n))^2\quad(Y\in H).
+\end{equation}
+The last inequality follows from lcm integrality and the nonzero
+algebraic norm. Orthogonality gives $\gcd_{Y\in H}d_Y=1$.
+
+\begin{lemma}\label{small}
+Every nonunit codegree exceeds four, and none is prime.
+\end{lemma}
+\begin{proof}
+If $f\le4$, all the supported degrees divide $n$ and $|H|\le3$.
+There must be at least two. For two, both degrees are proper divisors,
+so $\sqrt f\le1/n+\sqrt{2(f-1)}/2$, impossible for $f=3,4$
+and $n\ge6$. For three, $f=4$ and all the entries have mean square
+one. If all degrees are proper, then $2\le1/n+3/2$. At most one degree equals $n$. If it occurs, the other two
+cannot both equal $n/2$ by their common gcd. Thus
+$2n\le1+n+n/2+n/3$, forcing $n\le6$. The only eligible divisor
+of six is six itself.
+If $f=p$ is prime, $D=pn^2$ is square-full, so $p\mid n$. All
+degrees divide $n$. The row is supported in the principal $p$-block,
+where $p^2\mid f_Y$, so its degrees divide $n/p$. Now
+\eqref{st} gives $\sqrt p\le p^{-1}\sum_Y c_Y=1$.
+\end{proof}
+
+\begin{lemma}\label{six}
+Six is not a formal codegree.
+\end{lemma}
+\begin{proof}
+Suppose $D=6n^2$. Every degree divides $n$, and square-fullness
+gives $6\mid n$. At least three primes divide $n$, so $n\ge30$.
+By Lemma~\ref{conduct}, the entries lie in $\mathbb Z[\zeta_3]$.
+Their nonzero squared moduli are Eisenstein norms. Those on $H$
+sum to five and can only be $(4,1)$, $(3,1,1)$, or five ones.
+In the first case the two degrees are coprime divisors of $n$,
+each at least six, so both are at most $n/6$ and \eqref{st} fails.
+In the second case either all three ratios $d_Y/n$ are at most
+$1/2$, or one equals one and the other two are at most $1/6$.
+Cauchy--Schwarz gives at most $1/n+\sqrt{5(1+2/36)}<\sqrt6$.
+
+It remains to treat five unit entries. Set $k_Y=n/d_Y$ and let $m$
+count the indices equal to one. Their lcm is $n$. The squared row
+norm on the principal $3$-block contains the vacuum and is divisible
+by three. On this block $3\mid k_Y$, by the principal valuation
+bound. Thus at least two of the five nonunit indices are multiples
+of three. The modular inequality is
+\[
+            \sqrt6\le1/n+\sum_{Y\in H}1/k_Y.
+\]
+For $m=0$ the reciprocal sum is at most $3/2+2/3$. For $m=1$,
+if at most one proper index is two, the four proper indices must
+be $(2,3,3,3)$, whose lcm is six. Indeed the next upper bound is
+$1/2+2/3+1/4$, which falls short for $n\ge36$. At $n=30$ the
+index four is unavailable and $1/5$ replaces $1/4$. If two indices
+are two, the others are multiples of three. An index three would
+force the degree at the last index to divide two, since, for the other multiple $k$ of three,
+$n/ k=\operatorname{lcm}(2,3,k)/k\mid2$. Otherwise the sum,
+including the full index, is at most $2+2/6$.
+
+Four full indices would leave a single proper degree dividing the
+gcd, which is impossible. With three full indices the two proper
+degrees are coprime and each is at most $n/6$. The sum of entries
+of a fixed degree is rational and integral, by Galois permutation
+of the columns. Orthogonality therefore forces the three full entries
+to sum to zero. This rules out a real row. For a nonreal row,
+orthogonality to its conjugate gives $\sum_Y u_Y^2=0$. The six
+nonzero squares must comprise two copies of each cube root of unity.
+The vacuum and both singleton proper entries already give three ones.
+
+Finally take $m=2$. If the three proper degrees repeat, they are
+$a,a,b$ with $a,b$ distinct and coprime. Their sum divided by $n$
+is at most $2/b+1/a$. If one equals six the other is at least $35$,
+and otherwise both are at least ten. In either case
+$2+2/b+1/a+1/n<\sqrt6$. For three distinct proper degrees their
+entries are rational signs. The three signs and the vacuum again
+exclude a nonreal row. The two full signs cancel by orthogonality,
+since the other three degrees total at most $3n/2$.
+Write $a<b<c$ for the proper indices. Since all proper degrees are
+at least six,
+\[
+ |n/a-n/b-n/c|=1,\qquad
+ n=\operatorname{lcm}(a,b,c),\qquad
+ (2n+1+n/a+n/b+n/c)^2\ge6n^2.
+\]
+The first equation and the inequality give $2/a+2/n\ge\sqrt6-2$,
+so $a\le5$. Also $1/a\le2/b+1/n\le13/(6b)$ gives $b\le10$.
+Lastly $c(1/a-1/b)\le7/6$ gives
+$c\le 7a(a+1)/6\le35$. The short integer ranges can be checked by hand. Before the displayed
+inequality is imposed, the triples $(a,b,c)$ satisfying the equation,
+$6\mid n$, $n/c\ge6$ and at least two indices divisible by three are
+$(3,6,7)$, $(5,6,27)$, $(5,6,33)$ and $(5,9,12)$.
+For the last three, the left side of the displayed inequality minus
+$6n^2$ is, respectively, $-14900$, $-26136$ and $-7776$.
+Thus only $(3,6,7)$ remains, with $n=42$. Its middle degree is
+seven, a prime power.
+\end{proof}
+
+\begin{lemma}\label{prime-square}
+If $f_X=p^2$ and $d_X=n$, the nonunit degrees at which
+$\chi_X(Y)$ has nonzero absolute field trace divide $n/\gcd(n,p)$
+and have gcd one.
+\end{lemma}
+\begin{proof}
+For $u=\chi_X(Y)$ put $F_Y=\mathbb Q(u)$ and
+$t_Y=\operatorname{Tr}_{F_Y/\mathbb Q}(u)$. Averaging the row over its
+$[K_X:\mathbb Q]$ orthogonal conjugates and grouping its columns by
+Galois orbit gives
+\[
+ f_X=\sum_{[Y]}[K_X:F_Y][K_Y:F_Y]t_Y^2,\qquad
+ 0=\sum_{[Y]}d_Y[K_Y:F_Y]t_Y .
+\]
+The vacuum contributes a positive term in the first equation and one
+in the second. Thus every nonzero nonunit trace has $|t_Y|<p$,
+and their degrees have gcd one. As $d_Y\mid pn$, failure of
+$d_Y\mid n$ would make $u$ and its trace divisible by $p$ by
+lcm integrality. If $v_p(d_Y)=v_p(n)>0$, principality gives
+$u=(d_Y/n)\chi_Y(X)\equiv0$ at every place above $p$. Its
+integer trace is again a multiple of $p$.
+\end{proof}
+
+\begin{lemma}\label{nine}
+Nine is not a formal codegree.
+\end{lemma}
+\begin{proof}
+Suppose $D=9n^2$. Write $I$ for the labels of degree $n$, $m=|I|$,
+and $P$ for the principal 3-block. Each $I$-row is supported in $P$,
+whose degrees divide $n$ by Lemma~\ref{blk:height}.
+
+First suppose $3\mid n$. Fix $X\in I$. For a supported $Y$ with
+$v_3(d_Y)=v_3(n)$ the entry $u=\chi_X(Y)$ is zero modulo the
+prime over three and lies in $\mathbb Q(\zeta_9)$.
+The $e=[\mathbb Q(u):\mathbb Q]$ conjugate entries occur at distinct
+columns. For $u\ne0$ their total cost $C=\operatorname{Tr}(u\bar u)$
+is a positive integer divisible by three, since all conjugates have
+zero residue there. Also $C\ge e\,3^{2/e}$ by the norm. For $e\ge3$
+this exceeds six, so $C\ge9$, more than the available nonunit norm.
+Thus $u$ lies in the unique quadratic subfield $\mathbb Q(\zeta_3)$
+or is rational. Its trace vanishes by Lemma~\ref{prime-square}.
+Its imaginary contribution cancels that
+of the dual label in the twisted sum, since dual twists agree.
+All the other nonunit degrees on the support divide $n/3$.
+Averaging the twisted inequality as in \eqref{st} now gives
+$3\le1/n+8/3$, impossible.
+
+Suppose $3\nmid n$. Lemma~\ref{prime-square} gives at least three
+distinct prime divisors of $n$, since each nonunit degree has at
+least two prime divisors and the indicated degrees have gcd one.
+In particular $n\ge70$. Each $I$-row has support exactly $P$,
+so $|P|\le9$. If $P\cap I$ is empty, the nonunit degrees in $P$
+are proper divisors of $n$ with gcd one. At most seven can equal
+$n/2$, and every smaller divisor is at most $n/4$. Thus
+$\sum_{Y\in P}d_Y^2\le1+7n^2/4+n^2/16<2n^2$.
+On the other hand this mass is at least $mn^2$, as one sees by projecting the vector
+$(d_Y\theta_Y)_Y$ by $s=S/\sqrt D$ onto the $I$ coordinates and
+using the vacuum modular relation and unitarity. Hence $m=1$.
+Its unique row is integral. Its nonunit norm eight gives eight
+signs, one entry of modulus two and four signs, or two entries of
+modulus two. In the last case the two degrees have gcd one, whereas
+two nonunits of $P$ have a nonzero crossing by their ternary
+residues. In the middle case the modular inequality forces all
+five degrees to equal $n/2$, since any smaller one loses at least
+$n/4$ from the maximum $3n$. For eight signs at least four degrees
+must equal $n/2$, since $3n/2+5n/4<3n-1$. Their signs agree because $(n/d_Y)u_Y=\chi_Y(X)\equiv n\pmod3$. The other four or fewer
+degrees cannot cancel them to within one. This proves $I\cap P\ne\varnothing$.
+
+Such an $I$-label meets every 3-free label by principality, so $P$
+is exactly the set of 3-free labels. Every label in $P$ has pure
+3-power twist, since a row of codegree nine sees only such labels
+(Lemma~\ref{blk:admissible}). A 3-active label has 3-free degree,
+so three occurs in no mixed twist. This contradicts Lemma~\ref{isolated} below.
+\end{proof}
+
+\begin{lemma}\label{isolated}
+Suppose $D=(3n)^2$, $3\nmid n$ and three occurs in no mixed twist.
+These conditions are impossible in a non-pointed simple category.
+\end{lemma}
+\begin{proof}
+Here are the local column details. Write $W=W_3$, let $V$ be the
+product of the other local Weyl operators and put $\epsilon=\gamma^3$,
+with the lift of Section~\ref{blk:section}. If $Y$ is 3-active,
+the other local upper unipotents act by scalars on its entire
+3-twist fiber. Their conjugates have the same scalar there since
+the other local factors preserve the fiber. The identity
+$U(WUW^{-1})U=W^{-1}$ thus gives $V=\epsilon I$ there.
+Lemma~\ref{blk:admissible} gives $f_Y=9$, since no other prime divides
+$f_Y$, and its 3-valuation must be two. On the span of all
+3-local translates of these fibers, $V=\epsilon I$. On its
+orthogonal complement the 3-unipotent is trivial, and its
+conjugates generate the local group, giving $W=I$. Hence
+\[
+                     s=VW=V+\epsilon(W-I).
+\]
+The vacuum vector $v_0$ is fixed by all local tori because in square
+dimension their Galois signs are positive and the dimension
+character is fixed. For a product $U_J$ of local upper unipotents
+let $W_J$ denote the corresponding Weyl product. Galois conjugation
+of $W_J$ multiplies it on the right by a local torus
+\cite[Theorem II and Remark 4.5]{DLNCongruence}, so
+$w_J=W_Jv_0$ is rational. Also $W_J^2$ is the local torus at
+$-1$, giving $w_J=W_J^{-1}v_0$. For a CRT exponent $k$ equal
+to one in $J$ and zero in the other factors, the unipotent identity
+above identifies $sT^ks^{-1}v_0$ with $w_J$ up to diagonal roots
+of unity. The $i0$ and $0i$ entries of $sT^ks^{-1}$ agree by
+replacing the summation label by its dual, whose twist is unchanged.
+The indicator formula in Lemma~\ref{blk:local} at
+$f_i e_i$ gives $f_i|(w_J)_i|^2$ integral. It follows that
+$(3n/d_i)(w_J)_i$ is an integer.
+
+More precisely, $3Wv_0$ is integral. At three this follows from
+$3nWv_0$ integral. Away from three, subtract the untwisted term in
+$sT^ks^{-1}v_0$. Its $i$th coordinate changes by
+$\sum_Y (\theta_Y^k-1)\chi_Y(i)/f_Y$, whose terms have
+denominator nine. Likewise $Vv_0$ is integral at three because any
+contributing $Y$ is active at another prime, so the 3-local group
+acts trivially on its coordinate line by the same fiber argument,
+and $3\nmid f_Y$. Categorical Cauchy supplies a 3-active $Y$, with
+$(Wv_0)_Y=s_{Y0}/\epsilon=1/(3\epsilon)$, so
+$\epsilon=\pm1$ by rationality.
+
+Set $j=3(1-W_{00})$ and $a_i=3\epsilon (Wv_0)_i$ for $i\ne0$.
+The split expression for $s v_0$ gives $a_i\equiv d_i/n\pmod3$.
+The integers $a_i$ satisfy $|a_i|<3$ because the unitary column has a
+nonzero vacuum entry since the vacuum coordinate of the split
+expression gives $n j\equiv-\epsilon\pmod3$, excluding $W_{00}=0$.
+Thus $a_i$ is nonzero exactly at the 3-free degrees, and $0\le j\le6$.
+Write $z=(W-I)v_0$. Since $s=\epsilon W$ on the moving subspace,
+$\|z\|^2=2j/3$ and $\langle z,s v_0\rangle=\epsilon j/3$.
+Removing the vacuum coordinate from both identities and subtracting
+gives
+\[
+ \sum_{i\ne0}\left(a_i^2-\frac{d_i}{n}a_i\right)
+                 =j(3-j)-\epsilon j/n .
+\]
+Every term is nonnegative, since 3-free degrees divide $n$.
+All 3-free labels belong to the principal 3-block because the vacuum
+lies there, $W$ preserves it, and their coordinates in $Wv_0$ are
+nonzero. Their nonunit degrees therefore pairwise share a prime.
+By Lemma~\ref{prime-square} at a 3-active row their gcd is one.
+Removing occurrences of $n$ preserves that gcd, since all the other
+degrees divide $n$ (and cannot be absent). At least three distinct
+proper degrees remain, for two share a prime. Their distinct indices
+$n/d_i$ are prime to three, so those three terms contribute at least
+$3-1/2-1/4-1/5=41/20$. Here $n\ge70$ since its prime support
+contains at least three primes other than three. But for integer
+$0\le j\le6$ the right side is at most $2+2/n<41/20$.
+\end{proof}
+
+\section{The largest degree classes}
+
+\begin{lemma}\label{lem:eight-support}
+If a largest degree $x$ has codegree $8$, at least three odd primes divide $x$.
+\end{lemma}
+\begin{proof}
+Here $D=8x^2$ and $M=2x$. The support of the row $X$ of degree $x$ lies in the principal $2$-block. Its degrees therefore divide $x$, by the principal defect bound. Their nonunit gcd is one by orthogonality with the vacuum. If $x$ is odd, these divisors each contain at least two distinct odd primes and the result follows. Suppose $x$ is even. Since $M$ has at least three prime divisors, $x\ge15$.
+
+Write $u_Y=S_{XY}/x$ and $c_Y=\operatorname{mean}|u_Y|^2$, where the mean runs over Galois conjugates. Row normalization, vacuum orthogonality and the $(X,0)$ entry of the modular relation give
+\[
+ \sum_Y c_Y=8,\qquad \sum_Y d_Yu_Y=0,\qquad
+ \sqrt8\,x\le\sum_Yd_Y\sqrt{c_Y}.
+\]
+The last inequality follows by the triangle inequality on each conjugate, followed by Cauchy--Schwarz. On its support, $\chi_Y(X)=(x/d_Y)u_Y$ reduces to $x=0$ above two.
+
+First the row cannot be rational. Otherwise its entries are integers, and every entry of absolute value one has degree dividing $a=x/2$. The nonunit squares sum to seven. If there are three single entries and one double entry, its degree cannot be $x$, since $2x-1>3a$. Its degree is then at most $a$, and the modular inequality gives $\sqrt8\,x\le1+5a$, impossible. Otherwise all seven entries are signs. Their two signed degree sums differ by one, and each exceeds $5a/2$ by the modular inequality. Thus three labels of one sign all have degree $a$, and exactly two of the other four also have degree $a$. The remaining two proper divisors of $a$ sum to $a-1$. At least one is at most $a/3$, so $a\le6$, incompatible with both divisors being at least six.
+
+The row field lies in $\mathbb Q(\zeta_8)$ by the character conductor bound. Its degree $h$ is now two or four. The normalized traces $A_Y=\operatorname{Tr}(u_Y)/h$ are integers, as the powers of $\zeta_8$ have integer normalized traces. Orthogonality of the $h$ conjugate rows gives $\sum_{Y\ne0}A_Y^2=8/h-1$ and $\sum_{Y\ne0}d_YA_Y=-1$. This excludes $h=4$ and leaves precisely three nonunit signs. If the quadratic field is imaginary, the rows are dual and have identical twist. Averaging their modular relations before taking absolute values gives $\sqrt8\,x\le1+\sum_{Y\ne0,\,A_Y\ne0}d_Y\le1+5x/2$, since the signed sum forces a proper divisor. Hence the field is $\mathbb Q(\sqrt2)$. Write $u_Y=A_Y+B_Y\sqrt2$ with $B_Y\in\mathbb Z$. Then $\sum B_Y^2=2$. Reduction above two shows that the three nonunit signs occur at degrees dividing $x/2$.
+
+The row must meet a column of degree $x$. Indeed, if it misses them all, a supported degree other than $x/2,x/3$ is at most $x/4$, giving $d_Y\sqrt{c_Y}\le xc_Y/4$ since $c_Y\ge1$. At $x/3$ the rational part is zero, so $c_Y=2$ and the same inequality holds. At $x/2$ use $2\sqrt{c_Y}\le c_Y+1$. If $k$ hits have degree $x/2$, the modular inequality yields $\sqrt8\le1/x+(7+k)/4$, whence $k\ge5$. At least two further nonunit hits are needed for gcd one, because each nonunit divisor of $x$ shares a prime with $x/2$. All seven hits would then have $c_Y=1$, impossible since two coefficients $B_Y$ are nonzero.
+
+By symmetry $X$ is therefore principal at two, so it meets every odd degree. A hit of degree $x$ has rational part zero. Its conjugate occurs at another column of the same degree by Galois symmetry. These use both nonzero $B_Y$. Consequently every odd label occurs at a rational coordinate. There are four such coordinates, including the vacuum, and the number of odd labels is a positive multiple of four by reduction of $D$ modulo four. The three nonunit rational coordinates thus have odd degrees dividing $x$, with signed sum $-1$. They have gcd one, and each contains at least two odd primes.
+\end{proof}
+
+\subsection{A degree class of codegree sixteen}
+Write $s=S/\sqrt D$, $\chi_X(Y)=S_{XY}/d_X$, and $P_p$ for the principal residue block at $p$. We use two elementary consequences of unitarity. If a set $E$ of rows vanishes outside a set $A$ of columns, the vacuum modular relation $sTs=\xi T^{-1}sT^{-1}$, $|\xi|=1$, gives
+\begin{equation}\label{sq:mass}
+ \sum_{X\in E}d_X^2=\|\operatorname{pr}_E sT(d_Y)_Y\|^2
+          \le\sum_{Y\in A}d_Y^2.
+\end{equation}
+Also, if two unit columns have squared norm $m/f$ on the same subset, their inner product there has modulus at most $1-m/f$, by orthogonality and Cauchy--Schwarz on its complement. Equality forces their restrictions to the complement to be proportional with ratio of modulus one.
+
+\begin{lemma}\label{sq:saturation}
+A nonunit degree $n$ of prime-power codegree $f=p^a$ has multiplicity at most $f-2$.
+\end{lemma}
+\begin{proof}
+The vacuum gives $m<f$. Suppose $m=f-1$ and denote the degree class by $I$. Every row of $I$ is supported on $P_p$. A label $X\in I\setminus P_p$ would therefore miss all of $I$ by symmetry. The degrees outside $I$ have squared sum $n^2$. Equality in the vacuum modular relation for $X$ forces $|s_{XY}|=d_Y/n$ there. At the vacuum this says $1/\sqrt f=1/n$, which would make $n$ a prime power. Thus $I\subset P_p$.
+
+Choose a nonunit $Y$ of degree $y$ coprime to $p$ by dimension orthogonality. Each $\chi_X(Y)$, $X\in I$, reduces to $y$ at $p$ and is nonzero. The sum over $I$ of their squared moduli is an integer since Galois permutes the rows. Each term contributes at least one after Galois averaging, by the algebraic norm. The vacuum term of the $Y$-column gives the strict upper bound $f$. Thus the sum is $m$. The columns $Y,0$ have equal squared norms $m/f$ on $I$ and their inner product there is $w/f$, where $w=\sum_{X\in I}\chi_X(Y)\in\mathbb Z$, up to conjugation. Hence $|w|\le f-m=1$. Equality is impossible since the two vacuum coordinates have different moduli. But $w\equiv my\not\equiv0\pmod p$.
+\end{proof}
+
+\begin{proposition}\label{sq:fourteen}
+If $D=M^2$ and the rank is at most $31$, there are at most thirteen labels of degree $n=M/4$.
+\end{proposition}
+\begin{proof}
+By Lemma~\ref{sq:saturation} it remains to exclude a class $I$ of size fourteen. Put $P=P_2$. First suppose $I\subset P$ and set $w_Y=\sum_{X\in I}\chi_X(Y)$. These are even integers by principality and Galois invariance. At any nonunit of odd degree $y$, all fourteen summands are nonzero. Their squared moduli sum to an integer which is at least $14$ by Galois averaging, less than $16$ by unitarity, and even by the principal congruences. It equals $14$. As in the proof of Lemma~\ref{sq:saturation}, orthogonality of columns gives $|w_Y|<2$, hence $w_Y=0$. The integer identity $\sum_{Y\ne0}d_Yw_Y/2=-7$ is now impossible modulo two. Consequently $E=I\setminus P$ is nonempty.
+
+Since the $I$-rows are supported in $P$, \eqref{sq:mass} shows that $I\cap P$ is nonempty. If $n$ were odd, principality of a label in $I\cap P$ would make its entire crossing with $I$ nonzero, implying $I\subset P$. Thus $n$ is even. The $E$-rows miss $I$, and their remaining support is on pure dyadic twists since their codegree is $16$. The degrees outside $I$ have squared sum $2n^2$ and at least one has a nontrivial odd twist component. Equation~\eqref{sq:mass} gives $|E|n^2<2n^2$. The sole label $Z\in E$ is Galois-fixed, so its row $u_Y=\chi_Z(Y)$ is integral.
+
+There are at least six labels with nontrivial odd twist component, since $M$ has at least two odd prime factors and their active sets together have at least $(3-1)+(5-1)$ labels. They miss $I$, the vacuum and the support of $u$. The thirteen labels of $I\cap P$ and the vacuum belong to $P$. The nonunit support of $u$ also lies in $P$, disjoint from $I$. If it contains at least nine labels, the full dyadic block of $Z$ has room for at most $31-13-1-6-9=2$ labels with trivial odd twist component. This intersection contains $Z$ and its span is invariant under the local dyadic group. In dimension one its Weyl would fix the line of $Z$, impossible since $2\mid f_Z$ by Lemma~\ref{blk:admissible}. In dimension two, Lemma~\ref{blk:two} makes the two degrees equal to $n$. Both labels lie outside the principal dyadic block, although $Z$ is the unique such label of degree $n$. This is again impossible.
+
+It remains to prove that $u$ has at least nine nonunit entries. Write $b_Y=M/d_Y$. On a nonzero entry, $b_Yu_Y/4=\chi_Y(Z)$ is an even integer by principality. As $1\le|u_Y|\le3$, we have $4\mid b_Y$. Thus $d_Y=n/h_Y$ with $h_Y=b_Y/4\ge2$, and $h_Y$ is even when $u_Y$ is odd. Orthogonality and the vacuum modular relation give
+\[
+ \sum u_Y^2=15,\qquad \sum u_Y/h_Y=-1/n,
+ \qquad \sum |u_Y|/h_Y\ge4-1/n ,
+\]
+where the sums run over nonunit hits. With eight or fewer entries the partitions of $15$ into squares give absolute values $(3,2,1,1)$, $(3,1^6)$ or $(2^3,1^3)$, where exponents mean repetition. The first has total weight $7$, too small. The others have weight $9$. Expanding a weight $k$ into $k$ copies of $1/h_Y$, both signs have sum at least $2-1/n$, and one side must contain exactly four terms.
+
+For $n>42$ those four denominators are all two, since replacing one by three loses $1/6$. The five terms of the opposite sign must therefore sum to $2\pm1/n$. If four denominators are two, the remaining term is $d_Y/n>1/n$. Five twos also overshoot. With three twos, the other two denominators $a\le b$ are at least three. Their sum of reciprocals equals $1/2$ for $(3,6),(4,4)$, and otherwise differs from $1/2$ by at least $1/42$. With two twos the other three terms have sum $1$ or at most $11/12$, and with at most one two the whole sum is at most $1/2+4/3$. This excludes every case.
+
+Finally, even $n\le42$ with two distinct odd prime factors is $2\cdot3\cdot q$ with $q=5,7$. Its proper divisors with two prime factors are $n/2,n/3,n/q$. Every odd weight must occur at $n/2$. Thus $(3,1^6)$ violates the coprimality of the hit degrees. For $(2^3,1^3)$ that coprimality forces two weight-two positions at $n/3,n/q$, bounding the total reciprocal mass by $9/2-2(1/2-1/3)-2(1/2-1/q)<4-1/n$.
+\end{proof}
+
+\paragraph{Prime powers in a prefix.}
+A row of denominator $p^a$ is supported on the principal $p$-block and its nonunit hit degrees have gcd one. In square dimension every such hit has denominator divisible by $p$. If $M$ has only three prime factors, this gives $p^2\mid M$, since otherwise all nonunit hit degrees contain both of the other primes.
+
+When the denominator four occurs at least four times, its rows are supported on denominators divisible by four. Indeed odd denominators already miss the principal dyadic block. Suppose $b_Y\equiv2\pmod4$, $b_X=4$ and $s_{XY}\ne0$. Then $\alpha=2s_{XY}$ is a nonzero algebraic integer by lcm integrality. If $n=M/4$ is even, principality gives $(b_Y/2)\alpha=\chi_Y(X)\equiv n\equiv0$ at two. Hence the absolute algebraic norm of $\alpha$ is at least two. Its $e$ distinct conjugates occur on distinct labels of the $X$-row, so their entries contribute at least $e\,2^{2/e}/4\ge1$ to its squared norm. This leaves no room for the vacuum. If $n$ is odd, each row at $n$ has exact support $P_2$. Thus the column of $Y$ meets every one of at least four such rows, each nonzero entry contributing at least $1/4$ after Galois averaging. This again exhausts its squared norm before the vacuum.
+
+Consequently if $M$ has three prime divisors and there are at least four denominators four, then $8\mid M$, since otherwise the nonunit hit degrees are odd, so all contain both odd primes. The gcd-one condition says more generally that, for every $\ell^a\Vert M$, some supporting nonunit denominator is a multiple of $\ell^a$. It is also a multiple of four for a row as above, and of $p$ for a row at denominator $p^a$.
+
+\begin{lemma}\label{sq:mixed}
+The denominators cannot contain thirteen fours, four fives and a seven.
+\end{lemma}
+\begin{proof}
+These are the full multiplicities, since only
+$11/400-1/49<1/49$ of the dimension remains. Here $140\mid M$.
+Let $A,B$ be the sums of twists at denominators four and five.
+Their twists have 2-power and 5-power order, respectively, by
+Lemma~\ref{blk:admissible}. The Gauss sum has absolute value $M$
+at every embedding. Bounding the contribution from all other labels
+and varying the two disjoint cyclotomic fields independently gives
+\[
+             |25\sigma A+16\tau B|\le11+400/M<14 .
+\]
+The dyadic power basis is orthonormal for normalized trace. Thus
+the variance of the conjugates of $A$ is an integer. Fixing $\tau$
+in the displayed disk bounds this variance by $(14/25)^2$, so $A$
+is rational. Square Galois symmetry puts $B$ in $\mathbb Q(\sqrt5)$.
+Its conjugates differ by less than $28/16<\sqrt5$, so this
+algebraic integer is rational as well. Reduction gives $A$ odd
+and $B\equiv4\pmod5$. The mean of a 5-power root is at least
+$-1/4$, so $-1\le B\le4$. The disk now permits just
+$(A,B)=(1,-1)$ and $(-3,4)$.
+
+The unique label at denominator seven has twist one because its twist is
+7-primary and is fixed by the squares of the units. In the first
+case the normalized contribution of the three classes is
+$9/400+1/49$. Even after subtracting all remaining mass, its modulus
+exceeds $1/M$. In the second case the first two classes contribute
+$-11D/400$ and their complement has squared mass exactly $11D/400$.
+Taking real parts of the Gauss sum and averaging conjugates gives
+$\sum_{Y\text{ in complement}}d_Y^2
+ (1-\operatorname{mean}(\theta_Y))\le M$.
+Every 7-active label belongs to this complement and has mean at most
+$1/2$, so $V_7\le2M$. Lemma~\ref{blk:activity} forces the least
+nonunit degree to be at least $3M/14$, contradicting the degree $M/7$.
+\end{proof}
+
+\section{The rank-thirty-one boundary}\label{sec:thirtyone}
+At rank $31$, the first codegree is still less than the rank.
+The fast square generator is \supfile{square31.cpp}{\texttt{square31.cpp}};
+its exact continuation is \supfile{square_exact.py}{\texttt{square\_exact.py}}.
+The following restrictions on the denominator prefixes are proved here to
+make the computation independent of our results on dimension families.
+
+\begin{lemma}\label{sq:height31}
+Suppose $D=M^2$ and precisely three primes divide $M$.
+Four labels at denominator four force $8\mid M$.
+A label at denominator five forces $125\mid M$.
+Moreover, for every $p^a\Vert M$, a four-row as above meets a
+$p$-free nonunit degree whose denominator is divisible by
+$\lcm(4,p^a)$, and a five-row meets one whose denominator
+is divisible by $\lcm(25,p^a)$.
+\end{lemma}
+\begin{proof}
+The four-row assertion follows from the prime-power prefix argument
+after Proposition~\ref{sq:fourteen}. For five put $x=M/5$.
+Lemma~\ref{prime-square} says that the nonunit trace-hit degrees
+divide $x/\gcd(x,5)$ and have gcd one. Every nonunit degree has at
+least two distinct prime divisors. If $M$ has only three, their
+common multiple has all three primes in its support:
+otherwise every hit degree contains a fixed prime.
+In particular, $5$ divides $x/\gcd(x,5)$,
+which forces $125\mid M$.
+For each $p$, the gcd-one conclusion supplies a hit degree
+prime to $p$, giving the respective lcm bound.
+\end{proof}
+
+Write $L$ for the lcm of a denominator prefix,
+$E=L^2(1-\sum b^{-2})$, and $h$ for the remaining nonunit positions.
+If just three primes can divide $M$, their sets of $p$-free degrees
+are disjoint. For each prime the generator considers whether
+$p\mid M/L$. A positive answer requires a larger full prime
+power among the remaining denominators. In the other case the
+known $p$-free degrees are counted. Reserve as few suffix
+positions as permit two $p$-free nonunit degrees, or three
+when $p=2,5$, and enforce the congruences
+$u_2\equiv3\pmod4$, $u_3\equiv2\pmod3$.
+For a missing four-row or five-row witness,
+Lemma~\ref{sq:height31} gives one stronger denominator bound.
+Round the resulting bounds upward to multiples no smaller than
+the last prefix denominator, say $a_1,\ldots,a_v$.
+The reserved positions contribute at most
+$W=\sum_i\lceil L^2/a_i^2\rceil$ in units of $L^{-2}$,
+and the vacuum contributes at most one.
+Hence for $E>W+1$ the next denominator satisfies
+\[
+ b^2\le (h-v)L^2/(E-W-1).
+\]
+The generator uses the weakest bound among the feasible prime
+heights and imposes the packet conditions of
+Proposition~\ref{blk:packets} on every remaining branch.
+
+\begin{lemma}\label{sq:mixed31a}
+At rank $31$ the multiplicities at denominators $(4,5)$ cannot
+be $(12,6)$ or $(10,9)$.
+\end{lemma}
+\begin{proof}
+They leave complementary mass $t/400$, respectively with
+$t=4,6$, and both multiplicities are exact.
+Here $20\mid M$, and at least three primes divide $M$.
+If $M\le60$, it equals $60$, but the complement after
+removing the vacuum has squared mass $35$ or $53$ in
+integer degree units. There are at least eleven remaining
+nonunit labels, each of degree at least six, a contradiction.
+Assume $M>60$.
+Let $A,B$ sum the twists in the two classes.
+The Gauss sum at independent cyclotomic conjugates gives
+$|25\sigma A+16\tau B|\le t+400/M<13$.
+The normalized variance of the dyadic conjugates of $A$ is
+an integer, and the disk radius $13/25<1$ forces $A$
+to be rational. Square Galois covariance puts $B$ in
+$\QQ(\sqrt5)$. Its conjugates differ by less than
+$26/16<\sqrt5$, hence it too is rational.
+Reduction gives $A\equiv i\pmod2$, $B\equiv j\pmod5$,
+where $i,j$ are the two class sizes.
+With $-j/4\le B\le j$, one gets $B=1,6$ for $(12,6)$,
+and $B=-1,4,9$ for $(10,9)$.
+Substitution yields $25A+16B=\varepsilon t$,
+$\varepsilon=\pm1$.
+
+Taking the real part of $\varepsilon$ times the Gauss sum
+and averaging conjugates yields
+\[
+ \sum_{Y\in R}d_Y^2
+       (1+\operatorname{mean}(\varepsilon\theta_Y))\le M
+\]
+for the complement $R$. At every prime $p\mid M$ distinct
+from two and five, all $p$-active labels lie in $R$
+and their twist mean is at most $1/2$.
+Their total squared mass satisfies $V_p\le2M$.
+Lemma~\ref{blk:activity} gives $g\ge M/6$ for
+the smallest nonunit degree $g$.
+Thus every nonunit denominator is at most six.
+It divides $M$ and hence divides $60$.
+Multiplying the reciprocal-square identity by $60^2$
+forces $M\mid60$, a contradiction.
+\end{proof}
+\begin{lemma}\label{sq:mixed31b}
+At rank $31$, thirteen denominators four cannot coexist with four
+denominators five.
+\end{lemma}
+\begin{proof}
+The remaining mass is $\delta=11/400$.
+In three-prime support Lemma~\ref{sq:height31} gives
+$125\mid M$ and $M\ge1500$.
+With four or more primes, $M\ge420$ and $M>1000$
+if $25\mid M$.
+The preceding disk argument, with radius
+$11+400/M<12$, makes both twist sums rational.
+The four quinary twists have order dividing five,
+since a higher square orbit has at least ten labels.
+Reduction and the mean of a fifth root leave
+only $(A,B)=(1,-1)$ and $(-3,4)$.
+
+For $(-3,4)$ their combined Gauss contribution is
+$-\delta D$. As above, activity forces $g\ge M/6$
+for the least nonunit degree.
+The thirteen other nonunit labels all have denominator
+greater than six, since $\delta<1/36$, a contradiction.
+
+For $(1,-1)$, the four five-class twists are the four
+primitive fifth roots. Let $H$ consist of complementary
+labels of five-power twist, including the vacuum,
+and write $\eta$ for its mass.
+The averaged Gauss sum gives
+\[
+ \sum_{Y\notin I\cup J}d_Y^2
+ (1+\operatorname{mean}\theta_Y)\le D/200+M,\qquad
+ \eta\le\frac43(1/200+1/M).
+\]
+Each five-class row is supported on the principal
+five-block $P_5$, sees only five-power twists,
+and misses the four-class. If a row were outside
+$P_5$, symmetry would make it miss the five-class too.
+Equation~\eqref{sq:mass} would give
+$1/25\le\delta$, which is false.
+Thus all four five-class rows are principal.
+
+Put $y=M/5$ and $\zeta=\zeta_5$.
+Lemma~\ref{conduct} and the orbit size put their
+characters in $\QQ(\zeta)$; their modular relations
+put the two-power central charge at $\xi=\pm1$.
+For $X$ in the five-class write
+\[
+ R_X=5\xi\theta_X^{-1}
+       -\sum_{Z\in J}\theta_Z\chi_X(Z)
+     =\frac{25}{M}\sum_{Z\in H}s_{XZ}\theta_Zd_Z
+       \in\ZZ[\zeta].
+\]
+Unitarity, also at each conjugate, gives
+$\sum_{X\in J}\operatorname{mean}|R_X|^2\le625\eta$.
+Local inertia gives $R_{\sigma X}=\sigma^2R_X$.
+
+If $5\mid y$, principality implies
+$R_X\in(1-\zeta)\ZZ[\zeta]$.
+Every nonzero element in this ideal has mean squared
+norm at least $5/2$: present it with five integer
+coefficients on fifth roots, subtract a common
+coefficient to make their sum zero, and use
+$(5/4)\sum c_i^2\ge5/2$.
+Inertia and the primitive twists force at least
+two nonzero values if any exists. Yet
+$625\eta\le(2500/3)(1/200+1/M)<5$
+because $M>1000$. If they all vanish,
+the projection of $sT(\mathbf d\,1_J)$ onto
+the four rows already uses its full norm,
+although its vacuum coordinate $y^2B/M$ is nonzero.
+
+If $5\nmid y$, every principal five-row hits
+every five-free degree, so all those degrees
+have five-power twists.
+As $v_5(M)=1$, each five-active label has
+five-free degree. On a nontrivial five-phase
+eigenspace all other local upper unipotents
+are scalar; their local groups preserve this
+space and are generated by conjugates of
+the upper unipotents. Each such Weyl therefore
+fixes the coordinate line, so
+Lemma~\ref{blk:admissible} makes the codegree
+a power of five. All twists on $H$ now equal one,
+improving the estimate to
+$\eta\le(1/200+1/M)/2$.
+For every $X\in J$ the principal congruence
+gives $R_X\equiv-4y\ne0\pmod{1-\zeta}$.
+Each value has mean squared norm at least one,
+while $625\eta<4$ for $M\ge420$.
+\end{proof}
+
+\begin{lemma}\label{sq:mixed31c}
+At rank $31$, thirteen denominators four, three
+denominators five and a denominator six are impossible.
+\end{lemma}
+\begin{proof}
+More generally, suppose the five-class $J$ has
+one or three labels and the mass of
+$R=\{Y:5\mid b_Y,\ b_Y\ne5\}$, including the
+vacuum, is less than $1/25$.
+If $25\mid M$, an odd number of five-rows has
+a rational Galois-fixed member. At each nonzero
+entry its absolute trace is nonzero, so
+Lemma~\ref{prime-square} puts its whole support
+in $R$, contradicting~\eqref{sq:mass}.
+If $25\nmid M$, every five-row is supported on $P_5$.
+A nonprincipal one would miss its five-class
+by symmetry, again contradicting~\eqref{sq:mass}.
+All are principal. The local argument in the
+preceding proof then puts every five-active label
+in $J$, but Proposition~\ref{blk:packets}
+requires at least four.
+The specified prefix uses mass
+$13/16+3/25+1/36=3457/3600$,
+leaving at most $143/3600<1/25$ for $R$.
+A fourth five does not fit, so the general
+argument applies.
+\end{proof}
+The \supfile{nonsquare31.cpp}{rank-31 nonsquare generator}
+uses \supfile{nonsquare_exact.py}{exact integer continuation}
+when it reaches its native width.
+For nonsquare $D=3M^2$ we need one local
+restriction on the ternary-defect-one degrees.
+Here defect one means $v_3(f_i)=1$.
+
+\begin{lemma}\label{ns:ternary31}
+Within each local three-block the ternary-defect-one
+degrees form one of the multisets $(r,r,r)$ and
+$(r,r,2r)$. Equivalently, their denominators form
+$(z,z,z)$ or $(z,2z,2z)$.
+\end{lemma}
+\begin{proof}
+Complete the fusion ring at three and extend its
+unramified coefficient ring $\mathcal O$ until
+residue fields split. Within one local block the
+generic factors are totally ramified cyclotomic
+fields $E_i$. All coordinates of an element of
+the integral order have the same residue.
+The coefficient-of-unit trace is the sum of field
+traces divided by the formal codegrees, and the
+order is self-dual for this pairing.
+Let $e_i,\delta_i$ denote a factor's ramification
+index and different exponent. The character
+different bound used in Lemma~\ref{conduct} gives
+$\delta_i\le e_i v_3(f_i)$.
+
+For a defect-one factor, wild ramification would
+give $\delta_i\ge(e_i-1)+(3-1)>e_i$ by the first
+two ramification groups. Hence $e_i=1$ or $2$.
+There is another factor $j$, since otherwise the
+trace of the block identity would be $e_i/f_i$,
+which is not integral.
+On $\mathcal O_{E_i}$, normalized trace
+$\lambda_i=\Tr_i/e_i$ reduces to the residue.
+On $\mathcal O_{E_j}$ take an integral linear
+residue lift $\lambda_j=\Tr_j(c\cdot)$, for example
+the constant coefficient in a uniformizer basis.
+The inverse different gives
+$v_j(c)=e_j-\delta_j-1$.
+The difference $(\lambda_i-\lambda_j)/3$ is
+integral on the block order, so self-duality
+puts its representing element in that order.
+Its $i$-coordinate $f_i/(3e_i)$ is a unit, and
+its $j$-coordinate is $-f_jc/3$.
+Equality of residues rules out a third factor,
+forces the $j$-coordinate to be a unit, and gives
+$v_3(f_j)=(\delta_j+1)/e_j$.
+
+A wild abelian factor of index $e_j=u3^s$,
+$u\in\{1,2\}$ and $s\ge1$, has
+\[
+ (\delta_j+1)/e_j
+       =s+1-(1-3^{-s})/2,
+\]
+strictly between integers. This follows from
+the cyclotomic different at level $3^{s+1}$
+and transitivity. Thus the second factor is
+also tame and defect one, and these are
+the only two factors of the block.
+They supply two inertia orbits of lengths
+$a,b\in\{1,2\}$. The odd-valuation mass identity
+of Lemma~\ref{blk:moments} puts one at the trivial
+phase and one at order three.
+If their degrees are $r,s$ respectively, it gives
+$bs^2=2ar^2$. The possible integral solutions
+are $(a,b,s/r)=(1,2,1)$ and $(2,1,2)$.
+\end{proof}
+
+The generator applies these tiles to sorted
+denominator prefixes. At a three-free denominator
+$z$, it first fills the obligations at $z$ created
+by tiles starting at $z/2$. The remaining
+multiplicity modulo three determines the copies
+owed at $2z$. This is exact: three extra doubled
+tiles may be replaced by a triple at $z$
+and two triples at $2z$.
+A closed run whose obligation is unfulfilled
+cannot extend to a degree list.
+
+At codegree eight the largest-degree multiplicity
+is at most four, and at most two if that degree
+is even. For even degree, the proof of
+Lemma~\ref{lem:eight-support} gives the same four
+rational entries on odd labels for every
+maximal row. Each such row has squared
+projection $1/2$ on the common sign vector,
+so orthogonality permits only two.
+For odd degree, its row must meet its own
+degree class. Otherwise all nonunit supported
+degrees are at most one third of the largest,
+contradicting the modular inequality
+$\sqrt8\,x\le1+7x/3$.
+The support has nonunit gcd one, and at least
+three proper odd degrees are needed because
+two degrees with two primes among the three
+odd support primes share a prime.
+The vacuum and those three proper hits leave
+room for at most four maximal labels in
+the row norm eight.
+\begin{lemma}\label{sq:multiplication31}
+Let $x$ be the least nonunit degree and $m_a$ the
+multiplicity of degree $a$. For a fixed simple $X$ of
+degree $x$, let $C_{ab}$ sum the multiplicities of all
+degree-$b$ constituents in $X\otimes U$, over
+all $m_a$ simples $U$ of degree $a$. Then
+\[
+ C_{ab}=C_{ba},\qquad
+ \sum_{b>1}bC_{ab}=xa\,m_a-\mathbf1_{a=x},
+ \quad
+ 0\le C_{ab}\le m_am_b
+   \left\lfloor\min\{xa/b,xb/a,ab/x\}\right\rfloor .
+\]
+\end{lemma}
+\begin{proof}
+Rigidity and braiding give
+$N_{XU}^{V}=N_{XV^*}^{U^*}$, and duality permutes
+each degree class. Summing over $U,V$ gives symmetry.
+The row sum is the dimension of all these products
+with the unit removed. That unit occurs once,
+precisely for $U=X^*$.
+For one pair $U,V$ the multiplicity bounds follow
+from the dimensions of $XU$, $XV^*$ and $UV^*$.
+\end{proof}
+
+For each row the lemma gives a bounded integer sum.
+The \supfile{multiplication.py}{multiplication screen} deletes entry values inconsistent
+with that sum, propagates the reduction to transposed
+rows, and checks that individual products have the
+required dimension. The three profiles surviving all
+other terminal tests can also be excluded by hand.
+Here $d^{[m]}$ denotes $m$ copies of degree $d$:
+\[
+\begin{aligned}
+\mathcal A={}&(1,10,18^{[2]},40,45,324,1620,3375,10125,
+                  27000^{[2]},32400^{[11]},40500^{[8]}),\\
+\mathcal B={}&(1,6,10,12^{[2]},15,75,90,400,1125,
+                  3000^{[2]},3600^{[11]},4500^{[8]}),\\
+\mathcal C={}&(1,12^{[2]},15^{[2]},20,144,250,1125,4500,
+                  6000^{[3]},7200^{[10]},9000^{[8]}).
+\end{aligned}
+\]
+For $\mathcal A$, the unique decomposition
+$10^2-1=99=3\cdot18+45$ gives
+$C_{10,18}=3$ and $C_{10,40}=0$.
+After its three degree-$10$ terms are removed, the degree-$18$
+row has $330$ remaining. A degree-$324$ constituent would leave
+only $6$, so its remaining classes give
+$330=18i+40j+45k$. Modulo nine, $j\equiv6$,
+and $j\le8$, so $j=6$. The degree-$40$ row
+leaves $400-6\cdot18=292$ for the classes
+of degrees $40$ and $45$; their total is
+divisible by five, a contradiction.
+For $\mathcal B$,
+$6^2-1=35=2\cdot10+15$ gives
+$C_{10,6}=2$ and $C_{12,6}=0$.
+The degree-$10$ row leaves
+$48=10i+12j+15k$, hence $j=4$ by
+reduction modulo five and $j\le4$.
+Each degree-$12$ product has total dimension
+$72<75$, so the two together must satisfy
+$144=4\cdot10+12i+15j$, impossible modulo three.
+
+For $\mathcal C$, the two degree-$12$ products
+have total nonunit dimension $287$, giving
+$C_{12,20}\equiv1\pmod3$.
+The degree-$20$ product has dimension $240$,
+and its degree-$144$ constituent occurs at
+most once. Reduction modulo five gives
+$C_{20,12}\equiv0$ or $3\pmod5$.
+In the latter case it is at most eight.
+Symmetry and $C_{12,20}\le14$ force
+$C_{12,20}=10$.
+The degree-$20$ constituents in the
+degree-$12$ products split as four and six:
+their nonunit totals $143$ and $144$
+require counts $1$ and $0$ modulo three,
+respectively. Seven in the first leaves
+an impossible remainder, and seven in the
+second violates the congruence.
+The respective remaining dimensions $63$
+and $24$ give $C_{12,15}=1$.
+The unique degree-$15$ product would then
+have $168=15i+20j+144k$, $k\in\{0,1\}$,
+contrary to reduction modulo five.
+
+\section{The finite verification}\label{sec:verify}
+For $r\le31$ the possible first codegrees $qB^2$ belong to the following table, with $qB^2<r$ imposed in each case.
+\[
+\begin{array}{c|l}
+ B&q\\ \hline
+ 1&10,14,15,21,22,26,30\\
+ 2&2,3,5,6,7\\
+ 3&2,3\\
+ 4,5&1 .
+\end{array}
+\]
+The square-free condition on $q$ and Lemmas~\ref{small}, \ref{six}
+and~\ref{nine} give the displayed pairs. In particular,
+$8\le f_{\min}=qB^2<r$ excludes ranks through eight. In fact
+$f_{\min}\le r-2$. With $n=\max_i d_i$, the equality $f_{\min}=r-1$ would give
+$\sum_{i\ne0}(n^2-d_i^2)=1$, while every positive summand is at
+least $2n-1>1$. This also excludes rank nine before enumeration.
+
+\subsection{The square search}
+Fix $q=1$. Along a prefix let $P$ comprise the primes in $L$ and
+all primes $p\le h+1$. This contains the whole support of $M$, since
+a new odd prime needs at least $p-1$ remaining nonunit labels by
+Proposition~\ref{blk:packets}. With fewer than three available
+primes we can stop. With exactly three they must all occur.
+A nonunit degree can then be prime to at most one of them.
+The numbers of required $p$-free nonunits for $p=2,5$ are at
+least three. Indeed, after the vacuum, two odd squares cannot sum
+to $-1$ modulo four, nor can two nonzero squares modulo five sum
+to $-1$. For every other prime Lemma~\ref{lem:deletion} gives two.
+
+For each of the three primes take $A$ to be the largest of $p$,
+its full power in $L$, and any improved lower bound from the
+preceding height argument ($8$ at two, $25$ at five).
+A $p$-free label needs $A\mid b$. Count prefix positions already
+meeting this requirement and reserve the remaining number of
+positions in the suffix. If a required witness with $4\mid b$ or
+$5\mid b$ is still missing, reserve at least one. Among the
+positions reserved for this prime there is one denominator at least
+the largest of the applicable bounds $A,\lcm(A,4),\lcm(A,5)$.
+This is valid even if different labels supply the two witnesses.
+The other reserved denominators are at least $A$. The three sets
+of positions are disjoint. If their lower bounds are
+$a_1,\ldots,a_v$, reject $v>h$. In units of $1/L^2$ they contribute
+at most $W=\sum_{j=1}^v\lceil L^2/a_j^2\rceil$, and the vacuum
+contributes at most one. Thus when $E>W+1$ the next denominator
+also satisfies $b^2\le(h-v)L^2/(E-W-1)$.
+
+At three positions left, if $k=M/L$ is even, the three remaining
+degree squares must all be odd modulo four. The residual equation
+then gives $Ek^2\equiv4\pmod8$, forcing $v_2(k)=1$ and $E$ odd.
+At two positions $k$ is prime to ten as before. The generator tests
+these restrictions as soon as the available primes and required
+heights make them decisive.
+
+\subsection{The nonsquare search}
+The \supfile{nonsquare.cpp}{nonsquare generator} handles ranks through $30$.
+Its \supfile{nonsquare31.cpp}{rank-31 extension}
+loops over square-free $q>1$ and $B\ge1$ with $8\le qB^2<r$,
+omitting prime codegrees. Write $S$ for the full prime support of $M$.
+Square-fullness gives $\{p:p\mid qB\}\subseteq S$.
+There are at least three primes in $S$, and at least four if $qB^2=8$
+by Lemma~\ref{lem:eight-support}.
+With $F=B(q)$ the lower bound for the size of a fiber over odd primes
+of even valuation, the joint packet bound requires
+\[
+ F\left(1+\sum_{p\in S,\ p\nmid2q}(p-1)\right)\le r.
+\]
+This bounds every prime in $S$ by $r$, since also $q<r$, hence the program can select the entire set $S$ before selecting the second denominator. Every subsequent denominator must be $S$-smooth.
+
+One further cut concerns only repetitions of the first denominator. If $v_p(f)=1$ at an odd prime, the multiplicity of its degree $x$ is at most $f-1-(p-1)/2$. Indeed its primary twist is trivial or has order $p$. In the whole table the squared mass at order $p$ is $(p-1)$ times the inactive mass by the odd-valuation slice identity. Hence at most $f/p$ copies can be inactive and at most $(p-1)f/p$ active. The first inequality is strict because of the vacuum. In the principal $p$-block the same identity and the vacuum give an active label, of degree different from $x$ by the principal defect bound. The second inequality is thus strict too. The active multiplicity at $x$ is a multiple of $(p-1)/2$ by Galois symmetry, as is its upper bound.
+
+For a known prime $p\in S$ of positive even valuation, put $j=(p-1)/2$. In a closed run of $m$ equal eligible denominators, at most $j\lfloor m/j\rfloor$ labels can contribute to $p$-packets. The open run can also supply its remainder if it grows. Subtract these capacities from $F(p-1)$ at each odd $p\nmid q$, replacing negative differences by zero. The sum must fit into the $h$ vacant positions, by the joint packet bound applied to the primes of positive deficit. When $2\mid q$ we also apply the two-label fiber inequality of Lemma~\ref{blk:two}. At the last two positions we test the exact residual equation, the prime support, two prime-free witnesses per prime, and the requirement that every nonunit degree has at least two prime divisors.
+
+\paragraph{The last nonsquare candidates.}
+Only the square class $q=3$ needs another test after the degree and fusion tests. Here the joint bound gives $S=\{2,3,p\}$ with $p=5$ or $7$. Indeed a third prime is necessary and the fiber bound is three. A phase of order at least $p^2$ would yield at least $p(p-1)/2$ nontrivial phases. Each supports three labels, as does the trivial fiber. Already for $p=5$ this gives $3(1+5\cdot4/2)=33$ labels, exceeding rank $31$. All nontrivial $p$-phases therefore have order $p$, and have equal positive squared mass. Choose one phase from each of the two square classes modulo $p$. If their respective degree counts are $a_d,b_d$, then
+\[
+  (a_d+b_d)(p-1)/2\le m_d,\qquad
+  \sum_d a_dd^2=\sum_d b_dd^2=W>0.
+\]
+Both counts vanish unless $d>1$ and $p\mid D/d^2$. In either fiber the ternary mass relation gives
+$3\mid W/g^2$, where $g$ is the gcd of that fiber's degrees.
+Indeed at ternary orders one and three the masses are in ratio $1:2$. At higher orders the multiplicity at each degree is a multiple of three by the square Galois action. The\supfile{screen.py}{terminal screen} enumerates the vectors for one fiber, groups them by $W$, and tests the displayed componentwise bound on pairs within each group, including a vector paired with itself.
+
+\subsection{An integer test for character rows}\label{sq:orbits}
+A nonunit label $X$ of degree $x$ and codegree $f=D/x^2$ lies in a Galois orbit of size $h=[K_X:\mathbb Q]$, where $K_X$ is its character field. Let $m_y$ be the multiplicity of each degree $y$. The sum of the $h$ conjugate rows has integral coordinates $z_Y=\operatorname{Tr}_{K_X/\mathbb Q}\chi_X(Y)$. Orthogonality gives
+\begin{equation}\label{sq:orbit}
+ z_0=h,\qquad \sum_{Y\ne0}d_Y z_Y=-h,\qquad
+             \sum_{Y\ne0}z_Y^2=h(f-h).
+\end{equation}
+In particular $h\le\min(m_x,f-1)$, since $h=f$ would force all the nonunit coordinates to vanish. The $h$ coordinates on the orbit of $X$ coincide because Galois can act on the argument as well as on the character. When $h=1$, the vacuum modular relation gives $1+\sum_{Y\ne0}d_Y|z_Y|\ge\sqrt D$.
+
+We record the restrictions on a coordinate at degree $y=d_Y$. It vanishes if $x,y>1$ are coprime. Put $s=y/\gcd(x,y)$, $F=\mathbb Q(\chi_X(Y))$ and $e=[F:\mathbb Q]$. Symmetry gives $F\subseteq K_X\cap K_Y$ and $\chi_X(Y)/s$ is an algebraic integer by lcm integrality. Hence $z_Y$ is a multiple of
+\[
+ s\,\frac{h}{\gcd(h,\operatorname{lcm}(1,\ldots,m_y))},
+\]
+since $e\mid h$ and $e\mid [K_Y:\mathbb Q]\le m_y$. If $f$ is a power of $p$, a supported $Y$ has $p^2\mid f_Y$ by Lemmas~\ref{blk:support} and~\ref{blk:height}. When also $p\mid x$, reciprocity gives $(x/y)z_Y=\sum_{X'\in G X}\chi_Y(X')\in p\mathbb Z$.
+
+When $f=p^2$, Lemma~\ref{prime-square} further requires $y\mid x/\gcd(p,x)$ at a nonzero coordinate.
+
+The eligible nonunit degrees have gcd one because the sum of $\chi_X(Y)$ over a Galois orbit of arguments is $[K_Y:F]\operatorname{Tr}_{F/\mathbb Q}\chi_X(Y)$, an integer, and the dimension-weighted sum of these integers is $-1$. For each eligible orbit size $h$, the \supfile{trace.py}{row-orbit test} solves \eqref{sq:orbit} by assigning one coordinate at a time, counting the $h$ equal coordinates together. It drops any branch on which the remaining squared norm is negative or the remaining scalar product is impossible by divisibility or Cauchy--Schwarz. Finally $m_x$ must be a sum of feasible orbit sizes, since the Galois group partitions the degree class into orbits.
+
+\subsection{Tensor products}
+Let $E$ be the set of distinct nonunit degrees, and let $H$ be their additive monoid, including zero. For $a\in E$ we have $a^2-1\in H$ by decomposing $X\otimes X^*$ for a simple $X$ of degree $a$. Every nonunit $X$ generates the category. Hence its undirected fusion graph, with an edge $U,V$ whenever $V$ occurs in $X\otimes U$ or $U$ occurs in $X\otimes V$, is connected, since the simples reachable from the unit are precisely the constituents of tensor words in $X,X^*$. Frobenius reciprocity bounds the ratio of the degrees at adjacent vertices in either direction by $a$. In particular consecutive distinct degrees have ratio at most $\min E$. A stronger test joins two distinct degrees $u,v>1$ only if both $au-v$ and $av-u$ are in $H$, allowing an extra unit summand in the first test if $a=u$ and in the second if $a=v$. All degrees must still be reachable from $a$ since the tensor unit has only that neighbor in the degree graph. The program decides membership in $H$ by computing the least attainable integer in each residue class modulo $\min E$. These minima are shortest-path distances from zero with the degrees as edge lengths.
+
+For example, at rank 25 the search encounters the degree list
+\[
+        1,\quad 14^{[3]},\quad20^{[6]},\quad28^{[4]},\quad35^{[11]},
+\]
+where brackets denote multiplicities. Its squared sum is $140^2$.
+Only degrees $14$ and $35$ have codegrees divisible by four.
+Their gcd is seven, so the principal dyadic block cannot satisfy Lemma~\ref{blk:witness}, since all of its nonunit degrees would
+be divisible by seven. This example illustrates why recovering an
+integral dimension list is only the first step of the proof.
+\subsection{A trace test at codegree sixteen}\label{term:dyadic}
+Suppose $D=16x^2$, with $m$ labels of largest degree $x$. Choose a label $X$ of this degree. If $2m>16$, it can be chosen in the principal dyadic block $P$. Indeed, suppose the $m$-by-$m$ submatrix vanished. The normalized dimension vector has squared mass $1-m/16$ on the complement. From the vacuum modular relation, the squared projection of its twist onto the $m$ transformed rows equals $m/16$. Those rows would be supported on the complement, giving $m/16\le1-m/16$. Hence two of the top labels have a nonzero crossing and Lemma~\ref{blk:support} puts both in $P$.
+
+For $d_Y=y$ write $g=(x,y)$, $t=y/g$ and $\alpha_Y=\chi_X(Y)/t$. This is an algebraic integer in a dyadic cyclotomic field. Indeed Lemma~\ref{conduct} puts it in $\mathbb Q(\zeta_{16})$. The powers $1,\zeta,\ldots,\zeta^{[\mathbb Q(\zeta):\mathbb Q]-1}$ of a primitive dyadic root form an integral orthonormal basis for the normalized trace pairing. If $k_Y$ denotes the constant coefficient of $\alpha_Y$, its mean squared modulus $C_Y$ is the sum of the squares of its coefficients.
+
+Only $y>1$ with $(x,y)>1$ and $4\mid f_Y$ can contribute away from the vacuum. For a class of $s$ such labels, prescribe the common residue $\delta=0$ if $x$ is even and $x/g$ odd. Indeed, off $P$ the entry vanishes, and on $P$ one has $(x/g)\alpha_Y=\chi_Y(X)\equiv x$. Also prescribe $\delta=y\bmod2$ if $X\in P$ was chosen above and $t$ is odd, since $t\alpha_Y=\chi_X(Y)\equiv y$. Let $T=\sum k_Y$ and $B=\sum C_Y$. Galois stability of the degree class makes $\sum\alpha_Y=T$. When $\delta$ is prescribed,
+\[
+ T\equiv B\equiv s\delta\pmod2,\qquad
+ C_Y\ge F(k_Y),\qquad F(k)=k^2+\mathbf1_{k\not\equiv\delta\ (2)}.
+\]
+Indeed, reduction above two sums the coefficients, and a parity mismatch requires an odd nonconstant coefficient. Without a prescribed residue put $F(k)=k^2$ and omit the congruences. Discrete convexity then gives $B\ge(s-r)F(j)+rF(j+1)$, where $|T|=sj+r$, $0\le r<s$. Orthogonality and the row norm require
+\[
+ \sum_y ytT_y=-1,\qquad \sum_y t^2B_y=15.
+\]
+Finally, averaging the vacuum modular relation and using the triangle inequality gives
+\[
+ 4x-1\le\sum_y yt\min\{\sqrt{sB_y},B_y/\sqrt{\eta_y}\},
+ \qquad
+ \eta_y=\begin{cases}2&\delta=0,\\1&\text{otherwise}.\end{cases}
+\]
+The two bounds follow from Cauchy--Schwarz and from $C_Y=0$ or
+$C_Y\ge\eta_y$. The \supfile{screen.py}{terminal screen} checks
+these relations by recursing over the fifteen available norm units.
+For the last inequality it rounds each summand upward to a
+multiple of $1/256$.
+
+\subsection{Completion of the proof}
+The\supfile{verify.py}{unified verifier} runs the two generators and applies the preceding
+tests to every list they emit. In the orbit test it suffices to try
+codegrees at most $36$. Larger codegrees may pass that test.
+The middle columns count complete degree lists produced by each
+generator before the terminal tests. The last column counts those
+passing all tests. The first row groups sixteen separate computations.
+At each rank from $9$ through $24$ both generators produced zero lists.
+The rank-nine run also checks the analytic exclusion above.
+\[
+\begin{array}{c|r@{\qquad}r|r}
+ r & D\text{ square}&D\text{ nonsquare}&
+                \text{surviving lists}\\ \hline
+ 9\text{--}24 &0&0&0\\
+ 25&2&0&0\\
+ 26&4&0&0\\
+ 27&36&1&0\\
+ 28&789&24&0\\
+ 29&16\,377&388&0\\
+ 30&314\,701&7\,858&0\\
+ 31&434\,509&428&0
+\end{array}
+\]
+For ranks through $30$, $223\,133$ of the $340\,180$ lists fail the degree or
+tensor-product conditions; only $137$ require the final dyadic trace test.
+At rank $31$, the square search emits $434\,509$ lists and the nonsquare
+search emits $428$. Each fails a necessary terminal condition.
+Exactly three square lists reach Lemma~\ref{sq:multiplication31},
+and these are the three profiles excluded above.
+\begin{proof}[Proof of the theorem]
+A category of rank $r\le31$ would supply one of the starting
+pairs in the table at the beginning of this section. Its sorted
+denominators follow a unique path in \eqref{eq:interval}, and its
+last two degrees satisfy the terminal equation. Every discarded
+prefix violates a necessary condition. Thus its dimensions would
+occur in the corresponding row of the count above. The terminal
+tests exclude every such list, which proves $r\ge32$.
+\end{proof}
+
+To reproduce all the rows in the table, run
+\texttt{python3 verify.py --jobs 4} in the directory containing the
+\supfile{verify.py}{unified verifier}. The programs generate lists anew,
+check the full dimension identity and screen the lists as they appear.
+The lower-rank square generator is \supfile{square.cpp}{\texttt{square.cpp}}.
+At rank $30$ its search divides into fourteen disjoint cases
+according to the number of fours. At rank $31$ it uses disjoint
+prefix jobs, with larger integer branches completed by the
+\supfile{square_exact.py}{exact square generator}. A branch starting with four has at least fourteen prefix
+positions before the two-position closure, so the run of fours is
+already closed by Proposition~\ref{sq:fourteen}. Integer square
+roots use exact bracketing, and a failed native width check or an
+incomplete generator output causes verification to stop.
+All cases completed. The \supfile{run_rank31.py}{rank-31 driver}
+and its \supfile{rank31-results-fast-output.tar.gz}{complete job receipts}
+record the rank-31 computation. The source files, rank-dependent exclusions
+and per-rank counts are documented in the \supfile{README.md}{supplement guide},
+the \supfile{square-pruning.md}{square pruning notes},
+the \supfile{nonsquare-pruning.md}{nonsquare pruning notes} and
+\supfile{counts.tsv}{counts table}. The small calculation in
+Lemma~\ref{six} is included by hand above.
+
+\begin{thebibliography}{9}
+\bibitem{BNRWFinite}
+P.~Bruillard, S.-H.~Ng, E.~C.~Rowell, and Z.~Wang,
+\href{https://doi.org/10.1090/jams/842}{\emph{Rank-finiteness for modular categories}},
+J. Amer. Math. Soc. \textbf{29} (2016), no.~3, 857--881.
+\bibitem{BDP} S. Burciu, J. Dong, and S. Palcoux, \emph{Prime factors of fusion-category dimensions: weak group-theoreticity, rank and decomposition}, Hexagon 2611.00233 (2026). \url{https://hexagonmath.org/2611.00233}.
+
+\bibitem{DLNCongruence}
+C.~Dong, X.~Lin, and S.-H.~Ng,
+\href{https://doi.org/10.2140/ant.2015.9.2121}{\emph{Congruence property in conformal field theory}},
+Algebra \& Number Theory \textbf{9} (2015), no.~9, 2121--2166.
+\bibitem{ENOannals}
+P.~Etingof, D.~Nikshych, and V.~Ostrik,
+\href{https://doi.org/10.4007/annals.2005.162.581}{\emph{On fusion categories}},
+Ann. of Math. \textbf{162} (2005), no.~2, 581--642.
+\bibitem{NSfs}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1016/j.aim.2006.07.017}{\emph{Frobenius--Schur indicators and exponents of spherical categories}}, Adv. Math. \textbf{211} (2007), 34--71.
+\bibitem{NSind}
+S.-H. Ng and P. Schauenburg, \href{https://doi.org/10.1007/s00220-010-1096-6}{\emph{Congruence subgroups and generalized Frobenius--Schur indicators}}, Comm. Math. Phys. 300 (2010), 1--46.
+\end{thebibliography}
+\end{document}
