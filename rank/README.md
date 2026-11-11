@@ -1,5 +1,9 @@
 # Rank bounds and proof calculations
 
+## Short, self-contained proofs
+
+Two focused manuscripts let readers check central results without working through the full article. The [17-page rank paper](../papers/Rank31.pdf) proves rank at least 31 for a non-pointed simple integral modular category from rank-dependent character and dimension constraints ([TeX](../papers/Rank31.tex), [verification files](../papers/rank31-supplement/verify.py)). The [29-page dimension paper](../papers/Below_5400_squared.pdf) proves weak group-theoreticity below $5400^2$ for weakly integral braided categories ([TeX](../papers/Below_5400_squared.tex)).
+
 The [calculation manifest](../certificates/manifest.json) gives hypotheses, inputs, digests, regeneration commands and terminal counts for each rank calculation R01–R12. The [current statement index](../certificates/statement-index.tsv) maps the permanent labels to the revised manuscript. See the [release guide](../certificates/README.md) for resources and the distinction between testing candidates and regenerating them. Run these commands from this directory.
 
 | Category | Lower bound | Calculation |
