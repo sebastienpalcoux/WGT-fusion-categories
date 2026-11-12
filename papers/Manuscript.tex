@@ -63,8 +63,9 @@
 \newcommand{\WGT}{\mathrm{WGT}}
 
 
-\newcommand{\RankLink}[2]{\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/rank/#1}{#2}}
+\newcommand{\RankLink}[2]{\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/rank/#1}{#2}}
 \newcommand{\RankFile}[1]{\RankLink{#1}{\nolinkurl{#1}}}
+\newcommand{\RankProofLink}[2]{\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/papers/rank-bound-supplement/#1}{#2}}
 \newcommand{\contentsgroup}[1]{\phantomsection\addcontentsline{toc}{part}{#1}}
 
 
@@ -86,7 +87,7 @@
 \begin{abstract}
 Let $D$ be the Frobenius--Perron dimension of a weakly integral fusion category and $Q(D)$ its square-full part. For a divisor-minimal braided obstruction to weak group-theoreticity, we bound the conductors of character fields by formal codegrees and relate residue blocks to primary twists through local Weyl operators. For primes $p<q<r<s$ these restrictions give weak group-theoreticity whenever $Q(D)$ divides $p^5q^ar^b$ or $p^3q^3r^as^b$, with $a,b$ arbitrary. Fixing the cofactor of a prime power gives a finite test even when its exponent is unrestricted.
 
-A braided category is weakly group-theoretical for $Q(D)<29\,160\,000$ and solvable for odd $Q(D)<6\,087\,156\,075$. The corresponding bounds without a braiding are $D<5400$ and odd $D<121\,275$. Combining the dimension restrictions with an exhaustive enumeration of degrees gives rank at least $31$ for a non-pointed simple integral modular category, at least $33$ in nonsquare dimension, $57$ in odd dimension and $75$ in odd nonsquare dimension. We also obtain rank bounds without simplicity and prime-divisor criteria for a braided product decomposition.
+A braided category is weakly group-theoretical for $Q(D)<29\,160\,000$ and solvable for odd $Q(D)<6\,087\,156\,075$. The corresponding bounds without a braiding are $D<5400$ and odd $D<121\,275$. Combining the dimension families with an exhaustive degree search gives rank at least $32$ for a non-pointed simple integral modular category, at least $33$ in nonsquare dimension, $57$ in odd dimension and $75$ in odd nonsquare dimension. We also obtain rank bounds without simplicity and prime-divisor criteria for a braided product decomposition.
 \end{abstract}
 
 \section{Introduction}\label{fam:M:sec:1}
@@ -118,7 +119,7 @@ Arbitrary & $D$ odd, $D<121\,275$ & Solvable\\\bottomrule
 \end{minipage}\end{center}
 
 \paragraph{Rank.}
-How many simple objects would a non-pointed simple integral modular category need? Simplicity forces its pointed subcategory to be trivial, so its unit is its only invertible simple. Such a category cannot be WGT (Corollary~\ref{cor:global-dimensions}). If its degrees are $d_i$, modularity gives $d_i^2\mid D$ and $\sum_i d_i^2=D$. At fixed rank, these identities yield a finite search. The dimension families eliminate possible dimensions before the character and twist constraints have to be tested. Table~\ref{tab:intro-ranks} records the resulting bounds alongside those for categories with weaker hypotheses.
+How many simple objects would a non-pointed simple integral modular category need? Simplicity forces its pointed subcategory to be trivial, so its unit is its only invertible simple. Such a category cannot be WGT (Corollary~\ref{cor:global-dimensions}). If its degrees are $d_i$, modularity gives $d_i^2\mid D$ and $\sum_i d_i^2=D$. At fixed rank, these identities yield a finite search. Dimension-family exclusions prune this search before the more expensive character and local twist tests. Table~\ref{tab:intro-ranks} records the resulting bounds alongside those for categories with weaker hypotheses.
 
 \begin{center}\small
 \begin{minipage}{.95\linewidth}
@@ -126,7 +127,7 @@ How many simple objects would a non-pointed simple integral modular category nee
 \centering
 \begin{tabular}{@{}p{.66\linewidth}rr@{}}\toprule
 Category & Any parity & Odd\\\midrule
-Non-pointed simple integral modular & $31$ & $57$\\
+Non-pointed simple integral modular & $32$ & $57$\\
 \hspace*{1em}with nonsquare dimension & $33$ & $75$\\[2pt]
 Weakly integral braided, non-WGT & $9$ & $41$\\
 Weakly integral, non-WGT, without a braiding assumption & $7$ & $13$\\\bottomrule
@@ -135,7 +136,7 @@ Weakly integral, non-WGT, without a braiding assumption & $7$ & $13$\\\bottomrul
 
 The first two rows follow from Theorem~\ref{mrk:thm:modular-ranks}. The arbitrary-center bounds use a different argument (Theorem~\ref{mrk:g:bounds}). Indeed, a central de-equivariantization can \emph{increase} rank. For an odd prime $p\ge5$, de-equivariantizing $\Rep(D_{2p})$ by the quotient $D_{2p}\to C_2$ gives $\Rep(C_p)$, of rank $p$, while the original category has rank $(p+3)/2$. Under the distinct hypothesis of minimality among divisors of $D$, a slightly degenerate obstruction has full rank at least $34$ (Theorem~\ref{mrk:thm:reduced-rank}). Its character table is indexed by pairs of simples interchanged by the transparent fermion. For strictly weakly integral non-WGT categories the lower bounds are $8$ without braiding and $11$ with braiding.
 
-Perfection alone also gives the bounds $57$ and $75$ for nontrivial odd-dimensional braided categories, with the latter bound under the additional nonsquare hypothesis (Corollary~\ref{cor:all-dim-rank}). Alekseyev, Bruns, Palcoux and Petrov excluded nontrivial perfect integral modular categories through rank $13$, and through rank $24$ in odd dimension \cite[Theorems~1.5 and~12.2]{ABPPModular}. Dong and Palcoux raised the odd-dimensional lower bound to $27$ \cite[Corollary~1.3]{DPLCM}. The Anyon Atlas constructs modular data numerically through rank $22$ \cite[Section~3]{AnyonAtlas}. The degree enumeration in this paper uses the rank as numerical input and does not require a prior classification list. The general bound leaves rank $31$ open in square dimension.
+Perfection alone also gives the bounds $57$ and $75$ for nontrivial odd-dimensional braided categories, with the latter bound under the additional nonsquare hypothesis (Corollary~\ref{cor:all-dim-rank}). Alekseyev, Bruns, Palcoux and Petrov excluded nontrivial perfect integral modular categories through rank $13$, and through rank $24$ in odd dimension \cite[Theorems~1.5 and~12.2]{ABPPModular}. Dong and Palcoux raised the odd-dimensional lower bound to $27$ \cite[Corollary~1.3]{DPLCM}. The Anyon Atlas constructs modular data numerically through rank $22$ \cite[Section~3]{AnyonAtlas}. The degree enumeration in this paper uses the rank as numerical input and does not require a prior classification list. The general search excludes every rank through $31$, including square dimension.
 
 \paragraph{Boundary dimensions and decomposition.}
 The first square-full dimension left by our braided comparison is $29\,160\,000=2^63^65^4=5400^2$. The slightly degenerate case is excluded throughout the family with exponent caps $6,6,4$. At this first dimension a modular obstruction has rank between $101$ and $46\,774$ (Theorem~\ref{por:ranktheorem}). Without braiding, a simple perfect non-WGT category of dimension $5400$ has rank between $11$ and $462$ if its fusion ring is commutative, and between $13$ and $490$ otherwise (Theorem~\ref{th:unbraided-5400}). At the odd dimension $5^67^623^4$, combining the forced twist orders with their multiplicities gives rank at least $553$ for any non-WGT braided category (Corollary~\ref{fam:rank:five-seven-twenty-three}). A different application concerns the factorization of integral modular categories. For composite square-free $L$, Section~\ref{sec:coprime-core} characterizes the existence of a prime integral WGT modular category of dimension $L^2$ by a signed divisibility graph. For $L=5\cdot7\cdot29$ the two possible edges require opposite signs at $29$, since $5\mid29+1$ and $7\mid29-1$. Every integral modular category of this dimension therefore splits.
@@ -145,7 +146,9 @@ The categorical starting points are the reduction theorems of Etingof--Nikshych-
 
 For rank, start with the degree equation in Section~\ref{mrk:e:section}, then read the twist and character restrictions in Sections~\ref{mrk:packets}--\ref{mrk:dyadic} before the exhaustive searches in Section~\ref{mrk:certificates}. General non-WGT categories require a separate descent (Section~\ref{mrk:g:section}). The refinements for three primes and the restrictions at the first open dimensions have their own proofs in Sections~\ref{found:group:support}--\ref{sec:unbraided-5400}. Section~\ref{sec:coprime-core} derives decomposition criteria from gaugings.
 
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/papers/Below_5400_squared.pdf}{short companion} takes the direct route through principal blocks and local Weyl columns to the two even bounds $5400^2$ and $5400$. The present article also treats unrestricted prime exponents, odd dimensions, rank and decomposition. The \hyperref[sec:code-data-certificates]{verification guide} identifies the finite calculations in each proof.
+Two self-contained companions isolate the numerical conclusions: the
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.pdf}{29-page dimension proof} gives the bounds $5400^2$ and $5400$ without computation. The
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Rank32.pdf}{17-page rank proof} gives $r\ge32$ using the same degree search and character tests. Here the dimension families provide additional pruning. The \hyperref[sec:code-data-certificates]{verification guide} locates the calculations in each proof.
 
 \subsection*{Index of the families}
 \phantomsection\label{sec:intro-dimension-families}
@@ -3216,7 +3219,7 @@ $r<6q$. More generally, for fixed $M\ge2$ the entire strip
 $M<p<q<r<Mq$ is covered when $q$ is sufficiently large in terms of $M$.
 \end{corollary}
 \begin{proof}
-For the smaller endpoints, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/exposed_support.py}{support enumeration} gives the following table. The commands for all listed primes are recorded under \hyperref[sec:code-data-certificates]{Code, data and certificates}. In each row
+For the smaller endpoints, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/exposed_support.py}{support enumeration} gives the following table. The commands for all listed primes are recorded under \hyperref[sec:code-data-certificates]{Code, data and certificates}. In each row
 $k$ is the number of positions and the second column lists the primes
 above the indicated cutoff where the scalar inequality alone still
 permits a word. The other primes above the cutoff are excluded by
@@ -4507,7 +4510,7 @@ In an odd minimal root a twist involving both $p$ and $q$ forces
 its two heights to lie in the
 rectangle $\mathcal H(h,k)=\{(i,j)\in\ZZ^2:0<i<h,\;0<j<k\}$.
 For $h,k\ge2$ the inequality $h+k\ge6$ says that this rectangle
-has at least three lattice points. For even roots, the local columns lead to the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{finite trace calculation} in Theorem~\ref{fourm:even-total}. Section~\ref{sec:two-isolated} excludes an odd
+has at least three lattice points. For even roots, the local columns lead to the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{finite trace calculation} in Theorem~\ref{fourm:even-total}. Section~\ref{sec:two-isolated} excludes an odd
 least prime of height two with any companion height. The only
 remaining root needed for the theorem is the odd root $p^3q^2uv$,
 treated in Section~\ref{subsec:four-sextic}. Section~\ref{sec:numerical}
@@ -5019,9 +5022,9 @@ $m_d d A_t(d)$ to the trace. Adjoining one admissible $d=2^i w$ at a time
 therefore adds these pairs for $m_d=0$ or $H_t(d)\le m_d\le K/A_t(d)^2$,
 discarding total costs above $K$. For instance, in the first row only two
 copies of $14$ or one of $56$ fit. In table order the required residues
-$\epsilon j_t\bmod q$ are $10,2,2,2,1,38,3$; each is absent. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{enumeration} produces these seven terminal rows. Their \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/certificates/certificates.json}{trace residues} can also be checked \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/verify_witnesses.py}{independently}.
+$\epsilon j_t\bmod q$ are $10,2,2,2,1,38,3$; each is absent. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{enumeration} produces these seven terminal rows. Their \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/certificates/certificates.json}{trace residues} can also be checked \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/verify_witnesses.py}{independently}.
 \end{proof}
-For other heights, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/check_four.py}{general trace and Gram calculation} uses the same additions to impose all of
+For other heights, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/check_four.py}{general trace and Gram calculation} uses the same additions to impose all of
 \eqref{fourm:budgettest}. At each axis retain the cheapest nonempty
 choice in the required trace class and subtract its cost. For each common
 degree add $m_x(A_u(x)^2,A_v(x)^2,A_u(x)A_v(x))$ to the two
@@ -5536,7 +5539,7 @@ higher valuations even. A root height below two is covered by
 Proposition~\ref{seq:one-unrestricted}.
 Lemma~\ref{lem:isolated-dyadic-square} excludes a dyadic singleton,
 so an even root has $p=2$ and $i+j\ge6$ by
-the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fourm:even-total}. In an odd root the least prime
+the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fourm:even-total}. In an odd root the least prime
 cannot be a singleton by \eqref{eq:finite}; Theorem~\ref{fourm:leastquart-smallboth}
 excludes height two there, at every companion height. Now $i\ge3$
 and $j\ge2$ leave only $(3,2)$ below total height six.
@@ -5972,7 +5975,7 @@ $j_t(\delta+3)\le t+1$ in the unramified budget, a contradiction.
 
 \begin{proof}[Proof of Theorem~\ref{thm:higher-two-squares}]
 The root heights $i,j$ in Corollary~\ref{cor:four-before-sextic} satisfy
-$i\le h$, $j\le k$. Its even case uses the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{dyadic enumeration} of Theorem~\ref{fourm:even-total}. The corollary gives each asserted bound except
+$i\le h$, $j\le k$. Its even case uses the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{dyadic enumeration} of Theorem~\ref{fourm:even-total}. The corollary gives each asserted bound except
 possibly $h+k\ge6$ at an odd root $p^3q^2uv$. Such a root is excluded
 by Corollary~\ref{r6:sextic-three} at $p=3$ and by
 Lemma~\ref{fourm:common-fields} at $p\ge5$.
@@ -6016,7 +6019,7 @@ the $(t-1)j_t$ full labels already reserved. Its signed coordinate is one. The r
 squared budget is $j_t(t+1-j_t)-1$ and the degree trace is
 $(j_t-1)m_t+\epsilon j_t$. Further full labels remain allowed.
 
-Minimize each axis cost at its trace residue and impose the common norm and mixed constraints of \eqref{fourm:budgettest} with these residual budgets. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/unbounded_four.py}{recurrence} gives 279 vacuum residue rows,
+Minimize each axis cost at its trace residue and impose the common norm and mixed constraints of \eqref{fourm:budgettest} with these residual budgets. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/unbounded_four.py}{recurrence} gives 279 vacuum residue rows,
 53 after both axis budgets, and two after the common Gram sum.
 Both rows have $q=3$, $u=5$, $v=7$, $j_u=1$, $\epsilon=-1$.
 Their $(j_v,3^k\bmod35)$ values are $(2,17)$ and $(1,27)$.
@@ -6056,7 +6059,7 @@ This proves Theorem~\ref{fam:W:n:thm:unbounded} in its stated generality.
 \paragraph{The two dyadic exponent boxes.}\label{fam:W:dyadic-boxes}
 By the four-prime descent used above, the dyadic boxes
 $2^9q^5(uv)^2 e$ and $2^5q^9(uv)^2 e$ reduce to ordinary roots
-of higher heights at most $(4,2)$ or $(2,4)$. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{trace calculation} in Theorem~\ref{fam:M:8.15} excludes every such root. A dyadic singleton is excluded by
+of higher heights at most $(4,2)$ or $(2,4)$. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{trace calculation} in Theorem~\ref{fam:M:8.15} excludes every such root. A dyadic singleton is excluded by
 Corollary~\ref{fam:M:9.18}. Thus for $(8,4,2,2)$ the remaining
 roots are odd, of form $P^4Q^2uv$ with $P$ least and $P,Q$ mixed
 (Theorems~\ref{fam:M:9.14}, \ref{fam:M:9.16} and
@@ -6277,7 +6280,7 @@ The primes $(P,Q,u,v)=(227,3,113,127)$ realize this assignment,
 with $Q$ least and $127/113<3/2$.
 
 The two-endpoint test can be sharper. If $u=449$, $v=463$ and
-$P,Q$ have the residues of $23,13$ modulo $uv$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/residue_classes.py}{calculation in the finite quotient} gives
+$P,Q$ have the residues of $23,13$ modulo $uv$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/residue_classes.py}{calculation in the finite quotient} gives
 $d=168$ and $R=\{42,46,126,130\}$, proving $(A,83,3,2)$ for
 arbitrary $A$. If $Q$ instead has the residues of $67$, then $R$ is
 empty. Already at $449$ the only allowed $H$ is $7$ and
@@ -6333,7 +6336,7 @@ $u,v,j_u,j_v,\epsilon$, solve
  Q^2\equiv-\epsilon(P^4v j_u)^{-1}\pmod u,\qquad
  Q^2\equiv-\epsilon(P^4u j_v)^{-1}\pmod v .
 \]
-Combine root pairs by CRT and retain primes in the window. At each $t$ reserve twice the smallest admissible squared cost on each of the two axes (odd duality). Since the mixed sum is $-j_uj_v<0$, some admissible common degree $y$ must have $A_u(y)A_v(y)<0$, fit both residual budgets with multiplicity two, and pass the unramified-endpoint test in Lemma~\ref{fourm:dyadicbudget}. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/new_odd.py}{enumeration} implements these
+Combine root pairs by CRT and retain primes in the window. At each $t$ reserve twice the smallest admissible squared cost on each of the two axes (odd duality). Since the mixed sum is $-j_uj_v<0$, some admissible common degree $y$ must have $A_u(y)A_v(y)<0$, fit both residual budgets with multiplicity two, and pass the unramified-endpoint test in Lemma~\ref{fourm:dyadicbudget}. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/new_odd.py}{enumeration} implements these
 necessary tests and gives
 \[
 \begin{array}{c|rrrrrrr}
@@ -6377,7 +6380,7 @@ H & \text{vacuum}&\text{axes}&\text{Gram}& |S_H|&\max S_H\\\hline
 \end{array}
 \]
 Here $S_3=\{3,5,7,11,13,17,19,31,37\}$ is contained in $S_4$.
-Two independent calculations give the same sets. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/prime_projection.py}{first} enumerates residues by multiplication until repetition. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/independent_projection.py}{second} reconstructs the vacuum residue by CRT, checks membership in
+Two independent calculations give the same sets. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/prime_projection.py}{first} enumerates residues by multiplication until repetition. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/independent_projection.py}{second} reconstructs the vacuum residue by CRT, checks membership in
 the cyclic group generated by $q$, and retains minimal costs for each
 partial Gram sum. Allowing exponent signatures for all positive
 exponents includes every signature with actual exponent at most $k$.
@@ -6394,7 +6397,7 @@ $Q\le v\max(2,\lfloor(u+1)/j_u\rfloor-1)+1$
 Remove singleton values $5,7,13$ (Lemma~\ref{fam:M:8.8} and
 Corollary~\ref{fam:M:9.6}). Apply Theorem~\ref{main:full-multiplicity} and Corollary~\ref{deep:ram-parity}. At $t$ the proper-degree budget is $j_t(t-j_t)$, multiplicities are even, and an odd coordinate occupies the unique ramified orbit of size $j_t$. Branch on a ramified common endpoint, where both axes are unramified. Retain the constraints $j_t\mid t-1$, $(t-1)/j_t$ odd, $j_t$ even, $3j_t\le t+1$.
 
-The finite calculation in \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/odd_periodic.py}{\texttt{odd\_periodic.py}}
+The finite calculation in \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/odd_periodic.py}{\texttt{odd\_periodic.py}}
 uses all positive powers of $Q$, represented by
 $(Q^i\bmod m,\min(Q^i,P^h))$ until repetition. The moduli are
 $uv$ for the vacuum and the common degree tests, and $Pt$ for
@@ -6421,7 +6424,7 @@ $\sum A_t(D)D=\epsilon j_t$ and squared cost
 $\sum A_t(D)^2=j_t(t-j_t)$ on the proper labels, counted with
 multiplicity. Both identities may be halved by duality.
 
-For $m=Q^s$ the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/odd_trace.py}{trace calculation} retains all degrees
+For $m=Q^s$ the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/odd_trace.py}{trace calculation} retains all degrees
 $D=P^i Q^a w^\delta$, $0\le i\le h$, $a\ge0$, $\delta=0,1$,
 having at least two distinct prime factors, as required by the
 prime-power exclusion of Lemma~\ref{fam:M:2.4}. The signatures use residues modulo
@@ -7879,7 +7882,7 @@ of the four products is $(3^25^27^2\cdot11)^2=121275^2$.
 For even support the only profile with minimum below
 $(2^23^25^2\cdot7)^2=6300^2$ is $(8,4,2,2)$. When two is in a higher
 position the dyadic $(9,5)$ box at the two higher primes and the lift of one
-square to a cube cover all $a\le9,b\le5$. The two placements follow from the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fam:M:8.15} and the lift in the paragraph \hyperref[fam:W:dyadic-boxes]{The two dyadic exponent boxes}.
+square to a cube cover all $a\le9,b\le5$. The two placements follow from the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/four_primes/dyadic_total_height.py}{dyadic enumeration} in Theorem~\ref{fam:M:8.15} and the lift in the paragraph \hyperref[fam:W:dyadic-boxes]{The two dyadic exponent boxes}.
 The next possible exponents have $a\ge10$ or $b\ge6$. When two is
 in a lower position the product is already at least $(2\cdot3^45^2
 \cdot7)^2$. Taking square roots after rounding odd valuations upwards
@@ -7896,7 +7899,7 @@ at least three in $N$, or two primes occur to height at least two, so
 $N\ge p^2P$. Six primes give the last row immediately.
 
 Taking column minima gives $29160000$, $6087156075$, $5400$ and $121275$. A
-\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/check_dimension_bounds.py}{Python check}
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/check_dimension_bounds.py}{Python check}
 reproduces each entry of the table by enumerating exponent vectors in order of
 increasing product and, for the two center columns, testing the doubled exponents.
 WGT descends from the center, and $4\nmid D$ when $Q(D)$ is odd, so the
@@ -8790,7 +8793,7 @@ the coordinates of degree $x$. Finally when $f=p^2$ a nonzero trace
 at a nonunit requires $y\mid x/\gcd(x,p)$ by
 Proposition~\ref{prop:quartic-prime-top-codegree}. A repeated coordinate costs its
 multiplicity times its square in the trace budget, as before.
-The implementations are \RankFile{code/trace_rows.py} and \RankFile{code/orbit_screen.py}.
+The \RankProofLink{trace.py}{shared orbit test} applies these restrictions. The scoped searches also use \RankFile{code/trace_rows.py} and \RankFile{code/orbit_screen.py}.
 \begin{proposition}\label{prop:no-six-codegree}
 No formal codegree of a nontrivial simple perfect integral modular category
 equals six.
@@ -9383,206 +9386,94 @@ Lemma~\ref{rank:common-projection} allows at most four such rows for each sign o
 This excludes nine rows.
 \end{proof}
 \subsection{Fourteen labels of formal codegree sixteen}\label{sec:dyadic-zeros}
-Throughout this subsection $s=S/M$ denotes the normalized modular matrix.
-\paragraph{A zero when the denominator has exactly one factor two.}
-Suppose $8\mid M$. If $X$ has denominator
-four and $Y$ has denominator $b\equiv2\pmod4$, then $S_{XY}=0$.
-Indeed, otherwise $Y$ belongs to the principal dyadic block by the
-prime-power support theorem. Set $n=M/4$ and $\alpha=2s_{XY}$.
-This is an algebraic integer because
-$\mathrm{lcm}(n,M/b)=M/2$. The common conductor bound for the
-lcm-normalized entry puts $\alpha$ in $\mathbb Q(\zeta_8)$.
-Principality of $Y$ yields
-$\chi_Y(X)=(b/2)\alpha\equiv n\equiv0$ above two.
-The integer coefficients of $\alpha$ in the standard dyadic power
-basis thus have even sum. Their squared sum is the normalized trace
-of $|\alpha|^2$, at least two if $\alpha\ne0$. If $\alpha$ is
-rational it is even, so its entry would use at least one unit of
-squared norm. Otherwise its distinct Galois conjugates occur in
-the same row at distinct labels of degree $d_Y$ since
-$\sigma(s_{XY})=s_{X,\sigma Y}$ in integral square dimension.
-Their total squared norm is at least
-$[\mathbb Q(\alpha):\mathbb Q]\operatorname{mean}(|\alpha|^2)/4
-\ge1$. Both bounds contradict the positive vacuum entry.
-Odd denominators already vanish on this row by the dyadic principal
-valuation bound. Since the nonunit degrees on a nonunit row have
-gcd one, the lcm of the nonunit denominators divisible by four must
-therefore equal $M$. In particular, if a prime power $p^a\Vert M$
-is absent from the lcm of these denominators on a prefix, at least
-one later nonunit denominator is divisible by $\mathrm{lcm}(4,p^a)$.
-
-If $n$ is odd and the denominator four occurs at least four times,
-the same zero and lcm assertions hold. Indeed every such row has
-support exactly the principal dyadic block $P$: for $Y\in P$,
-$\chi_Y(X)\equiv n\not\equiv0$ above two.
-Consequently a nonzero column of denominator $b\equiv2\pmod4$
-would meet every one of these rows. Each nonzero $2s_{XY}$ has
-mean squared modulus at least one, and the squared column norm
-would be exhausted before counting the vacuum.
+Write $s=S/M$, $n=M/4$, and let $P$ be the principal dyadic block.
+If $8\mid M$, a degree-$n$ row vanishes at every denominator
+$b\equiv2\pmod4$. Indeed $\alpha=2s_{XY}$ is integral by lcm
+integrality, while principality gives
+$(b/2)\alpha=\chi_Y(X)\equiv n\equiv0$ above two. Its $e$ distinct
+conjugates occur in distinct columns and have total squared norm at
+least $e2^{2/e}/4\ge1$, before the vacuum. If $n$ is odd and at least
+four denominators four occur, each of those rows has support exactly
+$P$; a nonzero such column would meet all four rows, again exhausting
+its norm before the vacuum. Odd denominators already vanish by the
+principal defect bound. Consequently, in either case the nonunit
+denominators divisible by four have lcm $M$, by row orthogonality.
 
 \begin{proposition}[Fourteen dyadic rows and their principal block]
 \label{prop:fourteen-principal}
-If the denominator four occurs exactly fourteen times, at least one
-of the corresponding labels is outside $P$. In particular
+If the denominator four occurs exactly fourteen times, its class $I$
+is not contained in $P$. Moreover
 \[
- \sum_{\substack{4\mid b_Y\\ b_Y\ne4}}\frac1{b_Y^2}>\frac1{16},
- \qquad
- \sum_{4\nmid b_Y}\frac1{b_Y^2}<\frac1{16}.
+ \sum_{\substack{4\mid b_Y\\b_Y\ne4}}b_Y^{-2}>1/16,
+ \qquad \sum_{4\nmid b_Y}b_Y^{-2}<1/16 .
 \]
-The sums include the vacuum when eligible. Three denominators six
-are therefore impossible, in every rank.
+Both sums include the vacuum when eligible. In particular, three
+denominators six are impossible.
 \end{proposition}
 \begin{proof}
-Let $I$ be the class of fourteen labels and suppose $I\subset P$.
-For a label $Y$ put $w_Y=\sum_{X\in I}\chi_X(Y)$. It is a rational
-integer by Galois stability of the degree class, and it is even since
-every summand has the principal residue $d_Y$ above two.
-In particular $w_0=14$, and row orthogonality against the vacuum gives
-\[
-             \sum_{Y\ne0} d_Y(w_Y/2)=-7 .
-\]
-We show that $w_Y=0$ at every nonunit of odd degree. For this $Y$ each
-$\chi_X(Y)$ is a dyadic integer with nonzero residue. In the standard
-power basis of a two-power cyclotomic field, its normalized mean
-squared modulus is an odd positive integer: the coefficients have
-odd sum, and their squares have the same parity. Unitarity, averaged
-over embeddings, gives
-\[
- \sum_{X\in I}\operatorname{mean}|\chi_X(Y)|^2<16,
-\]
-since $s_{XY}=\chi_X(Y)/4$ and the additional vacuum coordinate is
-nonzero. Thus all fourteen means are one. In the orthonormal
-integral basis this means every $\chi_X(Y)$ is a signed basis root
-of unity, and so has absolute value one at the given embedding.
-The sections of columns $Y$ and $0$ on $I^c$ therefore both have
-squared norm $2/16$. Orthogonality of the columns gives
-$|w_Y|/16\le2/16$. If $|w_Y|=2$, the two restricted columns are
-proportional with scalar of absolute value one. Their vacuum
-entries have different absolute values, $d_Y/M$ and $1/M$.
-Thus $w_Y=0$, since it is even. The displayed integer identity is
-now impossible modulo two. This proves $I\not\subset P$.
+Suppose $I\subset P$. The sums $w_Y=\sum_{X\in I}\chi_X(Y)$ are
+even integers. For odd $d_Y>1$, all fourteen summands have nonzero
+residue, and their squared moduli have Galois mean an even integer in
+$[14,16)$, hence fourteen. Thus the columns $Y,0$ have squared norm
+$14/16$ on $I$, and orthogonality gives $|w_Y|\le2$. Equality would
+make their complementary restrictions proportional with ratio of
+modulus one, contrary to their unequal vacuum moduli. Hence $w_Y=0$,
+contradicting $\sum_{Y\ne0}d_Yw_Y/2=-7$ modulo two.
 
-Choose $X\in I\setminus P$. It misses the whole of $I$ by symmetry
-and prime-power support, and its remaining hits have denominators
-divisible by four by the preceding zero. Write $H$ for these
-potential remaining columns, including the vacuum. The vacuum
-modular relation gives
-\[
-   M/4=\big|\sum_{Y\in H}s_{XY}d_Y\theta_Y\big|
-       \le \big(\sum_{Y\in H}d_Y^2\big)^{1/2}.
-\]
-Equality would imply that $|s_{XY}|$ on $H$ is proportional to
-$d_Y$ with factor $4/M$, since the row has norm one. At the
-vacuum its entry is $1/4$, which would give $M=16$, excluded by
-Corollary~\ref{cor:global-dimensions}. Thus the first mass bound is strict. The
-fourteen labels use $14/16$ of the mass, so the complementary
-bound follows. In particular, either two denominators five or three denominators six exceed this complementary mass bound.
+The mass inequality of Lemma~\ref{mass} gives $I\cap P\ne\varnothing$.
+If $n$ were odd, a principal member would meet all of $I$, forcing
+$I\subset P$. Thus $8\mid M$. A member outside $P$ misses $I$ by
+symmetry, so its support is among the other denominators divisible by
+four. The vacuum modular relation gives their mass at least $D/16$.
+Equality forces $M=16$ at the vacuum coordinate, impossible. The
+remaining mass bound follows since $I$ has mass $14D/16$.
 \end{proof}
 
-\begin{corollary}[The exceptional dyadic row in rank at most 31]
-\label{cor:fourteen-nine-hits}
-At fourteen denominators four, $8\mid M$ and exactly one label $Z$
-in the class lies outside $P$. Its row is rational. If the rank is at most $31$, the $Z$-row has nine nonunit hits, the primes of $M$ are $\{2,3,5\}$, at least five denominators eight occur, and at most one denominator six occurs.
-\end{corollary}
-\begin{proof}
-If $n=M/4$ is odd, all fourteen rows have exact support $P$ and
-$P$ meets their class by the mass-overlap inequality. Symmetry would
-put all fourteen in $P$. Thus $n$ is even. Let $E=I\setminus P$,
-which is nonempty by the proposition. All its rows miss $I$ and
-are supported on pure dyadic twists. The squared norm of the
-projection of $sT(d_Y)$ onto $E$ is $|E|n^2$ by the vacuum modular
-relation. Its input can be restricted to the pure dyadic labels
-outside $I$, of total squared mass strictly less than $2n^2$:
-some odd dimension prime has a nontrivial twist component by
-categorical Cauchy. Thus $|E|=1$. This singleton is Galois-stable
-since the dyadic principal block is stable, so
-$u_Y=\chi_Z(Y)\in\mathbb Z$. Its nonunit support consists of degrees
-$d_Y=n/h_Y$ for integers $h_Y\ge2$, only on pure dyadic twists.
-The row and modular identities give
-\[
- \sum_{Y\ne0}u_Y^2=15,\quad
- \sum_{Y\ne0}u_Y/h_Y=-1/n,\quad
- \sum_{Y\ne0}|u_Y|/h_Y\ge4-1/n ,
-\]
-where sums omit zero entries. For the last inequality the vacuum
-contribution has absolute value one. Since each hit $Y\in P$,
-$h_Yu_Y=\chi_Y(Z)\equiv n\equiv0$ above two: if $u_Y$ is
-odd then $h_Y$ is even.
-
-There are at least two odd dimension primes $p<q$. At least
-$(p-1)+(q-1)$ labels have twist order divisible by $p$ or $q$ by
-Proposition~\ref{prop:joint-prime-capacity} with $B(1)=1$. These labels miss the support of $u$, the vacuum, and the
-fourteen large labels. Hence there are at most ten nonunit hits.
-With squared norm fifteen, the possible absolute lists are
-$(2,2,1^7)$, $(3,1^6)$, $(2,2,2,1^3)$ and $(3,2,1,1)$,
-where exponents denote multiplicity. The last has total weight
-seven, too small for the last inequality. The middle two have weight
-nine. The positive and negative sides of the reciprocal identity
-both have mass at least $2-1/n$. Each therefore has weight at least
-four, and one has weight exactly four. Expanding an entry of absolute
-value $k$ as $k$ identical terms, all four terms on this side
-must have $h=2$, since one $h\ge3$ would lose at least $1/6$.
-The other five positive fractions would sum to $2\pm1/n$.
-With four twos the remaining $1/h=d/n$ exceeds $1/n$, and five
-twos overshoot. With three twos the other two reciprocals must be
-within $1/n$ of $1/2$: for ordered $3\le a\le b$ the only such
-pairs are $(3,6)$ and $(4,4)$, both exact. Indeed for $a=3$ the
-nearest distinct possibilities are $b=5,7$, for $a=4$ the next
-is $b=5$, and $a\ge5$ gives at most $2/5$. With two twos the
-remaining sum is at most one, with equality only at three threes
-and next possible value $11/12$. With at most one two the sum
-is at most $1/2+4/3$. These gaps exceed $1/n$ since $n\ge1350$.
-
-Thus the row has nine nonunit hits with weights $(2,2,1^7)$.
-At most seven more labels are available for the odd primes. The
-phase-pair lower bound above consequently forces exactly $3,5$
-as the odd primes. The three-prime dimensional exclusions give
-$v_3(M)\ge3$ and $v_5(M)\ge2$. The signed dimension identity
-requires a three-free and a five-free hit. They are distinct, since
-a nonunit cannot have prime-power degree; their $h$'s are at least
-$27$ and $25$. Compared with the maximum possible mass
-$\sum|u_Y|/2=11/2$, these two terms lose at least
-$2(1/2-1/25)$. Any further hit at $h\ne2$ loses at least $1/4$:
-an odd weight then has even $h\ge4$, while weight two and $h\ge3$
-loses at least $1/3$. Three further such hits would lose in total
-more than $3/2+1/n$, contrary to the modular inequality. Thus
-at least five hits have $h=2$, giving at least five denominators
-eight. Two denominators six would now give
-$14/16+5/64+2/36>1$.
-\end{proof}
 \begin{theorem}\label{thm:no-fourteen}
 At rank at most $31$ the denominator four has multiplicity at most
 thirteen in a nontrivial fusion-simple perfect integral modular
 category of square dimension.
 \end{theorem}
 \begin{proof}
-Sixteen such labels would exhaust the dimension before the vacuum.
-Fifteen would leave the vacuum and at least six labels with a nontrivial
-odd-primary twist: there are at least two odd dimension primes by the
-two-prime WGT theorem, and Proposition~\ref{prop:joint-prime-capacity}
-gives the six labels outside the dyadic class. Hence $R\ge22$ and
-$16(R-16)\ge25$, so Proposition~\ref{prop:saturation}
-excludes fifteen at every rank. Suppose the multiplicity is fourteen. Let $Z$
-be the unique label of that degree outside the principal dyadic
-block as in Corollary~\ref{cor:fourteen-nine-hits}, and let $B$
-be its full dyadic block. The thirteen remaining labels of that
-degree, the nine nonunit hits of the $Z$-row, and the vacuum are
-distinct, lie in the principal block and have pure dyadic twists.
-At least six additional labels have nontrivial odd-primary twists
-by the two-odd-prime phase bound in the corollary. Thus
+Sixteen copies exhaust the dimension; fifteen are excluded by
+Proposition~\ref{prop:saturation}, since the vacuum and six labels with
+nontrivial odd-primary twist give $R\ge22$. Suppose there are fourteen.
+The set $E=I\setminus P$ is nonempty by the proposition. Its rows miss
+$I$ and see only pure dyadic twists. Some odd-primary twist is nontrivial,
+so their available squared mass is strictly less than $2n^2$. The mass
+inequality makes $E$ a singleton $\{Z\}$, and Galois stability makes
+$u_Y=\chi_Z(Y)$ integral. At a nonunit hit write $d_Y=n/h_Y$. The
+preceding zero gives $h_Y\ge2$ integral; principality makes it even
+when $u_Y$ is odd. The row identities give
 \[
-        \#\{Y\in B:\theta_{Y,2'}=1\}
-                            \le31-13-9-1-6=2 .
+ \sum u_Y^2=15,\qquad \sum u_Y/h_Y=-1/n,\qquad
+ \sum |u_Y|/h_Y\ge4-1/n .
 \]
-This set contains $Z$. Its coordinate span is invariant under the
-dyadic local factor, since the full block is invariant
-(Lemma~\ref{lem:local-block-invariance}), and the complementary upper unipotent commutes
-with that factor. The local Weyl cannot preserve the line of $Z$
-because $2\mid f_Z$ (Lemma~\ref{lem:complement}). Hence the set has exactly
-two labels. Lemma~\ref{lem:two-label-local} makes their degrees
-equal, contrary to uniqueness of the degree-$M/4$ label outside
-the principal block.
+Here $n\ge1350$ by Corollary~\ref{cor:global-dimensions}. With at most
+eight hits the absolute weights are $(3,2,1,1)$, $(3,1^6)$ or
+$(2^3,1^3)$. The first has total weight seven, too small. In the
+others expand each weight into unit fractions. Both signs have mass
+at least $2-1/n$, so one side has four terms and the other five. All
+four denominators on the first side are two, since any larger one
+loses at least $1/6$. The other five must sum to $2\pm1/n$. Four or
+five twos overshoot. With three twos the last two reciprocals equal
+$1/2$ or differ from it by at least $1/42$; the equality pairs are
+$(3,6),(4,4)$. With two twos the last three sum to one or at most
+$11/12$; with at most one two the sum is at most $1/2+4/3$.
+Thus there are at least nine hits.
+
+These hits, the vacuum and the thirteen labels of $I\cap P$ belong
+to $P$ and have pure dyadic twists. At least six further labels have
+nontrivial odd-primary twists, by Proposition~\ref{prop:joint-prime-capacity}
+at two distinct odd primes. The full dyadic block of $Z$, intersected
+with the trivial odd-phase fiber, therefore has at most
+$31-9-1-13-6=2$ labels. Its span is dyadically invariant. A single
+label contradicts Lemma~\ref{lem:complement}; two have equal degree by
+Lemma~\ref{lem:two-label-local}, contrary to the uniqueness of $Z$
+outside $P$.
 \end{proof}
+
+
 \subsection{Square dimension with denominators four, five and seven}
 \label{mrk:s:neighbouring-primes}
 Keep $D=M^2$ and $b_Y=M/d_Y$. Two restrictions will be used repeatedly. The field of a prime-power degree class is controlled by the square
@@ -9869,6 +9760,111 @@ Finally $j=6$ uses $6/49>1/16$ on denominators prime to four,
 contrary to Proposition~\ref{prop:fourteen-principal}.
 \end{proof}
 
+\subsection{Prefix witnesses and terminal compatibility}
+\begin{lemma}[Prime heights on three-prime support]\label{rank:three-prime-height}
+Suppose exactly three primes divide $M$ in square dimension. A
+denominator $p^a$ forces $p^2\mid M$, four denominators four force
+$8\mid M$, and a denominator five forces $125\mid M$. For each
+$\ell^e\Vert M$ some nonunit denominator is divisible respectively by
+$\lcm(\ell^e,p)$, $\lcm(\ell^e,4)$ and $\lcm(\ell^e,25)$.
+\end{lemma}
+\begin{proof}
+A prime-power denominator row is supported in the principal $p$-block,
+so its hit denominators are divisible by $p$. Their nonunit degrees
+have gcd one and each contains at least two support primes. Their
+common multiple must therefore contain all three primes, giving
+$p^2\mid M$. With four fours the zero argument in
+Section~\ref{sec:dyadic-zeros} makes all hit denominators divisible
+by four, and gives $8\mid M$ in the same way. At a denominator five,
+Proposition~\ref{prop:quartic-prime-top-codegree} puts the nonzero-trace
+degrees among the divisors of $(M/5)/\gcd(M/5,5)$, again with gcd one.
+Their common multiple contains all three primes, so $125\mid M$ and
+each trace-hit denominator is divisible by $25$. A hit prime to
+$\ell$ supplies each asserted lcm.
+\end{proof}
+
+\paragraph{Reserving the remaining mass.}\label{rank:prefix-mass}
+In the square search the possible support consists of the primes in
+the prefix lcm $L$, the prime two, and odd $p\le h+1-H$, where $h$ is the number
+of vacant nonunit positions and $H$ is the known packet deficit of
+Section~\ref{sec:joint-prime-capacity}. If only three primes are
+possible, all must occur. For each, distinguish whether its full power
+in $M$ equals that in $L$ or is larger. In the latter case no prefix
+degree is prime to that prime. Reserve enough suffix positions for
+the two prime-free nonunits of Lemma~\ref{mrk:e:witness}, or three at
+$2,5$ by the dimension equation modulo $4,5$. At $2,3$ their total
+numbers are respectively $3\bmod4$ and $2\bmod3$. Also reserve any
+missing witness from Lemma~\ref{rank:three-prime-height}. These three
+sets of positions are disjoint, since every nonunit retains two
+support primes. Round their denominator lower bounds to allowed
+multiples no smaller than the last prefix member, say $a_1,\ldots,a_v$.
+In units of $L^{-2}$ their mass is at most
+$W=\sum_j\lceil L^2/a_j^2\rceil$, and the vacuum contributes at most
+one. Thus, when $E>W+1$, the next denominator satisfies
+\[
+             b^2(E-W-1)\le(h-v)L^2 .
+\]
+Discard $v>h$ and retain the weakest bound over feasible prime
+heights. When dimension-family pruning is selected, the ordered
+three-prime exclusions (Theorems~\ref{fam:Q:1.3}, \ref{seq:quartic-any}
+and~\ref{thm:three}) require the valuations of $D$ to be at least $(6,5,4)$, giving additional lower bounds on the same
+reserved denominators. At the two-position closure, $(k,10)=1$ fixes the heights at two and five; a fixed height below a required family bound excludes every completion.
+With three positions left, if $k=M/L$ is even, all three remaining
+degrees must be odd by reduction modulo four. Hence
+$Ek^2\equiv4\pmod8$, forcing $v_2(k)=1$ and $E$ odd.
+
+\paragraph{Two compatible phase fibers.}\label{rank:crossed-phase}
+For $q=3$ and $r\le31$, the joint fiber bound gives support
+$\{2,3,p\}$, $p=5$ or $7$. An order-$p^2$ phase would give at least
+$p(p-1)/2$ nontrivial phases, each supporting three labels, besides
+the trivial fiber with at least three. Already at $p=5$ this exceeds
+$31$. Thus the nontrivial $p$-phases have order $p$ and equal positive
+squared mass $W$, by Proposition~\ref{prop:two-packets}. Choose a
+fiber in each of the two square classes of exponents modulo $p$.
+Their degree counts $a_d,b_d$ must satisfy
+\[
+ \sum_d a_dd^2=\sum_d b_dd^2=W>0,\qquad
+ (a_d+b_d)(p-1)/2\le m_d .
+\]
+Only nonunit degrees with $p\mid D/d^2$ are eligible. In each fiber
+$3g^2\mid W$, where $g$ is the gcd of its degrees, by
+Lemma~\ref{lem:crossed-fiber-count}. The \RankProofLink{screen.py}{terminal screen} enumerates one-fiber vectors, groups them by $W$, and tests pairs in each group.
+
+\subsection{Integral constraints on tensor products}
+Let $H$ be the additive monoid generated by the nonunit degrees.
+Every nonunit degree $a$ satisfies $a^2-1\in H$, by the decomposition
+of $X\otimes X^*$. For fixed $X$ of degree $a$, the undirected fusion
+graph is connected since $X,X^*$ generate. An edge between nonunit
+degrees $u,v$ requires both $au-v$ and $av-u$ to lie in $H$, allowing
+one unit to be subtracted from the first if $u=a$ and from the second
+if $v=a$. All nonunit degrees must be reachable from $a$ in this
+possible-edge graph. Consecutive distinct degrees consequently have
+ratio at most the least nonunit degree.
+
+\begin{lemma}[Multiplication by a smallest nonunit]\label{rank:multiplication}
+Fix $X$ of least nonunit degree $x$. Let $C_{ab}$ sum the multiplicities
+of the degree-$b$ constituents of $X\otimes U$ over the $m_a$ simples
+$U$ of degree $a$. Then
+\[
+ C_{ab}=C_{ba},\qquad
+ \sum_{b>1}bC_{ab}=xa m_a-\mathbf1_{a=x},\qquad
+ 0\le C_{ab}\le m_am_b\lfloor\min(xa/b,xb/a,ab/x)\rfloor .
+\]
+\end{lemma}
+\begin{proof}
+Rigidity and braiding give $N_{XU}^{V}=N_{XV^*}^{U^*}$, and duality
+preserves degrees. The unit occurs once, precisely when $U=X^*$.
+The three individual bounds come from taking dimensions in the three
+products obtained by reciprocity. Summing gives all assertions.
+\end{proof}
+The \RankProofLink{multiplication.py}{multiplication screen} removes entry values inconsistent with each
+integer row sum, propagates the bounds to the transposed row, and
+also checks individual product dimensions. At degree $b$ an individual
+product can use at most the aggregate bound and at most $m_b$ times
+the single-pair bound. The implementation limits the propagation
+passes and the row sums tested; these limits only weaken the screen.
+
+
 \section{Rank bounds for modular categories and fermion quotients}\label{mrk:certificates}
 
 Write $r$ for the number of labels of the table, $\Delta=qM^2$ with $q$ square-free, and $b_i=M/d_i$ for the denominators. In the modular case $r$ and $\Delta$ are the rank and dimension of the category. In the positive fermion quotient both quantities are halved. We use the row and twist conditions proved in Sections~\ref{mrk:packets}--\ref{mrk:dyadic} to conclude the finite searches defined by \eqref{mrk:e:fraction} and~\eqref{mrk:e:interval}.
@@ -9895,7 +9891,7 @@ Through half-rank $14$, the \RankLink{code/reduced_types.py}{arbitrary-precision
 \subsection{The modular bounds}\label{mrk:ordinary}
 
 \begin{theorem}\label{mrk:thm:modular-ranks}
-Let $\mathcal C$ be a non-pointed fusion-simple integral modular category of dimension $D=qM^2$ and rank $r$. Then $r\ge31$. For $q>1$ one has $r\ge33$. If $D$ is odd then $r\ge57$, and if also $q>1$ then $r\ge75$.
+Let $\mathcal C$ be a non-pointed fusion-simple integral modular category of dimension $D=qM^2$ and rank $r$. Then $r\ge32$. For $q>1$ one has $r\ge33$. If $D$ is odd then $r\ge57$, and if also $q>1$ then $r\ge75$.
 In square dimension put $B=M/d_{\max}$. Then $r\ge36$ if $B\ge5$, $r\ge39$ if $4\nmid M$, and $r\ge46$ if $B\ge6$.
 \end{theorem}
 
@@ -9904,34 +9900,68 @@ In odd dimension count the nonunit denominators by dual pairs. Since all degrees
 For the nonsquare odd search this gives short bounds on each remaining denominator. If the support has precisely three primes in increasing order, their exponents in $D$ are at least $(6,5,4)$ by the dimension families. For each $p$ at least two $p$-free nonunit pairs are required; at three, at least four, since $1+2t\equiv0\pmod3$ for their number $t$. These sets of pairs are disjoint for three-prime support, since a nonunit degree contains at least two primes. Their denominators contain the full $p$-part of $M$. For additional primes outside $q$, the necessary number of eligible packets follows from the complementary-fiber bounds of Proposition~\ref{prop:joint-prime-capacity}. Sorting these mandatory lower bounds on the unfilled slots gives an upper bound on the available reciprocal-square mass. The vacuum term is at most $(15b_{\rm last})^{-2}$; the implementation rounds each summand upwards on a grid of mesh $2^{-64}$.
 
 \begin{proof}[Proof of Theorem~\ref{mrk:thm:modular-ranks}]
-A non-pointed fusion-simple category has trivial pointed subcategory. Put $f_{\min}=qB^2$. Lemma~\ref{lem:small-ordinary-codegrees} gives $f_{\min}\ge5$, whereas \eqref{mrk:e:fraction} gives $f_{\min}<r$. This disposes of $r\le5$ before any computation. Lemma~\ref{small} excludes prime codegrees and Proposition~\ref{prop:no-six-codegree} excludes six, so the first possible ordinary root has codegree at least eight. For $r\ge6$ apply Proposition~\ref{rank:search-completeness}. Codegree nine would require $q=1$ and a denominator three. Since smaller square codegrees are excluded, three would be the first denominator. Theorem~\ref{thm:no-nine} thus discards exactly the root $(q,B)=(1,3)$ before recursion. Its other root, prefix and terminal tests use the following necessary conditions.
+Simplicity makes the unit the unique invertible. Put $n=d_{\max}$ and
+$f_{\min}=D/n^2=qB^2<r$. In fact $f_{\min}\le r-2$: equality
+$f_{\min}=r-1$ would give $\sum_{i\ne0}(n^2-d_i^2)=1$, while every
+positive term is at least $2n-1>1$. Lemma~\ref{small} and
+Proposition~\ref{prop:no-six-codegree} give $f_{\min}\ge8$, excluding
+$r\le9$. Theorem~\ref{thm:no-nine} removes the square root $B=3$.
+For the remaining roots use Proposition~\ref{rank:search-completeness}
+and the following necessary tests.
 \begin{center}\small
-\begin{tabular}{@{}p{.38\linewidth}p{.55\linewidth}@{}}\toprule
+\begin{tabular}{@{}p{.32\linewidth}p{.61\linewidth}@{}}\toprule
 Test & Mathematical input\\\midrule
-Degrees, row support and trace & \eqref{mrk:e:orth}--\eqref{mrk:e:energy}, Lemma~\ref{mrk:l:trace-vector}, Sections~\ref{mrk:s:rows} and~\ref{mrk:dyadic}\\
-Multiplicities and prime supports & Propositions~\ref{prop:crossed-packet-count}, \ref{prop:joint-prime-capacity}, \ref{prop:multiple-defect-one} and~\ref{prop:defect-one-tiles}\\
-Two-label and dyadic tests & Lemmas~\ref{lem:two-label-local} and~\ref{rank:ordinary-dyadic-test}; square-dimension row and Gauss-sum bounds in Section~\ref{mrk:dyadic}\\
-Remaining exclusions & Dimension families, principal-block witnesses, phase masses, Proposition~\ref{prop:activity-capacity} and the paragraph \emph{A divisor from the regular indicator} in Section~\ref{mrk:packets}\\\bottomrule
+Dimension families & Table~\ref{tab:family-cones}, Corollary~\ref{cor:global-dimensions}; prefix bounds in Section~\ref{mrk:e:section} and paragraph~\ref{rank:prefix-mass}\\
+Prime support and multiplicity & Propositions~\ref{prop:joint-prime-capacity}, \ref{prop:multiple-defect-one}, \ref{prop:defect-one-tiles}, \ref{prop:eight}; Lemma~\ref{rank:three-prime-height}\\
+Characters and phase masses & Lemma~\ref{mrk:l:trace-vector}, Sections~\ref{mrk:pcover}--\ref{mrk:dyadic}, Proposition~\ref{prop:activity-capacity}, paragraph~\ref{rank:crossed-phase}\\
+Tensor products & The monoid and graph test above; Lemma~\ref{rank:multiplication}\\\bottomrule
 \end{tabular}
 \end{center}
-The \RankLink{ordinary_release.py}{ordinary enumeration and verifier} uses one kernel pair for ranks $6$--$30$. Generation enumerates the sorted lists. Terminal verification reapplies the exclusion tests to the candidates. A kernel may use a weaker prefix test or defer an exclusion until the terminal screen: this enlarges the set it has to check. An arithmetic overflow requires completion of the corresponding arbitrary-precision branch. Verifying an archived list alone does not check the exhaustiveness of its generation. The \RankLink{data/ordinary_release.json}{ordinary ledger} and the \RankLink{verify_rank30.py}{rank-$30$ branch checks} identify the two operations separately.
+The \RankProofLink{verify.py}{shared optimized verifier} uses the same
+\RankProofLink{square.cpp}{square} and \RankProofLink{nonsquare.cpp}{nonsquare}
+generators at every rank. Here its \texttt{--families} option uses the
+\RankLink{code/catalogue.py}{dimension-family catalogue}: a covered dimension
+is excluded before the character tests, and family height bounds strengthen
+the same prefix recursion. Each category supplies a unique branch. A prefix
+is discarded only when every completion violates a necessary condition;
+arithmetic beyond native width passes to the
+\RankProofLink{square_exact.py}{square} or
+\RankProofLink{nonsquare_exact.py}{nonsquare} arbitrary-precision recursion.
+The \RankProofLink{certificate-families.json.gz}{single certificate}
+records the sources, mode, complete task partition and terminal exclusions
+for the whole range. Its counts of generated lists and survivors are
 \begin{center}\small
-\begin{tabular}{@{}lr@{}}\toprule
-Rank and dimension condition & Number of terminal profiles, in rank order\\\midrule
-$6\le r\le21$ & $0$ at every rank\\
-$r=22,23,24,25,26,27$ & $20,49,61,1\,340,8,125$\\
-$r=28,29,30$ & $1\,940,13\,292,96\,119$\\
-$r=31,32$, nonsquare only & $802,3\,081$\\\bottomrule
+\begin{tabular}{@{}crrr@{}}\toprule
+Rank & Square $D$ & Nonsquare $D$ & Survivors\\\midrule
+$9$--$24$&0&0&0\\
+$25$&1&0&0\\
+$26$&3&0&0\\
+$27$&9&0&0\\
+$28$&65&0&0\\
+$29$&655&0&0\\
+$30$&14\,482&1&0\\
+$31$&396\,110&121&0\\
+\bottomrule
 \end{tabular}
 \end{center}
-Every profile in the table is excluded. At rank $30$ the $524$ parent prefixes are disjoint, and the $149$ nonsquare profiles match the independent nonsquare enumeration individually. At ranks $31$ and $32$ the separate \RankLink{verify_nonsquare.py}{nonsquare search} and \RankLink{verify_nonsquare32.py}{rank-$32$ verifier} apply only with $q>1$. This proves the first two bounds.
+Each rank in the first row was exhausted separately. The independent mode
+generates $453\,041$ lists. Family prefix constraints reduce this to
+$411\,447$, of which the catalogue excludes $22\,964$ before the character
+tests. Every generated list fails a necessary condition, so $r\ge32$. For $q>1$, the further
+\RankLink{verify_nonsquare32.py}{rank-$32$ verification} excludes all
+$3\,081$ terminal profiles and gives $r\ge33$.
 
-For odd $D$, the \RankLink{code/odd_frontier.py}{paired recursion} visits $14\,520$ prefixes for $r\le56$ and leaves no type. With $q>1$ it visits $128$ prefixes for $r\le74$ and leaves no type. Both the \RankLink{data/revision/odd56.json}{unrestricted odd result} and the \RankLink{data/revision/nonsquare74.json}{odd nonsquare result} are regenerated by \RankLink{verify_revision.py}{the verifier}.
+For odd $D$, the \RankLink{code/odd_frontier.py}{paired recursion} visits $14\,520$ prefixes for $r\le56$ and leaves no type. With $q>1$ it visits $128$ prefixes for $r\le74$ and leaves no type. Both the \RankLink{data/revision/odd56.json}{unrestricted odd result} and the \RankLink{data/revision/nonsquare74.json}{odd nonsquare result} are regenerated by \RankLink{verify_scoped.py}{the paired-odd verifier}.
 
-Finally let $q=1$. Then $B^2<r$ and $B\ge4$ by the exclusions at small codegree and at nine. For $B\ge5$ the complete search through $r=35$ emits $437$ lists in ranks $30$ through $35$. If $4\nmid M$, odd $M$ is already covered; for $M\equiv2\pmod4$ the lcm of the prefix may never be divisible by four and the terminal root must satisfy the same congruence as $M$. These restrictions leave $6\,456$ profiles across ranks $30$ through $38$. With $B\ge6$ the inequality $B^2<r$ starts the search at $37$, and it emits $80$ profiles through rank $45$. The \RankLink{square_slices.py}{three restricted enumerations}, their \RankLink{data/rank31/square_slices.json}{ledgers} and the \RankLink{data/rank31/square_slice_rows.zip}{degree lists} give zero survivors in all three cases.
+Finally let $q=1$. Then $B^2<r$ and $B\ge4$ by the exclusions at small codegree and at nine. For $B\ge5$ the complete search through $r=35$ emits $437$ lists in ranks $30$ through $35$. If $4\nmid M$, odd $M$ is already covered; for $M\equiv2\pmod4$ the lcm of the prefix may never be divisible by four and the terminal root must satisfy the same congruence as $M$. These restrictions leave $6\,456$ profiles across ranks $30$ through $38$. With $B\ge6$ the inequality $B^2<r$ starts the search at $37$, and it emits $80$ profiles through rank $45$. The \RankLink{square_slices.py}{three restricted enumerations}, their \RankLink{data/square-slices/square_slices.json}{ledgers} and the \RankLink{data/square-slices/square_slice_rows.zip}{degree lists} give zero survivors in all three cases.
 \end{proof}
 
-The search leaves unrestricted rank $31$ open. Any remaining profile has square dimension $D=M^2$, largest degree $M/4$, and at most thirteen occurrences of this degree (Theorem~\ref{thm:no-fourteen}). The \RankLink{README.md}{verification guide} records the remaining work and the independent checks of completed ranks.
+The \RankProofLink{README.md}{shared implementation} accepts higher ranks.
+The thirteen-fours bound is used only under the hypothesis $r\le31$ of
+Theorem~\ref{thm:no-fourteen}. At higher rank the general saturation bound
+allows fourteen. The codegree-eight and phase-order tests likewise check
+their prime-support and actual-rank hypotheses before applying the stronger
+restriction. The published certificate proves the range through $31$.
 
 \subsection{Rank bounds at specified prime supports}\label{mrk:rank-families}
 
@@ -10369,7 +10399,7 @@ edges with distinct heads and distinct tails would form a cycle,
 which strict degree increase precludes. There are at most two
 complex-conjugate pairs of codegree seven.
 
-At rank thirteen the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/verify_odd13.py}{recursion} with six paired denominators at
+At rank thirteen the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/verify_odd13.py}{recursion} with six paired denominators at
 least seven and one final $D$ gives 520 tuples. Of these, 17 have
 $D\ge121275$ and at most two paired denominators equal to seven.
 Testing their squares by the exponent comparisons of
@@ -11005,7 +11035,7 @@ opposite pairs. If $A$ meets two order-$23$ cosets, at most three
 of the at most six opposite pairs in $D$ have order $23$. With $l$
 such pairs the average overlap over all units is at most
 $(l^2+(6-l)^2/23)/11<2$, a contradiction. Hence $A\subset\mu_{23}$
-since it contains the identity. The remaining finite calculation takes place in $\mathbb F_{23}$. Normalize two marked positions to $0,1$ and take the other two in increasing order. For each of the $\binom{21}2=210$ supports, start with the set $B$ of its nonzero differences modulo sign. Store one representative per dilation class. Given two stored sets $B,C$ and $u\in\mathbb F_{23}^{\times}$, put $H=B\cap uC$. Reject if $|H|<2$ or if the nonzero differences of $\{0\}\cup(\pm H)$ comprise fewer than five opposite pairs. Otherwise add these differences if the resulting support $L$ is exposed, i.e.\ $3(1+2|L|)<46$. Repeat until rejection or no new dilation class appears. The preceding rectangle argument justifies each use of the initial set, and later sets are pure. Of the $18$ distinct initial dilation classes, the surviving supports among the $210$ are exactly the $12$ affine translates and dilates of $\{0,1,3,14\}$ normalized in this way. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/word_closure.py}{closure calculation} with \texttt{check 23 4 --ell 3 --classes} reproduces these counts (the least conductor prime in this exposure test may be taken to be three). A starting mask
+since it contains the identity. The remaining finite calculation takes place in $\mathbb F_{23}$. Normalize two marked positions to $0,1$ and take the other two in increasing order. For each of the $\binom{21}2=210$ supports, start with the set $B$ of its nonzero differences modulo sign. Store one representative per dilation class. Given two stored sets $B,C$ and $u\in\mathbb F_{23}^{\times}$, put $H=B\cap uC$. Reject if $|H|<2$ or if the nonzero differences of $\{0\}\cup(\pm H)$ comprise fewer than five opposite pairs. Otherwise add these differences if the resulting support $L$ is exposed, i.e.\ $3(1+2|L|)<46$. Repeat until rejection or no new dilation class appears. The preceding rectangle argument justifies each use of the initial set, and later sets are pure. Of the $18$ distinct initial dilation classes, the surviving supports among the $210$ are exactly the $12$ affine translates and dilates of $\{0,1,3,14\}$ normalized in this way. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/word_closure.py}{closure calculation} with \texttt{check 23 4 --ell 3 --classes} reproduces these counts (the least conductor prime in this exposure test may be taken to be three). A starting mask
 with fewer than five opposite pairs is likewise impossible, since
 its mean overlap over nonidentity tame units is at most $4\cdot3/10<2$.
 Thus the same four-position proof gives precisely the indicated
@@ -11070,7 +11100,7 @@ position and yields a common Gauss sum of modulus $\sqrt{23}$ times
 $\sum_{j=1}^3 m_j\overline{\chi(a_j)}$, where $m_j$ counts the
 letters with $7$-part $\eta$ at $a_j$. Thus $\sum_jm_j\ge19$.
 For each origin $c=0,1,3,14$ in the affine representative found by the
-\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/word_closure.py}{four-position enumeration}, use the character sending the primitive root $5$
+\href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/word_closure.py}{four-position enumeration}, use the character sending the primitive root $5$
 to $\exp(2\pi i k/22)$ with $k=18,7,11,9$, respectively. At the
 three other points shifted by $-c$, its exponents modulo $22$
 are respectively
@@ -12403,7 +12433,7 @@ small scalar bounds suffice (at $j=2$, $r>2q$). At $j=3$ and
 $r\le33$ we have $r>3q$, so the only possible $q$ is $7$ and thus
 $p=5$, incompatible with $q^3\ge p^4$.
 
-For $p=5,q=7$ and $r=29,31$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/exposed_support.py}{four-position calculation} in Corollary~\ref{fam:A:strips} gives $W(r,4)$, so both companion exponents are unrestricted.
+For $p=5,q=7$ and $r=29,31$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/exposed_support.py}{four-position calculation} in Corollary~\ref{fam:A:strips} gives $W(r,4)$, so both companion exponents are unrestricted.
 For $p=5,q=7,r=23$ the word bound $W(23,4)$ remains undecided.
 Nevertheless $e_7=2$ and $e_{23}=11$, so
 Proposition~\ref{found:C:key:prop:sexticrect} excludes isolation at five for
@@ -12427,7 +12457,7 @@ At $p=5$ the sole assignment left by these tests is $(q,r)=(7,23)$.
 \begin{proof}
 In the three lines $r>p^2$, and $1+\lfloor p^2/q\rfloor$ is at
 most $2,4,5$, respectively. At two positions use Theorem~\ref{found:S:4.1}.
-For four and five positions use the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/exposed_support.py}{exposed-support calculations} of Corollary~\ref{fam:A:strips}. At five positions these give the cases $53,59,61$; the scalar bound applies from $67$ onward.
+For four and five positions use the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/exposed_support.py}{exposed-support calculations} of Corollary~\ref{fam:A:strips}. At five positions these give the cases $53,59,61$; the scalar bound applies from $67$ onward.
 For the quartic the only smaller triple at $p=3$ is $(3,5,7)$,
 where $r<2q$. At $p=5$, $r<29$ gives $r<3q$ except for $(q,r)=(7,23)$.
 Both ratio tests follow from Theorem~\ref{fam:Q:1.2}.
@@ -12862,7 +12892,7 @@ of $x_i,2x_i,x_i\pm x_j$ modulo sign. Retain masks with at least
 nineteen pairs at $s=173$ and twenty elsewhere, and test their intersections with every nonidentity
 multiple. The columns count normalized choices of $T$, including
 choices with the same mask. The loops in
-the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/short_words.py}{residue enumeration} reproduce the counts using only integer arithmetic.
+the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/short_words.py}{residue enumeration} reproduce the counts using only integer arithmetic.
 \[
 \begin{array}{r|rrr}
 s&\text{choices}&\text{at least the required size}&\text{all overlaps at least four}\\\hline
@@ -12938,7 +12968,7 @@ s&L&\text{seven-point seeds}&\text{pass own dilates}&
 167&19&33726047&0&0
 \end{array}
 \]
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/strip_extra.cpp}{normalized-support enumeration} gives the exact
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/strip_extra.cpp}{normalized-support enumeration} gives the exact
 loops. It restricts forward comparisons to intersections with at most
 six pairs and at most $41$ processed masks per seed. Reaching that
 limit counts as survival. Thus each zero comes from contradictions
@@ -14963,7 +14993,7 @@ we obtain
                           n_Xn_Y\le3.
 \]
 Indeed the three nonzero positions all have weight seven. At each of
-the four origins in the affine support classified by the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/word_closure.py}{enumeration in Proposition~\ref*{found:C:3.3}}, Section~\ref{found:C:3} provides a nontrivial character at $23$ sending those positions, after
+the four origins in the affine support classified by the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/word_closure.py}{enumeration in Proposition~\ref*{found:C:3.3}}, Section~\ref{found:C:3} provides a nontrivial character at $23$ sending those positions, after
 rotation, into an arc spanning at most four steps modulo $22$, of length $4\pi/11$. A multiplicative
 Gauss sum of modulus $\sqrt{23}$ consequently gives a Fourier coefficient
 of modulus at least $21\sqrt{23}\cos(2\pi/11)$. On the other hand
@@ -16299,7 +16329,7 @@ With $b=600$, the same $74$ or $66$ positions in \eqref{por:eq:budget600} give r
 Here $k=m_{675}\le7$. For $m=0$ they give $R\ge132$ and $R\ge127$ respectively. If $R\le105$ there are at least $18$ degree-$900$ labels; if $R=101$ there are at least $21$. By Corollary~\ref{por:th:joint-at-ninehundred} at least eighteen of these rows meet the joint sector.
 \subsection{The exact rank calculation}
 \label{por:certificate}
-When two and five are separated, only the one-neutral case at ranks $95$ through $100$ remains. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/check_frontier_rank.py}{integer recursions} below enumerate the candidates. For each of the five survivors at rank $100$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/certificates/certificates.json}{certificates} give both disjoint fibers and their norm witnesses. A \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/verify_witnesses.py}{separate calculation} checks each pair. The argument on tame phases excludes all five. 
+When two and five are separated, only the one-neutral case at ranks $95$ through $100$ remains. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/check_frontier_rank.py}{integer recursions} below enumerate the candidates. For each of the five survivors at rank $100$, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/certificates/certificates.json}{certificates} give both disjoint fibers and their norm witnesses. A \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/verify_witnesses.py}{separate calculation} checks each pair. The argument on tame phases excludes all five.
 
 Let $A=\{24,72,120,216,360\}$, $J=A\setminus\{216\}$, $g=900^2$, and let $\mathcal D$ be the divisors of $5400$ between $10$ and $675$ with at least two prime factors. The $R-66$ additional degrees are $900$ apart from a multiset $L$ in $\mathcal D$. The ten selected five-active quartets contribute $2304S$, where $S$ is a sum of ten squares from $\{1,9,25,81,225\}$. For the initial enumeration take $b\le c$ from $\mathcal D$ dividing $360$, $o\in\{15,45,75,135,225,675\}$, $w\in\{10,20,50,100\}$, and $y\in\{12,18,36\}$. Retain precisely the tuples satisfying
 \begin{align*}
@@ -16348,7 +16378,7 @@ In each row at most two entries of $L$ could be five-active. Hence the pure five
 \begin{proof}[Proof of Theorem~\ref{por:ranktheorem}]
 The \hyperref[por:rank-upper]{three row-norm estimates} on p.~\pageref{por:rank-upper} give the upper bound. Proposition~\ref{por:prop:cap675} gives the multiplicity bound at $675$.
 
-For the lower bounds, the \hyperref[por:two-ternary-fibers]{two disjoint ternary fibers} each contain \hyperref[por:24-joint]{at least $24$ labels}. If $10$ is missing, the \hyperref[por:five-inactive-orbits]{five inactive orbits} give $40$ five-active labels. The degree budget and congruences in the second row's proof give $R\ge95$ and $R\ge127$ if $m_{900}=0$. In Section~\ref{por:certificate}, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/check_frontier_rank.py}{rank enumeration} tests the degree multisets and the two disjoint fiber norms \eqref{por:eq:two-fiber-norms}. It leaves five profiles, all of rank~$100$. Their \hyperref[por:five-survivors]{incompatible tame phases} exclude all five. At $R=101$ the same budget gives $m_{900}\ge21$. At most three of those rows miss the joint sector by Corollary~\ref{por:th:joint-at-ninehundred}.
+For the lower bounds, the \hyperref[por:two-ternary-fibers]{two disjoint ternary fibers} each contain \hyperref[por:24-joint]{at least $24$ labels}. If $10$ is missing, the \hyperref[por:five-inactive-orbits]{five inactive orbits} give $40$ five-active labels. The degree budget and congruences in the second row's proof give $R\ge95$ and $R\ge127$ if $m_{900}=0$. In Section~\ref{por:certificate}, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/check_frontier_rank.py}{rank enumeration} tests the degree multisets and the two disjoint fiber norms \eqref{por:eq:two-fiber-norms}. It leaves five profiles, all of rank~$100$. Their \hyperref[por:five-survivors]{incompatible tame phases} exclude all five. At $R=101$ the same budget gives $m_{900}\ge21$. At most three of those rows miss the joint sector by Corollary~\ref{por:th:joint-at-ninehundred}.
 \end{proof}
 
 \section{The unbraided boundary in dimension \texorpdfstring{$5400$}{5400}}
@@ -16585,7 +16615,7 @@ series $(1-z^g\boldsymbol{x}^{gv})^{-1}$ over the row types.
 The coefficient at $z^{r-1}\boldsymbol{x}^{\rm target}$
 is zero in all $26$ and $36$ instances. Equivalently, recursively
 subtract $g$ slots and $gv$ in nondecreasing row order until the slots
-are zero. This \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/verify_rank_5400.py}{integer calculation} gives the two lower bounds in
+are zero. This \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/verify_rank_5400.py}{integer calculation} gives the two lower bounds in
 Theorem~\ref{th:unbraided-5400}.
 
 
@@ -17021,11 +17051,22 @@ these modular data \cite[Remark~4.3]{GNNcenters}.
 \section*{Code, data and certificates}
 \addcontentsline{toc}{section}{Code, data and certificates}
 \label{sec:code-data-certificates}
-The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c}{verification release} fixes every program, input and receipt cited here. Its \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/certificates/manifest.json}{manifest} identifies the hypotheses, command, expected output and source labels for each calculation. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/certificates/README.md}{verification guide} gives the commands and the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/certificates/statement-index.tsv}{statement index} gives their printed numbers and pages. The file digests permit the same checks on an offline copy.
+The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/433d1c45795202991f1693e00d9770e4cccf05f6}{verification release} fixes every program, input and receipt cited here. Its \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/certificates/manifest.json}{manifest} identifies the hypotheses, command, expected output and source labels for each calculation. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/certificates/README.md}{verification guide} gives the commands and the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/certificates/statement-index.tsv}{statement index} gives their printed numbers and pages. The file digests permit the same checks on an offline copy.
 
-For the dimension bounds, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/README.md#dimension-comparison}{exponent comparison} recovers the four thresholds in Theorem~\ref{thm:uniform-new-bounds}. For the boundary calculations, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/code/verify_witnesses.py}{terminal verifier} checks seven trace obstructions and the two disjoint fiber assignments for each of the five numerical rank-100 survivors. The theoretical exclusion of those survivors is in Section~\ref{por:certificate}.
+For the dimension bounds, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/README.md#dimension-comparison}{exponent comparison} recovers the four thresholds in Theorem~\ref{thm:uniform-new-bounds}. For the boundary calculations, the \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/433d1c45795202991f1693e00d9770e4cccf05f6/code/verify_witnesses.py}{terminal verifier} checks seven trace obstructions and the two disjoint fiber assignments for each of the five numerical rank-100 survivors. The theoretical exclusion of those survivors is in Section~\ref{por:certificate}.
 
-For the ordinary rank bounds the \RankLink{ordinary_release.py}{ordinary verifier} checks the degree lists, dimensions and exclusions. Its replay option regenerates the lists from the rank and compares them individually. The \href{https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/acb9ac6438697f2ca083b9ca9ff0a1ed1b07f66c/rank/README.md}{rank guide} gives separate commands for the positive quotient, nonsquare, odd, and conditional square-dimension searches, and records the earlier implementations for comparison. The nonbraided argument uses \RankFile{code/unbraided_small.py} and the \RankLink{code/odd_unbraided.py}{odd rank-eleven verifier}. The remaining square case at rank $31$ is open.
+For the general modular rank bound, the
+\RankProofLink{README.md}{optimized verification guide} documents the shared
+search. From its directory, run
+\texttt{python3 verify.py --families --jobs 4 --work family-results} to regenerate the
+\RankProofLink{certificate-families.json.gz}{complete family-pruned record}.
+The same command with \texttt{--check certificate-families.json.gz} checks
+its source hashes, task partition and recorded totals. The option-free run
+reproduces the independent short rank proof. The \RankLink{README.md}{rank
+guide} gives the positive-quotient, nonsquare, odd and conditional
+square-dimension checks. The nonbraided argument uses
+\RankFile{code/unbraided_small.py} and the
+\RankLink{code/odd_unbraided.py}{odd rank-eleven verifier}.
 
 \section*{Acknowledgments}
 Sebastian Burciu was supported by a grant of the Ministry of Research,
