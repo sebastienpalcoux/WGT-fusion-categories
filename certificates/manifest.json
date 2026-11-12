@@ -1,10 +1,10 @@
 {
   "format": 2,
-  "edition": "Independent-referee revision. Run at the immutable Git commit linked in the article. All file paths, including input hashes, are relative to that checkout. Each entry identifies source and/or derivation labels in certificates/statement-index.tsv. Only entries explicitly marked historical refer to older printed numbers.",
+  "edition": "Unified rank revision. Run at the immutable Git commit linked in the article. Paths and input hashes are relative to that checkout. Each entry identifies its source or derivation labels in certificates/statement-index.tsv.",
   "scope": "Arithmetic execution, not certification of the categorical hypotheses. Run without Python -O: historical checkers use assertions.",
   "file_sha256": {
     "certificates/certificates.json": "9e6f5b964f7163a1111dec90965bb2ab3c6154837849e67e30634b47ed434a21",
-    "certificates/check_release.py": "cbbbf4e507bbe01dc92c588639f06ed4057498ae11cca17392c1eef7b761f20a",
+    "certificates/check_release.py": "440439cee2e2b0a1c91baf3eec02ea3ab8b5118653fbf74aaa7b746028d75004",
     "certificates/index_statements.py": "753b63887913d36ed4ff7384891f80e3652a55a67ed89bf6417da01b42babf35",
     "code/check_dimension_bounds.py": "c2dccd61cd9b564c92badb9b3f1c443b7664f762efba61db1cdb0fb395c90718",
     "code/check_frontier_rank.py": "54c17d3af10b7c951cbd176a653efcaf937daba8a081cf328e502f2b5b2f5522",
@@ -27,10 +27,21 @@
     "code/verify_witnesses.py": "ab1ae81c27f49cb0255ce1545bb85d8d9d42876f9c839c7602f1d58e8ed941be",
     "code/word_closure.py": "8a81d353bbac3e9a16b94349e81cbe8e89b3dda55ef28c6dc29d9b883e450625",
     "data/published-rank15-perfect.txt": "04a25855339d84fed23fb0e67cdef00b7783e2f1816d83fe679e3e143ac75dbc",
+    "papers/rank-bound-supplement/README.md": "80074814beebf14227a5702e55e35441a9e7f12eddeea64b120aa174e7c76bb9",
+    "papers/rank-bound-supplement/certificate-families.json.gz": "2af0c33370c5064ff6d9297e966aefa96de0bb742328e75f58596c81b43a31db",
+    "papers/rank-bound-supplement/certificate.json.gz": "1260d339dc490fa0a8b515798e59015a99a057a09ad29bd7b1344d84ecb43dfb",
+    "papers/rank-bound-supplement/multiplication.py": "405e7967bfb2d0cf722fb14fd34fe9f189e904306b34f8f3f6eeeb7cc3ddef8c",
+    "papers/rank-bound-supplement/nonsquare.cpp": "73b2f0c5676081c68706f346f7af7fa58c1561382a8c5d468c32fc6f6d29a1d2",
+    "papers/rank-bound-supplement/nonsquare_exact.py": "0fd76faf4f5a55b1afe2c602d1a3369bffe010de3aafad863379626a4ede8448",
+    "papers/rank-bound-supplement/primes.py": "f8a37aa559a381c3fa215f2f77c0aade7fe3eec131939550cee22a346cd1cb01",
+    "papers/rank-bound-supplement/screen.py": "a85d77062ef5afa47946e41cc3beedfbb4d4c12ce4d898e877119d63e3ac47a1",
+    "papers/rank-bound-supplement/square.cpp": "4357d667d703ece0312813ae2c2d55f068daeeef8aaeb11fe74162fb099e993f",
+    "papers/rank-bound-supplement/square_exact.py": "d2d6786e1d87aa8f3487ad9665314835c16448cec704170af6bec67b0c06ee54",
+    "papers/rank-bound-supplement/trace.py": "27c40267f16966246ef9d85fc1dc7e56bc7222bd14d6d6bf4b3aca132350ae10",
+    "papers/rank-bound-supplement/verify.py": "8b10f41ca0fa614e05aac0b330b6ca37587b94bc1ead9d48e9b9d51a9d46c3c3",
     "rank/code/catalogue.py": "7536d3c7bbc4b6c123601e5cc832602ba4d458eb75833c7e7ce35fc32d9144ad",
     "rank/code/check_adjacent.py": "f9bea113f973ac7ddff27e1734097844370f96c62104d26153de9a25d46ac5d1",
     "rank/code/check_dyadic_concentration.py": "5b3fc073a53c709e95b2bdf1b31a5112f83da778907cff8ced8cc89d4fae6db7",
-    "rank/code/check_dyadic_zero.py": "ba8873578e2ced74bb277f5bb57173902118c751c4c5c70b319b187301a6e4e6",
     "rank/code/check_family28.py": "34adc257a1888ae68c0a41754c1b5cabbc5209b4e9f3862eac9d47db04990d02",
     "rank/code/check_many_prime_families.py": "6c55dbcf2ebcc4c90f566cccc52b0e1effd91229bd9df81af9e11c73999cd510",
     "rank/code/check_nine_single.py": "cacacfe324491a2a7351bc7e9a530beb491a0f60fffd98041a50af65d0cc9279",
@@ -70,7 +81,6 @@
     "rank/code/principal_cover.py": "72a8412881086c170fabed69ad7b1aba323a923b0b93fdab47db3e1a9dde4fae",
     "rank/code/q10_crosscheck.py": "6465edc38cf610fe5a9a2553829a65b5b20f869f90e312af40058c18e6cb8338",
     "rank/code/quintic_constants.py": "8b7886411f4b7b4639d373a6b1b7df60096cbf40918df51c7da20aad90191730",
-    "rank/code/rank30_mass_union.py": "e709365f9d72b58ad2d3dcf7a8676fc6164628fea895c8ed8c7b1f65b77de575",
     "rank/code/rank_audit.py": "94415009704b92492074e46ad7d201f5e91bfb8b28e2f2a6a49650c09b12f3eb",
     "rank/code/rank_family.py": "2e353fa3a71c66986e1e5c3932d15dcedea314577b692cb8918acddbdbcce80b",
     "rank/code/reduced_four.cpp": "13b5730a240751f3b255d4c4ff67b18dcac7983b0617f118fcabb2f62835f9b8",
@@ -95,8 +105,6 @@
     "rank/current/exact.cpp": "c660624ba17a67838fbd99cee12cc0955ce6e41fd40720df34f90cc914109131",
     "rank/current/fallback_check.py": "8eb2b95857601696815c53da6b3004eea4272de8016c5147a20c4cf519e28036",
     "rank/current/fast.cpp": "01e6d75b267484bd768bd619976846fbcb135e1a2ddca03ab181f66203d9bee0",
-    "rank/current/nonsquare/complementary_packets.cpp": "1f6994f2a8894024357762023edc66ba2a3c7d4b7762f21d85a5a87294b93d2b",
-    "rank/current/nonsquare/parity.cpp": "39dfefc5da62aed2c038ede22a5735222620007b1be66e0713ef55905c156cac",
     "rank/data/SHA256SUMS": "a2f8b1aca4703bd3fe284bfc9d504472b9c34f4fb083f5243edccf6bf6992657",
     "rank/data/formal_residual.txt": "a29aa9e647207aa8ff2d51782c47b6083b994ee49d77fb86d80436ae0b1e2a44",
     "rank/data/four15.jsonl": "8af20397ed5f97b7ba9e1d3777b8afa7839c5c19a71a1febe198bd6c3a03de96",
@@ -130,40 +138,24 @@
     "rank/data/ordinary/rank27.log": "c487ce96aa3830a5093c62682537c471fa5ec848a2f136c1cb403d04d56cfdff",
     "rank/data/ordinary/rank28_completed.zip": "e6579c60e0933beb8775be90563736cac1b4332a360bb3ba41bfc191d98c8a76",
     "rank/data/ordinary19_verdicts.json": "d2d079d7dd3e8b5684853160cc12f609f28548d3a1ebbe737f8c042085a0aaf2",
-    "rank/data/ordinary_release.json": "dc6f49780baf9babdc6a82a60fb5b23535e4ce2308ee3ab6d34671b87e0e2e9b",
-    "rank/data/ordinary_release_6_27.zip": "2e4921c58bfe3f569157c8a3ea3beda308497f80084dc165d3fd264063407c6d",
-    "rank/data/rank31/fourteen_31.json": "220d9b3f2fa6f93fa2a0a1d88d389f9e5c1577f248b1948815860b3db86fbdf9",
-    "rank/data/rank31/fourteen_31.jsonl": "1340347837acd74746b1f8e19632bd42b4a222c168ea8e382e392f31af76f1a1",
-    "rank/data/rank31/rank31_seed.zip": "f0837ed79e63f230257cf7306e8732a835ac20309853764fcbedcb22277c9611",
-    "rank/data/rank31/square_slice_rows.zip": "eb1fcd4517f9a4d8fa0288214b02b8bea20bbbed7d86a4cd3e878768aecd1582",
-    "rank/data/rank31/square_slices.json": "2dab3c027399b7134d9378c075e0a0430b38764af76891c5ce6d9d303eaa0362",
     "rank/data/reduced14.json": "95b164f2a67bce278b8e1c90f357185cc272c2285b962d7b32763f32ed8a1dc4",
     "rank/data/revision/benchmark.json": "b5a05afd7cf555284863e31fb995bd7e2cf51fbad60116488b0d0885731ae91f",
     "rank/data/revision/dyadic_concentration.json": "692c224dd0a587ddeb44c4c353900caa8cec8a39b13d45cdfad6ca0262896abd",
     "rank/data/revision/matrix_result.json": "d7bd9694bd5081fa90761ad780c6101b31b949a5be099e238ec8b57be26b38e4",
-    "rank/data/revision/nonsquare/rank29.json": "3362732617a9022b0062da0ed0331973ce217c7dc1422da89319b20948749347",
-    "rank/data/revision/nonsquare/rank29.jsonl": "d7c747c1a15defe53779e7e862d9733b54f92417b4ec49905b02c95cbcee985d",
-    "rank/data/revision/nonsquare/rank30.json": "dda7d394ecd32323f655e9862ff914026ea868b0c663076a84b21afdd1f41504",
-    "rank/data/revision/nonsquare/rank30.jsonl": "9f9f4a557314114e93baac8066591b381549714bceeaa7a2eb84aa58d4153e3d",
-    "rank/data/revision/nonsquare/rank31.json": "a147dc677d16cf19e11289f06c55db8d1e9317d060d9d844a73a7ccdfc34b5b9",
-    "rank/data/revision/nonsquare/rank31.jsonl": "dbcdf1db485ac46d8f53680f47a5dd3ba3e9e0ef4919432271fe14fab6a0e31b",
     "rank/data/revision/nonsquare/rank32.json": "5ceaaa2bf38ae5e2c02fae8cc88380fb707917297affe402acf593192200c765",
     "rank/data/revision/nonsquare/rank32.jsonl": "dd24c767e310a4321531665a97e449bd401a0c83ab9ea4352434d7fabc4941b3",
     "rank/data/revision/nonsquare74.json": "6abce3f4ff41f286b6fdab216281c2921a18020e11d53dd37b38843b8cc38df8",
     "rank/data/revision/odd56.json": "605bf27e3f49fdf8acc98da8370ed08ce905dbc467da208ebed25e82fe510fed",
     "rank/data/revision/odd57_jobs.json": "935def9347b21f999bccf923f703abf9c0c85a6046841bdbbf10a5dbc0f16ecc",
     "rank/data/revision/rank28_fiber_packets.json": "f6dc7b4ab84b8dd15b176ad6478b991bfacdc9c2f92b39ffe2f8dca5ef6e46d9",
-    "rank/data/revision/rank28_optimized.zip": "42eff456fe131c4678afc2d57e67872d139abd254b3c95bbf8f7942eb49c23df",
     "rank/data/revision/rank28_proof.json": "c985d4485a3e2f391c318548b6927b084e2a6588043752d11ab709b87d76f1b7",
-    "rank/data/revision/rank29_optimized.zip": "8195a0d7d6145067e636d78a0cbf3326a8b16a6f3670daecbb26a384a68555c2",
-    "rank/data/revision/rank30_audit.json": "6a4ec1847b8d00cc4c70ec4476d56e08c933ac8b95f115abdeaab6f82499661d",
-    "rank/data/revision/rank30_checkpoint.zip": "23c68724e3de3087a26104820cc3f2a0ea140b103b82e490a6d6a2d74e5f3a99",
-    "rank/data/revision/rank30_completed.zip": "69726a2fcb8f05cf26da3aee9422814cb0ef7806ceecd2e816b6af850d3bb4ba",
     "rank/data/revision/rank30_mass_union.json": "f444cdfe2ff0a2f3095813c4a154f474e8016665c3e925b756f302d24f9d6003",
     "rank/data/revision/septic_projection.json": "0adf38fce9936b03f0d8c83899ced4fdc7ddb5c144b997c27bac94fc48e35d21",
     "rank/data/root18.json": "244cb764087291c40ba8a6c497beba1954e37503aa00f24222b42ca6b3325caf",
     "rank/data/root19.json": "29cdefe9a729219121101167c6029570a0433cd4d5d5f5704374273b62f53e13",
     "rank/data/single_packet19.json": "eeeaad3bbae1bfd9521d726ed81dc5804f30ad316e70de2b404654a1f20568aa",
+    "rank/data/square-slices/square_slice_rows.zip": "eb1fcd4517f9a4d8fa0288214b02b8bea20bbbed7d86a4cd3e878768aecd1582",
+    "rank/data/square-slices/square_slices.json": "2dab3c027399b7134d9378c075e0a0430b38764af76891c5ce6d9d303eaa0362",
     "rank/data/strategy/q10-through36.json": "ee2d24aed2169e00e57937ac3ba1fc38436e2941d49533b617e7c8c94712b140",
     "rank/data/strategy/rank24.json": "3e3206a8f64f14a160e0a9a44761f44cca03f96b60fc2c10afd769afefae7f0f",
     "rank/data/strategy/rank25.json": "cea3db48f2a10cdb4efe1e1a686ecb8efeb2a16f9b5d34d0dd0e53d5301b5222",
@@ -173,10 +165,8 @@
     "rank/data/strategy/three-prime-roots.json": "3d734b6a3f936b69819157c3b322773d63d2bfb4ef633e2062ac4601dbcaf8dd",
     "rank/data/unbraided_small.txt": "a5e3ddb05a9a82d6f790611d2351de48e94c3331a8065a8591871ed2794ca771",
     "rank/dyadic_upgrade.py": "990e5827a0faa97ec98b24b5a438751feba2609254dd6ada2b10b82eebe52ab6",
-    "rank/finish_frontier.py": "016dc33798f1803558d0c13b92fe0a7d02e34af926b208bd783735677c4a28d1",
     "rank/finish_rank28.py": "7b46b311534114c78cb6f19cee58a7e20bcd6606fd4f1fb5bddeeb3ff0efd7d2",
-    "rank/frontier31.py": "588dd9a79f6d66efe4b93b7cae4253dfc49b9a121bd0332fd0ebec2bb4597f62",
-    "rank/next_rank.py": "7f61addbee42dda61636a32fdf932be7118f8bdbbc8ee39f9a8124e8aa8f0732",
+    "rank/next_rank.py": "8d2c9320b26ff1870e63b4dd4ea63fa3e74ab9e1823b30bd8d98db350d5f976b",
     "rank/optimized/benchmark.json": "41bf9732dd08716fb2d641795938e4f876766f79bf0e10596567af54a84cb5ee",
     "rank/optimized/dyadic_mass.hpp": "c22e74ba58dfb876087a8937d053e2e853c3398be9efc0d1ed28f567e193b404",
     "rank/optimized/exact.cpp": "7c9dea5075fd66e3f1011fbbf7661d2b8f9a11fbeb19cd0c5f3cf2c85f7d4add",
@@ -184,19 +174,11 @@
     "rank/optimized/fast.cpp": "763e7f574e17d8605182629c75233156170aa8a35dcd8865cfa56404875d7792",
     "rank/optimized/nonsquare/joint_capacity.hpp": "2125379e75d5317bfe4aa514e29137bf03b348cb2d26410749c0841ea0591bec",
     "rank/optimized/nonsquare/nonsquare_joint.cpp": "80c92ece82ff3f1504e93451e5130b76b0759b4f01ec236312a0430766b1b7c3",
-    "rank/optimized/test_dyadic_upgrade.py": "33106141ca9d6ea31e8872fe3cb463f00e87768d540b74cf4bb4697fc9a76097",
-    "rank/optimized/test_engine.py": "3e532eb464b7da8c3871f68c1b8dc389155754ddb88c39bfeacde959e5a8cd61",
-    "rank/ordinary_release.py": "b7783472fc9699986f4c7ec6b36a0319bffd4a4cfa126fb110e23dfcd9aad200",
-    "rank/rank31_fourteen.py": "93a2b6b2153578f82ef254e76e3b5f8ff30f4fb345a7f0a8158174d1e9344055",
-    "rank/square_slices.py": "e64559848b9a3a2fb6ed8710ff266abb214a80106326e02bbbb5cfc0fc61f168",
-    "rank/verify.py": "c5f8b5acb35edf7b2a60748116db16be2aece3aef825872bd02098cc7afad207",
-    "rank/verify_after30.py": "642afd4d84a040700029bfa2276ed2dd24a7f9bc4d2d4c0370f69cd876e93249",
+    "rank/square_slices.py": "b6b1526ea288b7588d9153f41fce7ba904e3dad87df22322fb3ecfe334a72e52",
+    "rank/verify.py": "77f4ec5a5761ebc484b80e11e54ba14de8f2d12f7454669b49cfdf4be1d0d55a",
     "rank/verify_extended.py": "6c6ecc2d8db192b6aac403b1819690c09f6a2e13920396c7cde2d708135fe632",
     "rank/verify_frontier.py": "42208213e69c7a01c4d4b1a9635c1214eee1498b3c8e0af3add8eba4a1471ddd",
-    "rank/verify_nonsquare.py": "8df2d8d58dbb35d4d11ffb0e010c8093afb1ba988f81c6671db97ddd95891d5d",
-    "rank/verify_nonsquare32.py": "72df7c6d5e388684a878f39fc65a7efdeb0c5dd9d2da21e075b996cc73c876cf",
-    "rank/verify_rank30.py": "e2223f960ce3a7d7ccc524bf03432b738f4ae578c309697a6e25f75ca4ea5e98",
-    "rank/verify_revision.py": "bef7a4973556272bee8d552eddd397cd3febfe729f3ae481233d38a740896b9c",
+    "rank/verify_nonsquare32.py": "039ef87302d1805a80e92060898fd6196c9450ff45bd18b8fdd745708dd3c0eb",
     "rank/verify_scoped.py": "c7f0d2b7e0dcc42069948ce111d1b19bea45d085688b158a329b50eedb83e074"
   },
   "calculations": [
@@ -954,69 +936,388 @@
   "rank_calculations": [
     {
       "id": "R01",
-      "check": "Uniform ordinary rank search",
+      "check": "Unified ordinary rank search",
       "source_labels": [
         "mrk:thm:modular-ranks"
       ],
-      "hypotheses": "Ordinary, non-pointed fusion-simple integral modular category, hence perfect.",
-      "cwd": "rank",
+      "hypotheses": "Ordinary, non-pointed fusion-simple integral modular category, hence perfect and non-WGT. The search combines rank-based character and twist constraints with the full article's proved divisor-closed dimension families.",
+      "cwd": "papers/rank-bound-supplement",
       "command": [
         "python3",
-        "ordinary_release.py"
+        "verify.py",
+        "--families",
+        "--check",
+        "certificate-families.json.gz"
       ],
       "regenerate": [
         "python3",
-        "ordinary_release.py",
-        "--replay",
+        "verify.py",
+        "--families",
         "--jobs",
-        "4"
+        "4",
+        "--work",
+        "family-results"
       ],
       "inputs": [
-        "rank/ordinary_release.py",
-        "rank/data/ordinary_release_6_27.zip",
-        "rank/data/ordinary_release.json",
-        "rank/data/revision/rank28_optimized.zip",
-        "rank/data/revision/rank29_optimized.zip",
-        "rank/data/revision/rank30_completed.zip",
-        "rank/data/revision/rank30_checkpoint.zip",
-        "rank/data/revision/rank30_audit.json",
-        "rank/data/revision/nonsquare/rank30.jsonl"
+        "papers/rank-bound-supplement/certificate-families.json.gz",
+        "papers/rank-bound-supplement/certificate.json.gz",
+        "papers/rank-bound-supplement/multiplication.py",
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/nonsquare_exact.py",
+        "papers/rank-bound-supplement/primes.py",
+        "papers/rank-bound-supplement/screen.py",
+        "papers/rank-bound-supplement/square.cpp",
+        "papers/rank-bound-supplement/square_exact.py",
+        "papers/rank-bound-supplement/trace.py",
+        "papers/rank-bound-supplement/verify.py",
+        "rank/code/catalogue.py",
+        "rank/code/families.py",
+        "rank/code/many_prime_families.py",
+        "rank/code/support_certificates.py",
+        "rank/code/three.py"
       ],
-      "arithmetic": "Checked 64-bit and unsigned 128-bit native arithmetic with GMP fallback, exact Python terminal arithmetic.",
-      "workload": "One compilation; 347/434/524 large top-level jobs at ranks 28/29/30. Rank 30 has 1,827,125,065 native+GMP nodes over terminal jobs. Four workers by default. A clean stored rank-30 run including compilation and all terminal screens took 113.4 s and 401784 KiB peak resident memory on a shared Linux worker; full traversal is separate.",
-      "terminal": "All lists rejected at ranks 6–30: 0 through 21, followed by 20,49,61,1340,8,125,1940,13292,96119. Per-rank digests and first exclusions are in ordinary_release.json.",
-      "role": "proof"
-    },
-    {
-      "id": "R02",
-      "check": "Separate nonsquare partition, rank 31",
-      "source_labels": [
-        "mrk:thm:modular-ranks"
+      "arithmetic": "Checked 64-bit and unsigned 128-bit native arithmetic with arbitrary-precision Python continuation; exact Python terminal tests.",
+      "workload": "One disjoint task partition for ranks 9–31: 3,012 tasks, 668,492,865 native nodes and 3 exact handoffs. Worker count is configurable.",
+      "summary": [
+        {
+          "nonsquare": 0,
+          "rank": 9,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 10,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 11,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 12,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 13,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 14,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 15,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 16,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 17,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 18,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 19,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 20,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 21,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 22,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 23,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 24,
+          "square": 0,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 25,
+          "square": 1,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 26,
+          "square": 3,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 27,
+          "square": 9,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 28,
+          "square": 65,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 0,
+          "rank": 29,
+          "square": 655,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 1,
+          "rank": 30,
+          "square": 14482,
+          "survivors": 0
+        },
+        {
+          "nonsquare": 121,
+          "rank": 31,
+          "square": 396110,
+          "survivors": 0
+        }
       ],
-      "hypotheses": "Ordinary, non-pointed fusion-simple integral modular category, hence perfect. Nonsquare dimension.",
-      "cwd": "rank",
-      "command": [
-        "python3",
-        "verify_nonsquare.py",
-        "--ranks",
-        "31"
-      ],
-      "regenerate": [
-        "python3",
-        "verify_nonsquare.py",
-        "--ranks",
-        "31",
-        "--replay"
-      ],
-      "inputs": [
-        "rank/verify_nonsquare.py",
-        "rank/data/revision/nonsquare/rank31.json",
-        "rank/data/revision/nonsquare/rank31.jsonl"
-      ],
-      "arithmetic": "Checked native C++17 and Python integers.",
-      "workload": "Per-root nodes and source digests in the input manifest; full traversal uses one worker.",
-      "terminal": "802 lists, zero survivors.",
-      "role": "proof"
+      "certificate_sha256": "2af0c33370c5064ff6d9297e966aefa96de0bb742328e75f58596c81b43a31db",
+      "source_sha256": {
+        "../../rank/code/catalogue.py": "7536d3c7bbc4b6c123601e5cc832602ba4d458eb75833c7e7ce35fc32d9144ad",
+        "../../rank/code/families.py": "d6f693323ce714f7b45e07b9b9c82c3124de3af063ddc99f31fe1d69fb4e4f94",
+        "../../rank/code/many_prime_families.py": "d35171f3556aa579cb89e687ed3762956600fe0936e1190da6fb1a19362542e8",
+        "../../rank/code/support_certificates.py": "943177d5d885726272c9c79757fda9b87aff87f3955e418ffc24623bd032b19b",
+        "../../rank/code/three.py": "3771bb87e1d9ac54b2cc39cb3bd7b61e377b38834f2e31e3dcb8b16d6ad13c62",
+        "multiplication.py": "405e7967bfb2d0cf722fb14fd34fe9f189e904306b34f8f3f6eeeb7cc3ddef8c",
+        "nonsquare.cpp": "73b2f0c5676081c68706f346f7af7fa58c1561382a8c5d468c32fc6f6d29a1d2",
+        "nonsquare_exact.py": "0fd76faf4f5a55b1afe2c602d1a3369bffe010de3aafad863379626a4ede8448",
+        "primes.py": "f8a37aa559a381c3fa215f2f77c0aade7fe3eec131939550cee22a346cd1cb01",
+        "screen.py": "a85d77062ef5afa47946e41cc3beedfbb4d4c12ce4d898e877119d63e3ac47a1",
+        "square.cpp": "4357d667d703ece0312813ae2c2d55f068daeeef8aaeb11fe74162fb099e993f",
+        "square_exact.py": "d2d6786e1d87aa8f3487ad9665314835c16448cec704170af6bec67b0c06ee54",
+        "trace.py": "27c40267f16966246ef9d85fc1dc7e56bc7222bd14d6d6bf4b3aca132350ae10",
+        "verify.py": "8b10f41ca0fa614e05aac0b330b6ca37587b94bc1ead9d48e9b9d51a9d46c3c3"
+      },
+      "exclusions": {
+        "activity": 19905,
+        "balance": 51072,
+        "crossed": 20,
+        "degree": 286359,
+        "dyadic": 2121,
+        "family": 22964,
+        "multiplication": 1,
+        "orbit": 29005
+      },
+      "role": "proof",
+      "interpretation": "Ranks 1–9 are excluded analytically. The program also checks rank 9. Both dimension classes and all computational ranks use the same task and receipt schema. All 411,447 emitted profiles are excluded, proving rank at least 32.",
+      "certificate": "certificate-families.json.gz",
+      "independent_mode": {
+        "certificate": "certificate.json.gz",
+        "command": [
+          "python3",
+          "verify.py",
+          "--check",
+          "certificate.json.gz"
+        ],
+        "regenerate": [
+          "python3",
+          "verify.py",
+          "--jobs",
+          "4",
+          "--work",
+          "rank-results"
+        ],
+        "source_sha256": {
+          "multiplication.py": "405e7967bfb2d0cf722fb14fd34fe9f189e904306b34f8f3f6eeeb7cc3ddef8c",
+          "nonsquare.cpp": "73b2f0c5676081c68706f346f7af7fa58c1561382a8c5d468c32fc6f6d29a1d2",
+          "nonsquare_exact.py": "0fd76faf4f5a55b1afe2c602d1a3369bffe010de3aafad863379626a4ede8448",
+          "primes.py": "f8a37aa559a381c3fa215f2f77c0aade7fe3eec131939550cee22a346cd1cb01",
+          "screen.py": "a85d77062ef5afa47946e41cc3beedfbb4d4c12ce4d898e877119d63e3ac47a1",
+          "square.cpp": "4357d667d703ece0312813ae2c2d55f068daeeef8aaeb11fe74162fb099e993f",
+          "square_exact.py": "d2d6786e1d87aa8f3487ad9665314835c16448cec704170af6bec67b0c06ee54",
+          "trace.py": "27c40267f16966246ef9d85fc1dc7e56bc7222bd14d6d6bf4b3aca132350ae10",
+          "verify.py": "8b10f41ca0fa614e05aac0b330b6ca37587b94bc1ead9d48e9b9d51a9d46c3c3"
+        },
+        "certificate_sha256": "1260d339dc490fa0a8b515798e59015a99a057a09ad29bd7b1344d84ecb43dfb",
+        "summary": [
+          {
+            "nonsquare": 0,
+            "rank": 9,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 10,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 11,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 12,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 13,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 14,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 15,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 16,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 17,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 18,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 19,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 20,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 21,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 22,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 23,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 24,
+            "square": 0,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 25,
+            "square": 1,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 26,
+            "square": 3,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 0,
+            "rank": 27,
+            "square": 10,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 1,
+            "rank": 28,
+            "square": 75,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 1,
+            "rank": 29,
+            "square": 829,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 19,
+            "rank": 30,
+            "square": 17165,
+            "survivors": 0
+          },
+          {
+            "nonsquare": 428,
+            "rank": 31,
+            "square": 434509,
+            "survivors": 0
+          }
+        ],
+        "interpretation": "Same rank-parameterized engine with dimension-family filters disabled; gives the self-contained proof and uses no catalogue sources."
+      }
     },
     {
       "id": "R03",
@@ -1064,8 +1365,8 @@
       ],
       "inputs": [
         "rank/square_slices.py",
-        "rank/data/rank31/square_slices.json",
-        "rank/data/rank31/square_slice_rows.zip"
+        "rank/data/square-slices/square_slices.json",
+        "rank/data/square-slices/square_slice_rows.zip"
       ],
       "arithmetic": "Checked 64-bit and unsigned 128-bit native arithmetic with GMP fallback, exact Python terminal arithmetic.",
       "workload": "Node counts by rank and condition in square_slices.json. One worker.",
@@ -1235,306 +1536,180 @@
       "workload": "2,799 paired tuples; one worker.",
       "terminal": "2,799 tuples in terminal strata 2134, 533, 17, 88, 19, 6, 1, 1. The exceptional tuple uses the categorical double descent.",
       "role": "proof"
-    },
-    {
-      "id": "R11",
-      "check": "Fourteen denominator fours",
-      "source_labels": [
-        "thm:no-fourteen"
-      ],
-      "hypotheses": "Ordinary, non-pointed fusion-simple integral modular category, hence perfect. Rank 31, q=1 with fourteen denominator fours.",
-      "cwd": "rank",
-      "command": [
-        "python3",
-        "rank31_fourteen.py"
-      ],
-      "regenerate": [
-        "python3",
-        "rank31_fourteen.py",
-        "--replay"
-      ],
-      "inputs": [
-        "rank/rank31_fourteen.py",
-        "rank/data/rank31/fourteen_31.json",
-        "rank/data/rank31/fourteen_31.jsonl"
-      ],
-      "arithmetic": "Checked 64-bit and unsigned 128-bit native arithmetic with GMP fallback, exact Python terminal arithmetic.",
-      "workload": "5,913,552 GMP nodes.",
-      "terminal": "251 lists: 133 fail generator activity at 3, 118 at 5.",
-      "role": "corroboration of the structural proof"
-    },
-    {
-      "id": "R12",
-      "check": "Unrestricted rank-31 frontier",
-      "source_labels": [
-        "mrk:thm:modular-ranks"
-      ],
-      "hypotheses": "Ordinary, non-pointed fusion-simple integral modular category, hence perfect. Rank 31, incomplete square-dimensional search.",
-      "cwd": "rank",
-      "command": [
-        "python3",
-        "frontier31.py",
-        "--prepare-only",
-        "--work",
-        "rank-work/seed-audit"
-      ],
-      "regenerate": [
-        "python3",
-        "frontier31.py",
-        "--jobs",
-        "4"
-      ],
-      "inputs": [
-        "rank/frontier31.py",
-        "rank/data/rank31/rank31_seed.zip",
-        "rank/data/rank31/fourteen_31.json"
-      ],
-      "arithmetic": "Checked 64-bit and unsigned 128-bit native arithmetic with GMP fallback, exact Python terminal arithmetic.",
-      "workload": "1,234 jobs; 1,090 in seed and 46 closed by the fourteen-fours theorem; 98 open. Total completion time unknown.",
-      "terminal": "No completed exclusion at rank 31; 98 unresolved jobs. In a fresh work directory the stored-only command writes and checks 1136/1234 receipts and reports 98 outstanding.",
-      "role": "open continuation"
     }
   ],
   "ordinary_filter_map": [
     {
-      "phase": "R01 root",
-      "necessary_condition": "Enumerate square-free 1≤q<r, 1≤B, 8≤qB²<r. Skip a prime q at B=1. As q=1 forces all b≥3 in the ordinary search, excluding B=3 excludes every possible occurrence of codegree nine. The older nine caps in the kernel are unreachable in this mode.",
+      "phase": "R01 dimension-family optimization",
+      "necessary_condition": "With --families, the ordered-three-prime theorems impose exponent floors while extending a smooth prefix; the full divisor-closed dimension catalogue excludes a completed non-WGT candidate only when a proved family covers its dimension. A negative or unknown catalogue result retains the candidate. The same option and rule hypotheses are used by native and exact recursions.",
+      "labels": [
+        "tab:family-cones",
+        "thm:three",
+        "seq:quartic-any",
+        "fam:Q:1.3",
+        "fam:Q:1.1",
+        "thm:cubic-lift",
+        "thm:intro-two-free",
+        "thm:higher-two-squares",
+        "fourm:even-total",
+        "fam:W:dyadic-boxes",
+        "fam:W:1.1",
+        "fam:F:2.1",
+        "fam:F:n:liftfour",
+        "seq:five-squares",
+        "three:least-height",
+        "prop:three-separation",
+        "fam:Q:4.1",
+        "fam:Q:1.2",
+        "fam:Q:4.2",
+        "fam:Q:4.3",
+        "fam:Q:5.5",
+        "fam:Q:5.6",
+        "aux:dyadic-six",
+        "found:S:2.1",
+        "found:S:2.2",
+        "found:S:2.3",
+        "found:S:3.2",
+        "found:C:2.2",
+        "found:J:2.2",
+        "found:J:2.3",
+        "found:T:9.1",
+        "found:S:8.1",
+        "ext:prop:crossing-certificates",
+        "ext:gap:adjoin",
+        "found:D:2.1",
+        "found:D:cofactor-unified",
+        "fam:rank:dyadic-legendre",
+        "main:full-multiplicity",
+        "deep:ram-parity",
+        "sec:finite-four-windows"
+      ],
+      "implementation": [
+        "papers/rank-bound-supplement/verify.py",
+        "papers/rank-bound-supplement/square.cpp",
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/square_exact.py",
+        "papers/rank-bound-supplement/nonsquare_exact.py",
+        "rank/code/catalogue.py",
+        "rank/code/families.py",
+        "rank/code/three.py",
+        "rank/code/many_prime_families.py",
+        "rank/code/support_certificates.py"
+      ]
+    },
+    {
+      "phase": "R01 roots and exact recursion",
+      "necessary_condition": "For every rank enumerate square-free q and least denominator B with 8≤qB²<r, omitting prime codegrees and square denominator three. Extend the nondecreasing prefix by L²<Eb²≤(h+1/36)L². With two positions left solve Ek²=1+d²+e² exactly, requiring d,e|L and gcd(k,10de)=1. Each nonunit has at least two prime factors and each support prime has two prime-free nonunit witnesses.",
       "labels": [
         "rank:search-completeness",
         "mrk:e:fraction",
+        "mrk:e:interval",
+        "mrk:e:lasttwo",
+        "lem:tables",
         "small",
-        "lem:small-ordinary-codegrees",
         "prop:no-six-codegree",
         "thm:no-nine"
       ],
       "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
+        "papers/rank-bound-supplement/verify.py",
+        "papers/rank-bound-supplement/primes.py",
+        "papers/rank-bound-supplement/square.cpp",
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/square_exact.py",
+        "papers/rank-bound-supplement/nonsquare_exact.py"
       ]
     },
     {
-      "phase": "R01 recursion",
-      "necessary_condition": "Integer interval b≥last, L²<Eb²≤(h+1/36)L² for h unused nonunit positions. Update L to kL and E to k²E−(L/g)² with g=gcd(b,L), k=b/g. Every nonunit degree has at least two different prime factors, so d≥6. The rank bound on primes is 2r+1. A new odd prime outside qL must be ≤h+1; direct interval and smooth-product enumeration use the same allowed-prime mask.",
+      "phase": "R01 packets and principal witnesses",
+      "necessary_condition": "Use the joint complementary-fiber bound, deficits of closed and open equal-degree runs, prime-free witness counts, and principal-block gcd constraints. Fix nonsquare prime support before generating smooth denominators. At dyadic square roots reserve disjoint prime-free positions and bound the residual mass.",
       "labels": [
-        "rank:search-completeness",
-        "mrk:e:witness",
-        "mrk:e:interval",
-        "mrk:e:fraction",
-        "lem:tables",
-        "thm:twistdiv",
-        "prop:two-packets"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
-      ]
-    },
-    {
-      "phase": "R01 eligible packets",
-      "necessary_condition": "At an odd p in the support a nonunit denominator b is eligible iff p divides qb². Put m=(p−1)/2. A run of equal denominators of length n supplies at most floor(n/m) packets. Only the last run can extend. Require one m-run for each p. At p∤q require 2m eligible labels; if no 2m-run can form, require capacity for at least three packets. When 3|q require six packets, otherwise when 2|q four. The terminal native independent count requires at least p−1 denominators divisible by p at odd p|M, p∤q.",
-      "labels": [
-        "mrk:e:witness",
-        "prop:two-packets",
+        "prop:joint-prime-capacity",
         "prop:crossed-packet-count",
-        "lem:crossed-fiber-count",
+        "prop:two-packets",
         "lem:dyadic-torus-fiber",
-        "thm:twistdiv"
+        "mrk:e:witness",
+        "mrk:pcover",
+        "rank:prefix-mass"
       ],
       "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
+        "papers/rank-bound-supplement/square.cpp",
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/square_exact.py",
+        "papers/rank-bound-supplement/nonsquare_exact.py",
+        "papers/rank-bound-supplement/screen.py"
       ]
     },
     {
-      "phase": "R01 largest formal codegree",
-      "necessary_condition": "When the first run is still open and f=8, omit multiplicity f−1 at r≥20, use the relaxed cap 5 at r=23 and cap 2 at r≥24. For r≥24 require at least four possible dimension primes (2 and three odd primes). At r≥26 apply m≤f−1−(p−1)/2 for odd p exactly dividing f. For f=16,25,27 exclude m≥f−1 when f(r−f)≥25. Thresholds choose when to use a necessary bound; smaller ranks may retain more profiles.",
+      "phase": "R01 small and nearly saturated degree classes",
+      "necessary_condition": "Use the structural codegree-eight support and multiplicity restrictions, prime-power saturation, fourteen-fours exclusion under its rank hypothesis, three-prime height witnesses, and mixed four/five prefix exclusions. At an odd prime exactly dividing the first codegree use the defect-one maximal-degree multiplicity bound.",
       "labels": [
         "prop:eight",
         "prop:saturation",
         "prop:defect-one-cap",
-        "rank:common-projection"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
-      ]
-    },
-    {
-      "phase": "R01 short remaining tails",
-      "necessary_condition": "For r≥23 and h=3,4 augment the current prime mask by {2,3} or {2,3,5}. At most two possible support primes falls in the two-prime family. With three remaining and exactly three possible primes including two, cap the dyadic exponent by [2|q]+2v₂(L)+2[E odd]; a cap ≤5 is in the ordered cone. With h=2 the new scale k is coprime to 10: for a possible three-prime support, a 2- or 5-exponent at positions 1,2,3 bounded by 5,4,3 is covered.",
-      "labels": [
-        "mrk:e:closure",
-        "mrk:e:lasttwo",
-        "tab:family-cones",
-        "fam:Q:1.3",
-        "seq:quartic-any",
-        "thm:three"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
-      ]
-    },
-    {
-      "phase": "R01 terminal degree pair",
-      "necessary_condition": "Set M=kL. Require 6≤d≤e, d,e|L, (k,de)=1, Ek²=1+d²+e², (k,10)=1, chronological denominators, and ≥2 prime factors in every nonunit degree. Each p|M has ≥2 nonunit degrees prime to p. Use the narrow next-denominator interval b≤floor(sqrt(73L²/(36E))) or a join on e² modulo E when it is wide. At h=2 primes of k are contained in supp(qL)∪{3}. The row is restored to increasing degree order and rechecked.",
-      "labels": [
-        "rank:search-completeness",
-        "mrk:e:witness",
-        "mrk:e:lasttwo",
-        "mrk:e:interval",
-        "lem:tables"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp",
-        "rank/ordinary_release.py"
-      ]
-    },
-    {
-      "phase": "R01 ternary tiles",
-      "necessary_condition": "For r≥27, 3|q and 3∤z, closing the run at z overrides no inherited demand. After serving the required terms, send twice the least nonnegative residual modulo three to 2z. A passed demanded denominator or demand exceeding remaining slots rejects. Unused terminal tile constraints may be tested later.",
-      "labels": [
-        "prop:defect-one-tiles",
-        "rank:defect-feasible"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
-      ]
-    },
-    {
-      "phase": "R01 square near-full branches",
-      "necessary_condition": "At q=1 the only early (number of fours, number of fives) near-full endpoints tested are (1,23),(2,21),(3,20),(5,17),(7,14),(10,9),(12,6),(14,3),(15,1). The residual permits no further five. At ≥14 leading fours the two prefix patterns with two fives, or one five and three sixes, also drop out for the completed ordinary ranks ≤30.",
-      "labels": [
+        "thm:no-fourteen",
+        "rank:prefix-mass",
         "rank:gauss-nearfull",
-        "thm:no-fourteen"
-      ],
-      "implementation": [
-        "rank/current/exact.cpp",
-        "rank/current/fast.cpp"
-      ]
-    },
-    {
-      "phase": "R01 theory leaves",
-      "necessary_condition": "For a square prefix beginning with four, write i=#4 and j=#5. At i=13,j≥4 use the thirteen-four Gauss row (a fifth five would exceed the mass). At i=11,j≥6 use the eleven-six result, including the j=7 branch. Once the prefix passes five, j=1 requires r≥23+i. At j=2,3,6,7 the other multiples of five including the vacuum must carry ≥(2,3,2,2)/25. Bound this mass by both the unspent mass and the known plus remaining-slot mass, with vacuum ≤1/5400². Reject only on strict inequality. The alternative q>1 rule for ranks 30/31 refers to the complete independent nonsquare partition. The completed rank-30 archive includes the 149 nonsquare lists in addition to its recorded theory leaves.",
-      "labels": [
         "rank:gauss-thirteen-four",
-        "rank:gauss-eleven-six",
-        "sec:unique-prime-denominator",
         "rank:gauss-quintic-mass",
-        "thm:uniform-new-bounds",
-        "mrk:thm:modular-ranks"
+        "rank:three-prime-height"
       ],
       "implementation": [
-        "rank/next_rank.py",
-        "rank/verify_rank30.py",
-        "rank/verify_nonsquare.py"
+        "papers/rank-bound-supplement/square.cpp",
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/square_exact.py",
+        "papers/rank-bound-supplement/nonsquare_exact.py"
       ]
     },
     {
-      "phase": "R01 partition and overflow",
-      "necessary_condition": "Regenerate the GMP root manifest (depth one through rank 27; saved depth and all-four refinement through 17 in the larger returns). Check key coverage, repeated keys, subtree coordinates and every formerly split child at its actual depth. Native integer overflow delegates only disjoint prefixes or retries the full shard in GMP. Each computed leaf needs a completion marker. The theorem-leaf test recomputes the stated predicate. Compare sorted whole degree lists, completeness markers and counts before applying the terminal screen.",
+      "phase": "R01 ternary and crossed phase fibers",
+      "necessary_condition": "In square class three every ternary defect-one block has degrees (u,u,u) or (u,u,2u). The sorted-prefix doubling recurrence tests their tiling. For p=5 or7, when 3(1+p(p−1)/2)>r, compare equal-mass fibers from both primitive square classes with available degree multiplicities and ternary gcd divisibility.",
       "labels": [
-        "rank:search-completeness",
-        "mrk:e:closure"
-      ],
-      "implementation": [
-        "rank/next_rank.py",
-        "rank/current/child_manifest.cpp",
-        "rank/finish_frontier.py",
-        "rank/ordinary_release.py",
-        "rank/verify_rank30.py"
-      ]
-    },
-    {
-      "phase": "R01 terminal screening order 1–3",
-      "necessary_condition": "Recompute complementary packet capacity, generator activity at an actual prime, and the regular-indicator divisor in this order. The fiber size includes the dyadic torus if 2|q; for odd D an eligible p-packet costs (p−1) labels. The regular-indicator test is for the ordinary category.",
-      "labels": [
-        "prop:crossed-packet-count",
-        "lem:dyadic-torus-fiber",
-        "prop:activity-capacity",
-        "rank:regular-indicator-divisor"
-      ],
-      "implementation": [
-        "rank/code/current_screen.py",
-        "rank/code/fiber_packets.py",
-        "rank/code/generator_activity.py",
-        "rank/code/regular_indicator.py"
-      ]
-    },
-    {
-      "phase": "R01 terminal screening order 4–7",
-      "necessary_condition": "Test a divisor-closed dimension family, the defect-one multiplicity cap, defect-one block tiling and odd-valuation active/principal slice masses, followed by feasibility of joint masses. For family branches the square-free decoration and every divisor are quantifiers; finite cofactor promotion returning no proof keeps the branch.",
-      "labels": [
-        "tab:family-cones",
-        "ext:prop:crossing-certificates",
-        "found:D:cofactor-unified",
-        "prop:defect-one-cap",
-        "prop:multiple-defect-one",
         "prop:defect-one-tiles",
         "rank:defect-feasible",
-        "prop:joint-prime-capacity"
+        "prop:crossed-packet-count",
+        "rank:crossed-phase"
       ],
       "implementation": [
-        "rank/code/rank_audit.py",
-        "rank/code/catalogue.py",
-        "rank/code/support_certificates.py",
-        "rank/code/odd_blocks.py",
-        "rank/code/defect_mass.py"
+        "papers/rank-bound-supplement/nonsquare.cpp",
+        "papers/rank-bound-supplement/nonsquare_exact.py",
+        "papers/rank-bound-supplement/screen.py"
       ]
     },
     {
-      "phase": "R01 terminal screening order 8–9",
-      "necessary_condition": "For each odd r and support primes p,t different from r, demand an available pair with r∤d_X, p∤d_Y, required squared codegree divisibilities, and g=gcd(d_X,d_Y)≥2 with r≤max(5,(g−1)g²). At f=16 test the principal dyadic row by denominator lcm, its minimum lcm cost, integer traces, parities, norm and modular inequality; upper bounds round upwards.",
+      "phase": "R01 terminal degrees and multiplication",
+      "necessary_condition": "Require connected degree graphs for a tensor generator, each a²−1 in the nonunit additive monoid, and symmetric aggregate multiplication counts with dimension and rigidity bounds. Propagation only removes values that cannot occur in an integral row; resource limits weaken the test.",
       "labels": [
-        "ext:lem:two-free-crossing",
-        "fam:M:4.1",
-        "mrk:pcover",
+        "rank:multiplication"
+      ],
+      "implementation": [
+        "papers/rank-bound-supplement/screen.py",
+        "papers/rank-bound-supplement/multiplication.py"
+      ]
+    },
+    {
+      "phase": "R01 character traces and phase masses",
+      "necessary_condition": "Test generator activity and balanced even-valuation phase masses. At codegrees≤36 solve integral sums of Galois-orbit rows with their squared norms, degree orthogonality, principal congruences and orbit multiplicities. For codegree16 use the dyadic class-trace, parity, norm and modular inequalities with radical upper bounds.",
+      "labels": [
+        "prop:activity-capacity",
+        "prop:two-packets",
         "mrk:l:trace-vector",
+        "mrk:pcover",
         "thm:principal-support"
       ],
       "implementation": [
-        "rank/code/support_certificates.py",
-        "rank/code/principal_cover.py"
+        "papers/rank-bound-supplement/screen.py",
+        "papers/rank-bound-supplement/trace.py"
       ]
     },
     {
-      "phase": "R01 terminal screening order 10–12",
-      "necessary_condition": "At f≤120 test necessary integer trace rows. The position in “trace at degree j” indexes distinct nonunit degrees in decreasing order. Apply local multiplicity, parity and three-divisor bounds at f=8 (ordinary f=9 already absent); partition each degree multiplicity into feasible Galois-orbit sizes for f≤120. Larger codegrees are retained by these tests. For a surviving top degree n even, D=12n² and ternary profile 10n,2(n/2), test the mixed row. Finally test balanced phase masses at even-valued odd primes. A crossed-fiber state space >100000 or unhandled high phase skips that extra test.",
-      "labels": [
-        "mrk:l:trace-vector",
-        "rank:common-projection",
-        "prop:eight",
-        "thm:no-nine",
-        "rank:defect-feasible",
-        "prop:multiple-defect-one",
-        "prop:two-packets",
-        "prop:activity-capacity"
-      ],
-      "implementation": [
-        "rank/code/screen.py",
-        "rank/code/trace_rows.py",
-        "rank/code/orbit_screen.py",
-        "rank/code/mixed_row.py",
-        "rank/code/class_mass.py"
-      ]
-    },
-    {
-      "phase": "R02–R03 nonsquare",
-      "necessary_condition": "Enumerate only q>1 from the complete initial range. The parity kernel also uses P+H≥6 when 2|q and an even-valuation odd p is present, and the integral demand of odd-length odd-denominator runs versus even-denominator orbits of length 4^v₂(b). The stated stronger dyadic checks apply to the ordinary table. Root manifests list actual executable and counts for each q,B.",
+      "phase": "R01 partition, receipts and arithmetic",
+      "necessary_condition": "The rank and dimension-class root determine disjoint tasks. Store every completed task under one manifest with all source hashes, native node count, exact handoffs, profiles, exclusion reasons and survivors. Native arithmetic or stream failure triggers exact replay of the same task. Archive checking regenerates the partition and verifies all source hashes and tallies; a full run regenerates every list.",
       "labels": [
         "rank:search-completeness",
-        "rank:ordinary-dyadic-test",
-        "lem:two-label-local",
-        "prop:two-packets",
-        "prop:defect-one-tiles"
+        "mrk:thm:modular-ranks"
       ],
       "implementation": [
-        "rank/verify_nonsquare.py",
-        "rank/verify_nonsquare32.py",
-        "rank/current/nonsquare/complementary_packets.cpp",
-        "rank/current/nonsquare/parity.cpp"
+        "papers/rank-bound-supplement/verify.py"
       ]
     },
     {
@@ -1582,123 +1757,111 @@
       ]
     }
   ],
-  "rank_leaf_partitions": {
-    "28": {
-      "archive": "rank/data/revision/rank28_optimized.zip",
-      "top_level": 347,
-      "split_parents": 0,
-      "terminal_leaves": 347,
-      "computed_leaves": 347,
-      "theorem_leaves": {}
-    },
-    "29": {
-      "archive": "rank/data/revision/rank29_optimized.zip",
-      "top_level": 434,
-      "split_parents": 0,
-      "terminal_leaves": 434,
-      "computed_leaves": 433,
-      "theorem_leaves": {
-        "quintic Gauss row 13,4": 1
-      }
-    },
-    "30": {
-      "archive": "rank/data/revision/rank30_completed.zip",
-      "top_level": 524,
-      "split_parents": 15,
-      "terminal_leaves": 2156,
-      "computed_leaves": 1938,
-      "theorem_leaves": {
-        "quintic Gauss row 11,6": 1,
-        "quintic Gauss row 13,4": 1,
-        "quintic support mass, multiplicity 2": 118,
-        "quintic support mass, multiplicity 3": 8,
-        "unique quintic denominator rank bound": 90
-      }
-    }
-  },
   "ordinary_recorded_terminal_reasons": {
-    "balanced prime phases at 5: empty": [
+    "activity": [
+      "prop:activity-capacity"
+    ],
+    "balance": [
       "prop:two-packets",
       "prop:activity-capacity"
     ],
-    "codegree 8": [
-      "prop:eight"
+    "crossed": [
+      "rank:crossed-phase"
     ],
-    "complementary fiber count at 3": [
-      "prop:crossed-packet-count",
-      "lem:dyadic-torus-fiber"
+    "degree": [
+      "lem:tables",
+      "mrk:pcover"
     ],
-    "divisor family: 21.2": [
-      "aux:dyadic-six"
-    ],
-    "divisor family: Two-square divisor descent and BDP 11.3 cube lift": [
-      "thm:cubic-lift",
-      "fam:rank:dyadic-legendre",
-      "thm:higher-two-squares",
-      "sec:finite-four-windows",
-      "sec:two-squared",
-      "sec:two-isolated"
-    ],
-    "divisor family: four-prime cubic family": [
-      "thm:cubic-lift",
-      "thm:intro-two-free"
-    ],
-    "divisor family: four-prime dyadic box": [
-      "fam:W:dyadic-boxes",
-      "thm:cubic-lift"
-    ],
-    "divisor family: four-prime height sum": [
-      "thm:higher-two-squares",
-      "thm:cubic-lift"
-    ],
-    "divisor family: ordered three-prime family": [
-      "fam:Q:1.3",
-      "seq:quartic-any",
-      "thm:three"
-    ],
-    "dyadic row at 16": [
+    "dyadic": [
       "mrk:pcover",
-      "thm:principal-support",
+      "mrk:l:trace-vector",
+      "thm:principal-support"
+    ],
+    "family": [
+      "tab:family-cones",
+      "thm:three",
+      "seq:quartic-any",
+      "fam:Q:1.3",
+      "fam:Q:1.1",
+      "thm:cubic-lift",
+      "thm:intro-two-free",
+      "thm:higher-two-squares",
+      "fourm:even-total",
+      "fam:W:dyadic-boxes",
+      "fam:W:1.1",
+      "fam:F:2.1",
+      "fam:F:n:liftfour",
+      "seq:five-squares",
+      "three:least-height",
+      "prop:three-separation",
+      "fam:Q:4.1",
+      "fam:Q:1.2",
+      "fam:Q:4.2",
+      "fam:Q:4.3",
+      "fam:Q:5.5",
+      "fam:Q:5.6",
+      "aux:dyadic-six",
+      "found:S:2.1",
+      "found:S:2.2",
+      "found:S:2.3",
+      "found:S:3.2",
+      "found:C:2.2",
+      "found:J:2.2",
+      "found:J:2.3",
+      "found:T:9.1",
+      "found:S:8.1",
+      "ext:prop:crossing-certificates",
+      "ext:gap:adjoin",
+      "found:D:2.1",
+      "found:D:cofactor-unified",
+      "fam:rank:dyadic-legendre",
+      "main:full-multiplicity",
+      "deep:ram-parity",
+      "sec:finite-four-windows"
+    ],
+    "multiplication": [
+      "rank:multiplication"
+    ],
+    "orbit": [
       "mrk:l:trace-vector"
-    ],
-    "generator activity at 3": [
-      "prop:activity-capacity"
-    ],
-    "generator activity at 5": [
-      "prop:activity-capacity"
-    ],
-    "generator activity at 7": [
-      "prop:activity-capacity"
-    ],
-    "odd-slice mass at 3": [
-      "prop:multiple-defect-one",
-      "rank:defect-feasible"
-    ],
-    "orbit at 16": [
-      "mrk:l:trace-vector",
-      "rank:common-projection"
-    ],
-    "orbit at 25": [
-      "mrk:l:trace-vector",
-      "rank:common-projection"
-    ],
-    "principal pair": [
-      "ext:lem:two-free-crossing",
-      "fam:M:4.1"
-    ],
-    "regular indicator at 5": [
-      "rank:regular-indicator-divisor"
-    ],
-    "regular indicator at 7": [
-      "rank:regular-indicator-divisor"
-    ],
-    "trace at degree 1": [
-      "mrk:l:trace-vector",
-      "rank:common-projection"
-    ],
-    "trace at degree 3": [
-      "mrk:l:trace-vector",
-      "rank:common-projection"
     ]
+  },
+  "retired_rank_calculations": {
+    "R02": "Absorbed into the unified R01 calculation.",
+    "R11": "The structural fourteen-fours theorem is used directly in R01; its separate numerical corroboration is superseded.",
+    "R12": "The formerly open continuation is replaced by the completed R01 partition.",
+    "archive": "https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/independent-referee-2026-11-10"
+  },
+  "rank_task_partition": {
+    "manifest": "papers/rank-bound-supplement/certificate-families.json.gz",
+    "ranks": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "tasks": 3012,
+    "format": "[rank, square-or-nonsquare, prefix-or-root]",
+    "families": true,
+    "complete": true
   }
 }

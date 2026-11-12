@@ -633,22 +633,25 @@ prop:nine-single	theorem.20.8	20.8	132	Exclusion of codegree nine
 prop:nine-double	theorem.20.8	20.8	132	Exclusion of codegree nine
 cor:nine-two	theorem.20.8	20.8	132	Exclusion of codegree nine
 mrk:pcover	subsection.20.5	20.5	133	Integral traces in the principal dyadic block
-mrk:dyadic	section.21	21	133	Square dimensions and rows of codegree sixteen
+mrk:dyadic	section.21	21	134	Square dimensions and rows of codegree sixteen
 prop:dyadic-concentrated	theorem.21.1	21.1	134	
 thm:odd-top-sixteen	theorem.21.2	21.2	134	
 sec:dyadic-zeros	subsection.21.2	21.2	135	Fourteen labels of formal codegree sixteen
-prop:fourteen-principal	theorem.21.3	21.3	136	Fourteen dyadic rows and their principal block
-cor:fourteen-nine-hits	theorem.21.4	21.4	136	The exceptional dyadic row in rank at most 31
-thm:no-fourteen	theorem.21.5	21.5	137	
-mrk:s:neighbouring-primes	subsection.21.3	21.3	138	Square dimension with denominators four, five and seven
-rank:gauss-nearfull	section*.45		138	Two prime-power degree classes in square dimension
-rank:prime-denominator-trace	section*.46		138	Trace and isolation at a prime denominator
-eq:septic-trace	equation.21.1	21.1	139	Trace and isolation at a prime denominator
-rank:gauss-thirteen-four	section*.47		139	Thirteen fours and four fives
-sec:unique-prime-denominator	section*.48		140	One denominator $p\ge 5$
-rank:gauss-eleven-six	section*.49		140	Eleven denominators four preclude six denominators five
-rank:gauss-quintic-mass	section*.50		141	Mass at exact quintic multiplicities
-prop:fourteen-seven	theorem.21.6	21.6	141	
+prop:fourteen-principal	theorem.21.3	21.3	135	Fourteen dyadic rows and their principal block
+thm:no-fourteen	theorem.21.4	21.4	136	
+mrk:s:neighbouring-primes	subsection.21.3	21.3	136	Square dimension with denominators four, five and seven
+rank:gauss-nearfull	section*.44		136	Two prime-power degree classes in square dimension
+rank:prime-denominator-trace	section*.45		137	Trace and isolation at a prime denominator
+eq:septic-trace	equation.21.1	21.1	137	Trace and isolation at a prime denominator
+rank:gauss-thirteen-four	section*.46		138	Thirteen fours and four fives
+sec:unique-prime-denominator	section*.47		138	One denominator $p\ge 5$
+rank:gauss-eleven-six	section*.48		139	Eleven denominators four preclude six denominators five
+rank:gauss-quintic-mass	section*.49		139	Mass at exact quintic multiplicities
+prop:fourteen-seven	theorem.21.5	21.5	139	
+rank:three-prime-height	theorem.21.6	21.6	140	Prime heights on three-prime support
+rank:prefix-mass	section*.50		141	Reserving the remaining mass
+rank:crossed-phase	section*.51		141	Two compatible phase fibers
+rank:multiplication	theorem.21.7	21.7	141	Multiplication by a smallest nonunit
 mrk:certificates	section.22	22	142	Rank bounds for modular categories and fermion quotients
 mrk:reduced	subsection.22.1	22.1	142	The positive fermion quotient
 mrk:thm:reduced-rank	theorem.22.1	22.1	142	
@@ -660,7 +663,7 @@ mrk:prop:ten-family	theorem.22.4	22.4	145
 mrk:g:section	section.23	23	145	Rank bounds for general weakly integral categories
 mrk:g:general	theorem.23.1	23.1	145	
 mrk:g:bounds	theorem.23.1	23.1	145	
-mrk:g:grading	subsection.23.1	23.1	146	Descent by the dimension grading
+mrk:g:grading	subsection.23.1	23.1	145	Descent by the dimension grading
 mrk:g:formal	subsection.23.2	23.2	146	Small ranks from formal codegrees
 mrk:g:odd-unbraided	subsection.23.3	23.3	147	The odd unbraided boundary
 lem:rank-eleven-cubic	theorem.23.2	23.2	148	
@@ -670,9 +673,9 @@ cor:all-dim-rank	theorem.23.5	23.5	150
 mrk:g:odd-braided	subsection.23.4	23.4	151	Counting twists in odd braided dimension
 found:group:support	section.24	24	153	Cyclotomic support and local ramification
 found:S:4	subsection.24.1	24.1	153	Two phases of arbitrary relative order
-found:S:4.1	theorem.24.1	24.1	154	
-found:S:key:thm:two-phases	theorem.24.1	24.1	154	
-mass:cor:two	theorem.24.1	24.1	154	
+found:S:4.1	theorem.24.1	24.1	153	
+found:S:key:thm:two-phases	theorem.24.1	24.1	153	
+mass:cor:two	theorem.24.1	24.1	153	
 found:S:5	subsection.24.2	24.2	155	Fusion support of the exceptional cyclotomic word
 found:S:5.1	theorem.24.2	24.2	155	
 found:S:key:prop:four-profile	theorem.24.2	24.2	155	
@@ -855,7 +858,7 @@ found:T:eq:planes	equation.27.2	27.2	219	The two active twists on the separated 
 found:T:10.4	theorem.27.9	27.9	219	
 found:T:key:cor:odd-one-degree	theorem.27.9	27.9	219	
 por:sect:odd-seven	subsection.27.7	27.7	220	The unramified endpoint at seven in dimension \texorpdfstring {$5^6 7^6 23^4$}{5\string ^6 7\string ^6 23\string ^4}
-rev:seven-inactive-fourier	section*.89		220	Fourier estimate on inactive orbits
+rev:seven-inactive-fourier	section*.90		220	Fourier estimate on inactive orbits
 rev:pure-seven-hit	theorem.27.10	27.10	220	Pure principal hits at seven
 rev:seven-active-height	theorem.27.11	27.11	221	Height of a seven-active label
 por:th:odd-seven-elim	theorem.27.12	27.12	221	
@@ -867,15 +870,15 @@ found:R:1	subsection.28.2	28.2	223	Formal codegrees and the largest simple degre
 found:D:1	subsection.28.3	28.3	224	Excluding a simple object of degree six
 found:D:1.1	theorem.28.1	28.1	224	
 found:D:key:thm:spectral-six	theorem.28.1	28.1	224	
-por:rank-upper	section*.91		225	Rank at the even core
+por:rank-upper	section*.92		225	Rank at the even core
 rev:boundary-fourier	theorem.28.2	28.2	226	Fourier test for the pure fifth phases
 found:T:1	subsection.28.5	28.5	227	Counting active twists by a local torus character
 found:T:key:sec:geometry	subsection.28.5	28.5	227	Counting active twists by a local torus character
 found:T:1.1	theorem.28.3	28.3	227	
 found:T:key:prop:torus-active-count	theorem.28.3	28.3	227	
-found:T:key:cor:core-lower-rank	section*.92		227	Compulsory active orbits
-por:double-missing-ten	section*.93		228	Intersections of principal blocks on the path missing ten
-por:four-neutral	section*.94		229	Four further principal labels when six is missing
+found:T:key:cor:core-lower-rank	section*.93		227	Compulsory active orbits
+por:double-missing-ten	section*.94		228	Intersections of principal blocks on the path missing ten
+por:four-neutral	section*.95		229	Four further principal labels when six is missing
 sec:portrait-proofs	section.29	29	229	Twist fibers and rank at the first open core
 por:frontier	section.29	29	229	Twist fibers and rank at the first open core
 por:ranktheorem	theorem.29.1	29.1	229	
@@ -885,19 +888,19 @@ por:prop:small-ninehundred	theorem.29.2	29.2	230
 por:th:joint-at-ninehundred	theorem.29.3	29.3	230	
 por:prop:cap675	theorem.29.4	29.4	230	
 por:sec:jointfibers	subsection.29.2	29.2	230	Local Weyl transitions in joint twist fibers
-por:two-ternary-fibers	section*.95		231	Two distinct ternary phases
-por:tame-fiber-masses	section*.96		231	Equal mass at tame fifth phases
-por:24-joint	section*.97		231	At least twenty-four labels in each joint fiber
-por:triangle-fibers	section*.98		232	When all three pairs occur
-por:five-inactive-orbits	section*.99		232	Five inactive orbits on the path separating two and five
+por:two-ternary-fibers	section*.96		231	Two distinct ternary phases
+por:tame-fiber-masses	section*.97		231	Equal mass at tame fifth phases
+por:24-joint	section*.98		231	At least twenty-four labels in each joint fiber
+por:triangle-fibers	section*.99		232	When all three pairs occur
+por:five-inactive-orbits	section*.100		232	Five inactive orbits on the path separating two and five
 por:sec:rank-two-branches	subsection.29.3	29.3	234	Rank from compulsory simple degrees
 por:eq:budget600	equation.29.1	29.1	234	Rank from compulsory simple degrees
-por:count-no-six	section*.100		235	The path separating two and three
-por:count-triangle	section*.101		236	All three pairs occur
-por:count-no-ten	section*.102		237	The path separating two and five
+por:count-no-six	section*.101		235	The path separating two and three
+por:count-triangle	section*.102		236	All three pairs occur
+por:count-no-ten	section*.103		237	The path separating two and five
 por:certificate	subsection.29.4	29.4	238	The exact rank calculation
 por:eq:two-fiber-norms	equation.29.2	29.2	239	The exact rank calculation
-por:five-survivors	section*.103		240	Eliminating the five remaining profiles
+por:five-survivors	section*.104		240	Eliminating the five remaining profiles
 sec:unbraided-5400	section.30	30	240	The unbraided boundary in dimension \texorpdfstring {$5400$}{5400}
 th:unbraided-5400	theorem.30.1	30.1	240	
 sec:5400-proof	subsection.30.1	30.1	240	The canonical induction algebra and character moments
@@ -924,4 +927,4 @@ fam:M:13.4	theorem.31.6	31.6	248	The smallest codegrees at prime-power dimension
 prop:prime-power-no-defect-two	theorem.31.6	31.6	248	The smallest codegrees at prime-power dimension
 fam:M:13.5	theorem.31.7	31.7	249	Nilpotent modular categories and prime-power doubles
 cor:nilpotent-no-defect-two	theorem.31.7	31.7	249	Nilpotent modular categories and prime-power doubles
-sec:code-data-certificates	section*.112		249	Code, data and certificates
+sec:code-data-certificates	section*.113		249	Code, data and certificates

@@ -12,7 +12,7 @@ from zipfile import ZipFile
 import next_rank as nr
 
 ROOT = Path(__file__).resolve().parent
-LEDGER = ROOT / 'data' / 'rank31' / 'square_slices.json'
+LEDGER = ROOT / 'data' / 'square-slices' / 'square_slices.json'
 
 
 def replace_once(text, needle, addition):
@@ -69,7 +69,7 @@ def calculate(tmp):
                     counters['gmp_nodes'] += nodes
                 else:
                     engine = v2 if name == 'root_2_mod_4' else regular
-                    result_b = nr.compute(engine, rank, key, use_theory=False)
+                    result_b = nr.compute(engine, rank, key)
                     rows.extend(nr.check_receipt(result_b, rank, key))
                     for key, field in [('native_nodes','native_nodes'),('gmp_nodes','gmp_nodes'),('handoffs','fallbacks')]:
                         counters[key] += result_b[field]

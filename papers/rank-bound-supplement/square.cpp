@@ -25,6 +25,7 @@ static constexpr std::array<unsigned,18> primes={2,3,5,7,11,13,17,19,23,29,31,37
 using Counts = std::array<unsigned char,primes.size()>;
 static unsigned num_primes;
 static unsigned max_fours;
+static bool family_bounds=false;
 static std::vector<U> prefix;
 static U nodes, types;
 static unsigned rank_limit;
@@ -377,6 +378,14 @@ static void dfs(U L, Mask support, Wide E, int h, const PacketState& st, const H
             U seen=heights.power[j], floor=p;
             if (p==2 && fours>=4) floor=8;
             if (p==5 && fives) floor=125;
+            if (family_bounds) {
+                // An uncovered ordered three-prime dimension has valuations >=6,5,4.
+                U required=1;
+                for (unsigned e=0;e<(index<2?3U:2U);++e) required*=p;
+                floor=std::max(floor,required);
+                // With two slots left gcd(M/L,10)=1 fixes these two heights.
+                if (h==2 && (p==2 || p==5) && L%required) return;
+            }
             for(int grown=0;grown<=1;++grown) {
                 auto &o=options[index][grown];
                 if(!grown && seen<floor) {o.need=h+1;continue;}
@@ -475,6 +484,10 @@ static std::vector<U> parse_prefix(std::string_view text) {
 }
 
 int main(int argc,char** argv) {
+    if (argc>1 && std::string_view(argv[argc-1])=="--families") {
+        family_bounds=true;
+        --argc;
+    }
     if (argc<4 || argc>6 || std::string_view(argv[1])!="--rank") return 2;
     try {
         const auto rank=integer(argv[2]);

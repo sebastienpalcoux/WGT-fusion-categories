@@ -24,7 +24,10 @@ from screen import exclusion_reason
 HERE = Path(__file__).resolve().parent
 RANKS = range(9, 32)
 CASES = ('square', 'nonsquare')
-OBSTRUCTIONS = {'degree', 'crossed', 'activity', 'balance', 'orbit', 'dyadic', 'multiplication'}
+FAMILIES = False
+FAMILY_CERTIFICATE = None
+FAMILY_SOURCES = ('catalogue.py', 'families.py', 'three.py', 'many_prime_families.py', 'support_certificates.py')
+OBSTRUCTIONS = {'family', 'degree', 'crossed', 'activity', 'balance', 'orbit', 'dyadic', 'multiplication'}
 # Capacities of the native position and prime-support masks, respectively.
 NATIVE_MAX_RANK = {'square': 64, 'nonsquare': 136}
 SOURCES = ('verify.py', 'square.cpp', 'nonsquare.cpp', 'square_exact.py',
@@ -44,7 +47,7 @@ def atomic(path, data):
 def square_partition(square, rank):
     if rank > NATIVE_MAX_RANK['square']:
         return [([b], 1) for b in range(4, isqrt(rank-1)+1)]
-    result = subprocess.run([square, '--rank', str(rank), '--tasks-cost'],
+    result = subprocess.run([square, '--rank', str(rank), '--tasks-cost', *(['--families'] if FAMILIES else [])],
                             capture_output=True, text=True, check=True)
     prefixes = sorted(json.loads(s) for s in result.stdout.splitlines())
     if result.stderr.strip() != f'TASKS {len(prefixes)}':
@@ -89,6 +92,8 @@ def checked(row, task):
                else not key[2] or row.count(row[-1]) == key[2])
     if not matches:
         raise ValueError('degree list outside its partition')
+    if FAMILIES and FAMILY_CERTIFICATE(D):
+        return 'family'
     return exclusion_reason(row, dimension=D)
 
 
@@ -96,6 +101,8 @@ def run_native(exe, task, accept):
     rank, case, key = task
     args = (['--rank', str(rank), '--prefix', ','.join(map(str, key))]
             if case == 'square' else [str(rank), *map(str, key)])
+    if FAMILIES:
+        args.append('--families')
     native_count = handoffs = 0
     with tempfile.TemporaryFile(mode='w+', encoding='utf-8', errors='replace') as err:
         with subprocess.Popen([exe, *args], stdout=subprocess.PIPE, stderr=err,
@@ -117,13 +124,13 @@ def run_native(exe, task, accept):
                         raise ValueError('invalid exact-continuation prefix')
                     handoffs += 1
                     if case == 'square':
-                        rows = square_complete(prefix, rank=rank)
+                        rows = square_complete(prefix, rank=rank, families=FAMILIES)
                     else:
                         primes = item['primes']
                         if (not isinstance(primes, list) or len(primes) < 3 or
                                 primes != sorted(set(primes)) or any(p not in primes_up_to(rank) for p in primes)):
                             raise ValueError('invalid continuation prime support')
-                        rows = complete_prefix(*key, rank, primes, prefix)
+                        rows = complete_prefix(*key, rank, primes, prefix, families=FAMILIES)
                     for row in rows:
                         accept(row)
                 status = proc.wait()
@@ -167,8 +174,8 @@ def worker(job):
             reasons.clear()
             survivors.clear()
     if nodes is None:
-        rows = (square_complete(key, rank=rank) if case == 'square'
-                else nonsquare_complete(*key, rank=rank))
+        rows = (square_complete(key, rank=rank, families=FAMILIES) if case == 'square'
+                else nonsquare_complete(*key, rank=rank, families=FAMILIES))
         for row in rows:
             accept(row)
     result = dict(task=task, nodes=nodes, handoffs=handoffs,
@@ -216,11 +223,21 @@ def display(summary):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rank', type=int, help='select one positive rank (default: ranks 9 through 31)')
+    parser.add_argument('--families', action='store_true', help='also use the full article dimension families (requires its repository checkout)')
     parser.add_argument('--jobs', type=int, default=4, help='parallel workers')
     parser.add_argument('--work', type=Path, default=Path('rank-results'), help='checkpoint directory')
     parser.add_argument('--limit', type=int, help='run at most this many unfinished tasks')
     parser.add_argument('--check', type=Path, metavar='CERTIFICATE', help='check archived receipts')
     args = parser.parse_args()
+    global FAMILIES, FAMILY_CERTIFICATE
+    FAMILIES = args.families
+    family_root = HERE.parents[1]/'rank'/'code'
+    if FAMILIES:
+        if not all((family_root/name).is_file() for name in FAMILY_SOURCES):
+            parser.error('--families requires the full repository, including rank/code')
+        sys.path.insert(0, str(family_root))
+        from catalogue import certificate
+        FAMILY_CERTIFICATE = certificate
     if args.jobs < 1 or (args.limit is not None and args.limit < 0):
         parser.error('--jobs must be positive and --limit nonnegative')
     if args.rank is not None and args.rank < 1:
@@ -248,7 +265,10 @@ def main():
                             HERE/(case+'.cpp'), '-o', build/case], check=True)
         tasks = [task for rank in reversed(ranks) for task in task_list(build/'square', rank)]
         hashes = {name: hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in SOURCES}
-        spec = dict(ranks=ranks, sha256=hashes, tasks=tasks)
+        if FAMILIES:
+            for name in FAMILY_SOURCES:
+                hashes['../../rank/code/'+name] = hashlib.sha256((family_root/name).read_bytes()).hexdigest()
+        spec = dict(ranks=ranks, sha256=hashes, tasks=tasks, families=FAMILIES)
         if args.check:
             with gzip.open(args.check, 'rt') as f:
                 cert = json.load(f)

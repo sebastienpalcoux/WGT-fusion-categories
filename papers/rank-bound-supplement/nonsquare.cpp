@@ -22,6 +22,7 @@ std::vector<U> prefix;
 std::vector<W> max_square;
 int rank_limit, q, fiber;
 int selected_q=0, selected_b=0, selected_m=0;
+bool family_bounds=false;
 Mask target, ramified;
 U nodes=0, candidates=0, exact=0;
 #ifndef NS_LCM_BITS
@@ -174,6 +175,47 @@ void emit(U L,U k,U d,U e,Ternary pending,unsigned run) {
     ++candidates;
 }
 
+// Extra bounds from the ordered three-prime dimension families. The full
+// support is fixed, and a nonunit degree is free of at most one support prime.
+U family_bound(U L,W E,int h,U high) {
+    if (!family_bounds || __builtin_popcount(target)!=3) return high;
+    struct Option { int need; W mass; };
+    Option choices[3][2]{};
+    unsigned index=0;
+    for (unsigned j=0;j<primes.size();++j) if (target&(Mask(1)<<j)) {
+        U p=primes[j],seen=1,rest=L,floor=1;
+        while (rest%p==0) {seen*=p;rest/=p;}
+        unsigned threshold=index==0?6:index==1?5:4;
+        unsigned exponent=(threshold-unsigned(q%p==0)+1)/2;
+        for (unsigned e=0;e<exponent;++e) floor*=p;
+        if (h==2 && (p==2 || p==5) && L%floor) return 0;
+        for (unsigned grown=0;grown<2;++grown) {
+            auto &o=choices[index][grown];
+            if (!grown && seen<floor) {o.need=h+1;continue;}
+            W power=grown?std::max(W(floor),W(seen)*p):seen;
+            int known=0;
+            if (!grown) for (U b:prefix) known+=(b%seen==0);
+            o.need=std::max(0,(p==2 || p==5?3:2)-known);
+            if (p==2) o.need+=(7-(known+o.need)%4)%4;
+            if (p==3) o.need+=(5-(known+o.need)%3)%3;
+            if (o.need>h || !o.need) continue;
+            W denominator=((W(prefix.back())-1)/power+1)*power;
+            o.mass=o.need*(denominator>=L?1:1+(W(L)*L-1)/(denominator*denominator));
+        }
+        ++index;
+    }
+    U best=0;
+    for (auto a:choices[0]) for (auto b:choices[1]) for (auto c:choices[2]) {
+        int reserved=a.need+b.need+c.need;
+        if (reserved>h) continue;
+        W mass=1+a.mass+b.mass+c.mass;
+        U bound=high;
+        if (E>mass) bound=std::min(bound,root(W(h-reserved)*L*L/(E-mass)));
+        best=std::max(best,bound);
+    }
+    return best;
+}
+
 void search(U L,W E,int h,unsigned maxima,unsigned run,const Ternary& pending) {
     ++nodes;
     bool eight=q==2 && prefix.front()==2;
@@ -189,7 +231,7 @@ void search(U L,W E,int h,unsigned maxima,unsigned run,const Ternary& pending) {
     if (ll>max_square[h]) {handoff(); return;}
     if (E>(36*h+1)*ll/36) return;
     U lo=std::max(prefix.back(),root(ll/E)+1);
-    U hi=root((36*h+1)*ll/(36*E));
+    U hi=family_bound(L,E,h,root((36*h+1)*ll/(36*E)));
     if (selected_m && prefix.front()==prefix.back()) {
         if (prefix.size()<static_cast<unsigned>(selected_m)) hi=std::min(hi,prefix.front());
         else lo=std::max(lo,prefix.front()+1);
@@ -239,6 +281,10 @@ void supports(int i,Mask support,int budget,int minimum,unsigned b,int f) {
 }
 
 int main(int argc,char** argv) try {
+    if (argc>1 && std::string(argv[argc-1])=="--families") {
+        family_bounds=true;
+        --argc;
+    }
     if (argc!=2 && argc!=5) return 2;
     rank_limit=std::stoi(argv[1]);
     if (rank_limit<2) return 2;

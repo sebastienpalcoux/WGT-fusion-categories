@@ -53,7 +53,7 @@ def packet_room(counts, last, primes, slots):
     return True
 
 
-def witness_bound(prefix, primes, L, E, slots, high):
+def witness_bound(prefix, primes, L, E, slots, high, families=False):
     """Bound the next denominator when exactly three primes are available."""
     fours = prefix.count(4)
     fives = 5 in prefix
@@ -62,12 +62,17 @@ def witness_bound(prefix, primes, L, E, slots, high):
     if slots == 3 and fours >= 4 and L % 8 and (L % 4 or E % 2 == 0):
         return 0
     choices = []
-    for p in primes:
+    for index, p in enumerate(sorted(primes)):
         seen_power, cofactor = 1, L
         while cofactor % p == 0:
             seen_power *= p
             cofactor //= p
         floor = 8 if p == 2 and fours >= 4 else 125 if p == 5 and fives else p
+        if families:
+            required = p**(3 if index < 2 else 2)
+            floor = max(floor, required)
+            if slots == 2 and p in (2, 5) and L % required:
+                return 0
         options = []
         for growing in (False, True):
             if not growing and seen_power < floor:
@@ -177,7 +182,7 @@ def tail(prefix, L, E, primes, low, high):
                 yield from candidate(k, d, e)
 
 
-def complete(prefix, rank):
+def complete(prefix, rank, families=False):
     """Yield all rows under this prefix, in exactly the rank-search degree convention."""
     forced = tuple(prefix)
     if (not isinstance(rank, int) or rank < 9 or not forced or
@@ -222,7 +227,7 @@ def complete(prefix, rank):
         if len(future) < 3 or not packet_room(counts, bs[-1], ps, h):
             return
         upper = isqrt((36*h + 1)*L*L // (36*E))
-        high = witness_bound(bs, future, L, E, h, upper) if len(future) == 3 else upper
+        high = witness_bound(bs, future, L, E, h, upper, families=families) if len(future) == 3 else upper
         if high < bs[-1]:
             return
         low = max(bs[-1], isqrt(L*L // E) + 1)

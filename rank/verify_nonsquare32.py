@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the exhaustive nonsquare rank-32 enumeration and its independent arithmetic screens."""
 import argparse
+from hashlib import sha256
 from collections import defaultdict
 import json
 from math import isqrt
@@ -8,10 +9,42 @@ from pathlib import Path
 import re
 import subprocess
 import tempfile
-
-from verify_nonsquare import canonical, digest, require, root_map, screen, validate
+import sys
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT/'code'))
+from current_screen import screen
+from rank_audit import validate
+
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def digest(blob):
+    return sha256(blob).hexdigest()
+
+
+def canonical(rows):
+    return "".join(json.dumps(row, separators=(",", ":")) + "\n" for row in sorted(rows)).encode("ascii")
+
+
+def root_map(rank):
+    """Map a possible largest-object codegree to its unique nonsquare root (q,b)."""
+    roots = {}
+    for q in range(2, rank):
+        divisors = range(2, isqrt(q) + 1)
+        if any(q % (i*i) == 0 for i in divisors):
+            continue
+        prime = all(q % i != 0 for i in divisors)
+        for b in range(1, isqrt((rank-1)//q) + 1):
+            f = q*b*b
+            if f >= 8 and not (b == 1 and prime):
+                roots[f] = (q, b)
+    return roots
+
+
 DATA = ROOT / 'data/revision/nonsquare'
 SRC = ROOT / 'optimized/nonsquare'
 RANK = 32

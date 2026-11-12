@@ -135,26 +135,69 @@ def ternary_tiles(denominators, slots):
     return sum(owed.values()) - min(owed[last], counts[last]) <= slots if slots else not owed
 
 
-def complete(q, b, m, rank):
+def family_bound(prefix, primes, q, L, E, slots, high):
+    """Use necessary heights from uncovered ordered three-prime dimensions."""
+    if len(primes) != 3:
+        return high
+    choices = []
+    for p, threshold in zip(primes, (6, 5, 4)):
+        floor = p**((threshold-int(q % p == 0)+1)//2)
+        if slots == 2 and p in (2, 5) and L % floor:
+            return 0
+        seen, rest = 1, L
+        while rest % p == 0:
+            seen *= p
+            rest //= p
+        options = []
+        for growing in (False, True):
+            if not growing and seen < floor:
+                continue
+            power = max(floor, seen*p) if growing else seen
+            known = 0 if growing else sum(b % seen == 0 for b in prefix)
+            need = max(0, (3 if p in (2, 5) else 2)-known)
+            if p == 2:
+                need += (3-known-need) % 4
+            if p == 3:
+                need += (2-known-need) % 3
+            if need > slots:
+                continue
+            denominator = ((prefix[-1]-1)//power+1)*power
+            mass = need*((L*L+denominator*denominator-1)//(denominator*denominator))
+            options.append((need, mass))
+        choices.append(options)
+    best = 0
+    for a in choices[0]:
+        for b in choices[1]:
+            for c in choices[2]:
+                reserved = a[0]+b[0]+c[0]
+                if reserved > slots:
+                    continue
+                mass = 1+a[1]+b[1]+c[1]
+                bound = high if E <= mass else min(high, isqrt((slots-reserved)*L*L//(E-mass)))
+                best = max(best, bound)
+    return best
+
+
+def complete(q, b, m, rank, families=False):
     """Enumerate a complete nonsquare task with arbitrary-precision integers."""
-    yield from _complete(q, b, m, rank, None, [b])
+    yield from _complete(q, b, m, rank, None, [b], families)
 
 
 class InvalidPrefix(ValueError):
     pass
 
 
-def complete_prefix(q, b, m, rank, primes, prefix):
+def complete_prefix(q, b, m, rank, primes, prefix, families=False):
     """Continue one native node on precisely its fixed support and prefix."""
     if (not primes or list(primes) != sorted(set(primes)) or any(p not in primes_up_to(rank) for p in primes)
             or not 1 <= len(prefix) <= rank-3 or prefix[0] != b
             or any(type(z) is not int or z < 1 for z in prefix) or list(prefix) != sorted(prefix)
             or any(exponents(z, primes) is None for z in prefix)):
         raise InvalidPrefix('invalid exact-prefix handoff')
-    yield from _complete(q, b, m, rank, tuple(primes), list(prefix))
+    yield from _complete(q, b, m, rank, tuple(primes), list(prefix), families)
 
 
-def _complete(q, b, m, rank, fixed_primes, prefix):
+def _complete(q, b, m, rank, fixed_primes, prefix, families):
     if (any(type(x) is not int for x in (q, b, m, rank)) or rank < 2
             or not 2 <= q < rank or b < 1 or not 0 <= m < rank):
         raise ValueError('expected rank >= 2, 2 <= q < rank, b >= 1 and 0 <= m < rank')
@@ -194,6 +237,8 @@ def _complete(q, b, m, rank, fixed_primes, prefix):
             return
         lo = max(prefix[-1], isqrt(L*L//E) + 1)
         hi = isqrt((36*slots+1)*L*L//(36*E))
+        if families:
+            hi = family_bound(prefix, primes, q, L, E, slots, hi)
         if first_run and m:
             if len(prefix) < m:
                 hi = min(hi, b)
