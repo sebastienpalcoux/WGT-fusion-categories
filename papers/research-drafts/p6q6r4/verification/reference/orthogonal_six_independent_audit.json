@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "integral_A": 288,
+    "integral_B": 384,
+    "integral_D": 192,
+    "integral_E": 384,
+    "integral_F": 96,
+    "integral_signed_signatures": 23,
+    "integral_states": 1344,
+    "norm12_frames": 129,
+    "normalized_inputs": 12905,
+    "oriented_columns": 85,
+    "positive_A": 72,
+    "positive_B": 216,
+    "positive_D": 96,
+    "positive_E": 144,
+    "positive_signed_signatures": 16,
+    "positive_states": 528,
+    "trace_states": 1752
+  },
+  "independent_methods": [
+    "Leibniz determinants",
+    "direct three-form contractions",
+    "raw multiset enumeration",
+    "disjoint-transposition involutions",
+    "separating-line positive-cone test"
+  ],
+  "opposite_images_control": {
+    "A": 72
+  },
+  "opposite_images_scope": "No opposite pair among selfdual active labels, and no active X with image(X*)=-image(X); arbitrary distinct nonselfdual labels may be opposite.",
+  "passed": true
+}

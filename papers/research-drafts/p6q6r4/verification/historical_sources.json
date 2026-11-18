@@ -1,0 +1,2085 @@
+{
+  "files": {
+    "verification/round31/check_codegree_six_arithmetic.py": {
+      "bytes": 4953,
+      "sha256": "cd21a8634d372d41fe0fe3dfa7b8ba988bbacd4639e11ba138eb25bc2a54a1b0"
+    },
+    "verification/round31/check_noncommutative_rank13.py": {
+      "bytes": 2940,
+      "sha256": "24625b2e3402d4bcdf620e076a5ee26e1679ddc275ba0bd0b993398eb0a1319f"
+    },
+    "verification/round31/endpoints/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round31/endpoints/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round31/endpoints/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round31/endpoints/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round31/endpoints/scan_refined.py": {
+      "bytes": 1616,
+      "sha256": "fcd83595c5166ef07d95b9dc9df29c2630965463799147815d08d707b6ed3535"
+    },
+    "verification/round31/endpoints/separator_proposer.py": {
+      "bytes": 1964,
+      "sha256": "06cda25de6ec0c12a41d2861ad38b439f808f646cb13b0f2d099c83baad2dbf7"
+    },
+    "verification/round31/endpoints/verify_endpoint_certificates.py": {
+      "bytes": 5586,
+      "sha256": "d7c8f8eaeb3c0c393c65862a3013778b98faeb983a027be3b840584d35e51e11"
+    },
+    "verification/round31/verify_r31_braiding_arithmetic.py": {
+      "bytes": 7299,
+      "sha256": "a64a5600538b50ff508a5ff32d4c9aa26889719e5aca3adb887d3dcd439de3d0"
+    },
+    "verification/round32/canonical_structure/audit_gap_filter.py": {
+      "bytes": 4647,
+      "sha256": "fd682b50496503042706b942934353750207de4b3de990504b646d2fc093c15b"
+    },
+    "verification/round32/canonical_structure/audit_noncommutative_gap.py": {
+      "bytes": 5175,
+      "sha256": "9107985fd20f614617a31976967772e8f675bb25fba0c9550f92deb484a62f7d"
+    },
+    "verification/round32/canonical_structure/audit_trace_forms.py": {
+      "bytes": 9816,
+      "sha256": "81e6e6e5418247a87c88e1590e598a1923470ab69b6fea3b1d39f0cc0053975c"
+    },
+    "verification/round32/canonical_structure/check_spectral_remainders.py": {
+      "bytes": 3077,
+      "sha256": "32162343011b59dd02bf0ce81d9ee05f883216d737df07d4b73c373fe5dd9be1"
+    },
+    "verification/round32/character_theory/check_matrix_codegree_six.py": {
+      "bytes": 5754,
+      "sha256": "c2f87408216aa926a68995c2f3ccb7856e3e11706f75cf5fb318d49bd52a2b15"
+    },
+    "verification/round32/endpoint_search/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "39911183fcd3ae45a8ff94c571b8d824b3bef054aa5c1eab954850abee4c4618"
+    },
+    "verification/round32/endpoint_search/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round32/endpoint_search/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round32/endpoint_search/exact_pair_branches.py": {
+      "bytes": 1787,
+      "sha256": "0153e8194691328e45fe3d29518256dac393d74c7bb38649743e542bc69957fd"
+    },
+    "verification/round32/endpoint_search/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round32/endpoint_search/fixed_field_rows.py": {
+      "bytes": 6442,
+      "sha256": "13130661340122ba57b73ad30273cd3840d65004e90d324485af1754bc23bc92"
+    },
+    "verification/round32/endpoint_search/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round32/endpoint_search/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round32/endpoint_search/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round32/endpoint_search/verify_round32_endpoints.py": {
+      "bytes": 6753,
+      "sha256": "ee79d417865aa0336e0a591413a13fa7e29f5955d38f37ebb11cf45784fb58b7"
+    },
+    "verification/round32/trace_forms/exact_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round32/trace_forms/validate_trace_forms.py": {
+      "bytes": 3339,
+      "sha256": "c2090d405d72919b06e70f9986d18b459d6c68f34e46ff646ee45e771b1f4726"
+    },
+    "verification/round33/commutative12/audit_field_options.py": {
+      "bytes": 2296,
+      "sha256": "42eea24e6e33f3ed1b1af00132c93c3ed236bc3e31cdd2ae031ac1605065ae09"
+    },
+    "verification/round33/commutative12/bounded_separator.py": {
+      "bytes": 2115,
+      "sha256": "1e806c751e9fdf7ebbcc6980b501521d1012b58bffd76625396c12a5a2582ef7"
+    },
+    "verification/round33/commutative12/cheap_screen.py": {
+      "bytes": 3643,
+      "sha256": "65035e5220a015dff7d5947fdc0aae40e11ac2c3bc88596b3740277a7fcbd488"
+    },
+    "verification/round33/commutative12/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round33/commutative12/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round33/commutative12/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round33/commutative12/exact_filters.py": {
+      "bytes": 1225,
+      "sha256": "a1c0f6767f6d8caa19f4762d96636139e149c354b8cd6f6bc5d91284552a2c8e"
+    },
+    "verification/round33/commutative12/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round33/commutative12/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round33/commutative12/fixed_field_rows.py": {
+      "bytes": 6513,
+      "sha256": "73f0c10699ead25f8e6b879fe934e9c1c4600a2386a706f4e2c01f1894de1cc5"
+    },
+    "verification/round33/commutative12/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round33/commutative12/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round33/commutative12/generic_fields.py": {
+      "bytes": 3871,
+      "sha256": "7f7d9a12aafdaddac19e039f06dc7b38609117a101680a66f9e05c4a9aca047d"
+    },
+    "verification/round33/commutative12/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round33/commutative12/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round33/commutative12/produce_rank12.py": {
+      "bytes": 5258,
+      "sha256": "90e34ca68fd87b160afab1021dcca20c42793d9da9a85ee31e99534df30acd71"
+    },
+    "verification/round33/commutative12/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round33/commutative12/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round33/commutative12/scan_coupled.py": {
+      "bytes": 3263,
+      "sha256": "64439f41e2802c59879158c920912f66648d0081a7a0a012ac8c83ee5be274c4"
+    },
+    "verification/round33/commutative12/verify_rank12.py": {
+      "bytes": 6473,
+      "sha256": "ef8c46c91e73e512b91ee16723f98437e940f3eac4c2a222da33cdc2404cdf79"
+    },
+    "verification/round33/noncommutative14/cheap_rank14.py": {
+      "bytes": 3420,
+      "sha256": "22aa974ee64c7c2117cf2c18b626571d1d4d804ad2dbbb5bd24e1d0cd0a3bd75"
+    },
+    "verification/round33/noncommutative14/check_trace_recursions.py": {
+      "bytes": 5388,
+      "sha256": "15b2e089317aaf108adc1df3da50568e0ca84dd367a72a79c778347fbf358041"
+    },
+    "verification/round33/noncommutative14/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round33/noncommutative14/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round33/noncommutative14/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round33/noncommutative14/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round33/noncommutative14/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round33/noncommutative14/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round33/noncommutative14/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round33/noncommutative14/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round33/noncommutative14/generic_fields.py": {
+      "bytes": 3871,
+      "sha256": "7f7d9a12aafdaddac19e039f06dc7b38609117a101680a66f9e05c4a9aca047d"
+    },
+    "verification/round33/noncommutative14/mixed_trace_filter.py": {
+      "bytes": 3449,
+      "sha256": "9038fcc9ab54a9e5c317f69259c856b0eb1ec1f51d1ff2b65a5ab18cbd6cb7b4"
+    },
+    "verification/round33/noncommutative14/norm_word_filter.py": {
+      "bytes": 3526,
+      "sha256": "9e0d88c084e033c0b1ee0476d4c61e00e30b2eba27b93de8f641e3a69705fa26"
+    },
+    "verification/round33/noncommutative14/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round33/noncommutative14/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round33/noncommutative14/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round33/noncommutative14/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round33/noncommutative14/trace_rank14.py": {
+      "bytes": 6112,
+      "sha256": "e88851779560b150150c6d7a3c3adcebdf9a198bdf8592d64d772b337315255c"
+    },
+    "verification/round33/noncommutative14/verify_rank14.py": {
+      "bytes": 12264,
+      "sha256": "1cf575c63ce0b82c3078e9d4afabb92a3c6b9f688f7e51f77e2bf0f9c8331517"
+    },
+    "verification/round33/noncommutative14/verify_rank14_parallel.py": {
+      "bytes": 2890,
+      "sha256": "0df593b937ea14a53c8f83c3604dd64677922a8e0ba8c52607b62690fc29b90b"
+    },
+    "verification/round33/noncommutative14_audit/audit_higher_norm_choices.py": {
+      "bytes": 10109,
+      "sha256": "432e62ff321ace6cedbac2d9c15b994035b8e5ed8820f25e331608145f49f553"
+    },
+    "verification/round33/noncommutative14_audit/audit_trace_gate_tables.py": {
+      "bytes": 6568,
+      "sha256": "0238d3ef296b3ae623b07fa1f7308025e1c0d87f03f3847e343d4947d4db0bdf"
+    },
+    "verification/round33/noncommutative14_audit/audit_word_formulas.py": {
+      "bytes": 8099,
+      "sha256": "b6e2c3f0d082425fc774d08ce8e065de1f1b4ae844223cdc319094a9093d9dff"
+    },
+    "verification/round33/two_blocks/commutative12_audit/audit_higher_field_powers.py": {
+      "bytes": 6114,
+      "sha256": "0f981eac57627b9c227946443c9759c73d411c0351c18a3e56acab2e7ec1234f"
+    },
+    "verification/round33/two_blocks/commutative12_audit/audit_power_rows.py": {
+      "bytes": 6456,
+      "sha256": "5b9e4f588f466daff3684fe02d5fdd67988d31e02b29f4baa9ee9601cfb4cc8b"
+    },
+    "verification/round33/two_blocks/commutative12_audit/audit_rank12_field_catalogue.py": {
+      "bytes": 4706,
+      "sha256": "a3f11c06b488c023854a0081eb01ca81ebce62a0c9106f5335e6386775964d19"
+    },
+    "verification/round33/two_blocks/rank15_aggregate_extension/aggregate_screen.py": {
+      "bytes": 6923,
+      "sha256": "7b0ae54f085238f0bcf256b08424ed0ee96c948d8c5be3418fab5889cf805df4"
+    },
+    "verification/round33/two_blocks/verify_length10.py": {
+      "bytes": 7190,
+      "sha256": "3a84f434ea43f39bb5e428a2e95b58d11bea7e551a598a42403c03e12c223649"
+    },
+    "verification/round33/two_blocks/verify_next_canonical_counts.py": {
+      "bytes": 5227,
+      "sha256": "2cd37b22dd6408bd5eee323ac1febd52b43b22ac5957031fb3a30f736aa9456e"
+    },
+    "verification/round33/two_blocks/verify_pair_moduli.py": {
+      "bytes": 3531,
+      "sha256": "56ee9b8cd8e90e0e2761b86b11eaf6bf6b62a0af5dd095ca52d4991bcc495968"
+    },
+    "verification/round33/two_blocks/verify_rank15_two_blocks.py": {
+      "bytes": 9177,
+      "sha256": "26a03dc9d978ff82ff32703b9ff7c9c2ab284190df2759d6b38e9fc82c1354bb"
+    },
+    "verification/round33/two_blocks/verify_two_blocks.py": {
+      "bytes": 6154,
+      "sha256": "a92ad32bdfe054205c9631230ab701fd06c64b9912c11df3cae4d28f3305159b"
+    },
+    "verification/round34/canonical11/canonical11_rows.py": {
+      "bytes": 7494,
+      "sha256": "0bb0ec42ffc0b8bee27184e9b319d8ebb87602a86641a260778757e321a59e18"
+    },
+    "verification/round34/canonical11/canonical11_words.py": {
+      "bytes": 3646,
+      "sha256": "c64fe13868b186a2310907d0955a1dca937146ec5de9b20eab5fb87bb0d1020d"
+    },
+    "verification/round34/canonical11/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round34/canonical11/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round34/canonical11/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round34/canonical11/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round34/canonical11/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round34/canonical11/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round34/canonical11/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round34/canonical11/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round34/canonical11/generic_fields.py": {
+      "bytes": 3871,
+      "sha256": "7f7d9a12aafdaddac19e039f06dc7b38609117a101680a66f9e05c4a9aca047d"
+    },
+    "verification/round34/canonical11/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round34/canonical11/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round34/canonical11/probe_length11.py": {
+      "bytes": 4410,
+      "sha256": "046013fc624ece24204207d5000a94876e1d1069b81fbad0a165d25a2506a445"
+    },
+    "verification/round34/canonical11/propose_certificates.py": {
+      "bytes": 1380,
+      "sha256": "cb6874e6ec7ca5f0d7f9077fdfa283951e5f740c7c6ad3e4a364b3e62538b6b6"
+    },
+    "verification/round34/canonical11/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round34/canonical11/r33_aggregate_screen.py": {
+      "bytes": 6923,
+      "sha256": "7b0ae54f085238f0bcf256b08424ed0ee96c948d8c5be3418fab5889cf805df4"
+    },
+    "verification/round34/canonical11/refine_canonical11.py": {
+      "bytes": 2261,
+      "sha256": "2b39d8b0ac337a0c24ac2927e1d40c7fb6ae15707556866baab4a8d1960dbf03"
+    },
+    "verification/round34/canonical11/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round34/canonical11/scan_canonical11.py": {
+      "bytes": 2467,
+      "sha256": "6562a3dc85a36dc7797d6cae220c0bba51eb3c5161f5a19c2232aecd38d65376"
+    },
+    "verification/round34/canonical11/verify_canonical11.py": {
+      "bytes": 11531,
+      "sha256": "7bd397bb28fd442d29fd125ddf7b279486f95660b09fb13432eff74654a6076e"
+    },
+    "verification/round34/canonical11/verify_length10.py": {
+      "bytes": 7190,
+      "sha256": "3a84f434ea43f39bb5e428a2e95b58d11bea7e551a598a42403c03e12c223649"
+    },
+    "verification/round34/canonical11/verify_two_blocks.py": {
+      "bytes": 6154,
+      "sha256": "a92ad32bdfe054205c9631230ab701fd06c64b9912c11df3cae4d28f3305159b"
+    },
+    "verification/round34/character_type_roots/verify_character_type_roots.py": {
+      "bytes": 21524,
+      "sha256": "1536e83ff9eaf7f3a0e5d057e1098dab43e0b4a6f394e9790b9609229f9f7a8b"
+    },
+    "verification/round34/commutative13/audit_field_options.py": {
+      "bytes": 2296,
+      "sha256": "187307d528d5fb83ba9680efe2a726cb1fe7e0768d346b17d201559a0807016c"
+    },
+    "verification/round34/commutative13/canonical_support.py": {
+      "bytes": 7008,
+      "sha256": "92d7d2d901d92320e3f2e543d5fb4bea5873dbfae7440b5628b9de05ae714197"
+    },
+    "verification/round34/commutative13/cheap_screen.py": {
+      "bytes": 3643,
+      "sha256": "65035e5220a015dff7d5947fdc0aae40e11ac2c3bc88596b3740277a7fcbd488"
+    },
+    "verification/round34/commutative13/collect_rank13.py": {
+      "bytes": 2304,
+      "sha256": "b5673a77c6055fe440029f79dfadcb4f9f1ad9e38771c38ec412417173a883bc"
+    },
+    "verification/round34/commutative13/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "a6c1759cf5e278d90aeeb5304169fcd50a76137860e37f6383e3edb477686736"
+    },
+    "verification/round34/commutative13/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round34/commutative13/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round34/commutative13/exact_filters.py": {
+      "bytes": 1225,
+      "sha256": "752b0699cb79d4e92e7e3313022c24fa59d8dc8983716be08b9f73b591c95283"
+    },
+    "verification/round34/commutative13/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round34/commutative13/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round34/commutative13/fixed_field_rows.py": {
+      "bytes": 7847,
+      "sha256": "581ed41427aefb2e3ac6d5cf7708e8af68e9e8a0da172e053d2026ae5de21640"
+    },
+    "verification/round34/commutative13/fixed_lattice.py": {
+      "bytes": 2767,
+      "sha256": "2f1f66fcfdccf44286edcc36e2f1688a24e1763ba4bf19d36721db2cda8db444"
+    },
+    "verification/round34/commutative13/forgetful_transport.py": {
+      "bytes": 6360,
+      "sha256": "6754f83587fa8faf987d9833339fa90b336786e13e0d22495cbeeb0a618d6bcc"
+    },
+    "verification/round34/commutative13/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round34/commutative13/generic_fields.py": {
+      "bytes": 6420,
+      "sha256": "c61fb7414dc0485641a6e0ce6deada1d7c64710de872ba24245d02bb287b1466"
+    },
+    "verification/round34/commutative13/integer_carry.py": {
+      "bytes": 4906,
+      "sha256": "bdac9dbbb601107a0fdfa6a301f676b9fd9034568fd8ce5d6957a1f9c2025ea9"
+    },
+    "verification/round34/commutative13/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round34/commutative13/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round34/commutative13/power_trace_filter.py": {
+      "bytes": 4490,
+      "sha256": "9aaf67239548565ad83745b3655f5df957f940457863ac3c4daea8e6ba8a468f"
+    },
+    "verification/round34/commutative13/quadratic_skew.py": {
+      "bytes": 3403,
+      "sha256": "6305517da6bcafc2fcf1f26622beecdfe844222c8b14b38c402afaefe04bd87a"
+    },
+    "verification/round34/commutative13/r32_trace_forms.py": {
+      "bytes": 14543,
+      "sha256": "98017f163973eba8fe9d9fbc23c9d22b1559ae3afb96316d8c77a2f8ed422bc9"
+    },
+    "verification/round34/commutative13/real_quadratic_unit.py": {
+      "bytes": 2293,
+      "sha256": "fecc3593d0a6f565fc0cdff1fdf582f7bf90d76c9912969fd14a783c4dda7af8"
+    },
+    "verification/round34/commutative13/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round34/commutative13/scan_coupled.py": {
+      "bytes": 4004,
+      "sha256": "50fc2b39701e3ff8e8ea2fa8863387a01e4e2ae56618a82b098a37bf4baf8d78"
+    },
+    "verification/round34/commutative13/trace_rank13.py": {
+      "bytes": 3459,
+      "sha256": "a0194563a5d13e95565ec21f41946ea026eb203ac7cd357307133ee91aaf2ef3"
+    },
+    "verification/round34/commutative13/verify_coloring.py": {
+      "bytes": 3384,
+      "sha256": "0cb8eae177383661c5a9a914ee034d72b84b9dc983f071da9e9f0678512bb8be"
+    },
+    "verification/round34/commutative13/verify_frame.py": {
+      "bytes": 4677,
+      "sha256": "f05960d0800414f5df552aa90f645a8503bf5a01c57a2be3a7c597449e18bb1a"
+    },
+    "verification/round34/commutative13/verify_linear_field_lattice_audit.py": {
+      "bytes": 12857,
+      "sha256": "55ebc0a6612c3ff9c510825885c304f43d9c06223b534c07761d078a695aeb1f"
+    },
+    "verification/round34/commutative13/verify_rank13.py": {
+      "bytes": 12310,
+      "sha256": "407e65d93b5a474a27b869d5e4b6e2584c2a98d8116373462929766fc4d93fb6"
+    },
+    "verification/round34/commutative13/verify_support_witness.py": {
+      "bytes": 2790,
+      "sha256": "10945d9c7107cecb14febe1aecf195f649f662414958a5a6f7214f6d567cdb4d"
+    },
+    "verification/round34/next_inputs/verify_next_counts.py": {
+      "bytes": 4440,
+      "sha256": "be91e80e5f814d8c2d9bec1c023bd2cb34bc1e4616d35972e8d96aba39ff9189"
+    },
+    "verification/round34/one_matrix15/audit_matrix_spectral.py": {
+      "bytes": 2990,
+      "sha256": "4c673b1dac9ec2a9fd35f101dd1bc94092bbbd286d72c23c1766b609c1462c1f"
+    },
+    "verification/round34/one_matrix15/audit_rows.py": {
+      "bytes": 3259,
+      "sha256": "f955ae7a794d9b1f2af1929b7ade340a4c3999562ab978958f3349d00fd51837"
+    },
+    "verification/round34/one_matrix15/bounded_remainder.py": {
+      "bytes": 12130,
+      "sha256": "6b84361b81858cb4b5c059d5a04eeae2c9df39f8e6e69a4739b6d26cbe8aa0b5"
+    },
+    "verification/round34/one_matrix15/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "a6c1759cf5e278d90aeeb5304169fcd50a76137860e37f6383e3edb477686736"
+    },
+    "verification/round34/one_matrix15/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round34/one_matrix15/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round34/one_matrix15/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round34/one_matrix15/fixed_field_rows.py": {
+      "bytes": 12062,
+      "sha256": "e3f6f4f9999a3723c5164f71e85b73df1a7459daef4ab12166ddcaa154e97460"
+    },
+    "verification/round34/one_matrix15/fixed_field_rows_pre_mitm.py": {
+      "bytes": 10242,
+      "sha256": "e8c8911b7b30549bb9620abe90ff7219f1161c25f7a2592099c8db5ae7f8b256"
+    },
+    "verification/round34/one_matrix15/fixed_lattice.py": {
+      "bytes": 2767,
+      "sha256": "2f1f66fcfdccf44286edcc36e2f1688a24e1763ba4bf19d36721db2cda8db444"
+    },
+    "verification/round34/one_matrix15/gap_filter.py": {
+      "bytes": 6903,
+      "sha256": "9cd0e5424bb30948ce37fe4ce38272cc6adb1ac679f090bd8c078c539645490c"
+    },
+    "verification/round34/one_matrix15/generic_fields.py": {
+      "bytes": 6420,
+      "sha256": "c61fb7414dc0485641a6e0ce6deada1d7c64710de872ba24245d02bb287b1466"
+    },
+    "verification/round34/one_matrix15/imaginary_quadratic_gate.py": {
+      "bytes": 2682,
+      "sha256": "ffc40e246a1af902a8f4e7223a830a40696e76877040c93677b8f874b2bcd3d5"
+    },
+    "verification/round34/one_matrix15/linear_field_gate.py": {
+      "bytes": 2266,
+      "sha256": "162ab89ea08893659f43ca9bc38018561e295b644e49c3b8e86e9edb6facc399"
+    },
+    "verification/round34/one_matrix15/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round34/one_matrix15/matrix_spectral_filter.py": {
+      "bytes": 4356,
+      "sha256": "72d4410337eb8130bbfac790801b703c276d4365dff2b4fefc589e9838a2941b"
+    },
+    "verification/round34/one_matrix15/merge_rank15.py": {
+      "bytes": 7884,
+      "sha256": "137e711dd83d856eda2ee4051a11a9da65512beb4bc8e7d95a79069d70b34f67"
+    },
+    "verification/round34/one_matrix15/mixed_trace_filter.py": {
+      "bytes": 3916,
+      "sha256": "e0b563140b84cc782b17390245e1f42d427eea1335be75d3682112b25bd761ef"
+    },
+    "verification/round34/one_matrix15/norm_word_filter.py": {
+      "bytes": 4011,
+      "sha256": "e815d66052d5b59a2e6e6dba69317aafadb4eb0ba8ce183c1938b79ae87e4e61"
+    },
+    "verification/round34/one_matrix15/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round34/one_matrix15/power_trace_filter.py": {
+      "bytes": 4684,
+      "sha256": "36a5baaf59c0e1a21b914815af5725b08389dd740ffc9bd591741d4751e0bace"
+    },
+    "verification/round34/one_matrix15/quadratic_character_gate.py": {
+      "bytes": 2301,
+      "sha256": "3134537981e9b33338b4e45b450123e9a2af313997aa626075a06d2b30880c71"
+    },
+    "verification/round34/one_matrix15/r32_trace_forms.py": {
+      "bytes": 14543,
+      "sha256": "98017f163973eba8fe9d9fbc23c9d22b1559ae3afb96316d8c77a2f8ed422bc9"
+    },
+    "verification/round34/one_matrix15/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round34/one_matrix15/replay_all.py": {
+      "bytes": 2422,
+      "sha256": "650c49b70c130fcdf82da0a16ea3407956ab20f157d9ae5b264021479481b78e"
+    },
+    "verification/round34/one_matrix15/trace_rank15.py": {
+      "bytes": 9503,
+      "sha256": "dbebdd9d0a58feef6f301527fd481ea446ce38cf16f5c686cdec21af38e0c379"
+    },
+    "verification/round34/one_matrix15/verify_rank15.py": {
+      "bytes": 16193,
+      "sha256": "2ba3c4a7dfe6f28bd3041883bfd870c50ae53624c69893a7750d45c695adc79f"
+    },
+    "verification/round34/one_matrix15/verify_trace15.py": {
+      "bytes": 3341,
+      "sha256": "8f3b7203dbcdf826a9659aca42fe55ba456c101e8e14bb59668cdcc62a5bafef"
+    },
+    "verification/round34/orthogonal_frame13/verify_coloring.py": {
+      "bytes": 3384,
+      "sha256": "0cb8eae177383661c5a9a914ee034d72b84b9dc983f071da9e9f0678512bb8be"
+    },
+    "verification/round34/orthogonal_frame13/verify_frame.py": {
+      "bytes": 4677,
+      "sha256": "f05960d0800414f5df552aa90f645a8503bf5a01c57a2be3a7c597449e18bb1a"
+    },
+    "verification/round34/source_type_counts/verify_source_type_counts.py": {
+      "bytes": 5561,
+      "sha256": "5f918509322faa364acca8740515ee55116fb501b7402e203d32a8b5d2484f23"
+    },
+    "verification/round34/structural/verify_commutator_volume.py": {
+      "bytes": 10809,
+      "sha256": "71de40aa62120b6c0f8a3ae5da269b074d10330334864144766c268665a86631"
+    },
+    "verification/round34/structural/verify_reconstruction_identities.py": {
+      "bytes": 21270,
+      "sha256": "0f9f25f9eb962a8c94390f267ae1caa0258c0f8d08f6579de2955415e6c89a2c"
+    },
+    "verification/round34/structural/verify_structural.py": {
+      "bytes": 8506,
+      "sha256": "c529e906f06215cda2dc64dac0dc099c2ccdb52b393d76692ccae77981124228"
+    },
+    "verification/round34/two_matrix15/audit_word_identities.py": {
+      "bytes": 2771,
+      "sha256": "10b9c00508bd5c3dd75221e6ee17a281c675252255b9d64c81d118f82ab69b71"
+    },
+    "verification/round34/two_matrix15/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round34/two_matrix15/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round34/two_matrix15/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round34/two_matrix15/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round34/two_matrix15/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round34/two_matrix15/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round34/two_matrix15/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round34/two_matrix15/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round34/two_matrix15/generic_fields.py": {
+      "bytes": 3871,
+      "sha256": "7f7d9a12aafdaddac19e039f06dc7b38609117a101680a66f9e05c4a9aca047d"
+    },
+    "verification/round34/two_matrix15/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round34/two_matrix15/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round34/two_matrix15/propose_certificates.py": {
+      "bytes": 1380,
+      "sha256": "cb6874e6ec7ca5f0d7f9077fdfa283951e5f740c7c6ad3e4a364b3e62538b6b6"
+    },
+    "verification/round34/two_matrix15/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round34/two_matrix15/refine_words.py": {
+      "bytes": 1916,
+      "sha256": "c1487b31d047c154061cd89c72d3ad5548add20f40ce73f4a4b955bce36e30ec"
+    },
+    "verification/round34/two_matrix15/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round34/two_matrix15/scan_rows.py": {
+      "bytes": 2839,
+      "sha256": "a85f5e8dd05a5bf3e910fad0a092dc6bbc0d3f05cb6a178e565f1b0f9d8325e3"
+    },
+    "verification/round34/two_matrix15/trace_two_matrix.py": {
+      "bytes": 7445,
+      "sha256": "7ea0b5b1d6b3e8136da630e36a46e1d43610e60649f560d49fb2c26939aea56f"
+    },
+    "verification/round34/two_matrix15/two_matrix_rows.py": {
+      "bytes": 10158,
+      "sha256": "1ee7feac6fe93eb9076007964af40f5491b75970d3ee0005c632fdb593766290"
+    },
+    "verification/round34/two_matrix15/two_matrix_words.py": {
+      "bytes": 6156,
+      "sha256": "c1f67f9211f616477cc0839f73c5f897144b86be4054e29f5f409898879f1119"
+    },
+    "verification/round34/two_matrix15/verify_two_matrix15.py": {
+      "bytes": 5021,
+      "sha256": "84994ccf9193a2e7898f207495ceb9febf267b7da3b25dd04a0099c9f1a206fd"
+    },
+    "verification/round35/canonical12/audit_canonical12_fields.py": {
+      "bytes": 3711,
+      "sha256": "574a6516b6c6ce87b8992ad9827f5c74e6fc3cbe5515b42ed6a1d15eaaedb0cb"
+    },
+    "verification/round35/canonical12/audit_canonical12_input.py": {
+      "bytes": 3063,
+      "sha256": "c968c8aab54e2430ee5fbc585159e59fca0509fc0d2763b79ab56e685a785435"
+    },
+    "verification/round35/canonical12/audit_capacity_and_cubic.py": {
+      "bytes": 2481,
+      "sha256": "c1d8632e3744d6f50278330ccec5aa8cad06aebf18768a346bfa706552a698bd"
+    },
+    "verification/round35/canonical12/bounded_canonical12_replay.py": {
+      "bytes": 5959,
+      "sha256": "662dbb2e96fe80cd056475d65410f5b5a5101ffca862e2031e96be3d549a1b45"
+    },
+    "verification/round35/canonical12/build_canonical12_release.py": {
+      "bytes": 10342,
+      "sha256": "0c757350e928e0c4fc9195221d2b73fb36a9bec1dd6bef1a1701b97ee00538a9"
+    },
+    "verification/round35/canonical12/canonical11_rows.py": {
+      "bytes": 7494,
+      "sha256": "0bb0ec42ffc0b8bee27184e9b319d8ebb87602a86641a260778757e321a59e18"
+    },
+    "verification/round35/canonical12/canonical12_rows.py": {
+      "bytes": 13162,
+      "sha256": "bdadb9a1fa2daaf5e5d7c92c80d5d6638f2abcf495a280eeac2116efe9e2d874"
+    },
+    "verification/round35/canonical12/canonical12_words.py": {
+      "bytes": 3646,
+      "sha256": "7c560609c2684a77255a1d12ca424c1eef07afb45ee0b669107555d903cffe8b"
+    },
+    "verification/round35/canonical12/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round35/canonical12/cubic_trace_gate.py": {
+      "bytes": 1981,
+      "sha256": "fe1797c1d98e79a4a479da7537c48c1807cbe420b240b2653177bc973222d5bb"
+    },
+    "verification/round35/canonical12/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round35/canonical12/enumerate_canonical12.py": {
+      "bytes": 5377,
+      "sha256": "1b7a195146c00c1af6c47721c4ee2853280a584e6283c6b521a6a44c5ac9813b"
+    },
+    "verification/round35/canonical12/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round35/canonical12/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round35/canonical12/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round35/canonical12/finalize_canonical_length13.py": {
+      "bytes": 19204,
+      "sha256": "8a75e9838208969ce288a10890b03eee0839ba75a43dcbd8a77cfb81975d8396"
+    },
+    "verification/round35/canonical12/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round35/canonical12/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round35/canonical12/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round35/canonical12/generic_fields.py": {
+      "bytes": 6420,
+      "sha256": "c61fb7414dc0485641a6e0ce6deada1d7c64710de872ba24245d02bb287b1466"
+    },
+    "verification/round35/canonical12/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round35/canonical12/odd_rational_forms.py": {
+      "bytes": 3411,
+      "sha256": "5d7df8d17124cfc5ed2995971ed26ce19b221c6e3ce231a019b984bb46793d72"
+    },
+    "verification/round35/canonical12/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round35/canonical12/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round35/canonical12/probe_length11.py": {
+      "bytes": 4410,
+      "sha256": "046013fc624ece24204207d5000a94876e1d1069b81fbad0a165d25a2506a445"
+    },
+    "verification/round35/canonical12/propose_certificates.py": {
+      "bytes": 1778,
+      "sha256": "89d68541a55a46cc31e5297fdab2faad07e08403199cab6c40c3be93154c47f3"
+    },
+    "verification/round35/canonical12/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round35/canonical12/refine_canonical12.py": {
+      "bytes": 4329,
+      "sha256": "304b062d5acaa5cc8872de64c6b25b533877afbaabab267dbbc1bfff3d5bfec5"
+    },
+    "verification/round35/canonical12/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round35/canonical12/replay_all.py": {
+      "bytes": 10305,
+      "sha256": "b271f87cdcb7e2f37b998ba8d468b43a82514976512e4fd1c5a5828f3634c6d1"
+    },
+    "verification/round35/canonical12/replay_canonical12_watch.py": {
+      "bytes": 7751,
+      "sha256": "c8ddeaa5f6aeb6b9eb13a500f605d71ea639c32d47899ef064f61294a3d3daef"
+    },
+    "verification/round35/canonical12/scan_canonical12.py": {
+      "bytes": 5664,
+      "sha256": "2a8903c96850cb1df786ea0a8209f4e341b6caec7010ba4a98fd80c7a7478c32"
+    },
+    "verification/round35/canonical12/summarize_canonical12.py": {
+      "bytes": 5030,
+      "sha256": "4c606a3a3ec30232e5b6cc3b3a30cbb1119fefeeaaf8c54d9f2aa081a1f89764"
+    },
+    "verification/round35/canonical12/verify_canonical12.py": {
+      "bytes": 14205,
+      "sha256": "07d58a59ecf29bf197b35d0749e4c84c1f469544bf41a7c37447684c729e43a2"
+    },
+    "verification/round35/canonical12/verify_length10.py": {
+      "bytes": 7190,
+      "sha256": "3a84f434ea43f39bb5e428a2e95b58d11bea7e551a598a42403c03e12c223649"
+    },
+    "verification/round35/canonical12/verify_two_blocks.py": {
+      "bytes": 6154,
+      "sha256": "a92ad32bdfe054205c9631230ab701fd06c64b9912c11df3cae4d28f3305159b"
+    },
+    "verification/round35/cubic_structure/reviews/audit_cubic_residue_boundaries.py": {
+      "bytes": 4724,
+      "sha256": "ca50a5ea3e2365838d1b67ebe3ba26acd3a7c4822949bfcaaf808cb7ac631b83"
+    },
+    "verification/round35/cubic_structure/reviews/audit_length13_counts.py": {
+      "bytes": 5041,
+      "sha256": "0268c4589ae0a93362ed2a471fd3cb14002027a202b20a951eb87b224bab0fcd"
+    },
+    "verification/round35/cubic_structure/reviews/audit_tail_row_domain_controls.py": {
+      "bytes": 4477,
+      "sha256": "08e562683b609fcb9cc4d82428e8869b1c47b9723c46382057c8a93c1b71235f"
+    },
+    "verification/round35/cubic_structure/reviews/verify_cubic_tail_row_domains.py": {
+      "bytes": 12484,
+      "sha256": "9f4e2cbf7ee0512ffc227c1d88c68aa27b2d004063f6182f23853b3a7719a6e9"
+    },
+    "verification/round35/cubic_structure/verify_cubic_three_closure.py": {
+      "bytes": 13825,
+      "sha256": "8c17d1473de83ca84a92dd40eb3019d6e1e78764a493aa3f6a0ed70c82d5d572"
+    },
+    "verification/round35/cubic_structure/verify_two_cubic_coexistence.py": {
+      "bytes": 12344,
+      "sha256": "19e58cbeb714ff333f881fd5dbb7a353c50e9ff4aa2fb6f6d86e62751f4435eb"
+    },
+    "verification/round35/cubic_tail/cubic_tail_solver.py": {
+      "bytes": 7975,
+      "sha256": "a01918024a28a47c67edb9343418460cf2231ef6e47ff2736fa3ae37e38c7061"
+    },
+    "verification/round35/cubic_tail/independent/audit_tail_row_domain_controls.py": {
+      "bytes": 4477,
+      "sha256": "08e562683b609fcb9cc4d82428e8869b1c47b9723c46382057c8a93c1b71235f"
+    },
+    "verification/round35/cubic_tail/independent/verify_cubic_tail_row_domains.py": {
+      "bytes": 12484,
+      "sha256": "9f4e2cbf7ee0512ffc227c1d88c68aa27b2d004063f6182f23853b3a7719a6e9"
+    },
+    "verification/round35/cubic_tail/verify_cubic_tail_complete.py": {
+      "bytes": 6860,
+      "sha256": "88fb528b91366fab34387d3de94e8a78180c5a70b433097a5d1dbd381a89553f"
+    },
+    "verification/round35/cubic_tail/verify_cubic_type_counts.py": {
+      "bytes": 4913,
+      "sha256": "a548df8ae3a35e9f973bbbf8ae0fb0c456d495fd6c1fb06de829e3de22b91954"
+    },
+    "verification/round35/next_inputs/verify_cubic_type_counts.py": {
+      "bytes": 4913,
+      "sha256": "a548df8ae3a35e9f973bbbf8ae0fb0c456d495fd6c1fb06de829e3de22b91954"
+    },
+    "verification/round35/next_inputs/verify_length13_counts.py": {
+      "bytes": 3381,
+      "sha256": "a15b71dabd5e76809e123f5d1935892be174a037b4bc2a19ffa10458210ef622"
+    },
+    "verification/round35/structural/verify_central_remainder_geometry.py": {
+      "bytes": 7248,
+      "sha256": "5686ecf154041cc0cc134571c17efc0ca8c56cd4a175f29c041a9e5eaf1cb3a2"
+    },
+    "verification/round35/structural/verify_two_matrix_reconstruction.py": {
+      "bytes": 17274,
+      "sha256": "e320976376669c11a2f7e01906bfdc40ec05657cbf79310322a3baa3bec7a391"
+    },
+    "verification/round35/two_matrix16/audit_field_options.py": {
+      "bytes": 2808,
+      "sha256": "d4194e0f4670f4f12ddbd7aba6ca5bb1d28c969ad2a2191d51ae3f9edb59f139"
+    },
+    "verification/round35/two_matrix16/audit_matrix_and_atoms.py": {
+      "bytes": 3682,
+      "sha256": "8c6783fda6028d94cc37fcbeb9568bfb72594f5836588161c098388f4f293a1f"
+    },
+    "verification/round35/two_matrix16/audit_row_enumeration.py": {
+      "bytes": 4292,
+      "sha256": "ea70d7b7d43cf45dbd5538a582b0827945cf0e933fbfacd67feba4cf8729c1c5"
+    },
+    "verification/round35/two_matrix16/audit_word_identities.py": {
+      "bytes": 2771,
+      "sha256": "10b9c00508bd5c3dd75221e6ee17a281c675252255b9d64c81d118f82ab69b71"
+    },
+    "verification/round35/two_matrix16/cache_hygiene.py": {
+      "bytes": 949,
+      "sha256": "c39879090c2901a44baa52402535f351f1029b6374f7b0048abf06b806c926ee"
+    },
+    "verification/round35/two_matrix16/canonical_input_counts.py": {
+      "bytes": 4440,
+      "sha256": "be91e80e5f814d8c2d9bec1c023bd2cb34bc1e4616d35972e8d96aba39ff9189"
+    },
+    "verification/round35/two_matrix16/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round35/two_matrix16/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round35/two_matrix16/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round35/two_matrix16/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round35/two_matrix16/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round35/two_matrix16/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round35/two_matrix16/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round35/two_matrix16/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round35/two_matrix16/generate_inputs.py": {
+      "bytes": 2269,
+      "sha256": "380b1f4bbeef26690773cab5684ccaa5aa5aeef01b5bab0d1d498c0711345759"
+    },
+    "verification/round35/two_matrix16/generic_fields.py": {
+      "bytes": 6420,
+      "sha256": "c61fb7414dc0485641a6e0ce6deada1d7c64710de872ba24245d02bb287b1466"
+    },
+    "verification/round35/two_matrix16/inventory_rank16.py": {
+      "bytes": 6418,
+      "sha256": "5c368c3327c11b26de61a2a75fc5a1b31ea7910ea0e07a7c7e751d060d63eefc"
+    },
+    "verification/round35/two_matrix16/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round35/two_matrix16/merge_rank16.py": {
+      "bytes": 2684,
+      "sha256": "94460a9be832c56d8e659cd170ae7e7156b304433d9722a0923d315b0221b676"
+    },
+    "verification/round35/two_matrix16/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round35/two_matrix16/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round35/two_matrix16/proof_snapshot.py": {
+      "bytes": 2159,
+      "sha256": "59dd800914f829894c40fe3468a2e74448dee51ba3fabb5f79a4e08bc69f68d4"
+    },
+    "verification/round35/two_matrix16/r32_trace_forms.py": {
+      "bytes": 14407,
+      "sha256": "62a624d97e705e10388d0eedfc13e52c84375791f9673f0427723f9dc7b16c86"
+    },
+    "verification/round35/two_matrix16/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round35/two_matrix16/replay_all.py": {
+      "bytes": 2540,
+      "sha256": "045dba85bbe3bd6db580ce86bbc43fa4c20e4a4e1af0455e3685bf69b5f17a2d"
+    },
+    "verification/round35/two_matrix16/strong_certificates.py": {
+      "bytes": 3655,
+      "sha256": "bd5c4586fa9dd16bbfba249860f70e3cc3147ec21c4456db51416ff844bbcb7b"
+    },
+    "verification/round35/two_matrix16/trace_two_matrix.py": {
+      "bytes": 7792,
+      "sha256": "3a199639579032ff26826445036afe1c97b36c2b9a03c4fe926453ac444725a5"
+    },
+    "verification/round35/two_matrix16/two_matrix_rows.py": {
+      "bytes": 10521,
+      "sha256": "940aae7f90fbffc1d7107b2f4a1e27d216298af6d0dbdbf7af036d5238ec0156"
+    },
+    "verification/round35/two_matrix16/two_matrix_words.py": {
+      "bytes": 7005,
+      "sha256": "1b35b627c6f99c43f65e357f86367f6706cd5a1ef1aac39980c7635f1931e085"
+    },
+    "verification/round35/two_matrix16/verify_rank16.py": {
+      "bytes": 4903,
+      "sha256": "52145b331f4cf7207a92bffa789c5c02b658dd15067be016b07f634ab7d74d0e"
+    },
+    "verification/round35/two_matrix16/verify_trace16.py": {
+      "bytes": 2100,
+      "sha256": "afd01da74cb3fc76a3bf1693b2cfc807bce974c909033e8326e33938632f507e"
+    },
+    "verification/round36/canonical13/allocation_lift.py": {
+      "bytes": 3286,
+      "sha256": "a01342f28508acefb15348f46512da4a4e27b590257856c0cca407a13141dcea"
+    },
+    "verification/round36/canonical13/audit_canonical12_fields.py": {
+      "bytes": 3711,
+      "sha256": "574a6516b6c6ce87b8992ad9827f5c74e6fc3cbe5515b42ed6a1d15eaaedb0cb"
+    },
+    "verification/round36/canonical13/audit_canonical12_input.py": {
+      "bytes": 3063,
+      "sha256": "c968c8aab54e2430ee5fbc585159e59fca0509fc0d2763b79ab56e685a785435"
+    },
+    "verification/round36/canonical13/audit_canonical13.py": {
+      "bytes": 7950,
+      "sha256": "192bd921657aba37a09b90af7dfce2fabc97b7fcba46f8b104777402a0a52dfd"
+    },
+    "verification/round36/canonical13/audit_capacity_and_cubic.py": {
+      "bytes": 2481,
+      "sha256": "c1d8632e3744d6f50278330ccec5aa8cad06aebf18768a346bfa706552a698bd"
+    },
+    "verification/round36/canonical13/audit_central_atoms.py": {
+      "bytes": 3141,
+      "sha256": "79bd13e8362419117905e5c51a464f8a557478988c1db7d316fd580846fd1ecf"
+    },
+    "verification/round36/canonical13/audit_new_arithmetic.py": {
+      "bytes": 7259,
+      "sha256": "61ad15bb0a374056d0b30a332ed929b1dbf961c5c9da87bce9dbcbe8bfb8ad1e"
+    },
+    "verification/round36/canonical13/audit_primary_example.py": {
+      "bytes": 3179,
+      "sha256": "f404b9cba2102374d6ad222698cbd817aa51c5c7cc01acd26e88491ee33bd0ba"
+    },
+    "verification/round36/canonical13/bounded_canonical12_replay.py": {
+      "bytes": 5959,
+      "sha256": "662dbb2e96fe80cd056475d65410f5b5a5101ffca862e2031e96be3d549a1b45"
+    },
+    "verification/round36/canonical13/build_canonical12_release.py": {
+      "bytes": 10342,
+      "sha256": "0c757350e928e0c4fc9195221d2b73fb36a9bec1dd6bef1a1701b97ee00538a9"
+    },
+    "verification/round36/canonical13/build_canonical13_release.py": {
+      "bytes": 2282,
+      "sha256": "00eaad983d9875188aa188afca3df7b90e7a8fcb91abb97ac4d668e43b743784"
+    },
+    "verification/round36/canonical13/canonical11_rows.py": {
+      "bytes": 7494,
+      "sha256": "0bb0ec42ffc0b8bee27184e9b319d8ebb87602a86641a260778757e321a59e18"
+    },
+    "verification/round36/canonical13/canonical12_rows.py": {
+      "bytes": 13162,
+      "sha256": "bdadb9a1fa2daaf5e5d7c92c80d5d6638f2abcf495a280eeac2116efe9e2d874"
+    },
+    "verification/round36/canonical13/canonical12_words.py": {
+      "bytes": 3752,
+      "sha256": "86266301b9e4a9614adfbcd7a79481d73b5e06f090e8d1bbbf9194a72be8400c"
+    },
+    "verification/round36/canonical13/central_atom13.py": {
+      "bytes": 5066,
+      "sha256": "429ffa7695eed8e1952f72a1433ad996f84f08bf4becc90a52f0171bb0e0b8aa"
+    },
+    "verification/round36/canonical13/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "5ff19aa5f964707524e9a6d2b15a71ecc9cd51b36f3929b91597a5ccfc23281d"
+    },
+    "verification/round36/canonical13/cubic_trace_gate.py": {
+      "bytes": 1981,
+      "sha256": "fe1797c1d98e79a4a479da7537c48c1807cbe420b240b2653177bc973222d5bb"
+    },
+    "verification/round36/canonical13/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round36/canonical13/enumerate_canonical12.py": {
+      "bytes": 5377,
+      "sha256": "1b7a195146c00c1af6c47721c4ee2853280a584e6283c6b521a6a44c5ac9813b"
+    },
+    "verification/round36/canonical13/enumerate_canonical13.py": {
+      "bytes": 5812,
+      "sha256": "c1bf74c570af9ef9123beaff2ec2ac316f6b672d24efe1550a2a0ba7f48d7c8d"
+    },
+    "verification/round36/canonical13/exact_certificate_checks.py": {
+      "bytes": 1669,
+      "sha256": "c9aa9be745bc018b9250b7e4e658abbd3920a160d7d30e4201ecdefc92332b49"
+    },
+    "verification/round36/canonical13/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round36/canonical13/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round36/canonical13/finalize_canonical13.py": {
+      "bytes": 7549,
+      "sha256": "732f5c61bcfec7086ad4f26daddad9926331e90a8afea8499e7434423abf2b42"
+    },
+    "verification/round36/canonical13/finalize_canonical_length13.py": {
+      "bytes": 19204,
+      "sha256": "8a75e9838208969ce288a10890b03eee0839ba75a43dcbd8a77cfb81975d8396"
+    },
+    "verification/round36/canonical13/fixed_field_rows.py": {
+      "bytes": 6543,
+      "sha256": "99a744e7ce796ba6bf8ccd360ba1821aa4a7148541f80d075dfcb46c172c1b5f"
+    },
+    "verification/round36/canonical13/fixed_lattice.py": {
+      "bytes": 2285,
+      "sha256": "2c5e51e8dbcd472e78d241e3b80ab2ce5e56d15e522cdebcac15bc30aeb19094"
+    },
+    "verification/round36/canonical13/gap_filter.py": {
+      "bytes": 6738,
+      "sha256": "c3383b8b03cb498bfee29d422b76c7f40af374c73237688638344ccb68fa39af"
+    },
+    "verification/round36/canonical13/generic_fields.py": {
+      "bytes": 6420,
+      "sha256": "c61fb7414dc0485641a6e0ce6deada1d7c64710de872ba24245d02bb287b1466"
+    },
+    "verification/round36/canonical13/integer_spectrum.py": {
+      "bytes": 1326,
+      "sha256": "2fc14556e0656aba5070c11dbd92af6bb273260a391a26e19402e30386b41ac3"
+    },
+    "verification/round36/canonical13/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round36/canonical13/odd_rational_forms.py": {
+      "bytes": 3411,
+      "sha256": "5d7df8d17124cfc5ed2995971ed26ce19b221c6e3ce231a019b984bb46793d72"
+    },
+    "verification/round36/canonical13/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round36/canonical13/power_trace_filter.py": {
+      "bytes": 4178,
+      "sha256": "93f018c29c9aa8fadae983ef5a781e4900cc368a26d15f5f190d21f4b8ca2abd"
+    },
+    "verification/round36/canonical13/probe_length11.py": {
+      "bytes": 4410,
+      "sha256": "046013fc624ece24204207d5000a94876e1d1069b81fbad0a165d25a2506a445"
+    },
+    "verification/round36/canonical13/propose_certificates.py": {
+      "bytes": 1778,
+      "sha256": "89d68541a55a46cc31e5297fdab2faad07e08403199cab6c40c3be93154c47f3"
+    },
+    "verification/round36/canonical13/r32_trace_forms.py": {
+      "bytes": 15076,
+      "sha256": "bbf61ed2be84459a6d01f188a9fc277a850b5f55855ef9853d0a6f1c62465979"
+    },
+    "verification/round36/canonical13/refine_canonical12.py": {
+      "bytes": 4329,
+      "sha256": "304b062d5acaa5cc8872de64c6b25b533877afbaabab267dbbc1bfff3d5bfec5"
+    },
+    "verification/round36/canonical13/refine_canonical13.py": {
+      "bytes": 2366,
+      "sha256": "fe5ab61218bbf6ef56fa90e06477e645122368c8ecfa4347c6a4b02e23af1b50"
+    },
+    "verification/round36/canonical13/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round36/canonical13/replay_all.py": {
+      "bytes": 10305,
+      "sha256": "b271f87cdcb7e2f37b998ba8d468b43a82514976512e4fd1c5a5828f3634c6d1"
+    },
+    "verification/round36/canonical13/replay_all13.py": {
+      "bytes": 6533,
+      "sha256": "a8c1a60831fff5c67233d49f4ac2682db364f331de32bf54018bba8bcd9c30b7"
+    },
+    "verification/round36/canonical13/replay_canonical12_watch.py": {
+      "bytes": 7751,
+      "sha256": "c8ddeaa5f6aeb6b9eb13a500f605d71ea639c32d47899ef064f61294a3d3daef"
+    },
+    "verification/round36/canonical13/run_odd13.py": {
+      "bytes": 2623,
+      "sha256": "03c2afd8dea4476ea131e3c0c069293fbe34ad31c59341ddc746d3543edfdc7e"
+    },
+    "verification/round36/canonical13/scan_canonical12.py": {
+      "bytes": 5664,
+      "sha256": "2a8903c96850cb1df786ea0a8209f4e341b6caec7010ba4a98fd80c7a7478c32"
+    },
+    "verification/round36/canonical13/scan_canonical13.py": {
+      "bytes": 5487,
+      "sha256": "106c55f16058ed3171b28b5ec9f1e15e2cfca499753498d33a09368a48e31902"
+    },
+    "verification/round36/canonical13/scan_small_central13.py": {
+      "bytes": 2267,
+      "sha256": "74d422fe329045052471c81bffb84c751c07d9d4c5616d7b7f5ba79069a5395c"
+    },
+    "verification/round36/canonical13/small_central13.py": {
+      "bytes": 4129,
+      "sha256": "d1727bbeadc5292dc2b071c968933e75388b34e3a571e29dce50fbc48b145d5b"
+    },
+    "verification/round36/canonical13/summarize_canonical12.py": {
+      "bytes": 5030,
+      "sha256": "4c606a3a3ec30232e5b6cc3b3a30cbb1119fefeeaaf8c54d9f2aa081a1f89764"
+    },
+    "verification/round36/canonical13/verify_canonical12.py": {
+      "bytes": 14205,
+      "sha256": "07d58a59ecf29bf197b35d0749e4c84c1f469544bf41a7c37447684c729e43a2"
+    },
+    "verification/round36/canonical13/verify_canonical13.py": {
+      "bytes": 10969,
+      "sha256": "e1812e0ed6f3e40ccfcf26ec3dcdcfd09d2130ebe8516f49c3a5ebd3afd21613"
+    },
+    "verification/round36/canonical13/verify_length10.py": {
+      "bytes": 7190,
+      "sha256": "3a84f434ea43f39bb5e428a2e95b58d11bea7e551a598a42403c03e12c223649"
+    },
+    "verification/round36/canonical13/verify_two_blocks.py": {
+      "bytes": 6154,
+      "sha256": "a92ad32bdfe054205c9631230ab701fd06c64b9912c11df3cae4d28f3305159b"
+    },
+    "verification/round36/canonical13/write_canonical13_notes.py": {
+      "bytes": 10663,
+      "sha256": "aed5a72d9c44b1e0ed43edd826f85604d05c68856be2020a17d4914ab8f4c603"
+    },
+    "verification/round36/cubic_structure/audit_cubic_four_e11_A.py": {
+      "bytes": 2631,
+      "sha256": "9be6d94f13a67fef46d6eaebe643b8f4c4196b756676185ca1a4ace650ada3d4"
+    },
+    "verification/round36/cubic_structure/audit_cubic_four_e3.py": {
+      "bytes": 1618,
+      "sha256": "867e3a1ef0776701df33b81a253bd234c750c4bff1525aa8d9d1004745e2aa28"
+    },
+    "verification/round36/cubic_structure/audit_cubic_four_e4.py": {
+      "bytes": 2129,
+      "sha256": "eec0b338e6924f00dacffd92dbc075f90b581515ddceddd82c2d2c4eacc6327c"
+    },
+    "verification/round36/cubic_structure/audit_cubic_four_negative.py": {
+      "bytes": 5172,
+      "sha256": "bfda6e2bf5b4c17c99499b921f5720640882f1fb077c21d4294318ff596967c5"
+    },
+    "verification/round36/cubic_structure/audit_orthogonal_six.py": {
+      "bytes": 8112,
+      "sha256": "dc483a8e024a5674936466b53ec9bffbcebfcb2ee0d3790e15ee09c129df90bb"
+    },
+    "verification/round36/cubic_structure/audit_orthogonal_six_refinement.py": {
+      "bytes": 3792,
+      "sha256": "6bc792617436dca8341cb5cdcf495e8367082a7412a5ffc5a9e2fab3adf0e11d"
+    },
+    "verification/round36/cubic_structure/cubic_four_e11_A.py": {
+      "bytes": 3418,
+      "sha256": "97beb5fae878a8477ab93503628992514e1f13ae85d86acfe7ec4779c0f859b4"
+    },
+    "verification/round36/cubic_structure/cubic_four_e11_B.py": {
+      "bytes": 5915,
+      "sha256": "3ae638859da257c7e12ec0f31403b1a5b6ad3f6d38407bf47ee1b846ffa014bb"
+    },
+    "verification/round36/cubic_structure/cubic_four_e3.py": {
+      "bytes": 1482,
+      "sha256": "103fd843dd4c86dade40e3dcb7ddde0cf066fc529982b0d382c88f9fc4943bec"
+    },
+    "verification/round36/cubic_structure/cubic_four_e4.py": {
+      "bytes": 1989,
+      "sha256": "a60ebb0353e0e2733d30b224453769bc7dddb206ef961422f938c2991b3692f9"
+    },
+    "verification/round36/cubic_structure/cubic_four_negative.py": {
+      "bytes": 5509,
+      "sha256": "1993ceaa4c4623554fed36c055c458abb84d3dd988bd88f8e0a5b059afee6449"
+    },
+    "verification/round36/cubic_structure/orthogonal_six_catalogue.py": {
+      "bytes": 10263,
+      "sha256": "53104bb163bb21867e684dfbd5150b7a68dcf331160c04a322064c0b3c78c20c"
+    },
+    "verification/round36/cubic_structure/replay_cubic_structure.py": {
+      "bytes": 2270,
+      "sha256": "e1d7ee9974d7f3418f9b6960fae24c263c9ad3fcad99a8c6d83d1bd177353a8f"
+    },
+    "verification/round36/one_matrix16/audit_complete_E16.py": {
+      "bytes": 9311,
+      "sha256": "5ee5de61dd0aa0697cdd680e958f9393b29578e0c74cf5d03c3bc067a6c58aea"
+    },
+    "verification/round36/one_matrix16/audit_f8_perron16.py": {
+      "bytes": 2127,
+      "sha256": "8234c5499cffc1647b50e1e767229039f9f6e73fc5c7674ec90d0900a2547645"
+    },
+    "verification/round36/one_matrix16/audit_fields16.py": {
+      "bytes": 3571,
+      "sha256": "5dd76fcfb3a6918f4c458d0e56e046464fa8e32f440b21fd6d635ed5fab09a34"
+    },
+    "verification/round36/one_matrix16/audit_refinement16.py": {
+      "bytes": 3718,
+      "sha256": "6adb96af6d640039cbd26df53cced52ab88e950c7f33594fb324bb06cfe8e4fd"
+    },
+    "verification/round36/one_matrix16/audit_refinement_mass_cache16.py": {
+      "bytes": 3413,
+      "sha256": "e56fc52a7a13a59e6c204199e671eb044600dcf82231c423fdcac23579703052"
+    },
+    "verification/round36/one_matrix16/audit_row_kernel16.py": {
+      "bytes": 3727,
+      "sha256": "98f50a6ac86ce245a86b4ab7152afb9ca12c2ac7e6755ef60b7f6c3eec6186e2"
+    },
+    "verification/round36/one_matrix16/batch_refinement_prefix16.py": {
+      "bytes": 3214,
+      "sha256": "1f246695a7c78b5750cd157304e1d723a3e917c2ec2a110f4bd0e325fc8c8398"
+    },
+    "verification/round36/one_matrix16/batch_rows16.py": {
+      "bytes": 4090,
+      "sha256": "47955f5ab87a14f61d306eaed9c15674b69efe8d67e4fc9b4513e5b08b559fd6"
+    },
+    "verification/round36/one_matrix16/bounded_remainder.py": {
+      "bytes": 12130,
+      "sha256": "3cf049f9ae1ffe809d0ffd96d35e89edd5e820e9893a4cbe25b161f5dabb62cd"
+    },
+    "verification/round36/one_matrix16/build_release_manifest16.py": {
+      "bytes": 5506,
+      "sha256": "dd40c2eff1b2967b73a5aeef15e56664e66592740269f26fe7a5efa9a2516e06"
+    },
+    "verification/round36/one_matrix16/context16.py": {
+      "bytes": 2088,
+      "sha256": "86ed779711b05d43170fef482d6f3fee4cc61bbf373f5957917e1e8178d32de3"
+    },
+    "verification/round36/one_matrix16/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "e93a5a2e494f19fed7f23ea3a31ed8d1ed5183dd06245199e2d5470d09465bd7"
+    },
+    "verification/round36/one_matrix16/derive_inputs16.py": {
+      "bytes": 4388,
+      "sha256": "1844d805d858db86eb8f5a6916962b03997f1fc67e4924bbdcb06536928ea85b"
+    },
+    "verification/round36/one_matrix16/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round36/one_matrix16/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round36/one_matrix16/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round36/one_matrix16/finish_reduction16.py": {
+      "bytes": 10242,
+      "sha256": "281c3972a8b5f6f92fd8f2cc0d5ef0fe5aeb230c36d628c7ff16466a9c14f11c"
+    },
+    "verification/round36/one_matrix16/fixed_field_rows.py": {
+      "bytes": 13590,
+      "sha256": "195f3924c6ddb914f9c8735ad12e62622eded93d00f050507726d62874c578b5"
+    },
+    "verification/round36/one_matrix16/fixed_field_rows_original.py": {
+      "bytes": 12131,
+      "sha256": "b7f9e5c1d04a94b73d53dcd3f406398483dc3d165dc540e3d8083453fe874065"
+    },
+    "verification/round36/one_matrix16/fixed_lattice.py": {
+      "bytes": 2767,
+      "sha256": "2f1f66fcfdccf44286edcc36e2f1688a24e1763ba4bf19d36721db2cda8db444"
+    },
+    "verification/round36/one_matrix16/gap_filter.py": {
+      "bytes": 6903,
+      "sha256": "9cd0e5424bb30948ce37fe4ce38272cc6adb1ac679f090bd8c078c539645490c"
+    },
+    "verification/round36/one_matrix16/generate_input16.py": {
+      "bytes": 1869,
+      "sha256": "b2059f15eaaa0197b69ca2ac1174d7caa2dee7450e3f9c59a70ef3cdc4a97419"
+    },
+    "verification/round36/one_matrix16/generic_fields.py": {
+      "bytes": 6473,
+      "sha256": "9a62396c7d42d393d3d962b307c1f0b4fea330860fc8ab7a59275a9bd9e470d8"
+    },
+    "verification/round36/one_matrix16/imaginary_quadratic_gate.py": {
+      "bytes": 2682,
+      "sha256": "ffc40e246a1af902a8f4e7223a830a40696e76877040c93677b8f874b2bcd3d5"
+    },
+    "verification/round36/one_matrix16/linear_field_gate.py": {
+      "bytes": 2266,
+      "sha256": "162ab89ea08893659f43ca9bc38018561e295b644e49c3b8e86e9edb6facc399"
+    },
+    "verification/round36/one_matrix16/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round36/one_matrix16/matrix_spectral_filter.py": {
+      "bytes": 4028,
+      "sha256": "11c63774814875458e3a65bb13972012d9014d160e996904b2a6184094009187"
+    },
+    "verification/round36/one_matrix16/merge_trace_replay16.py": {
+      "bytes": 1449,
+      "sha256": "f0b4f9651d668e50507ec727d75a9871d0317c22fc8395df16518c4c122d828b"
+    },
+    "verification/round36/one_matrix16/mixed_trace_filter.py": {
+      "bytes": 3916,
+      "sha256": "0b25c962cc83b43e763392b5cb866db87a7a87260ae1c55548b56ca487999bc6"
+    },
+    "verification/round36/one_matrix16/norm_word_filter.py": {
+      "bytes": 4011,
+      "sha256": "291662538d4f05b8cb78c3b419e7d538c6e5bc4333b6b2b43e6d65d7267971fe"
+    },
+    "verification/round36/one_matrix16/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round36/one_matrix16/orthogonal_six_catalogue.py": {
+      "bytes": 10263,
+      "sha256": "53104bb163bb21867e684dfbd5150b7a68dcf331160c04a322064c0b3c78c20c"
+    },
+    "verification/round36/one_matrix16/post_trace_columns16.py": {
+      "bytes": 1084,
+      "sha256": "33dde14d1f7090b4b6bce1d847a718371a1b6181ba6041ab7d60b35d23bf895e"
+    },
+    "verification/round36/one_matrix16/power_trace_filter.py": {
+      "bytes": 4684,
+      "sha256": "ec2ae6b828e08b346756c17fb0e5dbaf34ca84ca1bf8a49334965a71103d8e19"
+    },
+    "verification/round36/one_matrix16/prepare_refinement_prefix16.py": {
+      "bytes": 2974,
+      "sha256": "46f767d93fcc5ace8c4c08a07c0ba898160ed4544f8ad54e5bf2ce6c5857cf00"
+    },
+    "verification/round36/one_matrix16/quadratic_character_gate.py": {
+      "bytes": 2301,
+      "sha256": "e9c74b46d373650c1a64e7016b7c0938cc509c14d3814f8f382e32a65c3bc78d"
+    },
+    "verification/round36/one_matrix16/r32_trace_forms.py": {
+      "bytes": 14543,
+      "sha256": "98017f163973eba8fe9d9fbc23c9d22b1559ae3afb96316d8c77a2f8ed422bc9"
+    },
+    "verification/round36/one_matrix16/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round36/one_matrix16/refinement_mass_cache16.py": {
+      "bytes": 1503,
+      "sha256": "881ae9821d65e1eb6303409f2b7487c9833619cb0da24ece70bfc15c380357dc"
+    },
+    "verification/round36/one_matrix16/repair_interrupted_batches16.py": {
+      "bytes": 2162,
+      "sha256": "eac1d6aea05a748d0784c2078070e49330e9dd99b8eb45ac012a8e13fe2e6f6a"
+    },
+    "verification/round36/one_matrix16/replay_release16.py": {
+      "bytes": 8119,
+      "sha256": "854480bed6d3c46e69496ede7c161e654b8a8b1e3cc7413d18f208dc02d5480c"
+    },
+    "verification/round36/one_matrix16/row_engine16.py": {
+      "bytes": 10787,
+      "sha256": "9af50f5de0699b83ec9a70807ecf1c7dd5595addafcf703630a99780dbfe0d67"
+    },
+    "verification/round36/one_matrix16/run_refinement16.py": {
+      "bytes": 7036,
+      "sha256": "57fdfe815549cb8cff1c5f00d632fec054ae944f0cf473baf2fef886290be3c3"
+    },
+    "verification/round36/one_matrix16/run_refinement_cached16.py": {
+      "bytes": 1815,
+      "sha256": "be6f48c5db1d0b6ef1f776a64397ecc3da21cac92a2c3cb0ca56bd038594eb43"
+    },
+    "verification/round36/one_matrix16/run_rows16.py": {
+      "bytes": 4460,
+      "sha256": "e504e004f9a6312e4a7e6a52a808ef3e713d98ff62881563f9e90d7a55fcde12"
+    },
+    "verification/round36/one_matrix16/run_trace16.py": {
+      "bytes": 5121,
+      "sha256": "218dfe5dc37b0a748462846fd627535eb8712b7a8a6253bd6eae4ccecbef4c77"
+    },
+    "verification/round36/one_matrix16/trace_rank15.py": {
+      "bytes": 9503,
+      "sha256": "dbebdd9d0a58feef6f301527fd481ea446ce38cf16f5c686cdec21af38e0c379"
+    },
+    "verification/round36/one_matrix16/trace_rank16.py": {
+      "bytes": 9127,
+      "sha256": "84cd26b4b15014ef157b2672c7e31638ff1e3f7c2cd7a2439e330d1f5893871e"
+    },
+    "verification/round36/one_matrix16/trace_signature16.py": {
+      "bytes": 2889,
+      "sha256": "5cd393f984ac68f6ceac878e242b5fafbd1910221e394f99a68a690d0f313fc1"
+    },
+    "verification/round36/one_matrix16/verify_rows16.py": {
+      "bytes": 7039,
+      "sha256": "1a1845be7bdcb0246c9c53a915cb49d133416ee26e835cb33d39fa1a2a553fcc"
+    },
+    "verification/round36/one_matrix16/verify_trace16.py": {
+      "bytes": 3301,
+      "sha256": "bcd3d9147a2dabff864dcbf3506a0541c8bb36e68380e151ceaf8d6554cc8ffe"
+    },
+    "verification/round36/one_matrix16/write_final_docs16.py": {
+      "bytes": 13563,
+      "sha256": "0612cc86597d9c54b92ef26394a80280b370ceeaab6cca3990057eb35231301b"
+    },
+    "verification/round36/structural/audit_cubic_four_B_and_pre_w.py": {
+      "bytes": 7291,
+      "sha256": "778fbf719b865a652968057191b8696a5dbf24c102386e52bce3079763fd2a5a"
+    },
+    "verification/round36/structural/audit_orthogonal_E_mass.py": {
+      "bytes": 8717,
+      "sha256": "0dd5020c0b88777f4e4681ce70dba5d5e7b13ba8eaea122a89b753ad52d7fc42"
+    },
+    "verification/round36/structural/cubic_four_pre_w.py": {
+      "bytes": 6207,
+      "sha256": "b04ea6bea85bf3ab18f62c52398ad8260da3e5f3fa27d85e6af6ba0f28133e20"
+    },
+    "verification/round36/structural/review_orthogonal_E_cone.py": {
+      "bytes": 10959,
+      "sha256": "726b8ceb5ac8525214527f0d111b4f2654029e4c6ec2862bbd748b6b2efe19e3"
+    },
+    "verification/round36/structural/review_refinement16.py": {
+      "bytes": 13044,
+      "sha256": "f9112bfc638503512f2b4719f2cfc06eb8d574deadd769ce94f6d5312f9c40a9"
+    },
+    "verification/round36/structural/review_refinement_cache16.py": {
+      "bytes": 12253,
+      "sha256": "7ca6194a5418506492a6d8fa8db436545d5d0169b9705ce5557b333e7950b792"
+    },
+    "verification/round36/structural/symplectic_profiles.py": {
+      "bytes": 6124,
+      "sha256": "25beb5ba0c4d3fc785d6ef685f11c1d3763288526ea253d0fe3e7e7d2e24c2c0"
+    },
+    "verification/round36/structural/verify_orthogonal_E_cone.py": {
+      "bytes": 7174,
+      "sha256": "c2a1ccae25e0084dafb45387998936fecada500def823feaa434a812400ad3ee"
+    },
+    "verification/round36/structural/verify_symplectic_profiles.py": {
+      "bytes": 4721,
+      "sha256": "931dec6681e417ffaab1c4252dbeef5486ffe6289923df52c0dbfe1b4a07d353"
+    },
+    "verification/round36/structural/verify_symplectic_spectrum.py": {
+      "bytes": 4895,
+      "sha256": "e7a296eff875cb70c9cb314e7a14aa7724c5770d9cc3b9eb3f9f60baea8fcb05"
+    },
+    "verification/round36_revision/accounting/validate_final_accounting.py": {
+      "bytes": 27566,
+      "sha256": "e0f3e3e970679f8044e7d22092cf7e79769959ed81d5dce537a0cb1fa73ee624"
+    },
+    "verification/round36_revision/attachment/rank16_corner_parity_audit/aligned_corner.py": {
+      "bytes": 1857,
+      "sha256": "397ccd007a3f370b517d2b1c09217e0599a50fc079a872a00e8816d303cb4611"
+    },
+    "verification/round36_revision/attachment/rank16_corner_parity_audit/base.py": {
+      "bytes": 1573,
+      "sha256": "afbe383adde4d81ebd77cc27453a77229438c829016bf449e0881574a96180b8"
+    },
+    "verification/round36_revision/attachment/rank16_corner_parity_audit/benchmark.py": {
+      "bytes": 1323,
+      "sha256": "c7a99d95966fe3b06972858569398ad2231829df8d2cb02da1158bc6c3090b83"
+    },
+    "verification/round36_revision/attachment/rank16_corner_parity_audit/cheap_gates.py": {
+      "bytes": 1038,
+      "sha256": "e1b5c4f4fec66855fa98504531babb9b5b14f44a4aa7460e8fbe268354040cb4"
+    },
+    "verification/round36_revision/attachment/rank16_corner_parity_audit/checkpoint_audit.py": {
+      "bytes": 2043,
+      "sha256": "d25b866103dc7cce7d759494c6196ae7a634e34c8c2794303dd3bb49de2850d7"
+    },
+    "verification/round36_revision/backend_independent_audits/audit_complete_small_field_pools.py": {
+      "bytes": 8040,
+      "sha256": "8adb503f028fb5cd652bc1ff99a843f3eb1a3552d5bdc7d838208eb524b46d7b"
+    },
+    "verification/round36_revision/backend_independent_audits/audit_fixed_clique_completion.py": {
+      "bytes": 6991,
+      "sha256": "65680e70a83213e924a0c98c3c28e74437205170504a3e18b73f8fc5b2f72ad0"
+    },
+    "verification/round36_revision/corner/aligned_gate.py": {
+      "bytes": 3682,
+      "sha256": "a5a21841aebac6ecadb77b6fa63acf7f086b25b3ce45cd9b631376d6c5a85860"
+    },
+    "verification/round36_revision/corner/attachment_replay/aligned_corner.py": {
+      "bytes": 1857,
+      "sha256": "397ccd007a3f370b517d2b1c09217e0599a50fc079a872a00e8816d303cb4611"
+    },
+    "verification/round36_revision/corner/attachment_replay/base.py": {
+      "bytes": 1573,
+      "sha256": "afbe383adde4d81ebd77cc27453a77229438c829016bf449e0881574a96180b8"
+    },
+    "verification/round36_revision/corner/attachment_replay/benchmark.py": {
+      "bytes": 1323,
+      "sha256": "c7a99d95966fe3b06972858569398ad2231829df8d2cb02da1158bc6c3090b83"
+    },
+    "verification/round36_revision/corner/attachment_replay/cheap_gates.py": {
+      "bytes": 1038,
+      "sha256": "e1b5c4f4fec66855fa98504531babb9b5b14f44a4aa7460e8fbe268354040cb4"
+    },
+    "verification/round36_revision/corner/attachment_replay/checkpoint_audit.py": {
+      "bytes": 2043,
+      "sha256": "d25b866103dc7cce7d759494c6196ae7a634e34c8c2794303dd3bb49de2850d7"
+    },
+    "verification/round36_revision/corner/audit_corner_controls.py": {
+      "bytes": 3910,
+      "sha256": "7b25c5af82572ba08800ae376e54bf2142a762048485aac5efe11b854a6ec712"
+    },
+    "verification/round36_revision/corner/audit_corner_sweep.py": {
+      "bytes": 14885,
+      "sha256": "508ef76c64a9c8d4febfcafa9747792c683df4c2ebb6c02a5cfe4cffdafd310e"
+    },
+    "verification/round36_revision/corner/audit_frobenius_sweep.py": {
+      "bytes": 10072,
+      "sha256": "d83efe2eb93a0fea8614b020f9f7f790eddacd9021aebd78ed3e420dcc34221d"
+    },
+    "verification/round36_revision/corner/audit_normalization.py": {
+      "bytes": 3907,
+      "sha256": "bc42296865cbd234667d0885f3ba2c9ec7a57226b8fe699e581a3367ed26d96a"
+    },
+    "verification/round36_revision/corner/corner_extension.py": {
+      "bytes": 3877,
+      "sha256": "dc3e2bbadc5d45a6bdcfb165e41aa4b0dbc6f8bb07e6bd671ca7f2b20382e505"
+    },
+    "verification/round36_revision/corner/corner_gate.py": {
+      "bytes": 10353,
+      "sha256": "2dffd8f95e130457779ff62fd73693f5ffc3823b0435efbd7707456c69e6b97d"
+    },
+    "verification/round36_revision/corner/export_frobenius_targets.py": {
+      "bytes": 3819,
+      "sha256": "f98f823132598333e9bc2b17223ef6256445e823b40965bf650f599492c1cda4"
+    },
+    "verification/round36_revision/corner/export_symplectic_targets.py": {
+      "bytes": 3038,
+      "sha256": "e43cea26093769c8275dabaccc797f00890ef01e79630d5828f181c58124a562"
+    },
+    "verification/round36_revision/corner/normalize_open.py": {
+      "bytes": 8958,
+      "sha256": "81787cf534288fd93e8225598f47f5bad6b2f0849c0973255d61ec5d405ad159"
+    },
+    "verification/round36_revision/corner/reproduce_attachment.py": {
+      "bytes": 3453,
+      "sha256": "890e285a5f1454f73ebfc9b73bff1bdedc87dff1dde6e751a7645f427e422768"
+    },
+    "verification/round36_revision/corner/run_corner_sweep.py": {
+      "bytes": 7719,
+      "sha256": "29930cb21a89d826198aeb6ceb89e8570e9233ffd6fdf974bf80b831b314d5e0"
+    },
+    "verification/round36_revision/corner/run_frobenius_sweep.py": {
+      "bytes": 6678,
+      "sha256": "9fec7f39d08fdca33d1a2badaf872958208f0317c5b644117295f590653e2cc6"
+    },
+    "verification/round36_revision/local_explorer/alignment.py": {
+      "bytes": 33399,
+      "sha256": "018460b65159571e3caea8aac1e884292f9cbae16ff74310f79c9d18d2c00062"
+    },
+    "verification/round36_revision/local_explorer/arithmetic.py": {
+      "bytes": 8138,
+      "sha256": "ca9394e942b677ec56e1a321872db0bb6cee1ed3bf637af5d683eb945dcb88a5"
+    },
+    "verification/round36_revision/local_explorer/audit_fixed_clique_completion.py": {
+      "bytes": 6898,
+      "sha256": "f42a0178fe4c3fc2e526d2f67f66590fc91e50f04d26d04807777385e4559384"
+    },
+    "verification/round36_revision/local_explorer/audit_known_row_pools.py": {
+      "bytes": 6918,
+      "sha256": "adc68234b37196008b8dbef97ce94cc50e5d3b7b55b8061b5f9127f93271f986"
+    },
+    "verification/round36_revision/local_explorer/audit_target_pair_graph.py": {
+      "bytes": 5782,
+      "sha256": "139d536423696ba5f2843d66362518ca232770cac8f3ccfff56555f217108603"
+    },
+    "verification/round36_revision/local_explorer/backend_fixtures.py": {
+      "bytes": 5596,
+      "sha256": "23a78217becfd5dff6fd7cf5093d9699e1bd599b0db09cccc869edb8d02679bf"
+    },
+    "verification/round36_revision/local_explorer/backend_runs.py": {
+      "bytes": 11114,
+      "sha256": "9cccd9076bd532d2bd44e299979d2196cdce1bfb015c3476626be989f63a13ac"
+    },
+    "verification/round36_revision/local_explorer/backend_selftest.py": {
+      "bytes": 13017,
+      "sha256": "4515c0af43a2a38539d3aaaffb2752d56eceb5c8ddeb5dfb210e45b776380f32"
+    },
+    "verification/round36_revision/local_explorer/backend_worker.py": {
+      "bytes": 6257,
+      "sha256": "30428674c8a14946eb38ee91b0f20dc4541b0231f7c601264b192839c96caa74"
+    },
+    "verification/round36_revision/local_explorer/benchmark_arithmetic.py": {
+      "bytes": 5624,
+      "sha256": "7b10f7da3522ce156f7a21b5ca14f7101862d5c62d895af8e156c9219053ffe1"
+    },
+    "verification/round36_revision/local_explorer/benchmark_worker.py": {
+      "bytes": 1703,
+      "sha256": "de74051efceeeefbabb4361e665f39020bd12aac2dc9097942c50fea333e1421"
+    },
+    "verification/round36_revision/local_explorer/catalogue.py": {
+      "bytes": 6003,
+      "sha256": "a57c25ad7553d4f5b0c84cdc0bebe2bfbf249e23c3f721bbb17b432ccc88736c"
+    },
+    "verification/round36_revision/local_explorer/common.py": {
+      "bytes": 1539,
+      "sha256": "19505dacb611c1dd701bf66502566d2fb28b1b01fa0fa678acc1531d23374e69"
+    },
+    "verification/round36_revision/local_explorer/compositions.py": {
+      "bytes": 5590,
+      "sha256": "10eb357a8e018ce5cc266b6769d5090dd7d215a214308ae54d2e4a06fa5ab599"
+    },
+    "verification/round36_revision/local_explorer/corner_extension.py": {
+      "bytes": 3877,
+      "sha256": "dc3e2bbadc5d45a6bdcfb165e41aa4b0dbc6f8bb07e6bd671ca7f2b20382e505"
+    },
+    "verification/round36_revision/local_explorer/corner_gate.py": {
+      "bytes": 10353,
+      "sha256": "2dffd8f95e130457779ff62fd73693f5ffc3823b0435efbd7707456c69e6b97d"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/audit_fixed_clique_completion.py": {
+      "bytes": 6898,
+      "sha256": "f42a0178fe4c3fc2e526d2f67f66590fc91e50f04d26d04807777385e4559384"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/audit_known_row_pools.py": {
+      "bytes": 6918,
+      "sha256": "adc68234b37196008b8dbef97ce94cc50e5d3b7b55b8061b5f9127f93271f986"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/audit_target_pair_graph.py": {
+      "bytes": 5782,
+      "sha256": "139d536423696ba5f2843d66362518ca232770cac8f3ccfff56555f217108603"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/orbit_exact.py": {
+      "bytes": 13901,
+      "sha256": "83a4a98102ff86199b34acd2bf66e26a779a8c82bdada8d388e15a4112503e76"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/verifier.py": {
+      "bytes": 14679,
+      "sha256": "edae239f3adbd113e254875749d15d85e7eaa11aad2c3b49504b549c119cc8e3"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/shared/verify_known_targets.py": {
+      "bytes": 4384,
+      "sha256": "e0797bf4b22687f5fb5e76e9f06c6f4b53e80e8acd5da74e681974dafad8fc7e"
+    },
+    "verification/round36_revision/local_explorer/data/known_results/state_836343/verify_fixed_projection.py": {
+      "bytes": 6414,
+      "sha256": "f2131bd6d3ab1f3e2d7040064ebe3cca998dc827123ed49d64c015ef32f78b7f"
+    },
+    "verification/round36_revision/local_explorer/explore.py": {
+      "bytes": 14090,
+      "sha256": "16bb968b64677767b8762b72f1f5cfc756498a8261e979054bdba38dc91729c3"
+    },
+    "verification/round36_revision/local_explorer/infrastructure_selftest.py": {
+      "bytes": 15664,
+      "sha256": "8ee554cab539b650f6bb96ec15874507e2e68d97dbacfe59f22749db89392679"
+    },
+    "verification/round36_revision/local_explorer/orbit_exact.py": {
+      "bytes": 13901,
+      "sha256": "83a4a98102ff86199b34acd2bf66e26a779a8c82bdada8d388e15a4112503e76"
+    },
+    "verification/round36_revision/local_explorer/runner.py": {
+      "bytes": 23624,
+      "sha256": "abef41fb9b67c21d5b45ab6e959a0efc2ed48ea3f644aab50aa84a09d915d7aa"
+    },
+    "verification/round36_revision/local_explorer/runtime_info.py": {
+      "bytes": 978,
+      "sha256": "7a233d251a15bbcd8d473aa4df57dceac3b93cdd017e03c049a1ec90bb75b4c9"
+    },
+    "verification/round36_revision/local_explorer/storage.py": {
+      "bytes": 8465,
+      "sha256": "e79744268eae60eba76bb04525a488451a724bec2635126643d03b51054249cf"
+    },
+    "verification/round36_revision/local_explorer/target_batch.py": {
+      "bytes": 15517,
+      "sha256": "bb849301b8658a50855ec33017e6c2812c5cf1a002d7ab128485a239f90de2e9"
+    },
+    "verification/round36_revision/local_explorer/target_batch_worker.py": {
+      "bytes": 8983,
+      "sha256": "cd011589119eb1738a8484e53f8d4dcd6b300e12e63e0baee1833dacfd338c20"
+    },
+    "verification/round36_revision/local_explorer/target_pool.py": {
+      "bytes": 16042,
+      "sha256": "a0424e79262afe40e8b089da915b5ca624f2777291c954622f4bc6cddc473ca3"
+    },
+    "verification/round36_revision/local_explorer/target_search.py": {
+      "bytes": 31417,
+      "sha256": "dd2f3aac613f4d0b7c1792c85fd35185d40fc3a6cf5492708c983cb704e00ff1"
+    },
+    "verification/round36_revision/local_explorer/target_search_selftest.py": {
+      "bytes": 8030,
+      "sha256": "5a9a2d8b396be5ad9e917deb3d8dcd098832599c0b617ed99444e68258d14f2e"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_complete_E16.py": {
+      "bytes": 9311,
+      "sha256": "5ee5de61dd0aa0697cdd680e958f9393b29578e0c74cf5d03c3bc067a6c58aea"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_f8_perron16.py": {
+      "bytes": 2127,
+      "sha256": "8234c5499cffc1647b50e1e767229039f9f6e73fc5c7674ec90d0900a2547645"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_fields16.py": {
+      "bytes": 3571,
+      "sha256": "5dd76fcfb3a6918f4c458d0e56e046464fa8e32f440b21fd6d635ed5fab09a34"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_refinement16.py": {
+      "bytes": 3718,
+      "sha256": "6adb96af6d640039cbd26df53cced52ab88e950c7f33594fb324bb06cfe8e4fd"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_refinement_mass_cache16.py": {
+      "bytes": 3413,
+      "sha256": "e56fc52a7a13a59e6c204199e671eb044600dcf82231c423fdcac23579703052"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/audit_row_kernel16.py": {
+      "bytes": 3727,
+      "sha256": "98f50a6ac86ce245a86b4ab7152afb9ca12c2ac7e6755ef60b7f6c3eec6186e2"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/batch_refinement_prefix16.py": {
+      "bytes": 3214,
+      "sha256": "1f246695a7c78b5750cd157304e1d723a3e917c2ec2a110f4bd0e325fc8c8398"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/batch_rows16.py": {
+      "bytes": 4090,
+      "sha256": "47955f5ab87a14f61d306eaed9c15674b69efe8d67e4fc9b4513e5b08b559fd6"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/bounded_remainder.py": {
+      "bytes": 12130,
+      "sha256": "3cf049f9ae1ffe809d0ffd96d35e89edd5e820e9893a4cbe25b161f5dabb62cd"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/build_release_manifest16.py": {
+      "bytes": 5506,
+      "sha256": "dd40c2eff1b2967b73a5aeef15e56664e66592740269f26fe7a5efa9a2516e06"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/context16.py": {
+      "bytes": 2088,
+      "sha256": "86ed779711b05d43170fef482d6f3fee4cc61bbf373f5957917e1e8178d32de3"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/coupled_rows.py": {
+      "bytes": 5126,
+      "sha256": "e93a5a2e494f19fed7f23ea3a31ed8d1ed5183dd06245199e2d5470d09465bd7"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/derive_inputs16.py": {
+      "bytes": 4388,
+      "sha256": "1844d805d858db86eb8f5a6916962b03997f1fc67e4924bbdcb06536928ea85b"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/endpoint_core.py": {
+      "bytes": 616,
+      "sha256": "67904a9608bcdc0539f592041c13925436c8e1fa27755676645ca380ea0cd6cc"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/field_discriminant_profiles.py": {
+      "bytes": 6335,
+      "sha256": "8b1cff3c9c36dcd0f75db8d1023e2f8ea7d3bf8054d9d27f1b0ff80fd42a9dbe"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/field_power_polynomials.py": {
+      "bytes": 2370,
+      "sha256": "e7baba8c6e50f07e2569186ed94a490a6305759c1683cfb173aa75319dbba5cc"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/finish_reduction16.py": {
+      "bytes": 10242,
+      "sha256": "281c3972a8b5f6f92fd8f2cc0d5ef0fe5aeb230c36d628c7ff16466a9c14f11c"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/fixed_field_rows.py": {
+      "bytes": 13590,
+      "sha256": "195f3924c6ddb914f9c8735ad12e62622eded93d00f050507726d62874c578b5"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/fixed_field_rows_original.py": {
+      "bytes": 12131,
+      "sha256": "b7f9e5c1d04a94b73d53dcd3f406398483dc3d165dc540e3d8083453fe874065"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/fixed_lattice.py": {
+      "bytes": 2767,
+      "sha256": "2f1f66fcfdccf44286edcc36e2f1688a24e1763ba4bf19d36721db2cda8db444"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/gap_filter.py": {
+      "bytes": 6903,
+      "sha256": "9cd0e5424bb30948ce37fe4ce38272cc6adb1ac679f090bd8c078c539645490c"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/generate_input16.py": {
+      "bytes": 1869,
+      "sha256": "b2059f15eaaa0197b69ca2ac1174d7caa2dee7450e3f9c59a70ef3cdc4a97419"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/generic_fields.py": {
+      "bytes": 6473,
+      "sha256": "9a62396c7d42d393d3d962b307c1f0b4fea330860fc8ab7a59275a9bd9e470d8"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/imaginary_quadratic_gate.py": {
+      "bytes": 2682,
+      "sha256": "ffc40e246a1af902a8f4e7223a830a40696e76877040c93677b8f874b2bcd3d5"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/linear_field_gate.py": {
+      "bytes": 2266,
+      "sha256": "162ab89ea08893659f43ca9bc38018561e295b644e49c3b8e86e9edb6facc399"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/linear_field_lattice.py": {
+      "bytes": 6546,
+      "sha256": "e251b2fa32ac885611cc9b93e6eb790f04ed9d64815f1c591e726935c9c07748"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/matrix_spectral_filter.py": {
+      "bytes": 4028,
+      "sha256": "11c63774814875458e3a65bb13972012d9014d160e996904b2a6184094009187"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/merge_trace_replay16.py": {
+      "bytes": 1449,
+      "sha256": "f0b4f9651d668e50507ec727d75a9871d0317c22fc8395df16518c4c122d828b"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/mixed_trace_filter.py": {
+      "bytes": 3916,
+      "sha256": "0b25c962cc83b43e763392b5cb866db87a7a87260ae1c55548b56ca487999bc6"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/norm_word_filter.py": {
+      "bytes": 4011,
+      "sha256": "291662538d4f05b8cb78c3b419e7d538c6e5bc4333b6b2b43e6d65d7267971fe"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/orbit_pairs.py": {
+      "bytes": 6307,
+      "sha256": "a2c05c2169ebcfeaec0b7124fa2139608f14d08d739a68537e68cd8f9f41568b"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/orthogonal_six_catalogue.py": {
+      "bytes": 10263,
+      "sha256": "53104bb163bb21867e684dfbd5150b7a68dcf331160c04a322064c0b3c78c20c"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/post_trace_columns16.py": {
+      "bytes": 1084,
+      "sha256": "33dde14d1f7090b4b6bce1d847a718371a1b6181ba6041ab7d60b35d23bf895e"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/power_trace_filter.py": {
+      "bytes": 4684,
+      "sha256": "ec2ae6b828e08b346756c17fb0e5dbaf34ca84ca1bf8a49334965a71103d8e19"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/prepare_refinement_prefix16.py": {
+      "bytes": 2974,
+      "sha256": "46f767d93fcc5ace8c4c08a07c0ba898160ed4544f8ad54e5bf2ce6c5857cf00"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/quadratic_character_gate.py": {
+      "bytes": 2301,
+      "sha256": "e9c74b46d373650c1a64e7016b7c0938cc509c14d3814f8f382e32a65c3bc78d"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/r32_trace_forms.py": {
+      "bytes": 14543,
+      "sha256": "98017f163973eba8fe9d9fbc23c9d22b1559ae3afb96316d8c77a2f8ed422bc9"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/refined_rows.py": {
+      "bytes": 5044,
+      "sha256": "900a0ea69be38f5c4bbfd6ebae07571233b6cc330c9653e0f48430598dda1f24"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/refinement_mass_cache16.py": {
+      "bytes": 1503,
+      "sha256": "881ae9821d65e1eb6303409f2b7487c9833619cb0da24ece70bfc15c380357dc"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/repair_interrupted_batches16.py": {
+      "bytes": 2162,
+      "sha256": "eac1d6aea05a748d0784c2078070e49330e9dd99b8eb45ac012a8e13fe2e6f6a"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/replay_release16.py": {
+      "bytes": 8119,
+      "sha256": "854480bed6d3c46e69496ede7c161e654b8a8b1e3cc7413d18f208dc02d5480c"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/row_engine16.py": {
+      "bytes": 10787,
+      "sha256": "9af50f5de0699b83ec9a70807ecf1c7dd5595addafcf703630a99780dbfe0d67"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/run_refinement16.py": {
+      "bytes": 7036,
+      "sha256": "57fdfe815549cb8cff1c5f00d632fec054ae944f0cf473baf2fef886290be3c3"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/run_refinement_cached16.py": {
+      "bytes": 1815,
+      "sha256": "be6f48c5db1d0b6ef1f776a64397ecc3da21cac92a2c3cb0ca56bd038594eb43"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/run_rows16.py": {
+      "bytes": 4460,
+      "sha256": "e504e004f9a6312e4a7e6a52a808ef3e713d98ff62881563f9e90d7a55fcde12"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/run_trace16.py": {
+      "bytes": 5121,
+      "sha256": "218dfe5dc37b0a748462846fd627535eb8712b7a8a6253bd6eae4ccecbef4c77"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/trace_rank15.py": {
+      "bytes": 9503,
+      "sha256": "dbebdd9d0a58feef6f301527fd481ea446ce38cf16f5c686cdec21af38e0c379"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/trace_rank16.py": {
+      "bytes": 9127,
+      "sha256": "84cd26b4b15014ef157b2672c7e31638ff1e3f7c2cd7a2439e330d1f5893871e"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/trace_signature16.py": {
+      "bytes": 2889,
+      "sha256": "5cd393f984ac68f6ceac878e242b5fafbd1910221e394f99a68a690d0f313fc1"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/verify_rows16.py": {
+      "bytes": 7039,
+      "sha256": "1a1845be7bdcb0246c9c53a915cb49d133416ee26e835cb33d39fa1a2a553fcc"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/verify_trace16.py": {
+      "bytes": 3301,
+      "sha256": "bcd3d9147a2dabff864dcbf3506a0541c8bb36e68380e151ceaf8d6554cc8ffe"
+    },
+    "verification/round36_revision/local_explorer/vendor/rank16/write_final_docs16.py": {
+      "bytes": 13563,
+      "sha256": "0612cc86597d9c54b92ef26394a80280b370ceeaab6cca3990057eb35231301b"
+    },
+    "verification/round36_revision/local_explorer/vendor_rank16.py": {
+      "bytes": 2085,
+      "sha256": "619ce61a47c13a2126dd3a52116f76158e929ed220c4d44122558ea508500d3b"
+    },
+    "verification/round36_revision/local_explorer/verifier.py": {
+      "bytes": 14679,
+      "sha256": "edae239f3adbd113e254875749d15d85e7eaa11aad2c3b49504b549c119cc8e3"
+    },
+    "verification/round36_revision/local_explorer/verify_known_targets.py": {
+      "bytes": 4384,
+      "sha256": "e0797bf4b22687f5fb5e76e9f06c6f4b53e80e8acd5da74e681974dafad8fc7e"
+    },
+    "verification/round36_revision/local_explorer/version.py": {
+      "bytes": 178,
+      "sha256": "c1683062c0c9c2189241e06054eab6120fdf7bd6bcd14c0287228618466f4f98"
+    },
+    "verification/round36_revision/local_explorer/worker.py": {
+      "bytes": 12909,
+      "sha256": "f8890f26a3e1003c230b6a854479859b0e8afa62299dae1ad2ff7d8ff96464cd"
+    },
+    "verification/round36_revision/proof_audit/audit_four_aligned_targets.py": {
+      "bytes": 6944,
+      "sha256": "51626a5fed4d1ff9e765ce36689c64e6299058c4a845850a7b40c667a46d64f7"
+    },
+    "verification/round36_revision/replay_revision.py": {
+      "bytes": 12782,
+      "sha256": "ee2d0ed648693fb9ec0811c2f37e4e31686a3478e648da02a808d39cc7c9d012"
+    },
+    "verification/round36_revision/target_836343/verify_fixed_projection.py": {
+      "bytes": 6414,
+      "sha256": "f2131bd6d3ab1f3e2d7040064ebe3cca998dc827123ed49d64c015ef32f78b7f"
+    }
+  },
+  "scope": "Exact original source bytes only; data-dependent programs are not a complete replay package."
+}

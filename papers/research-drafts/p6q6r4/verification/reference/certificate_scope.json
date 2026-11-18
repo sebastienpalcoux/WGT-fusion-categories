@@ -1,0 +1,52 @@
+{
+  "status": "PASS_SYNTHETIC_SCOPE_CONTROLS",
+  "old_rows": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "added_row": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "target": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "old_rows_sha256": "dc2fd4cc05386463fe7a1c2718106822e03d0f6f8d25c9ed73a4d98351645812",
+  "enlarged_rows_sha256": "80403427b08f594fbe731c0e5e7b415bad1f10645e0168b7f660936355b2cce8",
+  "cases": [
+    {
+      "kind": "integer_separator",
+      "accepted_on_old_set": true,
+      "rejected_after_enlargement": true
+    },
+    {
+      "kind": "integer_box_separator",
+      "accepted_on_old_set": true,
+      "rejected_after_enlargement": true
+    },
+    {
+      "kind": "modular_separator",
+      "accepted_on_old_set": true,
+      "rejected_after_enlargement": true
+    }
+  ],
+  "exact_checker_sha256": "8ff2ccfbf9678a9a1298e3a825608c83f81be8f4c3c9827e2587d0bf09b18015",
+  "valid_superset_implies_valid_subset": true,
+  "global_field_catalogue_coverage_verified": false,
+  "scope": "Synthetic regression only. No large certificate is cleared by this test."
+}

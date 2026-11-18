@@ -1,0 +1,9 @@
+{
+  "descriptions": 2,
+  "independent_methods": [
+    "raw two-square table",
+    "four-variable matrix equations",
+    "zero-image dimension semigroup"
+  ],
+  "passed": true
+}

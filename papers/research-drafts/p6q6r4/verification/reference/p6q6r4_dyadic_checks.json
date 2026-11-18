@@ -1,0 +1,48 @@
+{
+  "coefficient_ring": "Q[z]/(z^4+1)",
+  "gamma_values": 8,
+  "nonidentity_theta_values": 7,
+  "annihilating_and_equality_identities": "all passed",
+  "results": [
+    {
+      "gamma_exponent": 0,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 4
+    },
+    {
+      "gamma_exponent": 1,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 3
+    },
+    {
+      "gamma_exponent": 2,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 4
+    },
+    {
+      "gamma_exponent": 3,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 3
+    },
+    {
+      "gamma_exponent": 4,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 4
+    },
+    {
+      "gamma_exponent": 5,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 3
+    },
+    {
+      "gamma_exponent": 6,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 4
+    },
+    {
+      "gamma_exponent": 7,
+      "all_seven_twists_pass": true,
+      "B_projector_rank": 3
+    }
+  ]
+}

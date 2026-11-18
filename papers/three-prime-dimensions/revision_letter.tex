@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,array}
+\usepackage[margin=25mm]{geometry}
+\usepackage[colorlinks=true,urlcolor=blue!45!black]{hyperref}
+\usepackage{xcolor}
+\hypersetup{pdftitle={Response to the referee on three-prime dimensions}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+\setlength{\emergencystretch}{2em}
+\newcommand{\issue}[1]{\subsection*{#1}}
+\begin{document}
+\begin{center}
+{\LARGE Response to the referee}\par\smallskip
+{\large\itshape Braided fusion categories with dimension dividing $p^6q^6r^4$}\par\smallskip
+17 November 2026
+\end{center}
+Dear Referee,
+
+Thank you for the detailed audit of the 46-page manuscript and for the additional reconstruction of its signed-sector arguments. We have revised the exposition at the indicated passages. The conclusions of Theorem~1.1 are unchanged. The two endpoint dimensions remain open. No computer-assisted proof or additional numerical exclusion has been introduced. All result numbers and stable result labels cited in the report are preserved.
+
+The responses below concern Q1--Q6 of the report dated 17 November 2026. They replace the earlier response letter, which concerned an earlier review.
+
+\issue{Q1. Signed-sector transport and equal defects (Lemma 5.4)}
+We now identify the positive and signed summands as intersections of the same full residue block with the fermion sectors $A$ and $C$. The key point is that in characteristic two, restriction to the even subring determines values on odd objects by squaring. The full block projector commutes with the dyadic generators, so $WU:A\to C$ restricts to an isomorphism on the corresponding summands. Thus a rank-two positive block has exactly two odd fermion orbits.
+
+After the displayed calculation of the transported operator, we give the restricted-defect formulas explicitly. For $a=v_2(N)$ they are $a-1-2v_2(d_X)$ for a fixed orbit and $a-2-2v_2(d_X)$ for a free orbit. Their distinct parities exclude a mixed pair. Equal defects then imply equal heights. We spell out the full block-mass identity and its valuation argument: two fixed orbits would give $u^2+v^2=4d^2$, with incompatible parities of valuations; two free orbits give $u^2+v^2=2d^2$ and the asserted common height.
+
+\issue{Q2. The signed norm and its equality case (Theorem 5.5)}
+The norm-two Gaussian exception is now charged explicitly. Its square puts $i$ in the positive character field; five-inertia fixes $i$, while a full Galois orbit contains a conjugate replacing $i$ by $-i$. This doubles the five-inertia contribution and justifies the same cost as a norm-four entry. Together with the odd-degree principal labels and the other prime-omitting orbit, the three disjoint contributions remain $8+8+4$.
+
+We display the compatible lifts $X_i$, the antisymmetric vectors $b_i$, the symmetric vectors $a_i$, and their sums $v,a$. The image $sv$ has zero components in $A,B,H$, and its exceptional symmetric odd coordinates are
+\[
+ (sv)_{c_V}=\frac{t\chi_V(X)}{\sqrt{32}},\qquad
+ \|sv\|^2=t\ge |E|t^2/8.
+\]
+For $|E|=4$ this forces $t=2$ and exact support on the exceptional packet. We then state each operator step: $W_o sv=sv$, commutation of $W_o$ with $s$, and $Uv=\lambda\eta a$ give $W_oa=a$. Therefore $sa=Ka$ stays in the positive principal two-block. At the complementary defect-one witness $Y$, the allegedly zero coordinate is explicitly
+\[
+ (sa)_{a_Y}=\frac{2d_Y}{\sqrt N}\sum_{i=1}^2\chi_Y(X_i),
+ \qquad \sum_{i=1}^2\chi_Y(X_i)\equiv2d_X\ne0\pmod{\mathfrak p_5}.
+\]
+The residue is taken on the integral sum, before multiplication by the nonzero normalization factor. This completes the equality contradiction without replacing it by a strict numerical estimate.
+
+\issue{Q3. The factor four in the indicator squares (Lemma 5.8)}
+We distinguish rationality of the selected complementary column from the square property. Its rational entry $q_x$ gives the full eigenvalue
+$\chi_x(b)=(8nq_x/d_x)^2$. The actual dyadic twist is preserved by the complementary operators, so only the twist-one representative of an even fermion pair may support the column. The formula
+\[
+ w'_{[x]}=\frac{\chi_x(b)+\chi_{gx}(b)}4
+\]
+therefore divides a single rational square by four, producing a rational square. The coefficients of the positive element are explicitly second indicators of even simples, so its eigenvalues are algebraic integers; the rational squares are consequently integer squares. The parity argument then proceeds as before.
+
+\issue{Q4. Hypotheses and the meaning of a table}
+Theorem~1.1 now states within the theorem that the primes are distinct, the categories are over $\mathbb C$, and dimension is Frobenius--Perron dimension. It recalls the definition of the family. A sentence following the theorem retains that restriction for both thresholds and explicitly leaves both endpoints unresolved.
+
+Lemma~2.4 now states the integral ordinary-modular or positive-reduced setting, the symmetric trace order, cyclotomic characters, rational integral codegrees and unramified coefficient extension. Theorem~3.11 explicitly assumes one of the two minimal categorical tables of Lemma~1.2 and actual positive balancing words. Its common-constituent input therefore cannot be read as a claim about arbitrary multiplication tables.
+
+\issue{Q5. The odd endpoint and the finite support search}
+The conclusion of Proposition~6.9 is unchanged. A paragraph after its proof explicitly separates the arbitrary-primary-conductor necessary support condition from a prime-level support classification. The argument does not force a six-difference witness to have conductor 23, and it neither determines all coefficients nor constructs modular data.
+
+The additional finite support search in the report is useful for subsequent work, but including its surviving lists as a theorem here would require an additional proof and would still leave higher primary conductors. We have not used that search as a proof or as an endpoint exclusion. The minimum over all eligible words, including words of larger support, remains unchanged.
+
+\issue{Q6. Attribution and relationship with the joint project}
+A short provenance paragraph in the introduction explains that this article is a self-contained extraction of the three-prime part of the Burciu--Dong--Palcoux project. Its shorter presentation does not make a separate priority claim for the family bounds or their underlying conductor, local-action and support methods. No argument in this article depends on citing the large research draft.
+
+For version identification, the companion described in the report is \emph{Prime factors of fusion-category dimensions: weak group-theoreticity, rank and decomposition}, version 2, available at
+\url{https://hexagonmath.org/2611.00233v2}.
+The relationship relevant to the report is as follows; this is a provenance map, not an assertion that every numbered statement is new.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.27\textwidth}>{\raggedright\arraybackslash}p{.62\textwidth}}
+\toprule Present material & Relationship and treatment in this revision\\\midrule
+Section 2 & Conductor bounds, residue blocks and local modular actions are ingredients of the same joint project; the necessary arguments are included here.\\[3pt]
+Section 3 & The lattice input is the established theorem of Beck--Ho\c{s}ten. Recovery of actual balancing supports and categorical difference descent are distinguished from that input.\\[3pt]
+Sections 4--6 & The quartic and quintic face arguments, family bounds and $(5,7,23)$ frontier are presented as part of the same project, without a new priority claim.\\[3pt]
+Lemmas 5.4, 5.8 and Theorem 5.5 & The present changes make existing operator, normalization and equality arguments explicit; they do not assert new exclusions.\\[3pt]
+Proposition 6.9 & The stronger second-descent endpoint condition was already in the 46-page source reviewed in this report and is retained; it is not a new consequence of this revision.\\\bottomrule
+\end{tabular}
+\end{center}
+
+Lemma~3.1 now cites Beck--Ho\c{s}ten, Theorem~13 precisely. We checked that theorem and its stated prime patterns in the authors' text. The introduction likewise separates that established unimodularity result from the subsequent recovery and categorical arguments. The manuscript continues to provide its lattice proof for independent readability.
+
+\issue{Validation and size of accompanying material}
+We reran the report's exact arithmetic script and reproduced its supplied JSON output. This checks the stated bounded cyclotomic searches, prime-level supports, scalar inequalities, dyadic identities and small modular examples. It is not an independent proof of the categorical arguments or of arbitrary-conductor assertions. These computations remain outside the proof of the manuscript.
+
+Both LaTeX files were compiled and checked for unresolved citations and references. The revised project keeps all accompanying material, including the revision letters and compact validation files, below 10,000,000 bytes in total, excluding the manuscript TeX and PDF files. No large numerical archive is needed to read or verify the proofs in this article.
+
+\medskip
+The authors
+\end{document}

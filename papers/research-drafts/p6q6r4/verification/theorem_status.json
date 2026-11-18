@@ -1,0 +1,425 @@
+{
+  "schema": "p6q6r4.compact-verification-status.v2",
+  "scope": "Bounded independent arithmetic and explicit source prerequisites only; no full historical certificate replay.",
+  "global_verification_hypothesis_V_established": false,
+  "verification_hypothesis_tex_label": "paper:verification-status",
+  "checked": [
+    {
+      "label": "First odd scalar frontier",
+      "tex_labels": [
+        "paper:family:first-odd",
+        "paper:family:scalar-frontier"
+      ],
+      "script": "checks/first_odd_family_certificate.py",
+      "result": "41 triples; 40 scalar exclusions; a cyclic mask at (5, 7, 23).",
+      "limit": "No realization or categorification."
+    },
+    {
+      "label": "Canonical length ten",
+      "tex_labels": [
+        "paper:canonical-length-at-least-eleven"
+      ],
+      "script": "checks/verify_length10.py",
+      "result": "26 profiles and 208 assignments; successive survivor counts are 37 after determinant tests, 21 after rank bounds, 1 after forbidden patterns, and 0 after skew tests.",
+      "limit": "Assumes the inherited source-rank and categorical determinant hypotheses."
+    },
+    {
+      "label": "Two degree-two blocks at rank fourteen",
+      "tex_labels": [
+        "paper:canonical-length-at-least-eleven"
+      ],
+      "script": "checks/verify_two_blocks.py",
+      "result": "32 placements; 5 determinant survivors and no forbidden-pattern survivors.",
+      "limit": "Only the two-block subcase used in this theorem. The other rank-fourteen algebra shape is not checked."
+    },
+    {
+      "label": "Dyadic compression",
+      "reviewed_version_number": "Lemma 3.28",
+      "tex_labels": [
+        "paper:dyadic-eight-bound"
+      ],
+      "script": "checks/verify_dyadic_compression.py",
+      "result": "All 8 gamma values and 7 nonidentity theta values.",
+      "limit": "Checks the modulus-eight calculation, not the general-level representation-theoretic reduction."
+    },
+    {
+      "label": "Explicit thirteen-row obstruction",
+      "reviewed_version_number": "Theorem 18.4",
+      "tex_labels": [
+        "paper:symplectic-sixty-exclusion"
+      ],
+      "script": "checks/verify_p6q6r4_review.py",
+      "result": "13 rows; edges (4, 9), (7, 8), (9, 12), (10, 11); no triangle.",
+      "limit": "The specified assignment only. Global uniqueness is not checked."
+    },
+    {
+      "label": "Four coefficient control pools",
+      "tex_labels": [
+        "paper:ch:sec:local-coefficients",
+        "paper:ch:square-coefficient",
+        "paper:ch:symplectic-norm-coefficients",
+        "paper:ch:local-coefficient-bounds",
+        "paper:ch:three-row-coefficient-pair"
+      ],
+      "script": "checks/check_ch_pair_independent.py",
+      "result": "Pools of 145, 340, 369 and 99 raw rows; bounded coefficients checked.",
+      "limit": "Pool completeness and global exclusion are not established."
+    },
+    {
+      "label": "Certificate monotonicity regression",
+      "reviewed_version_number": "Lemma 17.2",
+      "tex_labels": [
+        "paper:source:certificate-principle",
+        "paper:finite-endpoint-certificates",
+        "paper:integer-dual-pair-branching"
+      ],
+      "script": "checks/check_certificate_scope.py",
+      "result": "Linear, bounded and modular certificates valid on a smaller row set are rejected when invalidated by an added row.",
+      "limit": "Synthetic controls only; no global row-domain coverage is established."
+    },
+    {
+      "label": "Orthogonal codegree-six support catalogue",
+      "tex_labels": [
+        "paper:orthogonal-six-patterns",
+        "paper:orthogonal-six-three-forms"
+      ],
+      "scripts": [
+        "checks/structural/orthogonal_six_catalogue.py",
+        "checks/structural/audit_orthogonal_six.py"
+      ],
+      "result": "1,344 integral states; 528 positive states; 23 integral signed signatures and 16 positive signed signatures.",
+      "limit": "The reduction from 16 positive signed signatures to 14 uses the manuscript's separate Perron argument, not this computation."
+    },
+    {
+      "label": "Cubic degree-four E3 branch",
+      "tex_labels": [
+        "paper:cubic-four-e3-six-excluded"
+      ],
+      "scripts": [
+        "checks/structural/cubic_four_e3.py",
+        "checks/structural/audit_cubic_four_e3.py"
+      ],
+      "result": "Both descriptions excluded by an independently checked exact scalar system.",
+      "limit": "Only this finite branch under the stated mathematical hypotheses."
+    },
+    {
+      "label": "Cubic degree-four E4 branch",
+      "tex_labels": [
+        "paper:cubic-four-e4-six-excluded"
+      ],
+      "scripts": [
+        "checks/structural/cubic_four_e4.py",
+        "checks/structural/audit_cubic_four_e4.py"
+      ],
+      "result": "2 A types and 21 B types; 20 direct scalar-cone exclusions and 1 proper-generator-core exclusion for the B types.",
+      "limit": "Only this finite branch under the stated mathematical hypotheses."
+    },
+    {
+      "label": "Symplectic profiles on at most seven slots",
+      "tex_labels": [
+        "paper:symplectic-rank16-profiles"
+      ],
+      "scripts": [
+        "checks/structural/symplectic_profiles.py",
+        "checks/structural/verify_symplectic_profiles.py"
+      ],
+      "result": "All profile counts for norms 1 through 15, 18, 25 and 27; 379,409 minor-chart extensions and 746,779 nonunit coefficient arrays independently tested.",
+      "limit": "Only these norms and at most seven slots; not an unrestricted profile catalogue."
+    }
+  ],
+  "not_replayed": [
+    {
+      "label": "Global source-rank and canonical-length bounds",
+      "reviewed_version_number": "Theorem D and Theorem 17.3",
+      "tex_labels": [
+        "paper:main:source",
+        "paper:source:global-bounds"
+      ],
+      "missing": "Complete necessary inputs and exact witnesses for every claimed scope."
+    },
+    {
+      "label": "Commutative source rank thirteen",
+      "reviewed_version_number": "Theorem 17.22",
+      "tex_labels": [
+        "paper:commutative-rank-thirteen-excluded"
+      ],
+      "historical_claim": "40,476 field records",
+      "missing": "Complete field and involution catalogue, including all necessary row domains and accepted witnesses."
+    },
+    {
+      "label": "Higher-rank exclusions at canonical length twelve",
+      "reviewed_version_number": "Proposition 17.30",
+      "tex_labels": [
+        "paper:canonical12-higher-rank-exclusion"
+      ],
+      "historical_claim": "9,379 branches",
+      "missing": "Complete branch coverage and numerical replays."
+    },
+    {
+      "label": "Canonical length thirteen and its large tails",
+      "reviewed_version_number": "Theorem 18.1",
+      "tex_labels": [
+        "paper:source:length-thirteen",
+        "paper:canonical13-high-tail",
+        "paper:canonical13-final-ranks-shapes"
+      ],
+      "missing": "Every required row-domain and certificate sweep."
+    },
+    {
+      "label": "Proposed rank-sixteen catalogue",
+      "reviewed_version_number": "Proposition 18.3",
+      "tex_labels": [
+        "paper:source:rank-sixteen-catalogue"
+      ],
+      "historical_claim": "600,558 states",
+      "missing": "Catalogue membership, disjointness of excluded sets and full coverage checks."
+    },
+    {
+      "label": "Global uniqueness of the thirteen-row obstruction and further aligned-row exclusions",
+      "reviewed_version_number": "Theorem 18.4 (global uniqueness clause) and Theorem 18.5",
+      "tex_labels": [
+        "paper:symplectic-sixty-exclusion",
+        "paper:aligned-additional-exclusions"
+      ],
+      "missing": "Global inventory and independently complete row pools. The standalone thirteen-row obstruction is checked separately above."
+    }
+  ],
+  "conditional_statement_inventory": [
+    {
+      "environment": "conditionalmaintheorem",
+      "title": "Canonical length and source ranks",
+      "tex_labels": [
+        "paper:main:source"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "An exact obstruction for a surviving rational assignment",
+      "tex_labels": [
+        "paper:rational-8370-frame"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The dimension-three cubic triple requires rank at least seventeen",
+      "tex_labels": [
+        "paper:cubic-three-rank-at-least-seventeen"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The negative alternative forces rank at least seventeen",
+      "tex_labels": [
+        "paper:cubic-four-negative-six-rank17"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The dimension-forty element is simple",
+      "tex_labels": [
+        "paper:cubic-four-W40"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The A continuation is impossible through rank sixteen",
+      "tex_labels": [
+        "paper:cubic-four-six-forty-continuation"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The B continuation is impossible through rank sixteen",
+      "tex_labels": [
+        "paper:e11-B-rank16-excluded"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The complete dimension-four, codegree-six cubic exclusion",
+      "tex_labels": [
+        "paper:cubic-four-six-rank17-complete"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The small cubic triple",
+      "tex_labels": [
+        "paper:source:small-cubic-triple"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Source rank and canonical length",
+      "tex_labels": [
+        "paper:source:global-bounds"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalcorollary",
+      "title": "The remaining small-rank complex algebra shapes",
+      "tex_labels": [
+        "paper:small-rank-wedderburn-shapes"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "Complete canonical and field input",
+      "tex_labels": [
+        "paper:exhaustive-endpoint-input",
+        "paper:exact-endpoint-reduction"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Exclusion of both first source-rank endpoints",
+      "tex_labels": [
+        "paper:both-first-rank-endpoints-excluded"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The complete rank-twelve field input",
+      "tex_labels": [
+        "paper:comm12-field-input"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "No commutative source of rank twelve",
+      "tex_labels": [
+        "paper:commutative-rank-twelve-excluded"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The noncommutative rank-fourteen endpoint is excluded",
+      "tex_labels": [
+        "paper:noncommutative-rank14-exclusion"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "A preliminary reduction for the two-block rank-fifteen shape",
+      "tex_labels": [
+        "paper:rank15-two-blocks-preliminary"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "Aggregate rows and remainders for the two-block rank-fifteen input",
+      "tex_labels": [
+        "paper:rank15-two-blocks-126"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "No two-matrix source ring at rank fifteen",
+      "tex_labels": [
+        "paper:rank15-two-matrix-excluded"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Exclusion of canonical length eleven",
+      "tex_labels": [
+        "paper:canonical-length-at-least-twelve"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "Exhaustive canonical and full-field input at rank thirteen",
+      "tex_labels": [
+        "paper:comm13-field-input"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Commutative source rank thirteen is excluded",
+      "tex_labels": [
+        "paper:commutative-rank-thirteen-excluded"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "The noncommutative rank-fifteen endpoint is excluded",
+      "tex_labels": [
+        "paper:noncommutative-rank15-exclusion"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Exclusion of the rank-sixteen two-matrix shape",
+      "tex_labels": [
+        "paper:rank16-two-matrix-exclusion"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The complete length-twelve universe",
+      "tex_labels": [
+        "paper:canonical12-complete-universe"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "Complete higher-rank exclusion at length twelve",
+      "tex_labels": [
+        "paper:canonical12-higher-rank-exclusion"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Rank and algebra at canonical length thirteen",
+      "tex_labels": [
+        "paper:source:length-thirteen",
+        "paper:canonical13-high-tail",
+        "paper:canonical13-final-ranks-shapes"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionalproposition",
+      "title": "The proposed rank-sixteen catalogue",
+      "tex_labels": [
+        "paper:source:rank-sixteen-catalogue"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    },
+    {
+      "environment": "conditionaltheorem",
+      "title": "Further aligned-row exclusions",
+      "tex_labels": [
+        "paper:aligned-additional-exclusions"
+      ],
+      "status": "Conditional on verification hypothesis V; not established by this compact package."
+    }
+  ],
+  "numbering": "reviewed_version_number refers to the original 419-page manuscript; tex_labels are stable identifiers in the revised TeX. A checked subcase does not establish every assertion sharing its parent label."
+}

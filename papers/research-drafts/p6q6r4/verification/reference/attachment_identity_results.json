@@ -1,0 +1,16 @@
+[
+  {
+    "group": "S3",
+    "square_coefficients": 36,
+    "jordan_coefficients": 216,
+    "norm_coefficients": 0,
+    "status": "PASS"
+  },
+  {
+    "group": "Q8",
+    "square_coefficients": 64,
+    "jordan_coefficients": 512,
+    "norm_coefficients": 64,
+    "status": "PASS"
+  }
+]

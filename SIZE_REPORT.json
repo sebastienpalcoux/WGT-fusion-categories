@@ -1,0 +1,32 @@
+{
+  "limit_bytes": 10000000,
+  "manuscript_pages": {
+    "research_draft": 423,
+    "short_paper": 47
+  },
+  "delivery_excluded_manuscript_files": [
+    "papers/research-drafts/p6q6r4/p6q6r4_manuscript.tex",
+    "papers/research-drafts/p6q6r4/p6q6r4_manuscript.pdf",
+    "papers/three-prime-dimensions/three_prime_dimensions.tex",
+    "papers/three-prime-dimensions/three_prime_dimensions.pdf"
+  ],
+  "repository_excluded_manuscript_files": [
+    "papers/research-drafts/p6q6r4/p6q6r4_manuscript.tex",
+    "papers/research-drafts/p6q6r4/p6q6r4_manuscript.pdf",
+    "papers/three-prime-dimensions/three_prime_dimensions.tex",
+    "papers/three-prime-dimensions/three_prime_dimensions.pdf",
+    "papers/Manuscript.tex",
+    "papers/Manuscript.pdf",
+    "papers/Rank32.tex",
+    "papers/Rank32.pdf",
+    "papers/Below_5400_squared.tex",
+    "papers/Below_5400_squared.pdf"
+  ],
+  "historical_sources_archive_bytes": 1201583,
+  "historical_sources_expanded_bytes": 3089206,
+  "scope": "All accompanying files combined in the prepared repository tree; response letters count. Only the ten explicitly listed manuscript TeX/PDF files are excluded. Git storage, build intermediates, and the private publication manifest are not distributed. The delivery totals describe the original unchanged ZIP contents.",
+  "delivery_other_files_bytes": 2256393,
+  "repository_other_files_bytes": 5394576,
+  "delivery_other_files_bytes_with_historical_sources_expanded": 4144016,
+  "repository_other_files_bytes_with_historical_sources_expanded": 7282199
+}

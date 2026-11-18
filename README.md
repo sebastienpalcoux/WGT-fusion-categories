@@ -4,6 +4,10 @@
 
 The full article includes the general rank bound of 32, with the same optimized search engine as the short paper and additional dimension-family pruning. It also gives [further rank bounds](rank/README.md) under several hypotheses and a catalogue of prime decompositions. The [release guide](certificates/README.md) links its computations to their hypotheses and [statements](certificates/statement-index.tsv).
 
+## Three-prime arithmetic frontier
+
+For the family $p^6q^6r^4$, the smallest unresolved dimension is $5400^2=2^6·3^6·5^4$. The [423-page research draft](papers/research-drafts/p6q6r4/p6q6r4_manuscript.pdf), developed over more than 30 rounds with GPT-6, documents the restrictions and exact checks reached so far. The [47-page extract](papers/three-prime-dimensions/three_prime_dimensions.pdf) gives the main family bounds in a self-contained, computer-free proof. We are releasing both to make the frontier concrete: the present approach has stalled at $5400^2$, and resolving it may take a new idea or a more capable model. [Research files and verification](papers/research-drafts/README.md). The compact checks establish only their stated bounded scope; stronger numerical conclusions requiring complete computational coverage remain conditional. [Revision notes](REVISION_NOTES.md).
+
 ## Short, self-contained proofs
 
 Each paper extracts one theorem from the larger project and includes the arguments needed to read and check it independently.
@@ -11,9 +15,11 @@ Each paper extracts one theorem from the larger project and includes the argumen
 - **Rank at least 32** for every non-pointed simple integral modular category (17 pages). A single program verifies the finite arithmetic in the last step. [PDF](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Rank32.pdf) · [TeX](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Rank32.tex) · [Verification supplement](papers/rank-bound-supplement/README.md)
 - **Weak group-theoreticity below dimension $5400^2$** for weakly integral braided fusion categories (29 pages). The proof is computer-free. Applying it to the Drinfeld center gives the bound 5400 without a braiding assumption. [PDF](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.pdf) · [TeX](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/main/papers/Below_5400_squared.tex)
 
+- **Braided fusion categories with dimension dividing $p^6q^6r^4$** (47 pages). A self-contained, computer-free proof of weak group-theoreticity for proper divisors, with restrictions at the full dimension. [PDF](papers/three-prime-dimensions/three_prime_dimensions.pdf) · [TeX](papers/three-prime-dimensions/three_prime_dimensions.tex) · [Paper guide and checks](papers/three-prime-dimensions/README.md) · [Revision letter](papers/three-prime-dimensions/revision_letter.pdf)
+
 | Material | Contents |
 | --- | --- |
-| [Short manuscripts](papers/README.md) | Both focused proofs and their source files. |
+| [Short manuscripts](papers/README.md) | The focused proofs and their source files. |
 | [Rank bounds](rank/README.md) | Degree enumeration, mathematical exclusion tests and the unified verification of ranks 2–31. |
 | [Verification code](code/README.md) | Commands for the finite arithmetic used in the paper. |
 | [Input data](data/README.md) | The pinned list of 2341 perfect rank-15 dimension types, with provenance and checksum. |

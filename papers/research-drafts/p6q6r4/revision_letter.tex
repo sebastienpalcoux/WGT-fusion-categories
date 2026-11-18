@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,array,longtable,xurl}
+\usepackage[margin=25mm]{geometry}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.6ex plus .2ex minus .2ex}{.8ex plus .1ex}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\setlength{\emergencystretch}{2em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\title{Response to the referee report\\on the three-prime research draft}
+\author{}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+We thank the referee for the precise distinction between demonstrated errors,
+checked arguments and unreplayed computations. This revision also follows the
+author's instruction to distribute a compact companion: apart from manuscript
+TeX/PDF files, the total size of all accompanying material is below 10 MB. Large certificate inventories are
+omitted rather than divided into smaller archive parts.
+
+\section*{R1: certificate monotonicity}
+The assertion that enlarging a necessary row set preserves every negative
+certificate was false. The revised statement and proof use the correct
+direction: a certificate verified on a complete necessary superset applies
+to every subset. Enlargement requires a fresh check against every new row;
+a bounded certificate must include the bounds for all new negative
+contributions. The counterexample with rows $(1,0)$, $(1,1)$, target $(1,1)$
+and covector $(0,-1)$ makes the distinction explicit.
+
+The same unsafe direction was also removed from the central-spectrum
+and six-form discussions. The compact companion includes a regression check
+for this counterexample.
+Such a check validates the corrected elementary rule; it does not certify
+coverage of an old field catalogue. We do not infer validity of historical
+exclusions from their aggregate counts or from the correction of this sentence.
+
+\section*{R2: missing computations and complete coverage}
+The report reviewed the PDF without its large computational companion. The
+prepared Git bundle did contain a companion, but the present delivery follows
+the subsequent instruction to remove large verification files. Consequently,
+we do not claim to have fulfilled the request for a complete independently
+replayed large certificate package.
+
+Instead, the manuscript now distinguishes proved theoretical statements,
+bounded standalone calculations, and numerical conclusions conditional on
+complete coverage and valid exact certificates. In particular, the stronger
+source-rank and canonical-length bounds and the global remaining-state
+inventory are not presented as certified by the compact checks. Assertions
+of uniqueness inside that inventory require the same qualification. The
+explicit thirteen-row obstruction for the specified assignment is separate
+from the assertion that this is the only assignment left by a global screen.
+
+The current verification guide and machine-readable scope map identify
+which calculations can actually be run. Retained historical source code is
+provided as source only; omitted inputs and witnesses are not reconstructed
+by reading that archive. A completed small calculation, an input count,
+a hash match or an arithmetic subtraction does not validate a larger
+exhaustive exclusion. Failed or unfinished searches give no exclusion.
+
+This is a substantive narrowing of what the compact release claims to
+verify. No mathematical counterexample to the stated category bounds is
+asserted. Restoring their unconditional computational status would require
+complete necessary-input generation, exact witness checking and coverage
+verification, including the additional fields, involutions, repeated roots
+and dimension ranges identified by the referee.
+
+\section*{R3: weakly integral anomaly}
+The weakly integral step now cites Dong--Lin--Ng, Theorem 6.10. Proposition
+6.7(ii) is reserved for the integral situation. The anomaly and the scalar
+normalization of a linear modular representation are distinguished, and the
+minimal-extension theorem is not credited with establishing integrality
+without the additional argument.
+
+\section*{R4: matroid-bound variable}
+The expression $4n-14$ in the two-component estimate has been corrected to
+$4\nu-14$. The endpoint computation with component sizes adding to $\nu$
+is unchanged. This is a local typographical correction.
+
+\section*{R5 and the old--new comparison}
+A provenance table identifies inherited statements, strengthened statements,
+and different arguments. In particular, the conductor framework, even
+frontier, first odd numerical frontier and degree-six conclusion are not
+claimed as new relative to the earlier joint draft. The block decomposition,
+stronger local/support methods and commutator/reconstruction theory are
+identified separately. A different proof is not a new numerical conclusion;
+a comparison of two drafts is not a literature-wide priority claim.
+
+We also record the comparison's combined modular rank consequence.
+Theorem C(i) removes the missing-$6$ and missing-$10$ configurations
+from Theorem 29.1 of the earlier joint draft, giving rank at least
+$106$, or $130$ without a dimension-$900$ simple. A thirty-divisible
+twist gives the stronger bounds $112$ and $142$. The revised
+introduction displays the numerical degree budgets and their rounding.
+The needed full-graph degree budgets do not use the omitted
+source-certificate archives, so this consequence is separate from
+verification hypothesis $\mathsf V$.
+
+The present manuscript is a focused research draft, not a replacement for
+the earlier general dimension/rank manuscript. The earlier manuscript and
+its broader results remain separately available in the repository. The
+comparison's list of omitted general results therefore does not justify
+silently attributing them to this focused text or deleting their original
+source. All theoretical exposition of the present draft remains in its main
+sections.
+
+\section*{Checks and remaining limits}
+The distributed checks and their actual results are described in
+\texttt{verification/README.md}. Both manuscripts have been typeset after
+revision; the package includes their source files, revision responses and
+integrity manifests. These are selective mathematical and computational
+checks, not a proof-assistant certification or an exhaustive independent
+refereeing of every argument in the long draft.
+
+The dimension $5400^2$ remains unresolved. Likewise, necessary supports at
+the odd scalar frontier do not constitute a modular datum, fusion ring or
+fusion category. The revision makes no new existence claim.
+\end{document}

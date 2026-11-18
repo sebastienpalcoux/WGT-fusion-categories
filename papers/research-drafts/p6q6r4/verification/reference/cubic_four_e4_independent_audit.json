@@ -1,0 +1,12 @@
+{
+  "A_types": 2,
+  "B_direct_scalar_cone_exclusions": 20,
+  "B_generator_core_exclusions": 1,
+  "B_types": 21,
+  "independent_methods": [
+    "direct dimension equations",
+    "square lookup",
+    "four-variable scalar-I cone enumeration"
+  ],
+  "passed": true
+}
