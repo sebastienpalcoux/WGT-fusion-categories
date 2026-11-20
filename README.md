@@ -1,5 +1,6 @@
 <a id="wgt-for-fusion-categories"></a>
-# Weak group-theoreticity and rank bounds
+<a id="weak-group-theoreticity-and-rank-bounds"></a>
+# Weak group-theoreticity of fusion categories: dimension and rank bounds
 
 Research on fusion categories by **Sebastian Burciu, Jingcheng Dong and Sébastien Palcoux**. This repository brings together dimension theorems, rank bounds, broader research manuscripts, and the code and data accompanying each work.
 
