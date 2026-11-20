@@ -1,6 +1,10 @@
 # Arithmetic verification
 
-Run the commands below from this directory. The [manifest](../certificates/manifest.json) gives the hypotheses and expected output of the 27 dimension, fixed-dimension rank and comparison checks, with their permanent labels. The [statement index](../certificates/statement-index.tsv) supplies current printed numbers and pages in the [full article](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/independent-referee-2026-11-10/papers/Manuscript.pdf). The two historical comparisons link to the original coauthor edition. The [general rank guide](../rank/README.md) gives the separate commands for unrestricted and odd-dimensional ranks. The programs in this directory use Python 3.10 or later and its standard library. The largest support count uses a C++20 compiler with unsigned 128-bit integer support.
+[Overview](../README.md) · [Dimension guide](../papers/dimension-bounds.md) · [Rank guide](../rank/README.md) · [Verification map](../VERIFICATION.md)
+
+These programs accompany the **252-page project manuscript** and the specific historical comparisons identified below. The new rank manuscripts have [their own companions](../papers/rank-bounds/README.md#verification).
+
+Run the commands below from this directory. The [manifest](../certificates/manifest.json) gives the hypotheses and expected output of the 27 dimension, fixed-dimension rank and comparison checks, with their permanent labels. The [statement index](../certificates/statement-index.tsv) supplies the printed numbers and pages in the [project manuscript's publication snapshot](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/independent-referee-2026-11-10/papers/Manuscript.pdf). The two historical comparisons link to the original coauthor edition. The [general rank guide](../rank/README.md) gives the separate commands for unrestricted and odd-dimensional ranks. The programs in this directory use Python 3.10 or later and its standard library. The largest support count uses a C++20 compiler with unsigned 128-bit integer support.
 
 ## Dimensions and ranks
 

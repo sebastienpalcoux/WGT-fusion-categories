@@ -1,0 +1,5 @@
+# Rank 217 prime profiles
+
+From the supplement root, run `python -B verification/frontier217/check.py`. The checker applies the prime-denominator classification and the disjoint component-population and ordinary-mass bounds from the rank 201 and 209 front end. Each reservation is an assignment of the graph and the exact multiplicity at nine to a surviving prime profile. Add `--graphs` to run the preserved graph reservation tests from the 227 surviving starts. These tests leave 1,133 edgeless and 495 mixed reservations. The later odd-dimensional terminal tests have not been applied at this rank.
+
+The ternary edge theorem applies through 217. An edge between five and seven costs 172 positions with denominators divisible by 35. Even assigning denominator nine to every other position would give total mass at most $172/35^2+45/9^2<1$. The rank cost for every other edge with both primes at least five exceeds 217. Thus the only two graphs to test are the empty graph and the single edge between three and five. The even upper bound 76 on the multiplicity at nine and the component population bounds apply at every rank.

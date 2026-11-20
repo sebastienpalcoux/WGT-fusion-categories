@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "sources": {
+    "nonsquare.cpp": "204ec3c4342319e49f99fe877d3dc4ee1be19b276e5e922bc3d76737b9b868fd",
+    "nonsquare.py": "eb549b4d92c589c436fe850090a061528c6a30364e858957d8480697cdb148d4"
+  },
+  "scope": "q=3; fixed final support exactly{2,3,p},p>3",
+  "reviewed": [
+    "equal-block obstruction and unequal-block orientation",
+    "optimistic open partner class",
+    "correct nonunit suffix count",
+    "monotone native state and sibling reset",
+    "both terminal denominators checked",
+    "Python/native inequality agrees"
+  ],
+  "no_search_run": true,
+  "minor_note": "The child L*k-overflow path may hand an already flagged prefix to Python, which rejects it. This only adds harmless work."
+}

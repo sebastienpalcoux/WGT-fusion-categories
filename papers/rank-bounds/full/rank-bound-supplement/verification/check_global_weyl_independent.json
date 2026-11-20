@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Independent small finite exponent groups only.",
+  "target_comparisons": 90,
+  "height_lower_bound_comparisons": 30,
+  "actual_shared_sign_solutions_checked": 450,
+  "module_sha256": "9b8e63a2411386a3d0cd52533f867e6574918833dcd6f54dbaa4cad439ac055b",
+  "audit_sha256": "f32d5b4f7cb97c9b978c6c63164ea54b10cc84f23c29dbc32616c3ba612e865c",
+  "cpu_seconds": 0.02752992
+}

@@ -1,0 +1,563 @@
+Checking census/five_tests.py
+{"square": 7314, "nonsquare": 10885, "primary_mass": 8207, "prime_square_gcd": 6194, "defect_one": 6166, "principal_block": 244, "ternary_trace": 0}
+Checking arithmetic/three_prime_cutoff.py
+Three-prime supports: 9 profiles, 18095 interval nodes, 0 survivors.
+Checking arithmetic/support_five_moments.py
+{
+  "all_primary": 38,
+  "initial_profiles": 49,
+  "mixed": 11,
+  "mixed_mass_matches": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    14,
+    0,
+    0
+  ],
+  "mixed_survivors": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rank": 44,
+  "survivors": 0
+}
+Checking arithmetic/odd_edge_mass.py
+{
+  "two_odd_edges_15_21": "28493/29400",
+  "edge21_and_dyadic5": "8093/9800",
+  "four_odd_primes_with_edge": "18257/18480",
+  "21_absent5": "841201/882000",
+  "21_present5_at_m11": "57341/58800",
+  "21_present5_at_m12_raised": "140953/141120",
+  "dyadic7_with5": "6527/7350",
+  "dyadic7_without5_m10": "87977/88200",
+  "twenty_active5_high_four": "3281351/3528000",
+  "eighteen_active5_m11": "103933243/110250000",
+  "mixed_fifteen_survivors": 0
+}
+Checking arithmetic/gram_packets.py
+Checked all 1,440 Gram matrices and the unique kernel witness.
+Checking census/recheck.py
+{"square": 7314, "nonsquare": 10885, "degree_slices": 393, "principal_overlap": 284, "fusion_phases": 215, "prime_square_trace": 143, "block_entry": 124, "simultaneous_block_trace": 12, "defect_one": 0}
+Checking verification/rank_tables/audit_slices.py census/reference-census.zip
+{"39": {"profiles": 1, "pass": 0, "principal degree gcd": 1}, "40": {"profiles": 2, "pass": 0, "principal degree gcd": 1, "principal mass": 1}, "41": {"profiles": 21, "pass": 0, "principal mass": 7, "forced slice empty": 2, "principal degree gcd": 12}, "42": {"profiles": 176, "pass": 0, "principal mass": 65, "principal degree gcd": 98, "forced slice empty": 13}, "43": {"profiles": 1637, "pass": 22, "principal degree gcd": 911, "principal mass": 595, "forced slice empty": 109}, "44": {"profiles": 16362, "pass": 371, "principal degree gcd": 10790, "principal mass": 4144, "forced slice empty": 1057}}
+Checking verification/rank_tables/audit_overlap.py census/reference-census.zip
+{"admitted": 2972, "primary_phase": 12839, "principal_product": 2388}
+Checking verification/rank_tables/audit_fusion.py census/reference-census.zip
+{
+  "bounded_sum_tests": 3264,
+  "reference_ranks": {
+    "39": {
+      "rows": 1
+    },
+    "40": {
+      "rows": 2
+    },
+    "41": {
+      "rows": 21,
+      "excluded": 2
+    },
+    "42": {
+      "rows": 176,
+      "excluded": 54
+    },
+    "43": {
+      "rows": 1637,
+      "excluded": 743
+    },
+    "44": {
+      "rows": 16362,
+      "excluded": 7884
+    }
+  }
+}
+Checking verification/odd_theory/check_edge37.py
+rank cap: 217
+several-edge mass maximum: 3881/3969
+three-prime checks: 146 maximum (mass,q,s): (Fraction(215990653, 218791125), 5, 58)
+dense-five mass maximum: 51450037/60031125
+four-prime checks: 231 maximum (mass,s,m): (Fraction(33299377, 33350625), 40, 22)
+all enclosing ordinary-mass bounds are strictly below one
+Checking arithmetic/three_prime_rank.py
+Three-prime support through rank44: six final intervals, all excluded.
+Checking verification/check_global_weyl_independent.py
+{
+  "status": "passed",
+  "scope": "Independent small finite exponent groups only.",
+  "target_comparisons": 90,
+  "height_lower_bound_comparisons": 30,
+  "actual_shared_sign_solutions_checked": 450,
+  "module_sha256": "9b8e63a2411386a3d0cd52533f867e6574918833dcd6f54dbaa4cad439ac055b",
+  "audit_sha256": "f32d5b4f7cb97c9b978c6c63164ea54b10cc84f23c29dbc32616c3ba612e865c",
+  "cpu_seconds": 0.046254919000000005
+}
+Checking verification/sector_frontier/check.py
+204 starts, 462 sector families; 39303 prefixes checked.
+Checking verification/sector_frontier/verify_neutral.py
+{'orbit_capacity_checks': 315, 'exact_sector_counts': 607, 'parity_placement_checks': 16}
+Checking verification/sector_frontier/verify_component.py
+{'square_counts': 45, 'complete_artificial_prefixes': 583}
+Checking verification/frontier217/check.py --graphs
+{'original_prime_starts': 21396, 'classified_starts': 21396, 'component_starts_open_nines': 235, 'component_starts_closed_nines': 227} {'edgeless': 2541, 'mixed': 632} {'edgeless': 1133, 'mixed': 495}
+Checking arithmetic/perfect_counts.py
+Verified rank-44 prime powers, seven orbit patterns, elementary subgroup sizes, reciprocal-square prefixes, cohomology orbit counts and deleted-gauging degrees.
+Checking verification/independent/check.py
+rank 39 [1, 0, 1, 1, 1, 0, 0]
+rank 40 [2, 0, 2, 2, 2, 0, 0]
+rank 41 [17, 4, 17, 15, 15, 0, 0]
+rank 42 [111, 65, 119, 98, 98, 0, 0]
+rank 43 [914, 723, 955, 801, 801, 30, 0]
+rank 44 [6269, 10093, 7113, 5277, 5249, 214, 0]
+totals [7314, 10885, 8207, 6194, 6166, 244, 0] tasks 12273 continuations 41915
+odd nonsquare supports, profiles before floor-15 test, and starting profiles 14 4189686 685040
+odd nonsquare sector choices [(36, (15, 21, 33))]
+odd nonsquare tail 5023/266805 solutions exist False states 172
+odd square rank 209 starting profiles 16512
+odd square rank 217 starting profiles 21396
+A5 centralizer class numbers [5, 3, 4, 5, 5] total 22
+A6 centralizer class numbers [7, 9, 5, 5, 5, 4, 9] total 44
+GL(3,2) centralizer class numbers [6, 5, 4, 3, 7, 7] total 32
+SL(2,5) centralizer class numbers [9, 10, 10, 4, 9, 10, 10, 6, 6] total 74
+A5 neutral orbit patterns and free bounds {(1,): 7, (6,): 6, (1, 15): 0, (6, 15): 5, (1, 30): 3, (6, 30): 2, (6, 15, 30): 1}
+deleted module fixed labels [(1, 16), (3, 4), (2, 4), (5, 1), (5, 1)] affine involution fixed counts [2, 2]
+Independent finite checks and all 18,199 terminal witnesses passed.
+Checking verification/prefix/check.py
+{
+  "boundary_cases": 11,
+  "exact": [
+    {
+      "after_rows": 1,
+      "before_rows": 1,
+      "case": "retained",
+      "cpu_seconds": [
+        0.00043486600000000597,
+        0.000306485000000023
+      ],
+      "original_row": [
+        1,
+        20,
+        20,
+        36,
+        108,
+        108,
+        135,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        300,
+        540,
+        540,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2025,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        2700,
+        4050,
+        4050,
+        4050,
+        4050,
+        4050
+      ],
+      "prefix": {
+        "exact": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          15,
+          15,
+          27,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          60,
+          75,
+          75,
+          225
+        ],
+        "primes": [
+          2,
+          3,
+          5
+        ]
+      },
+      "rank": 41,
+      "removed_all_certified_by_current_terminal": true
+    },
+    {
+      "after_rows": 0,
+      "before_rows": 1,
+      "case": "removed",
+      "cpu_seconds": [
+        0.00028817800000000005,
+        0.0012254090000000106
+      ],
+      "original_row": [
+        1,
+        6,
+        10,
+        15,
+        50,
+        75,
+        288,
+        288,
+        1125,
+        2400,
+        2400,
+        7200,
+        7200,
+        18000,
+        21600,
+        21600,
+        21600,
+        21600,
+        21600,
+        21600,
+        27000,
+        27000,
+        27000,
+        27000,
+        27000,
+        27000,
+        27000,
+        27000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        36000,
+        54000,
+        54000,
+        54000,
+        54000
+      ],
+      "prefix": {
+        "exact": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          15,
+          15,
+          45,
+          45,
+          96,
+          375,
+          375,
+          1440,
+          2160,
+          7200
+        ],
+        "primes": [
+          2,
+          3,
+          5
+        ]
+      },
+      "rank": 43,
+      "removed_all_certified_by_current_terminal": true
+    }
+  ],
+  "native": [
+    {
+      "manifest_sha256": "1371a2c817e1463d8d14cec0c4966255d978f56ec7adc7b038c92139eafbb8f0",
+      "observations": [
+        {
+          "completion": "rank 41, q 3, B 2, multiplicity 5, nodes 139233, candidates 1, exact 0",
+          "elapsed_seconds": 0.024955910004791804,
+          "output_sha256": "c221607378d3ec9d3384677a511e7c0a32e2de42c380b8b289c22ee3e3acf57b",
+          "rows": 1,
+          "stage": "before"
+        },
+        {
+          "completion": "rank 41, q 3, B 2, multiplicity 5, nodes 139233, candidates 1, exact 0",
+          "elapsed_seconds": 0.01959779000026174,
+          "output_sha256": "c221607378d3ec9d3384677a511e7c0a32e2de42c380b8b289c22ee3e3acf57b",
+          "rows": 1,
+          "stage": "after"
+        }
+      ],
+      "rank": 41,
+      "removed": 0,
+      "removed_all_certified_by_prime_free_theorem": true,
+      "task": {
+        "B": 2,
+        "m": 5,
+        "prefix": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4
+        ],
+        "q": 3
+      },
+      "task_index": 395
+    },
+    {
+      "manifest_sha256": "b5fce283028bfb9e0498b62b308eef9aa9fc6c934658d5e73b22059d7fe2c719",
+      "observations": [
+        {
+          "completion": "rank 43, q 3, B 2, multiplicity 4, nodes 546047, candidates 5, exact 0",
+          "elapsed_seconds": 0.08592644399323035,
+          "output_sha256": "96b43fbc9bab58b438ddaa0fc2d9a20842d81f3e6f97a745d34a162076052d01",
+          "rows": 5,
+          "stage": "before"
+        },
+        {
+          "completion": "rank 43, q 3, B 2, multiplicity 4, nodes 1380, candidates 0, exact 0",
+          "elapsed_seconds": 0.0030187680094968528,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rows": 0,
+          "stage": "after"
+        }
+      ],
+      "rank": 43,
+      "removed": 5,
+      "removed_all_certified_by_prime_free_theorem": true,
+      "task": {
+        "B": 2,
+        "m": 4,
+        "prefix": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "q": 3
+      },
+      "task_index": 90
+    },
+    {
+      "manifest_sha256": "545a7d96153b2683fb88abc4f37bc816fc6bf10c5147b375724b8e1b5375808b",
+      "observations": [
+        {
+          "completion": "rank 44, q 3, B 2, multiplicity 1, nodes 411869, candidates 1, exact 0",
+          "elapsed_seconds": 0.057450612002867274,
+          "output_sha256": "9c9d9c1c629d6dd9a6584f783c1669dc620cadda1b87f87ce645296a293d7612",
+          "rows": 1,
+          "stage": "before"
+        },
+        {
+          "completion": "rank 44, q 3, B 2, multiplicity 1, nodes 227341, candidates 1, exact 0",
+          "elapsed_seconds": 0.028069937005057,
+          "output_sha256": "9c9d9c1c629d6dd9a6584f783c1669dc620cadda1b87f87ce645296a293d7612",
+          "rows": 1,
+          "stage": "after"
+        }
+      ],
+      "rank": 44,
+      "removed": 0,
+      "removed_all_certified_by_prime_free_theorem": true,
+      "task": {
+        "B": 2,
+        "m": 1,
+        "q": 3
+      },
+      "task_index": 0
+    },
+    {
+      "manifest_sha256": "545a7d96153b2683fb88abc4f37bc816fc6bf10c5147b375724b8e1b5375808b",
+      "observations": [
+        {
+          "completion": "rank 44, q 3, B 2, multiplicity 6, nodes 285561, candidates 1, exact 0",
+          "elapsed_seconds": 0.04288277401064988,
+          "output_sha256": "7147eea4ab1757a563eb5791211c2c0e943dda1be68a7bc8bee6de934293a365",
+          "rows": 1,
+          "stage": "before"
+        },
+        {
+          "completion": "rank 44, q 3, B 2, multiplicity 6, nodes 685, candidates 0, exact 0",
+          "elapsed_seconds": 0.0025865790084935725,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rows": 0,
+          "stage": "after"
+        }
+      ],
+      "rank": 44,
+      "removed": 1,
+      "removed_all_certified_by_prime_free_theorem": true,
+      "task": {
+        "B": 2,
+        "m": 6,
+        "prefix": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "q": 3
+      },
+      "task_index": 860
+    }
+  ],
+  "projection_checks": 5756,
+  "reference_archive_sha256": "930547c7156974c7b6af6c52025c61bd93de01014f10c766d166a16bd4753ffc",
+  "scope": "targeted differential validation, not a fresh census",
+  "source_sha256": {
+    "check_script": "f7cbc349495051b203d35f613d3666e11fef93f8cdaa2a31cefdaf3e52806ea2",
+    "mass_after": "73d64a4c11c5ce4494aa6ea2165106562691c59dba556de972af663aee4e9e38",
+    "mass_before": "8677bdb2e281356f583200cedc90964032610e87eadcccc1432c32d6ec12d3b1",
+    "native_after": "204ec3c4342319e49f99fe877d3dc4ee1be19b276e5e922bc3d76737b9b868fd",
+    "native_before": "6172185086208f6dee8ca9e1c3a7d91a2dae77947b4f0d78ae9970c8b349616a",
+    "prime_cut": "e2ebf30177aba4c7e80072abdc0955026d7e8f3ca97e1fb60910828390d6add0",
+    "prime_cut_prefix": "268bcd514b712a12371f3b10cabcf2c33bf32ef287c7a560230abfbf9ced34b2",
+    "python_after": "eb549b4d92c589c436fe850090a061528c6a30364e858957d8480697cdb148d4",
+    "python_before": "91c8ec20285a275ce3e34ebcb5799136cc2113ed4bbae3e079b0e082a1fb5ea3",
+    "terminal_criterion": "f9affb8d64b7169d71a53f017dcb64bb473310bada16953b9a9de9df89c8e2c7"
+  },
+  "status": "passed"
+}
+Checking verification/native_boundary/check.py
+Both native/exact boundary fixtures passed, with identical completed row sets.
+Checking unit tests in .
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.494s
+
+OK
+Checking unit tests in census
+..................................
+----------------------------------------------------------------------
+Ran 34 tests in 2.296s
+
+OK
+All selected checks passed (86.6 s).
+Denominator enumeration was not repeated.
+The odd-square and odd-nonsquare production certificate recursions were not repeated.
+The auxiliary rank-201 Gauss replay was not repeated.
+
+Additional release checks after source/result binding was added:
+python3 verification/odd_receipts/check.py
+Regenerated 16,512 prime profiles and all 1,461 square reservations;
+validated stored odd outcome accounting and all core source/result hashes.
+The final odd continuation recursions were not repeated.
+
+python3 verification/native_boundary/check.py --write
+Both native/exact boundary fixtures passed, with identical completed row sets;
+native square roots agree with unbounded integers on all large-width boundary inputs.

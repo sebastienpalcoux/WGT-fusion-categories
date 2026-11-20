@@ -1,0 +1,462 @@
+{
+  "archive_sha256": "930547c7156974c7b6af6c52025c61bd93de01014f10c766d166a16bd4753ffc",
+  "ledger_sha256": "26509a316c83d1b62fe666590cc43bc63fa17a7fe38d9044884719dddf0d8df6",
+  "stages": [
+    "primary_mass",
+    "prime_square_gcd",
+    "defect_one",
+    "principal_block",
+    "ternary_trace"
+  ],
+  "totals": {
+    "square": 7314,
+    "nonsquare": 10885,
+    "primary_mass": 8207,
+    "prime_square_gcd": 6194,
+    "defect_one": 6166,
+    "principal_block": 244,
+    "ternary_trace": 0
+  },
+  "table": [
+    {
+      "rank": 1,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 2,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 3,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 4,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 5,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 6,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 7,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 8,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 9,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 10,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 11,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 12,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 13,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 14,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 15,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 16,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 17,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 18,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 19,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 20,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 21,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 22,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 23,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 24,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 25,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 26,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 27,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 28,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 29,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 30,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 31,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 32,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 33,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 34,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 35,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 36,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 37,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 38,
+      "square": 0,
+      "nonsquare": 0,
+      "primary_mass": 0,
+      "prime_square_gcd": 0,
+      "defect_one": 0,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 39,
+      "square": 1,
+      "nonsquare": 0,
+      "primary_mass": 1,
+      "prime_square_gcd": 1,
+      "defect_one": 1,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 40,
+      "square": 2,
+      "nonsquare": 0,
+      "primary_mass": 2,
+      "prime_square_gcd": 2,
+      "defect_one": 2,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 41,
+      "square": 17,
+      "nonsquare": 4,
+      "primary_mass": 17,
+      "prime_square_gcd": 15,
+      "defect_one": 15,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 42,
+      "square": 111,
+      "nonsquare": 65,
+      "primary_mass": 119,
+      "prime_square_gcd": 98,
+      "defect_one": 98,
+      "principal_block": 0,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 43,
+      "square": 914,
+      "nonsquare": 723,
+      "primary_mass": 955,
+      "prime_square_gcd": 801,
+      "defect_one": 801,
+      "principal_block": 30,
+      "ternary_trace": 0
+    },
+    {
+      "rank": 44,
+      "square": 6269,
+      "nonsquare": 10093,
+      "primary_mass": 7113,
+      "prime_square_gcd": 5277,
+      "defect_one": 5249,
+      "principal_block": 214,
+      "ternary_trace": 0
+    }
+  ]
+}

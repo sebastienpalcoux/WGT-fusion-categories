@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "scope": "Read-only proof/code and completed-preparation audit; no new enumeration.",
+  "reference_zip_sha256": "930547c7156974c7b6af6c52025c61bd93de01014f10c766d166a16bd4753ffc",
+  "preparation_sha256": "2195a6d8a5d2d11e88f6916285970a1a586c452a58c1eaa69b0e45a299a096cf",
+  "current_sources_identical_to_complete_preparation": {
+    "preflight.py": "34591265d3fa25f9292b33c7d8e926e78b214a50440d7b6a30f75233ece95eb7",
+    "arithmetic/int_deficits.py": "9959e639709d0e1bb511a9fd7ad45ccca86788f8131ba7aba1103fe5f4f5fc43",
+    "arithmetic/gauss_divisors.py": "d38ad31d40a07e7fb2f6e3f69d620586ec65d90b5739c6f5ca86c0009ea766dc",
+    "arithmetic/large_four.py": "fb036d1734b80b0661a1c3f366e4e511f95892d330c6f9fd892ea3f681143fbc",
+    "arithmetic/row_quota.py": "6d9e4b9df2d3e16bacf7d9842a90ef68bb6fcad1e1f0857319cebb2ce0b6e72e",
+    "arithmetic/high-four44-mixed.json": "46977fa19596039f39d3d3b43f6d3a2b50fdb9ea1ab83102ec8856627d6328a9",
+    "engine_src/square44.cpp": "a873df90a43b0b28531363780ff1cf4424e60e34bf17ed8045cde3199870530e"
+  },
+  "primary_profiles": 46,
+  "positive_profiles": [
+    {
+      "index": 4,
+      "profile": {
+        "five": true,
+        "modes": [
+          0,
+          2,
+          2
+        ],
+        "neutral": 6,
+        "rows": 9,
+        "support": [
+          3,
+          5,
+          7
+        ]
+      },
+      "roots": [
+        136080,
+        15482880
+      ]
+    }
+  ],
+  "root_closures": [
+    {
+      "counts": [
+        13,
+        0,
+        0
+      ],
+      "profile": 4,
+      "root": 136080,
+      "status": "excluded"
+    },
+    {
+      "counts": [
+        39,
+        218,
+        5092
+      ],
+      "profile": 4,
+      "root": 15482880,
+      "status": "excluded"
+    }
+  ],
+  "lower_mixed_counts": {
+    "40": 10,
+    "41": 16,
+    "42": 21,
+    "43": 30
+  },
+  "unchanged_sharper_claims": [
+    "through41 at most12 fours",
+    "through40 ten mixed profiles and the stated denominator restrictions"
+  ],
+  "terminal_slot_bound": 5,
+  "proof_obligations": [
+    "m4 is9..13 by sq:saturation; four dimension primes by sq:three-prime-rank and sq:many-primes; odd-odd edges absent by cor:odd-isolation.",
+    "The rank44 isolated-five case and finite odd-prime range are proved in next:high-four44 independently of this primary closure.",
+    "new:mixed-neutral-rank gives three neutral coordinates on four singleton components, disjoint from pure four/prime classes; proper-witness reservations use max, not addition.",
+    "round:deficits gives the dyadic/odd deficit shapes and label costs; the existing nonzero-remainder argument and next-denominator bound ensure a finite complete recursion.",
+    "new:five-reduction and the displayed mass inequality force single five/seven packets; new:one-packet gives the complete prime classes and signed proper-free constraints.",
+    "The nines inequality reserves only a lower count; all leftover degrees must contain five and seven. Every final square sum uses all eligible divisors with repetition and zero padding.",
+    "Lower omission envelopes are monotone by adding zero-mask ordinary slots; lower primary budgets are at most44 and final zero padding allows fewer labels."
+  ]
+}

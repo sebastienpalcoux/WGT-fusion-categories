@@ -1,0 +1,42 @@
+{
+  "baseline_receipt": "arithmetic/odd-square-receipt.json",
+  "baseline_receipt_sha256": "2adce5890e4c2329ecb4c3d7cde91b64e382ff6f101d6e133d99372bff191805",
+  "baseline_source_sha256": {
+    "arithmetic/dense_boundary.py": "3e2cacf042b78d19ed0fecd2f519efcf42f32af8a0fad78a7902aa52fa1b4e42",
+    "arithmetic/dense_budget.py": "f9d98213526e2dcbaa8df6163b6e540d4927412cc48d5d28986ad9b4a3410c61",
+    "arithmetic/edge_budget.py": "7a2fe3381e9400a793ac8a1177f4d40d7ffb0cc383e5f48f45e678d963413863",
+    "arithmetic/edges.py": "aeeb6ae2400c77e88536383dccda06fc95349c643a34b434c95024505d35659a",
+    "arithmetic/full_blocks.py": "3417407e3e49fc82f6961d9ed03e2b07188c2c943b4c5b1780f888c8e1487154",
+    "arithmetic/gauss_native.cpp": "ecfde2ce79439bb096da1ab650862d447d5ab99030adeece3ead0314911fb18a",
+    "arithmetic/isolated_gauss.py": "554ddcddb56078c8a594ac2649db8a176d7b0057d379a2b179a19b933fbf0b3e",
+    "arithmetic/joint_gauss.py": "4572b58cfe1d8569de18fd1b2997ee0cb91c564766e8a45d5de5d14d61857e68",
+    "arithmetic/native_gauss.py": "1e68d201c02f4bb775bb01e13005eefe062934d2f0cc5ac4eded91fd2e7c45c5",
+    "arithmetic/nine_gram.py": "5a3d524cedfee2dc5ea32b54557507cc97714b89b235c1b61bb09657215925a3",
+    "arithmetic/odd_square.py": "7f11eeacb20ebeed2ea2ced7b3004738ef070fad68fa516ad00863afab0abf34",
+    "arithmetic/ordinary_tail.py": "a0ddf072575aa29dd70d3a22cea4944754df1b13ce1e058bfebdf8f174131b43",
+    "arithmetic/quadratic.py": "5428e84ed982df83d20f3c02b4b218091141ff0962fe00497ec679838dfb96a4",
+    "arithmetic/small_phases.py": "71003772d34adcb410bf3583370135d1b19f36805159ad6c4342ec76e2c0e374",
+    "build_odd_native.py": "2101182ea90e2ceb20e81feee9c672bf6ba47f7de01406309e5bdd3289c6d6b2"
+  },
+  "inputs": {
+    "201": {
+      "path": "arithmetic/odd-square-cases.json",
+      "prime_profiles": 13013,
+      "provenance": "Unchanged complete reservation list from the archived rank-201 calculation. Its order and entries exactly match the recovered saved profile output.",
+      "reservations": 924,
+      "sha256": "0ab7064ec531b2d61c7059b8f998f0a2818cbc10e43d569433aa818ff7dd201e"
+    },
+    "209": {
+      "generation_method": "The historical saved run imported the baseline odd_square module, set RANK=209, and called run(). No check_case or final Gauss search was run.",
+      "historical_prime_range": "PRIMES remained the import-time list of odd primes at most 101, initialized at rank 201. Updating the list at rank 209 adds only 103. A support containing 103 requires at least three distinct odd primes and has rank at least 2*(3+5+103)-1=221>209, so the updated list yields the same arithmetic profile output.",
+      "path": "verification/neutral_orbits/rank209-input.json",
+      "prime_profiles": 16512,
+      "provenance": "Saved exploratory support and multiplicity output at rank 209 from the baseline odd_square.run profile generator. The file is copied byte-for-byte from the recovered output. No odd_square.check_case or final Gauss verification at rank 209 was performed.",
+      "recommended_reproduction": "From the supplement root, import odd_square with arithmetic on sys.path; set RANK=209 and recompute PRIMES from the rank as shown in README.md; call count,rows=run(); serialize json.dumps({\"count\":count,\"rows\":rows},indent=1) without a final newline. Compare the bytes with rank209-input.json and write any reproduced output only to a temporary file.",
+      "reservations": 1401,
+      "sha256": "15f17cdc303dd3f6c051b3dcdf2337acf87692ce6cb6b1fa9d5173a5460b49f3"
+    }
+  },
+  "schema": "odd-neutral-screen-inputs-v1",
+  "scope": "Inputs for necessary-condition screens only. Rank 209 is exploratory: no final Gauss search, complete modular-data census, or rank-209 exclusion is certified."
+}

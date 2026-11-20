@@ -1,0 +1,676 @@
+{
+  "archive_sha256": "930547c7156974c7b6af6c52025c61bd93de01014f10c766d166a16bd4753ffc",
+  "format": "independent-finite-audit-v1",
+  "general": {
+    "columns": [
+      "square",
+      "nonsquare",
+      "primary_mass",
+      "prime_square_gcd",
+      "defect_one",
+      "principal_block",
+      "ternary_trace"
+    ],
+    "exact_continuations": 41915,
+    "table": [
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 1
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 2
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 3
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 4
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 5
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 6
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 8
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 9
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 10
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 11
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 12
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 13
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 14
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 15
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 16
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 17
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 18
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 19
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 20
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 21
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 22
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 23
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 24
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 25
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 26
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 27
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 28
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 29
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 30
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 31
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 32
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 33
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 34
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 35
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 36
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 37
+      },
+      {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 38
+      },
+      {
+        "counts": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "rank": 39
+      },
+      {
+        "counts": [
+          2,
+          0,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "rank": 40
+      },
+      {
+        "counts": [
+          17,
+          4,
+          17,
+          15,
+          15,
+          0,
+          0
+        ],
+        "rank": 41
+      },
+      {
+        "counts": [
+          111,
+          65,
+          119,
+          98,
+          98,
+          0,
+          0
+        ],
+        "rank": 42
+      },
+      {
+        "counts": [
+          914,
+          723,
+          955,
+          801,
+          801,
+          30,
+          0
+        ],
+        "rank": 43
+      },
+      {
+        "counts": [
+          6269,
+          10093,
+          7113,
+          5277,
+          5249,
+          214,
+          0
+        ],
+        "rank": 44
+      }
+    ],
+    "tasks": 12273,
+    "terminal_witnesses": 18199,
+    "totals": [
+      7314,
+      10885,
+      8207,
+      6194,
+      6166,
+      244,
+      0
+    ],
+    "witness_sha256": "7ee982bce6d59fdc162fce5cbfd3c23b96faa5bb074156bb49f6daa69f033c6d"
+  },
+  "group_arithmetic": {
+    "a5_subgroups": 59,
+    "binary_family": {
+      "dimension": 7200,
+      "rank": 37
+    },
+    "cohomology_orbits_conditional_on_group_and_action": {
+      "A5": 18,
+      "A6": 24,
+      "binary_odd": 36
+    },
+    "deleted_affine_fixed_counts": [
+      2,
+      2
+    ],
+    "deleted_fixed_labels": [
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "neutral_patterns": [
+      [
+        [
+          1
+        ],
+        7
+      ],
+      [
+        [
+          1,
+          15
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          30
+        ],
+        3
+      ],
+      [
+        [
+          6
+        ],
+        6
+      ],
+      [
+        [
+          6,
+          15
+        ],
+        5
+      ],
+      [
+        [
+          6,
+          15,
+          30
+        ],
+        1
+      ],
+      [
+        [
+          6,
+          30
+        ],
+        2
+      ]
+    ],
+    "untwisted_double_ranks": {
+      "A5": 22,
+      "A6": 44,
+      "PSL2(7)": 32,
+      "SL2(5)": 74
+    }
+  },
+  "odd_nonsquare": {
+    "profiles_after_floor15": 685040,
+    "profiles_before_floor15": 4189686,
+    "residual": "5023/266805",
+    "sector_choices": [
+      [
+        36,
+        [
+          15,
+          21,
+          33
+        ]
+      ]
+    ],
+    "supports": 14,
+    "tail_solutions": 0,
+    "tail_states": 172
+  },
+  "odd_square_prime_profile_counts": {
+    "209": 16512,
+    "217": 21396
+  },
+  "scope": "Terminal exclusion and finite arithmetic; no native partition regeneration or prefix-by-prefix certificate.",
+  "verifier_sha256": "8976fada1021f40fa042c5decb26ff9068b0ecf12cccc3cecfd8ec12862cd801"
+}

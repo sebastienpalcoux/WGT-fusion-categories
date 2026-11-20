@@ -1,0 +1,31 @@
+{
+  "legacy_reference_terminal_suffixes": [
+    {
+      "rank": 39,
+      "matching_rows": 1,
+      "seed_recovered": true
+    },
+    {
+      "rank": 40,
+      "matching_rows": 1,
+      "seed_recovered": true
+    },
+    {
+      "rank": 41,
+      "matching_rows": 1,
+      "seed_recovered": true
+    },
+    {
+      "rank": 42,
+      "matching_rows": 1,
+      "seed_recovered": true
+    },
+    {
+      "rank": 43,
+      "matching_rows": 1,
+      "seed_recovered": true
+    }
+  ],
+  "rank44_new_criterion_exclusions": 8,
+  "production_census_reused": false
+}

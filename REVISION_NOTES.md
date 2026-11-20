@@ -1,5 +1,7 @@
 # Referee revision: three-prime arithmetic frontier
 
+This note records the **dimension-frontier publication completed on 18 November 2026**. For all later manuscripts, see the [catalogue](papers/README.md).
+
 This package revises both manuscripts in response to the supplied reports.
 The research draft is 423 pages; the short paper is 47 pages.
 The research draft remains a unified theoretical text. The shorter paper
@@ -47,8 +49,10 @@ comparison. The referee revisions were checked against the supplied reports;
 the manuscript and response-letter pages changed in the final review were
 typeset and visually inspected before publication.
 
-Excluding only the two manuscripts' TeX/PDF files, all accompanying material
-combined must be below 10,000,000 bytes. SIZE_REPORT.json records the measured
-size of this delivery and of the complete current repository. It also
-records the totals with the small historical source archive expanded;
-archive compression is not used to hide oversized verification data.
+For this dimension-frontier delivery, the combined accompanying material,
+excluding only the two manuscripts' TeX/PDF files, was required to be below
+10,000,000 bytes. [SIZE_REPORT.json](SIZE_REPORT.json) preserves the measured
+size of that delivery and of the repository at its publication commit. It also
+records the totals with the small historical source archive expanded.
+These are historical measurements of that release and do not include later
+rank-manuscript additions.

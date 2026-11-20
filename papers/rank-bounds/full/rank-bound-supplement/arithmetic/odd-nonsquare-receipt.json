@@ -1,0 +1,157 @@
+{
+  "schema": "odd-nonsquare-exact-supports-v1",
+  "rank_cap": 203,
+  "global_nonsquare_rank_cap": 208,
+  "supports": 11,
+  "survivors": 0,
+  "certified_utc": "2026-11-18T07:35:07.444571+00:00",
+  "source_file": "arithmetic/odd_nonsquare.py",
+  "source_sha256": "017fac7906cc2b3606b4e0e239d843471eb4427c17cf3696093a254ccc59c745",
+  "verification_command": "python arithmetic/odd_nonsquare.py",
+  "results": [
+    {
+      "allowed_primes": [
+        5,
+        7,
+        11
+      ],
+      "counts": [
+        54153,
+        1537,
+        50,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        7,
+        13
+      ],
+      "counts": [
+        28975,
+        315,
+        4,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        7,
+        17
+      ],
+      "counts": [
+        9935,
+        7,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        7,
+        19
+      ],
+      "counts": [
+        54713,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        7,
+        23
+      ],
+      "counts": [
+        54559,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        11,
+        13
+      ],
+      "counts": [
+        31124,
+        23,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        11,
+        17
+      ],
+      "counts": [
+        10847,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        11,
+        19
+      ],
+      "counts": [
+        57125,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        5,
+        13,
+        17
+      ],
+      "counts": [
+        5680,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        7,
+        11,
+        13
+      ],
+      "counts": [
+        69829,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "allowed_primes": [
+        7,
+        11,
+        17
+      ],
+      "counts": [
+        25364,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "stdout_sha256": "df96f5a612c5909f3ad7f1ef3342205212c4783a0853c9bf163e85862fc18dd4"
+}

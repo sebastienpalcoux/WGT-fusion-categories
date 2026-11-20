@@ -1,0 +1,9070 @@
+{
+ "baseline_prime_profiles": 13013,
+ "baseline_receipt_sha256": "2adce5890e4c2329ecb4c3d7cde91b64e382ff6f101d6e133d99372bff191805",
+ "checker_sha256": "f1b4d44d9560d44d92e8f21f0dc50dc1973e0b11f4f688bae69b93e8f8fb1c61",
+ "counts": {
+  "active_cost": 32,
+  "mixed_neutral_orbits": 4,
+  "neutral_fields": 54,
+  "retained": 834
+ },
+ "input_path": "arithmetic/odd-square-cases.json",
+ "input_reservations": 924,
+ "input_sha256": "0ab7064ec531b2d61c7059b8f998f0a2818cbc10e43d569433aa818ff7dd201e",
+ "outcomes": [
+  {
+   "index": 0,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 1,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 2,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 3,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 4,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 5,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 6,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 7,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 8,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 9,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 10,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 11,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 12,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 13,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 14,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 15,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 16,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 17,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 18,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 19,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 20,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 21,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 22,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 23,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7
+   ]
+  },
+  {
+   "index": 24,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 25,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 26,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 27,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 28,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 29,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 30,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 31,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 32,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 33,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 34,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 35,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 36,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 37,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 38,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 39,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 40,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 41,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 42,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": []
+  },
+  {
+   "index": 43,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 44,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 45,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 46,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 47,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 48,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 49,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 50,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 51,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 52,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 53,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 54,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 55,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 56,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 57,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 58,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 59,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 60,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 61,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 62,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 63,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 64,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 65,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 66,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 67,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 68,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 69,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 70,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 71,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 72,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 73,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 74,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 75,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 76,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 77,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 78,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 79,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 80,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 81,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 82,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 83,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 84,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "1307266441/4228250625"
+  },
+  {
+   "index": 85,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 86,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 87,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 88,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 89,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 90,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 91,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 92,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 93,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 94,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 95,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 96,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 97,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 98,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 99,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 100,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 101,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 102,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 103,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 104,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 105,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 106,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 107,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 108,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 109,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 110,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 111,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 112,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 113,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 114,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 115,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 116,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 117,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 118,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 119,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11
+   ],
+   "upper": "1761743284561/1779622700625"
+  },
+  {
+   "index": 120,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 121,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 122,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 123,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 124,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 125,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 126,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 127,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 128,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 129,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 130,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 131,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 132,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 133,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 134,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 135,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 136,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 137,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 138,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11
+   ],
+   "upper": "14066948741/14236981605"
+  },
+  {
+   "index": 139,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 140,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 141,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 142,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 143,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 144,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 145,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 146,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 147,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 148,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 149,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 150,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 151,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 152,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 153,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 154,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 155,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 156,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 157,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 158,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 159,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 160,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 161,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 162,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 163,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 164,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 165,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 166,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 167,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 168,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 169,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 170,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 171,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 172,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 173,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 174,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 175,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 176,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 177,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 178,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 179,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 180,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 181,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 182,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 183,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 184,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 185,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 186,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 187,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 188,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 189,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 190,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 191,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 192,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 193,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 194,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 195,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 196,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 197,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 198,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 199,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 200,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 201,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 202,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 203,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11
+   ]
+  },
+  {
+   "index": 204,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 205,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 206,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11
+   ]
+  },
+  {
+   "index": 207,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    5,
+    7,
+    13
+   ],
+   "upper": "120338002867/128578051875"
+  },
+  {
+   "index": 208,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    13
+   ],
+   "upper": "3382984401281/3471607400625"
+  },
+  {
+   "index": 209,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    13
+   ],
+   "upper": "3437844370081/3471607400625"
+  },
+  {
+   "index": 210,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13
+   ]
+  },
+  {
+   "index": 211,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13
+   ]
+  },
+  {
+   "index": 212,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13
+   ]
+  },
+  {
+   "index": 213,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13
+   ]
+  },
+  {
+   "index": 214,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13
+   ]
+  },
+  {
+   "index": 215,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 216,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 217,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 218,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13
+   ]
+  },
+  {
+   "index": 219,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "1685328386041/10152029750625"
+  },
+  {
+   "index": 220,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "615251840947/3384009916875"
+  },
+  {
+   "index": 221,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "2006182659641/10152029750625"
+  },
+  {
+   "index": 222,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "2166609796441/10152029750625"
+  },
+  {
+   "index": 223,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "86186553083/376001101875"
+  },
+  {
+   "index": 224,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "2487464070041/10152029750625"
+  },
+  {
+   "index": 225,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "2647891206841/10152029750625"
+  },
+  {
+   "index": 226,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    19
+   ],
+   "upper": "15785500534241/15840599000625"
+  },
+  {
+   "index": 227,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 228,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 229,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 230,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 231,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 232,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 233,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 234,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 235,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 236,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 237,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 238,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 239,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 240,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 241,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 242,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 243,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 244,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 245,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 246,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 247,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 248,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 249,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 250,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 251,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 252,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 253,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 254,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 255,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 256,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 257,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 258,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 259,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 260,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 261,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 262,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 263,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 264,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19
+   ]
+  },
+  {
+   "index": 265,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 266,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 267,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 268,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 269,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 270,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 271,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 272,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 273,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 274,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 275,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 276,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 277,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19
+   ]
+  },
+  {
+   "index": 278,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    23
+   ],
+   "upper": "3750838456129/3779427605625"
+  },
+  {
+   "index": 279,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 280,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 281,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 282,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 283,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 284,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 285,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 286,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 287,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 288,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 289,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 290,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 291,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 292,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 293,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 294,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 295,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 296,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 297,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 298,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 299,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 300,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 301,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 302,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 303,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23
+   ]
+  },
+  {
+   "index": 304,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 305,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 306,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 307,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 308,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23
+   ]
+  },
+  {
+   "index": 309,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    31
+   ],
+   "upper": "110506981438841/112254554750625"
+  },
+  {
+   "index": 310,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 311,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 312,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 313,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 314,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 315,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 316,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 317,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 318,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 319,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 320,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 321,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    31
+   ]
+  },
+  {
+   "index": 322,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 323,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 324,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 325,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    31
+   ]
+  },
+  {
+   "index": 326,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    43
+   ],
+   "upper": "410711609175121/415557398300625"
+  },
+  {
+   "index": 327,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    43
+   ]
+  },
+  {
+   "index": 328,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    43
+   ]
+  },
+  {
+   "index": 329,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13
+   ],
+   "upper": "6813003591107/7056477016875"
+  },
+  {
+   "index": 330,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13
+   ],
+   "upper": "20773540054121/21169431050625"
+  },
+  {
+   "index": 331,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13
+   ],
+   "upper": "21108069334921/21169431050625"
+  },
+  {
+   "index": 332,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 333,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 334,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 335,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 336,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 337,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 338,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13
+   ],
+   "upper": "173114731201/174953975625"
+  },
+  {
+   "index": 339,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 340,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 341,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 342,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 343,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 344,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 345,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 346,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 347,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 348,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 349,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 350,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "9807510412481/61905817400625"
+  },
+  {
+   "index": 351,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "10785775181281/61905817400625"
+  },
+  {
+   "index": 352,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "1307115550009/6878424155625"
+  },
+  {
+   "index": 353,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "12742304718881/61905817400625"
+  },
+  {
+   "index": 354,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "13720569487681/61905817400625"
+  },
+  {
+   "index": 355,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "96065220761/511618325625"
+  },
+  {
+   "index": 356,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "104150053561/511618325625"
+  },
+  {
+   "index": 357,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "1385615881/6316275625"
+  },
+  {
+   "index": 358,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "120319719161/511618325625"
+  },
+  {
+   "index": 359,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "128404551961/511618325625"
+  },
+  {
+   "index": 360,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "45496461587/170539441875"
+  },
+  {
+   "index": 361,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "144574217561/511618325625"
+  },
+  {
+   "index": 362,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    19
+   ],
+   "upper": "10599005647009/10732667405625"
+  },
+  {
+   "index": 363,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 364,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 365,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 366,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 367,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 368,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 369,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 370,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 371,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 372,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 373,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 374,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 375,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 376,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 377,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 378,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 379,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 380,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 381,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 382,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 383,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 384,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 385,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 386,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 387,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 388,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 389,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 390,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 391,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 392,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 393,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 394,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 395,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 396,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 397,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 398,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 399,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 400,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 401,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 402,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 403,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 404,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 405,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 406,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 407,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 408,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 409,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 410,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 411,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 412,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 413,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 414,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 415,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 416,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 417,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 418,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 419,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 420,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 421,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 422,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 423,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 424,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 425,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 426,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 427,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 428,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 429,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 430,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 431,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 432,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 433,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 434,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 435,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 436,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 437,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 438,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 439,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 440,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 441,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 442,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 443,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 444,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 445,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 446,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 447,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 448,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 449,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 450,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 451,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 452,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 453,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 454,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 455,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 456,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 457,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 458,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    23
+   ],
+   "upper": "203987668664401/207418324100625"
+  },
+  {
+   "index": 459,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    23
+   ],
+   "upper": "69088463443067/69139441366875"
+  },
+  {
+   "index": 460,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 461,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 462,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 463,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 464,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 465,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 466,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 467,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 468,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 469,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 470,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 471,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 472,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 473,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 474,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 475,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 476,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 477,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 478,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 479,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 480,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 481,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 482,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 483,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 484,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 485,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 486,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 487,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 488,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 489,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 490,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 491,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 492,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 493,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 494,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 495,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 496,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 497,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 498,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 499,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 500,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 501,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 502,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 503,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 504,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 505,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 506,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 507,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 508,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 509,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 510,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 511,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 512,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 513,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 514,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 515,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 516,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 517,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 518,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 519,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 520,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 521,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    31
+   ],
+   "upper": "678531131080481/684514342400625"
+  },
+  {
+   "index": 522,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 523,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 524,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 525,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 526,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 527,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 528,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 529,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 530,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 531,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 532,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 533,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 534,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 535,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 536,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 537,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 538,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 539,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 540,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 541,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 542,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 543,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 544,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 545,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 546,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 547,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 548,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 549,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 550,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 551,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    43
+   ]
+  },
+  {
+   "index": 552,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    43
+   ]
+  },
+  {
+   "index": 553,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    43
+   ]
+  },
+  {
+   "index": 554,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    43
+   ]
+  },
+  {
+   "index": 555,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    43
+   ]
+  },
+  {
+   "index": 556,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    47
+   ]
+  },
+  {
+   "index": 557,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    5,
+    13,
+    19
+   ],
+   "upper": "175901901717689/188431215350625"
+  },
+  {
+   "index": 558,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    19
+   ],
+   "upper": "183167437171801/188431215350625"
+  },
+  {
+   "index": 559,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    19
+   ],
+   "upper": "20682790626289/20936801705625"
+  },
+  {
+   "index": 560,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 561,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 562,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    19
+   ],
+   "upper": "173750754347/173990041875"
+  },
+  {
+   "index": 563,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 564,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 565,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 566,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 567,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 568,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 569,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    23
+   ],
+   "upper": "391665949793921/404622276800625"
+  },
+  {
+   "index": 570,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    23
+   ],
+   "upper": "398059980834721/404622276800625"
+  },
+  {
+   "index": 571,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    13,
+    23
+   ],
+   "upper": "252914267083/254960476875"
+  },
+  {
+   "index": 572,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    23
+   ]
+  },
+  {
+   "index": 573,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    23
+   ]
+  },
+  {
+   "index": 574,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    23
+   ]
+  },
+  {
+   "index": 575,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "278298098201/1526398475625"
+  },
+  {
+   "index": 576,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "302418963001/1526398475625"
+  },
+  {
+   "index": 577,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "36282203089/169599830625"
+  },
+  {
+   "index": 578,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    19,
+    23
+   ],
+   "upper": "1827842388333281/1846251172400625"
+  },
+  {
+   "index": 579,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 580,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 581,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 582,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 583,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 584,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 585,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 586,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 587,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 588,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 589,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 590,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 591,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 592,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 593,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 594,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 595,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 596,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 597,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 598,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 599,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 600,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 601,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 602,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 603,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 604,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 605,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 606,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 607,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 608,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 609,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 610,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 611,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 612,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 613,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 614,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 615,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 616,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    31
+   ]
+  },
+  {
+   "index": 617,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23,
+    31
+   ]
+  },
+  {
+   "index": 618,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    23,
+    31
+   ]
+  },
+  {
+   "index": 619,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 620,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 621,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 622,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 623,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 624,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 625,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "1300931404381489/5945434703156025"
+  },
+  {
+   "index": 626,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "172928838875/655144319907"
+  },
+  {
+   "index": 627,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "13746130257737/49135823993025"
+  },
+  {
+   "index": 628,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 629,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 630,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 631,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 632,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 633,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 634,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 635,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 636,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 637,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 638,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 639,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 640,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 641,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 642,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 643,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 644,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 645,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 646,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 647,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 648,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 649,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 650,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 651,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 652,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 653,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 654,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 655,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 656,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 657,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 658,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 659,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 660,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 661,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 662,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 663,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 664,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 665,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 666,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 667,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 668,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 669,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 670,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 671,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 672,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 673,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 674,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 675,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 676,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    43
+   ]
+  },
+  {
+   "index": 677,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    43
+   ]
+  },
+  {
+   "index": 678,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    47
+   ]
+  },
+  {
+   "index": 679,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 680,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 681,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 682,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    13,
+    19
+   ]
+  },
+  {
+   "index": 683,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    23
+   ]
+  },
+  {
+   "index": 684,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "3438539131457/16288367733225"
+  },
+  {
+   "index": 685,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 686,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 687,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 688,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 689,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 690,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 691,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 692,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 693,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 694,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    19,
+    23
+   ]
+  },
+  {
+   "index": 695,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 696,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 697,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 698,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    23,
+    31
+   ]
+  },
+  {
+   "index": 699,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 700,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 701,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    23
+   ]
+  },
+  {
+   "index": 702,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 703,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 704,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 705,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 706,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 707,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 708,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 709,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 710,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 711,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 712,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 713,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23,
+    31
+   ]
+  },
+  {
+   "index": 714,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "16069319245713907/16942601317516875"
+  },
+  {
+   "index": 715,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "49011162540342521/50827803952550625"
+  },
+  {
+   "index": 716,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "49814367343543321/50827803952550625"
+  },
+  {
+   "index": 717,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "5624174682971569/5647533772505625"
+  },
+  {
+   "index": 718,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 719,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 720,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "37135505404691/38187681406875"
+  },
+  {
+   "index": 721,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ],
+   "upper": "12579655020497/12729227135625"
+  },
+  {
+   "index": 722,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 723,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 724,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 725,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13
+   ]
+  },
+  {
+   "index": 726,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 727,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 728,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13
+   ]
+  },
+  {
+   "index": 729,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "25758692372260081/148635867578900625"
+  },
+  {
+   "index": 730,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "229512480683561/1228395599825625"
+  },
+  {
+   "index": 731,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "248924164236361/1228395599825625"
+  },
+  {
+   "index": 732,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "89445282596387/409465199941875"
+  },
+  {
+   "index": 733,
+   "keep": false,
+   "reason": "active_cost",
+   "upper": "287747531341961/1228395599825625"
+  },
+  {
+   "index": 734,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ],
+   "upper": "228746922234177881/231922209968150625"
+  },
+  {
+   "index": 735,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 736,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 737,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 738,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 739,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 740,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 741,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 742,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 743,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 744,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 745,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 746,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 747,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 748,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 749,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 750,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 751,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 752,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 753,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 754,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 755,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 756,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 757,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 758,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 759,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 760,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 761,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 762,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 763,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 764,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 765,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 766,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 767,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 768,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 769,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 770,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 771,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 772,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 773,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 774,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 775,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 776,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 777,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 778,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 779,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 780,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 781,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19
+   ]
+  },
+  {
+   "index": 782,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 783,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 784,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 785,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 786,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 787,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 788,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 789,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19
+   ]
+  },
+  {
+   "index": 790,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ],
+   "upper": "163052715638893867/166003798721866875"
+  },
+  {
+   "index": 791,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ],
+   "upper": "497027956633866401/498011396165600625"
+  },
+  {
+   "index": 792,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 793,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 794,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 795,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 796,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 797,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 798,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 799,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 800,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 801,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 802,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 803,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 804,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 805,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 806,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 807,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 808,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 809,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 810,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 811,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 812,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 813,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 814,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 815,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 816,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 817,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    23
+   ]
+  },
+  {
+   "index": 818,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 819,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 820,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 821,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 822,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 823,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 824,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    23
+   ]
+  },
+  {
+   "index": 825,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ],
+   "upper": "1601147927773906481/1643518936103900625"
+  },
+  {
+   "index": 826,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ],
+   "upper": "1627119585035795281/1643518936103900625"
+  },
+  {
+   "index": 827,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 828,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 829,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 830,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ],
+   "upper": "136954442844739/137200011361875"
+  },
+  {
+   "index": 831,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 832,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 833,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 834,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 835,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 836,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 837,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 838,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 839,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 840,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    31
+   ]
+  },
+  {
+   "index": 841,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    31
+   ]
+  },
+  {
+   "index": 842,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ],
+   "upper": "432075774818164201/452423348056850625"
+  },
+  {
+   "index": 843,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ],
+   "upper": "410057147677147/417750090541875"
+  },
+  {
+   "index": 844,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ],
+   "upper": "1249975891768241/1253250271625625"
+  },
+  {
+   "index": 845,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 846,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 847,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ],
+   "upper": "4383164511819678481/4432849064933900625"
+  },
+  {
+   "index": 848,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 849,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 850,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 851,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 852,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 853,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 854,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 855,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 856,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 857,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 858,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 859,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 860,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 861,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ],
+   "upper": "7432842240929881/7642164609275625"
+  },
+  {
+   "index": 862,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ],
+   "upper": "7372368078113507/7600059019141875"
+  },
+  {
+   "index": 863,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ],
+   "upper": "22477403328581321/22800177057425625"
+  },
+  {
+   "index": 864,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ],
+   "upper": "20648536790587/21052795066875"
+  },
+  {
+   "index": 865,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ],
+   "upper": "62943668804561/63158385200625"
+  },
+  {
+   "index": 866,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 867,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 868,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 869,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    23
+   ],
+   "upper": "91620525652529/92550653105625"
+  },
+  {
+   "index": 870,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    11,
+    13,
+    23
+   ],
+   "upper": "93083054491729/92550653105625"
+  },
+  {
+   "index": 871,
+   "keep": false,
+   "reason": "mixed_neutral_orbits",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ],
+   "upper": "3108653094281/3018384400625"
+  },
+  {
+   "index": 872,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 873,
+   "keep": false,
+   "reason": "mixed_neutral_orbits",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ],
+   "upper": "3829530983077/3653833748125"
+  },
+  {
+   "index": 874,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 875,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 876,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 877,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 878,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 879,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 880,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 881,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 882,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 883,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 884,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 885,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 886,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 887,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 888,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 889,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 890,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 891,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 892,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 893,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 894,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 895,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 896,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 897,
+   "keep": false,
+   "reason": "mixed_neutral_orbits",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ],
+   "upper": "67905631731191/65878346469375"
+  },
+  {
+   "index": 898,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 899,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 900,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 901,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13,
+    19
+   ],
+   "upper": "26353711925567179/27183462558327075"
+  },
+  {
+   "index": 902,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 903,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "index": 904,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13,
+    23
+   ],
+   "upper": "8771381712643393/8888564724264225"
+  },
+  {
+   "index": 905,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 906,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 907,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 908,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 909,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 910,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 911,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 912,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 913,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 914,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    31
+   ]
+  },
+  {
+   "index": 915,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    13,
+    19
+   ],
+   "upper": "148543775427796961/151643282866700625"
+  },
+  {
+   "index": 916,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ],
+   "upper": "1008830821615108769/1013940901431005625"
+  },
+  {
+   "index": 917,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ],
+   "upper": "1024853591415499969/1013940901431005625"
+  },
+  {
+   "index": 918,
+   "keep": false,
+   "reason": "neutral_fields",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ],
+   "upper": "164680487856985249/165089177241305625"
+  },
+  {
+   "index": 919,
+   "keep": false,
+   "reason": "mixed_neutral_orbits",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ],
+   "upper": "9649320725615881/9228587547650625"
+  },
+  {
+   "index": 920,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 921,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 922,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  },
+  {
+   "index": 923,
+   "keep": true,
+   "reason": "retained",
+   "sparse_primes": [
+    7,
+    11,
+    19,
+    23
+   ]
+  }
+ ],
+ "provenance_sha256": "734cb5cf623e7b1b1bebfefbce4ff2285c5a1b256c86de3b8987cffb9c6bb9d9",
+ "rank": 201,
+ "retained": 834,
+ "retained_indices": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129,
+  130,
+  131,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  139,
+  140,
+  141,
+  142,
+  143,
+  144,
+  145,
+  146,
+  147,
+  148,
+  149,
+  150,
+  151,
+  152,
+  153,
+  154,
+  155,
+  156,
+  157,
+  158,
+  159,
+  160,
+  161,
+  162,
+  163,
+  164,
+  165,
+  166,
+  167,
+  168,
+  169,
+  170,
+  171,
+  172,
+  173,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179,
+  180,
+  181,
+  182,
+  183,
+  184,
+  185,
+  186,
+  187,
+  188,
+  189,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  196,
+  197,
+  198,
+  199,
+  200,
+  201,
+  202,
+  203,
+  204,
+  205,
+  206,
+  210,
+  211,
+  212,
+  213,
+  214,
+  215,
+  216,
+  217,
+  218,
+  227,
+  228,
+  229,
+  230,
+  231,
+  232,
+  233,
+  234,
+  235,
+  236,
+  237,
+  238,
+  239,
+  240,
+  241,
+  242,
+  243,
+  244,
+  245,
+  246,
+  247,
+  248,
+  249,
+  250,
+  251,
+  252,
+  253,
+  254,
+  255,
+  256,
+  257,
+  258,
+  259,
+  260,
+  261,
+  262,
+  263,
+  264,
+  265,
+  266,
+  267,
+  268,
+  269,
+  270,
+  271,
+  272,
+  273,
+  274,
+  275,
+  276,
+  277,
+  279,
+  280,
+  281,
+  282,
+  283,
+  284,
+  285,
+  286,
+  287,
+  288,
+  289,
+  290,
+  291,
+  292,
+  293,
+  294,
+  295,
+  296,
+  297,
+  298,
+  299,
+  300,
+  301,
+  302,
+  303,
+  304,
+  305,
+  306,
+  307,
+  308,
+  310,
+  311,
+  312,
+  313,
+  314,
+  315,
+  316,
+  317,
+  318,
+  319,
+  320,
+  321,
+  322,
+  323,
+  324,
+  325,
+  327,
+  328,
+  332,
+  333,
+  334,
+  335,
+  336,
+  337,
+  339,
+  340,
+  341,
+  342,
+  343,
+  344,
+  345,
+  346,
+  347,
+  348,
+  349,
+  363,
+  364,
+  365,
+  366,
+  367,
+  368,
+  369,
+  370,
+  371,
+  372,
+  373,
+  374,
+  375,
+  376,
+  377,
+  378,
+  379,
+  380,
+  381,
+  382,
+  383,
+  384,
+  385,
+  386,
+  387,
+  388,
+  389,
+  390,
+  391,
+  392,
+  393,
+  394,
+  395,
+  396,
+  397,
+  398,
+  399,
+  400,
+  401,
+  402,
+  403,
+  404,
+  405,
+  406,
+  407,
+  408,
+  409,
+  410,
+  411,
+  412,
+  413,
+  414,
+  415,
+  416,
+  417,
+  418,
+  419,
+  420,
+  421,
+  422,
+  423,
+  424,
+  425,
+  426,
+  427,
+  428,
+  429,
+  430,
+  431,
+  432,
+  433,
+  434,
+  435,
+  436,
+  437,
+  438,
+  439,
+  440,
+  441,
+  442,
+  443,
+  444,
+  445,
+  446,
+  447,
+  448,
+  449,
+  450,
+  451,
+  452,
+  453,
+  454,
+  455,
+  456,
+  457,
+  460,
+  461,
+  462,
+  463,
+  464,
+  465,
+  466,
+  467,
+  468,
+  469,
+  470,
+  471,
+  472,
+  473,
+  474,
+  475,
+  476,
+  477,
+  478,
+  479,
+  480,
+  481,
+  482,
+  483,
+  484,
+  485,
+  486,
+  487,
+  488,
+  489,
+  490,
+  491,
+  492,
+  493,
+  494,
+  495,
+  496,
+  497,
+  498,
+  499,
+  500,
+  501,
+  502,
+  503,
+  504,
+  505,
+  506,
+  507,
+  508,
+  509,
+  510,
+  511,
+  512,
+  513,
+  514,
+  515,
+  516,
+  517,
+  518,
+  519,
+  520,
+  522,
+  523,
+  524,
+  525,
+  526,
+  527,
+  528,
+  529,
+  530,
+  531,
+  532,
+  533,
+  534,
+  535,
+  536,
+  537,
+  538,
+  539,
+  540,
+  541,
+  542,
+  543,
+  544,
+  545,
+  546,
+  547,
+  548,
+  549,
+  550,
+  551,
+  552,
+  553,
+  554,
+  555,
+  556,
+  560,
+  561,
+  563,
+  564,
+  565,
+  566,
+  567,
+  568,
+  572,
+  573,
+  574,
+  579,
+  580,
+  581,
+  582,
+  583,
+  584,
+  585,
+  586,
+  587,
+  588,
+  589,
+  590,
+  591,
+  592,
+  593,
+  594,
+  595,
+  596,
+  597,
+  598,
+  599,
+  600,
+  601,
+  602,
+  603,
+  604,
+  605,
+  606,
+  607,
+  608,
+  609,
+  610,
+  611,
+  612,
+  613,
+  614,
+  615,
+  616,
+  617,
+  618,
+  619,
+  620,
+  621,
+  622,
+  623,
+  624,
+  628,
+  629,
+  630,
+  631,
+  632,
+  633,
+  634,
+  635,
+  636,
+  637,
+  638,
+  639,
+  640,
+  641,
+  642,
+  643,
+  644,
+  645,
+  646,
+  647,
+  648,
+  649,
+  650,
+  651,
+  652,
+  653,
+  654,
+  655,
+  656,
+  657,
+  658,
+  659,
+  660,
+  661,
+  662,
+  663,
+  664,
+  665,
+  666,
+  667,
+  668,
+  669,
+  670,
+  671,
+  672,
+  673,
+  674,
+  675,
+  676,
+  677,
+  678,
+  679,
+  680,
+  681,
+  682,
+  683,
+  685,
+  686,
+  687,
+  688,
+  689,
+  690,
+  691,
+  692,
+  693,
+  694,
+  695,
+  696,
+  697,
+  698,
+  699,
+  700,
+  701,
+  702,
+  703,
+  704,
+  705,
+  706,
+  707,
+  708,
+  709,
+  710,
+  711,
+  712,
+  713,
+  718,
+  719,
+  722,
+  723,
+  724,
+  725,
+  726,
+  727,
+  728,
+  735,
+  736,
+  737,
+  738,
+  739,
+  740,
+  741,
+  742,
+  743,
+  744,
+  745,
+  746,
+  747,
+  748,
+  749,
+  750,
+  751,
+  752,
+  753,
+  754,
+  755,
+  756,
+  757,
+  758,
+  759,
+  760,
+  761,
+  762,
+  763,
+  764,
+  765,
+  766,
+  767,
+  768,
+  769,
+  770,
+  771,
+  772,
+  773,
+  774,
+  775,
+  776,
+  777,
+  778,
+  779,
+  780,
+  781,
+  782,
+  783,
+  784,
+  785,
+  786,
+  787,
+  788,
+  789,
+  792,
+  793,
+  794,
+  795,
+  796,
+  797,
+  798,
+  799,
+  800,
+  801,
+  802,
+  803,
+  804,
+  805,
+  806,
+  807,
+  808,
+  809,
+  810,
+  811,
+  812,
+  813,
+  814,
+  815,
+  816,
+  817,
+  818,
+  819,
+  820,
+  821,
+  822,
+  823,
+  824,
+  827,
+  828,
+  829,
+  831,
+  832,
+  833,
+  834,
+  835,
+  836,
+  837,
+  838,
+  839,
+  840,
+  841,
+  845,
+  846,
+  848,
+  849,
+  850,
+  851,
+  852,
+  853,
+  854,
+  855,
+  856,
+  857,
+  858,
+  859,
+  860,
+  866,
+  867,
+  868,
+  872,
+  874,
+  875,
+  876,
+  877,
+  878,
+  879,
+  880,
+  881,
+  882,
+  883,
+  884,
+  885,
+  886,
+  887,
+  888,
+  889,
+  890,
+  891,
+  892,
+  893,
+  894,
+  895,
+  896,
+  898,
+  899,
+  900,
+  902,
+  903,
+  905,
+  906,
+  907,
+  908,
+  909,
+  910,
+  911,
+  912,
+  913,
+  914,
+  920,
+  921,
+  922,
+  923
+ ],
+ "schema": "odd-neutral-orbit-screen-v1",
+ "scope": "Necessary-condition screen of the specified saved arithmetic reservations. Retention does not establish realizability; the rank-209 input is exploratory, and no rank-209 exclusion or complete modular-data census is certified."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "returncode": 0,
+  "stdout": "Three-prime support through rank44: six final intervals, all excluded.\n",
+  "stderr": "",
+  "elapsed_seconds": 1.749534300994128,
+  "sources": {
+    "three_prime_rank.py": "7cbe2c894d37bc12527e1040aedb19b37f90e17fdbc092905161c552f2eba6df",
+    "three_primes.py": "7008a48899b17e298052d7d746d654c0e381984f420c0138b5a0fa26f9758ee6",
+    "full_census.py": "97acb6eda76ed7a2ed0b321e92244b3121a98f77575fc097e27e04b775aa174c",
+    "row_quota.py": "6d9e4b9df2d3e16bacf7d9842a90ef68bb6fcad1e1f0857319cebb2ce0b6e72e"
+  }
+}

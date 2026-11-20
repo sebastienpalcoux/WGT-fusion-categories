@@ -1,5 +1,7 @@
 # Independent rank shards for the ordinary modular case
 
+**Historical exploratory continuation code.** For the manuscript and companion matching a current result, start with the [rank guide](../README.md) or [verification map](../../VERIFICATION.md). This directory is not the verification package for the new rank-45/217 manuscripts.
+
 The search takes a rank between 6 and 48 and returns a finite superset of candidate degree vectors for a nontrivial simple perfect integral modular category. Several proved WGT exponent boxes are removed at the two-term stage. The remaining vectors require the manuscript's subsequent categorical sieves. The upper accepted rank is a software parameter and carries no assertion about running time or completed proofs.
 
 From the package root, use `python3 continue_ranks.py --ranks 24 --jobs 12`.

@@ -1,5 +1,7 @@
 # Manuscript and compact exact checks
 
+[Overview](../../../README.md) · [All manuscripts](../../README.md) · [Dimension guide](../../dimension-bounds.md) · [Research guide](../README.md) · [Verification map](../../../VERIFICATION.md)
+
 The complete theoretical discussion is in `p6q6r4_manuscript.tex` and
 `p6q6r4_manuscript.pdf`. There is no theoretical appendix or supplement.
 The [revision response](revision_letter.pdf) explains the referee corrections
@@ -30,7 +32,9 @@ fusion rings or categories.
 Run `sha256sum -c SHA256SUMS.txt` in this directory. Hashes check file integrity,
 not mathematical correctness.
 
-Apart from the two manuscripts' TeX/PDF files, the combined size of all
-accompanying material is below 10,000,000 bytes. No large certificate archive or split archive is required by the
+For the two-manuscript dimension-frontier release of 18 November 2026,
+the combined accompanying material, excluding those manuscripts' TeX/PDF files,
+was below 10,000,000 bytes. The dated [size report](../../../SIZE_REPORT.json)
+records that release and its then-current repository, before later rank additions. No large certificate archive or split archive is required by the
 compact checks. Historical large replay commands are not supported by this
 release; use only the commands in the current verification guide.

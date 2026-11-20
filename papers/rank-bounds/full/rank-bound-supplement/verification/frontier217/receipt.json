@@ -1,0 +1,18 @@
+{
+  "baseline_provenance": "734cb5cf623e7b1b1bebfefbce4ff2285c5a1b256c86de3b8987cffb9c6bb9d9",
+  "component_reservations": {
+    "edgeless": 2541,
+    "mixed": 632
+  },
+  "rank": 217,
+  "sha256": {
+    "check.py": "543bbadbd14f8d8939d548526efd0fdf519f69513b6132e05be664120e5971c7",
+    "verification/profile_census/check.py": "90b29b93b3f764efb3553a59acabffb2cf53039fe2f71cc0106e8c31b0071a9e"
+  },
+  "starts": {
+    "classified_starts": 21396,
+    "component_starts_closed_nines": 227,
+    "component_starts_open_nines": 235,
+    "original_prime_starts": 21396
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "rank": 44,
+  "scope": "mixed four-prime omission signatures only",
+  "initial": 41,
+  "excluded_by_two_five_lemma": [
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "remaining": 39,
+  "counts_by_four_multiplicity": {
+    "9": 12,
+    "10": 11,
+    "11": 9,
+    "12": 6,
+    "13": 1
+  },
+  "signatures": [
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": false,
+      "support": [
+        3,
+        7,
+        13
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        13
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 9,
+      "five": true,
+      "support": [
+        3,
+        5,
+        13
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 10,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        13
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 10,
+      "five": true,
+      "support": [
+        3,
+        5,
+        13
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 11,
+      "five": false,
+      "support": [
+        3,
+        7,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 11,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 11,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 11,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "rows": 12,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "rows": 12,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 12,
+      "five": false,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "rows": 12,
+      "five": false,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "rows": 12,
+      "five": true,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 12,
+      "five": true,
+      "support": [
+        3,
+        5,
+        11
+      ],
+      "modes": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "rows": 13,
+      "five": false,
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "modes": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Braided fusion categories with three-prime dimensions
 
+[Overview](../../README.md) · [All manuscripts](../README.md) · [Dimension guide](../dimension-bounds.md) · [Verification map](../../VERIFICATION.md) · [Versions and citations](../VERSIONS.md)
+
 [Manuscript (PDF, 47 pages)](three_prime_dimensions.pdf) ·
 [LaTeX source](three_prime_dimensions.tex) ·
 [Revision response (PDF)](revision_letter.pdf) ·
@@ -24,4 +26,4 @@ Run `sha256sum -c SHA256SUMS.txt` in this directory to check file integrity.
 Hashes are not a certificate of mathematical correctness.
 
 [All manuscripts](../README.md) · [Revision notes](../../REVISION_NOTES.md) ·
-[Accompanying-material size report](../../SIZE_REPORT.json)
+[Dimension-frontier release size report](../../SIZE_REPORT.json)

@@ -1,1 +1,3 @@
 The finite word and four-prime calculations use the [shared verification code](../../../code/README.md#prime-factor-families). The [coauthor edition](https://github.com/sebastienpalcoux/WGT-fusion-categories/blob/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/papers/Manuscript.pdf) and its [source programs](https://github.com/sebastienpalcoux/WGT-fusion-categories/tree/f2ef6eedb58ade6adcdb5ed9caeba1836b4ba8ce/code) fix the original numbering and code versions.
+
+[Rank guide](../../README.md) · [Verification map](../../../VERIFICATION.md) · [Versions and citations](../../../papers/VERSIONS.md)

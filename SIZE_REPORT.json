@@ -24,9 +24,12 @@
   ],
   "historical_sources_archive_bytes": 1201583,
   "historical_sources_expanded_bytes": 3089206,
-  "scope": "All accompanying files combined in the prepared repository tree; response letters count. Only the ten explicitly listed manuscript TeX/PDF files are excluded. Git storage, build intermediates, and the private publication manifest are not distributed. The delivery totals describe the original unchanged ZIP contents.",
+  "scope": "Historical measurements for the two-manuscript dimension-frontier release completed 18 November 2026. The repository totals describe the prepared tree at the measured repository commit, before later rank-manuscript additions. All accompanying files combined were counted; response letters count. Only the ten explicitly listed manuscript TeX/PDF files are excluded from the historical repository totals. Git storage, build intermediates, and the private publication manifest were not distributed. The delivery totals describe the original unchanged ZIP contents. The 10,000,000-byte limit applies to this dimension-frontier delivery; these totals are not current repository-size measurements.",
   "delivery_other_files_bytes": 2256393,
   "repository_other_files_bytes": 5394576,
   "delivery_other_files_bytes_with_historical_sources_expanded": 4144016,
-  "repository_other_files_bytes_with_historical_sources_expanded": 7282199
+  "repository_other_files_bytes_with_historical_sources_expanded": 7282199,
+  "report_name": "Historical dimension-frontier release size report",
+  "measured_release_date": "2026-11-18",
+  "measured_repository_commit": "db75ed0780930202bb87e357bbfd16435680f35d"
 }

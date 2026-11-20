@@ -1,0 +1,136 @@
+Checking census/five_tests.py
+{"square": 7314, "nonsquare": 10885, "primary_mass": 8207, "prime_square_gcd": 6194, "defect_one": 6166, "principal_block": 244, "ternary_trace": 0}
+Checking arithmetic/three_prime_cutoff.py
+Three-prime supports: 9 profiles, 18095 interval nodes, 0 survivors.
+Checking arithmetic/support_five_moments.py
+{
+  "all_primary": 38,
+  "initial_profiles": 49,
+  "mixed": 11,
+  "mixed_mass_matches": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    14,
+    0,
+    0
+  ],
+  "mixed_survivors": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rank": 44,
+  "survivors": 0
+}
+Checking arithmetic/odd_edge_mass.py
+{
+  "two_odd_edges_15_21": "28493/29400",
+  "edge21_and_dyadic5": "8093/9800",
+  "four_odd_primes_with_edge": "18257/18480",
+  "21_absent5": "841201/882000",
+  "21_present5_at_m11": "57341/58800",
+  "21_present5_at_m12_raised": "140953/141120",
+  "dyadic7_with5": "6527/7350",
+  "dyadic7_without5_m10": "87977/88200",
+  "twenty_active5_high_four": "3281351/3528000",
+  "eighteen_active5_m11": "103933243/110250000",
+  "mixed_fifteen_survivors": 0
+}
+Checking arithmetic/gram_packets.py
+Checked all 1,440 Gram matrices and the unique kernel witness.
+Checking census/recheck.py
+{"square": 7314, "nonsquare": 10885, "degree_slices": 393, "principal_overlap": 284, "fusion_phases": 215, "prime_square_trace": 143, "block_entry": 124, "simultaneous_block_trace": 12, "defect_one": 0}
+Checking verification/rank_tables/audit_slices.py census/reference-census.zip
+{"39": {"profiles": 1, "pass": 0, "principal degree gcd": 1}, "40": {"profiles": 2, "pass": 0, "principal degree gcd": 1, "principal mass": 1}, "41": {"profiles": 21, "pass": 0, "principal mass": 7, "forced slice empty": 2, "principal degree gcd": 12}, "42": {"profiles": 176, "pass": 0, "principal mass": 65, "principal degree gcd": 98, "forced slice empty": 13}, "43": {"profiles": 1637, "pass": 22, "principal degree gcd": 911, "principal mass": 595, "forced slice empty": 109}, "44": {"profiles": 16362, "pass": 371, "principal degree gcd": 10790, "principal mass": 4144, "forced slice empty": 1057}}
+Checking verification/rank_tables/audit_overlap.py census/reference-census.zip
+{"admitted": 2972, "primary_phase": 12839, "principal_product": 2388}
+Checking verification/rank_tables/audit_fusion.py census/reference-census.zip
+{
+  "bounded_sum_tests": 3264,
+  "reference_ranks": {
+    "39": {
+      "rows": 1
+    },
+    "40": {
+      "rows": 2
+    },
+    "41": {
+      "rows": 21,
+      "excluded": 2
+    },
+    "42": {
+      "rows": 176,
+      "excluded": 54
+    },
+    "43": {
+      "rows": 1637,
+      "excluded": 743
+    },
+    "44": {
+      "rows": 16362,
+      "excluded": 7884
+    }
+  }
+}
+Checking verification/odd_theory/check_edge37.py
+rank cap: 217
+several-edge mass maximum: 3881/3969
+three-prime checks: 146 maximum (mass,q,s): (Fraction(215990653, 218791125), 5, 58)
+dense-five mass maximum: 51450037/60031125
+four-prime checks: 231 maximum (mass,s,m): (Fraction(33299377, 33350625), 40, 22)
+all enclosing ordinary-mass bounds are strictly below one
+Checking arithmetic/three_prime_rank.py
+Three-prime support through rank44: six final intervals, all excluded.
+Checking verification/check_global_weyl_independent.py
+{
+  "status": "passed",
+  "scope": "Independent small finite exponent groups only.",
+  "target_comparisons": 90,
+  "height_lower_bound_comparisons": 30,
+  "actual_shared_sign_solutions_checked": 450,
+  "module_sha256": "9b8e63a2411386a3d0cd52533f867e6574918833dcd6f54dbaa4cad439ac055b",
+  "audit_sha256": "f32d5b4f7cb97c9b978c6c63164ea54b10cc84f23c29dbc32616c3ba612e865c",
+  "cpu_seconds": 0.03676221500000001
+}
+Checking verification/sector_frontier/check.py
+204 starts, 462 sector families; 39303 prefixes checked.
+Checking verification/sector_frontier/verify_neutral.py
+{'orbit_capacity_checks': 315, 'exact_sector_counts': 607, 'parity_placement_checks': 16}
+Checking verification/sector_frontier/verify_component.py
+{'square_counts': 45, 'complete_artificial_prefixes': 583}
+Checking verification/frontier217/check.py --graphs
+{'original_prime_starts': 21396, 'classified_starts': 21396, 'component_starts_open_nines': 235, 'component_starts_closed_nines': 227} {'edgeless': 2541, 'mixed': 632} {'edgeless': 1133, 'mixed': 495}
+Checking arithmetic/perfect_counts.py
+Verified rank-44 prime powers, seven orbit patterns, elementary subgroup sizes, reciprocal-square prefixes, cohomology orbit counts and deleted-gauging degrees.
+Checking odd_nonsquare/check.py
+14 supports, 685040 initial profiles, 4 final profiles and 0 completions.
+Checking odd_square/check.py --jobs 3
+{"rank_ceiling": 209, "prime_profiles": 16512, "reservations": 1461, "isolated": 1151, "isolated_nodes": 6721348, "mixed_nodes": 2753944, "unresolved": []}
+Checking unit tests in .
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.884s
+
+OK
+Checking unit tests in census
+............................
+----------------------------------------------------------------------
+Ran 28 tests in 4.254s
+
+OK
+All selected checks passed (301.0 s).
+The original denominator enumeration and the separate rank-201 Gauss replay were not repeated.

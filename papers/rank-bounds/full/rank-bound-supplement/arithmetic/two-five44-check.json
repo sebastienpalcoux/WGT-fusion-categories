@@ -1,0 +1,23 @@
+{
+  "rank": 44,
+  "modes": [
+    [
+      10,
+      5
+    ],
+    [
+      11,
+      1
+    ]
+  ],
+  "maximum_masses": {
+    "10": "77237/75600",
+    "11": "233293/226800"
+  },
+  "three_nine_residual": "1327/37800",
+  "four_nine_residual": "2581/113400",
+  "required_gap": "29/75600",
+  "neutral_upper_c_ge2": "43949/119070000",
+  "neutral_upper_c1": "2873/25401600",
+  "surviving_modes": 0
+}

@@ -1,0 +1,13 @@
+{
+  "antichain_domains": 150,
+  "tiling_crosschecks": 8000,
+  "frontier_counts": {
+    "base_starts": 792,
+    "base_plans": 37882,
+    "sector_plans": 1646,
+    "with_witnesses_plans": 1501,
+    "final_plans": 1199,
+    "sector_starts": 668,
+    "final_starts": 430
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "checker_sha256": "804b679af45e707a9c67edaf8ad8468d9a29c723da77f9aec576b48868d748c8",
+  "format": "odd-record-accounting-v1",
+  "nonsquare": {
+    "rank_ceiling": 211,
+    "stored_height_survivors": 4,
+    "stored_solutions": 0,
+    "stored_starting_profiles": 685040,
+    "stored_tail_nodes": 72,
+    "supports": 14
+  },
+  "scope": "Source/result binding and regenerated square profile census; final odd recursions not rerun.",
+  "source_and_result_sha256": {
+    "odd_nonsquare/census.py": "732526d1ac94c3819ed9aa3f93d8145f87c3a26c172a84f973759b964f2af75a",
+    "odd_nonsquare/check.py": "9948e93278d8d695f1989149736920ff082fe69e4a56a919594a367a03ba61af",
+    "odd_nonsquare/receipt.json": "f16d8a45c9647a9c4b648c8253b826ecc3b774a37eb4ee04c15cfeb565b39931",
+    "odd_square/census.json": "355575ca0df7650021b533031248ef9bd6dc43f2637c06383ca78b1c0c477b16",
+    "odd_square/certificate.json": "43d81d7bcbba0c61896a0b5248b468a27cfd08f59c564b350d1382387292b435",
+    "odd_square/check.py": "a2ccaa19c5554ce72b6ba0e5e092bfa75aa7ecdc403fd219f35d3c56b912b480",
+    "odd_square/dense64.py": "0ad4e52ad63dac2ada3ae67b76e2917936f8ab5faa4b8cae41dcc591addb9084",
+    "odd_square/dense_budget.py": "13e80b256b8b01ddabd0028a0d8668973da17f6273521e07bd63b83f14920701",
+    "odd_square/dense_phase.py": "04bada8c6d266fd9fc4095af07fedbb542497f0897f5deed3d35f3786e4c28f4",
+    "odd_square/dense_screen.py": "1b60943a6f992a7c6cad33239fbe1360bc7eb29d6271bcb2d4659fe740535b22",
+    "odd_square/edge_budget.py": "634a72e2fab808838257515609cd4fbe8a5dc419b4cb0774d43167067689df06",
+    "odd_square/edges.py": "fd4b5e6a03697ca656eca6996ccafc3a5da8ee5c78ba3fab84705421a594c896",
+    "odd_square/full_blocks.py": "8d5ffbe23a1be53baf4b393bb347eb4c7c1109eb33d50818ec83b0bddc412774",
+    "odd_square/highprofile.py": "bf113acbef7d60145a1ee77437d884823ed450e5d439185f2cefe88f4d59e0cf",
+    "odd_square/isolated.py": "cb2212362a56637809a4c29e0e52125260bb76e44084e7b665d858e5c2314ce9",
+    "odd_square/joint_gauss.py": "c62bcdc0a59e1abb8c69745ba3128ddfd7a1f08e4e29ef3349253a5937d1d70b",
+    "odd_square/mixed.py": "4a658260ba9d809844beffdfd9fa57d7fc4a9e1240340926be59538aa181c3b2",
+    "odd_square/nine_gram.py": "9d01869d86c43a135102bc88a2d795e9fffe78a51d7ffdbce16ed20a8d592226",
+    "odd_square/ordinary_tail.py": "a0ddf072575aa29dd70d3a22cea4944754df1b13ce1e058bfebdf8f174131b43",
+    "odd_square/profile_window.py": "08fc8bd7abe9818e15e740dddbf1cfd4ccc158c86520fa53d1a357a22fc5fd8c",
+    "odd_square/profiles.py": "aa64586b0908e90b369ce267da5488e956b62d383045e8a3386437b850f4b313",
+    "odd_square/pure_window.py": "306f17532be19b83a0dcefa97834715ec776f628a6da2f5c4f04ef3e83ca29b5",
+    "odd_square/quadratic.py": "13284eb7847742db2e742b6ee0628c190c1767bf3109f12660d6f9617c5d766c",
+    "odd_square/small_phases.py": "71003772d34adcb410bf3583370135d1b19f36805159ad6c4342ec76e2c0e374",
+    "odd_square/sparse_profile.py": "a570c5b439db0e0640a8cfe74abc3abf833d425942f010e81ed57639c0d76ecc"
+  },
+  "square": {
+    "isolated": 1151,
+    "mixed": 310,
+    "prime_profiles": 16512,
+    "rank_ceiling": 209,
+    "reservations": 1461,
+    "stored_isolated_nodes": 6721348,
+    "stored_mixed_nodes": 2753944,
+    "stored_unresolved": 0
+  }
+}
