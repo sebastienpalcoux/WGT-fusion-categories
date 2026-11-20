@@ -7,12 +7,34 @@ Research on fusion categories by **Sebastian Burciu, Jingcheng Dong and Sébasti
 
 ## Where to start
 
-| Question | Reading route |
-| --- | --- |
-| Below which dimensions is weak group-theoreticity proved? | The [29-page dimension theorem](papers/Below_5400_squared.pdf), followed by the [47-page three-prime paper](papers/three-prime-dimensions/three_prime_dimensions.pdf). Both proofs are computer-free. |
-| How large must a non-pointed simple integral modular category be? | The [24-page general rank proof](papers/rank-bounds/general/Rank_bound.pdf), or the [37-page general and odd-dimensional proof](papers/rank-bounds/general-and-odd/Rank_bounds.pdf). |
-| What are the wider results and remaining questions? | The [complete rank manuscript](papers/rank-bounds/full/Rank-modular-data.pdf), the [252-page project manuscript](papers/Manuscript.pdf), and the [three-prime research draft](papers/research-drafts/p6q6r4/p6q6r4_manuscript.pdf). |
-| Which computations accompany a particular paper? | The [verification guide](VERIFICATION.md) maps each manuscript to its own programs, records and instructions. |
+The project asks two related questions: **how small can a weakly integral fusion category be if it is not weakly group-theoretical, and how few simple objects can a non-pointed simple integral modular category have?** Here dimension means Frobenius–Perron dimension, and rank counts simple objects up to isomorphism. All categories are over ℂ.
+
+### Dimension bounds: begin with a uniform theorem
+
+Start with the **[29-page dimension paper](papers/Below_5400_squared.pdf)**. It proves that every weakly integral braided fusion category of dimension **strictly below 5400² = 29,160,000** is weakly group-theoretical. Passing to the Drinfeld center gives **dimension below 5400 without assuming a braiding**. The proof is computer-free, with the arithmetic included in the text.
+
+Continue with the **[47-page three-prime paper](papers/three-prime-dimensions/three_prime_dimensions.pdf)** to study how prime factorization constrains a possible counterexample. For distinct primes $p,q,r$, it proves weak group-theoreticity for braided categories of dimension a proper divisor of $p^6q^6r^4$; within this family, **5400² is the sole possible even-dimensional exception**. In the odd-dimensional part of the same family, it proves solvability strictly below $5^6\cdot7^6\cdot23^4$. This proof is also computer-free. Both endpoints remain open.
+
+### Rank bounds: choose the scope you need
+
+The rank bounds below apply to **non-pointed simple integral modular fusion categories**. The existence of such a category remains open.
+
+| Your aim | Recommended reading | What it adds |
+| --- | --- | --- |
+| Understand the general bound in a focused paper | **[24 pages](papers/rank-bounds/general/Rank_bound.pdf)** | Proves **rank at least 45**, using theoretical restrictions followed by an exact finite enumeration. |
+| Study both the general and odd-dimensional cases | **[37 pages](papers/rank-bounds/general-and-odd/Rank_bounds.pdf)** | Includes the general bound **45** and proves **217 in odd dimension**. Start here directly if you want both cases. |
+| Study the wider rank theory and the classification results | **[Revised complete manuscript, 98 pages](papers/rank-bounds/full/Rank-modular-data.pdf)** | Includes both bounds, **219 in odd nonsquare dimension**, and the classification of **nontrivial perfect weakly integral modular categories through rank 44** in Section 10. |
+
+For the shorter earlier argument, the **[original 17-page paper](papers/Rank32.pdf)** proves rank at least **32**. The new papers strengthen this to **45**. The classification in the complete manuscript concerns *perfect* categories, whose only invertible simple object is the unit; its hypotheses differ from those of the simple-category rank theorem.
+
+### Broader sources and open problems
+
+- **[252-page project manuscript](papers/Manuscript.pdf):** consult this for the broader prime-exponent families, dimension bounds, earlier rank results and decomposition theorems. It is the work recorded as **Hexagon 2611.00233** and supplies the numbered earlier results cited by the later papers.
+- **[423-page three-prime research draft](papers/research-drafts/p6q6r4/p6q6r4_manuscript.pdf):** continue here from the 47-page paper for the detailed investigation of $p^6q^6r^4$ and the unresolved dimension **5400²**. It separates proved theoretical restrictions from stronger numerical conclusions requiring additional computational coverage.
+
+### Checking a proof or following a reference
+
+The **[verification guide](VERIFICATION.md)** identifies each paper's companion and explains which commands check stored results and which regenerate a census. The rank papers use separate editions of their programs and records. The **[versions and citations guide](papers/VERSIONS.md)** identifies the Hexagon edition and fixed code snapshots used in their references.
 
 <a id="short-self-contained-proofs"></a>
 ## Dimension bounds
